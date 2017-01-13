@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #241141;
+}
+.row {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+#text1,#text2,#text3,#text4 {
+    display: none;
+}
+.lilHeader {
+    &__logo {
+        padding: 30px 0 0 30px;
+        z-index: 1;
+        position: relative;
+    }
+}
+.lilMenu {
+    float: right;
+    cursor: pointer;
+    padding: 50px 30px 0 0;
+}
+.lilMenuCnt {
+    float: right;
+    background-color: #E1D6F4;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 40px 20px 0 10px;
+    z-index: 1;
+    &__close {
+        float: right;
+        cursor: pointer;
+    }
+}
+.lilMenuCntlist {
+    list-style: none;
+    padding: 50px 0 0 20px;
+    &__ele {
+        padding: 5px 0;
+    }
+    &__attr {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 0 15px 0;
+        color: #333;
+    }
+}

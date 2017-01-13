@@ -1,0 +1,10 @@
+# Build settings
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+sass:
+    style: compressed
