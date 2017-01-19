@@ -1,54 +1,55 @@
-body {
-    margin: 0;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #241141;
-}
-.row {
-    margin: 0;
-}
-a {
-    text-decoration: none;
-}
-#text1,#text2,#text3,#text4 {
-    display: none;
-}
-.lilHeader {
-    &__logo {
-        padding: 30px 0 0 30px;
-        z-index: 1;
+.hero {
+    #text1,#text2,#text3,#text4 {
+        display: none;
+    }
+    .homepageBg {
+        background-color: #230F42;
+        overflow-y: hidden;
+        height: 100vh;
+    }
+    .homepageRow {
+        padding: 0 250px 0 250px;
+    }
+    .homepageBgImg {
+        background-image: url("/assets/img/homepage/ANIMATIONS/1.gif");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right top;
+        height: 100%;
+        width: 100%;
         position: relative;
+        &__img {
+            height: auto;
+            position: absolute;
+            left: 26%;
+            top: 20%;
+        }
     }
-}
-.lilMenu {
-    float: right;
-    cursor: pointer;
-    padding: 50px 30px 0 0;
-}
-.lilMenuCnt {
-    float: right;
-    background-color: #E1D6F4;
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    padding: 40px 20px 0 10px;
-    z-index: 1;
-    &__close {
-        float: right;
-        cursor: pointer;
-    }
-}
-.lilMenuCntlist {
-    list-style: none;
-    padding: 50px 0 0 20px;
-    &__ele {
-        padding: 5px 0;
-    }
-    &__attr {
-        font-size: 14px;
-        text-transform: uppercase;
-        padding: 0 15px 0;
-        color: #333;
+    .homepageContent {
+        color: #fff;
+        padding-top: 85px;
+        &__heading {
+            font-size: 60px;
+            font-family: $ternary-titlefamily;
+            margin: 8px 0 10px 0;
+            line-height: 60px;
+            letter-spacing: 1px;
+        }
+        &__para {
+            font-family: $secondary-contentfamily;
+            font-size: $primary-contentfont;
+            line-height: 18px;
+            letter-spacing: 1px;
+        }
+        &__button {
+            background-color: #f1123e;
+            border: medium none;
+            border-radius: 15px;
+            padding: 5px 15px;
+        }
+        &__border {
+            width: 50px;
+            border-top: 5px solid #fff;
+        }
     }
 }

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url("../font/Montserrat-Bold_0.ttf");
+}
+@font-face {
+    font-family: 'montserrat-light';
+    src: url("../font/montserrat-light.ttf");
+}
+@font-face {
+    font-family: 'montserrat-regular';
+    src: url("../font/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: 'raleway-bold';
+    src: url("../font/Raleway-Bold.ttf");
+}
+@font-face {
+    font-family: 'raleway-italic';
+    src: url("../font/Raleway-Italic.ttf");
+}
+@font-face {
+    font-family: 'raleway-light';
+    src: url("../font/Raleway-Light.ttf");
+}
+@font-face {
+    font-family: 'raleway-medium';
+    src: url("../font/Raleway-Medium.ttf");
+}
+@font-face {
+    font-family: 'raleway-regular';
+    src: url("../font/Raleway-Regular.ttf");
+}
+@font-face {
+    font-family: 'raleway-thin';
+    src: url("../font/Raleway-Thin.ttf");
+}
+
+body,.row,h5,h6 {
+    margin: 0;
+}
+
+$primary-titlefamily: "montserrat-regular";
+$secondary-titlefamily: "montserrat-light";
+$ternary-titlefamily: "montserrat-bold";
+
+$primary-contentfamily: "raleway-regular";
+$secondary-contentfamily: "raleway-light";
+$ternary-contentfamily: "raleway-bold";
+
+$primary-headingfont: 66px;
+$secondary-headingfont: 48px;
+$ternary-headingfont: 22px;
+
+$primary-contentfont: 16px;
+$secondary-contentfont: 12px;
+$ternary-contentfont: 10px;
+
+$primary-color: #333;
+$secondary-color: #fff;
+$ternary-color: #414042;
+
+$primary-bg: #f1f1f1;
+
+$border-bottom: #414042;
+
+input[type=radio]:not(old) {
+    width     : 2em;
+    margin    : 0;
+    padding   : 0;
+    font-size : 1em;
+    opacity   : 0;
+}
+input[type=radio]:not(old) + label {
+    display      : inline-block;
+    margin-left  : -2em;
+    line-height  : 1.5em;
+}
+input[type=radio]:not(old) + label > span{
+    display          : inline-block;
+    width            : 0.875em;
+    height           : 0.875em;
+    margin           : 0.25em 0.5em 0.25em 0.25em;
+    border           : 0.0625em solid #58595B;
+    border-radius    : 0.25em;
+    vertical-align   : bottom;
+}
+input[type=radio]:not(old):checked + label > span {
+    border           : 0.0625em solid #FF1A46;
+}
+input[type=radio]:not(old):checked + label > span > span {
+    display          : block;
+    width            : 0.5em;
+    height           : 0.5em;
+    margin           : 0.125em;
+    border           : 0.0625em solid #FF1A46;
+    border-radius    : 0.125em;
+    background       : #FF1A46;
+}
+
+
+
