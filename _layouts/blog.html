@@ -6,85 +6,65 @@
 		<p class="blogHeight__para">User interface in the eyes of the beholder, Technical specifications is<br>what it is made of. User experience is in their mind.</p>
 	</div>
 </section>
-<div class="row">
-		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-			<h5>SELECT CATEGORY</h5>
-			<div></div>
-			<div>
+<div class="row blog-row">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 selectSection">
+			<h5 class="selectSection__title">SELECT CATEGORY</h5>
+			<div class="selectSection__border"></div>
+			<div class="selectInput">
 	  			<input id="branding" type="radio" name="field" value="BRANDING">
-	  			<label for="branding"><span><span></span></span>BRANDING</label>
+	  			<label for="branding"><span class="select__radio"><span></span></span><span class="select__title">BRANDING</span></label>
   			</div>
   			<div>
 	  			<input id="web" type="radio" name="field" value="WEB & MOBILE APP DESIGN">
-	  			<label for="web"><span><span></span></span>WEB & MOBILE APP DESIGN</label>
+	  			<label for="web"><span class="select__radio"><span></span></span><span class="select__title">WEB & MOBILE APP DESIGN</span></label>
   			</div>
   			<div>
 	  			<input id="illustration" type="radio" name="field" value="ILLUSTRATION & ART">
-	  			<label for="illustration"><span><span></span></span>ILLUSTRATION & ART</label>
+	  			<label for="illustration"><span class="select__radio"><span></span></span><span class="select__title">ILLUSTRATION & ART</span></label>
   			</div>
   			<div>
 	  			<input id="animation" type="radio" name="field" value="ANIMATION">
-	  			<label for="animation"><span><span></span></span>ANIMATION</label>
+	  			<label for="animation"><span class="select__radio"><span></span></span><span class="select__title">ANIMATION</span></label>
   			</div>
   			<div>
 	  			<input id="packaging" type="radio" name="field" value="PACKAGING & LABEL">
-	  			<label for="packaging"><span><span></span></span>PACKAGING & LABEL</label>
+	  			<label for="packaging"><span class="select__radio"><span></span></span><span class="select__title">PACKAGING & LABEL</span></label>
   			</div>
   			<div>
 	  			<input id="magazine" type="radio" name="field" value="MAGAZINE & BOOK">
-	  			<label for="magazine"><span><span></span></span>MAGAZINE & BOOK</label>
+	  			<label for="magazine"><span class="select__radio"><span></span></span><span class="select__title">MAGAZINE & BOOK</span></label>
   			</div>
 		</div>
 		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 blog-filter">
-					<img src="/assets/img/blog/1_1.png">
-					<div>
-						<h5>BRANDING PRINCIPLES</h5>
-						<div></div>
-						<p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Dummy text of the...</p>
+			{% for post in site.posts | sort: 'date' %}
+				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-6 blog-filter">
+					<img src="{{ post.landing_image}}" class="blog-filter__img">
+					<div class="blogWholeBG">
+					<div class="blogDetail">
+						<h5 class="blogDetail__title">{{ post.title}}</h5>
+						<div class="blogDetail__border"></div>
+						<p class="blogDetail__para">{{ post.description}}</p>
 					</div>
 					<div class="row">
 						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-							<div class="row">
+							<div class="row blog__pad">
 								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<img src="/assets/img/blog/profile_1.png">
+									<img src="{{ post.author_image}}" class="blog-filter__img">
 								</div>
-								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<h5>ADAM GILCHRIST</h5>
-									<p>BRANDING ARTIST</p>
+								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 authorSection">
+									<h5 class="authorSection__title">{{ post.author}}</h5>
+									<p class="authorSection__para">{{ post.author_type}}</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-							<img src="/assets/img/blog/clock.png"><p>December 2016</p>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 blogClock">
+							<span><img src="/assets/img/blog/clock.png"></span><span class="authorSection__date">{{ post.published-date}}</span>
 						</div>
+					</div>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-					<img src="/assets/img/blog/1_1.png">
-					<div>
-						<h5>BRANDING PRINCIPLES</h5>
-						<div></div>
-						<p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Dummy text of the...</p>
-					</div>
-					<div class="row">
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-							<div class="row">
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<img src="/assets/img/blog/profile_1.png">
-								</div>
-								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<h5>ADAM GILCHRIST</h5>
-									<p>BRANDING ARTIST</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-							<img src="/assets/img/blog/clock.png"><p>December 2016</p>
-						</div>
-					</div>
-				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>

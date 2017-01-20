@@ -1,0 +1,14 @@
+---
+description: Lorem Ipsum is simply dummy text of the printing and type setting industry. Dummy text of the...
+category: BRANDING PRINCIPLES
+class: BRANDING PRINCIPLES
+landing_image: "/assets/img/blog/1_1.png"
+permalink: "/post/2017-1-20-branding/"
+tags: all
+author_image: "/assets/img/blog/profile_1.png"
+published-date: December 2016
+author: ADAM GILCHRIST
+author_type: BRANDING ARTIST
+title: BRANDING PRINCIPLES
+---
+

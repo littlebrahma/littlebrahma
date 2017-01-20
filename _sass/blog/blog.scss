@@ -6,15 +6,88 @@
 			text-align: center;
 			padding-top: 48px;
 			color: $secondary-color;
-		&__heading {
-			font-size: $secondary-headingfont;
-			font-family: $ternary-titlefamily;
-		}
-		&__para {
-			font-family: 'raleway-medium';
-			font-size: $primary-contentfont;
+			&__heading {
+				font-size: $secondary-headingfont;
+				font-family: $ternary-titlefamily;
+			}
+			&__para {
+				font-family: 'raleway-medium';
+				font-size: $primary-contentfont;
+			}
 		}
 	}
+	.blog-row {
+		padding: 80px 20px 80px 35px;
+		.selectSection {
+			&__title {
+				font-family: $ternary-titlefamily;
+				font-size: $ternary-headingfont;
+				line-height: 42px;
+			}
+			&__border {
+				border-bottom: $border-bottom;
+				width: 60px;
+				margin-bottom: 50px;
+				margin-top: 13px;
+			}
+		}
+		.blog-filter {
+			&__img {
+				width: $common-width;
+				vertical-align: middle;
+			}
+		}
+		.blogWholeBG {
+			background-color: #f1f2f2;
+			.blogDetail {
+				margin: 0 30px;
+				color: #5D5D5D;
+				&__title {
+					font-family: $ternary-titlefamily;
+					font-size: $secondary-contentfont;
+					line-height: 30px;
+					padding: 12px 0 0;
+				}
+				&__border {
+					width: 40px;
+					border-bottom: 2px solid #5D5D5D;
+				}
+				&__para {
+					font-family: $primary-contentfamily;
+					font-size: 9px;
+					margin-bottom: 20px;
+				}
+			}
+			.authorSection {
+				margin-top: 6px;
+				&__title {
+					font-size: 9px;
+					font-family: $ternary-titlefamily;
+					color: #5D5D5D;
+				}
+				&__para {
+					font-size: 7px;
+					font-family: $primary-contentfamily;
+				}
+				&__date {
+					font-size: 6px;
+					font-family: $secondary-titlefamily;
+					color: #808285;
+					vertical-align: middle;
+				}
+			}
+		}
+		.blogClock {
+			padding-top: 30px;
+			padding-bottom: 8px;
+			& img {
+				margin-right: 5px;
+	    		width: 12px;
+	    		vertical-align: middle;
+			}
+			.blog__pad {
+				margin-bottom: 20px;
+			}
+		}
 	}
-	
 }
