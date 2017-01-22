@@ -129,149 +129,51 @@ $( ".MenuContent__close").click(function() {
     $(".commonMenu__icon").show();
 });
 
- var no_of_total_blog_item = 0;
-    $(".blog-filter").each(function() {
-        no_of_total_blog_item++;
-    });
-    $("#bootcamp-filter-total-no").text(no_of_total_blog_item);
-function blog_filter_function() {
-        $(".no_of_matched_case_item").remove();
-        var no_of_matched_item = 0;
-        if ($("#branding").prop('checked') == true) {
-            $(".blog-filter").each(function() {
-                if ($(this).children().children().first().text().trim() == "BRANDING PRINCIPLES") {
-                    $(this).css({
-                        opacity: 0,
-                        display: 'block'
-                    }).animate({
-                        opacity: 1
-                    }, 500);
-                    no_of_matched_item++;
-                }
 
-            });
-        } else {
-            $(".blog-filter").each(function() {
-                if ($(this).children().children().first().text().trim() == "BRANDING PRINCIPLES") {
-                    $(this).css("display", "none");
-                }
-            });
-        }
-
-        if ($("#web").prop('checked') == true) {
-            $(".blog-filter").each(function() {
-                if ($(this).children().children().first().text().trim() == "WEB & MOBILE APP DESIGN PRINCIPLES") {
-                    $(this).css({
-                        opacity: 0,
-                        display: 'block'
-                    }).animate({
-                        opacity: 1
-                    }, 500);
-                    no_of_matched_item++;
-                }
-
-            });
-        } else {
-            $(".blog-filter").each(function() {
-                if ($(this).children().children().first().text().trim() == "WEB & MOBILE APP DESIGN PRINCIPLES") {
-                    $(this).css("display", "none");
-                }
-            });
-        }
-
-        if ($("#illustration").prop('checked') == true) {
-            $(".blog-filter").each(function() {
-                if ($(this).children().children().first().text().trim() == "ILLUSTRATION & ART PRINCIPLES") {
-                    $(this).css({
-                        opacity: 0,
-                        display: 'block'
-                    }).animate({
-                        opacity: 1
-                    }, 500);
-                    no_of_matched_item++;
-                }
-
-            });
-        } else {
-            $(".blog-filter").each(function() {
-                if ($(this).children().children().first().text().trim() == "ILLUSTRATION & ART PRINCIPLES") {
-                    $(this).css("display", "none");
-                }
-            });
-        }
-
-        if ($("#animation").prop('checked') == true) {
-            $(".blog-filter").each(function() {
-                if ($(this).children().children().first().text().trim() == "ANIMATION PRINCIPLES") {
-                    $(this).css({
-                        opacity: 0,
-                        display: 'block'
-                    }).animate({
-                        opacity: 1
-                    }, 500);
-                    no_of_matched_item++;
-                }
-
-            });
-        } else {
-            $(".blog-filter").each(function() {
-                if ($(this).children().children().first().text().trim() == "ANIMATION PRINCIPLES") {
-                    $(this).css("display", "none");
-                }
-            });
-        }
-        if ($("#packaging").prop('checked') == true) {
-            $(".blog-filter").each(function() {
-                if ($(this).children().children().first().text().trim() == "PACKAGING & LABEL PRINCIPLES") {
-                    $(this).css({
-                        opacity: 0,
-                        display: 'block'
-                    }).animate({
-                        opacity: 1
-                    }, 500);
-                    no_of_matched_item++;
-                }
-
-            });
-        } else {
-            $(".blog-filter").each(function() {
-                if ($(this).children().children().first().text().trim() == "PACKAGING & LABEL PRINCIPLES") {
-                    $(this).css("display", "none");
-                }
-            });
-        }
-
-        if ($("#magazine").prop('checked') == true) {
-            $(".blog-filter").each(function() {
-                if ($(this).children().children().first().text().trim() == "MAGAZINE & BOOK PRINCIPLES") {
-                    $(this).css({
-                        opacity: 0,
-                        display: 'block'
-                    }).animate({
-                        opacity: 1
-                    }, 500);
-                    no_of_matched_item++;
-                }
-
-            });
-        } else {
-            $(".blog-filter").each(function() {
-                if ($(this).children().children().first().text().trim() == "MAGAZINE & BOOK PRINCIPLES") {
-                    $(this).css("display", "none");
-                }
-            });
-        }
-
-
-        $("#bootcamp-filter-total-no").text(no_of_matched_item + "/" + no_of_total_blog_item);
-        if (no_of_matched_item == 0)
-            $(".hw-upskilling-details").append('<div class="gotham-rounded-light no_of_matched_case_item text-center" style="color:#ee2b7b;margin-top:40px;margin-bottom:40px"><p>sorry, no match found</p></div>');
-    }
-
-    $("#bootcamp-mobility-checkbox,#bootcamp-client-checkbox,#bootcamp-dataops-checkbox,#bootcamp-devops-checkbox,#bootcamp-datascie-checkbox,#bootcamp-ui-ux-checkbox").click(function() {
-        bootcamp_filter_function();
-    });
-
-
+$('input[type=radio]').click(function () {
+var radio=$(".selectInput input[type='radio']:checked").val();
+var radioDetail=$(".blogDetail__title").text();
+var radioDetail1=$(".blogDetail__title1").text();
+var radioDetail2=$(".blogDetail__title2").text();
+var radioDetail3=$(".blogDetail__title3").text();
+var radioDetail4=$(".blogDetail__title4").text();
+var radioDetail5=$(".blogDetail__title5").text();
+if(radio == radioDetail) {
+    $(".blog-filter1").show();
+}
+else {
+    $(".blog-filter1").hide();
+}
+if(radio == radioDetail1) {
+    $(".blog-filter2").show();
+}
+else {
+    $(".blog-filter2").hide();
+}
+if(radio == radioDetail2) {
+    $(".blog-filter3").show();
+}
+else {
+    $(".blog-filter3").hide();
+}
+if(radio == radioDetail3) {
+    $(".blog-filter4").show();
+}
+else {
+    $(".blog-filter4").hide();
+}
+if(radio == radioDetail4) {
+    $(".blog-filter5").show();
+}
+else {
+    $(".blog-filter5").hide();
+}
+if(radio == radioDetail5) {
+    $(".blog-filter6").show();
+}
+else {
+    $(".blog-filter6").hide();
+}
+});
 
 });

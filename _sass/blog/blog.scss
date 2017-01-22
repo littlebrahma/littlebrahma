@@ -42,7 +42,7 @@
 			.blogDetail {
 				margin: 0 30px;
 				color: #5D5D5D;
-				&__title {
+				&__title,&__title1,&__title2,&__title3,&__title4,&__title5 {
 					font-family: $ternary-titlefamily;
 					font-size: $secondary-contentfont;
 					line-height: 30px;
