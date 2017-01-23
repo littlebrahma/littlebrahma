@@ -63,51 +63,100 @@ $primary-bg: #f1f1f1;
 
 $border-bottom: 4px solid #414042;
 
-input[type=radio]:not(old) {
-    width     : 2em;
-    margin    : 0;
-    padding   : 0;
-    font-size : 1em;
-    opacity   : 0;
-    cursor: pointer;
-}
-input[type=radio]:not(old) + label {
-    display      : inline-block;
-    margin-left: -2.5em;
-    line-height  : 1.5em;
-    font-family: $primary-contentfamily;
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-input[type=radio]:not(old) + label > .select__radio {
-    display          : inline-block;
-    width            : 0.875em;
-    height           : 0.875em;
-    margin           : 0.25em 0.5em;
-    border           : 0.0625em solid #58595B;
-    border-radius    : 0.25em;
-    vertical-align   : bottom;
-}
-input[type=radio]:not(old):checked + label > .select__radio {
-    border           : 0.0625em solid #FF1A46;
-}
-input[type=radio]:not(old):checked + label > .select__title {
-   vertical-align: middle;
-}
-input[type=radio]:not(old):checked + label > .select__radio > span {
-    display          : block;
-    width            : 0.5em;
-    height           : 0.5em;
-    margin           : 0.125em;
-    border           : 0.0625em solid #FF1A46;
-    border-radius    : 0.125em;
-    background       : #FF1A46;
-}
-input[type=radio]:not(old):checked + label >  .select__title {
-    color: #FF1A46;
-    background-color: #FACBCC;
-}
-
 $common-width: 100%;
 
-
+.hero {
+    input[type=radio]:not(old) {
+        width     : 2em;
+        margin    : 0;
+        padding   : 0;
+        font-size : 1em;
+        opacity   : 0;
+        cursor: pointer;
+    }
+    input[type=radio]:not(old) + label {
+        display      : inline-block;
+        margin-left: -2.5em;
+        line-height  : 1.5em;
+        font-family: $primary-contentfamily;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    input[type=radio]:not(old) + label > .select__radio {
+        display          : inline-block;
+        width            : 0.875em;
+        height           : 0.875em;
+        margin           : 0.25em 0.5em;
+        border           : 0.0625em solid #58595B;
+        border-radius    : 0.25em;
+        vertical-align   : bottom;
+    }
+    input[type=radio]:not(old):checked + label > .select__radio {
+        border           : 0.0625em solid #FF1A46;
+    }
+    input[type=radio]:not(old):checked + label > .select__title {
+       vertical-align: middle;
+    }
+    input[type=radio]:not(old):checked + label > .select__radio > span {
+        display          : block;
+        width            : 0.5em;
+        height           : 0.5em;
+        margin           : 0.125em;
+        border           : 0.0625em solid #FF1A46;
+        border-radius    : 0.125em;
+        background       : #FF1A46;
+    }
+    input[type=radio]:not(old):checked + label >  .select__title {
+        color: #FF1A46;
+        background-color: #FACBCC;
+    }
+    .commonHeight {
+        height: 307px;
+        text-align: center;
+        padding-top: 48px;
+        color: $secondary-color;
+        &__heading {
+            font-size: $secondary-headingfont;
+            font-family: $ternary-titlefamily;
+        }
+        &__para {
+            font-family: 'raleway-medium';
+            font-size: $primary-contentfont;
+            width: 510px;
+            margin: 40px auto;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        input[type="radio"]:not(old) + label {
+            font-size: 12px;
+        }
+        .commonHeight {
+            &__para {
+            font-size: 14px;
+            width: 340px;
+            margin: 40px auto;
+            }
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        input[type="radio"]:not(old) + label {
+                font-size: 11px;
+                font-family: $ternary-contentfamily;
+            }
+        .commonHeight {
+            height: 240px;
+            &__heading {
+                font-size: $ternary-headingfont;
+            }
+            &__para {
+                font-size: 14px;
+                width: 240px;
+                margin: 8px auto;
+            }
+        }
+        .selectInput {
+            display: inline;
+            text-align: center;
+        }
+    }
+}

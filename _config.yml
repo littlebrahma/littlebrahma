@@ -8,4 +8,6 @@ kramdown:
   syntax_highlighter: rouge
 sass:
     style: compressed
+collections:
+  portfolios:
 include: ["_pages"]

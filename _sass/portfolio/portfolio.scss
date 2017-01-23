@@ -1,0 +1,24 @@
+.hero {
+	.portfolioBg {
+		background-color: #F26522;
+	}
+	.portBgImg {
+		background-image: url("/assets/img/blog/1_1.png");
+		width: $common-width;
+		background-repeat: no-repeat;
+    	height: 468px;
+    	padding: 15px;
+    	.portfolioInner {
+    		opacity: 0;
+    		height: 438px;
+    		width: $common-width;
+    		padding: 50px;
+    		&:hover {
+		    	opacity: 0.85;
+		    	background-color: #fff;
+		    	color: $ternary-color;
+		    	text-align: center;
+    		}
+    	}
+	}
+}
