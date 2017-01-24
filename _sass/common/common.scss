@@ -140,9 +140,13 @@ $common-width: 100%;
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
         input[type="radio"]:not(old) + label {
-                font-size: 11px;
-                font-family: $ternary-contentfamily;
-            }
+            font-size: 11px;
+            font-family: $ternary-contentfamily;
+            margin: 0 12px 8px 0;
+        }
+        input[type=radio]:not(old) {
+            display: none;
+        }
         .commonHeight {
             height: 240px;
             &__heading {
