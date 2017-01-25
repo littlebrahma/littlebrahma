@@ -78,7 +78,7 @@ function myFunction() {
         document.getElementById("text3").style.display = 'none';
         document.getElementById("text4").style.display = 'block';
     }
-    else if(path == "/assets/img/CREATIVESTUDIO/1.png" || path == "/assets/img/CREATIVESTUDIO/2.png" || path == "/assets/img/CREATIVESTUDIO/3.png" || path == "/assets/img/CREATIVESTUDIO/4.png" || path == "/assets/img/CREATIVESTUDIO/5.png" || path == "/assets/img/CREATIVESTUDIO/6.png" || path == "/assets/img/homepage/CREATIVESTUDIO/7.png") 
+    else if(path == "/assets/img/homepage/CREATIVESTUDIO/1.png" || path == "/assets/img/homepage/CREATIVESTUDIO/2.png" || path == "/assets/img/homepage/CREATIVESTUDIO/3.png" || path == "/assets/img/homepage/CREATIVESTUDIO/4.png" || path == "/assets/img/homepage/CREATIVESTUDIO/5.png" || path == "/assets/img/homepage/CREATIVESTUDIO/6.png" || path == "/assets/img/homepage/homepage/CREATIVESTUDIO/7.png") 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/1.gif')";
         document.getElementById("text1").style.display = 'none';
