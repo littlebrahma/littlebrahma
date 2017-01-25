@@ -80,7 +80,7 @@ function myFunction() {
     }
     else if(path == "/assets/img/CREATIVESTUDIO/1.png" || path == "/assets/img/CREATIVESTUDIO/2.png" || path == "/assets/img/CREATIVESTUDIO/3.png" || path == "/assets/img/CREATIVESTUDIO/4.png" || path == "/assets/img/CREATIVESTUDIO/5.png" || path == "/assets/img/CREATIVESTUDIO/6.png" || path == "/assets/img/homepage/CREATIVESTUDIO/7.png") 
     {
-        background.style.backgroundImage = "url('/assets/img/ANIMATIONS/1.gif')";
+        background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/1.gif')";
         document.getElementById("text1").style.display = 'none';
         document.getElementById("text").style.display = 'block';
         document.getElementById("text2").style.display = 'none';
