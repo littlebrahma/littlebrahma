@@ -1,90 +1,101 @@
 $( document ).ready(function() {
 var myimages=[
-    '/assets/img/homepage/CREATIVESTUDIO/2.png',
-    '/assets/img/homepage/CREATIVESTUDIO/3.png',
-    '/assets/img/homepage/CREATIVESTUDIO/4.png',
-    '/assets/img/homepage/CREATIVESTUDIO/5.png',
-    '/assets/img/homepage/CREATIVESTUDIO/6.png',
-    '/assets/img/homepage/CREATIVESTUDIO/7.png',
-    '/assets/img/homepage/PORTFOLIO/1.png',
-    '/assets/img/homepage/PORTFOLIO/2.png',
-    '/assets/img/homepage/PORTFOLIO/3.png',
-    '/assets/img/homepage/PORTFOLIO/4.png',
-    '/assets/img/homepage/PORTFOLIO/5.png',
-    '/assets/img/homepage/PORTFOLIO/6.png',
-    '/assets/img/homepage/PORTFOLIO/7.png',
-    '/assets/img/homepage/CONTEST/6.png',
-    '/assets/img/homepage/CONTEST/5.png',
-    '/assets/img/homepage/CONTEST/4.png',
-    '/assets/img/homepage/CONTEST/3.png',
-    '/assets/img/homepage/CONTEST/2.png',
-    '/assets/img/homepage/CONTEST/1.png',
-    '/assets/img/homepage/E-STORE/1.png',
-    '/assets/img/homepage/E-STORE/2.png',
-    '/assets/img/homepage/E-STORE/3.png',
-    '/assets/img/homepage/E-STORE/4.png',
-    '/assets/img/homepage/E-STORE/5.png',
-    '/assets/img/homepage/E-STORE/6.png',
-    '/assets/img/homepage/E-STORE/7.png',
-    '/assets/img/homepage/SERVICES/1.png',
-    '/assets/img/homepage/SERVICES/2.png',
-    '/assets/img/homepage/SERVICES/3.png',
-    '/assets/img/homepage/SERVICES/4.png',
-    '/assets/img/homepage/SERVICES/5.png',
-    '/assets/img/homepage/SERVICES/6.png',
-    '/assets/img/homepage/SERVICES/7.png'
+    "/assets/img/homepage/CREATIVESTUDIO/2.png",
+    "/assets/img/homepage/CREATIVESTUDIO/3.png",
+    "/assets/img/homepage/CREATIVESTUDIO/4.png",
+    "/assets/img/homepage/CREATIVESTUDIO/5.png",
+    "/assets/img/homepage/CREATIVESTUDIO/6.png",
+    "/assets/img/homepage/CREATIVESTUDIO/7.png",
+    "/assets/img/homepage/PORTFOLIO/1.png",
+    "/assets/img/homepage/PORTFOLIO/2.png",
+    "/assets/img/homepage/PORTFOLIO/3.png",
+    "/assets/img/homepage/PORTFOLIO/4.png",
+    "/assets/img/homepage/PORTFOLIO/5.png",
+    "/assets/img/homepage/PORTFOLIO/6.png",
+    "/assets/img/homepage/PORTFOLIO/7.png",
+    "/assets/img/homepage/CONTEST/6.png",
+    "/assets/img/homepage/CONTEST/5.png",
+    "/assets/img/homepage/CONTEST/4.png",
+    "/assets/img/homepage/CONTEST/3.png",
+    "/assets/img/homepage/CONTEST/2.png",
+    "/assets/img/homepage/CONTEST/1.png",
+    "/assets/img/homepage/E-STORE/1.png",
+    "/assets/img/homepage/E-STORE/2.png",
+    "/assets/img/homepage/E-STORE/3.png",
+    "/assets/img/homepage/E-STORE/4.png",
+    "/assets/img/homepage/E-STORE/5.png",
+    "/assets/img/homepage/E-STORE/6.png",
+    "/assets/img/homepage/E-STORE/7.png",
+    "/assets/img/homepage/SERVICES/1.png",
+    "/assets/img/homepage/SERVICES/2.png",
+    "/assets/img/homepage/SERVICES/3.png",
+    "/assets/img/homepage/SERVICES/4.png",
+    "/assets/img/homepage/SERVICES/5.png",
+    "/assets/img/homepage/SERVICES/6.png",
+    "/assets/img/homepage/SERVICES/7.png"
 ];
  
-var slideshow=document.getElementById('slideshow');
+var slideshow=document.getElementById("slideshow");
 var nextslideindex=0;
 function myFunction() {
-    var path=$('#slideshow').attr('src');
-    if(path == '/assets/img/homepage/PORTFOLIO/1.png' || path == '/assets/img/homepage/PORTFOLIO/2.png' || path == '/assets/img/homepage/PORTFOLIO/3.png' || path == '/assets/img/homepage/PORTFOLIO/4.png' || path == '/assets/img/homepage/PORTFOLIO/5.png' || path == '/assets/img/homepage/PORTFOLIO/6.png' || path == '/assets/img/homepage/PORTFOLIO/7.png') 
+    var background=document.getElementById("backgound_image");
+    var path=$("#slideshow").attr('src');
+    if(path == "/assets/img/homepage/PORTFOLIO/1.png" || path == "/assets/img/homepage/PORTFOLIO/2.png" || path == "/assets/img/homepage/PORTFOLIO/3.png" || path == "/assets/img/homepage/PORTFOLIO/4.png" || path == "/assets/img/homepage/PORTFOLIO/5.png" || path == "/assets/img/homepage/PORTFOLIO/6.png" || path == "/assets/img/homepage/PORTFOLIO/7.png") 
     {
-        document.getElementById('background_image').style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
-        document.getElementById('text1').style.display = 'block';
-        document.getElementById('text').style.display = 'none';
-        document.getElementById('text2').style.display = 'none';
-        document.getElementById('text3').style.display = 'none';
-        document.getElementById('text4').style.display = 'none';
+        background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
+        document.getElementById("text1").style.display = 'block';
+        document.getElementById("text").style.display = 'none';
+        document.getElementById("text2").style.display = 'none';
+        document.getElementById("text3").style.display = 'none';
+        document.getElementById("text4").style.display = 'none';
+        slideshow.style.left="48%";
+        slideshow.style.top="12%";
     
     }
-    else if(path == '/assets/img/homepage/CONTEST/1.png' || path == '/assets/img/homepage/CONTEST/2.png' || path == '/assets/img/homepage/CONTEST/3.png' || path == '/assets/img/homepage/CONTEST/4.png' || path == '/assets/img/homepage/CONTEST/5.png' || path == '/assets/img/homepage/CONTEST/6.png' || path == '/assets/img/homepage/CONTEST/7.png') 
+    else if(path == "/assets/img/homepage/CONTEST/1.png" || path == "/assets/img/homepage/CONTEST/2.png" || path == "/assets/img/homepage/CONTEST/3.png" || path == "/assets/img/homepage/CONTEST/4.png" || path == "/assets/img/homepage/CONTEST/5.png" || path == "/assets/img/homepage/CONTEST/6.png" || path == "/assets/img/homepage/CONTEST/7.png") 
     {
-        document.getElementById('background_image').style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/3.gif")';
-        document.getElementById('text1').style.display = 'none';
-        document.getElementById('text').style.display = 'none';
-        document.getElementById('text2').style.display = 'block';
-        document.getElementById('text3').style.display = 'none';
-        document.getElementById('text4').style.display = 'none';
+        background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/3.gif')";
+        document.getElementById("text1").style.display = 'none';
+        document.getElementById("text").style.display = 'none';
+        document.getElementById("text2").style.display = 'block';
+        document.getElementById("text3").style.display = 'none';
+        document.getElementById("text4").style.display = 'none';
+        slideshow.style.left="45%";
+        slideshow.style.top="-10%";
     
     }
-    else if(path == '/assets/img/homepage/E-STORE/1.png' || path == '/assets/img/homepage/E-STORE/2.png' || path == '/assets/img/homepage/E-STORE/3.png' || path == '/assets/img/homepage/E-STORE/4.png' || path == '/assets/img/homepage/E-STORE/5.png' || path == '/assets/img/homepage/E-STORE/6.png' || path == '/assets/img/homepage/E-STORE/7.png') 
+    else if(path == "/assets/img/homepage/E-STORE/1.png" || path == "/assets/img/homepage/E-STORE/2.png" || path == "/assets/img/homepage/E-STORE/3.png" || path == "/assets/img/homepage/E-STORE/4.png" || path == "/assets/img/homepage/E-STORE/5.png" || path == "/assets/img/homepage/E-STORE/6.png" || path == "/assets/img/homepage/E-STORE/7.png") 
     {
-        document.getElementById('background_image').style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/4.gif")';
-        document.getElementById('text1').style.display = 'none';
-        document.getElementById('text').style.display = 'none';
-        document.getElementById('text2').style.display = 'none';
-        document.getElementById('text3').style.display = 'block';
-        document.getElementById('text4').style.display = 'none';
+        background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/4.gif')";
+        document.getElementById("text1").style.display = 'none';
+        document.getElementById("text").style.display = 'none';
+        document.getElementById("text2").style.display = 'none';
+        document.getElementById("text3").style.display = 'block';
+        document.getElementById("text4").style.display = 'none';
+        slideshow.style.left="48%";
+        slideshow.style.top="-8%";
     }
-    else if(path == '/assets/img/homepage/SERVICES/1.png' || path == '/assets/img/homepage/SERVICES/2.png' || path == '/assets/img/homepage/SERVICES/3.png' || path == '/assets/img/homepage/SERVICES/4.png' || path == '/assets/img/homepage/SERVICES/5.png' || path == '/assets/img/homepage/SERVICES/6.png' || path == '/assets/img/homepage/SERVICES/7.png') 
+    else if(path == "/assets/img/homepage/SERVICES/1.png" || path == "/assets/img/homepage/SERVICES/2.png" || path == "/assets/img/homepage/SERVICES/3.png" || path == "/assets/img/homepage/SERVICES/4.png" || path == "/assets/img/homepage/SERVICES/5.png" || path == "/assets/img/homepage/SERVICES/6.png" || path == "/assets/img/homepage/SERVICES/7.png") 
     {
-        document.getElementById('background_image').style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/5.gif")';
-        document.getElementById('text1').style.display = 'none';
-        document.getElementById('text').style.display = 'none';
-        document.getElementById('text2').style.display = 'none';
-        document.getElementById('text3').style.display = 'none';
-        document.getElementById('text4').style.display = 'block';
+        background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/5.gif')";
+        document.getElementById("text1").style.display = 'none';
+        document.getElementById("text").style.display = 'none';
+        document.getElementById("text2").style.display = 'none';
+        document.getElementById("text3").style.display = 'none';
+        document.getElementById("text4").style.display = 'block';
+        slideshow.style.left="46%";
+        slideshow.style.top="-20%";
     }
-    else if(path == '/assets/img/homepage/CREATIVESTUDIO/1.png' || path == '/assets/img/homepage/CREATIVESTUDIO/2.png' || path == '/assets/img/homepage/CREATIVESTUDIO/3.png' || path == '/assets/img/homepage/CREATIVESTUDIO/4.png' || path == '/assets/img/homepage/CREATIVESTUDIO/5.png' || path == '/assets/img/homepage/CREATIVESTUDIO/6.png' || path == '/assets/img/homepage/homepage/CREATIVESTUDIO/7.png') 
+    else if(path == "/assets/img/CREATIVESTUDIO/1.png" || path == "/assets/img/CREATIVESTUDIO/2.png" || path == "/assets/img/CREATIVESTUDIO/3.png" || path == "/assets/img/CREATIVESTUDIO/4.png" || path == "/assets/img/CREATIVESTUDIO/5.png" || path == "/assets/img/CREATIVESTUDIO/6.png" || path == "/assets/img/homepage/CREATIVESTUDIO/7.png") 
     {
-        document.getElementById('background_image').style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/1.gif")';
-        document.getElementById('text1').style.display = 'none';
-        document.getElementById('text').style.display = 'block';
-        document.getElementById('text2').style.display = 'none';
-        document.getElementById('text3').style.display = 'none';
-        document.getElementById('text4').style.display = 'none';
+        background.style.backgroundImage = "url('/assets/img/ANIMATIONS/1.gif')";
+        document.getElementById("text1").style.display = 'none';
+        document.getElementById("text").style.display = 'block';
+        document.getElementById("text2").style.display = 'none';
+        document.getElementById("text3").style.display = 'none';
+        document.getElementById("text4").style.display = 'none';
+        slideshow.style.left="22%";
+        slideshow.style.top="19%";
     }
 }
 function rotateimage(e){
@@ -100,68 +111,68 @@ function rotateimage(e){
         return false;
  
 }
-var mousewheelevt=(/Firefox/i.test(navigator.userAgent))? 'DOMMouseScroll' : 'mousewheel'; //FF doesn't recognize mousewheel as of FF3.x
+var mousewheelevt=(/Firefox/i.test(navigator.userAgent))? "DOMMouseScroll" : "mousewheel"; //FF doesn't recognize mousewheel as of FF3.x
  
 if (window.attachEvent) //if IE (and Opera depending on user setting)
-    window.attachEvent('on'+mousewheelevt, rotateimage);
+    window.attachEvent("on"+mousewheelevt, rotateimage);
 else if (window.addEventListener) //WC3 browsers
     window.addEventListener(mousewheelevt, rotateimage, false);
 
 
-$('.MenuContent').hide();
-$( '.commonMenu__icon' ).click(function() {
+$(".MenuContent").hide();
+$( ".commonMenu__icon" ).click(function() {
     $(this).hide();
-    $('.MenuContent').show();
+    $(".MenuContent").show();
 });
-$( '.MenuContent__close').click(function() {
-    $('.MenuContent').hide();
-    $('.commonMenu__icon').show();
+$( ".MenuContent__close").click(function() {
+    $(".MenuContent").hide();
+    $(".commonMenu__icon").show();
 });
 
 
-$("input[type=radio]").click(function () {
-var radio=$('.selectInput input[type="radio"]:checked').val();
-var radioDetail=$('.blogDetail__title').text();
-var radioDetail1=$('.blogDetail__title1').text();
-var radioDetail2=$('.blogDetail__title2').text();
-var radioDetail3=$('.blogDetail__title3').text();
-var radioDetail4=$('.blogDetail__title4').text();
-var radioDetail5=$('.blogDetail__title5').text();
+$('input[type=radio]').click(function () {
+var radio=$(".selectInput input[type='radio']:checked").val();
+var radioDetail=$(".blogDetail__title").text();
+var radioDetail1=$(".blogDetail__title1").text();
+var radioDetail2=$(".blogDetail__title2").text();
+var radioDetail3=$(".blogDetail__title3").text();
+var radioDetail4=$(".blogDetail__title4").text();
+var radioDetail5=$(".blogDetail__title5").text();
 if(radio == radioDetail) {
-    $('.blog-filter1').show();
+    $(".blog-filter1").show();
 }
 else {
-    $('.blog-filter1').hide();
+    $(".blog-filter1").hide();
 }
 if(radio == radioDetail1) {
-    $('.blog-filter2').show();
+    $(".blog-filter2").show();
 }
 else {
-    $('.blog-filter2').hide();
+    $(".blog-filter2").hide();
 }
 if(radio == radioDetail2) {
-    $('.blog-filter3').show();
+    $(".blog-filter3").show();
 }
 else {
-    $('.blog-filter3').hide();
+    $(".blog-filter3").hide();
 }
 if(radio == radioDetail3) {
-    $('.blog-filter4').show();
+    $(".blog-filter4").show();
 }
 else {
-    $('.blog-filter4').hide();
+    $(".blog-filter4").hide();
 }
 if(radio == radioDetail4) {
-    $('.blog-filter5').show();
+    $(".blog-filter5").show();
 }
 else {
-    $('.blog-filter5').hide();
+    $(".blog-filter5").hide();
 }
 if(radio == radioDetail5) {
-    $('.blog-filter6').show();
+    $(".blog-filter6").show();
 }
 else {
-    $('.blog-filter6').hide();
+    $(".blog-filter6").hide();
 }
 });
 

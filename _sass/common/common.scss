@@ -38,7 +38,9 @@
 body,.row,h5,h6 {
     margin: 0;
 }
-
+a {
+    text-decoration: none;
+}
 $primary-titlefamily: "montserrat-regular";
 $secondary-titlefamily: "montserrat-light";
 $ternary-titlefamily: "montserrat-bold";

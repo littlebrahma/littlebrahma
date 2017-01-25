@@ -32,10 +32,11 @@
         margin-top: 0;
         padding: 60px 0 0;
         &__ele {
-            padding: 6px 20px;
+            margin-bottom: 5px;
+            padding: 8px 20px;
             &:hover, &:active, &:focus {
                 border-left: 5px solid #EC1944;
-                padding: 6px 20px 6px 15px;
+                padding: 8px 20px 8px 15px;
             }
         }
         &__attr {
@@ -72,6 +73,17 @@
         }
         .MenuList {
             padding: 30px 0 0;
+            &__ele {
+                &:hover,&:active,&:focus {
+                    border-left: none;
+                }
+            }
+            &__attr {
+                &:hover,&:active,&:focus {
+                    border-bottom: 1px solid #ec1944;
+                    padding-bottom: 8px;
+                }
+            }
         }
         .menuMob {
             display: block;
