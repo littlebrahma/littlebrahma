@@ -15,14 +15,15 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: right top;
-        height: 100%;
-        width: 100%;
-        position: relative;
+        height: 380px;
+        position: fixed;
+        width: 330px;
         &__img {
-            height: auto;
-            position: absolute;
-            left: 26%;
-            top: 20%;
+            height: 166px;
+            left: 12%;
+            position: relative;
+            top: 24%;
+            width: 219px;
         }
     }
     .homepageContent {
