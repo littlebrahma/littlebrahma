@@ -37,13 +37,11 @@ var myimages=[
  
 var slideshow=document.getElementById('slideshow');
 var nextslideindex=0;
-var background=document.getElementById('background_image');
 function myFunction() {
-    var background=document.getElementById('background_image');
     var path=$('#slideshow').attr('src');
     if(path == '/assets/img/homepage/PORTFOLIO/1.png' || path == '/assets/img/homepage/PORTFOLIO/2.png' || path == '/assets/img/homepage/PORTFOLIO/3.png' || path == '/assets/img/homepage/PORTFOLIO/4.png' || path == '/assets/img/homepage/PORTFOLIO/5.png' || path == '/assets/img/homepage/PORTFOLIO/6.png' || path == '/assets/img/homepage/PORTFOLIO/7.png') 
     {
-        background.style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/2.gif")';
+        document.getElementById('background_image').style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/2.gif")';
         document.getElementById('text1').style.display = 'block';
         document.getElementById('text').style.display = 'none';
         document.getElementById('text2').style.display = 'none';
@@ -53,7 +51,7 @@ function myFunction() {
     }
     else if(path == '/assets/img/homepage/CONTEST/1.png' || path == '/assets/img/homepage/CONTEST/2.png' || path == '/assets/img/homepage/CONTEST/3.png' || path == '/assets/img/homepage/CONTEST/4.png' || path == '/assets/img/homepage/CONTEST/5.png' || path == '/assets/img/homepage/CONTEST/6.png' || path == '/assets/img/homepage/CONTEST/7.png') 
     {
-        background.style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/3.gif")';
+        document.getElementById('background_image').style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/3.gif")';
         document.getElementById('text1').style.display = 'none';
         document.getElementById('text').style.display = 'none';
         document.getElementById('text2').style.display = 'block';
@@ -63,7 +61,7 @@ function myFunction() {
     }
     else if(path == '/assets/img/homepage/E-STORE/1.png' || path == '/assets/img/homepage/E-STORE/2.png' || path == '/assets/img/homepage/E-STORE/3.png' || path == '/assets/img/homepage/E-STORE/4.png' || path == '/assets/img/homepage/E-STORE/5.png' || path == '/assets/img/homepage/E-STORE/6.png' || path == '/assets/img/homepage/E-STORE/7.png') 
     {
-        background.style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/4.gif")';
+        document.getElementById('background_image').style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/4.gif")';
         document.getElementById('text1').style.display = 'none';
         document.getElementById('text').style.display = 'none';
         document.getElementById('text2').style.display = 'none';
@@ -72,7 +70,7 @@ function myFunction() {
     }
     else if(path == '/assets/img/homepage/SERVICES/1.png' || path == '/assets/img/homepage/SERVICES/2.png' || path == '/assets/img/homepage/SERVICES/3.png' || path == '/assets/img/homepage/SERVICES/4.png' || path == '/assets/img/homepage/SERVICES/5.png' || path == '/assets/img/homepage/SERVICES/6.png' || path == '/assets/img/homepage/SERVICES/7.png') 
     {
-        background.style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/5.gif")';
+        document.getElementById('background_image').style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/5.gif")';
         document.getElementById('text1').style.display = 'none';
         document.getElementById('text').style.display = 'none';
         document.getElementById('text2').style.display = 'none';
@@ -81,7 +79,7 @@ function myFunction() {
     }
     else if(path == '/assets/img/homepage/CREATIVESTUDIO/1.png' || path == '/assets/img/homepage/CREATIVESTUDIO/2.png' || path == '/assets/img/homepage/CREATIVESTUDIO/3.png' || path == '/assets/img/homepage/CREATIVESTUDIO/4.png' || path == '/assets/img/homepage/CREATIVESTUDIO/5.png' || path == '/assets/img/homepage/CREATIVESTUDIO/6.png' || path == '/assets/img/homepage/homepage/CREATIVESTUDIO/7.png') 
     {
-        background.style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/1.gif")';
+        document.getElementById('background_image').style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/1.gif")';
         document.getElementById('text1').style.display = 'none';
         document.getElementById('text').style.display = 'block';
         document.getElementById('text2').style.display = 'none';
