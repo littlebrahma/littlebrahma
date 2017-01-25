@@ -41,7 +41,7 @@ function myFunction() {
     var path=$('#slideshow').attr('src');
     if(path == '/assets/img/homepage/PORTFOLIO/1.png' || path == '/assets/img/homepage/PORTFOLIO/2.png' || path == '/assets/img/homepage/PORTFOLIO/3.png' || path == '/assets/img/homepage/PORTFOLIO/4.png' || path == '/assets/img/homepage/PORTFOLIO/5.png' || path == '/assets/img/homepage/PORTFOLIO/6.png' || path == '/assets/img/homepage/PORTFOLIO/7.png') 
     {
-        document.getElementById('background_image').style.backgroundImage = 'url("/assets/img/homepage/ANIMATIONS/2.gif")';
+        document.getElementById('background_image').style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
         document.getElementById('text1').style.display = 'block';
         document.getElementById('text').style.display = 'none';
         document.getElementById('text2').style.display = 'none';
