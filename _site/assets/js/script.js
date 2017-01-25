@@ -37,6 +37,7 @@ var myimages=[
  
 var slideshow=document.getElementById('slideshow');
 var nextslideindex=0;
+var background=document.getElementById('background_image');
 function myFunction() {
     var background=document.getElementById('background_image');
     var path=$('#slideshow').attr('src');
