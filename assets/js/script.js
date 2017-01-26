@@ -13,6 +13,7 @@ var myimages=[
     "/assets/img/homepage/PORTFOLIO/5.png",
     "/assets/img/homepage/PORTFOLIO/6.png",
     "/assets/img/homepage/PORTFOLIO/7.png",
+    "/assets/img/homepage/CONTEST/7.png",
     "/assets/img/homepage/CONTEST/6.png",
     "/assets/img/homepage/CONTEST/5.png",
     "/assets/img/homepage/CONTEST/4.png",
