@@ -41,6 +41,7 @@ var nextslideindex=0;
 function myFunction() {
     var background=document.getElementById("background_image");
     var path=$("#slideshow").attr('src');
+    console.log(path);
     if(path == "/assets/img/homepage/PORTFOLIO/1.png" || path == "/assets/img/homepage/PORTFOLIO/2.png" || path == "/assets/img/homepage/PORTFOLIO/3.png" || path == "/assets/img/homepage/PORTFOLIO/4.png" || path == "/assets/img/homepage/PORTFOLIO/5.png" || path == "/assets/img/homepage/PORTFOLIO/6.png" || path == "/assets/img/homepage/PORTFOLIO/7.png") 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/3.gif')";
