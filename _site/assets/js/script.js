@@ -48,9 +48,6 @@ function myFunction() {
         document.getElementById("text2").style.display = 'none';
         document.getElementById("text3").style.display = 'none';
         document.getElementById("text4").style.display = 'none';
-        slideshow.style.left="48%";
-        slideshow.style.top="12%";
-    
     }
     else if(path == "/assets/img/homepage/CONTEST/1.png" || path == "/assets/img/homepage/CONTEST/2.png" || path == "/assets/img/homepage/CONTEST/3.png" || path == "/assets/img/homepage/CONTEST/4.png" || path == "/assets/img/homepage/CONTEST/5.png" || path == "/assets/img/homepage/CONTEST/6.png" || path == "/assets/img/homepage/CONTEST/7.png") 
     {
@@ -60,8 +57,6 @@ function myFunction() {
         document.getElementById("text2").style.display = 'block';
         document.getElementById("text3").style.display = 'none';
         document.getElementById("text4").style.display = 'none';
-        slideshow.style.left="45%";
-        slideshow.style.top="-10%";
     
     }
     else if(path == "/assets/img/homepage/E-STORE/1.png" || path == "/assets/img/homepage/E-STORE/2.png" || path == "/assets/img/homepage/E-STORE/3.png" || path == "/assets/img/homepage/E-STORE/4.png" || path == "/assets/img/homepage/E-STORE/5.png" || path == "/assets/img/homepage/E-STORE/6.png" || path == "/assets/img/homepage/E-STORE/7.png") 
@@ -72,8 +67,6 @@ function myFunction() {
         document.getElementById("text2").style.display = 'none';
         document.getElementById("text3").style.display = 'block';
         document.getElementById("text4").style.display = 'none';
-        slideshow.style.left="48%";
-        slideshow.style.top="-8%";
     }
     else if(path == "/assets/img/homepage/SERVICES/1.png" || path == "/assets/img/homepage/SERVICES/2.png" || path == "/assets/img/homepage/SERVICES/3.png" || path == "/assets/img/homepage/SERVICES/4.png" || path == "/assets/img/homepage/SERVICES/5.png" || path == "/assets/img/homepage/SERVICES/6.png" || path == "/assets/img/homepage/SERVICES/7.png") 
     {
@@ -83,8 +76,6 @@ function myFunction() {
         document.getElementById("text2").style.display = 'none';
         document.getElementById("text3").style.display = 'none';
         document.getElementById("text4").style.display = 'block';
-        slideshow.style.left="46%";
-        slideshow.style.top="-20%";
     }
     else if(path == "/assets/img/homepage/CREATIVESTUDIO/1.png" || path == "/assets/img/homepage/CREATIVESTUDIO/2.png" || path == "/assets/img/homepage/CREATIVESTUDIO/3.png" || path == "/assets/img/homepage/CREATIVESTUDIO/4.png" || path == "/assets/img/homepage/CREATIVESTUDIO/5.png" || path == "/assets/img/homepage/CREATIVESTUDIO/6.png" || path == "/assets/img/homepage/CREATIVESTUDIO/7.png") 
     {
@@ -94,8 +85,6 @@ function myFunction() {
         document.getElementById("text2").style.display = 'none';
         document.getElementById("text3").style.display = 'none';
         document.getElementById("text4").style.display = 'none';
-        slideshow.style.left="22%";
-        slideshow.style.top="19%";
     }
 }
 function rotateimage(e){
