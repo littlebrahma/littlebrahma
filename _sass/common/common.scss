@@ -117,6 +117,9 @@ $common-width: 100%;
         text-align: center;
         padding-top: 48px;
         color: $secondary-color;
+        img {
+            margin-bottom: 32px;
+        }
         &__heading {
             font-size: $secondary-headingfont;
             font-family: $ternary-titlefamily;

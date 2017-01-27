@@ -10,4 +10,5 @@ sass:
     style: compressed
 collections:
   portfolios:
+  casestudy:
 include: ["_pages"]
