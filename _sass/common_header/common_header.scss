@@ -63,10 +63,14 @@
             padding: 0 30px;
             &__logo {
                 padding: 20px 0 0;
+                height: 55px;
             }
         }
         .commonMenu {
-            padding: 50px 0 0;
+            padding: 35px 0 0;
+            img {
+                height: 20px
+            }
         }
         .MenuContent {
             width: 100%;
