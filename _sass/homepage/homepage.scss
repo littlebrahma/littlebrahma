@@ -9,6 +9,7 @@
     }
     .homepageRow {
         padding: 0 250px 0 250px;
+        display: block;
     }
     .homepageBgImg {
         background-image: url("/assets/img/homepage/ANIMATIONS/1.gif");
@@ -51,6 +52,86 @@
         &__border {
             width: 50px;
             border-top: 5px solid #fff;
+        }
+    }
+    .mobTabSection {
+        display: block;
+    }
+    @media screen and (min-width: 320px) and (max-width: 1024px) {
+        .homepageRow {
+            display: none;
+        }
+        .mobTabSection {
+            display: block;
+        }
+        .homepageContent {
+            &__img {
+            }
+
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        .homepageContent {
+            text-align: center;
+            color: $secondary-color;
+            &__img {
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+                margin-top: -96px;
+            }
+            &__heading {
+                font-family: $ternary-titlefamily;
+                font-size: 18px;
+            }
+            &__para {
+                font-family: $primary-contentfamily;
+                font-size: $ternary-contentfont;
+            }
+            &__button {
+                font-family: $ternary-contentfamily;
+                font-size: 9px;
+                width: 100px;
+                height: 25px;
+            }
+            .pf-mob .slick-slider {
+        margin: 0 15px;
+    }
+    .slick-track {
+        height: inherit;
+    }
+    .slick-dots {
+        height: 20px;
+    }
+    .slick-list {
+        height: inherit !important;
+    }
+    .slick-dots li button::before {
+        color: #fff;
+        opacity: 1;
+        font-size: 12px;
+    }
+    .slick-dots li.slick-active button::before {
+        opacity: 1;
+    }
+    .slick-dots #slick-slide00.slick-active button::before {
+        color: #A7DBAB;
+    }
+    .slick-dots #slick-slide01.slick-active button::before {
+        color: #36474F;
+    }
+    .slick-dots #slick-slide02.slick-active button::before {
+        color: #E07F79;
+    }
+    .slick-dots #slick-slide03.slick-active button::before {
+        color: #B765A5;
+    }
+    .slick-dots li button {
+        padding: 0;
+    }
+    .slick-dots li {
+        margin: 0;
+    }
         }
     }
 }
