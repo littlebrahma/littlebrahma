@@ -38,8 +38,9 @@ var myimages=[
  
 var slideshow=document.getElementById("slideshow");
 var nextslideindex=0;
+var background=document.getElementById("background_image");
+var tab=$(this).data("id");
 function myFunction() {
-    var background=document.getElementById("background_image");
     var path=$("#slideshow").attr('src');
     console.log(path);
     if(path == "/assets/img/homepage/PORTFOLIO/1.png" || path == "/assets/img/homepage/PORTFOLIO/2.png" || path == "/assets/img/homepage/PORTFOLIO/3.png" || path == "/assets/img/homepage/PORTFOLIO/4.png" || path == "/assets/img/homepage/PORTFOLIO/5.png" || path == "/assets/img/homepage/PORTFOLIO/6.png" || path == "/assets/img/homepage/PORTFOLIO/7.png") 
@@ -50,6 +51,15 @@ function myFunction() {
         document.getElementById("text2").style.display = 'none';
         document.getElementById("text3").style.display = 'none';
         document.getElementById("text4").style.display = 'none';
+        $(".scroll-indicators li[data-id=2]").addClass('active');
+        $(".scroll-indicators li[data-id=1]").removeClass('active');
+        $(".scroll-indicators li[data-id=3]").removeClass('active');
+        $(".scroll-indicators li[data-id=4]").removeClass('active');
+        $(".scroll-indicators li[data-id=5]").removeClass('active');
+        slideshow.style.height= '150px';
+        slideshow.style.left= '32%';
+        slideshow.style.top= '30%';
+        slideshow.style.width= '150px';
     }
     else if(path == "/assets/img/homepage/CONTEST/1.png" || path == "/assets/img/homepage/CONTEST/2.png" || path == "/assets/img/homepage/CONTEST/3.png" || path == "/assets/img/homepage/CONTEST/4.png" || path == "/assets/img/homepage/CONTEST/5.png" || path == "/assets/img/homepage/CONTEST/6.png" || path == "/assets/img/homepage/CONTEST/7.png") 
     {
@@ -59,6 +69,15 @@ function myFunction() {
         document.getElementById("text2").style.display = 'block';
         document.getElementById("text3").style.display = 'none';
         document.getElementById("text4").style.display = 'none';
+        $(".scroll-indicators li[data-id=3]").addClass('active');
+        $(".scroll-indicators li[data-id=1]").removeClass('active');
+        $(".scroll-indicators li[data-id=2]").removeClass('active');
+        $(".scroll-indicators li[data-id=4]").removeClass('active');
+        $(".scroll-indicators li[data-id=5]").removeClass('active');
+        slideshow.style.height= '188px';
+        slideshow.style.left= '26%';
+        slideshow.style.top= '3%';
+        slideshow.style.width= '158px';
     
     }
     else if(path == "/assets/img/homepage/E-STORE/1.png" || path == "/assets/img/homepage/E-STORE/2.png" || path == "/assets/img/homepage/E-STORE/3.png" || path == "/assets/img/homepage/E-STORE/4.png" || path == "/assets/img/homepage/E-STORE/5.png" || path == "/assets/img/homepage/E-STORE/6.png" || path == "/assets/img/homepage/E-STORE/7.png") 
@@ -69,6 +88,15 @@ function myFunction() {
         document.getElementById("text2").style.display = 'none';
         document.getElementById("text3").style.display = 'block';
         document.getElementById("text4").style.display = 'none';
+        $(".scroll-indicators li[data-id=4]").addClass('active');
+        $(".scroll-indicators li[data-id=1]").removeClass('active');
+        $(".scroll-indicators li[data-id=3]").removeClass('active');
+        $(".scroll-indicators li[data-id=2]").removeClass('active');
+        $(".scroll-indicators li[data-id=5]").removeClass('active');
+        slideshow.style.height= '188px';
+        slideshow.style.left= '36%';
+        slideshow.style.top= '-2%';
+        slideshow.style.width= '158px';
     }
     else if(path == "/assets/img/homepage/SERVICES/1.png" || path == "/assets/img/homepage/SERVICES/2.png" || path == "/assets/img/homepage/SERVICES/3.png" || path == "/assets/img/homepage/SERVICES/4.png" || path == "/assets/img/homepage/SERVICES/5.png" || path == "/assets/img/homepage/SERVICES/6.png" || path == "/assets/img/homepage/SERVICES/7.png") 
     {
@@ -78,6 +106,15 @@ function myFunction() {
         document.getElementById("text2").style.display = 'none';
         document.getElementById("text3").style.display = 'none';
         document.getElementById("text4").style.display = 'block';
+        $(".scroll-indicators li[data-id=5]").addClass('active');
+        $(".scroll-indicators li[data-id=1]").removeClass('active');
+        $(".scroll-indicators li[data-id=3]").removeClass('active');
+        $(".scroll-indicators li[data-id=4]").removeClass('active');
+        $(".scroll-indicators li[data-id=2]").removeClass('active');
+        slideshow.style.height= '272px';
+        slideshow.style.left= '28%';
+        slideshow.style.top= '-8%';
+        slideshow.style.width= '158px';
     }
     else if(path == "/assets/img/homepage/CREATIVESTUDIO/1.png" || path == "/assets/img/homepage/CREATIVESTUDIO/2.png" || path == "/assets/img/homepage/CREATIVESTUDIO/3.png" || path == "/assets/img/homepage/CREATIVESTUDIO/4.png" || path == "/assets/img/homepage/CREATIVESTUDIO/5.png" || path == "/assets/img/homepage/CREATIVESTUDIO/6.png" || path == "/assets/img/homepage/CREATIVESTUDIO/7.png") 
     {
@@ -87,6 +124,15 @@ function myFunction() {
         document.getElementById("text2").style.display = 'none';
         document.getElementById("text3").style.display = 'none';
         document.getElementById("text4").style.display = 'none';
+        $(".scroll-indicators li[data-id=1]").addClass('active');
+        $(".scroll-indicators li[data-id=2]").removeClass('active');
+        $(".scroll-indicators li[data-id=3]").removeClass('active');
+        $(".scroll-indicators li[data-id=4]").removeClass('active');
+        $(".scroll-indicators li[data-id=5]").removeClass('active');
+        slideshow.style.height= '166px';
+        slideshow.style.left= '12%';
+        slideshow.style.top= '24%';
+        slideshow.style.width= '219px';
     }
 }
 function rotateimage(e){
@@ -166,17 +212,64 @@ else {
     $(".blog-filter6").hide();
 }
 });
-
-// $('.mobTabSection__division').slick({
-//         autoPlay:true,
-//         dots: true,
-//         vertical: true,
-//         infinite: true,
-//         slidesToShow: 1,
-//         arrows: false,
-//         adaptiveHeight: 400,
-//         slidesToScroll: 1
-// });
+$(".scroll-indicators li").click(function(){
+    
+    if ( tab == 1) {
+        $('#text').show();
+        $('#text1').hide();
+        $('#text2').hide();
+        $('#text3').hide();
+        $('#text4').hide();
+        background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/1.gif')";
+        $('#slideshow').attr("src", "/assets/img/homepage/CREATIVESTUDIO/1.png");
+        $(".scroll-indicators li").removeClass('active');
+        $(this).addClass('active');
+    }
+    else if ( tab == 2) {
+        $('#text1').show();
+         $('#text').hide();
+        $('#text2').hide();
+        $('#text3').hide();
+        $('#text4').hide();
+        background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/3.gif')";
+        $('#slideshow').attr("src", "/assets/img/homepage/PORTFOLIO/1.png");
+        $(".scroll-indicators li").removeClass('active');
+        $(this).addClass('active');
+    }
+    else if ( tab == 3) {
+        $('#text2').show();
+         $('#text1').hide();
+        $('#text').hide();
+        $('#text3').hide();
+        $('#text4').hide();
+        background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/4.gif')";
+        $('#slideshow').attr("src", "/assets/img/homepage/CONTEST/7.png");
+        $(".scroll-indicators li").removeClass('active');
+        $(this).addClass('active');
+    }
+    else if ( tab == 4) {
+        $('#text3').show();
+         $('#text1').hide();
+        $('#text2').hide();
+        $('#text').hide();
+        $('#text4').hide();
+        background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/5.gif')";
+        $('#slideshow').attr("src", "/assets/img/homepage/E-STORE/1.png");
+        $(".scroll-indicators li").removeClass('active');
+        $(this).addClass('active');
+    }
+    else if ( tab == 5) {
+        $('#text4').show();
+        $('#text1').hide();
+        $('#text2').hide();
+        $('#text').hide();
+        $('#text3').hide();
+        background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
+        $('#slideshow').attr("src", "/assets/img/homepage/SERVICES/1.png");
+        $(".scroll-indicators li").removeClass('active');
+        $(this).addClass('active');
+    }
+});
 
 });
 
