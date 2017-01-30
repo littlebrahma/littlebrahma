@@ -213,11 +213,8 @@ else {
 }
 });
 $(".scroll-indicators li").click(function(){
-
-    
     var tab=$(this).data("id");
     if ( tab == 1) {
-        //$("#slideshow").attr('src','/assets/img/homepage/PORTFOLIO/1.png');
         $('#text').show();
         $('#text1').hide();
         $('#text2').hide();
@@ -230,9 +227,8 @@ $(".scroll-indicators li").click(function(){
         nextslideindex=0;
     }
     else if ( tab == 2) {
-        //$("#slideshow").attr('src','/assets/img/homepage/PORTFOLIO/2.png');
         $('#text1').show();
-         $('#text').hide();
+        $('#text').hide();
         $('#text2').hide();
         $('#text3').hide();
         $('#text4').hide();
@@ -244,7 +240,7 @@ $(".scroll-indicators li").click(function(){
     }
     else if ( tab == 3) {
         $('#text2').show();
-         $('#text1').hide();
+        $('#text1').hide();
         $('#text').hide();
         $('#text3').hide();
         $('#text4').hide();
@@ -256,7 +252,7 @@ $(".scroll-indicators li").click(function(){
     }
     else if ( tab == 4) {
         $('#text3').show();
-         $('#text1').hide();
+        $('#text1').hide();
         $('#text2').hide();
         $('#text').hide();
         $('#text4').hide();
