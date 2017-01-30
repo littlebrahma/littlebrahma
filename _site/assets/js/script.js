@@ -213,8 +213,11 @@ else {
 }
 });
 $(".scroll-indicators li").click(function(){
+
+    
     var tab=$(this).data("id");
     if ( tab == 1) {
+        //$("#slideshow").attr('src','/assets/img/homepage/PORTFOLIO/1.png');
         $('#text').show();
         $('#text1').hide();
         $('#text2').hide();
@@ -224,8 +227,10 @@ $(".scroll-indicators li").click(function(){
         $('#slideshow').attr("src", "/assets/img/homepage/CREATIVESTUDIO/1.png");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
+        nextslideindex=0;
     }
     else if ( tab == 2) {
+        //$("#slideshow").attr('src','/assets/img/homepage/PORTFOLIO/2.png');
         $('#text1').show();
          $('#text').hide();
         $('#text2').hide();
@@ -235,6 +240,7 @@ $(".scroll-indicators li").click(function(){
         $('#slideshow').attr("src", "/assets/img/homepage/PORTFOLIO/1.png");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
+        nextslideindex=7;
     }
     else if ( tab == 3) {
         $('#text2').show();
@@ -246,6 +252,7 @@ $(".scroll-indicators li").click(function(){
         $('#slideshow').attr("src", "/assets/img/homepage/CONTEST/7.png");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
+        nextslideindex=14;
     }
     else if ( tab == 4) {
         $('#text3').show();
@@ -257,6 +264,7 @@ $(".scroll-indicators li").click(function(){
         $('#slideshow').attr("src", "/assets/img/homepage/E-STORE/1.png");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
+        nextslideindex=21;
     }
     else if ( tab == 5) {
         $('#text4').show();
@@ -268,7 +276,9 @@ $(".scroll-indicators li").click(function(){
         $('#slideshow').attr("src", "/assets/img/homepage/SERVICES/1.png");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
+        nextslideindex=28;
     }
+    myFunction();
 });
 
 });
