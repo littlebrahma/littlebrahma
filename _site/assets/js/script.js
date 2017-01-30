@@ -213,7 +213,7 @@ else {
 }
 });
 $(".scroll-indicators li").click(function(){
-    
+    var tab=$(this).data("id");
     if ( tab == 1) {
         $('#text').show();
         $('#text1').hide();
