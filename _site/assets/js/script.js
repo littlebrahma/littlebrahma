@@ -167,16 +167,16 @@ else {
 }
 });
 
-$('.mobTabSection__division').slick({
-        autoPlay:true,
-        dots: true,
-        vertical: true,
-        infinite: true,
-        slidesToShow: 1,
-        arrows: false,
-        adaptiveHeight: 400,
-        slidesToScroll: 1
-});
+// $('.mobTabSection__division').slick({
+//         autoPlay:true,
+//         dots: true,
+//         vertical: true,
+//         infinite: true,
+//         slidesToShow: 1,
+//         arrows: false,
+//         adaptiveHeight: 400,
+//         slidesToScroll: 1
+// });
 
 });
 
