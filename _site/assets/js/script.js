@@ -43,7 +43,7 @@ var tab=$(this).data("id");
 function myFunction() {
     var path=$("#slideshow").attr('src');
     console.log(path);
-    if(path == "/assets/img/homepage/PORTFOLIO/1.png" || path == "/assets/img/homepage/PORTFOLIO/2.png" || path == "/assets/img/homepage/PORTFOLIO/3.png" || path == "/assets/img/homepage/PORTFOLIO/4.png" || path == "/assets/img/homepage/PORTFOLIO/5.png" || path == "/assets/img/homepage/PORTFOLIO/6.png" || path == "/assets/img/homepage/PORTFOLIO/7.png") 
+    if(nextslideindex == 7) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/3.gif')";
         document.getElementById("text1").style.display = 'block';
@@ -61,7 +61,7 @@ function myFunction() {
         slideshow.style.top= '30%';
         slideshow.style.width= '150px';
     }
-    else if(path == "/assets/img/homepage/CONTEST/1.png" || path == "/assets/img/homepage/CONTEST/2.png" || path == "/assets/img/homepage/CONTEST/3.png" || path == "/assets/img/homepage/CONTEST/4.png" || path == "/assets/img/homepage/CONTEST/5.png" || path == "/assets/img/homepage/CONTEST/6.png" || path == "/assets/img/homepage/CONTEST/7.png") 
+    else if(nextslideindex == 14)
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/4.gif')";
         document.getElementById("text1").style.display = 'none';
@@ -80,7 +80,7 @@ function myFunction() {
         slideshow.style.width= '158px';
     
     }
-    else if(path == "/assets/img/homepage/E-STORE/1.png" || path == "/assets/img/homepage/E-STORE/2.png" || path == "/assets/img/homepage/E-STORE/3.png" || path == "/assets/img/homepage/E-STORE/4.png" || path == "/assets/img/homepage/E-STORE/5.png" || path == "/assets/img/homepage/E-STORE/6.png" || path == "/assets/img/homepage/E-STORE/7.png") 
+    else if(nextslideindex == 21) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/5.gif')";
         document.getElementById("text1").style.display = 'none';
@@ -98,7 +98,7 @@ function myFunction() {
         slideshow.style.top= '-2%';
         slideshow.style.width= '158px';
     }
-    else if(path == "/assets/img/homepage/SERVICES/1.png" || path == "/assets/img/homepage/SERVICES/2.png" || path == "/assets/img/homepage/SERVICES/3.png" || path == "/assets/img/homepage/SERVICES/4.png" || path == "/assets/img/homepage/SERVICES/5.png" || path == "/assets/img/homepage/SERVICES/6.png" || path == "/assets/img/homepage/SERVICES/7.png") 
+    else if(nextslideindex == 28) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
         document.getElementById("text1").style.display = 'none';
@@ -116,7 +116,7 @@ function myFunction() {
         slideshow.style.top= '-8%';
         slideshow.style.width= '158px';
     }
-    else if(path == "/assets/img/homepage/CREATIVESTUDIO/1.png" || path == "/assets/img/homepage/CREATIVESTUDIO/2.png" || path == "/assets/img/homepage/CREATIVESTUDIO/3.png" || path == "/assets/img/homepage/CREATIVESTUDIO/4.png" || path == "/assets/img/homepage/CREATIVESTUDIO/5.png" || path == "/assets/img/homepage/CREATIVESTUDIO/6.png" || path == "/assets/img/homepage/CREATIVESTUDIO/7.png") 
+    else if(nextslideindex == 0) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/1.gif')";
         document.getElementById("text1").style.display = 'none';
@@ -277,8 +277,6 @@ $(".scroll-indicators li").click(function(){
     myFunction();
 });
 
-$("#slideshow").hide();
-$("#slideshow").delay(3000).fadeIn(100);
 
 });
 
