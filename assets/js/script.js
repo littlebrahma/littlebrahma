@@ -277,9 +277,8 @@ $(".scroll-indicators li").click(function(){
     myFunction();
 });
 
-$('img').each(function(){
-  $(this).attr('src', $(this).attr('delayedsrc'));
-});
+$("#slideshow").hide();
+$("#slideshow").delay(1000).fadeIn(100);
 
 });
 
