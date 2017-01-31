@@ -78,6 +78,15 @@
 			}
 		}
 	}
+	@media screen and (min-width: 1866px) {
+		.blog-row {
+			.selectSection {
+				&__title {
+					font-size: 28px;
+				}
+			}
+		}
+	}
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		.blog-row {
 			padding: 40px 20px 0px 35px;
