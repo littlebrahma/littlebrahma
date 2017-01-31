@@ -112,9 +112,8 @@ $common-width: 100%;
         background-color: #FACBCC;
     }
     .commonHeight {
-        height: 307px;
         text-align: center;
-        padding-top: 48px;
+        padding: 40px 0 220px;
         color: $secondary-color;
         img {
             margin-bottom: 32px;
@@ -132,10 +131,6 @@ $common-width: 100%;
     }
     @media screen and (min-width: 1866px) {
         .commonHeight {
-            height: 307px;
-            text-align: center;
-            padding-top: 48px;
-            color: $secondary-color;
             &__heading {
                 font-size: $primary-headingfont;
             }
@@ -171,7 +166,6 @@ $common-width: 100%;
             display: none;
         }
         .commonHeight {
-            height: 240px;
             &__heading {
                 font-size: $ternary-headingfont;
             }
