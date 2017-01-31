@@ -278,7 +278,7 @@ $(".scroll-indicators li").click(function(){
 });
 
 $("#slideshow").hide();
-$("#slideshow").delay(1000).fadeIn(100);
+$("#slideshow").delay(3000).fadeIn(100);
 
 });
 
