@@ -13,7 +13,7 @@
     <div class="service-page">
     <h1 class="service-page__title">browse all graphic design services</h1>
     <div class="service-page__underline"></div>
-    {% assign item = site.service | sort: 'date' %}
+    {% assign item = site.service %}
     {% for services in item %}
       <div class="row service__all-design"> 
           <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 service__img">  
