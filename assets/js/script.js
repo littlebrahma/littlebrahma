@@ -277,5 +277,9 @@ $(".scroll-indicators li").click(function(){
     myFunction();
 });
 
+$('img').each(function(){
+  $(this).attr('src', $(this).attr('delayedsrc'));
+});
+
 });
 
