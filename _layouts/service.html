@@ -14,103 +14,26 @@
     <h1 class="service-page__title">browse all graphic design services</h1>
     <div class="service-page__underline"></div>
       <div class="row service__all-design"> 
+
+          {% assign item = site.service | sort: 'date' %}
+          {{item }}
+          {% for services in item %}
+      
           <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 service__img">  
-                   <img src="/assets/img/service/Mudras/1.png" class="service__all-img">
+                   <img src="{{services.img}}" class="service__all-img">
                </div>
                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 service__content">
-                  <h1 class="service-page__subtitle">branding</h1>
+                  <h1 class="service-page__subtitle">{{services.title}}</h1>
                    <div class="service-page__subtitle-underline"></div>
                     <ul class="service-page__unordered-list">
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">logo design</a></li>
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">collaterals / stationary designs</a></li>
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">web design (responsive and ux/ui)</a></li>
+                      {% for  serviceList in services.service_list %}
+                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">{{serviceList}}</a></li>
+                       {% endfor %}
                     </ul>
-                    <a class="service-page__link" href="#">know more >></a>
+                    <a class="service-page__link" href="{{services.url}}">know more >></a>
                </div>  
+               {% endfor %}
          </div>
-          <div class="row service__all-design">
-                      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 service__img">
-                                        <img src="/assets/img/service/Mudras/2.png" class="service__all-img">
-                      </div>
-                      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 service__content">
-                                        <h1 class="service-page__subtitle">web and mobile app design</h1>
-                                        <div class="service-page__subtitle-underline"></div>
-                                        <ul class="service-page__unordered-list">
-                                                  <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">mobile apps (android, ios)</a></li>
-                                                  <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">web apps</a></li>
-                                                  <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">app development</a></li>
-                                                  <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">dashboard design and reporting</a></li>
-                                                  <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">data visualization</a></li>
-                                        </ul>
-                                        <a class="service-page__link" href="#">know more >></a>
-                      </div>  
-          </div>
-          <div class="row service__all-design">
-                      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 service__img">
-                                         <img src="/assets/img/service/Mudras/3.png" class="service__all-img">
-                       </div>
-                      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 service__content">
-                                       <h1 class="service-page__subtitle">illustration and art</h1>
-                                       <div class="service-page__subtitle-underline"></div>
-                                       <ul class="service-page__unordered-list">
-                                                <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">illustrations</a></li>
-                                                <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">character and mascot</a></li>
-                                               <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">patterns</a></li>
-                                                <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">infographics</a></li>
-                                                <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">graphic design</a></li>
-                                        </ul>
-                                        <a class="service-page__link" href="#">know more >></a>
-                     </div>  
-          </div>
-          <div class="row service__all-design">
-               <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 service__img">
-                   <img src="/assets/img/service/Mudras/4.png" class="service__all-img">
-              </div>
-               <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 service__content">
-                  <h1 class="service-page__subtitle">animation</h1>
-                  <div class="service-page__subtitle-underline"></div>
-                  <ul class="service-page__unordered-list">
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">explanatory videos</a></li>
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">motion graphics</a></li>
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">logo animation</a></li>
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">corporate videos</a></li>
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">stop motion videos</a></li>
-                    </ul>
-                    <a class="service-page__link" href="#">know more >></a>
-               </div>  
-          </div>
-          <div class="row service__all-design">
-               <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 service__img">
-                  <img src="/assets/img/service/Mudras/5.png" class="service__all-img">
-               </div>
-               <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 service__content">
-                  <h1 class="service-page__subtitle">packaging and label</h1>
-                  <div class="service-page__subtitle-underline"></div>
-                  <ul class="service-page__unordered-list">
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">package design</a></li>
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">retail packaging</a></li>
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">product labels</a></li>
-                       
-                    </ul>
-                    <a class="service-page__link" href="#">know more >></a>
-              </div>  
-          </div>
-          <div class="row service__all-design">
-               <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 service__img">
-                   <img src="/assets/img/service/Mudras/6.png" class="service__all-img">
-               </div>
-               <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 service__content">
-                    <h1 class="service-page__subtitle">magazine and books</h1>
-                    <div class="service-page__subtitle-underline"></div>
-                    <ul class="service-page__unordered-list">
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">book design</a></li>
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">magazine design</a></li>
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">e-books</a></li>
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">comic books</a></li>
-                    </ul>
-                    <a class="service-page__link" href="#">know more >></a>
-                </div>  
-          </div>
        </div>  
     </div> 
  </section> 

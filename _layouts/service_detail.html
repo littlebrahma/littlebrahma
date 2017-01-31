@@ -6,22 +6,17 @@
    <div class="row service-detail">
 	    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">	       
 			         <img class="service-detail__img" src="/assets/img/service/Mudras/1.png">
-			         <h1 class="service-detail__title">branding</h1>
+			         <h1 class="service-detail__title">{{page.title}}</h1>
 			         <div class="service-detail__underline"></div>		       
 	    </div>
-	    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">             
+	    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+
+                      {% for service in page.service_lists %}       
           	         <div class="logo-design">
-          	         	<h1 class="service-detail__subtitle">Logo Design</h1>
-          	         	<p class="service-detail__para">We use human behavioural studies, psychology and multiple analytical tools to define what our users might like and provide them with what they want. We have realised long back that in today’s world, you cannot define the behaviour of users, it's us who would have to learn the user preferences and adapt ourselves. We try to merge functionality with pleasurable user experience and build marketing processes around it, rather than the other way around.</p>
+          	         	<h1 class="service-detail__subtitle">{{service.title}}</h1>
+                    	         	<p class="service-detail__para">{{service.description}}</p>
           	         </div>
-          	         <div class="collaterals">
-          	         	<h1 class="service-detail__subtitle">COLLATERALS/STATIONARY DESIGNS</h1>
-          	         	<p class="service-detail__para">We use human behavioural studies, psychology and multiple analytical tools to define what our users might like and provide them with what they want. We have realised long back that in today’s world, you cannot define the behaviour of users, it's us who would have to learn the user preferences and adapt ourselves. We try to merge functionality with pleasurable user experience and build marketing processes around it, rather than the other way around.</p>
-          	         </div>
-          	         <div class="web-design">
-          	         	<h1 class="service-detail__subtitle">WEB DESIGN (UI/UX)</h1>
-          	         	<p class="service-detail__para">We use human behavioural studies, psychology and multiple analytical tools to define what our users might like and provide them with what they want. We have realised long back that in today’s world, you cannot define the behaviour of users, it's us who would have to learn the user preferences and adapt ourselves. We try to merge functionality with pleasurable user experience and build marketing processes around it, rather than the other way around.</p>
-          	         </div>             
+                     {% endfor %}             
                      <a class="service-detail__link" href="#">view portfolio</a>
 	    </div>
    </div>

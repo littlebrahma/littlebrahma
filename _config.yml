@@ -10,5 +10,12 @@ sass:
     style: compressed
 collections:
   portfolios:
+    output: true
+    permalink: /portfolios/:path/
   casestudy:
+    output: true
+    permalink: /casestudy/:path/
+  service:
+    output: true
+    permalink: /service/:path/
 include: ["_pages"]
