@@ -1,7 +1,15 @@
 <header class="commonHeader">
-    <img src="/assets/img/common/LOGO_WHITE.png" class="commonHeader__logo">
+    {% if page.layout == "service_detail" %}
+        <img src="/assets/img/service/LOGO_RED.png" class="commonHeader__logo">
+    {% else %}
+        <img src="/assets/img/common/LOGO_WHITE.png" class="commonHeader__logo">
+    {% endif %}
     <span class="commonMenu">
-        <img src="/assets/img/common/MENU_WHITE.png" class="commonMenu__icon">
+        {% if page.layout == "service_detail" %}
+            <img src="/assets/img/service/MENU_RED.png" class="commonMenu__icon">
+        {% else %}
+            <img src="/assets/img/common/MENU_WHITE.png" class="commonMenu__icon">
+        {% endif %}
     </span>
     <div class="MenuContent">
         <img src="/assets/img/common/CLOSE.png" class="MenuContent__close">

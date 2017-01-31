@@ -13,12 +13,9 @@
     <div class="service-page">
     <h1 class="service-page__title">browse all graphic design services</h1>
     <div class="service-page__underline"></div>
+    {% assign item = site.service | sort: 'date' %}
+    {% for services in item %}
       <div class="row service__all-design"> 
-
-          {% assign item = site.service | sort: 'date' %}
-          {{item }}
-          {% for services in item %}
-      
           <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 service__img">  
                    <img src="{{services.img}}" class="service__all-img">
                </div>
@@ -26,14 +23,14 @@
                   <h1 class="service-page__subtitle">{{services.title}}</h1>
                    <div class="service-page__subtitle-underline"></div>
                     <ul class="service-page__unordered-list">
-                      {% for  serviceList in services.service_list %}
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">{{serviceList}}</a></li>
+                      {% for  serviceList in services.service_lists %}
+                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">{{serviceList.title}}</a></li>
                        {% endfor %}
                     </ul>
                     <a class="service-page__link" href="{{services.url}}">know more >></a>
                </div>  
-               {% endfor %}
          </div>
+      {% endfor %}
        </div>  
     </div> 
  </section> 
