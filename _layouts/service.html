@@ -24,7 +24,7 @@
                    <div class="service-page__subtitle-underline"></div>
                     <ul class="service-page__unordered-list">
                       {% for  serviceList in services.service_lists %}
-                       <li class="service-page__list"><a class="service-page__list-anchor" href="javascript:void(0)">{{serviceList.title}}</a></li>
+                       <li class="service-page__list"><a class="service-page__list-anchor" href="{{services.url}}">{{serviceList.title}}</a></li>
                        {% endfor %}
                     </ul>
                     <a class="service-page__link" href="{{services.url}}">know more >></a>
