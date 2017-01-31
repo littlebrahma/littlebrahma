@@ -278,6 +278,10 @@ $(".scroll-indicators li").click(function(){
     myFunction();
 });
 
+document.getElementById("background_image").style.display="hide";
+setTimeout(function() {
+        document.getElementById("background_image").style.display="show";
+    }, 5000); 
 
 });
 
