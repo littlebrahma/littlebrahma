@@ -43,7 +43,7 @@ var tab=$(this).data("id");
 function myFunction() {
     var path=$("#slideshow").attr('src');
     console.log(path);
-    if(nextslideindex == 7) 
+    if(nextslideindex == 6) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/3.gif')";
         document.getElementById("text1").style.display = 'block';
@@ -61,7 +61,7 @@ function myFunction() {
         slideshow.style.top= '30%';
         slideshow.style.width= '150px';
     }
-    else if(nextslideindex == 14)
+    else if(nextslideindex == 13)
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/4.gif')";
         document.getElementById("text1").style.display = 'none';
@@ -80,7 +80,7 @@ function myFunction() {
         slideshow.style.width= '158px';
     
     }
-    else if(nextslideindex == 21) 
+    else if(nextslideindex == 20) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/5.gif')";
         document.getElementById("text1").style.display = 'none';
@@ -98,7 +98,7 @@ function myFunction() {
         slideshow.style.top= '-2%';
         slideshow.style.width= '158px';
     }
-    else if(nextslideindex == 28) 
+    else if(nextslideindex == 27) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
         document.getElementById("text1").style.display = 'none';
