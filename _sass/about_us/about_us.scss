@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     color: white;
-    padding:0 0 2rem;
+    padding:0 0 100px;
 
  &__button {
     color: white;
@@ -52,9 +52,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    
-    padding:2rem 0;
+    color: white;   
+    padding:100px 0;
 }
 
 .our-mission-left__img {
@@ -65,10 +64,9 @@
     background-color: rgb(236, 236, 236);
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;  
     color: grey;
-    padding:2rem 0;
+    padding:100px 0;
 
 &__heading {
     color: rgb(69, 65, 69);
@@ -279,10 +277,19 @@
     }   
 }
 @media screen and (max-width: 1023px){
-    .about-us,.our-mission,.valuable-clients{
+    .about-us {
+         display: block;
+        height: auto;
+        padding:0 0 120px ;
+      &__button {
+        padding: 8px 20px;
+        font-size: 12px;
+    }  
+    }
+    .our-mission,.valuable-clients{
         display: block;
         height: auto;
-        padding: 120px 32px;
+        padding: 120px 0;
     }
     .about-us-left,.our-mission-left {
         margin:0 auto;
@@ -295,10 +302,6 @@
     .about-us-right {
         margin: 0 auto 10px;
         padding: 0px;
-    }
-    .about-us__button {
-        padding: 8px 20px;
-        font-size: 12px;
     }
     .our-mission-right {
         margin:0 auto;
@@ -406,18 +409,18 @@
             position:initial;
         }
     }
-    .about-us,.our-mission,.valuable-clients {
-        height: auto;
-        padding: 45px 32px;
+    .about-us{
+        padding:0 0 50px;
     }
-    
+        .our-mission,.valuable-clients {
+        height: auto;
+        padding: 50px 0;
+    }  
     .valuable-clients__underline {
         border-bottom: rgb(67, 66, 69) 5px solid;
         width: 65px;
 }
 }
-
-.about_us-Bg{
-    
+.about_us-Bg{   
     background:#1A1746;
 }
