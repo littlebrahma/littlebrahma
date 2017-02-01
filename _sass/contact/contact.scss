@@ -1,0 +1,66 @@
+.contact {
+	padding:70px 90px;
+	 &__title {
+	 	font-size: 21px;
+	 	font-family: montserrat-bold;
+	 	text-transform: uppercase;
+	 	color: #414042;
+	 	margin:0 0 7px;
+	 }
+	&__map {
+		text-align: right;
+		&__iframe {
+			height: 645px;
+			width: 100%;
+			max-width: 645px;
+		}
+	}
+	&__underline {
+		border-bottom: 3px solid black;
+		width: 60px;
+	}
+	&__address {
+		font-family: montserrat-regular;
+		font-size: 10px;
+		line-height: 18px;
+		color:#6D6E71;
+		margin-bottom: 50px;
+	}
+	&__span {
+		color:#414042;
+	}
+	&__form {
+		margin-top: 20px;
+	}
+	&__form-inside {
+	width: 310px;
+    padding: 11px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    font-family: raleway-regular;
+    font-size: 10px;
+    color:#666666;
+    display: block;
+	}
+	&__msg {
+		height: 80px;
+		font-family: raleway-italic;
+		margin-bottom: 25px;
+	}
+	&__submit {
+		padding:9px 24px;
+		background-color: #ec1944;
+		color:white;
+		text-transform: uppercase;
+		border-radius:5px;
+		font-family: montserrat-bold;
+		font-size: 14px;
+	}
+}
+@media screen and (max-width:991px){
+	.contact {
+		padding:40px 70px 60px;
+	}
+}
