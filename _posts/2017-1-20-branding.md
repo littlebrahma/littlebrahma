@@ -3,7 +3,7 @@ description: Lorem Ipsum is simply dummy text of the printing and type setting i
 category: BRANDING PRINCIPLES
 whole-class: blog-filter1
 common-class: blog-filter
-class: blogDetail__title
+class: blogDetail__title1
 landing_image: "/assets/img/blog/1_1.png"
 permalink: "/post/2017-1-20-branding/"
 tags: all

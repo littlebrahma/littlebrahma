@@ -170,43 +170,44 @@ $( ".MenuContent__close").click(function() {
 
 $('input[type=radio]').click(function () {
 var radio=$(".selectInput input[type='radio']:checked").val();
-var radioDetail=$(".blogDetail__title").text();
-var radioDetail1=$(".blogDetail__title1").text();
-var radioDetail2=$(".blogDetail__title2").text();
-var radioDetail3=$(".blogDetail__title3").text();
-var radioDetail4=$(".blogDetail__title4").text();
-var radioDetail5=$(".blogDetail__title5").text();
-if(radio == radioDetail) {
+var radio1=$(".selectInput input[type='radio']:checked .select__title").text();
+var radioDetail=$(".blogDetail__title1").text();
+var radioDetail1=$(".blogDetail__title2").text();
+var radioDetail2=$(".blogDetail__title3").text();
+var radioDetail3=$(".blogDetail__title4").text();
+var radioDetail4=$(".blogDetail__title5").text();
+var radioDetail5=$(".blogDetail__title6").text();
+if(radio == radioDetail || radio1 == radioDetail) {
     $(".blog-filter1").show();
 }
 else {
     $(".blog-filter1").hide();
 }
-if(radio == radioDetail1) {
+if(radio == radioDetail1 || radio1 == radioDetail1) {
     $(".blog-filter2").show();
 }
 else {
     $(".blog-filter2").hide();
 }
-if(radio == radioDetail2) {
+if(radio == radioDetail2 || radio1 == radioDetail2) {
     $(".blog-filter3").show();
 }
 else {
     $(".blog-filter3").hide();
 }
-if(radio == radioDetail3) {
+if(radio == radioDetail3 || radio1 == radioDetail3) {
     $(".blog-filter4").show();
 }
 else {
     $(".blog-filter4").hide();
 }
-if(radio == radioDetail4) {
+if(radio == radioDetail4 || radio1 == radioDetail4) {
     $(".blog-filter5").show();
 }
 else {
     $(".blog-filter5").hide();
 }
-if(radio == radioDetail5) {
+if(radio == radioDetail5 || radio1 == radioDetail5) {
     $(".blog-filter6").show();
 }
 else {
@@ -276,6 +277,21 @@ $(".scroll-indicators li").click(function(){
         nextslideindex=27;
     }
     myFunction();
+});
+$(".tab_indicator li a").click(function(){
+   var href = $(this).attr('href');
+    if ( href == "#about_us" ) {
+        $(".tab_indicator li a").removeClass('active');
+        $(this).addClass('active');
+    }
+    else if ( href == "#our_mission" ) {
+        $(".tab_indicator li a").removeClass('active');
+        $(this).addClass('active');
+    }
+    else if ( href == "#valuable_clients" ) {
+        $(".tab_indicator li a").removeClass('active');
+        $(this).addClass('active');
+    }
 });
 
 });

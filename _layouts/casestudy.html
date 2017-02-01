@@ -13,7 +13,7 @@
 			<h5 class="selectSection__title">SELECT CATEGORY</h5>
 			<div class="selectSection__border"></div>
 			<div class="selectInput">
-	  			<input id="branding" type="radio" name="field" value="BRANDING PRINCIPLES">
+	  			<input id="branding" type="radio" name="field" value="BRANDING">
 	  			<label for="branding" class="branding"><span class="select__radio"><span></span></span><span class="select__title">BRANDING</span></label>
   			</div>
   			<div class="selectInput">
@@ -41,10 +41,10 @@
 			<div class="row">
 				{% assign item = site.casestudy | sort: 'date' %}
 				{% for case in item %}
-					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 paddingLeftRight blog-filter {{port.whole-class}}">
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 paddingLeftRight blog-filter {{case.whole-class}}">
 							<img src="{{case.landing_image}}" class="blog-filter__img">
 						<div class="caseDetail">
-							<h5 class="{{case.class}}">{{case.title}}</h5>
+							<h5 class="caseDetail__title {{case.class}}">{{case.title}}</h5>
 							<div class="caseDetail__border"></div>
 							<p class="caseDetail__para">{{case.description}}</p>
 						</div>

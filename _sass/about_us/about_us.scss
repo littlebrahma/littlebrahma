@@ -159,6 +159,43 @@
     width: 120px;
 }
 }
+.tab-indicators,.tab-indicators1,.tab-indicators2 {
+    list-style: none;
+    position: relative;
+    right: 50px;
+    text-align: right;
+    bottom: 250px;
+    li {
+        margin-bottom: 10px;
+        a {
+            color: #fff;
+            opacity: 0.5;
+            font-family: $ternary-titlefamily;
+            font-size: $ternary-contentfont;
+        &.active {
+            color: #FFDE17;
+            opacity: 1;
+        }
+        }
+    }
+}
+.tab-indicators {
+    
+}
+.tab-indicators1 {
+}
+.tab-indicators2 {
+    li {
+        a{
+            color: $ternary-color;
+            opacity: 1;
+            &.active {
+                color: #EA2458;
+            }
+        }
+    }
+    
+}
 @media screen and (min-width: 1866px){
     .about-us,.valuable-clients,.our-mission {
         height: 1050px;
