@@ -1,7 +1,9 @@
 ---
-title: ILLUSTRATION & ART
-whole-class: blog-filter3
+category: ANIMATION
+title: ANIMATION
+whole-class: blog-filter4
 landing_image: "/assets/img/blog/1_1.png"
-class: common_class3
+class: blogDetail__title4
 description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the...
+tab: 4
 ---

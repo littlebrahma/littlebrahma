@@ -1,9 +1,9 @@
 ---
-category: BRANDING
-title: BRANDING
-whole-class: blog-filter1
+category: PACKAGING & LABEL
+title: PACKAGING & LABEL
+whole-class: blog-filter5
 landing_image: "/assets/img/blog/1_1.png"
-class: blogDetail__title1
+class: blogDetail__title5
 description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the...
-date: 2016-02-25
+tab: 5
 ---
