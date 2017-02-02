@@ -139,7 +139,6 @@ function rotateimage(e){
  
 }
 var mousewheelevt=(/Firefox/i.test(navigator.userAgent))? "DOMMouseScroll" : "mousewheel"; //FF doesn't recognize mousewheel as of FF3.x
- 
 if (window.attachEvent) //if IE (and Opera depending on user setting)
     window.attachEvent("on"+mousewheelevt, rotateimage);
 else if (window.addEventListener) //WC3 browsers
