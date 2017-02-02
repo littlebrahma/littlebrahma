@@ -46,79 +46,71 @@ function myFunction() {
     if(nextslideindex >= 6 && nextslideindex <= 12) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/3.gif')";
-        document.getElementById("text1").style.display = 'block';
-        document.getElementById("text").style.display = 'none';
-        document.getElementById("text2").style.display = 'none';
-        document.getElementById("text3").style.display = 'none';
-        document.getElementById("text4").style.display = 'none';
+        $("#text4").hide();
+        $("#text").hide();
+        $("#text2").hide();
+        $("#text3").hide();
+        $("#text1").show();
         $(".scroll-indicators li[data-id=2]").addClass('active');
         $(".scroll-indicators li[data-id=1]").removeClass('active');
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        slideshow.style.height= '150px';
-        slideshow.style.left= '32%';
-        slideshow.style.top= '30%';
-        slideshow.style.width= '150px';
+        $("#slideshow").css({"height": "150px", "left": "32%", "top": "30%", "width":"150px"}); 
     }
     else if(nextslideindex >= 13 && nextslideindex <= 19)
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/4.gif')";
-        document.getElementById("text1").style.display = 'none';
-        document.getElementById("text").style.display = 'none';
-        document.getElementById("text2").style.display = 'block';
-        document.getElementById("text3").style.display = 'none';
-        document.getElementById("text4").style.display = 'none';
+        $("#text4").hide();
+        $("#text1").hide();
+        $("#text").hide();
+        $("#text3").hide();
+        $("#text2").show();
         $(".scroll-indicators li[data-id=3]").addClass('active');
         $(".scroll-indicators li[data-id=1]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        slideshow.style.height= '188px';
-        slideshow.style.left= '26%';
-        slideshow.style.top= '3%';
-        slideshow.style.width= '158px';
-    
+        $("#slideshow").css({"height": "188px", "left": "26%", "top": "3%", "width":"158px"});
     }
     else if(nextslideindex >= 20 && nextslideindex <= 26) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/5.gif')";
-        document.getElementById("text1").style.display = 'none';
-        document.getElementById("text").style.display = 'none';
-        document.getElementById("text2").style.display = 'none';
-        document.getElementById("text3").style.display = 'block';
-        document.getElementById("text4").style.display = 'none';
+        $("#text4").hide();
+        $("#text1").hide();
+        $("#text2").hide();
+        $("#text").hide();
+        $("#text3").show();
         $(".scroll-indicators li[data-id=4]").addClass('active');
         $(".scroll-indicators li[data-id=1]").removeClass('active');
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        slideshow.style.height= '166px';
-        slideshow.style.left= '36%';
-        slideshow.style.top= '4%';
-        slideshow.style.width= '158px';
+        $("#slideshow").css({"height": "165px", "left": "36%", "top": "4%", "width":"158px"});
     }
     else if(nextslideindex >= 27 && nextslideindex <= 33) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
-        document.getElementById("text1").style.display = 'none';
-        document.getElementById("text").style.display = 'none';
-        document.getElementById("text2").style.display = 'none';
-        document.getElementById("text3").style.display = 'none';
-        document.getElementById("text4").style.display = 'block';
+        $("#text").hide();
+        $("#text1").hide();
+        $("#text2").hide();
+        $("#text3").hide();
+        $("#text4").show();
         $(".scroll-indicators li[data-id=5]").addClass('active');
         $(".scroll-indicators li[data-id=1]").removeClass('active');
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
-        slideshow.style.height= '272px';
-        slideshow.style.left= '28%';
-        slideshow.style.top= '-8%';
-        slideshow.style.width= '158px';
+        $("#slideshow").css({"height": "272px", "left": "28%", "top": "-8%", "width":"158px"});
     }
     else if(nextslideindex >= 0 && nextslideindex <= 5) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/1.gif')";
+        $("#text4").hide();
+        $("#text1").hide();
+        $("#text2").hide();
+        $("#text3").hide();
+        $("#text").show();
         document.getElementById("text1").style.display = 'none';
         document.getElementById("text").style.display = 'block';
         document.getElementById("text2").style.display = 'none';
@@ -129,10 +121,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        slideshow.style.height= '166px';
-        slideshow.style.left= '12%';
-        slideshow.style.top= '24%';
-        slideshow.style.width= '219px';
+        $("#slideshow").css({"height": "166px", "left": "12%", "top": "24%", "width":"219px"});
     }
 }
 function rotateimage(e){
