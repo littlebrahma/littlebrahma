@@ -93,9 +93,9 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        slideshow.style.height= '188px';
+        slideshow.style.height= '166px';
         slideshow.style.left= '36%';
-        slideshow.style.top= '-2%';
+        slideshow.style.top= '4%';
         slideshow.style.width= '158px';
     }
     else if(nextslideindex >= 27 && nextslideindex <= 33) 

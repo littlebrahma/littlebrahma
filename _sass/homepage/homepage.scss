@@ -7,9 +7,23 @@
         overflow-y: hidden;
         height: 100vh;
     }
-    .homepageRow {
-        padding: 30px 150px 0;
+    .hopageDesk {
         display: block;
+    }
+    .homepageRow {
+        display: table;
+        width: 800px;
+        margin: 0 auto 120px;
+        .homepageCln {
+            display: table-cell;
+            float: left;
+        }
+        .homepageContent {
+            display: table-cell;
+            float: right;
+            margin-left: 380px;
+            width: 400px;
+        }
     }
     .homepageBgImg {
         background-image: url("/assets/img/homepage/ANIMATIONS/1.gif");
@@ -61,9 +75,7 @@
         }
     }
     .homepageFooter {
-        bottom: 60px;
-        position: absolute;
-        right: 50px;
+        text-align: center;
         font-family: $secondary-titlefamily;
         font-size: 8px;
         color: $secondary-color;
@@ -126,7 +138,7 @@
             overflow-y: visible;
             height: 100%;
         }
-        .homepageRow {
+        .hopageDesk {
             display: none;
         }
         .mobTabSection {
