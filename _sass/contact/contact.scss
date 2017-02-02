@@ -1,3 +1,6 @@
+.contact-Bg {
+	background-color: white;
+}
 .contact {
 	padding:70px 90px;
 	 &__title {
@@ -12,7 +15,7 @@
 		&__iframe {
 			height: 645px;
 			width: 100%;
-			max-width: 645px;
+			
 		}
 	}
 	&__underline {
@@ -33,7 +36,7 @@
 		margin-top: 20px;
 	}
 	&__form-inside {
-	width: 310px;
+	width: 278px;
     padding: 11px 15px;
     margin: 10px 0;
     border-radius: 5px;
@@ -59,8 +62,53 @@
 		font-size: 14px;
 	}
 }
+@media screen and (min-width:992px){
+	.contact {
+		&__map {
+		&__iframe {
+			width: 100%;
+			max-width: 645px;
+		}
+	}
+}
+}
 @media screen and (max-width:991px){
 	.contact {
-		padding:40px 70px 60px;
+		padding:40px 50px 60px;
+		&__map {
+		text-align: right;
+		&__iframe {
+			height: 290px;
+			width: 100%;	
+		}
+	}
+		&__form-inside {
+	        width: 90%;
+	}
+	&__content {
+		padding-top:40px;
+	}
+}
+}
+@media screen and (max-width:767px) {
+	.contact {
+		padding:30px 0px 50px;
+		&__map {
+		&__iframe {
+			height: 215px;	
+		}
+	}
+	&__address {
+		margin-bottom: 30px;
+	}
+		&__form-inside {
+	        width: 228px;
+	}
+	&__content {
+		padding-top:25px;
+	}
+	}
+	.contact-us,.write-to-us {
+		padding:0px;
 	}
 }
