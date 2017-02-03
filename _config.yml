@@ -18,4 +18,5 @@ collections:
   service:
     output: true
     permalink: /service/:path/
+  radio:
 include: ["_pages"]
