@@ -24,7 +24,7 @@
 	}
 	&__address {
 		font-family: montserrat-regular;
-		font-size: 10px;
+		font-size: 11px;
 		line-height: 18px;
 		color:#6D6E71;
 		margin-bottom: 50px;
@@ -98,14 +98,20 @@
 			height: 215px;	
 		}
 	}
+	&__underline {
+		margin: 0 auto;
+	}
 	&__address {
 		margin-bottom: 30px;
 	}
 		&__form-inside {
 	        width: 228px;
+	        margin-left: auto;
+	        margin-right: auto;
 	}
 	&__content {
 		padding-top:25px;
+		text-align: center;
 	}
 	}
 	.contact-us,.write-to-us {

@@ -1,8 +1,9 @@
  .service {
-	padding:45px 0 175px;
+	height:100vh;
 	 background-color: rgb(238, 86, 72);
     color: white;
 	text-align: center;
+	padding:95px 0 0;
 &__title {
 	font-family:  montserrat-bold;
 	font-size: 48px;
@@ -151,7 +152,7 @@
   }  
 @media screen and (max-width: 767px) {
 	.service {
-	padding:70px 0 140px;
+	
 	&__title {
 		font-size: 24px;
 	}

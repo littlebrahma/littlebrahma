@@ -1,6 +1,9 @@
 .service-detailBg {
 	background-color: #f0f1f1;
 }
+.service-detail-all {
+	background-color: #f0f1f1;
+}
 .service-detail {
 	padding:78px 50px;
 	background-color: #f0f1f1;
@@ -68,6 +71,12 @@
 	     padding:78px 35px;
 }
 }
+@media screen and (min-width:1090px) {
+	.service-detail {
+		width: 1090px;
+		margin: 0 auto;
+	}
+}
 @media screen and (max-width:1023px) {
 	.service-detail {
 	     padding:78px 20px;
@@ -88,13 +97,14 @@
 }
 @media screen and (max-width:767px) {
 	.service-detail {
-	     padding:78px 5px;
+	     padding:40px 0px 60px;
 	     text-align: center;
 	&__img {
 		width: 130px;
 	}  
 	 &__title {
     font-size: 25px;  
+    margin-top: 20px;
 	}
 	&__subtitle {
 		font-size: 16px;
@@ -103,7 +113,7 @@
 		font-size: 11px;
 	}  
 	&__underline {
-		margin: 0 auto;
+		margin: 0 auto 30px;
 		width: 40px;
 		border-bottom: 2px rgb(66,64,67) solid;
 	}
