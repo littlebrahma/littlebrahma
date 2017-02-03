@@ -1,11 +1,11 @@
 <header class="commonHeader">
-    {% if page.layout == "service_detail" or page.layout == "contact" %}
+    {% if page.layout == "service_detail" or page.layout == "contact" or page.layout == "career" %}
         <a href="/"><img src="/assets/img/service/LOGO_RED.png" class="commonHeader__logo"></a>
     {% else %}
         <a href="/"><img src="/assets/img/common/LOGO_WHITE.png" class="commonHeader__logo"></a>
     {% endif %}
     <span class="commonMenu">
-        {% if page.layout == "service_detail" or page.layout == "contact" %}
+    {% if page.layout == "service_detail" or page.layout == "contact" or page.layout == "career" %}
             <img src="/assets/img/service/MENU_RED.png" class="commonMenu__icon">
         {% else %}
             <img src="/assets/img/common/MENU_WHITE.png" class="commonMenu__icon">

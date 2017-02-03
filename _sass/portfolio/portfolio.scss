@@ -3,10 +3,12 @@
 		background-color: #F26522;
 	}
 	.portBgImg {
+		margin-bottom: 30px;
 		background-image: url("/assets/img/blog/1_1.png");
 		background-repeat: no-repeat;
     	height: 300px;
     	padding: 15px;
+    	background-size: 100% 100%;
     	.portfolioInner {
     		opacity: 0;
     		height: 300px;
