@@ -46,30 +46,31 @@
 				}
 			}
 			.authorSection {
-				margin-top: 6px;
+				padding: 7px 0 0;
 				&__title {
-					font-size: 9px;
+					font-size: $secondary-contentfont;
 					font-family: $ternary-titlefamily;
 					color: #5D5D5D;
 				}
 				&__para {
-					font-size: 7px;
+					font-size: $ternary-contentfont;
 					font-family: $primary-contentfamily;
+					margin: 4px 0;
 				}
 				&__date {
 					font-size: $ternary-contentfont;
 					font-family: $secondary-titlefamily;
 					color: #808285;
 					vertical-align: middle;
-					padding-right: 15px;
+					padding-right: 30px;
 				}
 			}
 		}
 		.blogClock {
-			padding: 30px 0 20px;
+			padding: 0 0 20px;
 			text-align: right;
 			& img {
-				margin-right: 5px;
+				margin: 1px 5px 0;
 	    		width: 12px;
 	    		vertical-align: middle;
 			}
@@ -77,6 +78,9 @@
 				margin-bottom: 20px;
 			}
 		}
+	}
+	.blog-pad__img {
+		width: 46px;
 	}
 	@media screen and (min-width: 1866px) {
 		.blog-row {
@@ -109,6 +113,10 @@
 	    			margin: 5px auto 25px;
 	    		}
 	    	}
+    	}
+    	.blog-filter {
+    		padding-left: 0;
+    		padding-right: 0;
     	}
     }
 }

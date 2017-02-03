@@ -129,6 +129,9 @@ $common-width: 100%;
             margin: 40px auto;
         }
     }
+    .blogHeight {
+        padding: 40px 0 100px;
+    }
     @media screen and (min-width: 1866px) {
         .commonHeight {
             &__heading {
@@ -149,9 +152,10 @@ $common-width: 100%;
             font-size: 12px;
         }
         .commonHeight {
+            &__heading {
+                font-size: 36px;
+            }
             &__para {
-            font-size: 14px;
-            width: 340px;
             margin: 40px auto;
             }
         }
@@ -173,6 +177,9 @@ $common-width: 100%;
                 font-size: 14px;
                 width: 240px;
                 margin: 8px auto;
+            }
+            &__img {
+                width: 102px;
             }
         }
         .selectInput {
