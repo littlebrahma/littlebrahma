@@ -1,22 +1,11 @@
- .service {
-	height:100vh;
-	 background-color: rgb(238, 86, 72);
-    color: white;
-	text-align: center;
-	padding:95px 0 0;
-&__title {
-	font-family:  montserrat-bold;
-	font-size: 48px;
-	text-transform: uppercase;
-    margin: 30px 0;
-	}
-&__para {
-	font-size: 16px;
-	line-height: 24px;
-	font-family: raleway-medium;
-	width: 570px;
-	margin:0 auto;
+ 
+.service-Bg {
+	background: rgb(238, 86, 72);
 }
+.service-page {
+	text-align: center;
+	text-transform: uppercase;
+	padding: 80px;
 &__img {
 	text-align:right;
 }
@@ -26,15 +15,6 @@
 &__all-design {
 	padding :75px 0;
 }
-}
-.service-Bg {
-	background: rgb(238, 86, 72);
-}
-.service-page {
-	text-align: center;
-	text-transform: uppercase;
-	padding: 80px;
-
 &__title {
 	font-family:  montserrat-bold;
 	font-size: 32px;
@@ -81,19 +61,6 @@
 	color: rgb(102, 102, 102);
 }
 }
-@media screen and (min-width:1866px) {
-	.service {
-	    
-    &__title {
-    	font-size: 66px;
-    }
-    &__para {
-    	font-size: 22px;
-    	line-height: 36px;
-    	width: 795px;
-    }
-}
-}
 @media screen and (min-width:1366px) {
 	.service-page {
 		&__unordered-list {
@@ -103,7 +70,7 @@
 	}
 }
 @media screen and (max-width: 1365px) {
-	.service{
+	.service-page{
 		&__all-design {
   	padding :75px 0 33px;
     }
@@ -111,9 +78,10 @@
 }
 
 @media screen and (max-width: 1023px) {
-	.service{
-	&__title {
-    	font-size: 36px; 	
+    .service-page{
+     padding: 65px;
+    &__title {
+    	font-size: 24px;
     }
     &__all-img {
     	width: 152px;
@@ -124,12 +92,6 @@
     }
     &__all-design {
   	padding :60px 0 10px;
-    }
-}
-    .service-page{
-     padding: 65px;
-    &__title {
-    	font-size: 24px;
     }
    &__subtitle {
     	font-size: 18px;
@@ -151,12 +113,9 @@
 }
   }  
 @media screen and (max-width: 767px) {
-	.service {
-	
-	&__title {
-		font-size: 24px;
-	}
-	&__img {
+.service-page{
+		padding:25px 25px 0;
+		&__img {
 	text-align:center;
     }
     &__content {
@@ -165,26 +124,15 @@
 	&__all-img {
     	width: 102px;
     }
-    &__top-image {
-    	width: 102px;
-    }
-	&__para {
-		font-size: 14px;
-		line-height: 21px;
-		width: 240px;
-	}
-	&__all-design{
-		border-bottom: rgba(128, 128, 128, 0.61) 1px solid;	
-		padding:27px 0;
-	}
-}
-	.service-page{
-		padding:25px 25px 0;
 	&__title {
 		font-size: 16px;
 	}
 	&__subtitle {
 		font-size: 14px;
+	}
+	&__all-design{
+		border-bottom: rgba(128, 128, 128, 0.61) 1px solid;	
+		padding:27px 0;
 	}
     &__unordered-list {
     	width: 100%;

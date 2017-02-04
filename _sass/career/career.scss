@@ -1,0 +1,125 @@
+.career-all {
+	background-color:#f0f1f1;
+	padding: 70px 0 50px;
+}
+.career {
+	font-family:montserrat-regular;
+	padding:0 30px;
+&__underline {
+	border-bottom: #414042 5px solid;
+	width: 60px;
+}
+&__header {
+	font-family:montserrat-bold;
+	font-size:30px;
+	line-height:36px;
+	color:#414042;
+    margin: 0 0 10px;
+}
+&__img {
+	display:inline-block;
+}
+&__location {
+	display:inline-block;
+	font-size:14px;
+	padding-left: 10px;
+}
+&__title {
+	font-size:21px;
+	margin:55px 0 0 ;
+}
+&__experience {
+	font-size:14px;
+	margin-bottom:20px;
+}
+&__link {
+	font-size:12px;
+	color:white;
+}
+&__card {
+	padding:0 15px 40px;
+}
+&__job-card {
+	color:white;
+	background-color:red;
+	padding:30px;
+}
+}
+@media screen and (min-width:1866px) {
+	.career {
+		&__header {
+			font-size: 40px;
+			line-height: 48px;
+		}
+		&__underline {
+			width: 80px;
+		}
+	}
+}
+@media screen and (max-width:1199px) {
+	.career {
+		max-width: 910px;
+		margin:0 auto; 
+	}
+}
+@media screen and (min-width:1200px) {
+	.career {
+		max-width: 1250px;
+		margin:0 auto; 
+	}
+}
+@media screen and (max-width:1200px) {
+	.career {
+		padding:0 40px;
+		&__header {
+			font-size: 22px;
+			line-height: 26px;
+		}
+		&__underline {
+	        border-bottom: #414042 4px solid;
+        }
+        &__title {
+	        margin:30px 0 0 ;
+        }
+        &__experience {
+	        margin:5px 0 20px;
+        }
+	}
+}
+@media screen and (max-width:767px) {
+	.career-all {
+		padding:30px 0 15px;
+	}
+	.career {
+		padding:0;
+		&__card {
+			max-width: 430px;
+			margin: 0 auto;
+		}
+		&__job-card {
+			padding:20px;
+		}
+		&__header {
+			font-size: 18px;
+			text-align: center;
+		}
+		&__underline {
+	        border-bottom: #414042 5px solid;
+	        margin: 0 auto;
+        }
+        &__title {
+	        margin:15px 0 0 ;
+	        font-size: 14px;
+        }
+        &__location {
+        	font-size: 10px;
+        }
+        &__experience {
+	        margin:5px 0 15px;
+	        font-size: 10px;
+        }
+        &__link {
+        	font-size: 9px;
+        }
+	}
+}

@@ -1,25 +1,23 @@
 {% include header.html %}
 <section class="service-Bg">
     {% include common_header.html %}
+    <div class="commonHeight">
+    <img class="commonHeight__img" src="/assets/img/service/Mudras/1.png">
+    <h5 class="commonHeight__heading">OUR SERVICES</h5>
+    <p class="commonHeight__para">User interface in the eyes of the beholder, Technical specifications is what it is made of. User experience is in their mind.</p>
+  </div>
  </section>
 <section>
- <div class="row service">
-       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-     <img class="service__top-image" src="/assets/img/service/Mudras/1.png">
-     <h1 class="service__title">our services</h1>
-     <p class="service__para">User interface in the eyes of the beholder, Technical specifications is what it is made of. User experience is in their mind.</p>
-       </div>
-    </div>
     <div class="service-page">
     <h1 class="service-page__title">browse all graphic design services</h1>
     <div class="service-page__underline"></div>
     {% assign item = site.service %}
     {% for services in item %}
-      <div class="row service__all-design"> 
-          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 service__img">  
-                   <img src="{{services.img}}" class="service__all-img">
+      <div class="row service-page__all-design"> 
+          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 service-page__img">  
+                   <img src="{{services.img}}" class="service-page__all-img">
                </div>
-               <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 service__content">
+               <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 service-page__content">
                   <h1 class="service-page__subtitle">{{services.title}}</h1>
                    <div class="service-page__subtitle-underline"></div>
                     <ul class="service-page__unordered-list">
@@ -32,7 +30,6 @@
          </div>
       {% endfor %}
        </div>  
-    </div> 
  </section> 
 {% include common_footer.html %}
 {% include footer.html %}
