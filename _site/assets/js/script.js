@@ -156,45 +156,24 @@ $( ".MenuContent__close").click(function() {
 });
 
 
-$('input[type=radio]').click(function () {
-var radio=$(".selectInput input[type='radio']:checked").data("id");
-if(radio == 1) {
-    $(".blog-filter1").show();
+$('input[type="radio"]').click(function() {
+    var radio=$("input:radio").length;
+ if($(this).is(':checked')) {
+    var id= $('input:radio:checked').data("id");
+    for (var i = 1; i <= radio; i++) {
+if(id == i) {
+    $(".blog-filter" + i).show();
+    console.log('true');
 }
 else {
-    $(".blog-filter1").hide();
+    $(".blog-filter" + i).hide();
+    console.log('false');
 }
-if(radio == 2) {
-    $(".blog-filter2").show();
 }
-else {
-    $(".blog-filter2").hide();
-}
-if(radio == 3) {
-    $(".blog-filter3").show();
-}
-else {
-    $(".blog-filter3").hide();
-}
-if(radio == 4) {
-    $(".blog-filter4").show();
-}
-else {
-    $(".blog-filter4").hide();
-}
-if(radio == 5) {
-    $(".blog-filter5").show();
-}
-else {
-    $(".blog-filter5").hide();
-}
-if(radio == 6) {
-    $(".blog-filter6").show();
-}
-else {
-    $(".blog-filter6").hide();
 }
 });
+
+
 
 
 

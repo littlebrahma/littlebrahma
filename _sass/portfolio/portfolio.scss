@@ -25,7 +25,7 @@
     			color: $ternary-color;
 	    		&--title {
 	    			font-family: $ternary-titlefamily;
-	    			font-size: $secondary-contentfont;
+	    			font-size: $primary-contentfont;
 	    			text-transform: uppercase;
 	    		}
 	    		&--border {
@@ -35,7 +35,7 @@
 	    		}
 	    		&--para {
 	    			font-family: $primary-contentfamily;
-	    			font-size: 8px;
+	    			font-size: $secondary-contentfont;
 	    			width: 150px;
 	    			margin: 0 auto;
 	    		}
@@ -64,6 +64,10 @@
     	}
     	.selectSection {
     		margin-bottom: 28px;
+    	}
+    	.portfolioBg {
+    		height: 100vh;
+			margin: 0 auto;
     	}
     }
 }

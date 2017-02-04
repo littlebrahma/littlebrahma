@@ -1,3 +1,20 @@
+{% for post in site.casestudy %}
+    {% if post.category %}
+        {% capture tmp %}{{ tmp }}#{{ post.category }}{% endcapture %}
+    {% endif %}
+{% endfor %}
+
+{% assign allprojects = tmp | remove_first: '#' | split: '#' %}
+
+
+{% for category in allprojects %}
+    {% unless tmp2 contains category %}
+        {% capture tmp2 %}{{ tmp2 }}#{{ category | strip }}{% endcapture %}
+    {% endunless %}
+{% endfor %}
+
+{% assign uniqueprojects = tmp2 | remove_first: '#' | split: '#' %}
+
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 selectSection">
 			{% if page.layout == "career" %}
 			<h1 class="career__header">CAREERS AT LITTLE BRAHMA</h1>
@@ -7,10 +24,10 @@
 			{% endif %}
 			<div class="selectSection__border"></div>
 			<div class="radioSection">
-			{% for radios in site.radio %}
+			{% for category in uniqueprojects %}
 			<div class="selectInput">
-	  			<input id="{{radios.id}}" type="radio" name="field" value="{{radios.value}}" data-id="{{radios.data-id}}">
-	  			<label for="{{radios.id}}" class="branding"><span class="select__radio"><span></span></span><span class="select__title">{{radios.radio_name}}</span></label>
+	  			<input id="r-option{{forloop.index}}" type="radio" name="field" value="{{radios.value}}" data-id="{{forloop.index}}" class="radio">
+	  			<label for="r-option{{forloop.index}}" class="branding"><span class="select__radio"><span></span></span><span class="select__title">{{category}}</span></label>
   			</div>
   			{% endfor %}
   			</div>
