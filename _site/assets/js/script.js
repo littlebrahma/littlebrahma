@@ -39,10 +39,7 @@ var myimages=[
 var slideshow=document.getElementById("slideshow");
 var nextslideindex=0;
 var background=document.getElementById("background_image");
-var tab=$(this).data("id");
 function myFunction() {
-    var path=$("#slideshow").attr('src');
-    console.log(path);
     if(nextslideindex >= 6 && nextslideindex <= 12) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/3.gif')";
@@ -50,7 +47,7 @@ function myFunction() {
         $("#text").hide();
         $("#text2").hide();
         $("#text3").hide();
-        $("#text1").show();
+        $("#text1").show().css({"opacity":"1","transition":"all 2s linear"});
         $(".scroll-indicators li[data-id=2]").addClass('active');
         $(".scroll-indicators li[data-id=1]").removeClass('active');
         $(".scroll-indicators li[data-id=3]").removeClass('active');
@@ -65,7 +62,7 @@ function myFunction() {
         $("#text1").hide();
         $("#text").hide();
         $("#text3").hide();
-        $("#text2").show();
+        $("#text2").show().css({"opacity":"1","transition":"all 2s linear"});
         $(".scroll-indicators li[data-id=3]").addClass('active');
         $(".scroll-indicators li[data-id=1]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
@@ -80,7 +77,7 @@ function myFunction() {
         $("#text1").hide();
         $("#text2").hide();
         $("#text").hide();
-        $("#text3").show();
+        $("#text3").show().css({"opacity":"1","transition":"all 2s linear"});
         $(".scroll-indicators li[data-id=4]").addClass('active');
         $(".scroll-indicators li[data-id=1]").removeClass('active');
         $(".scroll-indicators li[data-id=3]").removeClass('active');
@@ -95,7 +92,7 @@ function myFunction() {
         $("#text1").hide();
         $("#text2").hide();
         $("#text3").hide();
-        $("#text4").show();
+        $("#text4").show().css({"opacity":"1","transition":"all 2s linear"});
         $(".scroll-indicators li[data-id=5]").addClass('active');
         $(".scroll-indicators li[data-id=1]").removeClass('active');
         $(".scroll-indicators li[data-id=3]").removeClass('active');
@@ -110,12 +107,7 @@ function myFunction() {
         $("#text1").hide();
         $("#text2").hide();
         $("#text3").hide();
-        $("#text").show();
-        document.getElementById("text1").style.display = 'none';
-        document.getElementById("text").style.display = 'block';
-        document.getElementById("text2").style.display = 'none';
-        document.getElementById("text3").style.display = 'none';
-        document.getElementById("text4").style.display = 'none';
+        $("#text").show().css({"opacity":"1","transition":"all 2s linear"});
         $(".scroll-indicators li[data-id=1]").addClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
         $(".scroll-indicators li[data-id=3]").removeClass('active');
@@ -162,12 +154,10 @@ $('input[type="radio"]').click(function() {
     var id= $('input:radio:checked').data("id");
     for (var i = 1; i <= radio; i++) {
 if(id == i) {
-    $(".blog-filter" + i).show();
-    console.log('true');
+    $(".blog-filter" + i).show().css({"opacity":"1","transition":"all 2s linear"});
 }
 else {
-    $(".blog-filter" + i).hide();
-    console.log('false');
+    $(".blog-filter" + i).hide().css({"opacity":"0"});
 }
 }
 }

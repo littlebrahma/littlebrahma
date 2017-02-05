@@ -1,6 +1,7 @@
 .hero {
     #text1,#text2,#text3,#text4 {
         display: none;
+        opacity: 0;
     }
     .homepageBg {
         background-color: #241141;
@@ -33,6 +34,8 @@
         height: 380px;
         position: fixed;
         width: 330px;
+        transition: all 2s linear;
+        opacity: 1;
         &__img {
             height: 166px;
             left: 12%;
@@ -98,6 +101,7 @@
             height: 10px;
             margin-bottom: 20px;
             width: 10px;
+            cursor: pointer;
             &.active {
                 background-color: #f1123e;
             }
@@ -155,6 +159,9 @@
                 width: 500px;
                 height: 500px;
                 margin: 0 auto;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
             }
             &__heading {
                 font-size: $secondary-headingfont;
@@ -170,6 +177,21 @@
             &__button {
                 margin-bottom: 125px;
             }
+        }
+        #bg1 {
+            background-image: url("/assets/img/homepage/ANIMATIONS/1.gif");
+        }
+        #bg2 {
+            background-image: url("/assets/img/homepage/ANIMATIONS/3.gif");
+        }
+        #bg3 {
+            background-image: url("/assets/img/homepage/ANIMATIONS/4.gif");
+        }
+        #bg4 {
+            background-image: url("/assets/img/homepage/ANIMATIONS/5.gif");
+        }
+        #bg5 {
+            background-image: url("/assets/img/homepage/ANIMATIONS/2.gif");
         }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
