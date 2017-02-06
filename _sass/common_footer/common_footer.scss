@@ -42,12 +42,14 @@
 			font-size: $secondary-contentfont;
 			line-height: 14px;
 			margin-bottom: 16px;
+			color: $secondary-color;
 		}
 		&__list {
 			font-family: $secondary-titlefamily;
 			font-size: $ternary-contentfont;
 			line-height: 12px;
 			margin-bottom: 12px;
+			color: $secondary-color;
 		}
 		&__title {
 			font-family: $ternary-titlefamily;
@@ -59,9 +61,11 @@
 			font-size: 14px;
 		}
 		&__border {
-			width: 50%;
-			height: 1px;
-			border-bottom: 1px solid #fff;
+		    border: none;
+		    border-bottom: 1px solid #fff;
+		    color: $secondary-color;
+		    width: 50%;
+		    background-color: transparent;
 		}
 		&__button {
 			font-size: 14px;
