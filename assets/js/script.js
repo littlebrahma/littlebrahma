@@ -149,7 +149,6 @@ $( ".MenuContent__close").click(function() {
 
 
 $('input[type="radio"]').click(function() {
-    debugger;
     var radio=$("input:radio").length;
  if($(this).is(':checked')) {
     var category= $('input:radio:checked').data("category");
@@ -162,7 +161,15 @@ $('input[type="radio"]').click(function() {
 });
 
 
-
+$(".job_detail").hide();
+$( ".career__link" ).click(function() {
+    $(".job").hide();
+    $(".job_detail").show();
+});
+$( ".career__img2").click(function() {
+    $(".job_detail").hide();
+    $(".job").show();
+});
 
 
 $(".scroll-indicators li").click(function(){
