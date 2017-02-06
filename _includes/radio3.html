@@ -1,4 +1,4 @@
-{% for post in site.casestudy %}
+{% for post in site.career %}
     {% if post.category %}
         {% capture tmp %}{{ tmp }}#{{ post.category }}{% endcapture %}
     {% endif %}
@@ -16,7 +16,8 @@
 {% assign uniqueprojects = tmp2 | remove_first: '#' | split: '#' %}
 
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 selectSection">
-			<h5 class="selectSection__title">SELECT CATEGORY</h5>
+			<h1 class="career__header">CAREERS AT LITTLE BRAHMA</h1>
+ 			<div class="career__underline"></div>
 			<div class="selectSection__border"></div>
 			<div class="radioSection">
 			{% for category in uniqueprojects %}

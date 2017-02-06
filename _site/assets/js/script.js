@@ -149,17 +149,15 @@ $( ".MenuContent__close").click(function() {
 
 
 $('input[type="radio"]').click(function() {
+    debugger;
     var radio=$("input:radio").length;
  if($(this).is(':checked')) {
-    var id= $('input:radio:checked').data("id");
-    for (var i = 1; i <= radio; i++) {
-if(id == i) {
-    $(".blog-filter" + i).show().css({"opacity":"1","transition":"all 2s linear"});
-}
-else {
-    $(".blog-filter" + i).hide().css({"opacity":"0"});
-}
-}
+    var category= $('input:radio:checked').data("category");
+    $(".blog-filter").hide().css({"opacity":"0"});
+
+    var classArr=category.replace(/[^a-z0-9\s]/gi, '').split(" "); 
+    var finalArray = classArr.filter(function(v){return v!==''});
+    $("."+finalArray.join('.')).show().css({"opacity":"1","transition":"all 2s linear"});
 }
 });
 

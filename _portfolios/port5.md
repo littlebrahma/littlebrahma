@@ -1,4 +1,5 @@
 ---
+category: WEB & MOBILE APP DESIGN
 porject_title: WEB & MOBILE APP DESIGN
 whole-class: blog-filter2
 background-class: portBgImg

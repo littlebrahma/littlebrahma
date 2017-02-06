@@ -4,48 +4,22 @@
     </section>
  <div class="career-all">
  <div class="row career">
- {% include radio.html %}
+ {% include radio3.html %}
  	<div class="col-lg-8 col-md-7 col-sm-7 col-xs-12 ">
  	    <div class="row">
- 		     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 career__card">
+ 	    	{% assign item = site.career | sort: 'date' %}
+			{% for careers in item %}
+ 		     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 career__card blog-filter {{careers.category}}">
  		     <div class="career__job-card">
  		     	 <img class="career__img" src="/assets/img/career/Icons/Location-Pin.png">
- 		     	 <h1 class="career__location">Bangalore</h1>
- 		     	 <h1 class="career__title">UI/UX Designer</h1>
- 		     	 <h1 class="career__experience">2-4 Years Exp.</h1>
+ 		     	 <h1 class="career__location">{{careers.location}}</h1>
+ 		     	 <h1 class="career__title">{{careers.title}}</h1>
+ 		     	 <h1 class="career__experience">{{careers.years}}</h1>
  		     	 <a class="career__link" href="#">Know More</a>
  		     </div>
  		     </div>
- 		     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 career__card">
- 		     <div class="career__job-card">
- 		     	<img class="career__img" src="/assets/img/career/Icons/Location-Pin.png">
- 		     	 <h1 class="career__location">Mumbai</h1>
- 		     	 <h1 class="career__title">UI/UX Designer</h1>
- 		     	 <h1 class="career__experience">2-4 Years Exp.</h1>
- 		     	 <a class="career__link" href="#">Know More</a>
- 		     </div>
- 		     </div>
+ 		     {% endfor %}
  		</div>
- 		<div class="row">     
- 		     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 career__card">
- 		     <div class="career__job-card">
- 		     	<img class="career__img" src="/assets/img/career/Icons/Location-Pin.png">
- 		     	 <h1 class="career__location">Chennai</h1>
- 		     	 <h1 class="career__title">UI/UX Designer</h1>
- 		     	 <h1 class="career__experience">2-4 Years Exp.</h1>
- 		     	 <a class="career__link" href="#">Know More</a>
- 		     </div>
- 		     </div>
- 		     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 career__card">
- 		     <div class="career__job-card">
- 		     	<img class="career__img" src="/assets/img/career/Icons/Location-Pin.png">
- 		     	 <h1 class="career__location">Hyderabad</h1>
- 		     	 <h1 class="career__title">UI/UX Designer</h1>
- 		     	 <h1 class="career__experience">2-4 Years Exp.</h1>
- 		     	 <a class="career__link" href="#">Know More</a>
- 		     </div>
- 		     </div>
- 	    </div>
  	</div>	
  </div>
  </div>

@@ -18,5 +18,7 @@ collections:
   service:
     output: true
     permalink: /service/:path/
-  radio:
+  career:
+    output: true
+    permalink: /career/:path/
 include: ["_pages"]

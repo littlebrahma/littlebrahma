@@ -14,7 +14,7 @@
 			<div class="row">
 				{% assign item = site.casestudy | sort: 'date' %}
 				{% for case in item %}
-					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 paddingLeftRight blog-filter {{case.whole-class}}">
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 blog-filter {{case.category}}">
 							<img src="{{case.landing_image}}" class="blog-filter__img">
 						<div class="caseDetail">
 							<h5 class="caseDetail__title {{case.class}}" tab-id="{{case.tab}}">{{case.title}}</h5>

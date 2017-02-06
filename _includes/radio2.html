@@ -1,4 +1,4 @@
-{% for post in site.casestudy %}
+{% for post in site.posts %}
     {% if post.category %}
         {% capture tmp %}{{ tmp }}#{{ post.category }}{% endcapture %}
     {% endif %}
