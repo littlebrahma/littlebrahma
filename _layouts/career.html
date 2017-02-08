@@ -9,16 +9,16 @@
  	    	<div class="row">
  	    	{% assign item = site.career | sort: 'date' %}
 			{% for careers in item %}
- 		    	<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 job career__card blog-filter {{careers.category}}">
+ 		    	<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 job career__card blog-filter {{careers.category}}" data-id="{{forloop.index}}">
  		     		<div class="career__job-card">
  		     	 	<img class="career__img" src="/assets/img/career/Icons/Location-Pin.png">
  		     	 	<h1 class="career__location">{{careers.location}}</h1>
  		     	 	<h1 class="career__title">{{careers.title}}</h1>
  		     	 	<h1 class="career__experience">{{careers.years}}</h1>
- 		     	 	<a class="career__link" href="#">Know More</a>
+ 		     	 	<a class="career__link" href="#" data-id="{{forloop.index}}">Know More</a>
  		     	</div>
  		     	</div>
- 		    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 career__card job_detail">
+ 		    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 career__card job_detail job_detail{{forloop.index}}" data-id="{{forloop.index}}">
  		     	<div class="career__job-card career__detail-jobcard">
  		     	 	<img class="career__img" src="/assets/img/career/Icons/Location-Pin.png">
  		     	 	<h1 class="career__location">{{careers.location}}</h1>
