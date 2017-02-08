@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 var myimages=[
-    "/assets/img/homepage/CREATIVESTUDIO/2.png",
+    "-310px -83px",
     "/assets/img/homepage/CREATIVESTUDIO/3.png",
     "/assets/img/homepage/CREATIVESTUDIO/4.png",
     "/assets/img/homepage/CREATIVESTUDIO/5.png",
@@ -121,7 +121,9 @@ function rotateimage(e){
     var delta=evt.detail? evt.detail*(-120) : evt.wheelDelta; //delta returns +120 when wheel is scrolled up, -120 when scrolled down
     nextslideindex=(delta<=-120)? nextslideindex+1 : nextslideindex-1;//move image index forward or back, depending on whether wheel is scrolled down or up
     nextslideindex=(nextslideindex<0)? myimages.length-1 : (nextslideindex>myimages.length-1)? 0 : nextslideindex; //wrap image index around when it goes beyond lower and upper boundaries
-    slideshow.src=myimages[nextslideindex];
+    var slide = slideshow.style.backgroundPosition;
+    slide = myimages[nextslideindex];
+    console.log(slide);
     myFunction();
     console.log(nextslideindex);
     if (evt.preventDefault) //disable default wheel action of scrolling page
@@ -149,7 +151,6 @@ $( ".MenuContent__close").click(function() {
 
 
 $('input[type="radio"]').click(function() {
-    var radio=$("input:radio").length;
  if($(this).is(':checked')) {
     var category= $('input:radio:checked').data("category");
     $(".blog-filter").hide().css({"opacity":"0"});
@@ -163,9 +164,13 @@ $('input[type="radio"]').click(function() {
 
 $(".job_detail").hide();
 $( ".career__link" ).click(function() {
+    var job=$(this).data("id");
     $(".job").hide();
-    $(".job_detail").show();
+  
+        $(".job_detail"+job).show();
+ 
 });
+
 $( ".career__img2").click(function() {
     $(".job_detail").hide();
     $(".job").show();
@@ -251,6 +256,4 @@ $(".tab_indicator li a").click(function(){
         $(this).addClass('active');
     }
 });
-
 });
-

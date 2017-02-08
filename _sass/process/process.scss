@@ -1,0 +1,30 @@
+.hero {
+	.processBg {
+		background-color: #B93961;
+	}
+	.processBgContent {
+		background-color: #1A1746;
+		padding: 120px 90px;
+		.processContent {
+			width: 300px;
+			color: $secondary-color;
+			padding-top: 150px;
+			&__heading {
+				font-size: 26px;
+				font-family: $ternary-titlefamily;
+				letter-spacing : 0.65px;
+  				color : #FFDD17;
+			}
+			&__para {
+				font-size: $secondary-contentfont;
+				font-family: $secondary-contentfamily;
+				line-height : 25px;
+  				letter-spacing : 0.24px;
+			}
+		}
+		.alignRight {
+			text-align: right;
+			float: right;
+		}
+	}
+}

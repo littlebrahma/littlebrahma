@@ -37,11 +37,14 @@
         transition: all 2s linear;
         opacity: 1;
         &__img {
-            height: 166px;
-            left: 12%;
+            background-image: url("/assets/img/homepage/sprite.png");
+            background-repeat: no-repeat;
+            background-position: -115px -92px;
+            height: 158px;
+            left: 0%;
             position: relative;
-            top: 24%;
-            width: 219px;
+            top: 0%;
+            width: 201px;
         }
     }
     .homepageContent {
