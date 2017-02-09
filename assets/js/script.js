@@ -256,10 +256,10 @@ $(".tab_indicator li a").click(function(){
         $(this).addClass('active');
     }
 });
- $(window).scroll(function(){
-    debugger;
-        if( $(this).scrollTop() > 100){
-            $(".our-mission").show();
-        }
-    });
+ // $(window).scroll(function(){
+ //    debugger;
+ //        if( $(this).scrollTop() > 100){
+ //            $(".our-mission").show();
+ //        }
+ //    });
 });

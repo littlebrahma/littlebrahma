@@ -9,7 +9,7 @@
  	    	<div class="row">
  	    	{% assign item = site.career | sort: 'date' %}
 			{% for careers in item %}
-			{% capture category %}{{ careers.category | split: '&nbsp;' | join: '.' | replace_regex: '/[^a-z0-9\s]/gi', '' }}{% endcapture %}
+			{% capture category %}{{ careers.category | replace_regex: '/[^a-z0-9\s]/gi', ' ' | split: '&nbsp;' | join: '.' }}{% endcapture %}
  		    	<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 job career__card blog-filter {{category}}" data-id="{{forloop.index}}">
  		     		<div class="career__job-card">
  		     	 	<img class="career__img" src="/assets/img/career/Icons/Location-Pin.png">

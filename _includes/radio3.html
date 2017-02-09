@@ -9,7 +9,7 @@
 
 {% for category in allprojects %}
     {% unless tmp2 contains category %}
-        {% capture tmp2 %}{{ tmp2 }}#{{ category | strip }}{% endcapture %}
+        {% capture tmp2 %}{{ tmp2 }}#{{ category | strip | replace_regex: '/[^a-z0-9\s]/gi', " " | split: '&nbsp;' | join: '.' }}{% endcapture %}
     {% endunless %}
 {% endfor %}
 
