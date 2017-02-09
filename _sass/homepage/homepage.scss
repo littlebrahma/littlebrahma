@@ -9,7 +9,9 @@
         height: 100vh;
     }
     .hopageDesk {
-        display: block;
+        display: flex;
+        align-items: center;
+        height: 50vh;
     }
     .homepageRow {
         display: table;
