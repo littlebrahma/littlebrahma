@@ -5,6 +5,9 @@
 	.processBgContent {
 		background-color: #1A1746;
 		padding: 120px 90px;
+		&__img {
+			width: 100%;
+		}
 		.processContent {
 			width: 300px;
 			color: $secondary-color;

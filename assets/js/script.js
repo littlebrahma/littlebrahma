@@ -1,46 +1,19 @@
 $( document ).ready(function() {
-var myimages=[
-    "/assets/img/homepage/CREATIVESTUDIO/2.png",
-    "/assets/img/homepage/CREATIVESTUDIO/3.png",
-    "/assets/img/homepage/CREATIVESTUDIO/4.png",
-    "/assets/img/homepage/CREATIVESTUDIO/5.png",
-    "/assets/img/homepage/CREATIVESTUDIO/6.png",
-    "/assets/img/homepage/CREATIVESTUDIO/7.png",
-    "/assets/img/homepage/PORTFOLIO/1.png",
-    "/assets/img/homepage/PORTFOLIO/2.png",
-    "/assets/img/homepage/PORTFOLIO/3.png",
-    "/assets/img/homepage/PORTFOLIO/4.png",
-    "/assets/img/homepage/PORTFOLIO/5.png",
-    "/assets/img/homepage/PORTFOLIO/6.png",
-    "/assets/img/homepage/PORTFOLIO/7.png",
-    "/assets/img/homepage/CONTEST/7.png",
-    "/assets/img/homepage/CONTEST/6.png",
-    "/assets/img/homepage/CONTEST/5.png",
-    "/assets/img/homepage/CONTEST/4.png",
-    "/assets/img/homepage/CONTEST/3.png",
-    "/assets/img/homepage/CONTEST/2.png",
-    "/assets/img/homepage/CONTEST/1.png",
-    "/assets/img/homepage/E-STORE/1.png",
-    "/assets/img/homepage/E-STORE/2.png",
-    "/assets/img/homepage/E-STORE/3.png",
-    "/assets/img/homepage/E-STORE/4.png",
-    "/assets/img/homepage/E-STORE/5.png",
-    "/assets/img/homepage/E-STORE/6.png",
-    "/assets/img/homepage/E-STORE/7.png",
-    "/assets/img/homepage/SERVICES/1.png",
-    "/assets/img/homepage/SERVICES/2.png",
-    "/assets/img/homepage/SERVICES/3.png",
-    "/assets/img/homepage/SERVICES/4.png",
-    "/assets/img/homepage/SERVICES/5.png",
-    "/assets/img/homepage/SERVICES/6.png",
-    "/assets/img/homepage/SERVICES/7.png"
-];
+    var myimages=[
+    "-76px -70px",
+    "-406px -70px",
+    "-736px -70px",
+    "-1058px -70px",
+    "-1382px -70px",
+    "-1710px -50px",
+    "-2032px -50px"
+    ];
  
 var slideshow=document.getElementById("slideshow");
 var nextslideindex=0;
 var background=document.getElementById("background_image");
 function myFunction() {
-    if(nextslideindex >= 6 && nextslideindex <= 12) 
+    if(nextslideindex > 6 && nextslideindex <= 12) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/3.gif')";
         $("#text4").hide();
@@ -53,9 +26,9 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "150px", "left": "32%", "top": "30%", "width":"150px"}); 
+        // $("#slideshow").css({"height": "150px", "left": "32%", "top": "30%", "width":"150px"}); 
     }
-    else if(nextslideindex >= 13 && nextslideindex <= 19)
+    else if(nextslideindex > 13 && nextslideindex <= 19)
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/4.gif')";
         $("#text4").hide();
@@ -68,9 +41,9 @@ function myFunction() {
         $(".scroll-indicators li[data-id=2]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "188px", "left": "26%", "top": "3%", "width":"158px"});
+        // $("#slideshow").css({"height": "188px", "left": "26%", "top": "3%", "width":"158px"});
     }
-    else if(nextslideindex >= 20 && nextslideindex <= 26) 
+    else if(nextslideindex > 20 && nextslideindex <= 26) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/5.gif')";
         $("#text4").hide();
@@ -83,9 +56,9 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "165px", "left": "36%", "top": "4%", "width":"158px"});
+        // $("#slideshow").css({"height": "165px", "left": "36%", "top": "4%", "width":"158px"});
     }
-    else if(nextslideindex >= 27 && nextslideindex <= 33) 
+    else if(nextslideindex > 27 && nextslideindex <= 33) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
         $("#text").hide();
@@ -98,7 +71,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
-        $("#slideshow").css({"height": "272px", "left": "28%", "top": "-8%", "width":"158px"});
+        // $("#slideshow").css({"height": "272px", "left": "28%", "top": "-8%", "width":"158px"});
     }
     else if(nextslideindex >= 0 && nextslideindex <= 5) 
     {
@@ -113,7 +86,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "166px", "left": "12%", "top": "24%", "width":"219px"});
+        // $("#slideshow").css({"height": "166px", "left": "12%", "top": "24%", "width":"219px"});
     }
 }
 function rotateimage(e){
@@ -121,7 +94,7 @@ function rotateimage(e){
     var delta=evt.detail? evt.detail*(-120) : evt.wheelDelta; //delta returns +120 when wheel is scrolled up, -120 when scrolled down
     nextslideindex=(delta<=-120)? nextslideindex+1 : nextslideindex-1;//move image index forward or back, depending on whether wheel is scrolled down or up
     nextslideindex=(nextslideindex<0)? myimages.length-1 : (nextslideindex>myimages.length-1)? 0 : nextslideindex; //wrap image index around when it goes beyond lower and upper boundaries
-    slideshow.src=myimages[nextslideindex];
+    $("#slideshow").css('background-position', myimages[nextslideindex]);
     myFunction();
     console.log(nextslideindex);
     if (evt.preventDefault) //disable default wheel action of scrolling page
@@ -254,4 +227,10 @@ $(".tab_indicator li a").click(function(){
         $(this).addClass('active');
     }
 });
+ $(window).scroll(function(){
+    debugger;
+        if( $(this).scrollTop() > 100){
+            $(".our-mission").show();
+        }
+    });
 });
