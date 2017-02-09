@@ -6,14 +6,43 @@ $( document ).ready(function() {
     "-1058px -70px",
     "-1382px -70px",
     "-1710px -50px",
-    "-2032px -50px"
+    "-2032px -50px",
+    "-2022px -960px",
+    "-1694px -960px",
+    "-1368px -960px",
+    "-1040px -960px",
+    "-1040px -960px",
+    "-716px -960px",
+    "-388px -960px",
+    "-56px -960px",
+    "-2028px -270px",
+    "-1704px -270px",
+    "-1370px -270px",
+    "-1040px -270px",
+    "-718px -270px",
+    "-388px -270px",
+    "-60px -270px",
+    "-56px -556px",
+    "-388px -556px",
+    "-718px -556px",
+    "-1034px -556px",
+    "-1350px -556px",
+    "-1682px -556px",
+    "-1984px -556px",
+    "-76px -1276px",
+    "-408px -1276px",
+    "-740px -1276px",
+    "-1060px -1276px",
+    "-1388px -1276px",
+    "-1710px -1276px",
+    "-2032px -1276px"
     ];
  
 var slideshow=document.getElementById("slideshow");
 var nextslideindex=0;
 var background=document.getElementById("background_image");
 function myFunction() {
-    if(nextslideindex > 6 && nextslideindex <= 12) 
+    if(nextslideindex > 6 && nextslideindex <= 14) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/3.gif')";
         $("#text4").hide();
@@ -26,9 +55,9 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        // $("#slideshow").css({"height": "150px", "left": "32%", "top": "30%", "width":"150px"}); 
+        $("#slideshow").css({"height": "217px", "left": "30%", "top": "32%", "width":"214px"}); 
     }
-    else if(nextslideindex > 13 && nextslideindex <= 19)
+    else if(nextslideindex > 13 && nextslideindex <= 21)
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/4.gif')";
         $("#text4").hide();
@@ -41,9 +70,9 @@ function myFunction() {
         $(".scroll-indicators li[data-id=2]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        // $("#slideshow").css({"height": "188px", "left": "26%", "top": "3%", "width":"158px"});
+        $("#slideshow").css({"height": "280px", "left": "24%", "top": "-1%", "width":"216px"});
     }
-    else if(nextslideindex > 20 && nextslideindex <= 26) 
+    else if(nextslideindex > 20 && nextslideindex <= 28) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/5.gif')";
         $("#text4").hide();
@@ -56,9 +85,9 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        // $("#slideshow").css({"height": "165px", "left": "36%", "top": "4%", "width":"158px"});
+        $("#slideshow").css({"height": "290px", "left": "28%", "top": "-10%", "width":"296px"});
     }
-    else if(nextslideindex > 27 && nextslideindex <= 33) 
+    else if(nextslideindex > 27 && nextslideindex <= 35) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
         $("#text").hide();
@@ -71,9 +100,9 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
-        // $("#slideshow").css({"height": "272px", "left": "28%", "top": "-8%", "width":"158px"});
+        $("#slideshow").css({"height": "368px", "left": "28%", "top": "-8%", "width":"200px"});
     }
-    else if(nextslideindex >= 0 && nextslideindex <= 5) 
+    else if(nextslideindex >= 0 && nextslideindex <= 7) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/1.gif')";
         $("#text4").hide();
@@ -86,7 +115,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        // $("#slideshow").css({"height": "166px", "left": "12%", "top": "24%", "width":"219px"});
+        $("#slideshow").css({"height": "158px", "left": "128px", "top": "178px", "width":"201px"});
     }
 }
 function rotateimage(e){
