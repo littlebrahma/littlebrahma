@@ -55,7 +55,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "217px", "left": "30%", "top": "32%", "width":"214px"}); 
+        $("#slideshow").css({"height": "217px", "left": "30%", "top": "32%", "width":"214px","opacity":"1","transition":"opacity 1s ease-in-out"}); 
     }
     else if(nextslideindex > 13 && nextslideindex <= 21)
     {
@@ -70,7 +70,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=2]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "280px", "left": "24%", "top": "-1%", "width":"216px"});
+        $("#slideshow").css({"height": "280px", "left": "24%", "top": "-1%", "width":"216px","opacity":"1","transition":"opacity 1s ease-in-out"});
     }
     else if(nextslideindex > 20 && nextslideindex <= 28) 
     {
@@ -85,7 +85,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "290px", "left": "28%", "top": "-10%", "width":"296px"});
+        $("#slideshow").css({"height": "290px", "left": "28%", "top": "-10%", "width":"296px","opacity":"1","transition":"opacity 1s ease-in-out"});
     }
     else if(nextslideindex > 27 && nextslideindex <= 35) 
     {
@@ -100,7 +100,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
-        $("#slideshow").css({"height": "368px", "left": "28%", "top": "-8%", "width":"200px"});
+        $("#slideshow").css({"height": "368px", "left": "28%", "top": "-8%", "width":"200px","opacity":"1","transition":"opacity 1s ease-in-out"});
     }
     else if(nextslideindex >= 0 && nextslideindex <= 7) 
     {
@@ -115,7 +115,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "158px", "left": "128px", "top": "178px", "width":"201px"});
+        $("#slideshow").css({"height": "158px", "left": "128px", "top": "178px", "width":"201px","opacity":"1","transition":"opacity 1s ease-in-out"});
     }
 }
 function rotateimage(e){
