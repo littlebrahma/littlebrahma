@@ -42,7 +42,7 @@ var slideshow=document.getElementById("slideshow");
 var nextslideindex=0;
 var background=document.getElementById("background_image");
 function myFunction() {
-    if(nextslideindex > 6 && nextslideindex <= 14) 
+    if(nextslideindex >= 7 && nextslideindex <= 13) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/3.gif')";
         $("#text4").hide();
@@ -57,7 +57,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=5]").removeClass('active');
         $("#slideshow").css({"height": "217px", "left": "30%", "top": "32%", "width":"214px","opacity":"1","transition":"opacity 1s ease-in-out"}); 
     }
-    else if(nextslideindex > 13 && nextslideindex <= 21)
+    else if(nextslideindex >= 14 && nextslideindex <= 20)
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/4.gif')";
         $("#text4").hide();
@@ -72,7 +72,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=5]").removeClass('active');
         $("#slideshow").css({"height": "280px", "left": "24%", "top": "-1%", "width":"216px","opacity":"1","transition":"opacity 1s ease-in-out"});
     }
-    else if(nextslideindex > 20 && nextslideindex <= 28) 
+    else if(nextslideindex >= 21 && nextslideindex <= 27) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/5.gif')";
         $("#text4").hide();
@@ -87,7 +87,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=5]").removeClass('active');
         $("#slideshow").css({"height": "290px", "left": "28%", "top": "-10%", "width":"296px","opacity":"1","transition":"opacity 1s ease-in-out"});
     }
-    else if(nextslideindex > 27 && nextslideindex <= 35) 
+    else if(nextslideindex >= 28 && nextslideindex <= 34) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
         $("#text").hide();
@@ -102,7 +102,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=2]").removeClass('active');
         $("#slideshow").css({"height": "368px", "left": "28%", "top": "-8%", "width":"200px","opacity":"1","transition":"opacity 1s ease-in-out"});
     }
-    else if(nextslideindex >= 0 && nextslideindex <= 7) 
+    else if(nextslideindex >= 0 && nextslideindex <= 6) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/1.gif')";
         $("#text4").hide();
@@ -186,7 +186,7 @@ $(".scroll-indicators li").click(function(){
         $('#text3').hide();
         $('#text4').hide();
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/1.gif')";
-        $('#slideshow').attr("src", "/assets/img/homepage/CREATIVESTUDIO/1.png");
+        $('#slideshow').css("background-position", "-76px -70px");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
         nextslideindex=0;
@@ -198,7 +198,7 @@ $(".scroll-indicators li").click(function(){
         $('#text3').hide();
         $('#text4').hide();
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/3.gif')";
-        $('#slideshow').attr("src", "/assets/img/homepage/PORTFOLIO/1.png");
+        $('#slideshow').css("background-position", "-56px -960px");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
         nextslideindex=7;
@@ -210,7 +210,7 @@ $(".scroll-indicators li").click(function(){
         $('#text3').hide();
         $('#text4').hide();
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/4.gif')";
-        $('#slideshow').attr("src", "/assets/img/homepage/CONTEST/7.png");
+        $('#slideshow').css("background-position", "-60px -270px");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
         nextslideindex=14;
@@ -222,7 +222,7 @@ $(".scroll-indicators li").click(function(){
         $('#text').hide();
         $('#text4').hide();
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/5.gif')";
-        $('#slideshow').attr("src", "/assets/img/homepage/E-STORE/1.png");
+        $('#slideshow').css("background-position", "-56px -556px");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
         nextslideindex=21;
@@ -234,7 +234,7 @@ $(".scroll-indicators li").click(function(){
         $('#text').hide();
         $('#text3').hide();
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
-        $('#slideshow').attr("src", "/assets/img/homepage/SERVICES/1.png");
+        $('#slideshow').css("background-position", "-76px -1276px");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
         nextslideindex=28;
