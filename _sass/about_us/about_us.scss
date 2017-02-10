@@ -161,10 +161,10 @@
 }
 .tab-indicators,.tab-indicators1,.tab-indicators2 {
     list-style: none;
-    position: relative;
+    position: fixed;
     right: 50px;
     text-align: right;
-    bottom: 250px;
+    top: 50%;
     li {
         margin-bottom: 10px;
         a {

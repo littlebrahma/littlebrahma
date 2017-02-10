@@ -13,7 +13,7 @@
 			{% assign items = site.posts | sort: 'date' %}
 
 			{% for post in items %}
-
+			{% capture category %}{{ post.category | replace:'/',' ' | replace:'&',' ' | replace:' ','-' }}{% endcapture %}
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 blog-filter {{post.category}}">
 					<img src="{{ post.landing_image}}" class="blog-filter__img">
 					<div class="blogWholeBG">
