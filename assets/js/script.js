@@ -23,7 +23,7 @@ $('input[type="radio"]').click(function() {
 
     var classArr=category.replace(/[^a-z0-9\s]/gi, ' ').split(" "); 
     var finalArray = classArr.filter(function(v){return v!==''});
-    $("."+finalArray.join('-')).show().css({"opacity":"1","transition":"all 2s linear"});
+    $("."+finalArray.join('.')).show().css({"opacity":"1","transition":"all 2s linear"});
 }
 });
 

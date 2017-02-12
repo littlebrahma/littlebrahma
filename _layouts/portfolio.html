@@ -14,8 +14,7 @@
 			<div class="row">
 				{% assign item = site.portfolios | sort: 'date' %}
 				{% for port in item %}
-				{% capture category %}{{ port.category | replace:'/',' ' | replace:'&',' ' | replace:' ','-' }}{% endcapture %}
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 blog-filter {{port.category}}">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 blog-filter {{port.category}}">
 						<div class="{{port.background-class}}">
 							<div class="portfolioInner">
 								<div class="portInnerPadd">

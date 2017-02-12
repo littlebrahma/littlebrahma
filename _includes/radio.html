@@ -20,7 +20,6 @@
 			<div class="selectSection__border"></div>
 			<div class="radioSection">
 			{% for category in uniqueprojects %}
-      {% capture category %}{{ careers.category | split: '&nbsp;' | join: '.' | replace_regex: '/[^a-z0-9\s]/gi', '' }}{% endcapture %}
 			<div class="selectInput">
 	  			<input id="r-option{{forloop.index}}" type="radio" name="field" value="{{radios.value}}" data-id="{{forloop.index}}" data-category="{{category}}" class="radio">
 	  			<label for="r-option{{forloop.index}}" class="branding"><span class="select__radio"><span></span></span><span class="select__title">{{category}}</span></label>
