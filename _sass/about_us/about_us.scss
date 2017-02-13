@@ -4,7 +4,6 @@
     
     align-items: center;
     justify-content: center;
-    color: white;
     padding:0 0 100px;
 
  &__button {
@@ -34,6 +33,7 @@
     font-size: 48px;
     margin: 0 0 9px;
     line-height: 48px;
+    color: white;
 }
 &__underline{
     border-bottom: rgb(249, 210, 0) 5px solid;
@@ -44,6 +44,7 @@
     font-size: 13px;
     line-height: 25px;
     height: 120px;
+    color: white;
     width: 420px;
 }
 }
@@ -179,23 +180,24 @@
         }
     }
 }
-.tab-indicators {
-    
-}
-.tab-indicators1 {
-}
-.tab-indicators2 {
-    li {
-        a{
-            color: $ternary-color;
-            opacity: 1;
+.about-indicators {
+        position: fixed;
+        right: 70px;
+        top: 40%;
+        list-style: none;
+        li {
+            background-color: #fff;
+            border-radius: 50%;
+            display: block;
+            height: 10px;
+            margin-bottom: 20px;
+            width: 10px;
+            cursor: pointer;
             &.active {
-                color: #EA2458;
+                background-color: #f1123e;
             }
         }
     }
-    
-}
 @media screen and (min-width: 1866px){
     .about-us,.valuable-clients,.our-mission {
         height: 1050px;

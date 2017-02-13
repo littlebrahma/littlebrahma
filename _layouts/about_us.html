@@ -3,7 +3,8 @@
 <section class="about_us-Bg">
     {% include common_header.html %}
  </section>
-<div class="row about-us about-us-all" id="about-us">
+ <a href="#about-us" id="scroll">
+<div class="row about-us about-us-all commonSection" id="about-us">
        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-us-left">
       <img class="about-us-left__img" src="/assets/img/about_us/ANIMATIONS/1.gif">
       </div>
@@ -14,16 +15,16 @@
       <a class="about-us__button" href="#">know more</a>
       </div>        
 </div>
-<ul class="scroll-indicators">
-            <li data-id="1" class="active">
-            </li>
-            <li data-id="2">
-            </li>
-            <li data-id="3">
-            </li>
+
+<ul class="about-indicators">
+            <li class="active" data-id="1"></li></a>
+            <li data-id="2"></li>
+            <li data-id="3"></li>
+            <li data-id="4"></li>
+              
+            
         </ul>
-</div>
-<div class="our-mission" id="our_mission">
+<div class="our-mission commonSection" id="our_mission">
        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 our-mission-left">
        <img class="our-mission-left__img" src="/assets/img/about_us/ANIMATIONS/2.gif"> 
        </div>
@@ -33,28 +34,84 @@
        <p class="our-mission-right__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
        </div>
 </div>
-<div class="row valuable-clients" id="valuable_clients">
+<div class="row valuable-clients commonSection" id="valuable_clients">
      <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 valuable-clients-block">
        <div class=" valuable-clients-left">
        <h1 class="valuable-clients__heading">valuable clients</h1>
        <div class="valuable-clients__underline"></div>
        <p class="valuable-clients-left__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
        <ul class="valuable-clients-left__unorder-list">
-        <li class="valuable-clients-left__list"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/1.png"></li>
-        <li class="valuable-clients-left__list"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/2.png"></li>
-        <li class="valuable-clients-left__list"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/3.png"></li>
-        <li class="valuable-clients-left__list"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/4.png"></li>
-        <li class="valuable-clients-left__list"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/5.png"></li>
-        <li class="valuable-clients-left__list"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/6.png"></li>
-        <li class="valuable-clients-left__list"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/7.png"></li>
-        <li class="valuable-clients-left__list"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/8.png"></li>
+        <li class="valuable-clients-left__list" id="abt-img1" data-id="1"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/1.png"></li>
+        <li class="valuable-clients-left__list" id="abt-img2" data-id="2"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/2.png"></li>
+        <li class="valuable-clients-left__list" id="abt-img3" data-id="3"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/3.png"></li>
+        <li class="valuable-clients-left__list" id="abt-img4" data-id="4"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/4.png"></li>
+        <li class="valuable-clients-left__list" id="abt-img5" data-id="5"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/5.png"></li>
+        <li class="valuable-clients-left__list" id="abt-img6" data-id="6"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/6.png"></li>
+        <li class="valuable-clients-left__list" id="abt-img7" data-id="7"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/7.png"></li>
+        <li class="valuable-clients-left__list" id="abt-img8" data-id="8"><img class="valuable-clients-left__logo" src="/assets/img/about_us/LOGO/8.png"></li>
        </ul>
        </div>
        </div>
        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 valuable-clients-block">
-       <div class=" valuable-clients-right">
+       <div class=" valuable-clients-right" id="company1" data-id="1">
        <img src="/assets/img/about_us/ANIMATIONS/billgates.jpeg" class="valuable-clients-right__billgates-img"> 
        <img src="/assets/img/about_us/LOGO/1.png" class="valuable-clients-right__microsoft-img">
+       <p  class="valuable-clients-right__para"><span class="valuable-clients-right__inverted-comma">"</span>Lorem ipsum dolor sit amet,
+       consectetur adipiscing elit<span class="valuable-clients-right__inverted-comma">"</span></p>
+       <p class="valuable-clients-right__para-author">-Billgates</p>
+       </div>
+
+       <div class=" valuable-clients-right" id="company2" data-id="2">
+       <img src="/assets/img/about_us/ANIMATIONS/billgates.jpeg" class="valuable-clients-right__billgates-img"> 
+       <img src="/assets/img/about_us/LOGO/2.png" class="valuable-clients-right__microsoft-img">
+       <p  class="valuable-clients-right__para"><span class="valuable-clients-right__inverted-comma">"</span>Lorem ipsum dolor sit amet,
+       consectetur adipiscing elit<span class="valuable-clients-right__inverted-comma">"</span></p>
+       <p class="valuable-clients-right__para-author">-Billgates</p>
+       </div>
+
+       <div class=" valuable-clients-right" id="company3" data-id="3">
+       <img src="/assets/img/about_us/ANIMATIONS/billgates.jpeg" class="valuable-clients-right__billgates-img"> 
+       <img src="/assets/img/about_us/LOGO/3.png" class="valuable-clients-right__microsoft-img">
+       <p  class="valuable-clients-right__para"><span class="valuable-clients-right__inverted-comma">"</span>Lorem ipsum dolor sit amet,
+       consectetur adipiscing elit<span class="valuable-clients-right__inverted-comma">"</span></p>
+       <p class="valuable-clients-right__para-author">-Billgates</p>
+       </div>
+
+       <div class=" valuable-clients-right" id="company4" data-id="4">
+       <img src="/assets/img/about_us/ANIMATIONS/billgates.jpeg" class="valuable-clients-right__billgates-img"> 
+       <img src="/assets/img/about_us/LOGO/4.png" class="valuable-clients-right__microsoft-img">
+       <p  class="valuable-clients-right__para"><span class="valuable-clients-right__inverted-comma">"</span>Lorem ipsum dolor sit amet,
+       consectetur adipiscing elit<span class="valuable-clients-right__inverted-comma">"</span></p>
+       <p class="valuable-clients-right__para-author">-Billgates</p>
+       </div>
+
+       <div class=" valuable-clients-right" id="company5" data-id="5">
+       <img src="/assets/img/about_us/ANIMATIONS/billgates.jpeg" class="valuable-clients-right__billgates-img"> 
+       <img src="/assets/img/about_us/LOGO/5.png" class="valuable-clients-right__microsoft-img">
+       <p  class="valuable-clients-right__para"><span class="valuable-clients-right__inverted-comma">"</span>Lorem ipsum dolor sit amet,
+       consectetur adipiscing elit<span class="valuable-clients-right__inverted-comma">"</span></p>
+       <p class="valuable-clients-right__para-author">-Billgates</p>
+       </div>
+
+       <div class=" valuable-clients-right" id="company6" data-id="6">
+       <img src="/assets/img/about_us/ANIMATIONS/billgates.jpeg" class="valuable-clients-right__billgates-img"> 
+       <img src="/assets/img/about_us/LOGO/6.png" class="valuable-clients-right__microsoft-img">
+       <p  class="valuable-clients-right__para"><span class="valuable-clients-right__inverted-comma">"</span>Lorem ipsum dolor sit amet,
+       consectetur adipiscing elit<span class="valuable-clients-right__inverted-comma">"</span></p>
+       <p class="valuable-clients-right__para-author">-Billgates</p>
+       </div>
+
+       <div class=" valuable-clients-right" id="company7" data-id="7">
+       <img src="/assets/img/about_us/ANIMATIONS/billgates.jpeg" class="valuable-clients-right__billgates-img"> 
+       <img src="/assets/img/about_us/LOGO/7.png" class="valuable-clients-right__microsoft-img">
+       <p  class="valuable-clients-right__para"><span class="valuable-clients-right__inverted-comma">"</span>Lorem ipsum dolor sit amet,
+       consectetur adipiscing elit<span class="valuable-clients-right__inverted-comma">"</span></p>
+       <p class="valuable-clients-right__para-author">-Billgates</p>
+       </div>
+
+       <div class=" valuable-clients-right" id="company8" data-id="8">
+       <img src="/assets/img/about_us/ANIMATIONS/billgates.jpeg" class="valuable-clients-right__billgates-img"> 
+       <img src="/assets/img/about_us/LOGO/8.png" class="valuable-clients-right__microsoft-img">
        <p  class="valuable-clients-right__para"><span class="valuable-clients-right__inverted-comma">"</span>Lorem ipsum dolor sit amet,
        consectetur adipiscing elit<span class="valuable-clients-right__inverted-comma">"</span></p>
        <p class="valuable-clients-right__para-author">-Billgates</p>
@@ -72,24 +129,82 @@
        </ul>            
   </div>
 {% include common_footer.html %}
+</a>
+</div>
 {% include footer.html %}
+<!-- <script type="text/javascript">
+  $('section').css({'height':(($(window).height()))+'px'});
+  
+    // Now bind the event to the desired element
+    $('section').bind('mousewheel', function(e){
+        if(e.wheelDelta/120 > 0) {
+            $(this).text('scrolling up !');
+        }
+        else{
+            $(this).text('scrolling down !');
+        }
+    });
+</script> -->
+
 <script type="text/javascript">
 var href=[
+        "about-us",
         "our_mission",
-        "valuable_clients"
+        "valuable_clients",
+        "commonFooter"
     ];
-
 var nextslideindex=0;
-function myFunction() {
-    
+function scroll() {
+   if(nextslideindex == 0) {
+    $('html, body').animate({
+        'scrollTop' : $("#about-us").position().top
+    });
+    $(".about-indicators li[data-id=1]").addClass('active');
+    $(".about-indicators li[data-id=2]").removeClass('active');
+    $(".about-indicators li[data-id=3]").removeClass('active');
+    $(".about-indicators li[data-id=4]").removeClass('active');
+    }
+    if(nextslideindex == 1) {
+    $('html, body').animate({
+        'scrollTop' : $("#our_mission").position().top
+    });
+    $(".about-indicators li[data-id=2]").addClass('active');
+    $(".about-indicators li[data-id=1]").removeClass('active');
+    $(".about-indicators li[data-id=3]").removeClass('active');
+    $(".about-indicators li[data-id=4]").removeClass('active');
+    }
+    if(nextslideindex == 2) {
+    $('html, body').animate({
+        'scrollTop' : $("#valuable_clients").position().top
+    });
+    $(".about-indicators li[data-id=3]").addClass('active');
+    $(".about-indicators li[data-id=2]").removeClass('active');
+    $(".about-indicators li[data-id=1]").removeClass('active');
+    $(".about-indicators li[data-id=4]").removeClass('active');
+    }
+    if(nextslideindex == 3) {
+    $('html, body').animate({
+        'scrollTop' : $("#commonFooter").position().top
+    });
+    $(".about-indicators li[data-id=4]").addClass('active');
+    $(".about-indicators li[data-id=2]").removeClass('active');
+    $(".about-indicators li[data-id=3]").removeClass('active');
+    $(".about-indicators li[data-id=1]").removeClass('active');
+    }
 }
+
+
 function rotateimage(e){
-    var evt=window.event || e; //equalize event object
-    var delta=evt.detail? evt.detail*(-120) : evt.wheelDelta; //delta returns +120 when wheel is scrolled up, -120 when scrolled down
-    nextslideindex=(delta<=-120)? nextslideindex+1 : nextslideindex-1;//move image index forward or back, depending on whether wheel is scrolled down or up
+    var evt=window.event || e //equalize event object
+    var delta=evt.detail? evt.detail*(-120) : evt.wheelDelta //delta returns +120 when wheel is scrolled up, -120 when scrolled down
+    nextslideindex=(delta<=-120)? nextslideindex+1 : nextslideindex-1//move image index forward or back, depending on whether wheel is scrolled down or up
     nextslideindex=(nextslideindex<0)? href.length-1 : (nextslideindex>href.length-1)? 0 : nextslideindex; //wrap image index around when it goes beyond lower and upper boundaries
-    $("#about-us").attr('id', href[nextslideindex]);
-    myFunction();
+    console.log(nextslideindex);
+    // var myhref= $("#scroll").attr('href', href[nextslideindex]);
+    // $(myhref).animate({
+    //     scrollTop: $(myhref).offset().top
+    // });
+   scroll();
     if (evt.preventDefault) //disable default wheel action of scrolling page
         evt.preventDefault();
     else

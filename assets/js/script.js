@@ -23,6 +23,9 @@ $('input[type="radio"]').click(function() {
 }
 });
 
+$('#fullpage').fullpage({
+        scrollBar: true
+    });
 
 $(".job_detail").hide();
 $( ".career__link" ).click(function() {
@@ -103,19 +106,136 @@ $(".scroll-indicators li").click(function(){
     }
     myFunction();
 });
-$(".tab_indicator li a").click(function(){
-   var href = $(this).attr('href');
-    if ( href == "#about_us" ) {
-        $(".tab_indicator li a").removeClass('active');
+$(".about-indicators li").click(function(){
+    var tab=$(this).data("id");
+    if ( tab == 1) {
+        $(".about-indicators li").removeClass('active');
         $(this).addClass('active');
+        nextslideindex=0;
     }
-    else if ( href == "#our_mission" ) {
-        $(".tab_indicator li a").removeClass('active');
+    else if ( tab == 2) {
+       $(".about-indicators li").removeClass('active');
         $(this).addClass('active');
+        nextslideindex=1;
     }
-    else if ( href == "#valuable_clients" ) {
-        $(".tab_indicator li a").removeClass('active');
+    else if ( tab == 3) {
+        $(".about-indicators li").removeClass('active');
         $(this).addClass('active');
+        nextslideindex=2;
     }
+    else if ( tab == 4) {
+        $(".about-indicators li").removeClass('active');
+        $(this).addClass('active');
+        nextslideindex=3;
+    }
+    scroll();
 });
+
+$('.valuable-clients-right').hide();
+$("#abt-img1").show();
+var length=$(".valuable-clients-left__list").length;
+for(var i=1;i<=length;i++){
+    $("#abt-img"+i).click(function(){
+    var id=$(this).data("id");
+    for(var j=1;j<=length;j++){
+    var id1=$("#company"+j).data("id");
+    if(id == id1) {
+            $('.valuable-clients-right').hide();
+            $("#company"+j).show();
+
+        
+    }
+}
+    });
+}
+
+// $('#company').show();
+//     $('#company1').hide();
+//     $('#company2').hide();
+//     $('#company3').hide();
+//     $('#company4').hide();
+//     $('#company5').hide();
+//     $('#company6').hide();
+//     $('#company7').hide();
+// $("#abt-img").click(function(){
+//     $('#company').show();
+//     $('#company1').hide();
+//     $('#company2').hide();
+//     $('#company3').hide();
+//     $('#company4').hide();
+//     $('#company5').hide();
+//     $('#company6').hide();
+//     $('#company7').hide();
+// });
+// $("#abt-img1").click(function(){
+//     $('#company1').show();
+//     $('#company').hide();
+//     $('#company2').hide();
+//     $('#company3').hide();
+//     $('#company4').hide();
+//     $('#company5').hide();
+//     $('#company6').hide();
+//     $('#company7').hide();
+// });
+// $("#abt-img2").click(function(){
+//     $('#company2').show();
+//     $('#company1').hide();
+//     $('#company').hide();
+//     $('#company3').hide();
+//     $('#company4').hide();
+//     $('#company5').hide();
+//     $('#company6').hide();
+//     $('#company7').hide();
+// });
+
+// $("#abt-img3").click(function(){
+//     $('#company3').show();
+//     $('#company1').hide();
+//     $('#company2').hide();
+//     $('#company').hide();
+//     $('#company4').hide();
+//     $('#company5').hide();
+//     $('#company6').hide();
+//     $('#company7').hide();
+// });
+// $("#abt-img4").click(function(){
+//     $('#company4').show();
+//     $('#company1').hide();
+//     $('#company2').hide();
+//     $('#company3').hide();
+//     $('#company').hide();
+//     $('#company5').hide();
+//     $('#company6').hide();
+//     $('#company7').hide();
+// });
+// $("#abt-img5").click(function(){
+//     $('#company5').show();
+//     $('#company1').hide();
+//     $('#company2').hide();
+//     $('#company3').hide();
+//     $('#company4').hide();
+//     $('#company').hide();
+//     $('#company6').hide();
+//     $('#company7').hide();
+// });
+// $("#abt-img6").click(function(){
+//     $('#company6').show();
+//     $('#company1').hide();
+//     $('#company2').hide();
+//     $('#company3').hide();
+//     $('#company4').hide();
+//     $('#company5').hide();
+//     $('#company').hide();
+//     $('#company7').hide();
+// });
+// $("#abt-img7").click(function(){
+//     $('#company7').show();
+//     $('#company1').hide();
+//     $('#company2').hide();
+//     $('#company3').hide();
+//     $('#company4').hide();
+//     $('#company5').hide();
+//     $('#company6').hide();
+//     $('#company').hide();
+// });
 });
