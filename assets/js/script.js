@@ -1,8 +1,4 @@
 $( document ).ready(function() {
-var href=[
-        "our_mission",
-        "#valuable_clients"
-    ];
 
 
 $(".MenuContent").hide();
