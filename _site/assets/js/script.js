@@ -20,6 +20,7 @@ $('input[type="radio"]').click(function() {
     var classArr=category.replace(/[^a-z0-9\s]/gi, ' ').split(" "); 
     var finalArray = classArr.filter(function(v){return v!==''});
     $("."+finalArray.join('.')).show().css({"opacity":"1","transition":"all 2s linear"});
+    $(".job_detail").hide();
 }
 });
 
@@ -34,8 +35,12 @@ $( ".career__link" ).click(function() {
 });
 
 $( ".career__img2").click(function() {
+    debugger;
     $(".job_detail").hide();
-    $(".job").show();
+    var job=$(".job").length;
+    for(var i=0;i<=job;i++){
+        $("."+i).show();
+    } 
 });
 
 
@@ -150,5 +155,6 @@ for(var i=1;i<=length;i++){
 }
     });
 }
+
 
 });

@@ -9,7 +9,7 @@
 			width: 100%;
 		}
 		.processContent {
-			width: 300px;
+			width: 320px;
 			color: $secondary-color;
 			padding-top: 150px;
 			&__heading {
@@ -30,19 +30,30 @@
 			float: right;
 		}
 	}
-	.path {
-      margin-left: 634px;
-	  margin-top: -110px;
-    }
+	.processSvg {
+		position: absolute;
+		width: 40%;
+		left: 39%;
+		top: 192%;
+	}
+	.processSvg1 {
+		position: absolute;
+		width: 40%;
+		left: 21%;
+		top: 264%;
+	}
+	.processSvg2 {
+		position: absolute;
+		width: 40%;
+		left: 39%;
+		top: 335%;
+	}
+	.processSvg3 {
+		position: absolute;
+		width: 40%;
+		left: 21%;
+		top: 410%;
+	}
+	}
 
-    @keyframes dash {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-    @-webkit-keyframes dash {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-}
+
