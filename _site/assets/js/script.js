@@ -113,29 +113,20 @@ $(".scroll-indicators li").click(function(){
     }
     myFunction();
 });
-$(".about-indicators li").click(function(){
+$(".about-indicators li a").click(function(){
     var tab=$(this).data("id");
     if ( tab == 1) {
-        $(".about-indicators li").removeClass('active');
+        $(".about-indicators li a").removeClass('active');
         $(this).addClass('active');
-        nextslideindex=0;
     }
     else if ( tab == 2) {
-       $(".about-indicators li").removeClass('active');
+       $(".about-indicators li a").removeClass('active');
         $(this).addClass('active');
-        nextslideindex=1;
     }
     else if ( tab == 3) {
-        $(".about-indicators li").removeClass('active');
+        $(".about-indicators li a").removeClass('active');
         $(this).addClass('active');
-        nextslideindex=2;
     }
-    else if ( tab == 4) {
-        $(".about-indicators li").removeClass('active');
-        $(this).addClass('active');
-        nextslideindex=3;
-    }
-    scroll();
 });
 
 $('.valuable-clients-right').hide();

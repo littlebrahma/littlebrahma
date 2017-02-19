@@ -1,4 +1,10 @@
 .hero {
+	#deskProcess {
+		display: block;
+	}
+	#TabMobProcess {
+		display: none;
+	}
 	.processBg {
 		background-color: #B93961;
 	}
@@ -54,6 +60,49 @@
 		left: 21%;
 		top: 410%;
 	}
-	}
+	@media screen and (max-width: 1199px){
+		.line {
+	        margin: 0 auto;
+	    }
+	    #deskProcess {
+			display: none;
+		}
+		#TabMobProcess {
+			display: block;
+			padding-bottom: 10px;
+		}
+		.processBgContent {
+			.processContent {
+	    		padding-top: 90px;
+	    	}
+	    }
+    }
+    @media screen and (max-width: 767px){
+		.line {
+	        display: none;
+	    }
+	    .processBgContent {
+    		padding: 0;
+    		.processContent {
+			    padding: 25px 0 0;
+			    text-align: center;
+			    width: 270px;
+			    &__heading {
+    				font-size: $ternary-headingfont;
+    			}
+			}
+    	}
+    	.mobRow {
+    		border-bottom: 1px solid #FFC700;
+		    height: 500px;
+		    margin: 0 auto 25px;
+		    width: 300px;
+		    &:last-child {
+		    	border-bottom: none;
+		    }
+    	}
+    }
+}
+
 
 

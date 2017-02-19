@@ -15,7 +15,7 @@
 		<body>
 		<section class="hero">
 <div id="about_us">
-<section class="about_us-Bg commonSection">
+<section class="about_us-Bg commonSection" id="header">
     <header class="commonHeader">
     
         <a href="/"><img src="/assets/img/common/LOGO_WHITE.png" class="commonHeader__logo"></a>
@@ -83,10 +83,9 @@
 </div>
 </section>
 <ul class="about-indicators">
-            <li class="active" data-id="1"></li></a>
-            <li data-id="2"></li>
-            <li data-id="3"></li>
-            <li data-id="4"></li>
+            <li><a href="#header" class="active" data-id="1"></a></li>
+            <li><a href="#our_mission" data-id="2"></a></li>
+            <li><a href="#valuable_clients" data-id="3"></a></li>
               
             
         </ul>
@@ -379,211 +378,9 @@
         <script src="/assets/js/script.js"></script>
     </body>
 </html>
-<!-- <script type="text/javascript">
-  $('section').css({'height':(($(window).height()))+'px'});
-  
-    // Now bind the event to the desired element
-    $('section').bind('mousewheel', function(e){
-        if(e.wheelDelta/120 > 0) {
-            $(this).text('scrolling up !');
-        }
-        else{
-            $(this).text('scrolling down !');
-        }
-    });
-</script> -->
 
 <script type="text/javascript">
-// $('.commonSection').first().addClass('active');
 
-
-// $('body, html').delay(1000).animate({
-//         scrollTop: $('#about-us').position().top
-//         }, 'slow');
-
-// $(document).on('mousewheel DOMMouseScroll', function (e) {
-//         e.preventDefault();//prevent the default mousewheel scrolling
-//         var active = $('.commonSection.active');
-//         var indactive = $('.about-indicators li.active');
-//         //get the delta to determine the mousewheel scrol UP and DOWN
-//         var delta = e.originalEvent.detail < 0 || e.originalEvent.wheelDelta > 0 ? 1 : -1;
-        
-//         //if the delta value is negative, the user is scrolling down
-//         if (delta < 0) {
-//             //mousewheel down handler
-//             next = active.next('.commonSection');
-
-//             //indicator
-//             nextind = indactive.next('li');
-//             //check if the next section exist and animate the anchoring
-//             if (next.length) {
-//                /*setTimeout is here to prevent the scrolling animation
-//                 to jump to the topmost or bottom when 
-//                 the user scrolled very fast.*/
-//                 var timer = setTimeout(function () {
-
-//                     /* animate the scrollTop by passing 
-//                     the elements offset top value */
-//                     $('body, html').animate({
-//                         scrollTop: next.offset().top
-//                     }, 'slow');
-                    
-//                     // move the indicator 'active' class
-//                     next.addClass('active')
-//                         .siblings().removeClass('active');
-//                     nextind.addClass('active')
-//                         .siblings().removeClass('active');
-                    
-//                     clearTimeout(timer);
-//                 }, 800);
-//             }
-
-//         } else {
-//             //mousewheel up handler
-//             /*similar logic to the mousewheel down handler 
-//             except that we are animate the anchoring 
-//             to the previous sibling element*/
-//             prev = active.prev('.commonSection');
-
-//             //indicator
-//             prevind = indactive.prev('li');
-
-//             if (prev.length) {
-//                 var timer = setTimeout(function () {
-//                     $('body, html').animate({
-//                         scrollTop: prev.offset().top
-//                     }, 'slow');
-
-//                     prev.addClass('active')
-//                         .siblings().removeClass('active');
-//                     prevind.addClass('active')
-//                         .siblings().removeClass('active');
-                    
-//                     clearTimeout(timer);
-//                 }, 800);
-//             }
-
-//         }
-//     });
-// $('#about_us').click(function(){
-//       var scrollsec = $(this).parents('.commonSection');
-//       $('body, html').animate({scrollTop: scrollsec.next().offset().top}, 'slow');
-//       scrollsec.removeClass('active');
-//       scrollsec.next().addClass('active');
-//       $('.about-indicators > li').removeClass('active');
-//       $('.about-indicators > li:eq(1)').addClass('active');
-//   });
-
-
-// The actual code:
-
-// var targets = $('.commonSection'); // List of elements to scroll to
-// var index = 0;
-// var duration = 600;
-// var canScroll = true;
-// var cache;
-
-// function limit(x, min, max) {
-//   return Math.min(max, Math.max(min, x));
-// }
-
-// $(window).on('mousewheel DOMMouseScroll', function (ev) {
-  
-//   if (canScroll) {
-    
-//     cache = index;
-    
-//     if (ev.deltaY < 0) {
-//       index = index + 1; // Scrolling down, so increase index
-//     } else {
-//       index = index - 1; // Scrolling up, so decrease index
-//     }
-  
-//     // Make sure the index is between 0 and (targets.length - 1)
-//     index = limit(index, 0, targets.length - 1);
-    
-//     console.log(index);
-      
-//     // Make sure to scroll if and only if the value has changed
-//     if (index !== cache) {
-    
-//     // Scroll to the target element:
-//     $(window).scrollTo(targets.get(index), {
-//       duration: duration,
-//       easing: 'swing'
-//     });
-
-//     canScroll = false;
-//     setTimeout(function () {
-//       canScroll = true;
-//     }, duration);
-//   }
-// }
-    
-// ev.preventDefault();
-// return false;
-// });
- // Set each section's height equals to the window height
-    // $('.commonSection').height($(window).height());
-    // /*set the class 'active' to the first element 
-    //  this will serve as our indicator*/
-    // $('.commonSection').first().addClass('active');
-
-    // /* handle the mousewheel event together with 
-    //  DOMMouseScroll to work on cross browser */
-    // $(window).on('mousewheel DOMMouseScroll', function (e) {
-    //   debugger;
-    //     e.preventDefault();//prevent the default mousewheel scrolling
-    //     var active = $('.commonSection.active');
-    //     //get the delta to determine the mousewheel scrol UP and DOWN
-    //     var delta = e.originalEvent.detail < 0 || e.originalEvent.wheelDelta > 0 ? 1 : -1;
-        
-    //     //if the delta value is negative, the user is scrolling down
-    //     if (delta < 0) {
-    //         //mousewheel down handler
-    //         next = active.next();
-    //         //check if the next section exist and animate the anchoring
-    //         if (next.length) {
-    //            /*setTimeout is here to prevent the scrolling animation
-    //             to jump to the topmost or bottom when 
-    //             the user scrolled very fast.*/
-    //             var timer = setTimeout(function () {
-    //                 //  animate the scrollTop by passing 
-    //                 // the elements offset top value 
-    //                 $('body, html').animate({
-    //                     scrollTop: next.offset().top
-    //                 }, 'slow');
-                    
-    //                 // move the indicator 'active' class
-    //                 next.addClass('active')
-    //                     .siblings().removeClass('active');
-                    
-    //                 clearTimeout(timer);
-    //             }, 500);
-    //         }
-
-    //     } else {
-    //         //mousewheel up handler
-    //         /*similar logic to the mousewheel down handler 
-    //         except that we are animate the anchoring 
-    //         to the previous sibling element*/
-    //         prev = active.prev();
-
-    //         if (prev.length) {
-    //             var timer = setTimeout(function () {
-    //                 $('body, html').animate({
-    //                     scrollTop: prev.offset().top
-    //                 }, 'slow');
-
-    //                 prev.addClass('active')
-    //                     .siblings().removeClass('active');
-                    
-    //                 clearTimeout(timer);
-    //             }, 500);
-    //         }
-
-    //     }
-    // });
 
 var scrolling = false;
 var currentPos = 0;
@@ -598,7 +395,31 @@ var currentPos = 0;
                 scrollTop: $(scrollToElement).offset().top
             }, 500, function(){
                 scrolling = false;
-            });      
+            });    
+            if (scrollToElement == $('.commonSection')[0]) {
+              $(".about-indicators").css("opacity","1");
+          $(".about-indicators li a[data-id=1]").addClass('active');
+          $(".about-indicators li a[data-id=2]").removeClass('active');
+          $(".about-indicators li a[data-id=3]").removeClass('active');
+          $(".about-indicators li a[data-id=4]").removeClass('active');
+        }
+        else if (scrollToElement == $('.commonSection')[1]) {
+          $(".about-indicators").css("opacity","1");
+          $(".about-indicators li a[data-id=2]").addClass('active');
+          $(".about-indicators li a[data-id=1]").removeClass('active');
+          $(".about-indicators li a[data-id=3]").removeClass('active');
+          $(".about-indicators li a[data-id=4]").removeClass('active');
+        }
+        else if (scrollToElement == $('.commonSection')[2]) {
+          $(".about-indicators").css("opacity","1");
+          $(".about-indicators li a[data-id=3]").addClass('active');
+          $(".about-indicators li a[data-id=2]").removeClass('active');
+          $(".about-indicators li a[data-id=1]").removeClass('active');
+          $(".about-indicators li a[data-id=4]").removeClass('active');
+        }
+        else if (scrollToElement == $('.commonSection')[3]) {
+          $(".about-indicators").css("opacity","0");
+        }
         }
     }   
 
@@ -613,23 +434,45 @@ var currentPos = 0;
             }, 500,function(){
                 scrolling = false;
             }); 
+            if (scrollToElement == $('.commonSection')[0]) {
+              $(".about-indicators").css("opacity","1");
+          $(".about-indicators li a[data-id=1]").addClass('active');
+          $(".about-indicators li a[data-id=2]").removeClass('active');
+          $(".about-indicators li a[data-id=3]").removeClass('active');
+          $(".about-indicators li a[data-id=4]").removeClass('active');
         }
-    }    
-
+        else if (scrollToElement == $('.commonSection')[1]) {
+          $(".about-indicators").css("opacity","1");
+          $(".about-indicators li a[data-id=2]").addClass('active');
+          $(".about-indicators li a[data-id=1]").removeClass('active');
+          $(".about-indicators li a[data-id=3]").removeClass('active');
+          $(".about-indicators li a[data-id=4]").removeClass('active');
+        }
+        else if (scrollToElement == $('.commonSection')[2]) {
+          $(".about-indicators").css("opacity","1");
+          $(".about-indicators li a[data-id=3]").addClass('active');
+          $(".about-indicators li a[data-id=2]").removeClass('active');
+          $(".about-indicators li a[data-id=1]").removeClass('active');
+          $(".about-indicators li a[data-id=4]").removeClass('active');
+        }
+        else if (scrollToElement == $('.commonSection')[3]) {
+          $(".about-indicators").css("opacity","0");
+        }
+        }
+    } 
     $(document).ready(function() {
 
         // Get the current position on load
 
         for( var i = 0; i < $('.commonSection').length; i++){
             var elm = $('.commonSection')[i];
-            console.log(elm);
-
+            console.log(i);
             if( $(document).scrollTop() >= $(elm).offset().top ){
                 currentPos = i;
                 
             }
+            
         }
-
         $(document).bind('DOMMouseScroll', function(e){
             if(e.originalEvent.detail > 0) {
                 scrollDown();
@@ -649,148 +492,31 @@ var currentPos = 0;
         });
     });
 
-// var href=[
-//         "about-us",
-//         "our_mission",
-//         "valuable_clients",
-//         "commonFooter"
-//     ];
-// var nextslideindex=0;
-// function scroll() {
-//    if(nextslideindex == 0) {
-//     $('html, body').animate({
-//         'scrollTop' : $("#about-us").position().top
-//     });
-//     $(".about-indicators li[data-id=1]").addClass('active');
-//     $(".about-indicators li[data-id=2]").removeClass('active');
-//     $(".about-indicators li[data-id=3]").removeClass('active');
-//     $(".about-indicators li[data-id=4]").removeClass('active');
-//     }
-//     if(nextslideindex == 1) {
-//     $('html, body').animate({
-//         'scrollTop' : $("#our_mission").position().top
-//     });
-//     $(".about-indicators li[data-id=2]").addClass('active');
-//     $(".about-indicators li[data-id=1]").removeClass('active');
-//     $(".about-indicators li[data-id=3]").removeClass('active');
-//     $(".about-indicators li[data-id=4]").removeClass('active');
-//     }
-//     if(nextslideindex == 2) {
-//     $('html, body').animate({
-//         'scrollTop' : $("#valuable_clients").position().top
-//     });
-//     $(".about-indicators li[data-id=3]").addClass('active');
-//     $(".about-indicators li[data-id=2]").removeClass('active');
-//     $(".about-indicators li[data-id=1]").removeClass('active');
-//     $(".about-indicators li[data-id=4]").removeClass('active');
-//     }
-//     if(nextslideindex == 3) {
-//     $('html, body').animate({
-//         'scrollTop' : $("#commonFooter").position().top
-//     });
-//     $(".about-indicators li[data-id=4]").addClass('active');
-//     $(".about-indicators li[data-id=2]").removeClass('active');
-//     $(".about-indicators li[data-id=3]").removeClass('active');
-//     $(".about-indicators li[data-id=1]").removeClass('active');
-//     }
-// }
 
-
-// function rotateimage(e){
-//     var evt=window.event || e //equalize event object
-//     var delta=evt.detail? evt.detail*(-120) : evt.wheelDelta //delta returns +120 when wheel is scrolled up, -120 when scrolled down
-//     nextslideindex=(delta<=-120)? nextslideindex+1 : nextslideindex-1//move image index forward or back, depending on whether wheel is scrolled down or up
-//     nextslideindex=(nextslideindex<0)? href.length-1 : (nextslideindex>href.length-1)? 0 : nextslideindex; //wrap image index around when it goes beyond lower and upper boundaries
-//     console.log(nextslideindex);
-//     // var myhref= $("#scroll").attr('href', href[nextslideindex]);
-//     // $(myhref).animate({
-//     //     scrollTop: $(myhref).offset().top
-//     // });
-//    scroll();
-//     if (evt.preventDefault) //disable default wheel action of scrolling page
-//         evt.preventDefault();
-//     else
-//         return false;
- 
-// }
-// var mousewheelevt=(/Firefox/i.test(navigator.userAgent))? "DOMMouseScroll" : "mousewheel"; //FF doesn't recognize mousewheel as of FF3.x
-// if (window.attachEvent) //if IE (and Opera depending on user setting)
-//     window.attachEvent("on"+mousewheelevt, rotateimage);
-// else if (window.addEventListener) //WC3 browsers
-//     window.addEventListener(mousewheelevt, rotateimage, false);
-
-
-
-// (function() {
-//   var delay = false;
-
-//   $(document).on('wheel DOMMouseScroll', function(event) {
-//     event.preventDefault();
-//     if(delay) return;
-
-//     delay = true;
-//     setTimeout(function(){delay = false},200)
-
-//     var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
-
-//     var a= document.getElementsByTagName('a');
-//     if(wd < 0) {
-//       for(var i = 0 ; i < a.length ; i++) {
-//         var t = a[i].getClientRects()[0].top;
-//         if(t >= 40) break;
-//       }
-//     }
-//     else {
-//       for(var i = a.length-1 ; i >= 0 ; i--) {
-//         var t = a[i].getClientRects()[0].top;
-//         if(t < -20) break;
-//       }
-//     }
-//     $('html,body').animate({
-//       scrollTop: a[i].offsetTop
-//     });
-//   });
-// })();
-
-// var isScrolling = false;
-
-// //Scrolls window to the next div element using the scroll wheel.
-// // Scroll bug fixed! 
-// $(function() {          
-//     $('body').mousewheel(function(event, delta) {
-//     if(!isScrolling){
-//       isScrolling = true;
-//       var $current = $('div.current');
-      
-//       //console.log(delta);
-//       //console.log($current);
-          
-//       if (delta > 0) {
-//         $prev = $current.prev('.commonSection');
-        
-//         if ($prev.length) {
-//           $('body').scrollTo($prev, 500);
-//           $current.removeClass('current');
-//           $prev.addClass('current');
-//         }
-//       } else {
-//         $next = $current.next('.commonSection');
-        
-//         if ($next.length) {
-//           $('body').scrollTo($next, 500);
-//           $current.removeClass('current');
-//           $next.addClass('current');
-//         }
-//       }
-        
-      
-//       event.preventDefault();
-//       setTimeout(function(){
-//         isScrolling = false;
-//       }, 500);
-//     }
-//     });
-// });
+    $(document).scroll(function() {
+      var topOfOthDiv4 = $("#commonFooter").offset().top;
+      var topOfOthDiv1 = $("#header").offset().top;
+      var topOfOthDiv2 = $("#our_mission").offset().top;
+      var topOfOthDiv3 = $("#valuable_clients").offset().top;
+        if($(window).scrollTop() > topOfOthDiv4) { //scrolled past the other div?
+            $(".about-indicators").css("opacity","0");
+        }
+        else if($(window).scrollTop() > topOfOthDiv1) { //scrolled past the other div?
+            $(".about-indicators").css("opacity","1");
+            $(".about-indicators li a[data-id=1]").removeClass('active');
+            $(this).addClass('active');
+        }
+        else if($(window).scrollTop() > topOfOthDiv2) { //scrolled past the other div?
+            $(".about-indicators").css("opacity","1");
+            $(".about-indicators li a[data-id=2]").removeClass('active');
+          $(this).addClass('active');
+        }
+        else if($(window).scrollTop() > topOfOthDiv3) { //scrolled past the other div?
+            $(".about-indicators").css("opacity","1");
+          $(".about-indicators li a[data-id=3]").removeClass('active');
+          $(this).addClass('active');
+        }
+    });
 
 
 </script>
