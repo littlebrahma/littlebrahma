@@ -151,7 +151,8 @@ function myFunction() {
     if(nextslideindex >= 7 && nextslideindex <= 14) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/3.gif')";
-        $("background").addClass("animated fadeIn");
+        $("background").removeClass("animated fadeIn");
+        $(this).addClass("animated fadeIn");
         $("#text4").hide();
         $("#text").hide();
         $("#text2").hide();
@@ -167,7 +168,8 @@ function myFunction() {
     else if(nextslideindex >= 15 && nextslideindex <= 21)
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/4.gif')";
-        $("background").addClass("animated fadeIn");
+        $("background").removeClass("animated fadeIn");
+        $(this).addClass("animated fadeIn");
         $("#text4").hide();
         $("#text1").hide();
         $("#text").hide();
@@ -183,7 +185,8 @@ function myFunction() {
     else if(nextslideindex >= 22 && nextslideindex <= 28) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/5.gif')";
-        $("background").addClass("animated fadeIn");
+        $("background").removeClass("animated fadeIn");
+        $(this).addClass("animated fadeIn");
         $("#text4").hide();
         $("#text1").hide();
         $("#text2").hide();
@@ -199,7 +202,8 @@ function myFunction() {
     else if(nextslideindex >= 29 && nextslideindex <= 35) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
-        $("background").addClass("animated fadeIn");
+        $("background").removeClass("animated fadeIn");
+        $(this).addClass("animated fadeIn");
         $("#text").hide();
         $("#text1").hide();
         $("#text2").hide();
@@ -215,7 +219,8 @@ function myFunction() {
     else if(nextslideindex >= 0 && nextslideindex <= 6) 
     {
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/1.gif')";
-        $("background").addClass("animated fadeIn");
+        $("background").removeClass("animated fadeIn");
+        $(this).addClass("animated fadeIn");
         $("#text4").hide();
         $("#text1").hide();
         $("#text2").hide();
@@ -234,7 +239,8 @@ function rotateimage(e){
     var delta=evt.detail? evt.detail*(-120) : evt.wheelDelta; //delta returns +120 when wheel is scrolled up, -120 when scrolled down
     nextslideindex=(delta<=-120)? nextslideindex+1 : nextslideindex-1;//move image index forward or back, depending on whether wheel is scrolled down or up
     nextslideindex=(nextslideindex<0)? myimages.length-1 : (nextslideindex>myimages.length-1)? 0 : nextslideindex; //wrap image index around when it goes beyond lower and upper boundaries
-    $("#slideshow").css('background-position', myimages[nextslideindex]).addClass("animated fadeIn");
+    $("#slideshow").css('background-position', myimages[nextslideindex]).removeClass("animated fadeIn");
+    $(this).addClass("animated fadeIn");
     myFunction();
     console.log(nextslideindex);
     if (evt.preventDefault) //disable default wheel action of scrolling page
