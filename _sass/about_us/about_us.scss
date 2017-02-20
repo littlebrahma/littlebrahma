@@ -112,6 +112,9 @@
 }
 .valuable-clients-right {
     width: 270px;
+    &__list {
+        cursor: pointer;
+    }
 &__billgates-img {
     width: 270px;
     height:270px;
@@ -184,7 +187,7 @@
 .about-indicators {
         position: fixed;
         right: 70px;
-        top: 40%;
+        top: 48%;
         list-style: none;
         li a {
             background-color: #fff;

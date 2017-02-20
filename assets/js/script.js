@@ -147,5 +147,20 @@ for(var i=1;i<=length;i++){
     });
 }
 
+var length1=$(".valuable-clients-right__list").length;
+for(var i=1;i<=length1;i++){
+    $("#about-img"+i).click(function(){
+    var id2=$(this).data("id");
+    for(var j=1;j<=length1;j++){
+    var id3=$("#company"+j).data("id");
+    if(id2 == id3) {
+            $('.valuable-clients-right').hide();
+            $("#company"+j).show();
+
+        
+    }
+}
+    });
+}
 
 });
