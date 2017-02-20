@@ -3,7 +3,6 @@ category: CONCEPT ARTIST
 title: CONCEPT ARTIST
 years: 2-4 Years Exp.
 location: Bangalore
-class: careerBg
 Job_Description: 
 - Quick Learning & System Understanding Capability,Candidates should be excellent team players, yet capable of working independently 
 - Able to manage multiple projects at once.

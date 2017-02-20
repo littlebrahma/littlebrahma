@@ -3,7 +3,6 @@ category: UI/UX DESIGN
 title: UI/UX DESIGN
 years: 2-4 Years Exp
 location: Hyderabad
-class: careerBg
 Job_Description: 
  - Quick Learning & System Understanding Capability,Candidates should be excellent team players, yet capable of working independently 
  - Able to manage multiple projects at once.
