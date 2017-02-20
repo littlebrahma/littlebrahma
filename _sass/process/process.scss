@@ -36,29 +36,11 @@
 			float: right;
 		}
 	}
-	.processSvg {
-		position: absolute;
-		width: 40%;
-		left: 39%;
-		top: 192%;
+	.processSvg,.processSvg2 {
+		width: 85%;
 	}
-	.processSvg1 {
-		position: absolute;
-		width: 40%;
-		left: 21%;
-		top: 264%;
-	}
-	.processSvg2 {
-		position: absolute;
-		width: 40%;
-		left: 39%;
-		top: 335%;
-	}
-	.processSvg3 {
-		position: absolute;
-		width: 40%;
-		left: 21%;
-		top: 410%;
+	.processSvg1,.processSvg3 {
+		width: 100%;
 	}
 	@media screen and (max-width: 1199px){
 		.line {
