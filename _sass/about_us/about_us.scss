@@ -202,6 +202,9 @@
             }
         }
     }
+.commonSection {
+    height: 100vh;
+}
 @media screen and (min-width: 1866px){
     .about-us,.valuable-clients,.our-mission {
         height: 1050px;
@@ -253,6 +256,7 @@
     }
     .valuable-clients-right {
         width: 368px;
+        display: none;
     }
     .valuable-clients-right__billgates-img {
         width: 368px;
