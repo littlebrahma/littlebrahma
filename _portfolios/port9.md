@@ -1,6 +1,6 @@
 ---
-category: MAGAZINE & BOOK
-porject_title: MAGAZINE & BOOK
+category: ANIMATION
+porject_title: ANIMATION
 whole-class: blog-filter6
 background-class: portBgImg
 class: blogDetail__title6
