@@ -35,7 +35,6 @@ $( ".career__link" ).click(function() {
 });
 
 $( ".career__img2").click(function() {
-    debugger;
     $(".job_detail").hide();
     var job=$(".job").length;
     for(var i=0;i<=job;i++){

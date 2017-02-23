@@ -43,6 +43,7 @@
 					font-family: $primary-contentfamily;
 					font-size: $secondary-contentfont;
 					margin-bottom: 20px;
+					line-height: 20px;
 				}
 			}
 			.authorSection {
@@ -79,6 +80,9 @@
 			}
 		}
 	}
+	.blog__pad-img {
+				padding:0 15px;
+			}
 	.blog-pad__img {
 		width: 46px;
 	}

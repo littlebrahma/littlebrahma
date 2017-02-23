@@ -12,7 +12,8 @@
 		background-color: #1A1746;
 		padding: 120px 90px;
 		&__img {
-			width: 100%;
+			width: 80%;
+			margin-left: 3rem;
 		}
 		.processContent {
 			width: 320px;
@@ -64,9 +65,13 @@
 	        display: none;
 	    }
 	    .processBgContent {
-    		padding: 0;
+    		padding:30px 0 0;
+    		&__img {
+			width: 100%;
+			margin-left: 0rem;
+		}
     		.processContent {
-			    padding: 25px 0 0;
+			    padding: 0;
 			    text-align: center;
 			    width: 270px;
 			    &__heading {
