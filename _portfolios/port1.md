@@ -1,6 +1,6 @@
 ---
-category: WEB & MOBILE APP DESIGN
-porject_title: WEB & MOBILE APP DESIGN 
+category: BRANDING
+porject_title: BRANDING 
 background-class: portBgImg
 description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Dummy text of the printing and typesetting industry.
 ---

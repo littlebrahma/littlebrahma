@@ -1,6 +1,6 @@
 ---
-category: PACKAGING & LABEL
-title: PACKAGING & LABEL
+category: ANIMATION
+title: ANIMATION
 whole-class: blog-filter5
 landing_image: "/assets/img/blog/1_1.png"
 class: blogDetail__title5
