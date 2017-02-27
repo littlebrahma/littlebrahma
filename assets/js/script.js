@@ -78,8 +78,8 @@ $(".scroll-indicators li").click(function(){
         $('#text3').hide();
         $('#text4').hide();
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/4.gif')";
-        $("background").addClass("animated fadeIn");
-        $('#slideshow').css("background-position", "-60px -270px").addClass("animated fadeIn");
+        $("background").addClass("animated fadeInUp");
+        $('#slideshow').css("background-position", "-2034px -265px").addClass("animated fadeIn");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
         nextslideindex=15;
@@ -91,7 +91,7 @@ $(".scroll-indicators li").click(function(){
         $('#text').hide();
         $('#text4').hide();
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/5.gif')";
-        $("background").addClass("animated fadeIn");
+        $("background").addClass("animated fadeInUp");
         $('#slideshow').css("background-position", "-56px -556px").addClass("animated fadeIn");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
@@ -104,7 +104,7 @@ $(".scroll-indicators li").click(function(){
         $('#text').hide();
         $('#text3').hide();
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
-        $("background").addClass("animated fadeIn");
+        $("background").addClass("animated fadeInUp");
         $('#slideshow').css("background-position", "-76px -1276px").addClass("animated fadeIn");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
