@@ -4,14 +4,29 @@ $( document ).ready(function() {
 $(".MenuContent").hide();
 $( ".commonMenu__icon" ).click(function() {
     $(this).hide();
-    $(".MenuContent").show();
+    $(".MenuContent").show().addClass("animated fadeInRight");
+    $(".scroll-indicators").css("opacity","0")
 });
 $( ".MenuContent__close").click(function() {
     $(".MenuContent").hide();
     $(".commonMenu__icon").show();
+   $(".MenuList__common").hide();
+   $(".scroll-indicators").css("opacity","1")
+});
+$(".MenuList__common").hide();
+$(".MenuList__wwa").click(function() {
+   $(".MenuList__common").toggle();
+   $(".arrow").toggleClass("MenuList__arrowDown MenuList__arrowDown1");
 });
 
-
+$("#r-option1").checked = true;
+if($("#r-option1").prop('checked') == true){
+   var category= $('input:radio:checked').data("category");
+    $(".blog-filter").hide().css({"opacity":"0"});
+    var classArr=category.replace(/[^a-z0-9\s]/gi, ' ').split(" "); 
+    var finalArray = classArr.filter(function(v){return v!==''});
+    $("."+finalArray.join('.')).show().css({"opacity":"1","transition":"all 2s linear"});
+}
 $('input[type="radio"]').click(function() {
  if($(this).is(':checked')) {
     var category= $('input:radio:checked').data("category");

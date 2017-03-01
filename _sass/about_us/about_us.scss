@@ -4,7 +4,7 @@
     
     align-items: center;
     justify-content: center;
-    padding:0 0 100px;
+    padding:0 0 0;
 
  &__button {
     color: white;
@@ -470,4 +470,11 @@
 }
 .about_us-Bg{   
     background:#1A1746;
+}
+.aboutScroll {
+    margin: 0 auto;
+    width: 1.5%;
+    img {
+        margin: 0 0 40px;
+    }
 }

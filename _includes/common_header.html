@@ -5,18 +5,15 @@
         <a href="/"><img src="/assets/img/common/LOGO_WHITE.png" class="commonHeader__logo"></a>
     {% endif %}
     <span class="commonMenu">
-    {% if page.layout == "service_detail" or page.layout == "contact" or page.layout == "career" %}
-            <img src="/assets/img/service/MENU_RED.png" class="commonMenu__icon">
-        {% else %}
-            <img src="/assets/img/common/MENU_WHITE.png" class="commonMenu__icon">
-        {% endif %}
+            <img src="/assets/img/common/defult_menu.png" class="commonMenu__icon">
     </span>
     <div class="MenuContent">
         <img src="/assets/img/common/CLOSE.png" class="MenuContent__close">
-        <div class="menuMob"><img src="/assets/img/common/LOGO_RED.png" class="menuMob__img"></div>
+        <div class="menuMob"><img src="/assets/img/common/menu_close.png" class="menuMob__img"></div>
         <ul class="MenuList">
             <li class="MenuList__ele">
-            <a href="#" class="MenuList__attr MenuList__main MenuList__wwa">who we are</a></li>
+            <a href="#" class="MenuList__attr MenuList__main MenuList__wwa">who we are<div class="arrow MenuList__arrowDown"></div></a>
+            </li>
             <li class="MenuList__ele MenuList__common">
                 <a href="/aboutus/" class="MenuList__attr">about us</a>
             </li>
@@ -54,10 +51,10 @@
             </li>
             <div class="MenuList__underline"></div>
              <li class="MenuList__ele">
-                                <a href="" class="footerColumn__image"><img src="/assets/img/FOOTER/insta.png"></a>
-                                <a href="" class="footerColumn__image"><img src="/assets/img/FOOTER/dribb.png"></a>
-                                <a href="" class="footerColumn__image"><img src="/assets/img/FOOTER/behance.png"></a>
-                                <a href="" class="footerColumn__image"><img src="/assets/img/FOOTER/twit.png"></a>
+                                <a href="" class="footerColumn__image"><img src="/assets/img/common/icon_instagram.png"></a>
+                                <a href="" class="footerColumn__image"><img src="/assets/img/common/icon_dribble.png"></a>
+                                <a href="" class="footerColumn__image"><img src="/assets/img/common/icon_behance.png"></a>
+                                <a href="" class="footerColumn__image"><img src="/assets/img/common/icon_twitter.png"></a>
                             </li>
         </ul>
     </div>

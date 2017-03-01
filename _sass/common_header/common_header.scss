@@ -1,6 +1,9 @@
 .hero {
     .commonHeader {
-        padding: 0 70px;
+        background-color: transparent;
+        left: 70px;
+        position: fixed;
+        right: 70px;
         background-color: transparent;
         &__logo {
             padding: 50px 0 0;
@@ -39,6 +42,24 @@
                /*  border-left: 5px solid #EC1944;
                 padding: 8px 20px 8px 15px; */
             }
+            }
+        &__arrowDown {
+            background-image: url("/assets/img/common/drop_down_down.png");
+            background-repeat: no-repeat;
+            float: right;
+            height: 9px;
+            margin-right: 50px;
+            margin-top: 8px;
+            width: 15px;
+        }
+        &__arrowDown1 {
+            background-image: url("/assets/img/common/drop_dwon_up.png");
+            background-repeat: no-repeat;
+            float: right;
+            height: 9px;
+            margin-right: 50px;
+            margin-top: 8px;
+            width: 15px;
         }
         &__attr {
             font-size: 14px;
@@ -65,21 +86,26 @@
             padding:0 20px;
         }
         &__bottom {
-            position: absolute;
-            bottom:85px;
+            position: fixed;
+            bottom:0;
         }
     }
     .menuMob {
         display: none;
     }
+    .MenuList__common {
+        padding-left: 50px;
+    }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
         .commonHeader {
-            padding: 0 50px;
+            left: 50px;
+            right: 50px;
         }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
         .commonHeader {
-            padding: 0 30px;
+            left: 30px;
+            right: 30px;
             &__logo {
                 padding: 20px 0 0;
                 height: 55px;
