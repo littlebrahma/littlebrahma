@@ -13,7 +13,7 @@
     }
     .MenuContent {
         float: right;
-        background-color: #E1D6F4;
+        background-color: #E1D7F4;
         position: fixed;
         right: 0;
         top: 0;
@@ -36,18 +36,37 @@
             margin-bottom: 5px;
             padding: 8px 20px;
             &:hover, &:active, &:focus {
-                border-left: 5px solid #EC1944;
-                padding: 8px 20px 8px 15px;
+               /*  border-left: 5px solid #EC1944;
+                padding: 8px 20px 8px 15px; */
             }
         }
         &__attr {
-            font-size: 16px;
-            font-family: $ternary-titlefamily;
+            font-size: 14px;
+            font-family: $secondary-titlefamily;
             text-transform: uppercase;
-            color: #424242;
+            color: #5858B9;
             &:hover, &:active, &:focus {
                 color: #EC1944;
             }
+        }
+        &__main {
+            font-size: 22px;
+            font-family: $ternary-titlefamily;
+            &:hover, &:active, &:focus {
+                color: #5858B9;
+            }
+        }
+        &__underline {
+            border-bottom:1px solid #5858B9;
+            width: 100px;
+            margin-left:20px;
+        }
+        &__cnc {
+            padding:0 20px;
+        }
+        &__bottom {
+            position: absolute;
+            bottom:85px;
         }
     }
     .menuMob {
@@ -85,10 +104,13 @@
             }
             &__attr {
                 &:hover,&:active,&:focus {
-                    border-bottom: 1px solid #ec1944;
-                    padding-bottom: 8px;
+                    // border-bottom: 1px solid #ec1944;
+                    // padding-bottom: 8px;
                 }
             }
+            &__underline {
+            margin:0 auto;
+        }
         }
         .menuMob {
             display: block;

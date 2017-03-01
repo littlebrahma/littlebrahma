@@ -68,7 +68,8 @@
 		    border: none;
 		    border-bottom: 1px solid #fff;
 		    color: $secondary-color;
-		    width: 50%;
+		    width: 84%;
+		    outline: none;
 		    background-color: transparent;
 		}
 		&__button {
@@ -90,6 +91,15 @@
 	}
 	@media screen and (min-width: 1024px) and (max-width: 1365px) {
 	
+	}
+	@media screen and (max-width:1199px) {
+		.footer_challenge-eshop {
+			padding-top:75px;
+			justify-content: center;
+		}
+		.footer_justify {
+			justify-content: center;
+		}
 	}
 	@media screen and (min-width: 768px) and (max-width: 1023px) {
 		.footerMargin {

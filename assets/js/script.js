@@ -9,6 +9,11 @@ $( ".commonMenu__icon" ).click(function() {
 $( ".MenuContent__close").click(function() {
     $(".MenuContent").hide();
     $(".commonMenu__icon").show();
+   $(".MenuList__common").hide();
+});
+$(".MenuList__common").hide();
+$(".MenuList__wwa").click(function() {
+   $(".MenuList__common").toggle();
 });
 
 
