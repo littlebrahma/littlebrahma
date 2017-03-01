@@ -43,6 +43,21 @@
 	.processSvg1,.processSvg3 {
 		width: 100%;
 	}
+	.breiefing-path {
+		position: relative;
+	}
+	#message {
+		position: absolute;
+	    right: 25%;
+	    top: 0%;
+	    width: 10%;
+	}
+	#message1 {
+		position: absolute;
+	    right: 40%;
+    	top: 30%;
+	    width: 10%;
+	}
 	@media screen and (max-width: 1199px){
 		.line {
 	        margin: 0 auto;

@@ -21,7 +21,7 @@ $(".MenuList__wwa").click(function() {
    $(".arrow").toggleClass("MenuList__arrowDown MenuList__arrowDown1");
 });
 
-$("#r-option1").checked = true;
+$("#r-option1").prop("checked", true);
 if($("#r-option1").prop('checked') == true){
    var category= $('input:radio:checked').data("category");
     $(".blog-filter").hide().css({"opacity":"0"});
