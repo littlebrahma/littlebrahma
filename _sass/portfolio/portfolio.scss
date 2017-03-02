@@ -3,17 +3,22 @@
 		background-color: #F26522;
 	}
 	.portBgImg {
-		margin-bottom: 30px;
+		// margin-bottom: 30px;
 		background-image: url("/assets/img/blog/1_1.png");
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		height: 200px;
+		height: 22vw;
+		max-height: 400px;
 		width: 100%;
     	.portfolioInner {
     		opacity: 0;
-    		height: 100%;
+    		height: 22vw;
+    		display: flex;
+    		justify-content: center;
+    		align-items:center;
     		width: 100%;
     		cursor: pointer;
+    		max-height: 400px;
     		&:hover {
 		    	opacity: 0.85;
 		    	background-color: #fff;
@@ -33,13 +38,14 @@
 	    		&--border {
 	    			border-bottom: 2px solid #5D5D5D;
 	    			width: 40px;
-	    			margin: 10px auto;
+	    			margin: 5px auto;
 	    		}
 	    		&--para {
 	    			font-family: $primary-contentfamily;
 	    			font-size: $secondary-contentfont;
 	    			width: 150px;
 	    			margin: 0 auto;
+	    			height: 100px;
 	    		}
     		}
     	}
@@ -70,6 +76,12 @@
     	.portfolioBg {
     		height: 100vh;
 			margin: 0 auto;
+    	}
+    	.portBgImg {
+    		height: 77vw;
+    		.portfolioInner {
+    			height: 77vw;
+    		}
     	}
     }
 }

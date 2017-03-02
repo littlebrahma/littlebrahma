@@ -4,6 +4,8 @@
 	}
 	.blog-row {
 		padding: 80px 20px 80px 35px;
+		max-width: 1866px;
+        margin: 0 auto;
 		.selectSection {
 			&__title {
 				font-family: $ternary-titlefamily;

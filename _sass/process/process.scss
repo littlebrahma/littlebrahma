@@ -8,9 +8,14 @@
 	.processBg {
 		background-color: #B93961;
 	}
+	.processContent__lg {
+		background-color: #1A1746;
+	}
 	.processBgContent {
 		background-color: #1A1746;
 		padding: 120px 90px;
+		max-width: 1866px;
+        margin: 0 auto;
 		&__img {
 			width: 80%;
 			margin-left: 3rem;

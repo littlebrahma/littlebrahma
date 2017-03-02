@@ -1,6 +1,9 @@
-
+#contact .commonHeader {
+	position:static;
+	padding:0 70px;
+}
 .contact {
-	padding:70px 90px;
+	padding:60px 90px 70px;
 	 &__title {
 	 	font-size: 21px;
 	 	font-family: montserrat-bold;
@@ -89,6 +92,9 @@
 }
 }
 @media screen and (max-width:767px) {
+	#contact .commonHeader {
+	padding:0 15px;
+    }
 	.contact {
 		padding:30px 0px 50px;
 		&__map {

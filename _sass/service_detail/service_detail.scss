@@ -1,3 +1,7 @@
+#service-detail .commonHeader {
+	position:static;
+	padding:0 70px;
+}
 .service-detailBg {
 	background-color: #f0f1f1;
 }
@@ -51,9 +55,9 @@
 	 &__img {
 	width :250px;
     } 
-    &__title {
+    /* &__title {
     font-size: 46px;  
-	}
+	} */
 	&__subtitle {
 		font-size: 24px;
 	}

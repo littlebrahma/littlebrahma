@@ -67,7 +67,8 @@ $border-bottom: 4px solid #414042;
 $common-width: 100%;
 @media screen and (min-width: 1866px) {
     .hero {
-        width: 1866px;
+        // width: 1866px;
+        margin: 0 auto;
     }
 }
 .hero {
