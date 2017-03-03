@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     padding:0 0 0;
+    height: 100vh;
 
  &__button {
     color: white;
@@ -53,7 +54,7 @@
     align-items: center;
     justify-content: center;
     color: white;   
-    padding:100px 0;
+    // padding:100px 0;
     height: 100vh;
 }
 
@@ -67,6 +68,8 @@
     justify-content: center;  
     color: grey;
     padding:100px 0;
+    height: 100vh;
+    align-items:center;
 
 &__heading {
     color: rgb(69, 65, 69);
@@ -201,6 +204,27 @@
             }
         }
     }
+    .about_us-Bg{   
+    background:#1A1746;
+    
+}
+.about-us-height {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutScroll {
+    margin: 0 auto;
+    width: 14px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    opacity: .5;
+    img {
+        margin: 0 0 20px;
+    }
+}
 @media screen and (min-width: 1866px){
     .about-us,.valuable-clients,.our-mission {
         height: 1050px;
@@ -327,7 +351,7 @@
     .about-us {
          display: block;
         height: auto;
-        padding:0 0 120px ;
+        // padding:0 0 120px ;
       &__button {
         padding: 8px 20px;
         font-size: 12px;
@@ -457,9 +481,9 @@
             position:initial;
         }
     }
-    .about-us{
-        padding:0 0 50px;
-    }
+    // .about-us{
+    //     padding:0 0 50px;
+    // }
         .our-mission,.valuable-clients {
         height: auto;
         padding: 50px 0;
@@ -468,15 +492,9 @@
         border-bottom: rgb(67, 66, 69) 5px solid;
         width: 65px;
 }
-}
-.about_us-Bg{   
-    background:#1A1746;
-    height: 100vh;
-}
 .aboutScroll {
-    margin: 0 auto;
-    width: 1.5%;
     img {
-        margin: 0 0 40px;
+        margin: 0 0 2px;
     }
+}
 }
