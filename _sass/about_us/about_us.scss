@@ -321,7 +321,7 @@
     }
 }
     .about-us-right,.our-mission-right {
-        width: 420px;
+        width: 380px;
     &__para {
         width: 420px;
     } 
@@ -365,6 +365,7 @@
     .about-us-left {
         margin:0 auto;
         position: relative;
+        max-width: 100%;
     }
     .about-us-left__img {
         position:absolute;
@@ -373,6 +374,7 @@
     .about-us-right {
         margin: 0 auto 10px;
         padding: 0px;
+        max-width: 100%;
     }
     .our-mission-right {
         margin:0 auto;

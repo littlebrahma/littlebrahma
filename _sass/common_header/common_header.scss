@@ -87,8 +87,8 @@
             padding:0 20px;
         }
         &__bottom {
-            position: fixed;
-            bottom:30px;
+            position: absolute;
+            bottom:60px;
         }
     }
     .menuMob {
@@ -115,6 +115,9 @@
             &__main {
                  font-size: 20px;
             }
+            &__bottom {
+            bottom:30px;
+        }
         }
     }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
