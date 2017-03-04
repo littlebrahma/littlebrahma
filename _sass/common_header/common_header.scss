@@ -13,7 +13,7 @@
     .commonMenu {
         float: right;
         cursor: pointer;
-        padding: 80px 0 0;
+        margin: 80px 0 0;
     }
     .MenuContent {
         float: right;
@@ -136,7 +136,7 @@
             }
         }
         .commonMenu {
-            padding: 35px 0 0;
+           margin: 35px 0 0;
             img {
                 height: 20px
             }
@@ -144,10 +144,20 @@
         .MenuContent {
             width: 100%;
             text-align: center;
+            padding:10px 0 0;
+            &__close {
+                margin-right: 30px;
+            }
         }
         .MenuList {
             padding: 30px 0 0;
+            &__bottom {
+                bottom:0px;
+                left: 24%;
+                right: 24%;
+            }
             &__ele {
+                padding:2px 20px;
                 &:hover,&:active,&:focus {
                     border-left: none;
                 }
