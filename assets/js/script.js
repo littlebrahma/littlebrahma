@@ -1,5 +1,14 @@
 $( document ).ready(function() {
 
+var height=$('.portfolioBg').height();
+    $(window).scroll(function() {
+if ($(this).scrollTop() > height){  
+    $('.commonHeader').addClass("sticky");
+  }
+  else{
+    $('.commonHeader').removeClass("sticky");
+  }
+});
 
 $(".MenuContent").hide();
 $( ".commonMenu__icon" ).click(function() {

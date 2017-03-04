@@ -63,6 +63,53 @@
     	top: 30%;
 	    width: 10%;
 	}
+	#sparkle {
+		position: absolute;
+		width: 3%;
+		left: 21%;
+		margin-top: -20%;
+	}
+	#sparkle1 {
+		position: absolute;
+		width: 1%;
+		left: 28%;
+	}
+	#sparkle2 {
+		position: absolute;
+		width: 1%;
+		left: 25%;
+		margin-top: -12%;
+	}
+	#pot {
+		position: absolute;
+		width: 2%;
+		right: 28%;
+		margin-top: -8px;
+	}
+	#pot1 {
+		position: absolute;
+		width: 1%;
+		right: 23%;
+		margin-top: 5%;
+	}
+	#chakra {
+		position: absolute;
+		width: 3%;
+		left: 24%;
+		margin-top: -2%;
+	}
+	#chakra1 {
+		position: absolute;
+		width: 2%;
+		left: 26%;
+		margin-top: -16%;
+	}
+	#chakra2 {
+		position: absolute;
+		width: 1%;
+		left: 21%;
+		margin-top: -18%;
+	}
 	@media screen and (max-width: 1199px){
 		.line {
 	        margin: 0 auto;
