@@ -111,6 +111,9 @@
 		margin-top: -18%;
 	}
 	@media screen and (max-width: 1199px){
+		#message,#message1,#chakra,#chakra1,#chakra2,#pot,#pot1,#sparkle,#sparkle1,#sparkle2 {
+			display: none;
+		}
 		.line {
 	        margin: 0 auto;
 	    }

@@ -5,8 +5,21 @@
     <div class="row homepageRow">
         <div class="homepageCln">
             <div class="homepageBgImg animated fadeInUp" id="background_image">
-                <div id="slideshow" class="homepageBgImg__img"></div>
+                
             </div>
+            <div class="homepageBgImg animated fadeInUp" id="background_image1">
+                
+            </div>
+            <div class="homepageBgImg animated fadeInUp" id="background_image2">
+                
+            </div>
+            <div class="homepageBgImg animated fadeInUp" id="background_image3">
+                
+            </div>
+            <div class="homepageBgImg animated fadeInUp" id="background_image4">
+                
+            </div>
+            <div id="slideshow" class="homepageBgImg__img animated fadeIn"></div>
         </div>
        <div class="homepageContent animated fadeInUp" id="text">
             <div class="homepageContent__border"></div>
@@ -114,13 +127,13 @@ var myimages=[
     "-1382px -70px",
     "-1710px -50px",
     "-2032px -50px",
-    "-56px -960px",
-    "-388px -960px",
-    "-716px -960px",
-    "-1040px -960px",
-    "-1368px -960px",
-    "-1694px -960px",
-    "-2022px -960px",
+    "-68px -960px",
+    "-398px -960px",
+    "-727px -960px",
+    "-1050px -960px",
+    "-1379px -960px",
+    "-1704px -960px",
+    "-2031px -960px",
     "-2034px -265px",
     "-1710px -265px",
     "-1377px -265px",
@@ -129,12 +142,12 @@ var myimages=[
     "-395px -265px",
     "-65px -265px",
     "-56px -556px",
-    "-388px -556px",
-    "-718px -556px",
-    "-1034px -556px",
+    "-387px -556px",
+    "-715px -556px",
+    "-1032px -556px",
     "-1350px -556px",
-    "-1682px -556px",
-    "-1984px -556px",
+    "-1679px -556px",
+    "-1981px -556px",
     "-76px -1276px",
     "-408px -1276px",
     "-740px -1276px",
@@ -149,8 +162,11 @@ var background=document.getElementById("background_image");
 function myFunction() {
     if(nextslideindex >= 7 && nextslideindex <= 13) 
     {
-        $('#background_image').removeClass("animated fadeInUp");
-        $('#background_image').css('background-image',"url('/assets/img/homepage/ANIMATIONS/3.gif')").addClass("animated fadeInUp");
+        $('#background_image1').show().addClass("animated fadeInUp");
+        $('#background_image').hide().addClass("animated fadeInUp");
+        $('#background_image2').hide().addClass("animated fadeInUp");
+        $('#background_image3').hide().addClass("animated fadeInUp");
+        $('#background_image4').hide().addClass("animated fadeInUp");
         $(".homepageBg").css("background-color","#211042");
         $("#text4").hide();
         $("#text").hide();
@@ -162,14 +178,15 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "217px", "left": "30%", "top": "32%", "width":"214px","opacity":"1"}).addClass("animated fadeIn"); 
+        $("#slideshow").css({"height": "217px", "left": "86%", "top": "84%;", "width":"214px","opacity":"1"}).addClass("animated fadeIn"); 
     }
     else if(nextslideindex >= 14 && nextslideindex <= 20)
     {
-        $('#background_image').removeClass("animated fadeInUp");
-        $('#background_image').css({
-            'background-image' : "url('/assets/img/homepage/ANIMATIONS/4.gif')"
-        }).addClass("animated fadeInUp");
+        $('#background_image2').show().addClass("animated fadeInUp");
+        $('#background_image').hide().addClass("animated fadeInUp");
+        $('#background_image1').hide().addClass("animated fadeInUp");
+        $('#background_image3').hide().addClass("animated fadeInUp");
+        $('#background_image4').hide().addClass("animated fadeInUp");
         $(".homepageBg").css("background-color","#230F42");
         $("#text4").hide();
         $("#text1").hide();
@@ -181,14 +198,15 @@ function myFunction() {
         $(".scroll-indicators li[data-id=2]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "280px", "left": "24%", "top": "-1%", "width":"216px","opacity":"1"}).addClass("animated fadeIn");
+        $("#slideshow").css({"height": "280px", "left": "61%", "top": "11px", "width":"216px","opacity":"1"}).addClass("animated fadeIn");
     }
     else if(nextslideindex >= 21 && nextslideindex <= 27) 
     {
-        $('#background_image').removeClass("animated fadeInUp");
-        $('#background_image').css({
-            'background-image' : "url('/assets/img/homepage/ANIMATIONS/5.gif')"
-        }).addClass("animated fadeInUp");
+        $('#background_image3').show().addClass("animated fadeInUp");
+        $('#background_image').hide().addClass("animated fadeInUp");
+        $('#background_image2').hide().addClass("animated fadeInUp");
+        $('#background_image1').hide().addClass("animated fadeInUp");
+        $('#background_image4').hide().addClass("animated fadeInUp");
         $(".homepageBg").css("background-color","#230F42");
         $("#text4").hide();
         $("#text1").hide();
@@ -200,14 +218,15 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "290px", "left": "28%", "top": "-10%", "width":"296px","opacity":"1"}).addClass("animated fadeIn");
+        $("#slideshow").css({"height": "290px", "left": "51%", "top": "-32px", "width":"296px","opacity":"1"}).addClass("animated fadeIn");
     }
     else if(nextslideindex >= 28 && nextslideindex <= 34) 
     {
-        $('#background_image').removeClass("animated fadeInUp");
-        $('#background_image').css({
-            'background-image' : "url('/assets/img/homepage/ANIMATIONS/2.gif')"
-        }).addClass("animated fadeInUp");
+        $('#background_image4').show().addClass("animated fadeInUp");
+        $('#background_image').hide().addClass("animated fadeInUp");
+        $('#background_image2').hide().addClass("animated fadeInUp");
+        $('#background_image3').hide().addClass("animated fadeInUp");
+        $('#background_image1').hide().addClass("animated fadeInUp");
         $(".homepageBg").css("background-color","#211042");
         $("#text").hide();
         $("#text1").hide();
@@ -219,14 +238,15 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
-        $("#slideshow").css({"height": "368px", "left": "28%", "top": "-8%", "width":"200px","opacity":"1"}).addClass("animated fadeIn");
+        $("#slideshow").css({"height": "368px", "left": "76%", "top": "-20px", "width":"200px","opacity":"1"}).addClass("animated fadeIn");
     }
     else if(nextslideindex >= 0 && nextslideindex <= 6) 
     {
-        $('#background_image').removeClass("animated fadeInUp");
-        $('#background_image').css({
-            'background-image' : "url('/assets/img/homepage/ANIMATIONS/1.gif')"
-        }).addClass("animated fadeInUp");
+        $('#background_image').show().addClass("animated fadeInUp");
+        $('#background_image1').hide().addClass("animated fadeInUp");
+        $('#background_image2').hide().addClass("animated fadeInUp");
+        $('#background_image3').hide().addClass("animated fadeInUp");
+        $('#background_image4').hide().addClass("animated fadeInUp");
         $(".homepageBg").css("background-color","#241141");
         $("#text4").hide();
         $("#text1").hide();
@@ -238,7 +258,7 @@ function myFunction() {
         $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "158px", "left": "128px", "top": "178px", "width":"201px","opacity":"1"}).addClass("animated fadeIn");
+        $("#slideshow").css({"height": "158px", "left": "140px", "top": "185px", "width":"201px","opacity":"1"}).addClass("animated fadeIn");
     }
 }
 function rotateimage(e){

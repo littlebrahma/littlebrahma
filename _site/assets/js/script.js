@@ -1,12 +1,17 @@
 $( document ).ready(function() {
 
 var height=$('.portfolioBg').height();
+console.log(height);
     $(window).scroll(function() {
-if ($(this).scrollTop() > height){  
-    $('.commonHeader').addClass("sticky");
+if ($(this).scrollTop() > 700){  
+    $('.commonHeader').css({"background-color":"#f26522","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"fixed","top":"25%"});
+    $(".portDetail").css({"position":"relative","left":"33%"});
   }
-  else{
-    $('.commonHeader').removeClass("sticky");
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".portDetail").css({"position":"static","left":"0%"});
   }
 });
 
