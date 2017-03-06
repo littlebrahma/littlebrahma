@@ -45,3 +45,63 @@
 	</div>
 {% include common_footer.html %}
 {% include footer.html %}
+<script type="text/javascript">
+if (screen.width >= 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 200){  
+    $('.commonHeader').css({"background-color":"#27aae1","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"fixed","top":"25%"});
+    $(".rightDiv").css({"position":"relative","left":"33%"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".rightDiv").css({"position":"static","left":"0%"});
+  }
+});
+}
+else if (screen.width < 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 200){  
+    $('.commonHeader').css({"background-color":"#27aae1","padding-top":"10px","padding-bottom":"10px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".portDetail").css({"position":"relative","top":"0"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".portDetail").css({"position":"static","left":"0%"});
+  }
+});
+}
+$(window).resize(function() {
+	if (screen.width >= 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 200){  
+    $('.commonHeader').css({"background-color":"#27aae1","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"fixed","top":"25%"});
+    $(".rightDiv").css({"position":"relative","left":"33%"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".rightDiv").css({"position":"static","left":"0%"});
+  }
+});
+}
+else if (screen.width < 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 200){  
+    $('.commonHeader').css({"background-color":"#27aae1","padding-top":"10px","padding-bottom":"10px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".portDetail").css({"position":"relative","top":"0"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".portDetail").css({"position":"static","left":"0%"});
+  }
+});
+}
+});
+</script>
