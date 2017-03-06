@@ -2,6 +2,7 @@ $( document ).ready(function() {
 
 var height=$('.portfolioBg').height();
 console.log(height);
+if (screen.width >= 768) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > 700){  
     $('.commonHeader').css({"background-color":"#f26522","padding-top":"20px","padding-bottom":"20px"});
@@ -14,6 +15,21 @@ if ($(this).scrollTop() > 700){
     $(".portDetail").css({"position":"static","left":"0%"});
   }
 });
+}
+else if (screen.width < 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 420){  
+    $('.commonHeader').css({"background-color":"#f26522","padding-top":"10px","padding-bottom":"10px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".portDetail").css({"position":"relative","top":"0"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".portDetail").css({"position":"static","left":"0%"});
+  }
+});
+}
 
 $(".MenuContent").hide();
 $( ".commonMenu__icon" ).click(function() {
