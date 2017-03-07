@@ -1,6 +1,6 @@
 {% include header.html %}
 <div id="about_us">
-<section class="about_us-Bg commonSection" id="header">
+<section class="about_us-Bg commonSection" id="about_us-Bg">
     {% include common_header.html %}
  
  <div class="about-us-height">
@@ -17,14 +17,7 @@
       <div class="aboutScroll"><img src="/assets/img/about_us/SCROLL_INDICATOR-01.svg"></div>      
 </div>
 </div>
-</section>
-<ul class="about-indicators">
-            <li><a href="#header" class="active" data-id="1"></a></li>
-            <li><a href="#our_mission" data-id="2"></a></li>
-            <li><a href="#valuable_clients" data-id="3"></a></li>
-              
-            
-        </ul>
+
 <div class="our-mission commonSection" id="our_mission">
        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 our-mission-left">
        <img class="our-mission-left__img" src="/assets/img/about_us/ANIMATIONS/2.gif"> 
@@ -35,6 +28,7 @@
        <p class="our-mission-right__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
        </div>
 </div>
+
 <div class="row valuable-clients commonSection" id="valuable_clients">
      <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 valuable-clients-block">
        <div class=" valuable-clients-left">
@@ -129,148 +123,80 @@
         <li class="valuable-clients-right__list" id="about-img8" data-id="8"><img class="valuable-clients-right__logo" src="/assets/img/about_us/LOGO/8.png"></li>
        </ul>            
   </div>
-{% include common_footer.html %}
+
+</section>
+<ul class="about-indicators">
+            <li><a href="#header" class="active" data-id="1"></a></li>
+            <li><a href="#our_mission" data-id="2"></a></li>
+            <li><a href="#valuable_clients" data-id="3"></a></li>
+              
+            
+        </ul>
+
+
+<!-- {% include common_footer.html %} -->
 </div>
 {% include footer.html %}
 
 <script type="text/javascript">
-
-$(".about-indicators li a[data-id=1]").addClass('active');
-var scrolling = false;
-var currentPos = 0;
-
-    function scrollUp(){
-        if(!scrolling && currentPos > 0 ){
-            scrolling=true;
-            currentPos --;
-            var scrollToElement = $('.commonSection')[currentPos];
-
-            $('html, body').animate({
-                scrollTop: $(scrollToElement).offset().top
-            }, 500, function(){
-                scrolling = false;
-            });    
-            if (scrollToElement == $('.commonSection')[0]) {
-              $(".about-indicators").css("opacity","1");
-          $(".about-indicators li a[data-id=1]").addClass('active');
-          $(".about-indicators li a[data-id=2]").removeClass('active');
-          $(".about-indicators li a[data-id=3]").removeClass('active');
-        }
-        else if (scrollToElement == $('.commonSection')[1]) {
-          $(".about-indicators").css("opacity","1");
-          $(".about-indicators li a[data-id=2]").addClass('active');
-          $(".about-indicators li a[data-id=1]").removeClass('active');
-          $(".about-indicators li a[data-id=3]").removeClass('active');
-        }
-        else if (scrollToElement == $('.commonSection')[2]) {
-          $(".about-indicators").css("opacity","1");
-          $(".about-indicators li a[data-id=3]").addClass('active');
-          $(".about-indicators li a[data-id=2]").removeClass('active');
-          $(".about-indicators li a[data-id=1]").removeClass('active');
-        }
-        else if (scrollToElement == $('.commonSection')[3]) {
-          $(".about-indicators").css("opacity","0");
-        }
-        }
-    }   
-
-    function scrollDown(){   
-        if(!scrolling && currentPos < $('.commonSection').length-1  ){
-            scrolling=true;
-            currentPos ++;
-            var scrollToElement = $('.commonSection')[currentPos];
-
-            $('html, body').animate({
-                scrollTop: $(scrollToElement).offset().top
-            }, 500,function(){
-                scrolling = false;
-            }); 
-
-            if (scrollToElement == $('.commonSection')[0]) {
-              $(".about-indicators").css("opacity","1");
-          $(".about-indicators li a[data-id=1]").addClass('active');
-          $(".about-indicators li a[data-id=2]").removeClass('active');
-          $(".about-indicators li a[data-id=3]").removeClass('active');
-        }
-        else if (scrollToElement == $('.commonSection')[1]) {
-          $(".about-indicators").css("opacity","1");
-          $(".about-indicators li a[data-id=2]").addClass('active');
-          $(".about-indicators li a[data-id=1]").removeClass('active');
-          $(".about-indicators li a[data-id=3]").removeClass('active');
-        }
-        else if (scrollToElement == $('.commonSection')[2]) {
-          $(".about-indicators").css("opacity","1");
-          $(".about-indicators li a[data-id=3]").addClass('active');
-          $(".about-indicators li a[data-id=2]").removeClass('active');
-          $(".about-indicators li a[data-id=1]").removeClass('active');
-        }
-        else if (scrollToElement == $('.commonSection')[3]) {
-          $(".about-indicators").css("opacity","0");
-        }
-        }
-    } 
-    $(document).ready(function() {
-
-        // Get the current position on load
-
-        for( var i = 0; i < $('.commonSection').length; i++){
-            var elm = $('.commonSection')[i];
-            console.log(i);
-            if( $(document).scrollTop() >= $(elm).offset().top ){
-                currentPos = i;
-                
-            }
-            
-        }
-        $(document).bind('DOMMouseScroll', function(e){
-            if(e.originalEvent.detail > 0) {
-                scrollDown();
-            }else {
-                scrollUp();   
-            }
-            return false;
-        });
-
-        $(document).bind('mousewheel', function(e){
-            if(e.originalEvent.wheelDelta < 0) {
-                scrollDown();
-            }else {
-                scrollUp();     
-            }
-            return false;
-        });
-    });
+var myimages=[
+    "#1A1746",
+    "#e83463",
+    "#ececec"
+    ];
+var nextslideindex=0;
+function myFunction() {
+    if(nextslideindex = 0) 
+    {
+        $('.about-us-height').show().addClass("animated fadeInUp");
+        $('.our-mission').hide().addClass("animated fadeInUp");
+        $('.valuable-clients').hide().addClass("animated fadeInUp");
+        $("#about_us-Bg").css("background-color", "#1A1746");
+        $(".about-indicators li[data-id=1]").addClass('active');
+        $(".about-indicators li[data-id=2]").removeClass('active');
+        $(".about-indicators li[data-id=3]").removeClass('active');
+    }
+    else if(nextslideindex = 1)
+    {
+        $('.our-mission').show().addClass("animated fadeInUp");
+        $('.about-us-height').hide().addClass("animated fadeInUp");
+        $('.valuable-clients').hide().addClass("animated fadeInUp");
+        $("#about_us-Bg").css("background-color", "#e83463");
+        $(".about-indicators li[data-id=2]").addClass('active');
+        $(".about-indicators li[data-id=1]").removeClass('active');
+        $(".about-indicators li[data-id=3]").removeClass('active');
+    }
+    else if(nextslideindex = 2) 
+    {
+        $('.valuable-clients').show().addClass("animated fadeInUp");
+        $('.our-mission').hide().addClass("animated fadeInUp");
+        $('.about-us-height').hide().addClass("animated fadeInUp");
+        $("#about_us-Bg").css("background-color", "#ececec");
+        $(".about-indicators li[data-id=3]").addClass('active');
+        $(".about-indicators li[data-id=1]").removeClass('active');
+        $(".about-indicators li[data-id=2]").removeClass('active');
+    }
+}
 
 
-    $(document).scroll(function() {
-      var topOfOthDiv4 = $("#commonFooter").offset().top;
-      var topOfOthDiv1 = $("#header").offset().top;
-      var topOfOthDiv2 = $("#our_mission").offset().top;
-      var topOfOthDiv3 = $("#valuable_clients").offset().top;
-      if($(window).scrollTop() >= topOfOthDiv4) { //scrolled past the other div?
-            $(".about-indicators").css("opacity","0");
-        }
-      else {
-         $(".about-indicators").css("opacity","1");
-      }
-    });
-
-// if($(window).scrollTop() >= topOfOthDiv1) { //scrolled past the other div?
-//             $(".about-indicators").css("opacity","1");
-//             $(".about-indicators li a[data-id=1]").removeClass('active');
-//           $(this).addClass('active');
-//         }
-//         else if($(window).scrollTop() >= topOfOthDiv2) { //scrolled past the other div?
-//             $(".about-indicators").css("opacity","1");
-//             $(".about-indicators li a[data-id=2]").removeClass('active');
-//           $(this).addClass('active');
-//         }
-//         else if($(window).scrollTop() >= topOfOthDiv3) { //scrolled past the other div?
-//             $(".about-indicators").css("opacity","1");
-//             $(".about-indicators li a[data-id=3]").removeClass('active');
-//           $(this).addClass('active');
-//         }
-//         else if($(window).scrollTop() >= topOfOthDiv4) { //scrolled past the other div?
-//             $(".about-indicators").css("opacity","0");
-//         }
+function rotateimage(e){
+    var evt=document.event || e; //equalize event object
+    var delta=evt.detail? evt.detail*(-120) : evt.wheelDelta; //delta returns +120 when wheel is scrolled up, -120 when scrolled down
+    nextslideindex=(delta<=-120)? nextslideindex+1 : nextslideindex-1;//move image index forward or back, depending on whether wheel is scrolled down or up
+    nextslideindex=(nextslideindex<0)? myimages.length-1 : (nextslideindex>myimages.length-1)? 0 : nextslideindex; //wrap image index around when it goes beyond lower and upper boundaries
+    $("#about_us-Bg").css("background-color", myimages[nextslideindex]);
+    myFunction();
+    console.log(nextslideindex);
+    if (evt.preventDefault) //disable default wheel action of scrolling page
+        evt.preventDefault();
+    else
+        return false;
+ 
+}
+var mousewheelevt=(/Firefox/i.test(navigator.userAgent))? "DOMMouseScroll" : "mousewheel"; //FF doesn't recognize mousewheel as of FF3.x
+if (document.attachEvent) //if IE (and Opera depending on user setting)
+    document.attachEvent("on"+mousewheelevt, rotateimage);
+else if (document.addEventListener) //WC3 browsers
+    document.addEventListener(mousewheelevt, rotateimage, false);
 </script>
+

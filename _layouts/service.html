@@ -33,3 +33,47 @@
  </section> 
 {% include common_footer.html %}
 {% include footer.html %}
+ <script type="text/javascript">
+ if (screen.width >= 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 700){  
+    $('.commonHeader').css({"background-color":"#ee5648","padding-top":"20px","padding-bottom":"20px"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+  }
+});
+}
+else if (screen.width < 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 420){  
+    $('.commonHeader').css({"background-color":"#ee5648","padding-top":"10px","padding-bottom":"10px"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+  }
+});
+}
+$(window).resize(function() {
+  if (screen.width >= 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 700){  
+    $('.commonHeader').css({"background-color":"#f26522","padding-top":"20px","padding-bottom":"20px"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+  }
+});
+}
+else if (screen.width < 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 420){  
+    $('.commonHeader').css({"background-color":"#f26522","padding-top":"10px","padding-bottom":"10px"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+  }
+});
+}
+});
+</script>

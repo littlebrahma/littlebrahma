@@ -18,9 +18,11 @@
     
         <a href="/"><img src="/assets/img/common/LOGO_WHITE.png" class="commonHeader__logo"></a>
     
+    
     <span class="commonMenu">
             <img src="/assets/img/common/MENU_WHITE.png" class="commonMenu__icon">
     </span>
+    
     <div class="MenuContent">
         <img src="/assets/img/common/CLOSE.png" class="MenuContent__close">
         <!-- <div class="menuMob"><img src="/assets/img/common/menu_close.png" class="menuMob__img"></div> -->
@@ -330,3 +332,47 @@
         <script src="/assets/js/script.js"></script>
     </body>
 </html>
+ <script type="text/javascript">
+ if (screen.width >= 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 700){  
+    $('.commonHeader').css({"background-color":"#ee5648","padding-top":"20px","padding-bottom":"20px"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+  }
+});
+}
+else if (screen.width < 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 420){  
+    $('.commonHeader').css({"background-color":"#ee5648","padding-top":"10px","padding-bottom":"10px"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+  }
+});
+}
+$(window).resize(function() {
+  if (screen.width >= 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 700){  
+    $('.commonHeader').css({"background-color":"#f26522","padding-top":"20px","padding-bottom":"20px"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+  }
+});
+}
+else if (screen.width < 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 420){  
+    $('.commonHeader').css({"background-color":"#f26522","padding-top":"10px","padding-bottom":"10px"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+  }
+});
+}
+});
+</script>

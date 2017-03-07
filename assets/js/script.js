@@ -44,7 +44,7 @@ $('input[type="radio"]').click(function() {
 
 
 $(".job_detail").hide();
-$( ".career__link" ).click(function() {
+$(".career__link").click(function() {
     var job=$(this).data("id");
     $(".job").hide();
   
@@ -59,6 +59,25 @@ $( ".career__img2").click(function() {
         $("."+i).show();
     } 
 });
+
+if($('input[type="radio"]').prop('checked') == true){
+$(".job_detail").hide();
+$(".career__link").click(function() {
+    var job=$(this).data("id");
+    $(".job").hide();
+  
+        $(".job_detail"+job).show();
+ 
+});
+
+$( ".career__img2").click(function() {
+    $(".job_detail").hide();
+    var job=$(".job").length;
+    for(var i=0;i<=job;i++){
+        $("."+i).show();
+    } 
+});
+}
 
 
 $(".scroll-indicators li").click(function(){
