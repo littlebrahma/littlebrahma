@@ -1,6 +1,5 @@
 #contact .commonHeader {
 	position:static;
-	padding:0 70px;
 }
 .contact {
 	padding:60px 90px 70px;
@@ -92,9 +91,9 @@
 }
 }
 @media screen and (max-width:767px) {
-	#contact .commonHeader {
-	padding:0 15px;
-    }
+	.commonHeader {
+	position:static;
+}
 	.contact {
 		padding:30px 0px 50px;
 		&__map {
