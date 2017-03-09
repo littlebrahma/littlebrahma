@@ -25,20 +25,19 @@ $(".MenuList__wwa").click(function() {
 $("#r-option1").prop("checked", true);
 if($("#r-option1").prop('checked') == true){
    var category= $('input:radio:checked').data("category");
-    $(".blog-filter").hide().css({"opacity":"0"});
+    $(".blog-filter").hide();
     var classArr=category.replace(/[^a-z0-9\s]/gi, ' ').split(" "); 
     var finalArray = classArr.filter(function(v){return v!==''});
-    $("."+finalArray.join('.')).show().css({"opacity":"1","transition":"all 2s linear"});
+    $("."+finalArray.join('.')).show();
 }
 $('input[type="radio"]').click(function() {
  if($(this).is(':checked')) {
     var category= $('input:radio:checked').data("category");
-    $(".blog-filter").hide().css({"opacity":"0"});
+    $(".blog-filter").hide();
 
     var classArr=category.replace(/[^a-z0-9\s]/gi, ' ').split(" "); 
     var finalArray = classArr.filter(function(v){return v!==''});
-    $("."+finalArray.join('.')).show().css({"opacity":"1","transition":"all 2s linear"});
-    $(".job_detail").hide();
+    $("."+finalArray.join('.')).show();
 }
 });
 
@@ -60,24 +59,6 @@ $( ".career__img2").click(function() {
     } 
 });
 
-if($('input[type="radio"]').prop('checked') == true){
-$(".job_detail").hide();
-$(".career__link").click(function() {
-    var job=$(this).data("id");
-    $(".job").hide();
-  
-        $(".job_detail"+job).show();
- 
-});
-
-$( ".career__img2").click(function() {
-    $(".job_detail").hide();
-    var job=$(".job").length;
-    for(var i=0;i<=job;i++){
-        $("."+i).show();
-    } 
-});
-}
 
 
 $(".scroll-indicators li").click(function(){
@@ -149,21 +130,7 @@ $(".scroll-indicators li").click(function(){
     }
     myFunction();
 });
-$(".about-indicators li a").click(function(){
-    var tab=$(this).data("id");
-    if ( tab == 1) {
-        $(".about-indicators li a").removeClass('active');
-        $(this).addClass('active');
-    }
-    else if ( tab == 2) {
-       $(".about-indicators li a").removeClass('active');
-        $(this).addClass('active');
-    }
-    else if ( tab == 3) {
-        $(".about-indicators li a").removeClass('active');
-        $(this).addClass('active');
-    }
-});
+
 
 $('.valuable-clients-right').hide();
 $("#company1").show();
@@ -183,11 +150,12 @@ for(var i=1;i<=length;i++){
     });
 }
 
+$("#company9").show();
 var length1=$(".valuable-clients-right__list").length;
-for(var i=1;i<=length1;i++){
+for(var i=9;i<=length1;i++){
     $("#about-img"+i).click(function(){
     var id2=$(this).data("id");
-    for(var j=1;j<=length1;j++){
+    for(var j=9;j<=length1;j++){
     var id3=$("#company"+j).data("id");
     if(id2 == id3) {
             $('.valuable-clients-right').hide();
