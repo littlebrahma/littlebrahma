@@ -141,32 +141,32 @@
         font-family: $ternary-contentfamily;
 
     }
-    @media screen and (min-width: 1866px) { 
-        .homepageContent {
-            &__img {
-                width: 480px;
-                height: 500px;
-            }
-            &__heading {
-                font-size: 77px;
-            }
-            &__para {
-                font-size: $primary-contentfont;
-            }
-            &__button {
-                font-size: $secondary-contentfont;;
-            }
-        }
-    }
+    // @media screen and (min-width: 1866px) { 
+    //     .homepageContent {
+    //         &__img {
+    //             width: 480px;
+    //             height: 500px;
+    //         }
+    //         &__heading {
+    //             font-size: 77px;
+    //         }
+    //         &__para {
+    //             font-size: $primary-contentfont;
+    //         }
+    //         &__button {
+    //             font-size: $secondary-contentfont;;
+    //         }
+    //     }
+    // }
     @media screen and (min-width: 1367px) and (max-width: 1865px) {
         .homepageContent {
             &__img {
                 width: 380px;
                 height: 400px;
             }
-            &__heading {
-                font-size: 60px;
-            }
+            // &__heading {
+            //     font-size: 60px;
+            // }
         }
 
     }

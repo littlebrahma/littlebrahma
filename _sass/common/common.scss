@@ -136,21 +136,21 @@ $common-width: 100%;
     .blogHeight {
         padding: 40px 0 100px;
     }
-    @media screen and (min-width: 1866px) {
-        .commonHeight {
-            &__heading {
-                font-size: $primary-headingfont;
-            }
-            &__para {
-                font-size: $ternary-headingfont;
-                width: 780px;
-                margin: 40px auto;
-            }
-        }
-        input[type="radio"]:not(old) + label {
-            font-size: $ternary-headingfont;
-        }
-    }
+    // // @media screen and (min-width: 1866px) {
+    // //     .commonHeight {
+    // //         &__heading {
+    // //             font-size: $primary-headingfont;
+    // //         }
+    // //         &__para {
+    // //             font-size: $ternary-headingfont;
+    // //             width: 780px;
+    // //             margin: 40px auto;
+    // //         }
+    // //     }
+    //     input[type="radio"]:not(old) + label {
+    //         font-size: $ternary-headingfont;
+    //     }
+    // }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         input[type="radio"]:not(old) + label {
             font-size: 12px;

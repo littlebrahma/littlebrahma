@@ -225,79 +225,79 @@
         margin: 0 0 20px;
     }
 }
-@media screen and (min-width: 1866px){
-    .about-us,.valuable-clients,.our-mission {
-        height: 1050px;
-    }
-    .about-us-left__img {
-    height: 692px;
-    width: 504px;
-    }
-    .our-mission-left__img {
-    height: 692px;
-    width: 504px;
-    }
-    .about-us-right,.our-mission-right {
-        padding-top: 180px;
+// @media screen and (min-width: 1866px){
+//     .about-us,.valuable-clients,.our-mission {
+//         height: 1050px;
+//     }
+//     .about-us-left__img {
+//     height: 692px;
+//     width: 504px;
+//     }
+//     .our-mission-left__img {
+//     height: 692px;
+//     width: 504px;
+//     }
+//     .about-us-right,.our-mission-right {
+//         padding-top: 180px;
     
-    &__heading {
-        font-size: 66px;
-        margin-bottom: 15px;
-    }
-    &__para {
-        font-size: 16px;
-        line-height: 34px;
-        width: 550px;
-    }
-    &__underline {
-        width: 83px;
-        border-bottom: rgb(249, 210, 0) 7px solid;
-    }
-}
-     .valuable-clients-left {
-        width: 700px;
-    }
-    .valuable-clients__heading {
-        font-size: 66px;
-        line-height: 66px;
-    }  
-    .valuable-clients__underline {
-        border-bottom: rgb(232, 52, 99) 7px solid;
-        width: 83px;
-    }
-    .valuable-clients-left__para {
-        font-size: 16px;
-        line-height: 34px;
-        width: 550px;
-    }
-    .valuable-clients-left__logo{
-        width: 170px;
-        height: 70px;
-    }
-    .valuable-clients-right {
-        width: 368px;
-        display: none;
-    }
-    .valuable-clients-right__billgates-img {
-        width: 368px;
-        height:368px;
-    }
-    .valuable-clients-right__microsoft-img {
-        width: 160px;
-        height: 55px;
-        margin: 20px 0 0px 100px;
-    }
-    .valuable-clients-right__para {
-       font-size: 12px;
-       font-weight: normal;
-    }
-    .valuable-clients-right__para-author{
-       font-size: 12px;
-    }
-    .valuable-clients-right__inverted-comma{
-       font-size: 25px;
-    }   
-}
+//     &__heading {
+//         font-size: 66px;
+//         margin-bottom: 15px;
+//     }
+//     &__para {
+//         font-size: 16px;
+//         line-height: 34px;
+//         width: 550px;
+//     }
+//     &__underline {
+//         width: 83px;
+//         border-bottom: rgb(249, 210, 0) 7px solid;
+//     }
+// }
+//      .valuable-clients-left {
+//         width: 700px;
+//     }
+//     .valuable-clients__heading {
+//         font-size: 66px;
+//         line-height: 66px;
+//     }  
+//     .valuable-clients__underline {
+//         border-bottom: rgb(232, 52, 99) 7px solid;
+//         width: 83px;
+//     }
+//     .valuable-clients-left__para {
+//         font-size: 16px;
+//         line-height: 34px;
+//         width: 550px;
+//     }
+//     .valuable-clients-left__logo{
+//         width: 170px;
+//         height: 70px;
+//     }
+//     .valuable-clients-right {
+//         width: 368px;
+//         display: none;
+//     }
+//     .valuable-clients-right__billgates-img {
+//         width: 368px;
+//         height:368px;
+//     }
+//     .valuable-clients-right__microsoft-img {
+//         width: 160px;
+//         height: 55px;
+//         margin: 20px 0 0px 100px;
+//     }
+//     .valuable-clients-right__para {
+//        font-size: 12px;
+//        font-weight: normal;
+//     }
+//     .valuable-clients-right__para-author{
+//        font-size: 12px;
+//     }
+//     .valuable-clients-right__inverted-comma{
+//        font-size: 25px;
+//     }   
+// }
 @media screen and (max-width: 1365px){
     .valuable-clients-left {
         width: 420px;
