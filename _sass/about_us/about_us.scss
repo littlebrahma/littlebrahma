@@ -236,20 +236,20 @@
 #about_us {
     display: block;
 }
-@media screen and (min-width: 1866px){
-    .about-us,.valuable-clients,.our-mission {
-        height: 1050px;
-    }
-    .about-us-left__img {
-    height: 692px;
-    width: 504px;
-    }
-    .our-mission-left__img {
-    height: 692px;
-    width: 504px;
-    }
-    .about-us-right,.our-mission-right {
-        padding-top: 180px;
+// @media screen and (min-width: 1866px){
+//     .about-us,.valuable-clients,.our-mission {
+//         height: 1050px;
+//     }
+//     .about-us-left__img {
+//     height: 692px;
+//     width: 504px;
+//     }
+//     .our-mission-left__img {
+//     height: 692px;
+//     width: 504px;
+//     }
+//     .about-us-right,.our-mission-right {
+//         padding-top: 180px;
 
     
 //     &__heading {
@@ -308,7 +308,7 @@
 //     }
 //     .valuable-clients-right__inverted-comma{
 //        font-size: 25px;
-//     }   
+//    }   
 // }
 @media screen and (max-width: 1365px){
     .valuable-clients-left {
