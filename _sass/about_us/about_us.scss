@@ -204,12 +204,16 @@
             }
         }
     }
-    .about_us-Bg{   
-    background:#1A1746;
+    .about_us-Bg{
+    background-color:#1A1746;
+    }
+    #about_us-Bg{   
+    background-color:#1A1746;
+     overflow-y: hidden;
+     height: 100vh;
     
 }
 .about-us-height {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,23 +226,31 @@
     bottom: 0px;
     opacity: .5;
     img {
-        margin: 0 0 20px;
+        margin: 0 0 40px;
     }
 }
-// @media screen and (min-width: 1866px){
-//     .about-us,.valuable-clients,.our-mission {
-//         height: 1050px;
-//     }
-//     .about-us-left__img {
-//     height: 692px;
-//     width: 504px;
-//     }
-//     .our-mission-left__img {
-//     height: 692px;
-//     width: 504px;
-//     }
-//     .about-us-right,.our-mission-right {
-//         padding-top: 180px;
+
+#about_usMob {
+    display: none;
+}
+#about_us {
+    display: block;
+}
+@media screen and (min-width: 1866px){
+    .about-us,.valuable-clients,.our-mission {
+        height: 1050px;
+    }
+    .about-us-left__img {
+    height: 692px;
+    width: 504px;
+    }
+    .our-mission-left__img {
+    height: 692px;
+    width: 504px;
+    }
+    .about-us-right,.our-mission-right {
+        padding-top: 180px;
+
     
 //     &__heading {
 //         font-size: 66px;
@@ -345,6 +357,15 @@
     }   
 }
 @media screen and (max-width: 1023px){
+#company1 {
+    display: block;
+}
+    #about_usMob {
+    display: block;
+}
+#about_us {
+    display: none;
+}
     .about-indicators {
         display: none;
     }
@@ -420,6 +441,15 @@
     &__unorder-list {
         display: block;
     }
+}
+.about-us-height {
+padding-bottom: 50px;
+position: relative;
+}
+.aboutScroll {
+img {
+    margin: 0 0 15px;
+}
 }
 }
 @media screen and (max-width:767px) {
@@ -498,5 +528,11 @@
     img {
         margin: 0 0 2px;
     }
+}
+
+.aboutScroll {
+    left: 3%;
+    right: 3%;
+    bottom: 2%;
 }
 }

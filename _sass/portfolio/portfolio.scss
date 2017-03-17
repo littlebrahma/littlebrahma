@@ -50,6 +50,11 @@
     		}
     	}
 	}
+	@media screen and (min-width: 992px) {
+		.blog-row {
+			position: relative;
+		}
+	}
 	@media screen and (min-width: 768px) and (max-width: 991px) {
     	.portBgImg {
 	    	.portfolioInner {

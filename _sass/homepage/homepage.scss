@@ -15,7 +15,7 @@
     }
     .homepageRow {
         display: table;
-        width: 1000px;
+        width: 1020px;
         margin: 0 auto;
         padding-top: 20%;
         .homepageCln {
@@ -25,14 +25,13 @@
         .homepageContent {
             display: table-cell;
             float: right;
-            width: 500px;
+            width: 460px;
         }
     }
     .homepageBgImg {
-        background-image: url("/assets/img/homepage/ANIMATIONS/1.gif");
         background-repeat: no-repeat;
         background-size: contain;
-        height: 500px;
+        height: 530px;
         position: fixed;
         width: 500px;
         &__img {
@@ -41,10 +40,29 @@
             background-position: -76px -70px;
             height: 158px;
             width: 201px;
+            left: 140px;
             position: relative;
-            left: 128px;
-            top: 178px;
+            top: 185px;
         }
+    }
+    #background_image {
+        background-image: url("/assets/img/homepage/ANIMATIONS/1.gif");
+    }
+    #background_image1 {
+        background-image: url("/assets/img/homepage/ANIMATIONS/3.gif");
+        display: none;
+    }
+    #background_image2 {
+        background-image: url("/assets/img/homepage/ANIMATIONS/4.gif");
+        display: none;
+    }
+    #background_image3 {
+        background-image: url("/assets/img/homepage/ANIMATIONS/5.gif");
+        display: none;
+    }
+    #background_image4 {
+        background-image: url("/assets/img/homepage/ANIMATIONS/2.gif");
+        display: none;
     }
     .homepageContent {
         color: $secondary-color;

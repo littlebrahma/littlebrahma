@@ -10,7 +10,7 @@
 
  <div class="row blog-row">
 		{% include radio.html %}
-		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 caseDet">
 			<div class="row">
 				{% assign item = site.casestudy | sort: 'date' %}
 				{% for case in item %}
@@ -28,3 +28,63 @@
 	</div>
  {% include common_footer.html %}
  {% include footer.html %}
+ <script type="text/javascript">
+ if (screen.width >= 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 700){  
+    $('.commonHeader').css({"background-color":"#ff1a46","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"fixed","top":"25%"});
+    $(".caseDet").css({"position":"relative","left":"33%"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".caseDet").css({"position":"static","left":"0%"});
+  }
+});
+}
+else if (screen.width < 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 420){  
+    $('.commonHeader').css({"background-color":"#ff1a46","padding-top":"10px","padding-bottom":"10px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".caseDet").css({"position":"relative","top":"0"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".caseDet").css({"position":"static","left":"0%"});
+  }
+});
+}
+$(window).resize(function() {
+	if (screen.width >= 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 700){  
+    $('.commonHeader').css({"background-color":"#ff1a46","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"fixed","top":"25%"});
+    $(".caseDet").css({"position":"relative","left":"33%"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".caseDet").css({"position":"static","left":"0%"});
+  }
+});
+}
+else if (screen.width < 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > 420){  
+    $('.commonHeader').css({"background-color":"#ff1a46","padding-top":"10px","padding-bottom":"10px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".caseDet").css({"position":"relative","top":"0"});
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".caseDet").css({"position":"static","left":"0%"});
+  }
+});
+}
+});
+ </script>
