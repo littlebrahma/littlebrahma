@@ -25,12 +25,13 @@
         height: 100vh;
         width: 280px;
         z-index: 1;
-        padding: 80px 0 0;
+        padding: 50px 0 0;
         display: none;
         &__close {
             margin-right: 70px;
             float: right;
             cursor: pointer;
+            margin-top: 15px;
         }
     }
     .MenuList {
@@ -102,7 +103,8 @@
         .MenuContent {
             padding: 3% 0 0;
             &__close {
-                margin-right: 40px;
+                margin-right: 70px;
+                margin-top: 15px;
             }
         }
         .MenuList {
@@ -132,10 +134,15 @@
         .commonMenu {
         padding-right: 50px;
     }
+    .MenuContent {
+            &__close {
+                margin-right: 50px;
+                margin-top: 0;
+            }
+        }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
         .commonHeader {
-            padding: 30px 0 0;
             position: static;
         &__logo {
             padding-left: 30px;
@@ -155,6 +162,7 @@
             padding:10px 0 0;
             &__close {
                 margin-right: 30px;
+                margin-top: 20px;
             }
         }
         .MenuList {
