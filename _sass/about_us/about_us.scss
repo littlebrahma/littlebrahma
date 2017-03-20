@@ -387,10 +387,11 @@
         margin:0 auto;
         position: relative;
         max-width: 100%;
-    }
-    .about-us-left__img {
+    &__img {
         position:absolute;
         left:-150px;
+        margin-top: 95px;
+    }
     }
     .about-us-right {
         margin: 0 auto 10px;
@@ -453,6 +454,11 @@ img {
 }
 }
 @media screen and (max-width:767px) {
+.about-us-left {
+    &__img {
+        margin-top: 0;
+    }
+    }
     .about-us-right,.our-mission-right {
         text-align: center;  
         width: 241px;   
