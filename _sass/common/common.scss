@@ -122,10 +122,10 @@ $common-width: 100%;
     }
     .commonHeight {
         text-align: center;
-        padding: 170px 0 220px;
+        padding: 70px 0 220px;
         color: $secondary-color;
         img {
-            margin-bottom: 32px;
+            margin-bottom: 0;
         }
         &__heading {
             font-size: $secondary-headingfont;
