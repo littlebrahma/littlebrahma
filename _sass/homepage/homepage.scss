@@ -176,15 +176,19 @@
     //         }
     //     }
     // }
-    @media screen and (min-width: 1367px) and (max-width: 1865px) {
+   
+     @media screen and (min-width: 1367px) and (max-width: 1865px) {
+    .homepageRow {
+                padding-top: 16%;
+                }
         .homepageContent {
             &__img {
                 width: 380px;
                 height: 400px;
             }
-            // &__heading {
-            //     font-size: 60px;
-            // }
+            &__heading {
+                font-size: 60px;
+            }
         }
 
     }
