@@ -1,19 +1,22 @@
 .hero {
-	#deskProcess {
-		display: block;
-	}
-	#TabMobProcess {
-		display: none;
-	}
 	.processBg {
 		background-color: #B93961;
 	}
 	.processContent__lg {
 		background-color: #1A1746;
 	}
+	.img{
+		float: right;
+	}
+	.headimg{
+		padding-left: 100px;
+	}
+	.headpara{
+		line-height: 25px;
+	}
 	.processBgContent {
 		background-color: #1A1746;
-		padding: 120px 90px;
+		padding: 120px 0;
 		max-width: 1866px;
         margin: 0 auto;
 		&__img {
@@ -23,12 +26,10 @@
 		.processContent {
 			width: 320px;
 			color: $secondary-color;
-			padding-top: 150px;
 			&__heading {
 				font-size: 26px;
 				font-family: $ternary-titlefamily;
 				letter-spacing : 0.65px;
-  				color : #FFDD17;
 			}
 			&__para {
 				font-size: $secondary-contentfont;
@@ -36,133 +37,155 @@
 				line-height : 25px;
   				letter-spacing : 0.24px;
 			}
+			&__hr1{
+				border-bottom: 4px solid #ffc600;
+				margin-right: 304px;
+			}
+			&__hr2{
+				border-bottom: 4px solid #ffc600;
+				margin-left: 304px;
+			}
+			&__nmbr{
+				font-family: $ternary-titlefamily;
+				letter-spacing : 0.65px;
+				font-size: 26px;
+				color: #ffc600;
+			}
+			&__line{
+			    width: 200px;
+			    position: absolute;
+			}
+			&__line1{
+			    width: 200px;
+			    position: absolute;
+			    right: 10px;
+			    
+			}
+
 		}
-		.alignRight {
+		&__allign{
+				padding-bottom: 90px;
+			}
+			&__allign1{
+				padding-right: 100px;
+			}
+			&__allign2{
+				padding-right: 50px;
+			}
+		&__alignRight {
 			text-align: right;
 			float: right;
+			position: relative;
+
+		}
+		&__adjust{
+			padding: 0;
 		}
 	}
-	.processSvg,.processSvg2 {
-		width: 85%;
-	}
-	.processSvg1,.processSvg3 {
-		width: 100%;
-	}
-	.breiefing-path {
-		position: relative;
-	}
-	#message {
-		position: absolute;
-	    right: 25%;
-	    top: 0%;
-	    width: 10%;
-	}
-	#message1 {
-		position: absolute;
-	    right: 40%;
-    	top: 30%;
-	    width: 10%;
-	}
-	#sparkle {
-		position: absolute;
-		width: 3%;
-		left: 21%;
-		margin-top: -20%;
-	}
-	#sparkle1 {
-		position: absolute;
-		width: 1%;
-		left: 28%;
-	}
-	#sparkle2 {
-		position: absolute;
-		width: 1%;
-		left: 25%;
-		margin-top: -12%;
-	}
-	#pot {
-		position: absolute;
-		width: 2%;
-		right: 28%;
-		margin-top: -8px;
-	}
-	#pot1 {
-		position: absolute;
-		width: 1%;
-		right: 23%;
-		margin-top: 5%;
-	}
-	#chakra {
-		position: absolute;
-		width: 3%;
-		left: 24%;
-		margin-top: -2%;
-	}
-	#chakra1 {
-		position: absolute;
-		width: 2%;
-		left: 26%;
-		margin-top: -16%;
-	}
-	#chakra2 {
-		position: absolute;
-		width: 1%;
-		left: 21%;
-		margin-top: -18%;
-	}
+	
 	@media screen and (max-width: 1199px){
-		#message,#message1,#chakra,#chakra1,#chakra2,#pot,#pot1,#sparkle,#sparkle1,#sparkle2 {
-			display: none;
-		}
+		
 		.line {
 	        margin: 0 auto;
 	    }
-	    #deskProcess {
-			display: none;
+	    .img1{
+	    	width: 200px;
+	    }
+	    .headimg{
+			padding-left: 65px;
+			width:315px;
 		}
-		#TabMobProcess {
-			display: block;
-			padding-bottom: 10px;
-		}
+
 		.processBgContent {
+
 			.processContent {
-	    		padding-top: 120px;
-	    	}
+    			width: 200px;
+	    	&__heading {
+				font-size: 20px;
+			}
+			&__para {
+				line-height : 20px;
+				font-size:10px;
+			}
+			&__nmbr{
+				font-size: 24px;
+			}
+	    	&__hr1 {
+			    margin-right: 182px;
+			}
+			&__hr2 {
+			    margin-left: 182px;
+			}
+			&__line{
+			    width: 110px;
+			}
+			&__line1{
+			    width: 110px;
+			    right: 0;
+			    
+			}
+			}
+			&__allign{
+				padding-bottom: 60px;
+			}
 	    }
     }
     @media screen and (max-width: 767px){
     	.processBg {
-		height: 100vh;
+		height: 400px;
 	}
-		.line {
-	        display: none;
+	.headimg{
+		padding-left: 20px;
+		margin-bottom: 10px;
+		width: 120px;
+	}
+	.headpara{
+		line-height: 18px;
+	}
+	.img1{
+	    	width: 150px;
 	    }
-	    .processBgContent {
-    		padding:30px 0 0;
-    		&__img {
-			width: 100%;
-			margin-left: 0rem;
-		}
-    		.processContent {
-			    padding: 0;
-			    text-align: center;
-			    width: 270px;
-			    &__heading {
-    				font-size: $ternary-headingfont;
-    			}
+	 
+	.processBgContent {
+			padding: 100px 0;
+			.processContent {
+			width: 115px;
+	    &__line{
+	    	display: none;
 			}
-    	}
-    	.mobRow {
-    		border-bottom: 1px solid #FFC700;
-		    height: 500px;
-		    margin: 0 auto 25px;
-		    width: 300px;
-		    &:last-child {
-		    	border-bottom: none;
-		    }
-    	}
+			&__line1{
+			    display: none;
+			}
+			&__heading {
+				font-size: 12px;
+			}
+			&__para {
+				font-size: 9px;
+				line-height : 16px;
+  				letter-spacing : 0.24px;
+			}
+			&__hr1{
+				margin-right: 100px;
+			}
+			&__hr2{
+				margin-left: 100px;
+			}
+			&__nmbr{
+				letter-spacing : 0.65px;
+				font-size: 15px;
+			}
+	    }
+	    &__allign1{
+				padding-right: 0;
+			}
+			 &__adjust1{
+	  	padding: 0;
+	  }
+	    }
     }
 }
+
+
 
 
 
