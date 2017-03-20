@@ -8,12 +8,12 @@
 </section>
 <div class="row blog-row">
 	{% include radio2.html %}
-		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 rightDiv">
+		<div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 rightDiv">
 			<div class="row">
 			{% assign items = site.posts | sort: 'date' %}
 
 			{% for post in items %}
-				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 blog-filter {{post.category}}">
+				<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 blog-filter {{post.category}}">
 					<img src="{{ post.landing_image}}" class="blog-filter__img">
 					<div class="blogWholeBG">
 					<div class="blogDetail">
