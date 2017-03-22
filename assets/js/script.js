@@ -2,16 +2,21 @@ $( document ).ready(function() {
 
 
 
-$(".MenuContent").hide();
+$(".MenuContent").css("visibility","hidden");
 $( ".commonMenu__icon" ).click(function() {
+    
     $(this).hide();
-    $(".MenuContent").show();
+    $(".MenuContent").addClass("fadeInRight");
+    $(".MenuContent").removeClass("fadeOutRight");
+    $(".MenuContent").css({"opacity":"1","visibility":"visible"});
     $(".scroll-indicators").css("opacity","0");
     $(".about-indicators").css("opacity","0");
-});
+});         
 $( ".MenuContent__close").click(function() {
-    $(".MenuContent").hide().addClass("animated fadeOutRight");
     $(".commonMenu__icon").show();
+    $(".MenuContent").addClass("fadeOutRight");
+    $(".MenuContent").removeClass("fadeInRight");
+    $(".MenuContent").css({"opacity":"1","visibility":"visible"});
    $(".MenuList__common").hide();
    $(".scroll-indicators").css("opacity","1");
    $(".about-indicators").css("opacity","1");
