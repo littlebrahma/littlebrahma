@@ -25,16 +25,6 @@ $(".MenuList__common").hide();
 $(".MenuList__wwa").click(function() {
    $(".MenuList__common").toggle();
    $(".arrow").toggleClass("MenuList__arrowDown MenuList__arrowDown1");
-   // if ($(".arrow").hasClass('MenuList__arrowDown1'))
-   //    {
-   //    $('.MenuList__common').addClass('animated fadeInDown');
-   //    $(this).removeClass('animated fadeOutUp');
-   //  }
-   // if ($(".arrow").hasClass('MenuList__arrowDown'))
-   //    {
-   //    $('.MenuList__common').addClass('animated fadeOutUp');
-   //    $(this).removeClass('animated fadeInDown');
-   //  }
 });
 
 $("#r-option1").prop("checked", true);

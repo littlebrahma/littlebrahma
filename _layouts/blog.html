@@ -47,7 +47,7 @@
 {% include common_footer.html %}
 {% include footer.html %}
 <script type="text/javascript">
-   if (screen.width >= 1199) {
+   if ($(window).width() >= 1199) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > 800){  
     $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
@@ -65,7 +65,7 @@ if ($(this).scrollTop() > 800){
   }
 });
 }
-else if(screen.width >= 768 && screen.width < 1199) {
+else if($(window).width() >= 768 && $(window).width() < 1199) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > 800){  
     $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
@@ -102,7 +102,7 @@ if ($(this).scrollTop() > 800){
 // });
 // }
 $(window).resize(function() {
-  if (screen.width >= 1200) {
+  if ($(window).width() >= 1200) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > 800){  
     $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
@@ -120,7 +120,7 @@ if ($(this).scrollTop() > 800){
   }
 });
 }
-else if(screen.width >= 768 && screen.width < 1199) {
+else if($(window).width() >= 768 && $(window).width() < 1199) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > 800){  
     $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
