@@ -84,7 +84,9 @@
 	}
 	
 	@media screen and (max-width: 1199px){
-		
+		.processBgContent {
+		padding: 120px 0 120px 40px;
+		}
 		.line {
 	        margin: 0 auto;
 	    }
@@ -131,6 +133,9 @@
 	    }
     }
     @media screen and (max-width: 767px){
+    .processBgContent {
+		padding: 120px 0;
+		}
     	.processBg {
 		height: 100vh;
 	}
