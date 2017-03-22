@@ -166,7 +166,7 @@
             }
         }
         .MenuList {
-            padding: 30px 0 0;
+            padding: 50px 0 0;
             &__bottom {
                 bottom:0px;
                 left: 24%;
@@ -174,14 +174,14 @@
             }
             &__ele {
                 padding: 2px 0;
-                width: 200px;
+                width: 175px;
                 margin: 0 auto;
                 &:hover,&:active,&:focus {
                     border-left: none;
                 }
             }
             &__arrowDown1,&__arrowDown {
-                margin-right: 0;
+                margin-right: -15px;
             }
             &__attr {
                 &:hover,&:active,&:focus {
@@ -193,7 +193,7 @@
             margin:0 auto;
         }
         &__cnc {
-            width: 200px;
+            width: 175px;
             margin:0 auto;
             padding: 0;
         }
