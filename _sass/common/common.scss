@@ -121,11 +121,16 @@ $common-width: 100%;
         color: #FF1A46;
     }
     .commonHeight {
+        display: flex;
+        justify-content: center;
+       align-items: center;
+       height: 70vh;
         text-align: center;
         padding: 70px 0 220px;
         color: $secondary-color;
-        img {
+        &__img {
             margin-bottom: 0;
+                width: 400px;
         }
         &__heading {
             font-size: $secondary-headingfont;
@@ -135,13 +140,13 @@ $common-width: 100%;
             font-family: 'raleway-medium';
             font-size: $primary-contentfont;
             width: 510px;
-            margin: 40px auto;
+            margin: 20px auto;
         }
     }
     .blogHeight {
         padding: 40px 0 100px;
     }
-    
+   
     // // @media screen and (min-width: 1866px) {
     // //     .commonHeight {
     // //         &__heading {
@@ -172,8 +177,11 @@ $common-width: 100%;
                 font-size: 36px;
             }
             &__para {
-            margin: 40px auto;
+            margin: 20px auto;
             }
+             &__img {
+                width: 300px;
+        }
         }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -200,8 +208,9 @@ $common-width: 100%;
                 margin: 8px auto;
             }
             &__img {
-                width: 102px;
+                width: 240px;
             }
+           
         }
         .selectInput {
             display: inline;

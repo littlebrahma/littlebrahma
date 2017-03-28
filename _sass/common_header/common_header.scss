@@ -99,6 +99,15 @@
     .MenuList__common {
         padding-left: 50px;
     }
+     @media screen and (min-width:1367px)  {
+  .MenuContent {
+            &__close {
+                
+                margin-top: 0;
+            }
+        }
+
+  }
     @media screen and (min-width: 1025px) and (max-width: 1366px) {
         .MenuContent {
             padding: 3% 0 0;
@@ -163,6 +172,7 @@
         }
         .MenuList {
             padding: 50px 0 0;
+            line-height: 24px;
             &__bottom {
                 bottom:0px;
                 left: 24%;

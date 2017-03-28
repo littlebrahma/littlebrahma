@@ -81,7 +81,7 @@
     line-height: 48px;
 }  
 &__underline {
-    border-bottom: rgb(232, 52, 99) 5px solid;
+    border-bottom: #f9d200 5px solid;
     width: 65px;
 }
 }
@@ -180,7 +180,7 @@
             font-family: $ternary-titlefamily;
             font-size: $ternary-contentfont;
         &.active {
-            color: #FFDE17;
+            color: #f9d200;
             opacity: 1;
         }
         }
@@ -200,7 +200,7 @@
             width: 10px;
             cursor: pointer;
             &.active {
-                background-color: #f1123e;
+                background-color: #f9d200;
             }
         }
     }

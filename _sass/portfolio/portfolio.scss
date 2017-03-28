@@ -47,6 +47,12 @@
 	    			margin: 0 auto;
 	    			height: 100px;
 	    		}
+	    		&--btn {
+                    background: none;
+                     border:1px solid black;
+                    cursor:pointer;
+                    padding: 5px;
+                }
     		}
     	}
 	}
