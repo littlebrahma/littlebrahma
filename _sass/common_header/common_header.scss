@@ -8,13 +8,56 @@
         background-color: transparent;
         &__logo {
             padding-left: 70px;
+            display: inline-block;
         }
+        &__lists{
+            display: inline-block;
+            font-size: 12px;
+            font-family: 'Montserrat-regular';
+            color: #a6a8ab;
+            vertical-align: top;
+            padding-top: 25px;
+        }
+        &__list{
+            display: inline-block;
+            padding-right: 45px;
+        }
+        &__active{
+            color: #023852;
+        }
+        &__icons{
+            padding-left: 10px;
+            vertical-align: text-top;
+        }
+
+    }
+    .rightlists{
+        float: right;
+        list-style: none;
+        padding-top: 6px;
+        padding-right: 30px;
+        color: #a6a8ab;
+        &__list{
+            display: inline-block;
+             padding-right: 15px;
+        }
+        &__img1{
+            vertical-align: middle;
+        }
+        &__icons{
+            vertical-align: middle;
+        }
+    }
+    .hr1{
+        margin: 20px 60px;
+        color: #d0d2d3;
     }
     .commonMenu {
         float: right;
         cursor: pointer;
         margin: 30px 0 0;
         padding-right: 70px;
+        display: inline-block;
     }
     .MenuContent {
         float: right;
@@ -109,6 +152,8 @@
 
   }
     @media screen and (min-width: 1025px) and (max-width: 1366px) {
+
+
         .MenuContent {
             padding: 3% 0 0;
         }
@@ -135,7 +180,24 @@
         &__logo {
             padding-left: 50px;
         }
+        &__lists{
+            padding-left: 0;
         }
+        &__list{
+            padding-right: 15px;
+        }
+        &__profile{
+            display:none;
+        }
+        }
+     .rightlists{
+        &__list{
+            padding-right: 6px;
+           }
+            &__lst{
+            padding-right: 0 !important;
+           }
+           }
         .commonMenu {
         padding-right: 50px;
     }
@@ -153,7 +215,16 @@
             padding-left: 30px;
             width: 50px;
         }
+        &__lists{
+            display: none;
         }
+        }
+        .rightlists{
+            display: none;
+        }
+        .hr1{
+        margin: 20px 25px;
+    }
         .commonMenu {
            margin: 15px 0 0;
            padding-right: 30px;
