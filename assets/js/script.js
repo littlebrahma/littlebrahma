@@ -23,6 +23,7 @@ $( ".MenuContent__close").click(function() {
 });
 $(".MenuList__common").hide();
 $(".MenuList__wwa").click(function() {
+    $(".MenuList__ch").toggleClass("fadeInDown");
    $(".MenuList__common").toggle();
    $(".arrow").toggleClass("MenuList__arrowDown MenuList__arrowDown1");
 });
