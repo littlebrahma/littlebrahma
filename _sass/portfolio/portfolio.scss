@@ -90,8 +90,10 @@
     	}
     	.portBgImg {
     		height: 77vw;
+    		max-height: 100%;
     		.portfolioInner {
     			height: 77vw;
+    			max-height: 100%;
     		}
     	}
     }
