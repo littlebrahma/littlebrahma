@@ -11,13 +11,12 @@
     .hopageDesk {
         display: flex;
         align-items: center;
-        height: 50vh;
+        height: 85vh;
     }
     .homepageRow {
         display: table;
         width: 1020px;
         margin: 0 auto;
-        padding-top: 20%;
         .homepageCln {
             display: table-cell;
             float: left;
@@ -25,7 +24,7 @@
         .homepageContent {
             display: table-cell;
             float: right;
-            width: 460px;
+            width: 475px;
         }
     }
     .homepageBgImg {
@@ -34,13 +33,14 @@
         height: 530px;
         position: fixed;
         width: 500px;
+        margin-left:40px;
         &__img {
             background-image: url("/assets/img/homepage/sprite.png");
             background-repeat: no-repeat;
             background-position: -76px -70px;
             height: 158px;
             width: 201px;
-            left: 140px;
+            left: 180px;
             position: relative;
             top: 185px;
         }
@@ -178,16 +178,10 @@
     // }
    
      @media screen and (min-width: 1367px) and (max-width: 1865px) {
-        .homepageRow {
-            padding-top: 16%;
-        }
         .homepageContent {
             &__img {
                 width: 380px;
                 height: 400px;
-            }
-            &__heading {
-                font-size: 60px;
             }
         }
 
@@ -266,16 +260,59 @@
             left: 12%;
             top: 0;
         }
-        #img5 {
-            height: 260px;
-            left: 0%;
-            top: 12%;
-            width: 160px;
-        }
+       
          .tooltip:hover span {
         top: 32px;
         right: 0;
         }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .homepageContent{
+        &__commomheight {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+          }
+        &__img {
+          height: 400px;
+          }
+        &__heading {
+                font-size: 36px;
+                margin: 10px 0 0px;
+                letter-spacing: 4px;
+                width: 100%;
+            }
+          &__button {
+                margin-bottom:0px;
+            }
+        #img1 {
+            left: 0%;
+            top: 29%;
+            width:210px;
+        }
+        #img2 {
+            left: 5%;
+            top: 29%;
+            width:180px;
+        }
+        #img3 {
+            left: -1%;
+            top: 0%;
+            width:175px;
+        }
+        #img4 {
+            left: 9%;
+            top: 20px;
+            width:210px;
+        }
+        #img5 {
+        
+            left: 1%;
+            top: 1%;
+            width: 145px;
+        }      
+       }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
         .homepageContent {
@@ -310,18 +347,19 @@
             top: 28%;
         }
         #img3 {
-            left: 0;
-            top: 10%
+            left: -3px;
+            top: 10%;
+           width: 74px;
         }
         #img4 {
             left: 10%;
             top: 5%;
         }
         #img5 {
-            left: -2%;
-            top: 20%;
-            height: 90px;
-            width: 90px;
+            left: 1%;
+            top: 5%;
+            height: 120px;
+            width: 70px;
         }
         .tooltip:hover span {
         top: 32px;
