@@ -1,4 +1,5 @@
 ---
+layout: portfolio_detail
 category: ANIMATION
 porject_title: ANIMATION
 background-class: portBgImg

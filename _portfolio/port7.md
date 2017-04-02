@@ -1,4 +1,5 @@
 ---
+layout: portfolio_detail
 category: PACKAGING & LABEL
 porject_title: PACKAGING & LABEL
 background-class: portBgImg

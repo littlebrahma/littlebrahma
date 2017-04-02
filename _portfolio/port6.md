@@ -1,4 +1,5 @@
 ---
+layout: portfolio_detail
 category: ILLUSTRATION & ART
 porject_title: ILLUSTRATION & ART
 background-class: portBgImg

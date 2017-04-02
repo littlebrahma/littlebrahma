@@ -1,4 +1,5 @@
 ---
+layout: portfolio_detail
 category: BRANDING
 porject_title: BRANDING 
 background-class: portBgImg
