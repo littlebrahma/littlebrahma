@@ -1,4 +1,6 @@
 ---
+layout: casestudy_detail
+permalink: "/casestudy/case/"
 category: WEB & MOBILE APP DESIGN
 title: WEB & MOBILE APP DESIGN
 landing_image: "/assets/img/blog/1_1.png"

@@ -1,4 +1,6 @@
 ---
+layout: casestudy_detail
+permalink: "/casestudy/case7/"
 category: ANIMATION
 title: ANIMATION
 whole-class: blog-filter4

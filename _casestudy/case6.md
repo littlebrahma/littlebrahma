@@ -1,4 +1,6 @@
 ---
+layout: casestudy_detail
+permalink: "/casestudy/case6/"
 category: ANIMATION
 title: ANIMATION
 landing_image: "/assets/img/blog/1_1.png"
