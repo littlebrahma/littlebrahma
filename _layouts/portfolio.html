@@ -14,7 +14,7 @@
 		{% include radio1.html %}
 		<div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 portDetail">
 			<div class="row">
-				{% assign item = site.portfolios | sort: 'date' %}
+				{% assign item = site.portfolio | sort: 'date' %}
 				{% for port in item %}
 				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 blog-filter {{port.category}}">
 						<div class="{{port.background-class}}">
@@ -23,7 +23,7 @@
 									<h5 class="portInnerPadd--title">{{port.porject_title}}</h5>
 									<div class="portInnerPadd--border"></div>
 									<p class="portInnerPadd--para">{{port.description}}</p>
-                  <button type="button" value="submit" class="portInnerPadd--btn">View Portfolio</button>
+                  <a href="{{port.url}}"><button type="button" value="submit" class="portInnerPadd--btn">View Portfolio</button></a>
 								</div>
 							</div>
 						</div>

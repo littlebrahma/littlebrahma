@@ -9,9 +9,9 @@ kramdown:
 sass:
     style: compressed
 collections:
-  portfolios:
+  portfolio:
     output: true
-    permalink: /portfolios/:path/
+    permalink: /portfolio/:path/
   casestudy:
     output: true
     permalink: /casestudy/:path/
