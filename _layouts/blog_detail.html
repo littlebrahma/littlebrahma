@@ -1,21 +1,23 @@
 {% include header.html %}
-  {% include common_header.html %}
-  	<section class="blogDetail">
-  	<div class="header">
-  		<div class="banner">
-      <div class="banner__title">
+  
+  	<div class="blogDetailBg">
+    {% include common_header.html %}
+  		<div class="commonHeight">
+      <div>
+      <div class="commonHeight__heading">
         {{page.category}}
       </div>
-      <div class="banner__subtitle">
+      <div class="commonHeight__para">
       {{page.bannerContent}}
   		</div>
+      </div>
       </div>
       </div>
       <div class="middleSection1">
       <div class="row">
       <div class="col-lg-9 col-sm-10 col-md-9 col-xs-12">
        <div class="row center-lg  center-md  start-sm  center-xs">
-         <div class="col-lg-3 col-sm-10 col-md-3 col-xs-12">
+         <div class="col-lg-3 col-sm-10 col-md-3 col-xs-12 middleSection1__algnn">
          <img class="middleSection1__img1" src="/assets/img/blog/images.png"><br>
          <img class="middleSection1__pimg" src="{{page.profileImg}}">
          <div class="middleSection1__profile">
@@ -27,9 +29,9 @@
          </div>
          </div>
          </div>
-         <div class="col-lg-6 col-sm-10 col-md-6 col-xs-12 middleSection1__detail">
+         <div class="col-lg-6 col-sm-10 col-md-6 col-xs-12 middleSection1__detail middleSection1__algnn">
          <div class="row start-lg start-md start-sm center-xs">
-           <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 ">
+           <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 middleSection1__algnn">
            {{page.author_content}}
              <hr class="middleSection1__hr1">
             
@@ -129,6 +131,5 @@
         {% endfor %}
         </div>
           </div>
-    </section> 
 {% include common_footer.html %}
 {% include footer.html %}s
