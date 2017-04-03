@@ -38,32 +38,33 @@
     <img  class="middle-section2__img1" src="{{page.img3}}">  
     </div>
 	  <div class="middle-section3">
+    {% for template in page.projectTemplate %}
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <img class="middle-section3__img1" src="/assets/img/portfolio/img1.png">
+        <img class="middle-section3__img1" src="{{template.img}}">
       </div>
       <div class="col-xs-12 first-xs col-sm-6 last-sm col-md-6 last-md col-lg-6 last-lg">
       <div class="middle-section3__allign">
       <div class="row center-xs start-md start-sm start-lg">
       <div class="col-xs-12 first-xs col-sm-12 first-sm col-md-12 first-md col-lg-12 first-lg">
-      <h2 class="middle-section3__title2">TITLE 2</h2>
+      <h2 class="middle-section3__title2">{{template.title}}</h2>
       <hr class="middle-section3__hr3">
-      <p class="middle-section3__algn">The Moon is a barren, rocky world without SKAJSKajbxansbxmsahgd and water.  It spins on its axis in 27.3 days stars were named after the Edwin Aldrin were the first The Moon is a barren, rocky world without air and water.</p>
-      <img class="middle-section3__img2" src="/assets/img/portfolio/img2.png">
+      <p class="middle-section3__algn">{{template.description}}</p>
+      <img class="middle-section3__img2" src="{{template.img1}}">
       </div>
       </div>
       </div>
     </div>
     </div>
-      
+      {% endfor %} 
     </div>
     <div class="middle-section4">
     <div class="middle-section4__pragrph">
-     <h2 class="middle-section4__title3">TITLE 3</h2>
+     <h2 class="middle-section4__title3">{{page.porject_title1}}</h2>
       <hr class="middle-section4__hr4">
-      <p class="middle-section4__algn">The Moon is a barren, rocky world without air and water. It has dark lava plain on its surface. The Moon is filled wit craters. It has no light of its The Moon is a barren, rocky world without air and water. It has dark lava plain on its surface.</p>
+      <p class="middle-section4__algn">{{page.porject_description1}}</p>
       </div>
-     <img class="middle-section4__imgbg" src="/assets/img/portfolio/img_bg.png">
+     <img class="middle-section4__imgbg" src="{{page.project_img1}}">
      
       </div>
       <div class="middle-section5">
