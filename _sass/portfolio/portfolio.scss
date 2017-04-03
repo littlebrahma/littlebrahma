@@ -45,7 +45,7 @@
 	    			font-size: $secondary-contentfont;
 	    			width: 85%;
 	    			margin: 0 auto;
-	    			height: 100px;
+	    			height: 65px;
 	    		}
 	    		&--btn {
                     background: none;
@@ -66,15 +66,22 @@
 	    	.portfolioInner {
 	    		&:hover {
 					.portInnerPadd {
-					    
+						&--title {
+							margin-top: -16px;
+						}
+						&--para {
+						font-size: 10px;
+						height:60px;
+						width:95%;
+						margin-bottom: 2px;
+					}
+					 &--btn {
+						 padding:2px;
+					 }   
 				    }
 				}
     		}
-    		.portInnerPadd {
-		    	&--para {
-		    		width: 100px;
-		    	}
-    		}
+    		
     	}
 	}
     @media screen and (min-width: 320px) and (max-width: 767px) {
