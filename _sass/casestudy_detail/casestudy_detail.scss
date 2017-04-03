@@ -1,0 +1,530 @@
+.banner {
+  background-color: #E0005E; }
+  .banner__header {
+    height: 250px; }
+  .banner__content {
+    text-align: center;
+    padding: 30px; }
+  .banner__img {
+    width: 295px;
+    padding-bottom: 40px;
+    height: 246px; }
+  .banner__text {
+    color: #fff;
+    padding-bottom: 30px;
+    font-size: 48px;
+    margin: 0;
+    font-family: Montserrat-bold; }
+  .banner__info {
+    font-family: 'Raleway-medium';
+    color: #fff;
+    font-size: 20px;
+    margin: 0; }
+  .banner__footer {
+    font-size: 12px;
+    padding-top: 80px;
+    font-family: Raleway-medium;
+    padding-bottom: 20px;
+    color: #fff;
+    margin: 0; }
+  .banner__apple {
+    transform: translate(-100%);
+    transform: translate(-100%);
+    width: 25px;
+    height: 25px;
+    padding-bottom: 40px;
+    margin: 0; }
+  .banner__android {
+    transform: translate(100%);
+    width: 25px;
+    height: 25px;
+    padding-bottom: 40px;
+    margin: 0; }
+
+.info {
+  padding-top: 155px;
+  text-align: center; }
+  .info__text1 {
+    color: #4D4D4D;
+    font-family: Raleway-medium;
+    font-size: 30px;
+    padding-left: 230px;
+    line-height: 2;
+    padding-right: 200px;
+    margin: 0; }
+  .info__text2 {
+    color: #4D4D4D;
+    font-family: Raleway-medium;
+    font-size: 30px;
+    padding-left: 250px;
+    line-height: 2;
+    padding-right: 200px;
+    padding-top: 50px;
+    margin: 0; }
+  .info__read {
+    color: #FFF;
+    transform: translate(-220px, 165px); }
+  .info__dock {
+    padding-left: 50px; }
+
+.chip {
+  margin-left: 28%;
+  background: -moz-linear-gradient(left top, #F72B2B, #E0005E);
+  height: 370px;
+  width: 44%;
+  display: flex;
+  margin-top: 80px;
+  margin-right: 28%; }
+  .chip__logo {
+    height: 25px;
+    transform: translate(55%, 125%);
+    width: 125px;
+    padding-right: 30px;
+    border-right: 1px solid white;
+    padding-bottom: 60px; }
+  .chip__content {
+    color: white;
+    transform: translate(50%, 25%);
+    font-size: 21px; }
+  .chip__read {
+    transform: translate(-94%, 48%);
+    color: #FFF;
+    font-family: Raleway-medium;
+    font-size: 13px; }
+
+.challenge {
+  text-align: center;
+  margin-top: 150px;
+  font-family: Raleway-italic; }
+  .challenge__heading {
+    color: #4D4D4D;
+    text-align: center;
+    font-family: Montserrat-bold;
+    font-size: 26px; }
+  .challenge hr {
+    margin-left: 46%;
+    color: #4D4D4D;
+    margin-right: 46%;
+    border: 2px solid #4D4D4D; }
+  .challenge__content {
+    color: #4D4D4D;
+    margin-top: 40px;
+    font-size: 14px;
+    font-family: Raleway-medium;
+    line-height: 1.8;
+    padding-left: 160px;
+    padding-right: 160px; }
+  .challenge__img {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    width: 80%; }
+
+.solution {
+  font-family: Raleway-medium;
+  background-color: #FF5254;
+  text-align: center;
+  margin-top: 80px;
+  padding-bottom: 100px; }
+  .solution__heading {
+    color: #fff;
+    padding-top: 70px;
+    font-size: 26px;
+    font-family: Montserrat-bold; }
+  .solution hr {
+    margin-left: 47%;
+    margin-right: 47%;
+    border: 2px solid white; }
+  .solution__content {
+    color: white;
+    padding-left: 180px;
+    padding-right: 180px;
+    line-height: 1.8;
+    margin-top: 30px;
+    font-size: 14px; }
+  .solution__img {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    width: 70%;
+    height: 860px; }
+
+.GIT {
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+  .GIT__heading {
+    margin-top: 80px;
+    color: #4D4D4D;
+    font-size: 26px;
+    font-family: Montserrat-bold; }
+  .GIT hr {
+    margin-left: 46%;
+    margin-right: 46%;
+    border: 2px solid #4D4D4D;
+    margin-bottom: 80px; }
+  .GIT__boxes {
+    margin-left: 10%; }
+  .GIT__box {
+    display: flex;
+    color: white;
+    padding: 0; }
+    .GIT__box hr {
+      margin-left: 47%;
+      margin-right: 45%;
+      border: 2px solid white;
+      color: #4D4D4D;
+      margin-bottom: 60px; }
+  .GIT__box1 {
+    padding: 3%;
+    font-size: 19px;
+    background: -moz-linear-gradient(left top, #F72B2B, #E0005E);
+    width: 20%;
+    font-family: Montserrat-bold; }
+  .GIT__box2 {
+    padding: 3%;
+    font-size: 19px;
+    margin-left: 5%;
+    background: -moz-linear-gradient(left top, #F72B2B, #E0005E);
+    font-family: Montserrat-bold;
+    width: 20%; }
+  .GIT__box3 {
+    padding: 3%;
+    font-size: 18px;
+    margin-left: 5%;
+    background: -moz-linear-gradient(left top, #F72B2B, #E0005E);
+    width: 20%;
+    font-family: Montserrat-bold; }
+  .GIT__num {
+    font-size: 80px;
+    font-family: Montserrat-bold;
+    margin-top: 60px;
+    margin-bottom: 0; }
+  .GIT__last {
+    color: white;
+    padding: 75px;
+    background-color: #292425;
+    margin-top: 80px;
+    font-size: 25px;
+    font-family: Montserrat-bold; }
+  .GIT__img2 {
+    margin-top: 40px;
+    width: 190px;
+    height: 60px; }
+
+@media screen and (max-width: 1023px) {
+  .banner__text {
+    font-size: 36px; }
+  .banner__img {
+    height: 345px;
+    width: 400px;
+    padding-bottom: 80px; }
+  .banner__footer {
+    padding-top: 135px;
+    padding-bottom: 30px; }
+  .banner__apple {
+    padding-bottom: 80px; }
+  .banner__android {
+    padding-bottom: 80px; } }
+
+@media screen and (max-width: 1023px) {
+  .info {
+    padding-top: 120px;
+    text-align: center; }
+    .info__text1 {
+      padding-left: 120px;
+      font-size: 24px;
+      line-height: 1.5;
+      padding-right: 120px; }
+    .info__text2 {
+      padding-left: 150px;
+      font-size: 24px;
+      line-height: 1.5;
+      padding-right: 120px; }
+    .info__dock {
+      padding-left: 35px;
+      margin: 0;
+      width: 125px;
+      height: 25px; } }
+
+@media screen and (max-width: 1023px) {
+  .chip {
+    width: 60%;
+    height: 265px;
+    margin-left: 20%;
+    margin-top: 60px; }
+    .chip__logo {
+      width: 95px;
+      border-right: 1px solid white;
+      padding-right: 25px;
+      margin: 0;
+      height: 25px;
+      transform: translate(80px, 95px);
+      padding-bottom: 50px; }
+    .chip__content {
+      margin: 0;
+      color: white;
+      padding-left: 20%;
+      padding-top: 35%;
+      font-size: 16px;
+      transform: translate(0%, 0%); }
+    .chip__read {
+      transform: translate(-140%, 60%); } }
+
+@media screen and (max-width: 1023px) {
+  .challenge {
+    margin-top: 120px; }
+    .challenge__content {
+      margin-top: 30px;
+      font-size: 12px;
+      font-family: Raleway-medium;
+      line-height: 1.8;
+      padding-left: 80px;
+      padding-right: 80px; }
+    .challenge__img {
+      margin-top: 50px;
+      margin-bottom: 10px;
+      width: 670px;
+      height: 340px; } }
+
+@media screen and (max-width: 1023px) {
+  .solution {
+    width: 100%;
+    margin-top: 60px;
+    padding: 0; }
+    .solution__heading {
+      padding-top: 60px;
+      line-height: 0; }
+    .solution hr {
+      margin-left: 46%;
+      margin-right: 46%; }
+    .solution__img {
+      margin-top: 10px;
+      margin-bottom: 50px;
+      width: 70%;
+      height: 60%;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-bottom: 30px; }
+    .solution__content {
+      color: white;
+      padding-left: 5%;
+      padding-right: 5%;
+      line-height: 1.5;
+      margin-top: 25px;
+      font-size: 13px; } }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .GIT {
+    text-align: center; }
+    .GIT_heading {
+      margin-top: 60px;
+      font-size: 25px; }
+    .GIT hr {
+      margin-left: 46%;
+      margin-right: 46%;
+      margin-bottom: 50px; }
+    .GIT__boxes {
+      margin-left: 5%;
+      margin-right: 5%; }
+    .GIT__box {
+      margin: 0;
+      padding: 0; }
+      .GIT__box hr {
+        margin-left: 46%;
+        margin-right: 46%;
+        border: 2px solid white; }
+    .GIT__box1 {
+      padding: 1%;
+      font-size: 16px;
+      width: 32%;
+      font-family: Montserrat-bold; }
+    .GIT__box2 {
+      margin-left: 5%;
+      padding: 1%;
+      font-size: 16px;
+      width: 32%;
+      font-family: Montserrat-bold; }
+    .GIT__box3 {
+      margin-left: 5%;
+      padding: 1%;
+      font-size: 16px;
+      width: 32%;
+      font-family: Montserrat-bold; }
+    .GIT__num {
+      font-size: 50px;
+      margin-top: 30px;
+      margin-bottom: 0; }
+    .GIT__last {
+      font-size: 18px;
+      height: 140px; }
+    .GIT__img2 {
+      width: 150px;
+      height: 40px;
+      margin-top: 25px; } }
+
+@media screen and (max-width: 767px) {
+  .banner {
+    height: 590px; }
+    .banner__header {
+      height: 155px; }
+    .banner__content {
+      padding: 0; }
+    .banner__text {
+      font-size: 24px;
+      padding-bottom: 20px; }
+    .banner__img {
+      height: 167px;
+      width: 196px;
+      padding-bottom: 30px; }
+    .banner__info {
+      font-size: 14px;
+      margin: 0;
+      padding-bottom: 70px; }
+    .banner__footer {
+      padding-top: 0;
+      padding-bottom: 15px;
+      margin: 0;
+      font-size: 12px; } }
+
+@media screen and (max-width: 767px) {
+  .info {
+    padding-top: 70px; }
+    .info__text1 {
+      font-size: 20px;
+      line-height: 1.3;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 30px;
+      padding-top: 0; }
+    .info__text2 {
+      font-size: 20px;
+      line-height: 1.3;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 35px;
+      padding-top: 0; }
+    .info__dock {
+      padding-left: 20px;
+      margin: 0;
+      height: 20px; } }
+
+@media screen and (max-width: 767px) {
+  .chip {
+    width: 100%;
+    height: 170px;
+    margin: 0; }
+    .chip__logo {
+      width: 65px;
+      border-right: 1px solid white;
+      padding-right: 25px;
+      margin: 0;
+      height: 15px;
+      transform: translate(45px, 50px);
+      padding-bottom: 30px; }
+    .chip__content {
+      padding-left: 61px;
+      transform: translate(-7%, -6%);
+      padding-top: 57px;
+      line-height: 1.5;
+      font-size: 10px; }
+    .chip__read {
+      color: #FFF;
+      transform: translate(-94px, 79px);
+      font-size: 8px; } }
+
+@media screen and (max-width: 767px) {
+  .challenge {
+    margin: 0;
+    font-size: 11px; }
+    .challenge__heading {
+      margin-top: 75px;
+      font-size: 16px; }
+    .challenge__img {
+      margin: 10%;
+      width: 80%;
+      height: 200px; }
+    .challenge hr {
+      margin-left: 46%;
+      margin-right: 46%;
+      margin-top: 20px;
+      border: 2px solid #4D4D4D; }
+    .challenge__content {
+      margin-top: 20px;
+      line-height: 1.4;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 11px; } }
+
+@media screen and (max-width: 320px) {
+  .solution {
+    width: 100%;
+    margin-top: 30px;
+    padding: 0; }
+    .solution__heading {
+      padding-top: 40px;
+      line-height: 0;
+      font-size: 16px; }
+    .solution hr {
+      margin-left: 46%;
+      margin-right: 46%; }
+    .solution__img {
+      width: 80%;
+      height: 210px;
+      padding: 0; }
+    .solution__content {
+      color: white;
+      line-height: 1.5;
+      font-size: 10px;
+      padding: 0;
+      margin: 10px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .GIT {
+    text-align: center; }
+    .GIT__heading {
+      margin-top: 35px;
+      font-size: 16px; }
+    .GIT hr {
+      margin-left: 46%;
+      margin-right: 46%;
+      margin-top: 20px;
+      margin-bottom: 40px; }
+    .GIT__boxes {
+      margin: 0; }
+    .GIT__box {
+      margin-left: 15%;
+      display: block;
+      width: 85%; }
+      .GIT__box hr {
+        margin-left: 46%;
+        margin-right: 46%;
+        border: 2px solid white;
+        margin-bottom: 0; }
+    .GIT__box1 {
+      font-size: 14px;
+      width: 80%;
+      height: 200px;
+      margin: 0; }
+    .GIT__box2 {
+      font-size: 14px;
+      width: 80%;
+      height: 200px;
+      margin: 25px 0; }
+    .GIT__box3 {
+      font-size: 14px;
+      width: 80%;
+      height: 200px;
+      margin: 0; }
+    .GIT__num {
+      font-size: 50px;
+      margin-top: 25px;
+      padding-top: 20px;
+      margin-bottom: 0; }
+    .GIT__last {
+      font-size: 18px;
+      height: 130px;
+      margin-top: 40px;
+      padding: 30px; }
+    .GIT__img2 {
+      margin-top: 5px;
+      height: 30px;
+      width: 115px; } }

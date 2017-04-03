@@ -1,0 +1,69 @@
+{% include header.html %}
+    {% include common_header.html %} 
+    
+  	<div class="banner">
+      <div class="banner__header">
+      </div>
+      <div class="banner__content">
+        <img src="ASSETS\Header_img.png" class="banner__img">
+        <h1 class="banner__text">GROOM</h1>
+        <h5 class="banner__info">UI/UX. MOBILE APPLICATION</h5>
+        <p class="banner__footer">DOWNLOAD FOR </p>
+        <img src="ASSETS\apple.png" class="banner__apple">
+        <span><img src="ASSETS\android.png" class="banner__android"></span>
+      </div>
+  	</div>
+
+    <div class="info">
+      <p class="info__text1"> Quickly read, watch, discover and participate in local new stories and happenings from 25+ cities around the world.</p>
+      <p class="info__text2">FEATURED ON <span><img src="ASSETS\EXT-logo.png" class="info__dock"></span></p>
+    </div>
+    <div class="chip col-lg-12">
+      <img src="ASSETS\chip_logo.png" class="chip__logo">
+      <p class="chip__content">"The Groom Effect<br>
+Groom.co raises $20B"<p class="chip__read">Read Full Artical</p>
+    </div>
+    <div class="challenge">
+      <h1 class="challenge__heading">CHALLENGE</h1>
+    <hr>
+    <div class="challenge__content"><p>We use human behavioural studies, psychology and multiple analytical tools to define what our users might like and provide them with what they want. We have realised long back that in today’s world, you cannot define the behaviour of users, it's us who would have to learn the user preferences and adapt ourselves. We try to merge functionality with pleasurable user experience and build marketing processes around it, rather than the other way around.
+
+</p></div>
+<img src="ASSETS\problem_img.png" class="challenge__img col-lg-12">
+<p>we use human behavioural studies.psychology and other analytical tools to define.</p>
+    </div>
+    <div class="solution">
+      <h4 class="solution__heading"> SOLUTION </h4>
+      <hr>
+      <div class="solution__content"><p>We use human behavioural studies, psychology and multiple analytical tools to define what our users might like and provide them with what they want. We have realised long back that in today’s world, you cannot define the behaviour of users, 
+      </p></div>
+      <img src="ASSETS\dashboard_wShadow.png" class="solution__img">
+      <div class="solution__circle"></div>
+    </div>
+
+    <div class="GIT">
+      <div class="GIT__heading">PROJECT STATS</div>
+      <hr>
+      <div class="GIT__boxes">
+      <div class="GIT__box">
+        <div class="GIT__box1">
+          <p class="GIT__num">08</p><hr>
+          <p>DESIGN CONCEPT MADE</p>
+          </div>
+          <div class="GIT__box2">
+          <p class="GIT__num">$20B</p><hr>
+          <p>RISED FROM MATTER VENTURES</p>
+          </div>
+          <div class="GIT__box3">
+          <p class="GIT__num">521</p><hr>
+          <p>COFFEES CONSUMED DURING THE PROJECT</p>
+          </div>
+        </div>
+      </div>
+        <div class="GIT__last">
+          <p> WANT TO GET SOME AWESOME PRODUCTS LIKE THIS?</p>
+          <img src="ASSETS\CTA.png" class="GIT__img2">
+        </div>
+
+{% include common_footer.html %}
+ {% include footer.html %}

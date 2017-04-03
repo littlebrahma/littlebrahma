@@ -173,6 +173,7 @@ $common-width: 100%;
             font-size: 12px;
         }
         .commonHeight {
+            height: 60vh;
             &__heading {
                 font-size: 36px;
             }
@@ -198,7 +199,7 @@ $common-width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 70vh;
+            height: 60vh;
             &__heading {
                 font-size: $ternary-headingfont;
             }
