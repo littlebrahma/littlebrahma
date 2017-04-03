@@ -24,18 +24,18 @@
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
     <h2 class="heading">WHAT WE DID</h2>
     <hr class="middle-section1__hr2"> 
-    <p class="middle-section1__algn1">UI/UX</p>
-     <P class="middle-section1__algn1">APP DEVELOPMENT</P> 
-     <P class="middle-section1__algn1">WEB DEVELOPMENT</P>
+    {% for portfolioList in page.whatWeDoList %}    
+    <p class="middle-section1__algn1">{{portfolioList}}</p>
+     {% endfor %}   
     </div>
     </div>
-    <img class="middle-section1__img1" src="/assets/img/portfolio/image.png">
-    <p class="italic">We use human studies. psychology and multiple analytical tools to define.</p>
+    <img class="middle-section1__img1" src="{{page.img}}">
+    <p class="italic"{{page.imgContent}}</p>
     </div>
     <div class="middle-section2">
-    <img class="middle-section2__img1" src="/assets/img/portfolio/mob1.png">
-    <img class="middle-section2__img1" src="/assets/img/portfolio/mob2.png">
-    <img  class="middle-section2__img1" src="/assets/img/portfolio/mob3.png">  
+    <img class="middle-section2__img1" src="{{page.img1}}">
+    <img class="middle-section2__img1" src="{{page.img2}}">
+    <img  class="middle-section2__img1" src="{{page.img3}}">  
     </div>
 	  <div class="middle-section3">
     <div class="row">
