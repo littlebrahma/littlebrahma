@@ -1,0 +1,387 @@
+.blogDetail{
+	line-height: 25px;
+
+}
+.header{
+	width:100%;
+	height:500px;
+	background-color:#1A1746;
+	.banner{
+		text-align:center;
+		
+		padding-top: 240px;
+		color:#fff;
+		&__title{
+			font-family: 'Montserrat-bold';
+			font-size: 48px;
+		}
+		&__subtitle{
+			padding-top:33px;
+			font-family: 'Raleway-Medium';
+			font-size: 16px;
+			margin-left: 32%;
+			margin-right: 32%;
+		}
+		}
+	}
+.middleSection1{
+		margin: 75px 40px 0px 85px;
+	&__img1{
+		width:20px;
+		height:37px;
+		padding-bottom:17px;
+	}
+	&__profileName{
+		font-family: 'Montserrat-Regular';
+		font-size: 14px;
+		padding-top:20px;
+	}
+	&__profileName1{
+		font-family: 'Montserrat-Regular';
+		font-size: 12px;
+		color:#b3b3b3;
+	}
+	&__detail{
+		font-family: 'Montserrat-Regular';
+		font-size: 21px;
+		margin-top:12px;
+	}
+	&__like{
+		padding-bottom:30px;
+	}
+	&__hr1{
+		border-top: 5px solid #4d4d4d;
+		margin-right: 93%;
+		margin-bottom: 70px;
+	}
+	&__icons1{
+		font-family: 'Montserrat-Regular';
+		font-size: 12px;
+		color:#bbbbbb;
+		margin-top:12px;
+	}
+	&__icons2{
+		font-family: 'Montserrat-Regular';
+		font-size: 12px;
+		color:#b3b3b3;
+	}
+	&__img2{
+		padding-right:17%;
+	}
+	&__hr2{
+		border-top: 1px solid #4d4d4d;
+		margin-right: 8%;
+		margin-left: 20%;
+	}
+
+}
+.middleSection2{
+		margin: 20px 18% 0 31%;
+		font-family: 'raleway-regular';
+		font-size: 16px;
+		line-height: 30px;
+		&__imgSection {
+	    padding-top: 120px;
+	    padding-bottom: 55px;
+		}
+		&__img3{
+		width:100%;
+		}
+		&__imgDetail{
+			font-family: 'raleway-italic';
+			padding-bottom:40px;
+		}
+		&__backgroundimg{
+		margin-top:95px;
+		font-family: 'Montserrat-Regular';
+		font-size: 12px;
+		 background-image: url("img/React_Bg.png");
+		 width: 224px;
+		 height: 42px;
+		 margin-bottom:60px;
+		 color: #fff;
+	}
+		&__likeimg{
+			padding-left:30px;
+			padding-right:10px;
+		}
+		&__dslikeimg{
+			padding-left:30px;
+			padding-right:10px;
+			
+		}
+		&__align{
+			padding-top:5px;
+		}
+}
+.middleSection4{
+	margin:80px;
+	font-family: 'Montserrat-Regular';
+	font-size: 21px;
+	&__hr4{
+		border-top: 5px solid #4d4d4d;
+		margin-right: 95%;
+	}
+	&__rimg1{
+		width:100%;
+		height:100%;
+		padding-right: 22px;
+	}
+		&__rimg2{
+		width:100%;
+		height:100%;
+		padding-right: 22px;
+		padding-left: 22px;
+	}
+	&__rimg3{
+			width:100%;
+			height:100%;
+			padding-left:22px;
+		}
+		&__redetail3{
+			font-family: 'raleway-regular';
+			font-size: 9px;
+			margin-left: 22px;
+			background-color: #f2f2f2;
+		}
+		&__redetail2{
+			font-family: 'raleway-regular';
+			font-size: 9px;
+			margin-left: 22px;
+			margin-right:22px;
+			background-color: #f2f2f2;
+		}
+		&__redetail1{
+			font-family: 'raleway-regular';
+			font-size: 9px;
+			margin-right:22px;
+			background-color: #f2f2f2;
+		}
+		&__reallign{
+			padding: 20px 18px 20px 18px;
+		}
+		&__reheading{
+		    
+			font-family: 'Montserrat-bold';
+			font-size: 12px;
+		}
+		&__hr5{
+			margin: 10px 87% 10px 0;
+			border-top: 3px solid #4d4d4d;		
+			}
+			&__profileDetail{
+				padding-top:25px;
+			}
+			&__img{
+				padding-top: 4px;
+			}
+			&__bottom{
+				padding-top: 21px;
+				padding-left: 50px;
+			}
+			&__headng{
+				 font-family: 'Montserrat-bold';
+				 font-size:9px;
+			}
+			&__subhdng{
+				font-size:7px;
+				font-family: 'raleway-regular';
+			}
+			&__profile{
+				padding-left: 20px;
+			}
+			&__hr6{
+				margin-bottom: 5%;
+				border-top: 1px solid #4d4d4d;
+			}
+}
+
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+.header{
+	height: 450px;
+	.banner{
+		padding-top: 209px;
+		&__title{
+			font-size: 40px;
+		}
+		&__subtitle{
+			margin-left: 24%;
+			margin-right: 24%;
+		}
+		}
+	}
+	.middleSection1{
+		margin: 25px 6px 0px 50px;
+	&__pimg{
+		display: inline-block;
+		}
+	&__profile{
+		padding-left:5px;
+		display: inline-block;
+	}
+	&__detail{
+		padding-top: 20px;
+	}
+	&__img2{
+		padding-right:10%;
+	}
+
+	&__hr1{
+		margin-right: 85%;
+		margin-bottom: 20px;
+	}
+	&__hr2{
+		margin-right: -13%;
+		margin-left: 0%;
+	}
+	&__img1{
+		display:none;
+	}
+}
+	.middleSection2{
+		margin: 25px 50px 0px 50px;
+}
+		.middleSection4{
+			margin: 25px 50px 0px 50px;
+		&__rimg2{
+			padding-right: 0%;
+		}
+		&__rcimg3{
+			display:none;
+		}
+		&__hr4 {
+		    border-top: 5px solid #4d4d4d;
+		    margin-right: 90%;
+		    }
+	 &__bottom {
+    	padding-left: 19px;
+		}
+		&__profile {
+    padding-left: 30px;
+	}
+	&__redetail2 {
+    margin-right: 0;
+}
+	}
+}
+
+
+@media screen and (min-width : 320px) and (max-width : 767px) {
+.hero {
+    line-height: 21px;
+}
+.header{
+	height:300px;
+
+	.banner{
+		padding-top: 120px;
+			&__title{
+			font-size: 22px;
+		}
+		&__subtitle{
+			padding-top: 19px;
+			font-size: 14px;
+			margin-left: 15%;
+			margin-right: 15%;
+		}
+		}
+	}
+	.middleSection1{
+	margin: 40px 40px 0px 40px;
+	&__pimg{
+		display: inline-block;
+		}
+	&__profile{
+		padding-left:5px;
+		display: inline-block;
+		}
+		&__img1{
+		display:none;
+	}
+	&__detail{
+		padding-top: 20px;
+		font-size: 12px;
+	}
+	&__hr1 {
+    margin-right: 36%;
+    margin-bottom: 20px;
+    margin-left: 36%;
+	}
+	&__algn{
+		padding-left:14px;
+	}
+	&__algn1{
+		padding-left:30px;
+	}
+		&__icons2{
+		font-size: 10px;
+	}
+	&__like {
+    margin-right: -15%;
+	}
+	&__hr2 {
+    margin-right: 0%;
+    margin-left: 0%;
+}
+	}
+	.middleSection2{
+	 line-height: 20px;
+	margin: 12px 40px 0px 40px;
+	font-size:10px;
+	&__imgSection {
+    padding-top: 85px;
+    padding-bottom: 35px;
+    }
+    &__imgDetail{
+		font-family: 'raleway-italic';
+		padding-bottom:15px;
+	}
+	&__backgroundimg{
+		margin-top: 75px;
+		margin-bottom: 45px;
+	}
+	&__align{
+		margin-left: auto;
+		margin-right: auto;
+		}
+	}
+	.middleSection4{
+			margin: 12px 40px 0px 40px;
+			text-align:center;
+		&__rimg1{
+			padding-right:0%;
+			padding-left:0%;
+		}	
+		&__rimg2{
+			padding-right: 0%;
+			padding-left:0%;
+			padding-top: 225px;
+		}
+		&__hr6 {
+		    margin-bottom: 15%;
+		    }
+		&__rcimg3{
+				display:none;		}
+		&__hr4 {
+		    margin-right: 32%;
+		    margin-left: 32%;
+		    margin-bottom: 40px;
+		    }
+		    &__redetail2{
+			margin-left: 0;
+			margin-right:0;
+			text-align: start;
+		}
+		&__profile {
+			    padding-left: 30px;
+			}
+		&__redetail1{
+			font-size: 9px;
+			margin-right:0;
+			text-align: start;
+		}
+		  &__bottom{
+				padding-left: 0;
+			}  
+		}
+}
