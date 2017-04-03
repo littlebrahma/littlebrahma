@@ -19,7 +19,8 @@
 				margin-top: 5px;
 			}
 		}
-		.blog-filter {
+	}
+	.blog-filter {
 			padding-bottom : 40px;
 			&__img {
 				width: $common-width;
@@ -59,6 +60,7 @@
 					font-size: $ternary-contentfont;
 					font-family: $primary-contentfamily;
 					margin: 4px 0;
+					color: #333;
 				}
 				&__date {
 					font-size: $ternary-contentfont;
@@ -81,7 +83,6 @@
 				margin-bottom: 20px;
 			}
 		}
-	}
 	.blog__pad-img {
 				padding:0 15px;
 			}
