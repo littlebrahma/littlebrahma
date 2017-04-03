@@ -21,7 +21,7 @@ projectTemplate:
    img: /assets/img/portfolio/img1.png
    description: The Moon is a barren, rocky world without SKAJSKajbxansbxmsahgd and water.  It spins on its axis in 27.3 days stars were named after the Edwin Aldrin were the first The Moon is a barren, rocky world without air and water.
    img1: /assets/img/portfolio/img2.png
-- title: TITLE 2
+ - title: TITLE 2
    img: /assets/img/portfolio/img1.png
    description: The Moon is a barren, rocky world without SKAJSKajbxansbxmsahgd and water.  It spins on its axis in 27.3 days stars were named after the Edwin Aldrin were the first The Moon is a barren, rocky world without air and water.
    img1: /assets/img/portfolio/img2.png

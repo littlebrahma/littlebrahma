@@ -30,7 +30,7 @@
          <div class="col-lg-6 col-sm-10 col-md-6 col-xs-12 middleSection1__detail">
          <div class="row start-lg start-md start-sm center-xs">
            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 ">
-           {{{page.author_content}}
+           {{page.author_content}}
              <hr class="middleSection1__hr1">
             
            </div>
@@ -99,7 +99,7 @@
           RELATED STORIES
           <hr class="middleSection4__hr4">
           <div class="row">
-            {% for post in site.posts %}
+            {% for post in site.posts limit:3 %}
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 blog-filter {{post.category}}">
           <img src="{{ post.landing_image}}" class="blog-filter__img">
           <div class="blogWholeBG">

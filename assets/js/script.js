@@ -23,8 +23,8 @@ $( ".MenuContent__close").click(function() {
 });
 $(".MenuList__common").hide();
 $(".MenuList__wwa").click(function() {
-    $(".MenuList__ch").toggleClass("fadeInDown");
-   $(".MenuList__common").toggle();
+    $(".MenuList__ch").toggleClass("fadeInDown fadeInUp");
+   $(".MenuList__common").toggle().toggleClass("fadeInDown fadeInUp");
    $(".arrow").toggleClass("MenuList__arrowDown MenuList__arrowDown1");
 });
 
