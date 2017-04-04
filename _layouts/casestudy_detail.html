@@ -1,18 +1,19 @@
 {% include header.html %}
- {% include common_header.html %}
-    
-  	<div class="banner">
-      <div class="banner__header">
+   
+    <section class="processBg">
+    {% include common_header.html %}
+      
+       <div class="commonHeight comHeight">
+       <div>
+        <img src="{{page.bannerImg}}" class="commonHeight__mainImg">
+        <h5 class="commonHeight__heading">{{page.porject_title}}</h5>
+        <h5 class="commonHeight__para">{{page.porject_subtitle}}</h5>
+       <p class="commonHeight__footer">DOWNLOAD FOR </p>
+        <img src="/assets/img/casestudy/apple.png" class="commonHeight__apple">
+        <span><img src="/assets/img/casestudy/android.png" class="commonHeight__android"></span>
       </div>
-      <div class="banner__content">
-        <img src="{{page.bannerImg}}" class="banner__img">
-        <h1 class="banner__text">{{page.porject_title}}</h1>
-        <h5 class="banner__info">{{page.porject_subtitle}}</h5>
-        <p class="banner__footer">DOWNLOAD FOR </p>
-        <img src="/assets/img/casestudy/apple.png" class="banner__apple">
-        <span><img src="/assets/img/casestudy/android.png" class="banner__android"></span>
       </div>
-  	</div>
+    </section>
 
     <div class="info">
       <p class="info__text1">{{page.project_detail}}</p>
