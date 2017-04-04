@@ -124,7 +124,7 @@ $common-width: 100%;
         display: flex;
         justify-content: center;
        align-items: center;
-       height: 80vh;
+       height: 90vh;
         text-align: center;
         padding: 70px 0 220px;
         color: $secondary-color;
@@ -184,6 +184,9 @@ $common-width: 100%;
                 width: 300px;
         }
         }
+        .comHeight {
+  height:95vh;
+}
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
         input[type="radio"]:not(old) + label {
@@ -212,6 +215,9 @@ $common-width: 100%;
                 width: 240px;
             }
            
+        }
+        .comHeight{
+        height:70vh;
         }
         .selectInput {
             display: inline;
