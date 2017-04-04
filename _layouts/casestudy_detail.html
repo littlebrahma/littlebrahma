@@ -1,6 +1,6 @@
 {% include header.html %}
    
-    <section class="processBg">
+    <section class="detailBg">
     {% include common_header.html %}
       
        <div class="commonHeight comHeight">
@@ -21,8 +21,10 @@
     </div>
     <div class="chip col-lg-12">
       <img src="{{page.img1}}" class="chip__logo">
-      <p class="chip__content">"{{page.img1Content}}"</p>
-<p class="chip__read">Read Full Artical</p>
+      <img src="/assets/img/casestudy/comma.png" class="chip__comma">
+      <p class="chip__content">{{page.img1Content}}</p>
+      <img src="/assets/img/casestudy/comma1.png" class="chip__comma1">
+      <p class="chip__read">Read Full Artical</p>
     </div>
     <div class="challenge">
       <h1 class="challenge__heading">CHALLENGE</h1>
@@ -73,8 +75,8 @@
  <script type="text/javascript">
   if (screen.width >= 1199) {
     $(window).scroll(function() {
-if ($(this).scrollTop() > $(".processBg").height() - $(".commonHeader").height()){  
-    $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
+if ($(this).scrollTop() > $(".detailBg").height() - $(".commonHeader").height()){  
+    $('.commonHeader').css({"background-color":"transparent"}).addClass("animated fadeIn");
     $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
         $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
   }
@@ -87,7 +89,7 @@ if ($(this).scrollTop() > $(".processBg").height() - $(".commonHeader").height()
 }
 else if(screen.width >= 768 && screen.width < 1199) {
     $(window).scroll(function() {
-if ($(this).scrollTop() > $(".processBg").height() - $(".commonHeader").height()){  
+if ($(this).scrollTop() > $(".detailBg").height() - $(".commonHeader").height()){  
     $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
     $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
         $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
@@ -120,8 +122,8 @@ if ($(this).scrollTop() > $(".processBg").height() - $(".commonHeader").height()
 $(window).resize(function() {
   if (screen.width >= 768) {
     $(window).scroll(function() {
-if ($(this).scrollTop() > $(".processBg").height() - $(".commonHeader").height()){  
-    $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
+if ($(this).scrollTop() > $(".detailBg").height() - $(".commonHeader").height()){  
+    $('.commonHeader').css({"background-color":"transparent"}).addClass("animated fadeIn");
     $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
         $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
   }
@@ -134,7 +136,7 @@ if ($(this).scrollTop() > $(".processBg").height() - $(".commonHeader").height()
 }
 else if(screen.width >= 768 && screen.width < 1199) {
     $(window).scroll(function() {
-if ($(this).scrollTop() > $(".processBg").height() - $(".commonHeader").height()){  
+if ($(this).scrollTop() > $(".detailBg").height() - $(".commonHeader").height()){  
     $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
     $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
         $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
