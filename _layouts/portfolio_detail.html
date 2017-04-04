@@ -1,17 +1,18 @@
 {% include header.html %}
+<section class="portfolioDetailBg">
     {% include common_header.html %} 
-  	<section class="portDetailPage">
-  	<div class="header">
-  		<div class="banner">
-  		<img class="banner__logo" src="/assets/img/portfolio/logo.png">
-  		<h1 class="banner__title">{{page.porject_title}}</h1>
-  		<h4 class="banner__subtitle">{{page.porject_subtitle}}</h4>
-  		<h6 class="banner__mintitle">DOWNLOAD FOR</h6>
-  		<img class="banner__himg" src="/assets/img/portfolio/apple.png">
-  		<img class="banner__himg" src="/assets/img/portfolio/android.png">
-
-  		</div>
+  	
+  	<div class="commonHeight comHeight">
+    <div>
+  		<img class="commonHeight__mainImg" src="/assets/img/portfolio/logo.png">
+  		<h1 class="commonHeight__heading">{{page.porject_title}}</h1>
+  		<h4 class="commonHeight__para">{{page.porject_subtitle}}</h4>
+  		<h6 class="commonHeight__footer">DOWNLOAD FOR</h6>
+  		<img class="commonHeight__apple" src="/assets/img/portfolio/apple.png">
+  		<img class="commonHeight__android" src="/assets/img/portfolio/android.png">
+      </div>
   	</div>
+    </section>
     <div class="middle-section1">
     <div class="row center-xs start-md start-sm start-lg">
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
@@ -72,10 +73,8 @@
       <button class="middle-section5__btn">GET IN TOUCH</button>
         
       </div>
-    </section>
     {% include common_footer.html %}
- {% include footer.html %}
- <script type="text/javascript">
+ {% include footer.html %} <script type="text/javascript">
   if (screen.width >= 1199) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > 620){  

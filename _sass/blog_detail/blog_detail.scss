@@ -79,18 +79,19 @@
 		font-size: 12px;
 		 background-image: url("/assets/img/blog/React_Bg.png");
 		 width: 224px;
-		 height: 42px;
+		 height: 37px;
 		 margin-bottom:60px;
 		 color: #fff;
-	}
+		}
 		&__likeimg{
 			padding-left:30px;
 			padding-right:10px;
+			vertical-align: middle;
 		}
 		&__dslikeimg{
 			padding-left:30px;
 			padding-right:10px;
-			
+			vertical-align: middle;
 		}
 		&__align{
 			padding-top:5px;
@@ -102,7 +103,8 @@
 	font-size: 21px;
 	&__hr4{
 		border-top: 5px solid #4d4d4d;
-		margin-right: 95%;
+		margin-right: 92%;
+		margin-left: 16px;
 	}
 	&__rimg1{
 		width:100%;
@@ -114,6 +116,9 @@
 		height:100%;
 		padding-right: 22px;
 		padding-left: 22px;
+	}
+	&__rltdHadng{
+		padding-left: 14px;
 	}
 	&__rimg3{
 			width:100%;
@@ -175,10 +180,12 @@
 			&__hr6{
 				margin-bottom: 5%;
 				border-top: 1px solid #4d4d4d;
+				margin-right: 14px;
+				margin-left: 14px;
 			}
 }
 
-@media screen and (min-width : 768px) and (max-width : 1024px) {
+@media screen and (min-width : 768px) and (max-width : 991px) {
 .header{
 	height: 450px;
 	.banner{
@@ -193,9 +200,10 @@
 		}
 	}
 	.middleSection1{
-		margin: 25px 6px 0px 50px;
+		margin: 25px 50px 0px 50px;
 	&__pimg{
 		display: inline-block;
+    	vertical-align: middle;
 		}
 	&__profile{
 		padding-left:5px;
@@ -203,6 +211,9 @@
 	}
 	&__detail{
 		padding-top: 20px;
+	}
+	&__iconAlgn{
+		padding:0;
 	}
 	&__img2{
 		padding-right:10%;
@@ -213,16 +224,16 @@
 		margin-bottom: 20px;
 	}
 	&__hr2{
-		margin-right: -13%;
-		margin-left: 0%;
+		margin-right: -20%;
+		margin-left: 2%;
 	}
 	&__img1{
 		display:none;
 	}
 }
 	.middleSection2{
-		margin: 25px 50px 0px 50px;
-}
+		margin: 25px 50px 0px 58px;
+		}
 		.middleSection4{
 			margin: 25px 50px 0px 50px;
 		&__rimg2{
@@ -232,8 +243,8 @@
 			display:none;
 		}
 		&__hr4 {
-		    border-top: 5px solid #4d4d4d;
-		    margin-right: 90%;
+			margin-right: 88%;
+			margin-left: 2%;
 		    }
 	 &__bottom {
     	padding-left: 19px;
@@ -269,6 +280,7 @@
 	margin: 40px 40px 0px 40px;
 	&__pimg{
 		display: inline-block;
+		vertical-align: middle;
 		}
 	&__profile{
 		padding-left:5px;
@@ -280,6 +292,9 @@
 	&__detail{
 		padding-top: 20px;
 		font-size: 12px;
+	}
+	&__iconAlign{
+		padding:0;
 	}
 	&__hr1 {
     margin-right: 36%;
@@ -326,7 +341,6 @@
 	}
 	.middleSection4{
 			margin: 12px 40px 0px 40px;
-			text-align:center;
 		&__rimg1{
 			padding-right:0%;
 			padding-left:0%;
@@ -338,6 +352,12 @@
 		}
 		&__hr6 {
 		    margin-bottom: 15%;
+		    }
+		    &__para{
+		    margin: 0 !important;
+		    }
+		    &__title{
+		    	margin-top:-7px;
 		    }
 		&__rcimg3{
 				display:none;		}
