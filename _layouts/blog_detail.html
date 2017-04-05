@@ -2,12 +2,12 @@
   
   	<div class="blogDetailBg">
     {% include common_header.html %}
-  		<div class="commonHeight">
+  		<div class="banner">
       <div>
-      <div class="commonHeight__heading">
+      <div class="banner__title">
         {{page.category}}
       </div>
-      <div class="commonHeight__para">
+      <div class="banner__subtitle allign">
       {{page.bannerContent}}
   		</div>
       </div>
@@ -17,7 +17,8 @@
       <div class="row">
       <div class="col-lg-9 col-sm-10 col-md-9 col-xs-12 middleSection1__iconAlign">
        <div class="row center-lg  center-md  start-sm  center-xs">
-         <div class="col-lg-3 col-sm-10 col-md-3 col-xs-12 middleSection1__algnn">
+         <div class="col-lg-4 col-sm-10 col-md-4 col-xs-12 middleSection1__algnn">
+         <div class="middleSection1__profile1">
          <img class="middleSection1__img1" src="/assets/img/blog/images.png"><br>
          <img class="middleSection1__pimg" src="{{page.profileImg}}">
          <div class="middleSection1__profile">
@@ -29,9 +30,10 @@
          </div>
          </div>
          </div>
-         <div class="col-lg-6 col-sm-10 col-md-6 col-xs-12 middleSection1__detail middleSection1__algnn">
+         </div>
+         <div class="col-lg-7 col-sm-10 col-md-7 col-xs-12 middleSection1__detail middleSection1__algnn">
          <div class="row start-lg start-md start-sm center-xs">
-           <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 middleSection1__algnn">
+           <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 middleSection1__algnn middleSection1__para">
            {{page.author_content}}
              <hr class="middleSection1__hr1">
             
@@ -41,18 +43,16 @@
          </div>
          </div>
          <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12">
-         <div class="col-lg-3 col-sm-2 col-md-3 col-xs-12">
          <div class="row center-xs middleSection1__icons1">
          <div class="col-lg-12 col-sm-12 col-md-12 col-xs-6 middleSection1__like">
-         <img src="/assets/img/blog/like.png" ><br>
+         <img src="/assets/img/blog/like.png" class="middleSection1__likeimg"><br>
          likes(56)
          </div>
-         <div class="col-lg-12 col-sm-12 col-md-12 col-xs-6">
-         <img src="/assets/img/blog/view.png"><br>
+         <div class="col-lg-12 col-sm-12 col-md-12 col-xs-6 middleSection1__view">
+         <img src="/assets/img/blog/view.png" class="middleSection1__viewimg"><br>
          view(120)
          </div>
-         </div>  
-         </div>
+         </div> 
          </div>
       </div>
       <div class="row center-lg center-md start-sm center-xs">
@@ -75,7 +75,6 @@
                Medium
              </div>
            </div>
-           <hr class="middleSection1__hr2">
            </div>
       </div>
       </div>
@@ -98,7 +97,7 @@
         </div>
         <div class="middleSection4">
         <hr class="middleSection4__hr6">
-          <span class="middleSection4__rltdHadng">RELATED STORIES</span>
+          <div class="middleSection4__rltdHadng">RELATED STORIES</div>
           <hr class="middleSection4__hr4">
           <div class="row">
             {% for post in site.posts limit:3 %}
@@ -110,6 +109,7 @@
             <div class="blogDetail__border"></div>
             <p class="blogDetail__para">{{ post.description}}</p>
           </div>
+
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="row blog__pad">
