@@ -81,6 +81,10 @@ left: 80%;
 }
     margin-left: 28%;
     background: -moz-linear-gradient(left top, #F72B2B, #E0005E);
+    background: -webkit-gradient(left top, #F72B2B, #E0005E);
+background: -webkit-linear-gradient(left top, #F72B2B, #E0005E);
+background: -moz-linear-gradient(left top, #F72B2B, #E0005E);
+background: linear-gradient(left top, #F72B2B, #E0005E);
     height: 370px;
     width: 44%;
     display: flex;
