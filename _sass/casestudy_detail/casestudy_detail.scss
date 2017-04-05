@@ -144,6 +144,36 @@ font-family: Raleway-medium;
   width:80%;
   }
 }
+.slick-next {
+display:none !important;
+}
+.slick-dots li.slick-active button::before {
+    opacity:1;
+    color: transparent;
+}
+.slick-dots li button::before {
+    font-family: 'slick';
+    font-size: 18px;
+    line-height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    color:white;
+    opacity:1;
+    }
+.slick-dots li button {
+    
+    width: 15px;
+    height: 15px;
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 50%;
+}
+
+
 .solution {
   font-family: Raleway-bold;
   background-color:#FF5254;
@@ -170,9 +200,10 @@ font-family: Raleway-medium;
   font-size: 16px;
   }
   &__img{
-  margin-bottom: 50px;
-  width: 70%;
+  
+  width: 80%;
   height: 860px;
+  margin-left:10%;
   }
   }
   .GIT{
@@ -359,6 +390,16 @@ height:290px;
 width:290px;
 margin-bottom:30px;
 }
+}
+.slick-dots {
+    position: absolute;
+    bottom: 44px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
 }
 
 .GIT{
@@ -588,6 +629,23 @@ height:150px;
 width:150px;
 }
 }
+.slick-dots {
+bottom:20px;
+}
+.slick-dots li button::before {
+    font-size: 13px;
+    line-height: 11px;
+    width: 13px;
+    }
+
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 50%;
+    }
 .GIT{
   text-align:center;
   &__heading{
