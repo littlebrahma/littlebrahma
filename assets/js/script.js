@@ -173,4 +173,15 @@ for(var i=9;i<=length1;i++){
     });
 }
 
+$('.solution__circle').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        arrows: false,
+        autoplay: false,
+        autoplaySpeed: 3000
+    });
+
 });
