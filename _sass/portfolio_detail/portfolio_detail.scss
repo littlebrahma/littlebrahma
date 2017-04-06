@@ -84,7 +84,7 @@ margin: 0 100px;
   background-color:#ff9541;
   padding: 10% 0;
   &__img1{
-    width:27%;
+    width:26.9%;
     margin-left:3%;
     margin-right:3%
   }
@@ -172,6 +172,8 @@ margin: 0 100px;
       font-weight: bolder;
       font-size: 22px;
       border-radius: 16px;
+      otline: none;
+      color: #fff;
   }
   &__headng{
     font-family: Montserrat-bold;
@@ -254,7 +256,7 @@ margin: 8% 5%;
 }
 .middle-section4{
   &__pragrph{
-  top: 27%;
+  top: 15%;
   left: 61%;
   right: 6%;
   }
