@@ -11,7 +11,7 @@
  	    	{% assign item = site.career | sort: 'date' %}
 			{% for careers in item %}
 			{% capture category %}{{ careers.category | replace:'/',' ' }}{% endcapture %}
- 		    	<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 job career__card blog-filter {{category}} {{forloop.index}}" data-id="{{forloop.index}}">
+ 		    	<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 job career__card blog-filter {{category}} {{forloop.index}}" data-id="{{forloop.index}}" data-category="{{careers.category}}">
  		     		<div class="career__job-card {{careers.location}}">
  		     	 	<img class="career__img" src="/assets/img/career/Icons/Location-Pin.png">
  		     	 	<h1 class="career__location">{{careers.location}}</h1>
@@ -26,7 +26,7 @@
  		     	 	<h1 class="career__location">{{careers.location}}</h1>
 	 		     	<h1 class="career__title">{{careers.title}}</h1>
 	 		     	<h1 class="career__experience">{{careers.years}}</h1>
-	 		     	<a class="career__img2" href="#">Less</a>
+	 		     	<a class="career__img2" href="#" data-id="{{forloop.index}}">Less</a>
  		     	</div>
  		     	<h2 class="career__detail-heading">Job Description</h2>
  		    	{% for  job_descr in careers.Job_Description %}
