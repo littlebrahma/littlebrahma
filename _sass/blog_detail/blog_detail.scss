@@ -75,7 +75,8 @@
 		vertical-align: middle;
 	}
 	&__para{
-		 line-height: 45px;
+		 line-height: 36px;
+		 font-size: 22px;
 	}
 
 }
@@ -98,14 +99,14 @@
 			padding-bottom:40px;
 		}
 		&__backgroundimg{
-		margin-top:95px;
 		font-family: 'Montserrat-Regular';
 		font-size: 12px;
 		 background-image: url("/assets/img/blog/React_Bg.png");
 		 width: 224px;
 		 height: 37px;
-		 margin-bottom:60px;
 		 color: #fff;
+		 margin-bottom: 60px;
+    	 margin-top: 40px;
 		}
 		&__likeimg{
 			padding-left:30px;
@@ -210,7 +211,7 @@
 			}
 }
 
-@media screen and (min-width : 768px) and (max-width : 991px) {
+@media screen and (min-width : 768px) and (max-width : 1199px) {
 .header{
 	height: 450px;
 	.banner{
@@ -226,6 +227,9 @@
 	}
 	.middleSection1{
 		margin: 25px 135px;
+		&__icons1{
+		margin-top: 30px;
+	}
 	&__pimg{
 		display: inline-block;
     	vertical-align: middle;
@@ -234,6 +238,7 @@
 		}
 		&__para {
 		    line-height: 30px;
+    		font-size: 18px;
 		}
 	&__profile{
 		padding-left:5px;
@@ -314,7 +319,7 @@
 		}
 	}
 	.middleSection1{
-	margin: 40px 40px 0px 40px;
+	margin: 40px 30px 0px;
 	&__pimg{
 		display: inline-block;
 		vertical-align: middle;
@@ -326,6 +331,7 @@
 		}
 		&__para {
 		    line-height: 22px;
+		    font-size: 12px;
 		}
 		&__likeimg {
 		    padding-left: 0px;
@@ -361,8 +367,12 @@
 	&__algn{
 		padding-left:14px;
 	}
+	&__img2{
+		padding-left:25%; 
+		padding-right: 0;
+	}
 	&__algn1{
-		padding-left:30px;
+		padding-left: 42%;
 	}
 		&__icons2{
 		font-size: 10px;
@@ -375,7 +385,7 @@
 	}
 	.middleSection2{
 	 line-height: 20px;
-	margin: 12px 40px 0px 40px;
+	margin: 12px 30px 0px;
 	font-size:10px;
 	&__imgSection {
     padding-top: 85px;
@@ -395,7 +405,7 @@
 		}
 	}
 	.middleSection4{
-			margin: 12px 40px 0px 40px;
+			margin: 12px 30px 0px;
 		&__rimg1{
 			padding-right:0%;
 			padding-left:0%;

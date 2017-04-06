@@ -50,6 +50,7 @@ $('input[type="radio"]').click(function() {
 
 $(".job_detail").hide();
 $(".career__link").click(function() {
+    debugger;
     var job=$(this).data("id");
     $(".job").hide();
   
@@ -58,6 +59,7 @@ $(".career__link").click(function() {
 });
 
 $( ".career__img2").click(function() {
+    debugger;
     $(".job_detail").hide();
     var job=$(".job").length;
     for(var i=0;i<=job;i++){
