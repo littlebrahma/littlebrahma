@@ -60,9 +60,14 @@ $(".career__link").click(function() {
 $( ".career__img2").click(function() {
     $(".job_detail").hide();
     var job=$(".job").length;
-    for(var i=0;i<=job;i++){
-        $("."+i).show();
-    } 
+     if($('input[type="radio"]').is(':checked')) {
+    var category= $('input:radio:checked').data("category");
+    $(".blog-filter").hide();
+
+    var classArr=category.replace(/[^a-z0-9\s]/gi, ' ').split(" "); 
+    var finalArray = classArr.filter(function(v){return v!==''});
+    $("."+finalArray.join('.')).show();
+}
 });
 
 
