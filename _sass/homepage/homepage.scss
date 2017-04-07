@@ -189,7 +189,7 @@
     @media screen and (min-width: 320px) and (max-width: 1024px) {
         .homepageBg {
             overflow-y: visible;
-            height: 100%;
+            height: auto;
         }
         .hopageDesk {
             display: none;
@@ -322,6 +322,13 @@
        }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
+        .mobTabSection {
+            margin-top: -22px;
+        }
+        .homepageBg {
+            overflow-y: hidden;
+            height: 100vh;
+        }
         .homepageContent {
             &__img {
                 width: 200px;
@@ -329,8 +336,8 @@
             }
             &__heading {
                 font-size: 18px;
-                margin: 7px 0 0;
-                line-height: 49px;
+                margin: 0 0 0;
+                line-height: 44px;
             }
             &__para {
                 font-size: $ternary-contentfont;
@@ -346,32 +353,45 @@
             width: 90px;
         }
         #img1 {
-            left: 0;
+            left: 26%;
             top: 32%;
         }
         #img2 {
-            left: 10px;
+            left: 34%;
             top: 28%;
         }
         #img3 {
-            left: -3px;
+            left: 30%;
             top: 10%;
            width: 74px;
         }
         #img4 {
             height: 80px;
-            left: 10%;
+            left: 37%;
             top: 9%;
         }
         #img5 {
             height: 105px;
-            left: 1%;
+            left: 31%;
             top: 12%;
             width: 70px;
         }
         .tooltip:hover span {
         top: 32px;
         right: 0;
+        }
+        .slick-prev {
+            left: 12px;
+            color: #fff;
+            z-index: 1;
+            top: 28%;
+        }
+        .slick-next {
+            right: 12px;
+            color: #fff;
+            z-index: 1;
+            top: 28%;
+            display: block !important;
         }
     }
 }
