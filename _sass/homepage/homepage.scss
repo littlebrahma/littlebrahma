@@ -187,9 +187,34 @@
 
     }
     @media screen and (min-width: 320px) and (max-width: 1024px) {
+        .slick-prev,.slick-next {
+            color: #fff;
+            z-index: 1;
+            display: none !important;
+        }
+        .arrow-right {
+             color: #ffc700;
+            float: right;
+            position: fixed;
+            right: 5%;
+            text-align: right;
+            top: 50%;
+            font-size: 30px;
+            z-index: 1;
+            cursor: pointer;
+        }
+        .arrow-left {
+            color: #ffc700;
+            left: 5%;
+            position: fixed;
+            top: 50%;
+            font-size: 30px;
+            z-index: 1;
+            cursor: pointer;
+        }
         .homepageBg {
-            overflow-y: visible;
-            height: auto;
+            overflow-y: hidden;
+            height: 100vh;
         }
         .hopageDesk {
             display: none;
@@ -244,22 +269,6 @@
         .homepageBgImg__img1 {
             position: relative;
         }
-        #img1 {
-            left: 0%;
-            top: 28%;
-        }
-        #img2 {
-            left: 8%;
-            top: 28%;
-        }
-        #img3 {
-            left: 0%;
-            top: -4%;
-        }
-        #img4 {
-            left: 12%;
-            top: 0;
-        }
        
          .tooltip:hover span {
         top: 32px;
@@ -294,28 +303,28 @@
                 margin-bottom:0px;
             }
         #img1 {
-            left: 0%;
+            left: 28%;
             top: 29%;
             width:210px;
         }
         #img2 {
-            left: 5%;
+            left: 38%;
             top: 29%;
             width:180px;
         }
         #img3 {
-            left: -1%;
+            left: 31%;
             top: 0%;
             width:175px;
         }
         #img4 {
-            left: 9%;
+            left: 37.5%;
             top: 20px;
             width:210px;
         }
         #img5 {
         
-            left: 1%;
+            left: 35%;
             top: 1%;
             width: 145px;
         }      
@@ -324,10 +333,6 @@
     @media screen and (min-width: 320px) and (max-width: 767px) {
         .mobTabSection {
             margin-top: -22px;
-        }
-        .homepageBg {
-            overflow-y: hidden;
-            height: 100vh;
         }
         .homepageContent {
             &__img {
@@ -379,39 +384,6 @@
         .tooltip:hover span {
         top: 32px;
         right: 0;
-        }
-        .slick-prev {
-            left: 12px;
-            color: #fff;
-            z-index: 1;
-            display: none !important;
-        }
-        .slick-next {
-            right: 12px;
-            color: #fff;
-            z-index: 1;
-            top: 28%;
-            display: none;
-        }
-        .arrow-right {
-             color: #ffc700;
-            float: right;
-            position: fixed;
-            right: 5%;
-            text-align: right;
-            top: 50%;
-            font-size: 30px;
-            z-index: 1;
-            cursor: pointer;
-        }
-        .arrow-left {
-            color: #ffc700;
-            left: 5%;
-            position: fixed;
-            top: 50%;
-            font-size: 30px;
-            z-index: 1;
-            cursor: pointer;
         }
     }
 }
