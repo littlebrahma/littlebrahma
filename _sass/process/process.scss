@@ -157,7 +157,7 @@
 			padding: 100px 0;
 			.processContent {
 			transform: translatey(0);
-			width: 115px;
+			width: 100%;
 	    &__line{
 	    	display: none;
 			}
@@ -173,10 +173,10 @@
   				letter-spacing : 0.24px;
 			}
 			&__hr1{
-				margin-right: 100px;
+				margin-right: 93%;
 			}
 			&__hr2{
-				margin-left: 100px;
+				margin-left: 94%;
 			}
 			&__nmbr{
 				letter-spacing : 0.65px;
