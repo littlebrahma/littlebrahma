@@ -65,9 +65,7 @@ $primary-bg: #f1f1f1;
 $border-bottom: 4px solid #414042;
 
 $common-width: 100%;
-.slick-slide {
-    outline: none;
-}
+
 @media screen and (min-width: 1866px) {
     .hero {
         // width: 1866px;
@@ -75,6 +73,9 @@ $common-width: 100%;
     }
 }
 .hero {
+.slick-slide {
+    outline: none;
+}
     .fadeIn {
     opacity: 1;
   transition: opacity 0.3s;
