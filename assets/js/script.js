@@ -11,6 +11,8 @@ $( ".commonMenu__icon" ).click(function() {
     $(".MenuContent").css({"opacity":"1","visibility":"visible"});
     $(".scroll-indicators").css("opacity","0");
     $(".about-indicators").css("opacity","0");
+    $(".arrow-right").css("opacity","0");
+    $(".arrow-left").css("opacity","0");
 });         
 $( ".MenuContent__close").click(function() {
     $(".commonMenu__icon").show();
@@ -20,6 +22,8 @@ $( ".MenuContent__close").click(function() {
    $(".MenuList__common").hide();
    $(".scroll-indicators").css("opacity","1");
    $(".about-indicators").css("opacity","1");
+   $(".arrow-right").css("opacity","1");
+   $(".arrow-left").css("opacity","1");
 });
 $(".MenuList__common").hide();
 $(".MenuList__wwa").click(function() {
@@ -261,6 +265,9 @@ $('.mobTabSection__division').slick({
 //     });
 if($(".slick-active").attr("data-slick-index") == 0) {
     $('.arrow-left').css("z-index","0");
+}
+if($(".slick-active").attr("data-slick-index") == 4) {
+    $('.arrow-right').css("z-index","0");
 }
 $('.arrow-left').click(function(){
     $('.mobTabSection__division').slick('slickPrev');
