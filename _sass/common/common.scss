@@ -103,7 +103,9 @@ $common-width: 100%;
         vertical-align   : bottom;
     }
     input[type=radio]:not(old):checked + label > .select__radio {
-        border           : 0.0625em solid #FF1A46;
+        border-color: #FF1A46;
+        border-style: solid;
+        border-width: 0.0625em;
     }
     input[type=radio]:not(old):checked + label > .select__title {
        vertical-align: middle;
