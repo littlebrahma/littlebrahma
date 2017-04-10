@@ -225,8 +225,6 @@
         }
         .mobTabSection {
             display: block;
-            outline: none;
-            border: none;
         }
         .homepageContent {
             align-items: center;
@@ -259,6 +257,10 @@
             }
             &__button {
                 margin-bottom: 125px;
+            } 
+            &__commomheight {
+                outline: none;
+                border: none;
             }
         }
         #bg1 {
