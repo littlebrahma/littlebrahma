@@ -7,7 +7,7 @@
         z-index: 1;
         background-color: transparent;
         &__logo {
-            margin-left: 70px;
+            margin-left: 35px;
             display: inline-block;
             width: 50px;
         }
@@ -56,7 +56,7 @@
     .commonMenu {
         float: right;
         cursor: pointer;
-        margin: 0 70px 0 0;
+        margin: 0 35px 0 0;
         display: inline-block;
     }
     .MenuContent {
@@ -71,7 +71,7 @@
         padding: 20px 0 0;
         opacity: 0;
         &__close {
-            margin-right: 70px;
+            margin-right: 35px;
             float: right;
             cursor: pointer;
         }
@@ -166,7 +166,7 @@
             padding: 20px 0 20px;
         background-color: transparent;
         &__logo {
-            margin-left: 50px;
+            margin-left: 25px;
         }
         &__lists{
             padding-left: 0;
@@ -187,11 +187,11 @@
            }
            }
         .commonMenu {
-        margin: 0 50px 0 0;
+        margin: 0 25px 0 0;
     }
     .MenuContent {
             &__close {
-                margin-right: 50px;
+                margin-right: 25px;
             }
         }
     }
@@ -199,7 +199,7 @@
         .commonHeader {
             position: static;
         &__logo {
-            margin-left: 30px;
+            margin-left: 15px;
             width: 50px;
         }
         &__lists{
@@ -213,7 +213,7 @@
         margin: 20px 25px;
     }
         .commonMenu {
-           margin: 0 30px 0 0;
+           margin: 0 15px 0 0;
             img {
                 height: 20px
             }
@@ -222,7 +222,7 @@
             width: 100%;
             text-align: center;
             &__close {
-                margin-right: 30px;
+                margin-right: 15px;
             }
         }
         .MenuList {
