@@ -288,6 +288,9 @@ function rotateimage(e){
     var delta=evt.detail? evt.detail*(-120) : evt.wheelDelta; //delta returns +120 when wheel is scrolled up, -120 when scrolled down
     nextslideindex=(delta<=-120)? nextslideindex+1 : nextslideindex-1;//move image index forward or back, depending on whether wheel is scrolled down or up
     nextslideindex=(nextslideindex<0)? myimages.length-1 : (nextslideindex>myimages.length-1)? 0 : nextslideindex; //wrap image index around when it goes beyond lower and upper boundaries
+    if(nextslideindex < 0) {
+        e.preventDefault();
+    }
     $("#slideshow").css('background-position', myimages[nextslideindex]).removeClass("animated fadeIn");
     $(this).addClass("animated fadeIn");
     myFunction();
