@@ -251,8 +251,8 @@
             }
             &__para {
                 font-family: $primary-contentfamily;
-                margin: 10px auto 30px;
-                width: 580px;
+                margin: 0 30px 16px;
+                width: auto;
                 letter-spacing: 2px;
             }
             &__button {
@@ -357,8 +357,6 @@
             }
             &__para {
                 font-size: $ternary-contentfont;
-                margin: 0 auto 16px;
-                width: 262px;
             }
             &__button {
                 margin-bottom: 40px;
