@@ -105,6 +105,19 @@ $(".scroll-indicators li").click(function(){
         nextslideindex=7;
     }
     else if ( tab == 3) {
+        $('#text4').show();
+        $('#text1').hide();
+        $('#text2').hide();
+        $('#text').hide();
+        $('#text3').hide();
+        background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
+        $("background").addClass("animated fadeInUp");
+        $('#slideshow').css("background-position", "-76px -1276px").addClass("animated fadeIn");
+        $(".scroll-indicators li").removeClass('active');
+        $(this).addClass('active');
+        nextslideindex=15;
+    }
+    else if ( tab == 4) {
         $('#text2').show();
         $('#text1').hide();
         $('#text').hide();
@@ -115,9 +128,9 @@ $(".scroll-indicators li").click(function(){
         $('#slideshow').css("background-position", "-2034px -265px").addClass("animated fadeIn");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
-        nextslideindex=15;
+        nextslideindex=22;
     }
-    else if ( tab == 4) {
+    else if ( tab == 5) {
         $('#text3').show();
         $('#text1').hide();
         $('#text2').hide();
@@ -126,19 +139,6 @@ $(".scroll-indicators li").click(function(){
         background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/5.gif')";
         $("background").addClass("animated fadeInUp");
         $('#slideshow').css("background-position", "-56px -556px").addClass("animated fadeIn");
-        $(".scroll-indicators li").removeClass('active');
-        $(this).addClass('active');
-        nextslideindex=22;
-    }
-    else if ( tab == 5) {
-        $('#text4').show();
-        $('#text1').hide();
-        $('#text2').hide();
-        $('#text').hide();
-        $('#text3').hide();
-        background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
-        $("background").addClass("animated fadeInUp");
-        $('#slideshow').css("background-position", "-76px -1276px").addClass("animated fadeIn");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
         nextslideindex=29;
