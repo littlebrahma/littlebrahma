@@ -120,7 +120,21 @@
 			}
 		}
 	}
-	@media screen and (min-width: 320px) and (max-width: 767px) {
+	@media screen and (min-width: 480px) and (max-width: 767px) {
+	.footerMargin {
+			margin:0 50px;	
+		}
+	.footer_challenge-eshop {
+			justify-content: initial;
+		}
+		.footer_justify {
+			justify-content:initial;
+		}
+		.footer_eshop {
+			padding-top:0px;
+		}
+	}
+	@media screen and (min-width: 320px) and (max-width: 479px) {
 		.footerMargin {
 			margin: 0;
 			display: none;
