@@ -6,9 +6,9 @@
         <div class="homepageCln">
             <div class="homepageBgImg animated fadeInUp" id="background_image"></div>
             <div class="homepageBgImg animated fadeInUp" id="background_image1"></div>
+            <div class="homepageBgImg animated fadeInUp" id="background_image4"></div>
             <div class="homepageBgImg animated fadeInUp" id="background_image2"></div>
             <div class="homepageBgImg animated fadeInUp" id="background_image3"></div>
-            <div class="homepageBgImg animated fadeInUp" id="background_image4"></div>
             <div id="slideshow" class="homepageBgImg__img animated fadeInUp"></div>
         </div>
        <div class="homepageContent animated fadeInUp" id="text">
@@ -23,6 +23,12 @@
             <p class="homepageContent__para">Step into the digital portfolio showcase as you journey into a new yuga of iconic signature designs that speak of our collective obsession with making every pixel and byte detailed, functional and intuitive.</p>
             <a href="portfolio" class="homepageContent__link"><button class="homepageContent__button">Explore more</button></a>
         </div>
+        <div class="animated fadeInUp homepageContent" id="text4">
+            <div class="homepageContent__border"></div>
+            <h1 class="homepageContent__heading">OUR SERVICE</h1>
+            <p class="homepageContent__para">As we expand and explore the frontiers of design intelligence, our services are tested on the highest threshold of beauty and utility before we make them available for you. Engage us and take maximum leverage from this design powerhouse. </p>
+            <a href="service" class="homepageContent__link"><button class="homepageContent__button">Explore more</button></a>
+        </div>
         <div class="animated fadeInUp homepageContent" id="text2">
         <div class="homepageContent__border"></div>
             <h1 class="homepageContent__heading">CONTEST</h1>
@@ -34,12 +40,6 @@
             <h1 class="homepageContent__heading">E-SHOP</h1>
             <p class="homepageContent__para">Explore visionary creative merchandise from the universe of Little Brahma. Curated by the best designers in the industry, the collections include a full suite of product campaigns, tailor-made design solutions and exclusive craftsmanship masterpieces.</p>
             <a href="#" class="homepageContent__link tooltip"><button class="homepageContent__button">Explore more</button><span>Coming Soon...</span></a>
-        </div>
-        <div class="animated fadeInUp homepageContent" id="text4">
-            <div class="homepageContent__border"></div>
-            <h1 class="homepageContent__heading">OUR SERVICE</h1>
-            <p class="homepageContent__para">As we expand and explore the frontiers of design intelligence, our services are tested on the highest threshold of beauty and utility before we make them available for you. Engage us and take maximum leverage from this design powerhouse. </p>
-            <a href="service" class="homepageContent__link"><button class="homepageContent__button">Explore more</button></a>
         </div>
         <ul class="scroll-indicators">
             <li data-id="1" class="active">
@@ -149,6 +149,13 @@ var myimages=[
     "-1379px -960px",
     "-1704px -960px",
     "-2031px -960px",
+    "-76px -1276px",
+    "-408px -1276px",
+    "-740px -1276px",
+    "-1060px -1276px",
+    "-1388px -1276px",
+    "-1710px -1276px",
+    "-2032px -1276px",
     "-2034px -265px",
     "-1710px -265px",
     "-1377px -265px",
@@ -162,14 +169,7 @@ var myimages=[
     "-1032px -556px",
     "-1350px -556px",
     "-1679px -556px",
-    "-1981px -556px",
-    "-76px -1276px",
-    "-408px -1276px",
-    "-740px -1276px",
-    "-1060px -1276px",
-    "-1388px -1276px",
-    "-1710px -1276px",
-    "-2032px -1276px"
+    "-1981px -556px"
     ];
 var slideshow=document.getElementById("slideshow");
 var nextslideindex=0;
@@ -198,6 +198,27 @@ function myFunction() {
     }
     else if(nextslideindex >= 14 && nextslideindex <= 20)
     {
+        $('#background_image4').show().addClass("animated fadeInUp");
+        $('#background_image').hide().addClass("animated fadeInUp");
+        $('#background_image2').hide().addClass("animated fadeInUp");
+        $('#background_image3').hide().addClass("animated fadeInUp");
+        $('#background_image1').hide().addClass("animated fadeInUp");
+        $('#slideshow').addClass("animated fadeInUp");
+        $(".homepageBg").css("background-color","#211042");
+        $("#text").hide();
+        $("#text1").hide();
+        $("#text2").hide();
+        $("#text3").hide();
+        $("#text4").show().addClass("animated fadeInUp");
+        $(".scroll-indicators li[data-id=3]").addClass('active');
+        $(".scroll-indicators li[data-id=1]").removeClass('active');
+        $(".scroll-indicators li[data-id=5]").removeClass('active');
+        $(".scroll-indicators li[data-id=4]").removeClass('active');
+        $(".scroll-indicators li[data-id=2]").removeClass('active');
+        $("#slideshow").css({"height": "368px", "left": "112%", "top": "-54px", "width":"200px","opacity":"1"}).addClass("animated fadeIn");
+    }
+    else if(nextslideindex >= 21 && nextslideindex <= 27) 
+    {
         $('#background_image2').show().addClass("animated fadeInUp");
         $('#background_image').hide().addClass("animated fadeInUp");
         $('#background_image1').hide().addClass("animated fadeInUp");
@@ -211,15 +232,15 @@ function myFunction() {
         $("#text3").hide();
         $("#text2").show().addClass("animated fadeInUp");
         $('#slideshow').addClass("animated fadeInUp");
-        $(".scroll-indicators li[data-id=3]").addClass('active');
+        $(".scroll-indicators li[data-id=4]").addClass('active');
         $(".scroll-indicators li[data-id=1]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
-        $(".scroll-indicators li[data-id=4]").removeClass('active');
+        $(".scroll-indicators li[data-id=3]").removeClass('active');
         $(".scroll-indicators li[data-id=5]").removeClass('active');
         $("#slideshow").css({"height": "280px", "left": "86%", "top": "-42px", "width":"216px","opacity":"1"}).addClass("animated fadeIn");
     }
-    else if(nextslideindex >= 21 && nextslideindex <= 27) 
-    {
+    else if(nextslideindex >= 28 && nextslideindex <= 34) 
+        {
         $('#background_image3').show().addClass("animated fadeInUp");
         $('#background_image').hide().addClass("animated fadeInUp");
         $('#background_image2').hide().addClass("animated fadeInUp");
@@ -232,33 +253,13 @@ function myFunction() {
         $("#text2").hide();
         $("#text").hide();
         $("#text3").show().addClass("animated fadeInUp");
-        $(".scroll-indicators li[data-id=4]").addClass('active');
-        $(".scroll-indicators li[data-id=1]").removeClass('active');
-        $(".scroll-indicators li[data-id=3]").removeClass('active');
-        $(".scroll-indicators li[data-id=2]").removeClass('active');
-        $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "290px", "left": "68%", "top": "-50px", "width":"296px","opacity":"1"}).addClass("animated fadeIn");
-    }
-    else if(nextslideindex >= 28 && nextslideindex <= 34) 
-    {
-        $('#background_image4').show().addClass("animated fadeInUp");
-        $('#background_image').hide().addClass("animated fadeInUp");
-        $('#background_image2').hide().addClass("animated fadeInUp");
-        $('#background_image3').hide().addClass("animated fadeInUp");
-        $('#background_image1').hide().addClass("animated fadeInUp");
-        $('#slideshow').addClass("animated fadeInUp");
-        $(".homepageBg").css("background-color","#211042");
-        $("#text").hide();
-        $("#text1").hide();
-        $("#text2").hide();
-        $("#text3").hide();
-        $("#text4").show().addClass("animated fadeInUp");
         $(".scroll-indicators li[data-id=5]").addClass('active');
         $(".scroll-indicators li[data-id=1]").removeClass('active');
         $(".scroll-indicators li[data-id=3]").removeClass('active');
-        $(".scroll-indicators li[data-id=4]").removeClass('active');
         $(".scroll-indicators li[data-id=2]").removeClass('active');
-        $("#slideshow").css({"height": "368px", "left": "112%", "top": "-54px", "width":"200px","opacity":"1"}).addClass("animated fadeIn");
+        $(".scroll-indicators li[data-id=4]").removeClass('active');
+        $("#slideshow").css({"height": "290px", "left": "68%", "top": "-50px", "width":"296px","opacity":"1"}).addClass("animated fadeIn");
+        
     }
     else if(nextslideindex >= 0 && nextslideindex <= 6) 
     {
