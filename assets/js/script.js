@@ -300,4 +300,19 @@ else {
 }
 });
 
+$(window).scroll(function() {
+    var scroll = $(this).scrollTop();
+    var os = $('#valuable_clients').offset().top;
+    var ht = $('#valuable_clients').height();
+    if(scroll > os - $(".commonHeader").height()){
+        $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
+    }
+    else {
+        $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
+    }
+
+});
+
 });

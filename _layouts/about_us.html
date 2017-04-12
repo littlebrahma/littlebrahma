@@ -260,7 +260,8 @@
 {% include footer.html %}
 
 <script type="text/javascript">
-if ( $(window).width()  > 1024) {
+if($(window).width()  > 1024){
+  console.log($(window).width());
 var background=[
     "#1A1746",
     "#e83463",
@@ -371,19 +372,9 @@ $(".about-indicators li a").click(function(){
     }
 });
 }
-$(window).scroll(function() {
-    // var scroll = $(window).scrollTop();
-    // var os = $('#valuable_clients').offset().top;
-    // var ht = $('#valuable_clients').height();
-    if($(this).scrollTop() > $('#valuable_clients').offset().top + $('#valuable_clients').height()){
-        $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
-        $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
-    }
-    else {
-        $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
-        $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
-    }
+else{
+$('#about_us').remove();
 
-});
+}
 </script>
 
