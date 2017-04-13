@@ -79,7 +79,7 @@
         &__para {
             font-family: $secondary-contentfamily;
             font-size: $secondary-contentfont;
-            line-height: 18px;
+            line-height: 25px;
             letter-spacing: 1px;
             margin-bottom: 20px;
             width: 400px;
@@ -357,6 +357,7 @@
             }
             &__para {
                 font-size: $ternary-contentfont;
+                line-height:16px;
             }
             &__button {
                 margin-bottom: 40px;
