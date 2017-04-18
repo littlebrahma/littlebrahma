@@ -25,7 +25,7 @@ img1: /assets/img/portfolio/mob1.png
 img2: /assets/img/portfolio/mob2.png
 img3: /assets/img/portfolio/mob3.png
 projectTemplate:
-  - title: TITLE 2
+  - title: test12
     img: /assets/img/portfolio/img1.png
     description: >-
       The Moon is a barren, rocky world without SKAJSKajbxansbxmsahgd and
