@@ -1,6 +1,6 @@
 ---
 background-class: portBgImg
-category: WEB & MOBILE APP DESIGN
+category: BRANDING
 project_title: Title
 porject_subtitle: Description
 published: false
