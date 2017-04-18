@@ -29,6 +29,3 @@ porject_description1: >-
   plain on its surface.
 project_img1: /assets/img/portfolio/img_bg.png
 ---
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
