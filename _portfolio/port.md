@@ -6,7 +6,7 @@ description: >-
   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
   Dummy text of the printing and typesetting industry.
 permalink: /portfolio/port/
-porject_title: MYSTERYBOX
+porject_title: MYSTERYBOX123
 porject_subtitle: 'UI/UX, MOBILE APPLICATION'
 project_detail: >-
   The Moon is a barren, rocky world without air and water. It has dark lava
