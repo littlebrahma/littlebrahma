@@ -11,7 +11,7 @@ porject_subtitle: >-
 projectTemplate1_title: Title1
 projectTemplate2_title: Title2
 projectTemplate3_title: Title3
-published: false
+published: true
 project_detail: >-
   The Moon is a barren, rocky world without air and water. It has dark lava
   plain on its surface. The Moon is filled wit craters. It has no light of its
@@ -45,4 +45,3 @@ img1: /assets/img/portfolio/mob1.png
 img2: /assets/img/portfolio/mob2.png
 img3: /assets/img/portfolio/mob3.png
 ---
-
