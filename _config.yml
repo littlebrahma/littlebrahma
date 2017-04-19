@@ -102,7 +102,7 @@ prose:
           label: "background-class"
           element: "hidden"
           value: "portBgImg"
-      - name: "layout"
+       - name: "layout"
          field:
           label: "layout"
           element: "hidden"
@@ -122,7 +122,7 @@ prose:
           label: "What we do"
           element: "textarea"
           placeholder: "Enter a Description"
-      - name: "projectTemplate1_title"
+       - name: "projectTemplate1_title"
          field:
           label: "Project Title1"
           element: "text"
@@ -136,12 +136,12 @@ prose:
          field:
           label: "Project Image1"
           element: "text"
-          placeholder: "Image url"
+          value: ""
        - name: "projectTemplate1_img1"
          field:
           label: "Project Image11"
           element: "text"
-          placeholder: "Image url"
+          value: ""
        - name: "projectTemplate2_title"
          field:
           label: "Project Title2"
@@ -156,13 +156,13 @@ prose:
          field:
           label: "Project Image2"
           element: "text"
-          placeholder: "Image url"
+          value: ""
        - name: "projectTemplate2_img1"
          field:
           label: "Project Image21"
           element: "text"
-          placeholder: "Image url"
-      - name: "projectTemplate3_title"
+          value: ""
+       - name: "projectTemplate3_title"
          field:
           label: "Project Title3"
           element: "text"
@@ -176,9 +176,9 @@ prose:
          field:
           label: "Project Image3"
           element: "text"
-          placeholder: "Image url"
+          value: ""
        - name: "projectTemplate3_img1"
          field:
           label: "Project Image31"
           element: "text"
-          placeholder: "Image url"
+          value: ""
