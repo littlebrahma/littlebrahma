@@ -9,8 +9,13 @@
       <h1 class="banner__title">{{page.project_title}}</h1>
       <h4 class="banner__subtitle">{{page.project_subtitle}}</h4>
       <h6 class="banner__mintitle">DOWNLOAD FOR1</h6>
-      <img class="banner__himg" src="/assets/img/portfolio/apple.png">
-      <img class="banner__himg" src="/assets/img/portfolio/android.png">
+       {% if page.appstore_url.size > 0 %}
+      <a href="{{page.appstore_url}}" target="_blank"> <img class="banner__himg" src="/assets/img/portfolio/apple.png"></a>
+        {% endif %}
+      {% if page.playstore_url.size > 0 %}
+     <a href="{{page.playstore_url}}" target="_blank"> <img class="banner__himg" src="/assets/img/portfolio/android.png" ></a>
+     {% endif %}
+
       </div>
       </div>
       </section>
@@ -26,10 +31,11 @@
     </div>
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 left-align">
     <h2 class="heading">WHAT WE DID</h2>
-    <hr class="middle-section1__hr2"> 
-  <!--   {% for portfolioList in page.whatWeDoList %}    --> 
-    <p class="middle-section1__algn1">{{page.whatWeDoList}}</p>
-  <!--    {% endfor %}    -->
+    <hr class="middle-section1__hr2">
+    {% assign whatWeDoList = page.whatWeDoList  | split:"," %} 
+{% for portfolioList in whatWeDoList %} 
+  <p class="middle-section1__algn1">{{portfolioList}}</p>
+{% endfor %}
     </div>
     </div>
     <img class="middle-section1__img1" src="{{page.img}}">

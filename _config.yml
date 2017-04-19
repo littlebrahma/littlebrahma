@@ -76,6 +76,10 @@ prose:
              - name: 'Keerthana'
                value: 'Keerthana'
     _portfolio:
+       - name: "title"
+         field:
+          element: "text"
+          label: "title"
        - name: "category"
          field:
           label: "Category"
@@ -180,5 +184,15 @@ prose:
        - name: "projectTemplate3_img1"
          field:
           label: "Project Image31"
+          element: "text"
+          value: ""
+       - name: "appstore_url"
+         field:
+          label: "iphone App URL"
+          element: "text"
+          value: ""
+       - name: "playstore_url"
+         field:
+          label: "Android App URL"
           element: "text"
           value: ""
