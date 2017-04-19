@@ -7,7 +7,7 @@ porject_subtitle: little brahama description
 projectTemplate1_title: title1
 projectTemplate2_title: title2
 projectTemplate3_title: title3
-published: false
+published: true
 project_detail: description
 whatWeDoList: '-sdsadasd'
 projectTemplate1_description: sad sad asd sad asdasdsad asd asd dsdas
