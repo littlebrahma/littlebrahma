@@ -7,7 +7,7 @@ porject_subtitle: little brahama description
 projectTemplate1_title: title1
 projectTemplate2_title: title2
 projectTemplate3_title: title3
-published: false
+published: true
 project_detail: description
 whatWeDoList: '-sdsadasd'
 projectTemplate1_description: sad sad asd sad asdasdsad asd asd dsdas
@@ -15,7 +15,7 @@ projectTemplate1_img: /assets/img/portfolio/img1.png
 projectTemplate1_img1: /assets/img/portfolio/img2.png
 projectTemplate2_img: /assets/img/portfolio/img1.png
 projectTemplate3_img1: /assets/img/portfolio/img2.png
-projectTemplate3_img: /assets/img/portfolio/img1.png
+projectTemplate3_img: /assets/img/portfolio/img_bg.png
 projectTemplate2_img1: /assets/img/portfolio/img2.png
 projectTemplate3_description: assa sadasdasdasd
 projectTemplate2_description: asdasdasda s asda dasdas sd sd
