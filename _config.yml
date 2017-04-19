@@ -102,6 +102,11 @@ prose:
           label: "background-class"
           element: "hidden"
           value: "portBgImg"
+      - name: "layout"
+         field:
+          label: "layout"
+          element: "hidden"
+          value: "portfolio_detail"
        - name: "porject_subtitle"
          field:
           label: "Description"
@@ -117,3 +122,63 @@ prose:
           label: "What we do"
           element: "textarea"
           placeholder: "Enter a Description"
+      - name: "projectTemplate1_title"
+         field:
+          label: "Project Title1"
+          element: "text"
+          value: "Description"
+       - name: "projectTemplate1_description"
+         field:
+          label: "Project Description1"
+          element: "textarea"
+          placeholder: "Enter a Description"
+       - name: "projectTemplate1_img"
+         field:
+          label: "Project Image1"
+          element: "text"
+          placeholder: "Image url"
+       - name: "projectTemplate1_img1"
+         field:
+          label: "Project Image11"
+          element: "text"
+          placeholder: "Image url"
+       - name: "projectTemplate2_title"
+         field:
+          label: "Project Title2"
+          element: "text"
+          value: "Description"
+       - name: "projectTemplate2_description"
+         field:
+          label: "Project Description2"
+          element: "textarea"
+          placeholder: "Enter a Description"
+       - name: "projectTemplate2_img"
+         field:
+          label: "Project Image2"
+          element: "text"
+          placeholder: "Image url"
+       - name: "projectTemplate2_img1"
+         field:
+          label: "Project Image21"
+          element: "text"
+          placeholder: "Image url"
+      - name: "projectTemplate3_title"
+         field:
+          label: "Project Title3"
+          element: "text"
+          value: "Description"
+       - name: "projectTemplate3_description"
+         field:
+          label: "Project Description3"
+          element: "textarea"
+          placeholder: "Enter a Description"
+       - name: "projectTemplate3_img"
+         field:
+          label: "Project Image3"
+          element: "text"
+          placeholder: "Image url"
+       - name: "projectTemplate3_img1"
+         field:
+          label: "Project Image31"
+          element: "text"
+          placeholder: "Image url"

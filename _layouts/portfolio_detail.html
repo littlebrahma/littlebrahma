@@ -4,10 +4,11 @@
     
       <div class="banner">
       <div>
+      
       <img class="banner__logo" src="/assets/img/portfolio/logo.png">
-      <h1 class="banner__title">MYSTERYBOX</h1>
-      <h4 class="banner__subtitle">UI/UX, MOBILE APPLICATION</h4>
-      <h6 class="banner__mintitle">DOWNLOAD FOR</h6>
+      <h1 class="banner__title">{{page.porject_title}}</h1>
+      <h4 class="banner__subtitle">{{page.porject_subtitle}}</h4>
+      <h6 class="banner__mintitle">DOWNLOAD FOR1</h6>
       <img class="banner__himg" src="/assets/img/portfolio/apple.png">
       <img class="banner__himg" src="/assets/img/portfolio/android.png">
       </div>
@@ -26,9 +27,9 @@
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 left-align">
     <h2 class="heading">WHAT WE DID</h2>
     <hr class="middle-section1__hr2"> 
-    {% for portfolioList in page.whatWeDoList %}    
-    <p class="middle-section1__algn1">{{portfolioList}}</p>
-     {% endfor %}   
+  <!--   {% for portfolioList in page.whatWeDoList %}    --> 
+    <p class="middle-section1__algn1">{{page.whatWeDoList}}</p>
+  <!--    {% endfor %}    -->
     </div>
     </div>
     <img class="middle-section1__img1" src="{{page.img}}">
@@ -44,34 +45,51 @@
     </div>
     <div class="middle-section">
 	  <div class="middle-section3">
-    {% for template in page.projectTemplate %}
+ 
     <div class="row middle-section3__midimg">
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 left-align">
-        <img class="middle-section3__img1" src="{{template.img}}">
+        <img class="middle-section3__img1" src="{{page.projectTemplate1_img}}">
       </div>
       <div class="col-xs-12 first-xs col-sm-6 last-sm col-md-6 last-md col-lg-6 last-lg left-align">
       <div class="middle-section3__allign">
       <div class="row center-xs start-md start-sm start-lg">
       <div class="col-xs-12 first-xs col-sm-12 first-sm col-md-12 first-md col-lg-12 first-lg  middle-section3__allign1 left-align right-align">
-      <h2 class="middle-section3__title2">{{template.title}}</h2>
+      <h2 class="middle-section3__title2">{{page.projectTemplate1_title}}</h2>
       <hr class="middle-section3__hr3">
-      <p class="middle-section3__algn">{{template.description}}</p>
-      <img class="middle-section3__img2" src="{{template.img1}}">
+      <p class="middle-section3__algn">{{page.projectTemplate1_description}}</p>
+      <img class="middle-section3__img2" src="{{page.projectTemplate1_img1}}">
       </div>
       </div>
       </div>
     </div>
     </div>
-      {% endfor %} 
+      <div class="row middle-section3__midimg">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 left-align">
+        <img class="middle-section3__img1" src="{{page.projectTemplate2_img}}">
+      </div>
+      <div class="col-xs-12 first-xs col-sm-6 last-sm col-md-6 last-md col-lg-6 last-lg left-align">
+      <div class="middle-section3__allign">
+      <div class="row center-xs start-md start-sm start-lg">
+      <div class="col-xs-12 first-xs col-sm-12 first-sm col-md-12 first-md col-lg-12 first-lg  middle-section3__allign1 left-align right-align">
+      <h2 class="middle-section3__title2">{{page.projectTemplate2_title}}</h2>
+      <hr class="middle-section3__hr3">
+      <p class="middle-section3__algn">{{page.projectTemplate2_description}}</p>
+      <img class="middle-section3__img2" src="{{page.projectTemplate2_img1}}">
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+     
     </div>
     </div>
     <div class="middle-section4">
     <div class="middle-section4__pragrph">
-     <h2 class="middle-section4__title3">{{page.porject_title1}}</h2>
+     <h2 class="middle-section4__title3">{{page.projectTemplate3_title}}</h2>
       <hr class="middle-section4__hr4">
-      <p class="middle-section4__algn">{{page.porject_description1}}</p>
+      <p class="middle-section4__algn">{{page.projectTemplate3_description}}</p>
       </div>
-     <img class="middle-section4__imgbg" src="{{page.project_img1}}">
+     <img class="middle-section4__imgbg" src="{{page.projectTemplate3_img}}">
      
       </div>
       <div class="middle-section5">

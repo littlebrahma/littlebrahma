@@ -17,12 +17,16 @@ imgContent: We use human studies. psychology and multiple analytical tools to de
 img1: /assets/img/portfolio/mob1.png
 img2: /assets/img/portfolio/mob2.png
 img3: /assets/img/portfolio/mob3.png
-projectTemplate: 
- - title: TITLE 2
-   img: /assets/img/portfolio/img1.png
-   description: The Moon is a barren, rocky world without SKAJSKajbxansbxmsahgd and water.  It spins on its axis in 27.3 days stars were named after the Edwin Aldrin were the first The Moon is a barren, rocky world without air and water.
-   img1: /assets/img/portfolio/img2.png
-porject_title1: TITLE 3
-porject_description1: The Moon is a barren, rocky world without air and water. It has dark lava plain on its surface. The Moon is filled wit craters. It has no light of its The Moon is a barren, rocky world without air and water. It has dark lava plain on its surface.
-project_img1: /assets/img/portfolio/img_bg.png
+projectTemplate1_title: TITLE 2
+projectTemplate1_img: /assets/img/portfolio/img1.png
+projectTemplate1_description: The Moon is a barren, rocky world without SKAJSKajbxansbxmsahgd and water.  It spins on its axis in 27.3 days stars were named after the Edwin Aldrin were the first The Moon is a barren, rocky world without air and water.
+projectTemplate1_img1: /assets/img/portfolio/img2.png
+projectTemplate2_title: TITLE 2
+projectTemplate2_img: /assets/img/portfolio/img1.png
+projectTemplate2_description: The Moon is a barren, rocky world without SKAJSKajbxansbxmsahgd and water.  It spins on its axis in 27.3 days stars were named after the Edwin Aldrin were the first The Moon is a barren, rocky world without air and water.
+projectTemplate2_img1: /assets/img/portfolio/img2.png
+projectTemplate3_title: TITLE 3
+projectTemplate3_img: /assets/img/portfolio/img_bg.png
+projectTemplate3_description: The Moon is a barren, rocky world without air and water. It has dark lava plain on its surface. The Moon is filled wit craters. It has no light of its The Moon is a barren, rocky world without air and water. It has dark lava plain on its surface.
+projectTemplate3_img1: /assets/img/portfolio/img2.png
 ---
