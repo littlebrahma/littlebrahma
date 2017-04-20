@@ -1,8 +1,13 @@
 #contact .commonHeader {
 	position:static;
 }
+.contact-us {
+	margin-bottom :50px;
+}
 .contact {
-	padding:60px 90px 70px;
+    width: 70%;
+    margin: 0 auto;
+	padding: 60px 0px;
 	 &__title {
 	 	font-size: 21px;
 	 	font-family: montserrat-bold;
@@ -27,7 +32,7 @@
 		font-size: 11px;
 		line-height: 18px;
 		color:#6D6E71;
-		margin-bottom: 50px;
+		
 	}
 	&__span {
 		color:#414042;
@@ -36,16 +41,17 @@
 		margin-top: 20px;
 	}
 	&__form-inside {
-	width: 278px;
-    padding: 11px 15px;
-    margin: 10px 0;
+	    width: 100%;
+    padding: 0px 0px 0px 12px;
+    margin-bottom: 1rem;
     border-radius: 5px;
     outline: none;
-    border: 1px solid rgba(128, 128, 128, 0.25);
+    border: 1px solid rgba(128,128,128,0.25);
     font-family: raleway-regular;
     font-size: 10px;
-    color:#666666;
+    color: #666666;
     display: block;
+    height: 30px;
 	}
 	&__msg {
 		height: 80px;
@@ -75,6 +81,8 @@
 @media screen and (max-width:991px){
 	.contact {
 		padding:40px 50px 60px;
+		margin:0px;
+		width:100%;
 		&__map {
 		text-align: right;
 		&__iframe {
@@ -105,7 +113,7 @@
 		margin: 0 auto;
 	}
 	&__address {
-		margin-bottom: 30px;
+		
 	}
 		&__form-inside {
 	        width: 228px;
@@ -117,7 +125,11 @@
 		text-align: center;
 	}
 	}
-	.contact-us,.write-to-us {
+	.contact-us {
+	padding:0px;
+	margin-bottom:30px;
+	}
+	.write-to-us {
 		padding:0px;
 	}
 }
