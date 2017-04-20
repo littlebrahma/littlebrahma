@@ -88,6 +88,15 @@
                 padding: 8px 20px 8px 15px; */
             }
             }
+            &__common {
+                display: none;
+            }
+            &__eleDesk {
+            display: block;
+            }
+            &__eleMob {
+            display: none;
+            }
         &__arrowDown {
             background-image: url("/assets/img/common/drop_down_down.png");
             background-repeat: no-repeat;
@@ -192,6 +201,17 @@
     .MenuContent {
             &__close {
                 margin-right: 25px;
+            }
+        }
+        .MenuList{
+            &__common {
+                display: block;
+            }
+            &__eleDesk {
+            display: none;
+            }
+            &__eleMob {
+            display: block;
             }
         }
     }

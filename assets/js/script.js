@@ -1,6 +1,12 @@
 $( document ).ready(function() {
 
-
+if($(window).width()  > 1024 || $(window).width()  < 768 ){
+$(".MenuList__common").addClass("fadeInUp");
+$(".MenuList__ch").addClass("fadeInUp");
+}
+else{
+$(".MenuList__common").addClass("fadeInDown");
+}
 
 $(".MenuContent").css("visibility","hidden");
 $( ".commonMenu__icon" ).click(function() {
@@ -25,10 +31,33 @@ $( ".MenuContent__close").click(function() {
    $(".arrow-right").css("opacity","1");
    $(".arrow-left").css("opacity","1");
 });
-$(".MenuList__common").hide();
+// $(".MenuList__common").hide();
 $(".MenuList__wwa").click(function() {
-    $(".MenuList__ch").toggleClass("fadeInDown fadeInUp");
-   $(".MenuList__common").toggle().toggleClass("fadeInDown fadeInUp");
+
+var MenuList__common=$(".MenuList__common").hasClass( "fadeInDown" );
+
+if(MenuList__common){
+$(".MenuList__common").removeClass("fadeInDown");
+$(".MenuList__common").addClass("fadeInUp");
+
+
+$(".MenuList__ch").removeClass("fadeInDown");
+$(".MenuList__ch").addClass("fadeInUp");
+
+}
+else{
+    $(".MenuList__common").addClass("fadeInDown");
+$(".MenuList__common").removeClass("fadeInUp");
+
+
+
+$(".MenuList__ch").addClass("fadeInDown");
+$(".MenuList__ch").removeClass("fadeInUp");
+
+
+}
+
+   $(".MenuList__common").toggle();
    $(".arrow").toggleClass("MenuList__arrowDown MenuList__arrowDown1");
 });
 
