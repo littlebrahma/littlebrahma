@@ -130,9 +130,8 @@ $common-width: 100%;
         display: flex;
         justify-content: center;
        align-items: center;
-       height: 90vh;
+       height: 100vh;
         text-align: center;
-        padding: 70px 0 220px;
         color: $secondary-color;
         &__img {
             margin-bottom: 0;
@@ -180,7 +179,8 @@ $common-width: 100%;
             font-size: 12px;
         }
         .commonHeight {
-            height: 60vh;
+               height: 100%;
+    padding: 4rem 0rem 3rem 0rem;
             &__heading {
                 font-size: 36px;
             }
@@ -205,18 +205,18 @@ $common-width: 100%;
             display: none;
         }
         .commonHeight {
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 60vh;
+              display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0rem 0rem 3rem 0rem;
             &__heading {
                 font-size: $ternary-headingfont;
             }
             &__para {
-                font-size: 14px;
-                width: 240px;
-                margin: 8px auto;
+                   font-size: 14px;
+    width: 70%;
+    margin: 8px auto;
             }
             &__img {
                 height: 140px;
