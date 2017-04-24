@@ -27,6 +27,13 @@
 		padding: 120px 0;
 		max-width: 1866px;
         margin: 0 auto;
+		&__leftSpacing {
+			position: relative;
+			left:3rem;
+			@media only screen and (min-width:1966px) {
+				left:7rem;
+			}
+		}
 		&__img {
 			width: 80%;
 			margin-left: 3rem;
@@ -35,7 +42,7 @@
 			width: 320px;
 			color: $secondary-color;
 			position: relative;
-			margin-left:1.2rem;
+			margin-left:2rem;
 			&__hLine{
 				font-family: "montserrat-bold";
 				letter-spacing: 0.65px;
