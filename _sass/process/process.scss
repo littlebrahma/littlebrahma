@@ -9,7 +9,12 @@
 	.headimg{
 		padding-left: 33px;
 	}
-
+	.img1{
+	    	width: 280px;
+			@media only screen and (min-width:320px) and (max-width:768px) {
+				width: 100%;
+			}
+	    }
 	.imgRight {
 		position: relative;
     right: 1rem;
@@ -26,6 +31,7 @@
 		.processContent {
 			width: 320px;
 			color: $secondary-color;
+			position: relative;
 			// transform: translatey(55px);
 			&__heading {
 				font-size: 26px;
@@ -53,13 +59,17 @@
 				color: #ffc600;
 			}
 			&__line{
-			    width: 150px;
-			    position: absolute;
+				// background-image:url("/assets/img/process/right-01.svg");
+				    width: 10rem;
+    top: 15rem;
+    position: absolute;
 			}
 			&__line1{
-			    width: 150px;
-			    position: absolute;
-			    right: 10px;
+				// background-image:url("/assets/img/process/left-01.svg");
+			      width: 10rem;
+    top: 15rem;
+    position: absolute;
+	right: 0;
 			    
 			}
 
@@ -97,117 +107,169 @@
     // right: 5rem;
 		}
 	}
-	.img1{
-	    	width: 100%;
-	    }
-	@media screen and (max-width: 1199px){
-		.processBgContent {
-		padding: 120px 0 120px 40px;
-		
-		}
-		.line {
-	        margin: 0 auto;
-	    }
-	    
-	    .headimg{
-			padding-left: 25px;
-		}
 
-		.processBgContent {
-
-			.processContent {
-    			width: 200px;
-    			transform: translatey(23px);
-	    	&__heading {
-				font-size: 20px;
-			}
-			&__para {
-				line-height : 20px;
-				font-size:10px;
-			}
-			&__nmbr{
-				font-size: 24px;
-			}
-	    	&__hr1 {
-			    margin-right: 182px;
-			}
-			&__hr2 {
-			    margin-left: 182px;
-			}
-			&__line{
-			    width: 110px;
+   	@media only screen and (min-width:768px) and (max-width:1024px) {
+			.processBgContent {
+		background-color: #1A1746;
+		padding: 120px 0;
+		max-width: 1866px;
+        margin: 0 auto;
+		&__img {
+			width: 70%;
+			margin-left: 3rem;
+		}
+		.processContent {
+			width: 320px;
+			color: $secondary-color;
+			position: relative;
+			// transform: translatey(55px);
+	&__line{
+				// background-image:url("/assets/img/process/right-01.svg");
+				    width: 10rem;
+    top: 15rem;
+    position: absolute;
+	right: 5rem;
 			}
 			&__line1{
-			    width: 110px;
-			    right: 0;
+				// background-image:url("/assets/img/process/left-01.svg");
+			      width: 10rem;
+    top: 15rem;
+    position: absolute;
+	right: 5rem;
 			    
 			}
-			}
-			&__allign{
-				padding-bottom: 60px;
-			}
-	    }
-    }
-    @media screen and (max-width: 767px){
-    .processBgContent {
-    
-		padding: 120px 0;
 		}
-    	.processBg {
-	
+		&__allign{
+				padding-bottom: 90px;
+			}
+			&__allign1{
+				// padding-right: 60px;
+			
+				padding-right: 0px;
+			}
+			&__allign2{
+			
+				// padding-right: 50px;
+				
+			}
+		&__alignRight {
+			text-align: right;
+			float: right;
+			position: relative;
+
+		}
+		&__adjust{
+			// padding: 0;
+		}
+		&__adjust1 {
+			padding-left: 0px;
+				padding-right: 0px;
+		}
+			&__adjust2 {
+			padding-left: 0px;
+				padding-right: 0px;
+	// 			position: relative;
+    // right: 5rem;
+		}
 	}
-	.headimg{
-		padding-left: 15px;
+	}
+
+
+
+   	@media only screen and (min-width:320px) and (max-width:768px) {
+			.processBgContent {
+		background-color: #1A1746;
+		padding: 120px 0;
+		max-width: 1866px;
+        margin: 0 auto;
+		&__img {
+			width: 70%;
+			margin-left: 3rem;
+		}
+		.processContent {
+			width:100%;
 		
-	}
-	.headpara{
-		line-height: 18px;
-	}
-	// .img1{
-	//     	width: 150px;
-	//     }
-	 
-	.processBgContent {
-			padding: 100px 0;
-			.processContent {
-			transform: translatey(0);
-			width: 100%;
-	    &__line{
-	    	display: none;
-			}
-			&__line1{
-			    display: none;
-			}
+			color: $secondary-color;
+			position: relative;
+			// transform: translatey(55px);
 			&__heading {
-				font-size: 12px;
+				font-size: 26px;
+				font-family: $ternary-titlefamily;
+				letter-spacing : 0.65px;
 			}
 			&__para {
-				font-size: 9px;
-				line-height : 16px;
+				font-size: $secondary-contentfont;
+				font-family: $secondary-contentfamily;
+				line-height : 25px;
   				letter-spacing : 0.24px;
 			}
 			&__hr1{
-				margin-right: 93%;
+				border-bottom: 4px solid #ffc600;
+				margin-right: 304px;
 			}
 			&__hr2{
-				margin-left: 94%;
+				border-bottom: 4px solid #ffc600;
+				margin-left: 304px;
 			}
 			&__nmbr{
+				font-family: $ternary-titlefamily;
 				letter-spacing : 0.65px;
-				font-size: 15px;
+				font-size: 26px;
+				color: #ffc600;
 			}
-	    }
-	    &__allign1{
-				padding-right: 0;
+			&__line{
+				// background-image:url("/assets/img/process/right-01.svg");
+				    width: 10rem;
+    top: 15rem;
+    position: absolute;
+	display: none;
 			}
-			 &__adjust1{
-	  	padding: 0;
-	  }
-	  &__allign{
-				padding: 0 15px 60px;
+			&__line1{
+				// background-image:url("/assets/img/process/left-01.svg");
+			      width: 10rem;
+    top: 15rem;
+    position: absolute;
+	right: 0;
+			    display: none;
 			}
-	    }
-    }
+
+		}
+		&__allign{
+				padding-bottom: 90px;
+			}
+			&__allign1{
+				// padding-right: 60px;
+			
+				padding-right: 0px;
+			}
+			&__allign2{
+			
+				// padding-right: 50px;
+				
+			}
+		&__alignRight {
+			text-align: right;
+			float: right;
+			position: relative;
+
+		}
+		&__adjust{
+			// padding: 0;
+		}
+		&__adjust1 {
+			padding-left: 0px;
+				padding-right: 0px;
+		}
+			&__adjust2 {
+			padding-left: 0px;
+				padding-right: 0px;
+	// 			position: relative;
+    // right: 5rem;
+		}
+	}
+	}
+
+
 }
 
 
