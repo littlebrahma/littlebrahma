@@ -139,8 +139,12 @@
 			width: 70%;
 			margin-left: 3rem;
 		}
+		&__leftSpacing {
+				position: relative;
+			left:1rem;
+		}
 		.processContent {
-			width: 100%;
+			width: 150px;
 			color: $secondary-color;
 			position: relative;
 			margin-left: 0;
@@ -148,17 +152,38 @@
 	&__line{
 				// background-image:url("/assets/img/process/right-01.svg");
 				    width: 8rem;
-    top: 15rem;
+    top: 20rem;
     position: absolute;
 	right: 5rem;
 			}
 			&__line1{
 				// background-image:url("/assets/img/process/left-01.svg");
 			      width: 8rem;
-    top: 15rem;
+    top: 18rem;
     position: absolute;
 	
 			    
+			}
+			&__heading {
+				font-size: 20px;
+				font-family: $ternary-titlefamily;
+				letter-spacing : 0.65px;
+			}
+				&__hLine{
+				font-family: "montserrat-bold";
+				letter-spacing: 0.65px;
+				font-size: 24px;
+				color: #ffc600;
+				display: inline-block;
+				border-top: 3px solid #ffc600;
+				padding-top: 2px;
+
+			}
+			&__para {
+				font-size: 10px;
+				font-family: $secondary-contentfamily;
+				line-height : 25px;
+  				letter-spacing : 0.24px;
 			}
 		}
 		&__allign{
@@ -215,12 +240,12 @@
 			position: relative;
 			// transform: translatey(55px);
 			&__heading {
-				font-size: 14px;
+				font-size: 12px;
 				font-family: $ternary-titlefamily;
 				letter-spacing : 0.65px;
 			}
 			&__para {
-				font-size: $secondary-contentfont;
+				font-size: 10px;
 				font-family: $secondary-contentfamily;
 				line-height : 25px;
   				letter-spacing : 0.24px;
@@ -238,6 +263,16 @@
 				letter-spacing : 0.65px;
 				font-size: 26px;
 				color: #ffc600;
+			}
+			&__hLine{
+				font-family: "montserrat-bold";
+				letter-spacing: 0.65px;
+				font-size: 20px;
+				color: #ffc600;
+				display: inline-block;
+				border-top: 3px solid #ffc600;
+				padding-top: 2px;
+
 			}
 			&__line{
 				// background-image:url("/assets/img/process/right-01.svg");
