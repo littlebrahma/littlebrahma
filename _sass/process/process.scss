@@ -65,7 +65,7 @@
 				padding-bottom: 90px;
 			}
 			&__allign1{
-				padding-right: 100px;
+				padding-right: 60px;
 			}
 			&__allign2{
 				padding-right: 50px;
@@ -78,12 +78,10 @@
 		}
 		&__adjust{
 			// padding: 0;
-			position: relative;
-			right: 2rem;
+		
 			@media only screen and (min-width:1366px) {
-				img {
-					// margin-left: 1.4rem;
-				}
+					position: relative;
+			right: 2rem;
 			}
 		}
 	}
