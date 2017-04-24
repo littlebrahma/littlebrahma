@@ -93,11 +93,13 @@
 			&__adjust2 {
 			padding-left: 0px;
 				padding-right: 0px;
-				position: relative;
-    right: 5rem;
+	// 			position: relative;
+    // right: 5rem;
 		}
 	}
-	
+	.img1{
+	    	width: 100%;
+	    }
 	@media screen and (max-width: 1199px){
 		.processBgContent {
 		padding: 120px 0 120px 40px;
@@ -106,9 +108,7 @@
 		.line {
 	        margin: 0 auto;
 	    }
-	    .img1{
-	    	width: 200px;
-	    }
+	    
 	    .headimg{
 			padding-left: 25px;
 		}
@@ -163,9 +163,9 @@
 	.headpara{
 		line-height: 18px;
 	}
-	.img1{
-	    	width: 150px;
-	    }
+	// .img1{
+	//     	width: 150px;
+	//     }
 	 
 	.processBgContent {
 			padding: 100px 0;
