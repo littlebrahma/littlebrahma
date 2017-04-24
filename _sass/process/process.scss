@@ -5,11 +5,13 @@
 	.processContent__lg {
 		background-color: #1A1746;
 	}
-	.img{
-		float: right;
-	}
+
 	.headimg{
 		padding-left: 33px;
+	}
+
+	.imgRight {
+		margin-right: 2rem;
 	}
 	.processBgContent {
 		background-color: #1A1746;
@@ -66,9 +68,13 @@
 			}
 			&__allign1{
 				// padding-right: 60px;
+			
+				padding-right: 0px;
 			}
 			&__allign2{
-				padding-right: 50px;
+			
+				// padding-right: 50px;
+				
 			}
 		&__alignRight {
 			text-align: right;
@@ -78,11 +84,16 @@
 		}
 		&__adjust{
 			// padding: 0;
-		
-			@media only screen and (min-width:1366px) {
-			// 		position: relative;
-			// right: 2rem;
-			}
+		}
+		&__adjust1 {
+			padding-left: 0px;
+				padding-right: 0px;
+		}
+			&__adjust2 {
+			padding-left: 0px;
+				padding-right: 0px;
+				position: relative;
+    right: 5rem;
 		}
 	}
 	
