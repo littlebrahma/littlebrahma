@@ -23,7 +23,7 @@
 		.processContent {
 			width: 320px;
 			color: $secondary-color;
-			transform: translatey(55px);
+			// transform: translatey(55px);
 			&__heading {
 				font-size: 26px;
 				font-family: $ternary-titlefamily;
@@ -50,11 +50,11 @@
 				color: #ffc600;
 			}
 			&__line{
-			    width: 200px;
+			    width: 150px;
 			    position: absolute;
 			}
 			&__line1{
-			    width: 200px;
+			    width: 150px;
 			    position: absolute;
 			    right: 10px;
 			    
@@ -78,6 +78,11 @@
 		}
 		&__adjust{
 			padding: 0;
+			@media only screen and (min-width:1366px) {
+				img {
+					margin-left: 1.4rem;
+				}
+			}
 		}
 	}
 	
