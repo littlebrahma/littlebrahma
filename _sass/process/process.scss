@@ -14,6 +14,9 @@
 			@media only screen and (min-width:320px) and (max-width:768px) {
 				width: 100%;
 			}
+			@media only screen and (min-width:768px) and (max-width:1024px) {
+				width: 100%;
+			}
 	    }
 	.imgRight {
 		position: relative;
@@ -32,7 +35,17 @@
 			width: 320px;
 			color: $secondary-color;
 			position: relative;
-			margin-left: 2rem;
+			margin-left:1.2rem;
+			&__hLine{
+				font-family: "montserrat-bold";
+				letter-spacing: 0.65px;
+				font-size: 26px;
+				color: #ffc600;
+				display: inline-block;
+				border-top: 5px solid #ffc600;
+				padding-top: 2px;
+
+			}
 			// transform: translatey(55px);
 			&__heading {
 				font-size: 26px;
@@ -120,24 +133,24 @@
 			margin-left: 3rem;
 		}
 		.processContent {
-			width: 320px;
+			width: 100%;
 			color: $secondary-color;
 			position: relative;
 			margin-left: 0;
 			// transform: translatey(55px);
 	&__line{
 				// background-image:url("/assets/img/process/right-01.svg");
-				    width: 10rem;
+				    width: 8rem;
     top: 15rem;
     position: absolute;
 	right: 5rem;
 			}
 			&__line1{
 				// background-image:url("/assets/img/process/left-01.svg");
-			      width: 10rem;
+			      width: 8rem;
     top: 15rem;
     position: absolute;
-	right: 5rem;
+	
 			    
 			}
 		}
@@ -178,7 +191,7 @@
 
 
 
-   	@media only screen and (min-width:320px) and (max-width:768px) {
+   	@media only screen and (min-width:320px) and (max-width:767px) {
 			.processBgContent {
 		background-color: #1A1746;
 		padding: 120px 0;
@@ -195,7 +208,7 @@
 			position: relative;
 			// transform: translatey(55px);
 			&__heading {
-				font-size: 26px;
+				font-size: 14px;
 				font-family: $ternary-titlefamily;
 				letter-spacing : 0.65px;
 			}
