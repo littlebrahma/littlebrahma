@@ -32,6 +32,7 @@
 			width: 320px;
 			color: $secondary-color;
 			position: relative;
+			margin-left: 2rem;
 			// transform: translatey(55px);
 			&__heading {
 				font-size: 26px;
@@ -122,6 +123,7 @@
 			width: 320px;
 			color: $secondary-color;
 			position: relative;
+			margin-left: 0;
 			// transform: translatey(55px);
 	&__line{
 				// background-image:url("/assets/img/process/right-01.svg");
@@ -188,7 +190,7 @@
 		}
 		.processContent {
 			width:100%;
-		
+			margin-left: 0;
 			color: $secondary-color;
 			position: relative;
 			// transform: translatey(55px);
