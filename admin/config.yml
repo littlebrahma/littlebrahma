@@ -3,7 +3,7 @@ backend:
   repo: mcsekar123/mcsekar123.github.io # Path to your Github repository
   branch: master # Branch to update
   site_domain: littlebrahma.netlify.com # Your Netlify site address if different from host
-
+media_folder: "assets/img"
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
