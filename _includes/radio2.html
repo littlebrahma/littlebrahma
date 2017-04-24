@@ -1,6 +1,6 @@
 {% for post in site.posts %}
-    {% if post.category %}
-        {% capture tmp %}{{ tmp }}#{{ post.category }}{% endcapture %}
+    {% if post.blog_category %}
+        {% capture tmp %}{{ tmp }}#{{ post.blog_category }}{% endcapture %}
     {% endif %}
 {% endfor %}
 
