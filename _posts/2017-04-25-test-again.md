@@ -1,7 +1,7 @@
 ---
 title: test again
 blog_description: asdfgf
-blog_image: /assets/images/STILL_2.png
+thumbnail: /assets/images/STILL_2.png
 blog_highlight: asdsadsadasdasd
 author_name: sadsadasd
 author_image: asdsadsadsad
