@@ -10,6 +10,9 @@ sass:
     style: compressed
 include: ["_pages"]
 collections:
+  posts:
+    permalink: /:categories/:year/:month/:day/:title.html
+    output: true
   portfolio:
     output: true
     permalink: /portfolio/:path/
@@ -22,4 +25,3 @@ collections:
   career:
     output: true
     permalink: /career/:path/
-
