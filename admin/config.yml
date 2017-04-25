@@ -1,5 +1,5 @@
 backend:
-    name: github-api
+    name: github
     repo: mcsekar123/mcsekar123.github.io # Path to your Github repository
     branch: master # Branch to update (master by default)
     site_domain: littlebrahma.netlify.com
