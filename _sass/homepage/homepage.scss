@@ -217,8 +217,8 @@
             width: 30px;
         }
         .homepageBg {
-            overflow-y: hidden;
-            height: 100vh;
+            // overflow-y: hidden;
+            height:100%;
         }
         .hopageDesk {
             display: none;
@@ -235,6 +235,7 @@
             padding: 0;
             text-align: center;
             width: 100%;
+            padding-bottom: 2rem;
             &__img {
                 width: 500px;
                 height: 500px;
