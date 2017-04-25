@@ -1,6 +1,6 @@
 {% for post in site.posts %}
-    {% if post.category %}
-        {% capture tmp %}{{ tmp }}#{{ post.category }}{% endcapture %}
+    {% if post.blog_category %}
+        {% capture tmp %}{{ tmp }}#{{ post.blog_category }}{% endcapture %}
     {% endif %}
 {% endfor %}
 
@@ -11,6 +11,7 @@
     {% unless tmp2 contains category %}
         {% capture tmp2 %}{{ tmp2 }}#{{ category | strip }}{% endcapture %}
     {% endunless %}
+   
 {% endfor %}
 
 {% assign uniqueprojects = tmp2 | remove_first: '#' | split: '#' %}
@@ -19,6 +20,7 @@
 			<h5 class="selectSection__title">SELECT CATEGORY</h5>
 			<div class="selectSection__border"></div>
 			<div class="radioSection">
+
 			{% for category in uniqueprojects %}
 			<div class="selectInput">
 	  			<input id="r-option{{forloop.index}}" type="radio" name="field" value="{{radios.value}}" data-id="{{forloop.index}}" data-category="{{category}}" class="radio">
