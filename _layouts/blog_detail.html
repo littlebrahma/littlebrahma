@@ -58,9 +58,11 @@
       <div class="row center-lg start-md start-sm center-xs">
          <div class="col-lg-9 col-sm-12 col-md-12 col-xs-12  middleSection1__iconAlgn middleSection1__iconAlign">
          <div class="row  center-lg start-md start-sm center-xs middleSection1__icons2">
-             <div class="col-lg-2 col-sm-3 col-md-3 col-xs-3 middleSection1__iconAlgn middleSection1__iconAlign">
+             <div  class="col-lg-2 col-sm-3 col-md-3 col-xs-3 middleSection1__iconAlgn middleSection1__iconAlign">
+               <button id="shareBtn">
                <img src="/assets/img/blog/facebook.png" class="middleSection1__img2  middleSection1__icondsply">
                <span class="middleSection1__icondsply">Facebook</span>
+             </button>
                </div>
                <div class="col-lg-2 col-sm-3 col-md-3 col-xs-3 middleSection1__iconAlgn middleSection1__iconAlign">
                <img src="/assets/img/blog/twitter.png" class="middleSection1__img2 middleSection1__icondsply">
@@ -255,3 +257,37 @@ if ($(this).scrollTop() > $(".blogDetailBg").height() - $(".commonHeader").heigh
 
 
  </script>
+ <script>
+
+ $(document).ready(function() {
+  
+
+  document.getElementById('shareBtn').onclick = function() {
+  console.log('share');
+  FB.ui({
+    method: 'share',
+    display: 'popup',
+    href: "{{site.url}}{{page.url}}",
+  }, function(response){});
+}
+
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1988892508005210',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+});
+
+</script>
