@@ -18,7 +18,7 @@
       {% for post in items %}
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 blog-filter {{post.blog_category}}">
         <a href="{{post.url}}">
-          <img src="{{ post.blog_image}}" class="blog-filter__img">
+          <img src="{{ post.thumbnail}}" class="blog-filter__img">
           <div class="blogWholeBG">
           <div class="blogDetail">
             <h5 class="blogDetail__title">{{ post.title}}</h5>
