@@ -86,7 +86,7 @@
         }
         &__button {
             background-color: #f1123e;
-            border: medium none;
+             border:2px solid #f1123e;  
             border-radius: 15px;
             padding: 8px 15px;
             outline: none;
@@ -96,6 +96,11 @@
             font-family: $ternary-contentfamily;
             cursor: pointer;
         }
+
+ &__button:hover{
+                    background-color:#241141; 
+                    border:2px solid #f1123e;   
+            }
         &__link {
             padding:4px 0 7px;
         }
