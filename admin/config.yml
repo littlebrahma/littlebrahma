@@ -12,4 +12,13 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
       - {label: "Title", name: "blog_title", widget: "string"}
+      - {label: "Description", name: "blog_description", widget: "string"}
+      - {label: "Blog Image", name: "blog_image", widget: "image"}
+      - {label: "Blog Highlight", name: "blog_highlight", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Author", name: "author_name", widget: "string"}
+      - {label: "Author Img URL", name: "author_image", widget: "string"}
+      - {label: "Author Title", name: "author_title", widget: "string"}
+      - {label: "Category", name: "blog_category", widget: "string"}
+      - {label: "Publish Date", name: "publish_date", widget: "datetime"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog_detail"}
