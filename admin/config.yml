@@ -17,7 +17,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Description", name: "blog_description", widget: "string"}
       - {label: "Blog Image", name: "blog_image", widget: "image"}
       - {label: "Blog Highlight", name: "blog_highlight", widget: "string"}
-      - {label: "Publish Date", name: "publish_date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Author", name: "author_name", widget: "string"}
       - {label: "Author Img URL", name: "author_image", widget: "string"}
