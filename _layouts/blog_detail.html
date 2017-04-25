@@ -5,7 +5,7 @@
   		<div class="banner">
       <div>
       <div class="banner__title">
-        {{page.blog_category}}
+        {{page.title}}
       </div>
       <div class="banner__subtitle allign">
       {{page.blog_description}}
@@ -19,8 +19,8 @@
        <div class="row center-lg  start-md  start-sm  center-xs">
          <div class="col-lg-4 col-sm-10 col-md-10 col-xs-12 middleSection1__algnn">
          <div class="middleSection1__profile1">
-         <img class="middleSection1__img1" src="/assets/img/blog/images.png"><br>
-         <img class="middleSection1__pimg" src="{{page.author_image}}">
+         <img class="middleSection1__img1" src="/assets/img/blog/images.png" alt=""><br>
+         <img class="middleSection1__pimg" src="{{page.author_image}}" alt="author image">
          <div class="middleSection1__profile">
          <div class="middleSection1__profileName">
            {{page.author_name}}
@@ -97,14 +97,14 @@
           <hr class="middleSection4__hr4">
           <div class="row">
             {% for post in site.posts %}
-            {% if page.related contains post.category %}
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 blog-filter {{post.category}}">
-          <img src="{{ post.landing_image}}" class="blog-filter__img">
+            {% if page.related contains post.blog_category %}
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 blog-filter {{post.blog_category}}">
+          <img src="{{ post.thumbnail}}" class="blog-filter__img">
           <div class="blogWholeBG">
           <div class="blogDetail">
             <h5 class="blogDetail__title">{{ post.title}}</h5>
             <div class="blogDetail__border"></div>
-            <p class="blogDetail__para">{{ post.description}}</p>
+            <p class="blogDetail__para">{{ post.blog_description}}</p>
           </div>
 
           <div class="row">
@@ -114,13 +114,13 @@
                   <img src="{{ post.author_image}}" class="blog-pad__img">
                 </div>
                 <div class="authorSection">
-                  <h5 class="authorSection__title middleSection4__title">{{ post.author}}</h5>
-                  <p class="authorSection__para middleSection4__para">{{ post.author_type}}</p>
+                  <h5 class="authorSection__title middleSection4__title">{{ post.author_name}}</h5>
+                  <p class="authorSection__para middleSection4__para">{{ post.author_title}}</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blogClock">
-              <span><img src="/assets/img/blog/clock.png"></span><span class="authorSection__date">{{ post.published-date}}</span>
+              <span><img src="/assets/img/blog/clock.png"></span><span class="authorSection__date">{{ post.date}}</span>
             </div>
           </div>
           </div>
