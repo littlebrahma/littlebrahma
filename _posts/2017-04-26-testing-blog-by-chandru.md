@@ -2,7 +2,7 @@
 date: '2017-04-26 15:00 +0530'
 layout: blog_detail
 author_name: satish
-published: false
+published: true
 title: Testing blog by chandru
 blog_description: A sample blog creation test
 blog_category: Test
