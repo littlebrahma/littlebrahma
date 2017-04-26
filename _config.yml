@@ -38,7 +38,6 @@ prose:
   media: assets/img/blog
   metadata:
     _posts:
-<<<<<<< HEAD
       - name: "blog_description"
         field:
           label: "Description"
