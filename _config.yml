@@ -68,7 +68,12 @@ prose:
           label: "Blog Highlight"
           element: "textarea"
           value: ""
-      - name: "author"
+      - name: "date"
+        field:
+          label: "Date"
+          element: "hidden"
+          value: CURRENT_DATETIME
+      - name: "author_name"
         field:
           label: "Author name"
           element: "select"
