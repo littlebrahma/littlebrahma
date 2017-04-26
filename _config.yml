@@ -29,7 +29,7 @@ prose:
   media: 'assets/img/blog'
   metadata:
     _posts:
-      - name: "description"
+      - name: "blog_description"
         field:
           label: "Description"
           element: "textarea"
@@ -43,41 +43,34 @@ prose:
         field:
           label: "Layout"
           element: "hidden"
-          value: "post"
-      - name: "category"
+          value: "blog_detail"
+      - name: "blog_category"
         field:
           label: "Category"
           element: "text"
-          value: "All"
-      - name: "image"
+          value: ""
+      - name: "thumbnail"
         field:
-          label: "Image Name"
+          label: "Blog Image"
           element: "text"
-          value: "blog.jpg"
-      - name: "tags"
+          value: ""
+      - name: "blog_highlight"
         field:
-          label: "Tag"
-          element: "text"
-          value: "all"
-      - name: "published"
-        field:
-          label: "Published"
-          element: "checkbox"
-          value: "false"
+          label: "Blog Highlight"
+          element: "textarea"
+          value: ""
       - name: "author"
         field:
           label: "Author name"
           element: "select"
           value: "true"
           options:
-             - name: 'Gopi'
-               value: 'Gopi'
-             - name: 'Palani'
-               value: 'Palani'
-             - name: 'Chandru'
-               value: 'Chandru'
-             - name: 'Keerthana'
-               value: 'Keerthana'
+             - name: 'Sanjay'
+               value: 'sanjay'
+             - name: 'Jaison'
+               value: 'jaison'
+             - name: 'Satish'
+               value: 'satish'
     _portfolio:
        - name: "title"
          field:

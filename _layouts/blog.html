@@ -16,6 +16,20 @@
       {% assign items = site.posts | sort: 'date' %}
 
       {% for post in items %}
+
+{% for author in site.data.authors %}
+   {% if author.name == post.author_name %}
+
+  {% assign author_name = author.name %}
+  {% assign author_image = author.image %}
+  {% assign author_title = author.title %}
+  {% break %}
+
+{% endif %}
+  
+{% endfor %}
+
+
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 blog-filter {{post.blog_category}}">
         <a href="{{post.url}}">
           <img src="{{ post.thumbnail}}" class="blog-filter__img">
@@ -29,11 +43,11 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="row blog__pad">
                 <div class="blog__pad-img">
-                  <img src="{{post.author_image}}" class="blog-pad__img">
+                  <img src="{{ author_image }}" class="blog-pad__img">
                 </div>
                 <div class="authorSection">
-                  <h5 class="authorSection__title">{{ post.author_name}}</h5>
-                  <p class="authorSection__para">{{ post.author_title}}</p>
+                  <h5 class="authorSection__title">{{ author_name}}</h5>
+                  <p class="authorSection__para">{{ author_title}}</p>
                 </div>
               </div>
             </div>
