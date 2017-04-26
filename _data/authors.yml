@@ -1,0 +1,11 @@
+- name: sanjay
+  imgage: /assets/img/blog/profile_1.png
+  title: designer
+
+- name: jaison
+  image: /assets/img/blog/profile_1.png
+  title: designer
+
+- name: satish
+  image: /assets/img/blog/profile_1.png
+  title: designer

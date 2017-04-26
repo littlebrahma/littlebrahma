@@ -1,5 +1,17 @@
 {% include header.html %}
   
+{% for author in site.data.authors %}
+   {% if author.name == page.author_name %}
+
+  {% assign author_name = author.name %}
+  {% assign author_image = author.image %}
+  {% assign author_title = author.title %}
+  {% break %}
+
+{% endif %}
+  
+{% endfor %}
+
     <div class="blogDetailBg">
     {% include common_header.html %}
       <div class="banner">
@@ -20,13 +32,13 @@
          <div class="col-lg-4 col-sm-10 col-md-10 col-xs-12 middleSection1__algnn">
          <div class="middleSection1__profile1">
          <img class="middleSection1__img1" src="/assets/img/blog/images.png" alt=""><br>
-         <img class="middleSection1__pimg" src="{{page.author_image}}" alt="author image">
+         <img class="middleSection1__pimg" src="{{author_image}}" alt="author image">
          <div class="middleSection1__profile">
          <div class="middleSection1__profileName">
-           {{page.author_name}}
+           {{author_name}}
          </div>
          <div class="middleSection1__profileName1">
-          {{page.author_title}}
+          {{author_title}}
          </div>
          </div>
          </div>
@@ -80,8 +92,8 @@
               </a>
                </div>
                <div class="col-lg-2 col-sm-3 col-md-3 col-xs-3 middleSection1__iconAlgn">
-               <img src="/assets/img/blog/matter.png" class="middleSection1__img2 middleSection1__icondsply">
-               <span class="middleSection1__icondsply">Medium</span>
+              <!--  <img src="/assets/img/blog/matter.png" class="middleSection1__img2 middleSection1__icondsply">
+               <span class="middleSection1__icondsply">Medium</span> -->
              </div>
            </div>
            </div>
@@ -139,7 +151,7 @@
         </div>
           </div>
           {% endif %}
-           <div class="middleSection4">
+           <div class="middleSection2">
 <div id="disqus_thread"></div>
 </div>
 </div>

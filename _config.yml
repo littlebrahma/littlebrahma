@@ -1,5 +1,6 @@
 ---
 title: Littlebrahma.Github.Io
+repository: littlebrahma/littlebrahma.github.io
 timezone: UTC
 collections:
   career:
@@ -38,55 +39,53 @@ prose:
   media: assets/img/blog
   metadata:
     _posts:
-    - name: description
-      field:
-        label: Description
-        element: textarea
-        placeholder: Enter a Description
-    - name: title
-      field:
-        label: Title
-        element: text
-        value: An awesome Headline!
-    - name: layout
-      field:
-        label: Layout
-        element: hidden
-        value: post
-    - name: category
-      field:
-        label: Category
-        element: text
-        value: All
-    - name: image
-      field:
-        label: Image Name
-        element: text
-        value: blog.jpg
-    - name: tags
-      field:
-        label: Tag
-        element: text
-        value: all
-    - name: published
-      field:
-        label: Published
-        element: checkbox
-        value: 'false'
-    - name: author
-      field:
-        label: Author name
-        element: select
-        value: 'true'
-        options:
-        - name: Gopi
-          value: Gopi
-        - name: Palani
-          value: Palani
-        - name: Chandru
-          value: Chandru
-        - name: Keerthana
-          value: Keerthana
+      - name: "blog_description"
+        field:
+          label: "Description"
+          element: "textarea"
+          placeholder: "Enter a Description"
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          value: "An awesome Headline!"
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: "hidden"
+          value: "blog_detail"
+      - name: "blog_category"
+        field:
+          label: "Category"
+          element: "text"
+          value: ""
+      - name: "thumbnail"
+        field:
+          label: "Blog Image"
+          element: "text"
+          value: ""
+      - name: "blog_highlight"
+        field:
+          label: "Blog Highlight"
+          element: "textarea"
+          value: ""
+      - name: "date"
+        field:
+          label: "Date"
+          element: "hidden"
+          value: "CURRENT_DATETIME"
+      - name: "author_name"
+        field:
+          label: "Author name"
+          element: "select"
+          value: "true"
+          options:
+             - name: 'Sanjay'
+               value: 'sanjay'
+             - name: 'Jaison'
+               value: 'jaison'
+             - name: 'Satish'
+               value: 'satish'
     _portfolio:
     - name: title
       field:
