@@ -370,8 +370,11 @@
                 line-height: 44px;
             }
             &__para {
-                font-size: $ternary-contentfont;
-                line-height:16px;
+                  font-size: 10px;
+    line-height: 16px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 18px; 
             }
             &__button {
                 margin-bottom: 40px;
