@@ -2,7 +2,7 @@
 date: '2017-04-26 16:15 +0530'
 layout: blog_detail
 author_name: satish
-published: false
+published: true
 title: test manoj
 blog_description: Test manoj blog
 blog_category: Manoj
