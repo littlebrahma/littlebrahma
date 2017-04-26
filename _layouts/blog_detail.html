@@ -59,18 +59,25 @@
          <div class="col-lg-9 col-sm-12 col-md-12 col-xs-12  middleSection1__iconAlgn middleSection1__iconAlign">
          <div class="row  center-lg start-md start-sm center-xs middleSection1__icons2">
              <div  class="col-lg-2 col-sm-3 col-md-3 col-xs-3 middleSection1__iconAlgn middleSection1__iconAlign">
-               <button id="shareBtn">
+              <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"  class="custom_share">
+             
                <img src="/assets/img/blog/facebook.png" class="middleSection1__img2  middleSection1__icondsply">
                <span class="middleSection1__icondsply">Facebook</span>
-             </button>
+            
+             </a>
                </div>
+               
                <div class="col-lg-2 col-sm-3 col-md-3 col-xs-3 middleSection1__iconAlgn middleSection1__iconAlign">
+               <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter" class="custom_share">
                <img src="/assets/img/blog/twitter.png" class="middleSection1__img2 middleSection1__icondsply">
                <span class="middleSection1__icondsply">Twitter</span>
+                </a>
                </div>
                <div class="col-lg-2 col-sm-3 col-md-3 col-xs-3 middleSection1__iconAlgn middleSection1__iconAlign">
+                <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+" class="custom_share">
                <img src="/assets/img/blog/google.png" class="middleSection1__img2 middleSection1__algn1 middleSection1__icondsply">
-              <span class="middleSection1__algn middleSection1__icondsply">Google Plus</span>
+              <span class="middleSection1__algn middleSection1__icondsply">Google+</span>
+              </a>
                </div>
                <div class="col-lg-2 col-sm-3 col-md-3 col-xs-3 middleSection1__iconAlgn">
                <img src="/assets/img/blog/matter.png" class="middleSection1__img2 middleSection1__icondsply">
@@ -134,6 +141,7 @@
           {% endif %}
            <div class="middleSection4">
 <div id="disqus_thread"></div>
+</div>
 </div>
 <script>
 
@@ -262,14 +270,14 @@ if ($(this).scrollTop() > $(".blogDetailBg").height() - $(".commonHeader").heigh
  $(document).ready(function() {
   
 
-  document.getElementById('shareBtn').onclick = function() {
-  console.log('share');
-  FB.ui({
-    method: 'share',
-    display: 'popup',
-    href: "https://littlebrahma.netlify.com"+"{{site.url}}{{page.url}}",
-  }, function(response){});
-}
+//   document.getElementById('shareBtn').onclick = function() {
+//   console.log('share');
+//   FB.ui({
+//     method: 'share',
+//     display: 'popup',
+//     href: "https://littlebrahma.netlify.com"+"{{site.url}}{{page.url}}",
+//   }, function(response){});
+// }
 
 
   window.fbAsyncInit = function() {
@@ -289,5 +297,42 @@ if ($(this).scrollTop() > $(".blogDetailBg").height() - $(".commonHeader").heigh
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 });
+
+
+ (function($){
+  
+  /**
+   * jQuery function to prevent default anchor event and take the href * and the title to make a share popup
+   *
+   * @param  {[object]} e           [Mouse event]
+   * @param  {[integer]} intWidth   [Popup width defalut 500]
+   * @param  {[integer]} intHeight  [Popup height defalut 400]
+   * @param  {[boolean]} blnResize  [Is popup resizeabel default true]
+   */
+  $.fn.customerPopup = function (e, intWidth, intHeight, blnResize) {
+    
+    // Prevent default anchor event
+    e.preventDefault();
+    
+    // Set values for window
+    intWidth = intWidth || '500';
+    intHeight = intHeight || '400';
+    strResize = (blnResize ? 'yes' : 'no');
+
+    // Set title and open popup with focus on it
+    var strTitle = ((typeof this.attr('title') !== 'undefined') ? this.attr('title') : 'Social Share'),
+        strParam = 'width=' + intWidth + ',height=' + intHeight + ',resizable=' + strResize,            
+        objWindow = window.open(this.attr('href'), strTitle, strParam).focus();
+  }
+  
+  /* ================================================== */
+  
+  $(document).ready(function ($) {
+    $('.custom_share').on("click", function(e) {
+      $(this).customerPopup(e);
+    });
+  });
+    
+}(jQuery));
 
 </script>
