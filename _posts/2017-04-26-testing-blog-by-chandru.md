@@ -1,21 +1,17 @@
 ---
-date: 17 December 2017
+date: '2017-04-26 15:00 +0530'
 layout: blog_detail
-blog_highlight: >-
-  How it looks is important, how it works is important as well, but both pales
-  in comparison to the feeling a user gets when they use it.
-title: 'Test chandru '
-blog_category: ILLUSTRATION & ART
-publish_date: December 2016
+author_name: satish
+published: true
+title: Testing blog by chandru
+blog_description: A sample blog creation test
+blog_category: Test
 thumbnail: /assets/img/blog/1_1.png
-author_name: ADAM GILCHRIST
-blog_description: User interface in the eyes of the beholder, Technical specifications
-  is what it is made of. User experience is in their mind.
-date: 2017-04-25 00:00:00 Z
+blog_highlight: Testing should ensure the site is working and ready for use
 ---
-
 This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.
 
-![view.png]({{site.baseurl}}/assets/img/blog/view.png)
+![1_1.png]({{site.baseurl}}/assets/img/blog/1_1.png)
+
 
 This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.
