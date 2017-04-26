@@ -2,7 +2,7 @@
 date: '2017-04-26 15:49 +0530'
 layout: blog_detail
 author_name: sanjay
-published: false
+published: true
 title: An awesome Headline!
 blog_description: test
 blog_category: Blog
