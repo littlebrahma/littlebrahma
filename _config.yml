@@ -1,5 +1,29 @@
-# Build settings
-
+---
+title: Littlebrahma.Github.Io
+timezone: UTC
+collections:
+  career:
+    title: Career
+    output: true
+    permalink: "/career/:path/"
+  casestudy:
+    title: Casestudy
+    output: true
+    permalink: "/casestudy/:path/"
+  portfolio:
+    title: Portfolio
+    output: true
+    permalink: "/portfolio/:path/"
+  posts:
+    title: Posts
+    output: true
+  service:
+    title: Service
+    output: true
+    permalink: "/service/:path/"
+  uploads:
+    title: Uploads
+    output: true
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -7,28 +31,14 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 sass:
-    style: compressed
-include: ["_pages"]
-collections:
-  posts:
-    permalink: /:categories/:year/:month/:day/:title.html
-    output: true
-  portfolio:
-    output: true
-    permalink: /portfolio/:path/
-  casestudy:
-    output: true
-    permalink: /casestudy/:path/
-  service:
-    output: true
-    permalink: /service/:path/
-  career:
-    output: true
-    permalink: /career/:path/
+  style: compressed
+include:
+- _pages
 prose:
-  media: 'assets/img/blog'
+  media: assets/img/blog
   metadata:
     _posts:
+<<<<<<< HEAD
       - name: "blog_description"
         field:
           label: "Description"
@@ -72,123 +82,123 @@ prose:
              - name: 'Satish'
                value: 'satish'
     _portfolio:
-       - name: "title"
-         field:
-          element: "text"
-          label: "title"
-       - name: "category"
-         field:
-          label: "Category"
-          element: "select"
-          value: "true"
-          options:
-             - name: 'BRANDING'
-               value: 'BRANDING'
-             - name: 'PACKAGING & LABEL'
-               value: 'PACKAGING & LABEL'
-             - name: 'ILLUSTRATION & ART'
-               value: 'ILLUSTRATION & ART'
-             - name: 'ANIMATION'
-               value: 'ANIMATION'
-             - name: 'WEB & MOBILE APP DESIGN'
-               value: 'WEB & MOBILE APP DESIGN'
-       - name: "project_title"
-         field:
-          label: "Title"
-          element: "text"
-          value: "Title"
-       - name: "background-class"
-         field:
-          label: "background-class"
-          element: "hidden"
-          value: "portBgImg"
-       - name: "layout"
-         field:
-          label: "layout"
-          element: "hidden"
-          value: "portfolio_detail"
-       - name: "porject_subtitle"
-         field:
-          label: "Description"
-          element: "text"
-          value: "Description"
-       - name: "project_detail"
-         field:
-          label: "Project Detail"
-          element: "textarea"
-          placeholder: "Enter a Description"
-       - name: "whatWeDoList"
-         field:
-          label: "What we do"
-          element: "textarea"
-          placeholder: "Enter a Description"
-       - name: "projectTemplate1_title"
-         field:
-          label: "Project Title1"
-          element: "text"
-          value: "Description"
-       - name: "projectTemplate1_description"
-         field:
-          label: "Project Description1"
-          element: "textarea"
-          placeholder: "Enter a Description"
-       - name: "projectTemplate1_img"
-         field:
-          label: "Project Image1"
-          element: "text"
-          value: ""
-       - name: "projectTemplate1_img1"
-         field:
-          label: "Project Image11"
-          element: "text"
-          value: ""
-       - name: "projectTemplate2_title"
-         field:
-          label: "Project Title2"
-          element: "text"
-          value: "Description"
-       - name: "projectTemplate2_description"
-         field:
-          label: "Project Description2"
-          element: "textarea"
-          placeholder: "Enter a Description"
-       - name: "projectTemplate2_img"
-         field:
-          label: "Project Image2"
-          element: "text"
-          value: ""
-       - name: "projectTemplate2_img1"
-         field:
-          label: "Project Image21"
-          element: "text"
-          value: ""
-       - name: "projectTemplate3_title"
-         field:
-          label: "Project Title3"
-          element: "text"
-          value: "Description"
-       - name: "projectTemplate3_description"
-         field:
-          label: "Project Description3"
-          element: "textarea"
-          placeholder: "Enter a Description"
-       - name: "projectTemplate3_img"
-         field:
-          label: "Project Image3"
-          element: "text"
-          value: ""
-       - name: "projectTemplate3_img1"
-         field:
-          label: "Project Image31"
-          element: "text"
-          value: ""
-       - name: "appstore_url"
-         field:
-          label: "iphone App URL"
-          element: "text"
-          value: ""
-       - name: "playstore_url"
-         field:
-          label: "Android App URL"
-          element: "text"
-          value: ""
+    - name: title
+      field:
+        element: text
+        label: title
+    - name: category
+      field:
+        label: Category
+        element: select
+        value: 'true'
+        options:
+        - name: BRANDING
+          value: BRANDING
+        - name: PACKAGING & LABEL
+          value: PACKAGING & LABEL
+        - name: ILLUSTRATION & ART
+          value: ILLUSTRATION & ART
+        - name: ANIMATION
+          value: ANIMATION
+        - name: WEB & MOBILE APP DESIGN
+          value: WEB & MOBILE APP DESIGN
+    - name: project_title
+      field:
+        label: Title
+        element: text
+        value: Title
+    - name: background-class
+      field:
+        label: background-class
+        element: hidden
+        value: portBgImg
+    - name: layout
+      field:
+        label: layout
+        element: hidden
+        value: portfolio_detail
+    - name: porject_subtitle
+      field:
+        label: Description
+        element: text
+        value: Description
+    - name: project_detail
+      field:
+        label: Project Detail
+        element: textarea
+        placeholder: Enter a Description
+    - name: whatWeDoList
+      field:
+        label: What we do
+        element: textarea
+        placeholder: Enter a Description
+    - name: projectTemplate1_title
+      field:
+        label: Project Title1
+        element: text
+        value: Description
+    - name: projectTemplate1_description
+      field:
+        label: Project Description1
+        element: textarea
+        placeholder: Enter a Description
+    - name: projectTemplate1_img
+      field:
+        label: Project Image1
+        element: text
+        value: ''
+    - name: projectTemplate1_img1
+      field:
+        label: Project Image11
+        element: text
+        value: ''
+    - name: projectTemplate2_title
+      field:
+        label: Project Title2
+        element: text
+        value: Description
+    - name: projectTemplate2_description
+      field:
+        label: Project Description2
+        element: textarea
+        placeholder: Enter a Description
+    - name: projectTemplate2_img
+      field:
+        label: Project Image2
+        element: text
+        value: ''
+    - name: projectTemplate2_img1
+      field:
+        label: Project Image21
+        element: text
+        value: ''
+    - name: projectTemplate3_title
+      field:
+        label: Project Title3
+        element: text
+        value: Description
+    - name: projectTemplate3_description
+      field:
+        label: Project Description3
+        element: textarea
+        placeholder: Enter a Description
+    - name: projectTemplate3_img
+      field:
+        label: Project Image3
+        element: text
+        value: ''
+    - name: projectTemplate3_img1
+      field:
+        label: Project Image31
+        element: text
+        value: ''
+    - name: appstore_url
+      field:
+        label: iphone App URL
+        element: text
+        value: ''
+    - name: playstore_url
+      field:
+        label: Android App URL
+        element: text
+        value: ''
