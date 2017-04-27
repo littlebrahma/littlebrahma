@@ -2,7 +2,7 @@
 date: '2017-04-27 12:02 +0530'
 layout: blog_detail
 author_name: satish
-published: false
+published: true
 title: Branding blog test
 blog_description: short description
 blog_category: Branding
@@ -18,4 +18,3 @@ This is what most people miss out. Architecture is the tech spec, UI is how it l
 
 
 This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.
-
