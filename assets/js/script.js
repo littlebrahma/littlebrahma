@@ -344,21 +344,20 @@ $(".homepageBg").on("swipe",function(){
   console.log('right');
    $('.mobTabSection__division').slick('slickNext');
      var slickLength=$(".slick-active").attr("data-slick-index");
-     debugger;
-     for(var i=0;i<=slickLength;i++){
-    if(i == 4) {
-    $('.arrow-right').css("display","none");
-    $('.arrow-left').css("display","block");
+         
+    if(slickLength == 4) {
+    $('.arrow-right').css("z-index","0");
+    $('.arrow-left').css("z-index","1");
 }
-else if(i == 0) {
-    $('.arrow-left').css("display","none");
-    $('.arrow-right').css("display","block");
+else if(slickLength == 0) {
+    $('.arrow-left').css("z-index","0");
+    $('.arrow-right').css("z-index","1");
 }
 else {
-    $('.arrow-right').css("display","block");
-    $('.arrow-left').css("display","block");
+    $('.arrow-right').css("z-index","1");
+    $('.arrow-left').css("z-index","1");
 }
-}
+
 });
 
 
