@@ -1,6 +1,6 @@
 {% for post in site.casestudy %}
-    {% if post.category %}
-        {% capture tmp %}{{ tmp }}#{{ post.category }}{% endcapture %}
+    {% if post.categories %}
+        {% capture tmp %}{{ tmp }}#{{ post.categories }}{% endcapture %}
     {% endif %}
 {% endfor %}
 
