@@ -86,6 +86,8 @@ prose:
                value: 'jaison'
              - name: 'Satish'
                value: 'satish'
+             - name: 'Shilpa Gopi'
+               value: 'shilpa'
     _portfolio:
     - name: title
       field:
