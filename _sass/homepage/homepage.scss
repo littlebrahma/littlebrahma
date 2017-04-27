@@ -211,8 +211,10 @@
             cursor: pointer;
             height: 30px;
             width: 30px;
+            visibility:hidden;
         }
         .arrow-left {
+        visibility:hidden;
             color: #ffc700;
             left: 5%;
             position: fixed;

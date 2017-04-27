@@ -293,16 +293,16 @@ $('.mobTabSection__division').slick({
 //     }
 //     });
 if($(".slick-active").attr("data-slick-index") == 0) {
-    $('.arrow-left').css("z-index","0");
+    $('.arrow-left').css({"z-index":"0","visibility":"hidden"});
 }
 else {
-    $('.arrow-left').css("z-index","1");
+    $('.arrow-left').css({"z-index":"1","visibility":"visible"});
 }
 if($(".slick-active").attr("data-slick-index") == 4) {
-    $('.arrow-right').css("z-index","0");
+    $('.arrow-right').css({"z-index":"0","visibility":"hidden"});
 }
 else {
-    $('.arrow-right').css("z-index","1");
+    $('.arrow-right').css({"z-index":"1","visibility":"visible"});
 }
 
 
@@ -346,35 +346,23 @@ $(".homepageBg").on("swipe",function(){
      var slickLength=$(".slick-active").attr("data-slick-index");
          
     if(slickLength == 4) {
-    $('.arrow-right').css("z-index","0");
-    $('.arrow-left').css("z-index","1");
+    $('.arrow-left').css({"z-index":"1","visibility":"visible"});
+    $('.arrow-right').css({"z-index":"0","visibility":"hidden"});
+
 }
 else if(slickLength == 0) {
-    $('.arrow-left').css("z-index","0");
-    $('.arrow-right').css("z-index","1");
+   $('.arrow-left').css({"z-index":"0","visibility":"hidden"});
+    $('.arrow-right').css({"z-index":"1","visibility":"visible"});
 }
 else {
-    $('.arrow-right').css("z-index","1");
-    $('.arrow-left').css("z-index","1");
+   $('.arrow-left').css({"z-index":"1","visibility":"visible"});
+    $('.arrow-right').css({"z-index":"1","visibility":"visible"});
+
 }
 
 });
 
 
-$(".homepageBg").on("swipeleft",function(){
-      $('.mobTabSection__division').slick('slickPrev');
- var slickLength=$(".slick-active").attr("data-slick-index");
-     for(var i=0;i<=slickLength;i++){
-    if(i == 0) {
-    $('.arrow-left').css("z-index","0");
-    $('.arrow-right').css("z-index","1");
-}
-else {
-    $('.arrow-left').css("z-index","1");
-    $('.arrow-right').css("z-index","1");
-}
-}
-});
 
 function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
