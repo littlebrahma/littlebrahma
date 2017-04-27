@@ -9,3 +9,7 @@
 - name: satish
   image: /assets/img/blog/profile_1.png
   title: designer
+  
+- name: shilpa
+  image: /assets/img/blog/profile_1.png
+  title: design lead
