@@ -131,7 +131,7 @@
     </section>
 
 </section>
-
+<script src="/assets/js/bodyMovin.js"></script>
 {% include footer.html %}
 <script type="text/javascript">
 var myimages=[
@@ -316,5 +316,17 @@ if (document.attachEvent) //if IE (and Opera depending on user setting)
     document.attachEvent("on"+mousewheelevt, rotateimage);
 else if (document.addEventListener) //WC3 browsers
     document.addEventListener(mousewheelevt, rotateimage, false);
+
+
+//
+
+var animData = {
+        container: document.getElementById('background_image'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/data/data.json'
+    };
+    var anim = bodymovin.loadAnimation(animData);
 
 </script>

@@ -304,6 +304,9 @@ if($(".slick-active").attr("data-slick-index") == 4) {
 else {
     $('.arrow-right').css("z-index","1");
 }
+
+
+
 $('.arrow-left').click(function(){
     $('.mobTabSection__division').slick('slickPrev');
  var slickLength=$(".slick-active").attr("data-slick-index");
@@ -337,7 +340,43 @@ else {
 
 
 
-    
+$(".homepageBg").on("swipe",function(){
+  console.log('right');
+   $('.mobTabSection__division').slick('slickNext');
+     var slickLength=$(".slick-active").attr("data-slick-index");
+     debugger;
+     for(var i=0;i<=slickLength;i++){
+    if(i == 4) {
+    $('.arrow-right').css("display","none");
+    $('.arrow-left').css("display","block");
+}
+else if(i == 0) {
+    $('.arrow-left').css("display","none");
+    $('.arrow-right').css("display","block");
+}
+else {
+    $('.arrow-right').css("display","block");
+    $('.arrow-left').css("display","block");
+}
+}
+});
+
+
+$(".homepageBg").on("swipeleft",function(){
+      $('.mobTabSection__division').slick('slickPrev');
+ var slickLength=$(".slick-active").attr("data-slick-index");
+     for(var i=0;i<=slickLength;i++){
+    if(i == 0) {
+    $('.arrow-left').css("z-index","0");
+    $('.arrow-right').css("z-index","1");
+}
+else {
+    $('.arrow-left').css("z-index","1");
+    $('.arrow-right').css("z-index","1");
+}
+}
+});
+
 function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
   return re.test(email);
