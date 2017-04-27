@@ -113,7 +113,7 @@ $(".scroll-indicators li").click(function(){
         $('#text2').hide();
         $('#text3').hide();
         $('#text4').hide();
-       // background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/1.gif')";
+        background.style.backgroundImage = "none";
         $("background").addClass("animated fadeIn");
         $('#slideshow').css("background-position", "-76px -70px").addClass("animated fadeIn");
         $(".scroll-indicators li").removeClass('active');
