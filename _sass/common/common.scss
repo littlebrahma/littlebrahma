@@ -103,7 +103,7 @@ $common-width: 100%;
         line-height: 1.5em;
         font-family: $primary-contentfamily;
         font-size: 18px;
-        margin-bottom: 30px; 
+        margin-bottom: 30px;
     }
     input[type=radio]:not(old)+label>.select__radio {
         display: inline-block;
@@ -269,7 +269,7 @@ $common-width: 100%;
         .commonHeight {
             &__heading {
                 font-size: 38px;
-                letter-spacing: 0.02em;
+                letter-spacing: 0.01em;
             }
             &__para {
                 font-size: 16px;
@@ -285,12 +285,12 @@ $common-width: 100%;
         .commonHeight {
             &__heading {
                 font-size: 46px;
-                letter-spacing: 0.02em;
+                letter-spacing: 0.01em;
             }
             &__para {
                 font-size: 18px;
-                line-height: 34px;
-                letter-spacing: 0.02em;
+                line-height: 26px;
+                letter-spacing: 0.05em;
             }
             &__img {
                 height: 365px;

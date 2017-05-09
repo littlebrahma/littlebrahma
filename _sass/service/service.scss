@@ -32,6 +32,8 @@
          font-size: 22px;
          color: rgb(55, 55, 55);
          margin: 60px 0 20px;
+         letter-spacing: 0.02em;
+         line-height: 28px;
      }
      &__underline {
          border-bottom: rgb(55, 55, 55) 5px solid;
@@ -44,6 +46,7 @@
          margin-top: 0px;
          color: rgb(55, 55, 55);
          margin-bottom: 3px;
+         letter-spacing: 0.02em;
      }
      &__subtitle-underline {
          border-bottom: rgb(251, 74, 68) 5px solid;
@@ -62,7 +65,7 @@
      }
      &__list {
          font-size: 13px;
-         font-family: montserrat-light;
+         font-family: raleway-regular;
          color: rgb(102, 102, 102);
          display: inline-block;
          margin: 0 29px 15px 0;
@@ -99,7 +102,7 @@
              width: 70%;
              margin: 0 auto;
              margin-bottom: 20px;
-             line-height: 22px;
+             line-height: 20px;
              margin-top: 30px;
          }
          &__subtitle {
@@ -113,7 +116,7 @@
          &__list {
              font-size: 11px;
              letter-spacing: 0.02em;
-             font-family: montserrat-light;
+             font-family: raleway-regular;
              color: #666;
              /* display: inline-block; */
              /* margin: 0 29px 20px 0; */
@@ -148,6 +151,9 @@
      .service-page {
          //  padding: 35px 80px;
          padding-bottom: 40px;
+         &__link {
+             font-size: 11px;
+         }
          &__all-design {
              padding-top: 40px;
              padding-bottom: 0px;
@@ -174,12 +180,13 @@
          &__list {
              font-size: 12px;
              margin-bottom: 5px;
+             font-family: raleway-regular;
          }
          &__unordered-list {
              padding: 0;
              width: 100%;
              margin-top: 20px;
-             margin-bottom: 15px;
+             margin-bottom: 10px;
          }
          &__list-anchor {
              padding-bottom: 6px;
@@ -213,6 +220,7 @@
          &__list {
              font-size: 14px;
              letter-spacing: 0.02em;
+             font-family: raleway-regular;
          }
          &__list-anchor {
              padding-bottom: 15px;
