@@ -2,7 +2,7 @@ backend:
     name: github
     repo: mcsekar123/mcsekar123.github.io # Path to your Github repository
     branch: master # Branch to update (master by default)
-    site_domain: littlebrahma.netlify.com
+    site_domain: hashlb.netlify.com
 media_folder: "assets/images" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
