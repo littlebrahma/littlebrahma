@@ -8,7 +8,7 @@
 		<p class="commonHeight__para">As we give each element an expert finish, the end product that comes out of our design stable is rich with features and smoothly moulded. It’s made for keepers, not finders.</p>
     </div>
 	</div>
- </section>
+ </section> 
 
  <div class="row blog-row">
 		{% include radio1.html %}
@@ -138,6 +138,40 @@ else if($(window).width() < 768){
 }
 });
 
+});
+ var lethargy = new Lethargy(); 
+
+ $(window).bind('mousewheel DOMMouseScroll wheel MozMousePixelScroll', function(e){
+    e.preventDefault()
+    e.stopPropagation();
+    if(lethargy.check(e) !== false) {
+        // Do something with the scroll event
+  
+       var level=lethargy.check(e);
+      if(lethargy.check(e)===-1){
+        nextslideindex=nextslideindex+1;
+        if(nextslideindex>myimages.length-1){
+            nextslideindex=myimages.length-1 ;
+        }
+         console.log('down -'+nextslideindex);
+      }
+      else{
+
+        nextslideindex--;
+        if(nextslideindex<0){
+            nextslideindex=0;
+        }
+
+        console.log('up -'+nextslideindex);
+         
+      }
+
+    $("#slideshow").css('background-position', myimages[nextslideindex]).removeClass("animated fadeIn");
+    $(this).addClass("animated fadeIn");
+    myFunction();
+     
+    
+    }
 });
 
  </script>
