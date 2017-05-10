@@ -15,13 +15,10 @@ $ternary-contentfamily: "raleway-bold";
     margin-right: auto;
     padding-top: 70px;
     &__video {
-        width: 100%;
-        position: relative;
-        height: 400px;
-        margin: 60px 0px;
-        background-image: url("/assets/img/lifeAtLittleBrahma/img1.png");
-        background-position: center;
-        background-size: contain;
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
     }
     &__content {}
     &__details {
@@ -73,6 +70,244 @@ $ternary-contentfamily: "raleway-bold";
     &__fRight {
         img {
             width: 100%;
+        }
+    }
+}
+
+.imageFirstLayout {
+    .img_cont:first-child {
+        margin-bottom: 7px;
+    }
+    .img_cont0 {
+        display: inline;
+        width: 800px;
+        // background-color: gree;
+    }
+    .img_cont1 {
+        display: inline;
+        width: 400px;
+        // background-color: red;
+    }
+    .img_cont2 {
+        display: inline;
+        width: 400px;
+        // background-color: red;
+        margin-left: 20px;
+    }
+    #image {
+        display: inline-block;
+        width: 100%;
+        font-size: 0;
+        line-height: 0;
+        vertical-align: middle;
+        background-size: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-image: url('/assets/img/lifeAtLittleBrahma/1_1.png');
+    }
+    #image1 {
+        display: inline-block;
+        width: 100%;
+        font-size: 0;
+        line-height: 0;
+        vertical-align: middle;
+        background-size: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-image: url('/assets/img/lifeAtLittleBrahma/1_2.png');
+    }
+    #image2 {
+        display: inline-block;
+        width: 100%;
+        font-size: 0;
+        line-height: 0;
+        vertical-align: middle;
+        background-size: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-image: url('/assets/img/lifeAtLittleBrahma/1_3.png');
+    }
+    .img_test {
+        display: flex;
+    }
+    .bg_layout {
+        background-color: red;
+    }
+    #image-inner {
+        display: block;
+        height: 0;
+        padding-top: 67%;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .imageSecondLayout {
+        &__fLeft {
+            margin-bottom: 12px;
+        }
+        &__second {
+            margin-top: 15px;
+            margin-bottom: 40px;
+        }
+    }
+    .lifeContainer {
+        &__details {
+            h1 {
+                font-family: $ternary-titlefamily;
+                font-size: 14px;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 0.02em;
+            }
+            p {
+                font-family: $primary-contentfamily;
+                font-size: 12px;
+                color: #666;
+                line-height: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .contentContainer {
+        h1 {
+            font-family: $ternary-titlefamily;
+            font-size: 14px;
+            color: #333;
+            letter-spacing: 0.02em;
+            text-align: center;
+        }
+        p {
+            font-family: $primary-contentfamily;
+            font-size: 12px;
+            color: #666;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .imageFirstLayout {
+        .img_test {
+            display: inline;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .imageSecondLayout {
+        &__fLeft {
+            margin-bottom: 12px;
+        }
+        &__second {
+            margin-top: 15px;
+            margin-bottom: 40px;
+        }
+    }
+    .lifeContainer {
+        &__details {
+            h1 {
+                font-family: $ternary-titlefamily;
+                font-size: 15px;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 0.02em;
+            }
+            p {
+                font-family: $primary-contentfamily;
+                font-size: 13px;
+                color: #666;
+                line-height: 21px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .contentContainer {
+        h1 {
+            font-family: $ternary-titlefamily;
+            font-size: 15px;
+            color: #333;
+            letter-spacing: 0.02em;
+        }
+        p {
+            font-family: $primary-contentfamily;
+            font-size: 13px;
+            color: #666;
+            line-height: 21px;
+        }
+    }
+    .imageFirstLayout {
+        .img_test {
+            display: inline;
+        }
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1366px) {
+    .lifeContainer {
+        &__details {
+            h1 {
+                font-family: $ternary-titlefamily;
+                font-size: 17px;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 0.02em;
+            }
+            p {
+                font-family: $primary-contentfamily;
+                font-size: 14px;
+                color: #666;
+                line-height: 22px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .contentContainer {
+        h1 {
+            font-family: $ternary-titlefamily;
+            font-size: 17px;
+            color: #333;
+            letter-spacing: 0.02em;
+        }
+        p {
+            font-family: $primary-contentfamily;
+            font-size: 14px;
+            color: #666;
+            line-height: 22px;
+        }
+    }
+}
+
+@media only screen and (min-width:1866px) {
+    .lifeContainer {
+        &__details {
+            h1 {
+                font-family: $ternary-titlefamily;
+                font-size: 24px;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 0.02em;
+                line-height: 34px;
+            }
+            p {
+                font-family: $primary-contentfamily;
+                font-size: 16px;
+                color: #666;
+                line-height: 24px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .contentContainer {
+        h1 {
+            font-family: $ternary-titlefamily;
+            font-size: 24px;
+            color: #333;
+            letter-spacing: 0.02em;
+            line-height: 34px;
+        }
+        p {
+            font-family: $primary-contentfamily;
+            font-size: 14px;
+            color: #666;
+            line-height: 24px;
         }
     }
 }
