@@ -1,0 +1,173 @@
+{% include header.html %}
+<section class="blogBg">
+  {% include common_header.html %}
+  <div class="commonHeight">
+  <div>
+  <img src="/assets/img/service/Mudras/blog.png" class="commonHeight__img" alt="blog banner">
+    <h5 class="commonHeight__heading">BLOG</h5>
+    <p class="commonHeight__para">User interface in the eyes of the beholder, Technical specifications is what it is made of. User experience is in their mind.</p>
+    </div>
+  </div>
+</section>
+<div class="row blog-row">
+  {% include radio2.html %}
+    <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 rightDiv">
+      <div class="row">
+      {% assign items = site.posts | sort: 'date' %}
+
+      {% for post in items %}
+
+{% for author in site.data.authors %}
+   {% if author.name == post.author_name %}
+
+  {% assign author_name = author.name %}
+  {% assign author_image = author.image %}
+  {% assign author_title = author.title %}
+  {% break %}
+
+{% endif %}
+  
+{% endfor %}
+
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 blog-filter {{post.blog_category}}">
+        <a href="{{post.url}}">
+          <img src="{{ post.thumbnail}}" class="blog-filter__img" alt="blog_thumbnail">
+          <div class="blogWholeBG">
+          <div class="blogDetail">
+            <h5 class="blogDetail__title">{{ post.title}}</h5>
+            <div class="blogDetail__border"></div>
+            <p class="blogDetail__para">{{ post.blog_description}}</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="row blog__pad">
+                <div class="blog__pad-img">
+                  <img src="{{ author_image }}" class="blog-pad__img" alt="blog author">
+                </div>
+                <div class="authorSection">
+                  <h5 class="authorSection__title">{{ author_name}}</h5>
+                  <p class="authorSection__para">{{ author_title}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blogClock">
+              <span><img src="/assets/img/blog/clock.png" alt="clock"></span><span class="authorSection__date">{{ post.date  | date: '%B %d, %Y'}}</span>
+            </div>
+          </div>
+          </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% include common_footer.html %}
+{% include footer.html %}
+  <script type="text/javascript">
+ $( document ).ready(function() {
+  console.log($(".portfolioBg").height());
+  console.log($(".commonHeader").height());
+  if ($(window).width() >= 1199) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > $(".blogBg").height() - $(".commonHeader").height()){  
+    $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
+    $(".selectSection").css({"position":"fixed","top":"140px"});
+    $(".rightDiv").css({"position":"relative","left":"25%","top":"0px"});
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent"}).removeClass("animated fadeIn");
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".rightDiv").css({"position":"static","left":"0%"});
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
+  }
+});
+}
+else if($(window).width() >= 768 && $(window).width() < 1199) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > $(".blogBg").height() - $(".commonHeader").height()){  
+    $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
+    $(".selectSection").css({"position":"fixed","top":"140px"});
+    $(".rightDiv").css({"position":"relative","left":"33.3%","top":"0px"});
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent"}).removeClass("animated fadeIn");
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".rightDiv").css({"position":"static","left":"0%"});
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
+  }
+});
+}
+else if($(window).width() < 768){
+  $(window).scroll(function() {
+  if ($(this).scrollTop() > $(".blogBg").height() - $(".commonHeader").height()){  
+  $(".selectSection").css({"position":"static","top":"0%"});
+    $(".rightDiv").css({"position":"static","left":"0%"});
+  }
+  else {
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".rightDiv").css({"position":"static","left":"0%"});
+  }
+  });
+}
+
+$(window).resize(function() {
+  if ($(window).width() >= 1200) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > $(".blogBg").height() - $(".commonHeader").height()){  
+    $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
+    $(".selectSection").css({"position":"fixed","top":"140px"});
+    $(".rightDiv").css({"position":"relative","left":"25%","top":"0px"});
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent"}).removeClass("animated fadeIn");
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".rightDiv").css({"position":"static","left":"0%"});
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
+  }
+});
+}
+else if($(window).width() >= 768 && $(window).width() < 1199) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > $(".blogBg").height() - $(".commonHeader").height()){  
+    $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
+    $(".selectSection").css({"position":"fixed","top":"140px"});
+    $(".rightDiv").css({"position":"relative","left":"33.3%","top":"0px"});
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent"}).removeClass("animated fadeIn");
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".rightDiv").css({"position":"static","left":"0%"});
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
+  }
+});
+}
+else if($(window).width() < 768){
+  $(window).scroll(function() {
+  if ($(this).scrollTop() > $(".blogBg").height() - $(".commonHeader").height()){  
+  $(".selectSection").css({"position":"static","top":"0%"});
+    $(".rightDiv").css({"position":"static","left":"0%"});
+  }
+  else {
+    $(".selectSection").css({"position":"static","top":"0%"});
+    $(".rightDiv").css({"position":"static","left":"0%"});
+  }
+  });
+}
+});
+
+});
+
+ </script>

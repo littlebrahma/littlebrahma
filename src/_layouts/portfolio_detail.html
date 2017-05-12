@@ -1,0 +1,181 @@
+{% include header.html %}
+<section class="portfolioDetailBg">
+    {% include common_header.html %}
+    
+      <div class="banner">
+      <div>
+      <img class="banner__logo" src="/assets/img/portfolio/logo.png">
+      <h1 class="banner__title">MYSTERYBOX</h1>
+      <h4 class="banner__subtitle">UI/UX, MOBILE APPLICATION</h4>
+      <h6 class="banner__mintitle">DOWNLOAD FOR</h6>
+      <img class="banner__himg" src="/assets/img/portfolio/apple.png">
+      <img class="banner__himg" src="/assets/img/portfolio/android.png">
+      </div>
+      </div>
+      </section>
+      <div class="middle-section">
+    <div class="middle-section1">
+    <div class="row center-xs start-md start-sm start-lg">
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 left-align">
+    <h2 class="heading">{{page.porject_title}}</h2>
+    <hr class="middle-section1__hr1">
+    <p class="middle-section1__algn">
+      {{page.project_detail}}
+    </p>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 left-align">
+    <h2 class="heading">WHAT WE DID</h2>
+    <hr class="middle-section1__hr2"> 
+    {% for portfolioList in page.whatWeDoList %}    
+    <p class="middle-section1__algn1">{{portfolioList}}</p>
+     {% endfor %}   
+    </div>
+    </div>
+    <img class="middle-section1__img1" src="{{page.img}}">
+    <p class="italic">{{page.imgContent}}</p>
+    </div>
+    </div>
+    <div class="middle-section2">
+    <div class="middle-section2__allign">
+    <img class="middle-section2__img1" src="{{page.img1}}">
+    <img class="middle-section2__img1" src="{{page.img2}}">
+    <img  class="middle-section2__img1" src="{{page.img3}}"> 
+    </div> 
+    </div>
+    <div class="middle-section">
+	  <div class="middle-section3">
+    {% for template in page.projectTemplate %}
+    <div class="row middle-section3__midimg">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 left-align">
+        <img class="middle-section3__img1" src="{{template.img}}">
+      </div>
+      <div class="col-xs-12 first-xs col-sm-6 last-sm col-md-6 last-md col-lg-6 last-lg left-align">
+      <div class="middle-section3__allign">
+      <div class="row center-xs start-md start-sm start-lg">
+      <div class="col-xs-12 first-xs col-sm-12 first-sm col-md-12 first-md col-lg-12 first-lg  middle-section3__allign1 left-align right-align">
+      <h2 class="middle-section3__title2">{{template.title}}</h2>
+      <hr class="middle-section3__hr3">
+      <p class="middle-section3__algn">{{template.description}}</p>
+      <img class="middle-section3__img2" src="{{template.img1}}">
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+      {% endfor %} 
+    </div>
+    </div>
+    <div class="middle-section4">
+    <div class="middle-section4__pragrph">
+     <h2 class="middle-section4__title3">{{page.porject_title1}}</h2>
+      <hr class="middle-section4__hr4">
+      <p class="middle-section4__algn">{{page.porject_description1}}</p>
+      </div>
+     <img class="middle-section4__imgbg" src="{{page.project_img1}}">
+     
+      </div>
+      <div class="middle-section5">
+      <h2 class="middle-section5__headng">WANT TO GET SOME AWESOME PRODUCTS LIKE THIS ?</h2>
+      <a href="/contact/"><button class="middle-section5__btn">GET IN TOUCH</button></a>
+        
+      </div>
+    {% include common_footer.html %}
+ {% include footer.html %} <script type="text/javascript">
+  if (screen.width >= 1199) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > $(".portfolioDetailBg").height() - $(".commonHeader").height()){  
+    $('.commonHeader').css({"background-color":"transparent"}).addClass("animated fadeIn");
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent"});
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
+  }
+});
+}
+else if(screen.width >= 768 && screen.width < 1199) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > $(".portfolioDetailBg").height() - $(".commonHeader").height()){  
+    $('.commonHeader').css({"background-color":"transparent"}).addClass("animated fadeIn");
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent"});
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
+  }
+});
+}
+// else if (screen.width < 768) {
+//     $(window).scroll(function() {
+// if ($(this).scrollTop() > 420){  
+//     $('.commonHeader').css({"background-color":"#fff","padding-top":"10px","padding-bottom":"10px"});
+//     $(".selectSection").css({"position":"static","top":"0%"});
+//     $(".portDetail").css({"position":"relative","top":"0"});
+//     $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
+//         $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
+//   }
+//   else {
+//     $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+//     $(".selectSection").css({"position":"static","top":"0%"});
+//     $(".portDetail").css({"position":"static","left":"0%"});
+//     $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+//         $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
+//   }
+// });
+// }
+$(window).resize(function() {
+  if (screen.width >= 768) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > $(".portfolioDetailBg").height() - $(".commonHeader").height()){  
+    $('.commonHeader').css({"background-color":"transparent"}).addClass("animated fadeIn");
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent"}).removeClass("animated fadeIn");
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
+  }
+});
+}
+else if(screen.width >= 768 && screen.width < 1199) {
+    $(window).scroll(function() {
+if ($(this).scrollTop() > $(".portfolioDetailBg").height() - $(".commonHeader").height()){  
+    $('.commonHeader').css({"background-color":"transparent"}).addClass("animated fadeIn");
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
+  }
+  else {
+    $('.commonHeader').css({"background-color":"transparent"}).removeClass("animated fadeIn");
+    $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
+  }
+});
+}
+// else if (screen.width < 768) {
+//     $(window).scroll(function() {
+// if ($(this).scrollTop() > 420){  
+//     $('.commonHeader').css({"background-color":"#fff","padding-top":"10px","padding-bottom":"10px"});
+//     $(".selectSection").css({"position":"static","top":"0%"});
+//     $(".portDetail").css({"position":"relative","top":"0"});
+//     $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
+//         $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
+//   }
+//   else {
+//     $('.commonHeader').css({"background-color":"transparent","padding-top":"20px","padding-bottom":"20px"});
+//     $(".selectSection").css({"position":"static","top":"0%"});
+//     $(".portDetail").css({"position":"static","left":"0%"});
+//     $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+//         $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
+//   }
+// });
+// }
+});
+
+
+
+ </script>
