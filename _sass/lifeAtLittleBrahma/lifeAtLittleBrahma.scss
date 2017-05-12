@@ -20,8 +20,11 @@ $ternary-contentfamily: "raleway-bold";
             width: 100%;
         }
     }
-    &__content {}
+    &__content {
+        margin: 70px 0px;
+    }
     &__details {
+        margin: 80px 0px;
         h1 {
             font-family: $ternary-titlefamily;
             font-size: $desktopHeading;
@@ -29,13 +32,15 @@ $ternary-contentfamily: "raleway-bold";
             letter-spacing: 0.02em;
             text-align: center;
             text-transform: uppercase;
+            margin: 0;
         }
         p {
             font-family: $primary-contentfamily;
             font-size: 15px;
             color: #666;
             line-height: 24px;
-            margin-bottom: 40px;
+            margin-top: 40px;
+            text-align: center;
         }
     }
 }
@@ -151,6 +156,7 @@ $ternary-contentfamily: "raleway-bold";
         }
     }
     .lifeContainer {
+        padding-top: 0;
         &__details {
             h1 {
                 font-family: $ternary-titlefamily;
@@ -276,8 +282,23 @@ $ternary-contentfamily: "raleway-bold";
 }
 
 @media only screen and (min-width:1866px) {
+    .imageFirstLayout {
+        .img_cont0 {
+            display: inline;
+            width: 80%;
+            // background-color: gree;
+        }
+        .img_cont2 {
+            width: 40%;
+            // background-color: red;
+        }
+    }
     .lifeContainer {
+        &__content {
+            margin: 95px 0px;
+        }
         &__details {
+            margin: 95px 0px;
             h1 {
                 font-family: $ternary-titlefamily;
                 font-size: 24px;
@@ -291,7 +312,7 @@ $ternary-contentfamily: "raleway-bold";
                 font-size: 16px;
                 color: #666;
                 line-height: 25px;
-                margin-bottom: 40px;
+                margin-top: 65px;
             }
         }
     }
