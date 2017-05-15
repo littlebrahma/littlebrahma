@@ -13,8 +13,8 @@ npm install
 # Build the site.
 gulp build
 
-# Checkout master and remove everything
-git clone https://${GH_TOKEN}@github.com/mcsekar123/mcsekar123.github.io.git ../mcsekar123.github.io.master
+# Checkout master and remove everything https://github.com/mcsekar123/mcsekar123.github.io.git
+git clone https://github.com/mcsekar123/mcsekar123.github.io.git ../mcsekar123.github.io.master
 cd ../mcsekar123.github.io.master
 git checkout master
 rm -rf *
@@ -25,7 +25,7 @@ cp -R ../mcsekar123.github.io/_site/* .
 
 # Make sure we have the updated .travis.yml file so tests won't run on master.
 cp ../mcsekar123.github.io/.travis.yml .
-git config user.email ${GH_EMAIL}
+git config user.email "chandrasekar.marappan@hashworks.co"
 git config user.name "mcsekar123"
 
 # Commit and push generated content to master branch.
