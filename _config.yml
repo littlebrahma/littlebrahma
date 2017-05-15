@@ -3,8 +3,7 @@ title: Littlebrahma.Github.Io
 email: chandrasekar.marappan@hashworks.co
 repository: littlebrahma/littlebrahma.github.io
 timezone: UTC
-source: src
-exclude: ['node_modules']
+exclude: ['node_modules','_assets']
 collections:
   career:
     title: Career

@@ -3,7 +3,7 @@ module.exports = function () {
 var root = './';
  var nodeModules = 'node_modules';
 var source='src';
-var assets='assets';
+var assets='_assets';
 var temp='tmp';
  var config = {
      temp:temp,
