@@ -13,11 +13,7 @@ before_install:
   - . $HOME/.nvm/nvm.sh && nvm install 6.1 && nvm use 6.1
   - gem install bundler
   - bundle check || bundle install
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - secure: 62f128f86789c933ca94f7860f11f4af120cef76
- deploy:
+deploy:
   provider: script
   script: "./_scripts/build.sh"
   skip_cleanup: false

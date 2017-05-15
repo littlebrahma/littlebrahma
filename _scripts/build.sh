@@ -14,7 +14,7 @@ npm install
 gulp build
 
 # Checkout master and remove everything https://github.com/mcsekar123/mcsekar123.github.io.git
-git clone https://github.com/mcsekar123/mcsekar123.github.io.git ../mcsekar123.github.io.master
+git clone https://${GH_TOKEN}/mcsekar123/mcsekar123.github.io.git ../mcsekar123.github.io.master
 cd ../mcsekar123.github.io.master
 git checkout master
 rm -rf *
