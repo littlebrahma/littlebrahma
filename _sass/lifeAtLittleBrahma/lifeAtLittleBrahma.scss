@@ -157,6 +157,7 @@ $ternary-contentfamily: "raleway-bold";
     }
     .lifeContainer {
         padding-top: 0;
+        width: 75%;
         &__details {
             h1 {
                 font-family: $ternary-titlefamily;
@@ -188,9 +189,13 @@ $ternary-contentfamily: "raleway-bold";
             color: #666;
             line-height: 20px;
             margin-bottom: 20px;
+            text-align: center;
         }
     }
     .imageFirstLayout {
+        #image {
+            margin-bottom: 1rem;
+        }
         .img_test {
             display: inline;
         }
