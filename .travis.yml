@@ -1,7 +1,5 @@
 language: node_js
 sudo: required
-script:
-  - bundle exec rake test -f Rakefile
 branches:
   except:
   - master
