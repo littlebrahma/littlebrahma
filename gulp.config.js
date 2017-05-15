@@ -7,7 +7,7 @@ var assets='_assets';
 var temp='tmp';
  var config = {
      temp:temp,
-     build: './src/assets',
+     build: './assets',
      source: source,
      css: assets + '/css/',
      fonts: assets + '/fonts/*.*',
