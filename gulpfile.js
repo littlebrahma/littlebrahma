@@ -4,6 +4,7 @@
   var gulp = require('gulp');
   var path = require('path');
   var del = require('del');
+  
   var $ = require('gulp-load-plugins')({
     lazy: true
   });
@@ -57,7 +58,7 @@ var deploy=config.deploy;
 
     return gulp
       .src(config.css+'/vendor/**/*.css')
-       .pipe($.concat('vendor.css'))
+       .pipe($.concat('vendor.min.css'))
       .pipe(gulp.dest(config.temp+'/css/'));
   });
 
@@ -69,7 +70,7 @@ var deploy=config.deploy;
    return gulp
     .src(config.temp+'/css/**/*.css')
         .pipe(gulp.dest(config.build+'/css'))
-        .pipe(browserSync.reload({stream:true, once: true}));;  
+        // .pipe(browserSync.reload({stream:true, once: true}));;  
 
 
  })
@@ -93,7 +94,7 @@ var deploy=config.deploy;
 
     return gulp
       .src(config.js+'/vendor/*.js')
-      .pipe($.concat('vendor.js'))
+        .pipe($.concat('vendor.js'))
       .pipe(gulp.dest(config.temp+'/js/vendor/'));
   });
 
@@ -120,7 +121,7 @@ var deploy=config.deploy;
     log('Copying fonts');
 
     return gulp
-      .src(config.fonts+'/*.*')
+      .src(config.fonts)
       .pipe(gulp.dest(config.build + '/font/'));
   });
 
@@ -150,7 +151,7 @@ var deploy=config.deploy;
    * This is separate so we can run tests on
    * optimize before handling image or fonts
    */
-  gulp.task('build', ['build-style','build-script','fonts','images'], function () {
+  gulp.task('build', ['build-css','build-js','fonts','images'], function () {
     log('Building everything');
 
     var msg = {
@@ -186,11 +187,40 @@ var deploy=config.deploy;
    * Remove all styles from the build and temp folders
    * @param  {Function} done - callback when complete
    */
-  gulp.task('clean-styles', function (done) {
+  gulp.task('clean-page-styles', function (done) {
       
     var files = [].concat(
-      config.temp + '/**/*.css',
-      config.build + '/css/**/*.css'
+      config.temp + '/css/pages/**/*.css',
+      config.build + '/css/pages/**/*.css'
+    );
+    clean(files, done);
+  });
+
+  gulp.task('clean-vendor-styles', function (done) {
+      
+    var files = [].concat(
+      config.temp + '/css/vendor/**/*.css',
+      config.build + '/css/vendor/**/*.css'
+    );
+    clean(files, done);
+  });
+
+
+  gulp.task('clean-page-scripts', function (done) {
+      
+    var files = [].concat(
+      config.temp + '/js/pages/*.js',
+      config.build + '/js/pages/*.js'
+    );
+    clean(files, done);
+  });
+
+
+  gulp.task('clean-vendor-scripts', function (done) {
+      
+    var files = [].concat(
+      config.temp + '/js/vendor/*.js',
+      config.build + '/js/vendor/*.js'
     );
     clean(files, done);
   });
@@ -252,27 +282,25 @@ var deploy=config.deploy;
 gulp.task('build-css',['optimize-css','optimize-vendor-css']);
 
 
- gulp.task('optimize-vendor-js', function () {
+ gulp.task('optimize-vendor-js',['vendor-scripts'], function () {
  log('Optimizing js');
     return gulp
     .src(config.temp+'/js/vendor/*.js')
      .pipe($.concat('vendor.js'))
        .pipe($.uglify())
-        .pipe($.rename({ suffix: '.min' }))
-        .pipe(gulp.dest(config.build+'/js/'));  
+        .pipe(gulp.dest(config.build+'/js/vendor'));  
 
  });
- gulp.task('optimize-page-js', function () {
+ gulp.task('optimize-page-js', ['page-scripts'],function () {
  log('Optimizing js');
     return gulp
-    .src(config.temp+'/js/page/*.js')
+    .src(config.temp+'/js/pages/*.js')
       .pipe($.uglify())
-      .pipe($.rename({ suffix: '.min' }))
-        .pipe(gulp.dest(config.build+'/js/'));  
+      .pipe(gulp.dest(config.build+'/js/pages'));  
 
  });
 
- gulp.task('build-js',['optimize-js','optimize-vendor-js']);
+ gulp.task('build-js',['optimize-page-js','optimize-vendor-js']);
 
 
 
@@ -297,15 +325,15 @@ gulp.task('build-css',['optimize-css','optimize-vendor-css']);
 // -->
 // Default task
 // <--
-gulp.task('serve-dev',['jekyll-build','watch']
-// , function (gulpCallBack){
-//     var spawn = require('child_process').spawn;
-//     // After build: cleanup HTML
-//     var jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'});
 
-//     jekyll.on('exit', function(code) {
-//         gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: '+code);
-//     });}
+gulp.task('clean',['clean-fonts','clean-page-styles','clean-vendor-styles','clean-page-scripts','clean-vendor-scripts','clean-fonts','clean-images'])
+gulp.task('serve-dev',['watch'],function(){
+
+//gulp.start('clean');
+gulp.start('jekyll-build');
+
+
+}
 );
 
 
@@ -331,7 +359,7 @@ gulp.task('watch',['serve-dev-assets', 'browser-sync'],function(){
    // gulp.watch(path.join(dist, '*/*.rb'), ['html']);
     // --> JS
     gulp.watch(config.js+"/**/*.js", ['dev-scripts']);
-     gulp.watch(config.css+"/**/*.css", ['dev-styles']);
+     gulp.watch(config.css+"/**/*.scss", ['dev-styles']);
 
 });
 

@@ -6,10 +6,6 @@ var source='src';
 var assets='assets';
 var temp='tmp';
  var config = {
-
-alljs: [
-      './assets/*.js'
-    ],
      temp:temp,
      build: './src/assets',
      source: source,
@@ -18,7 +14,7 @@ alljs: [
      html: source + '/**/*.html',
      images: assets + '/images/**/**/**/*.*',
      index: source + '/index.html',
-     sass: assets + '/_sass/*.scss',
+     sass: assets + '/css/pages/_sass/*.scss',
      js:assets + '/js',
     /**
      * browser sync

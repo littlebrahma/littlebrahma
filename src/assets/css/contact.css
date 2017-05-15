@@ -134,6 +134,37 @@ a {
 .hero .blogHeight {
   padding: 40px 0 100px; }
 
+.hero .blog-row {
+  padding: 80px 20px 80px 35px;
+  max-width: 1866px;
+  margin: 0 auto; }
+  .hero .blog-row .selectSection__title {
+    font-family: "montserrat-bold";
+    font-size: 22px;
+    line-height: 42px; }
+  .hero .blog-row .selectSection__border {
+    border-bottom: 4px solid #414042;
+    width: 60px;
+    margin-bottom: 50px;
+    margin-top: 5px; }
+
+.hero .blog-filter {
+  padding-bottom: 40px; }
+  .hero .blog-filter__img {
+    width: 100%;
+    vertical-align: middle; }
+
+.hero .selectSection__title {
+  font-family: "montserrat-bold";
+  font-size: 22px;
+  line-height: 42px; }
+
+.hero .selectSection__border {
+  border-bottom: 4px solid #414042;
+  width: 60px;
+  margin-bottom: 50px;
+  margin-top: 5px; }
+
 @media screen and (min-width: 1200px) and (max-width: 1248px) {
   .hero input[type=radio]:not(old) + label {
     font-size: 17px; } }
@@ -199,7 +230,10 @@ a {
     margin: 0 auto;
     width: 286px;
     padding-top: 15px;
-    text-align: center; } }
+    text-align: center; }
+  .hero .blog-filter {
+    padding-left: 0;
+    padding-right: 0; } }
 
 @media only screen and (min-width: 1366px) and (max-width: 1866px) {
   .hero .commonHeight__heading {
@@ -223,6 +257,28 @@ a {
   .hero .commonHeight__img {
     height: 365px;
     width: 380px; } }
+
+@media screen and (min-width: 1866px) {
+  .hero .blog-row .selectSection__title {
+    font-size: 28px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero .blog-row {
+    padding: 40px 20px 0px 35px; }
+    .hero .blog-row .selectSection__title {
+      font-size: 20px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero .blog-row {
+    padding: 40px 0 0px; }
+    .hero .blog-row .selectSection__title {
+      font-size: 18px;
+      text-align: center; }
+    .hero .blog-row .selectSection__border {
+      margin: 5px auto 25px; }
+  .hero .blog-filter {
+    padding-left: 0;
+    padding-right: 0; } }
 
 .hero .commonHeader {
   background-color: transparent;
