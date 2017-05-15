@@ -4,12 +4,20 @@
   var gulp = require('gulp');
   var path = require('path');
   var del = require('del');
+  var gh_deploy      = require('gulp-gh-pages');
   
   var $ = require('gulp-load-plugins')({
     lazy: true
   });
 
 var colors = $.util.colors;
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(gh_deploy())
+});
 
 var deploy=config.deploy;
   /**
