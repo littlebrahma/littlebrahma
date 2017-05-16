@@ -159,6 +159,7 @@ $ternary-contentfamily: "raleway-bold";
         padding-top: 0;
         width: 75%;
         &__details {
+            margin: 30px 0px;
             h1 {
                 font-family: $ternary-titlefamily;
                 font-size: 14px;
@@ -172,6 +173,7 @@ $ternary-contentfamily: "raleway-bold";
                 color: #666;
                 line-height: 20px;
                 margin-bottom: 20px;
+                margin-top: 10px;
             }
         }
     }
@@ -214,6 +216,7 @@ $ternary-contentfamily: "raleway-bold";
     }
     .lifeContainer {
         &__details {
+            margin: 60px 0px;
             h1 {
                 font-family: $ternary-titlefamily;
                 font-size: 15px;
@@ -226,6 +229,7 @@ $ternary-contentfamily: "raleway-bold";
                 font-size: 13px;
                 color: #666;
                 line-height: 21px;
+                margin-top: 20px;
                 margin-bottom: 40px;
             }
         }
