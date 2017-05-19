@@ -2,14 +2,15 @@
     .commonHeader {
         background-color: transparent;
         padding: 20px 0 20px;
-        position: fixed;
+        position: fixed; 
         width: 100%;
-        z-index: 1;
+        z-index: 1; 
         background-color: transparent;
         &__logo {
             margin-left: 35px;
             display: inline-block;
             width: 50px;
+            
         }
         &__lists{
             display: inline-block;

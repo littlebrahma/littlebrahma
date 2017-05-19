@@ -1,5 +1,8 @@
 language: ruby
 rvm:
 - 2.1.1
+install:
+  - bundle install --path vendor/bundle
+  - npm install
 script:
-- bundle exec jekyll build
+- gulp build && bundle exec jekyll build

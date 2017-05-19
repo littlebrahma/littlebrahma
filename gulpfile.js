@@ -115,7 +115,7 @@ var deploy=config.deploy;
    return gulp
     .src(config.temp+'/js/**/*.js')
         .pipe(gulp.dest(config.build+'/js'))
-        .pipe(browserSync.reload({stream:true, once: true}));;  
+        //.pipe(browserSync.reload({stream:true, once: true}));;  
 
 
  })
@@ -149,10 +149,7 @@ var deploy=config.deploy;
       .pipe(gulp.dest(config.build + '/img/'));
   });
 
-  gulp.task('sass-watcher', function () {
-    gulp.watch([config.sass], ['dev-style']);
-  });
-
+ 
 
  /**
    * Build everything
@@ -330,15 +327,12 @@ gulp.task('build-css',['optimize-css','optimize-vendor-css']);
 
 
 
-// -->
-// Default task
-// <--
 
 gulp.task('clean',['clean-fonts','clean-page-styles','clean-vendor-styles','clean-page-scripts','clean-vendor-scripts','clean-fonts','clean-images'])
-gulp.task('serve-dev',['watch'],function(){
+gulp.task('serve-dev',['jekyll-build'],function(){
 
 //gulp.start('clean');
-gulp.start('jekyll-build');
+gulp.start('browser-sync');
 
 
 }
@@ -346,7 +340,7 @@ gulp.start('jekyll-build');
 
 
 var exec = require('child_process').exec;
-gulp.task('jekyll-build', function(cb) {
+gulp.task('jekyll-build',['serve-dev-assets'],function(cb) {
   // build Jekyll
   exec('jekyll build', function(err) {
     if (err) return cb(err); // return error
@@ -355,34 +349,32 @@ gulp.task('jekyll-build', function(cb) {
 });
 
 
-gulp.task('watch',['serve-dev-assets', 'browser-sync'],function(){
-
-// gulp.watch(config.+"**", ['html']);
-    // gulp.watch([
-    //     path.join(dist, '*.html'),
-    //     path.join(dist, '*/*.html'),
-    //     path.join(dist, '*/*.md')
-    // ], ['html']);
-    // --> Ruby
-   // gulp.watch(path.join(dist, '*/*.rb'), ['html']);
-    // --> JS
-    gulp.watch(config.js+"/**/*.js", ['dev-scripts']);
-     gulp.watch(config.css+"/**/*.scss", ['dev-styles']);
-
-});
-
 
 // -->
 // Browser Sync
 // <--
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync',['jekyll-build'], function() {
     browserSync.init(null, {
         server: {
             baseDir: "./" + deploy
         }
     });
+     gulp.watch(config.js+"/**/*.js", ['rebuild']);
+     gulp.watch(config.css+"/**/*.scss", ['rebuild']);
 });
-// Reload all Browsers
-gulp.task('bs-reload', function () {
-    browserSync.reload();
+
+
+gulp.task('rebuild',['jekyll-build'],function(){
+
+browserSync.reload();
+
 });
+
+
+// -->
+// Default task
+// <--
+
+gulp.task('default',['serve-dev']);
+
+
