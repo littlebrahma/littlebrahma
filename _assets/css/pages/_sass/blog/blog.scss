@@ -1,0 +1,69 @@
+.hero {
+	.blogBg {
+		background-color: #27AAE1;
+	}
+	
+		.blogWholeBG {
+			background-color: #f1f2f2;
+			.blogDetail {
+				margin: 0 30px;
+				color: #5D5D5D;
+				&__title {
+					font-family: $ternary-titlefamily;
+					font-size: $primary-contentfont;
+					line-height: 20px;
+					padding: 12px 0 3px;
+				}
+				&__border {
+					width: 40px;
+					border-bottom: 2px solid #5D5D5D;
+				}
+				&__para {
+					font-family: $primary-contentfamily;
+					font-size: $secondary-contentfont;
+					margin-bottom: 20px;
+					line-height: 20px;
+				}
+			}
+			.authorSection {
+				padding: 7px 0 0;
+				&__title {
+					font-size: $secondary-contentfont;
+					font-family: $ternary-titlefamily;
+					color: #5D5D5D;
+				}
+				&__para {
+					font-size: $ternary-contentfont;
+					font-family: $primary-contentfamily;
+					margin: 4px 0;
+					color: #333;
+				}
+				&__date {
+					font-size: $ternary-contentfont;
+					font-family: $secondary-titlefamily;
+					color: #808285;
+					vertical-align: middle;
+					padding-right: 30px;
+				}
+			}
+		}
+		.blogClock {
+			padding: 0 0 20px; 
+			text-align: right;
+			& img {
+				margin: 1px 5px 0;
+	    		width: 12px;
+	    		vertical-align: middle;
+			}
+			.blog__pad {
+				margin-bottom: 20px;
+			}
+		}
+	.blog__pad-img {
+				padding:0 15px;
+			}
+	.blog-pad__img {
+		width: 46px;  
+	}
+	
+}
