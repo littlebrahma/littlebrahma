@@ -1,5 +1,8 @@
 .hero {
-    #text1,#text2,#text3,#text4 {
+    #text1,
+    #text2,
+    #text3,
+    #text4 {
         display: none;
         opacity: 0;
     }
@@ -34,7 +37,7 @@
         height: 530px;
         position: fixed;
         width: 500px;
-        margin-left:40px;
+        margin-left: 40px;
         &__img {
             background-image: url("/assets/img/homepage/sprite.png");
             background-repeat: no-repeat;
@@ -46,7 +49,6 @@
             top: 132px;
         }
     }
-    
     #background_image1 {
         background-image: url("/assets/img/homepage/ANIMATIONS/3.gif");
         display: none;
@@ -68,24 +70,26 @@
         padding-top: 150px;
         float: right;
         &__heading {
-            font-size: $secondary-headingfont;
+            font-size: 30px;
             font-family: $ternary-titlefamily;
             margin: 8px 0 10px 0;
-            line-height: 60px;
-            letter-spacing: 1px;
-            width: 400px;
+            line-height: 40px;
+            letter-spacing: 0.01em;
+            width: 280px;
+            margin-bottom: 0;
         }
         &__para {
             font-family: $secondary-contentfamily;
-            font-size: $secondary-contentfont;
-            line-height: 25px;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.01em;
+            margin-top: 30px;
+            margin-bottom: 30px;
             width: 400px;
         }
         &__button {
             background-color: #f1123e;
-             border:2px solid #f1123e;  
+            border: 2px solid #f1123e;
             border-radius: 15px;
             padding: 8px 15px;
             outline: none;
@@ -95,13 +99,12 @@
             font-family: $ternary-contentfamily;
             cursor: pointer;
         }
-
-       &__button:hover{
-                    background-color:#241141; 
-                    border:2px solid #f1123e;   
-            }
+        &__button:hover {
+            background-color: #241141;
+            border: 2px solid #f1123e;
+        }
         &__link {
-            padding:4px 0 7px;
+            padding: 4px 0 7px;
         }
         &__border {
             width: 50px;
@@ -142,7 +145,7 @@
         display: none;
     }
     .tooltip {
-        position:relative;
+        position: relative;
         // z-index: 20;    
     }
     .tooltip span {
@@ -161,43 +164,24 @@
         width: 105px;
         font-size: 14px;
         font-family: $ternary-contentfamily;
-
     }
-    // @media screen and (min-width: 1866px) { 
-    //     .homepageContent {
-    //         &__img {
-    //             width: 480px;
-    //             height: 500px;
-    //         }
-    //         &__heading {
-    //             font-size: 77px;
-    //         }
-    //         &__para {
-    //             font-size: $primary-contentfont;
-    //         }
-    //         &__button {
-    //             font-size: $secondary-contentfont;;
-    //         }
-    //     }
-    // }
-   
-     @media screen and (min-width: 1367px) and (max-width: 1865px) {
+    @media screen and (min-width: 1367px) and (max-width: 1865px) {
         .homepageContent {
             &__img {
                 width: 380px;
                 height: 400px;
             }
         }
-
     }
     @media screen and (min-width: 320px) and (max-width: 1024px) {
-        .slick-prev,.slick-next {
+        .slick-prev,
+        .slick-next {
             color: #fff;
             z-index: 1;
             display: none !important;
         }
         .arrow-right {
-             color: #ffc700;
+            color: #ffc700;
             float: right;
             position: fixed;
             right: 5%;
@@ -208,10 +192,10 @@
             cursor: pointer;
             height: 30px;
             width: 30px;
-            visibility:hidden;
+            visibility: hidden;
         }
         .arrow-left {
-        visibility:hidden;
+            visibility: hidden;
             color: #ffc700;
             left: 5%;
             position: fixed;
@@ -264,7 +248,7 @@
             }
             &__button {
                 margin-bottom: 125px;
-            } 
+            }
             &__commomheight {
                 outline: none;
                 border: none;
@@ -288,10 +272,9 @@
         .homepageBgImg__img1 {
             position: relative;
         }
-       
-         .tooltip:hover span {
-        top: 32px;
-        right: 0;
+        .tooltip:hover span {
+            top: 32px;
+            right: 0;
         }
         .homepageFooter {
             padding-top: 20px;
@@ -302,51 +285,60 @@
         }
     }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .homepageContent{
-    margin-top: 90px;
-        &__commomheight {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-          }
-        &__img {
-          height: 400px;
-          }
-        &__heading {
-                font-size: 36px;
-                margin: 10px 0 0px;
-                letter-spacing: 4px;
+        .homepageContent {
+            margin-top: 90px;
+            &__commomheight {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__img {
+                height: 400px;
+            }
+            &__heading {
+                font-size: 24px;
+                margin: 30px 0 20px;
+                letter-spacing: 0.01em;
                 width: 100%;
+                line-height: 30px;
             }
-          &__button {
-                margin-bottom:0px;
+            &__para {
+                font-size: 11px;
+                letter-spacing: 0.01em;
+                line-height: 19px;
+                margin-bottom: 30px !important;
+                width: 600;
+                margin: 0 auto;
             }
-        #img1 {
-            left: 28%;
-            top: 29%;
-            width:210px;
+            &__button {
+                margin-bottom: 0px;
+            }
+            #img1 {
+                left: 28%;
+                top: 29%;
+                width: 210px;
+            }
+            #img2 {
+                left: 38%;
+                top: 29%;
+                width: 180px;
+            }
+            #img3 {
+                left: 32%;
+                top: -6%;
+                width: 175px;
+            }
+            #img4 {
+                left: 38.5%;
+                top: 28px;
+                width: 210px;
+            }
+            #img5 {
+                left: 39%;
+                top: 2%;
+                width: 145px;
+            }
         }
-        #img2 {
-            left: 38%;
-            top: 29%;
-            width:180px;
-        }
-        #img3 {
-            left: 32%;
-            top: -6%;
-            width:175px;
-        }
-        #img4 {
-            left: 38.5%;
-            top: 28px;
-            width:210px;
-        }
-        #img5 {
-            left: 39%;
-            top: 2%;
-            width: 145px;
-        }      
-       }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
         .homepageBg {
@@ -366,20 +358,21 @@
                 height: 200px;
             }
             &__heading {
-                font-size: 18px;
-                margin: 0 0 0;
-                line-height: 44px;
+                font-size: 17px;
+                margin: 20 0 20px;
+                line-height: 24px;
             }
             &__para {
-                  font-size: 10px;
-    line-height: 16px;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 18px; 
+                font-size: 10px;
+                line-height: 18px;
+                letter-spacing: 0.01em;
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 20px;
             }
             &__button {
                 margin-bottom: 40px;
-            }  
+            }
         }
         .homepageBgImg__img1 {
             height: 90px;
@@ -396,7 +389,7 @@
         #img3 {
             left: 31%;
             top: 5%;
-           width: 74px;
+            width: 74px;
         }
         #img4 {
             height: 80px;
@@ -410,8 +403,46 @@
             width: 70px;
         }
         .tooltip:hover span {
-        top: 32px;
-        right: 0;
+            top: 32px;
+            right: 0;
+        }
+    }
+    @media only screen and (min-width:1366px) and (max-width:1866px) {
+        .homepageContent {
+            padding-top: 100px;
+            &__heading {
+                font-size: 38px;
+                line-height: 50px;
+                letter-spacing: 0.01em;
+                width: 320px;
+                margin-bottom: 0;
+            }
+            &__para {
+                font-size: 13px;
+                letter-spacing: 0.01em;
+                line-height: 22px;
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+            &__link {}
+        }
+    }
+    @media only screen and (min-width:1866px) and (max-width:2560px) {
+        .homepageContent {
+            padding-top: 100px;
+            &__heading {
+                font-size: 46px;
+                line-height: 55px;
+                letter-spacing: 0.01em;
+                margin-bottom: 0;
+            }
+            &__para {
+                font-size: 14px;
+                letter-spacing: 0.01em;
+                line-height: 24px;
+                margin-top: 40px;
+                margin-bottom: 50px;
+            }
         }
     }
 }
