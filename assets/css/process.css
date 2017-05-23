@@ -674,7 +674,7 @@ a {
   width: 280px; }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
     .hero .img1 {
-      width: 40%;
+      width: 50%;
       margin-top: 60px; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .hero .img1 {
@@ -834,7 +834,7 @@ a {
       position: relative;
       left: 0rem; }
     .hero .processBgContent__allign {
-      border-bottom: 1px dashed blue; }
+      border-bottom: 1px dashed #00A49A; }
     .hero .processBgContent__allign:last-child {
       border: none; }
     .hero .processBgContent .processContent {
