@@ -124,7 +124,8 @@ a {
   .hero .commonHeight__heading {
     font-size: 30px;
     font-family: "montserrat-bold";
-    letter-spacing: 0.01em; }
+    letter-spacing: 0.01em;
+    line-height: 40px; }
   .hero .commonHeight__para {
     font-family: 'raleway-medium';
     font-size: 14px;
@@ -180,7 +181,9 @@ a {
     height: 100%;
     padding: 4rem 0rem 3rem 0rem; }
     .hero .commonHeight__heading {
-      font-size: 24px; }
+      font-size: 24px;
+      letter-spacing: 0.01em;
+      line-height: 30px; }
     .hero .commonHeight__para {
       font-size: 13px;
       letter-spacing: 0.05em;
@@ -217,7 +220,9 @@ a {
     height: 100%;
     padding: 0rem 0rem 3rem 0rem; }
     .hero .commonHeight__heading {
-      font-size: 17px; }
+      font-size: 17px;
+      line-height: 24px;
+      letter-spacing: 0.01em; }
     .hero .commonHeight__para {
       font-size: 12px;
       letter-spacing: 0.05em;
@@ -247,7 +252,8 @@ a {
     letter-spacing: 0.01em; }
   .hero .commonHeight__para {
     font-size: 16px;
-    line-height: 24px; }
+    line-height: 24px;
+    letter-spacing: 0.05em; }
   .hero .commonHeight__img {
     height: 287px;
     width: 300px; }
@@ -263,6 +269,7 @@ a {
 @media only screen and (min-width: 1866px) and (max-width: 2560px) {
   .hero .commonHeight__heading {
     font-size: 46px;
+    line-height: 55px;
     letter-spacing: 0.01em; }
   .hero .commonHeight__para {
     font-size: 18px;
@@ -671,7 +678,10 @@ a {
   .hero .commonFooter {
     padding: 0 0 25px; } }
 
-.hero #text1, .hero #text2, .hero #text3, .hero #text4 {
+.hero #text1,
+.hero #text2,
+.hero #text3,
+.hero #text4 {
   display: none;
   opacity: 0; }
 
@@ -739,18 +749,20 @@ a {
   padding-top: 150px;
   float: right; }
   .hero .homepageContent__heading {
-    font-size: 48px;
+    font-size: 30px;
     font-family: "montserrat-bold";
     margin: 8px 0 10px 0;
-    line-height: 60px;
-    letter-spacing: 1px;
-    width: 400px; }
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    width: 280px;
+    margin-bottom: 0; }
   .hero .homepageContent__para {
     font-family: "raleway-light";
     font-size: 12px;
-    line-height: 25px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 400px; }
   .hero .homepageContent__button {
     background-color: #f1123e;
@@ -828,7 +840,8 @@ a {
     height: 400px; } }
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
-  .hero .slick-prev, .hero .slick-next {
+  .hero .slick-prev,
+  .hero .slick-next {
     color: #fff;
     z-index: 1;
     display: none !important; }
@@ -936,10 +949,18 @@ a {
     .hero .homepageContent__img {
       height: 400px; }
     .hero .homepageContent__heading {
-      font-size: 36px;
-      margin: 10px 0 0px;
-      letter-spacing: 4px;
-      width: 100%; }
+      font-size: 24px;
+      margin: 30px 0 20px;
+      letter-spacing: 0.01em;
+      width: 100%;
+      line-height: 30px; }
+    .hero .homepageContent__para {
+      font-size: 11px;
+      letter-spacing: 0.01em;
+      line-height: 19px;
+      margin-bottom: 30px !important;
+      width: 600;
+      margin: 0 auto; }
     .hero .homepageContent__button {
       margin-bottom: 0px; }
     .hero .homepageContent #img1 {
@@ -976,15 +997,16 @@ a {
       width: 200px;
       height: 200px; }
     .hero .homepageContent__heading {
-      font-size: 18px;
-      margin: 0 0 0;
-      line-height: 44px; }
+      font-size: 17px;
+      margin: 20 0 20px;
+      line-height: 24px; }
     .hero .homepageContent__para {
       font-size: 10px;
-      line-height: 16px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
       width: 80%;
       margin: 0 auto;
-      margin-bottom: 18px; }
+      margin-bottom: 20px; }
     .hero .homepageContent__button {
       margin-bottom: 40px; }
   .hero .homepageBgImg__img1 {
@@ -1012,3 +1034,34 @@ a {
   .hero .tooltip:hover span {
     top: 32px;
     right: 0; } }
+
+@media only screen and (min-width: 1366px) and (max-width: 1866px) {
+  .hero .homepageContent {
+    padding-top: 100px; }
+    .hero .homepageContent__heading {
+      font-size: 38px;
+      line-height: 50px;
+      letter-spacing: 0.01em;
+      width: 320px;
+      margin-bottom: 0; }
+    .hero .homepageContent__para {
+      font-size: 13px;
+      letter-spacing: 0.01em;
+      line-height: 22px;
+      margin-top: 30px;
+      margin-bottom: 40px; } }
+
+@media only screen and (min-width: 1866px) and (max-width: 2560px) {
+  .hero .homepageContent {
+    padding-top: 100px; }
+    .hero .homepageContent__heading {
+      font-size: 46px;
+      line-height: 55px;
+      letter-spacing: 0.01em;
+      margin-bottom: 0; }
+    .hero .homepageContent__para {
+      font-size: 14px;
+      letter-spacing: 0.01em;
+      line-height: 24px;
+      margin-top: 40px;
+      margin-bottom: 50px; } }

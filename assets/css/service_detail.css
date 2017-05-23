@@ -124,7 +124,8 @@ a {
   .hero .commonHeight__heading {
     font-size: 30px;
     font-family: "montserrat-bold";
-    letter-spacing: 0.01em; }
+    letter-spacing: 0.01em;
+    line-height: 40px; }
   .hero .commonHeight__para {
     font-family: 'raleway-medium';
     font-size: 14px;
@@ -180,7 +181,9 @@ a {
     height: 100%;
     padding: 4rem 0rem 3rem 0rem; }
     .hero .commonHeight__heading {
-      font-size: 24px; }
+      font-size: 24px;
+      letter-spacing: 0.01em;
+      line-height: 30px; }
     .hero .commonHeight__para {
       font-size: 13px;
       letter-spacing: 0.05em;
@@ -217,7 +220,9 @@ a {
     height: 100%;
     padding: 0rem 0rem 3rem 0rem; }
     .hero .commonHeight__heading {
-      font-size: 17px; }
+      font-size: 17px;
+      line-height: 24px;
+      letter-spacing: 0.01em; }
     .hero .commonHeight__para {
       font-size: 12px;
       letter-spacing: 0.05em;
@@ -247,7 +252,8 @@ a {
     letter-spacing: 0.01em; }
   .hero .commonHeight__para {
     font-size: 16px;
-    line-height: 24px; }
+    line-height: 24px;
+    letter-spacing: 0.05em; }
   .hero .commonHeight__img {
     height: 287px;
     width: 300px; }
@@ -263,6 +269,7 @@ a {
 @media only screen and (min-width: 1866px) and (max-width: 2560px) {
   .hero .commonHeight__heading {
     font-size: 46px;
+    line-height: 55px;
     letter-spacing: 0.01em; }
   .hero .commonHeight__para {
     font-size: 18px;
@@ -688,7 +695,9 @@ a {
   .service-detail__title {
     text-transform: uppercase;
     font-family: montserrat-bold;
-    font-size: 35px;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    line-height: 28px;
     margin-bottom: 0;
     color: #424043; }
   .service-detail__underline {
@@ -697,12 +706,14 @@ a {
   .service-detail__subtitle {
     text-transform: uppercase;
     font-family: montserrat-bold;
-    font-size: 21px;
+    font-size: 17px;
+    letter-spacing: 0.02em;
     color: #F69320; }
   .service-detail__para {
     font-family: raleway-medium;
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
     text-align: justify;
     margin-bottom: 57px; }
   .service-detail__link {
@@ -717,16 +728,24 @@ a {
 
 @media screen and (min-width: 1866px) {
   .service-detail {
-    padding: 78px 50px;
-    /* &__title {
-    font-size: 46px;  
-	} */ }
+    padding: 78px 50px 120px; }
     .service-detail__img {
       width: 250px; }
+    .service-detail__title {
+      font-size: 32px;
+      letter-spacing: 0.02em;
+      line-height: 40px; }
     .service-detail__subtitle {
-      font-size: 24px; }
+      font-size: 24px;
+      letter-spacing: 0.02em;
+      line-height: 34px;
+      margin: 0; }
     .service-detail__para {
-      font-size: 16px; }
+      font-size: 14px;
+      margin-top: 50px;
+      margin-bottom: 100px;
+      line-height: 24px;
+      letter-spacing: 0.01em; }
     .service-detail__underline {
       border-bottom: 5px #424043 solid;
       width: 78px; } }
@@ -740,33 +759,67 @@ a {
     width: 1090px;
     margin: 0 auto; } }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .service-detail {
-    padding: 78px 20px; }
+    padding: 78px 20px;
+    width: 80%;
+    margin: 0 auto; }
     .service-detail__img {
       width: 170px; }
     .service-detail__title {
-      font-size: 32px; }
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: 0.02em; }
+    .service-detail__subtitle {
+      font-size: 15px;
+      letter-spacing: 0.02em; }
     .service-detail__underline {
       width: 55px; }
     .service-detail__para {
-      font-size: 12px;
-      line-height: 21px; } }
+      font-size: 11px;
+      line-height: 19px;
+      letter-spacing: 0.01em; } }
 
-@media screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .service-detail {
     padding: 40px 0px 60px;
-    text-align: center; }
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; }
     .service-detail__img {
       width: 130px; }
     .service-detail__title {
-      font-size: 25px;
-      margin-top: 20px; }
+      font-size: 16px;
+      margin-top: 40px;
+      letter-spacing: 0.02em;
+      line-height: 20px; }
     .service-detail__subtitle {
-      font-size: 16px; }
+      font-size: 14px;
+      margin-top: 30px;
+      letter-spacing: 0.02em; }
     .service-detail__para {
-      font-size: 11px; }
+      font-size: 10px;
+      line-height: 18px;
+      letter-spacing: 0.01em; }
     .service-detail__underline {
       margin: 0 auto 30px;
-      width: 40px;
+      width: 60px;
+      margin: 0 auto;
+      padding-top: 10px;
       border-bottom: 2px #424043 solid; } }
+
+@media only screen and (min-width: 1366px) and (max-width: 1866px) {
+  .service-detail {
+    padding-bottom: 100px; }
+    .service-detail__title {
+      font-size: 24px;
+      margin-top: 20px;
+      letter-spacing: 0.02em;
+      line-height: 40px; }
+    .service-detail__subtitle {
+      font-size: 18px;
+      letter-spacing: 0.02em; }
+    .service-detail__para {
+      font-size: 13px;
+      letter-spacing: 0.01em;
+      line-height: 22px; } }

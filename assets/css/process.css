@@ -124,7 +124,8 @@ a {
   .hero .commonHeight__heading {
     font-size: 30px;
     font-family: "montserrat-bold";
-    letter-spacing: 0.01em; }
+    letter-spacing: 0.01em;
+    line-height: 40px; }
   .hero .commonHeight__para {
     font-family: 'raleway-medium';
     font-size: 14px;
@@ -180,7 +181,9 @@ a {
     height: 100%;
     padding: 4rem 0rem 3rem 0rem; }
     .hero .commonHeight__heading {
-      font-size: 24px; }
+      font-size: 24px;
+      letter-spacing: 0.01em;
+      line-height: 30px; }
     .hero .commonHeight__para {
       font-size: 13px;
       letter-spacing: 0.05em;
@@ -217,7 +220,9 @@ a {
     height: 100%;
     padding: 0rem 0rem 3rem 0rem; }
     .hero .commonHeight__heading {
-      font-size: 17px; }
+      font-size: 17px;
+      line-height: 24px;
+      letter-spacing: 0.01em; }
     .hero .commonHeight__para {
       font-size: 12px;
       letter-spacing: 0.05em;
@@ -247,7 +252,8 @@ a {
     letter-spacing: 0.01em; }
   .hero .commonHeight__para {
     font-size: 16px;
-    line-height: 24px; }
+    line-height: 24px;
+    letter-spacing: 0.05em; }
   .hero .commonHeight__img {
     height: 287px;
     width: 300px; }
@@ -263,6 +269,7 @@ a {
 @media only screen and (min-width: 1866px) and (max-width: 2560px) {
   .hero .commonHeight__heading {
     font-size: 46px;
+    line-height: 55px;
     letter-spacing: 0.01em; }
   .hero .commonHeight__para {
     font-size: 18px;
@@ -684,7 +691,8 @@ a {
   width: 280px; }
   @media only screen and (min-width: 320px) and (max-width: 768px) {
     .hero .img1 {
-      width: 100%; } }
+      width: 50%;
+      margin-top: 60px; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .hero .img1 {
       width: 100%; } }
@@ -721,15 +729,19 @@ a {
       border-top: 5px solid #ffc600;
       padding-top: 2px; }
     .hero .processBgContent .processContent__heading {
-      font-size: 26px;
+      font-size: 17px;
       font-family: "montserrat-bold";
-      letter-spacing: 0.65px;
+      letter-spacing: 0.02em;
+      line-height: 20px;
+      margin-top: 25px;
+      margin-bottom: 25px;
       text-transform: uppercase; }
     .hero .processBgContent .processContent__para {
       font-size: 12px;
       font-family: "raleway-light";
-      line-height: 25px;
-      letter-spacing: 0.24px; }
+      line-height: 20px;
+      letter-spacing: 0.01em;
+      margin: 0px; }
     .hero .processBgContent .processContent__hr1 {
       border-bottom: 4px solid #ffc600;
       margin-right: 304px; }
@@ -792,9 +804,12 @@ a {
         top: 18rem;
         position: absolute; }
       .hero .processBgContent .processContent__heading {
-        font-size: 20px;
+        font-size: 15px;
         font-family: "montserrat-bold";
-        letter-spacing: 0.65px; }
+        letter-spacing: 0.02em;
+        line-height: 18px;
+        margin-top: 20px;
+        margin-bottom: 15px; }
       .hero .processBgContent .processContent__hLine {
         font-family: "montserrat-bold";
         letter-spacing: 0.65px;
@@ -804,10 +819,10 @@ a {
         border-top: 3px solid #ffc600;
         padding-top: 2px; }
       .hero .processBgContent .processContent__para {
-        font-size: 10px;
+        font-size: 11px;
         font-family: "raleway-light";
-        line-height: 25px;
-        letter-spacing: 0.24px; }
+        line-height: 19px;
+        letter-spacing: 0.01em; }
     .hero .processBgContent__allign {
       padding-bottom: 90px; }
     .hero .processBgContent__allign1 {
@@ -826,8 +841,8 @@ a {
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .hero .processBgContent {
     background-color: #1A1746;
-    padding: 120px 0px 0px 0px;
-    max-width: 1866px;
+    padding: 60px 0px 0px 0px;
+    max-width: 75%;
     margin: 0 auto; }
     .hero .processBgContent__img {
       width: 70%;
@@ -835,20 +850,29 @@ a {
     .hero .processBgContent__leftSpacing {
       position: relative;
       left: 0rem; }
+    .hero .processBgContent__allign {
+      border-bottom: 1px dashed #00A49A; }
+    .hero .processBgContent__allign:last-child {
+      border: none; }
     .hero .processBgContent .processContent {
       width: 100%;
       margin-left: 0;
       color: #fff;
-      position: relative; }
+      position: relative;
+      text-align: center; }
       .hero .processBgContent .processContent__heading {
         font-size: 12px;
         font-family: "montserrat-bold";
-        letter-spacing: 0.65px; }
+        letter-spacing: 0.65px;
+        margin-top: 0;
+        padding-bottom: 18px;
+        width: 200px;
+        margin: 0 auto; }
       .hero .processBgContent .processContent__para {
         font-size: 10px;
         font-family: "raleway-light";
         line-height: 18px;
-        letter-spacing: 0.24px;
+        letter-spacing: 0.01em;
         width: 90%; }
       .hero .processBgContent .processContent__mobilePara {
         width: 100% !important; }
@@ -870,7 +894,9 @@ a {
         color: #ffc600;
         display: inline-block;
         border-top: 3px solid #ffc600;
-        padding-top: 2px; }
+        padding-top: 2px;
+        margin-top: 20px;
+        margin-bottom: 10px; }
       .hero .processBgContent .processContent__line {
         width: 10rem;
         top: 15rem;
@@ -896,3 +922,25 @@ a {
     .hero .processBgContent__adjust2 {
       padding-left: 0px;
       padding-right: 0px; } }
+
+@media only screen and (min-width: 1366px) and (max-width: 1866px) {
+  .hero .processBgContent .processContent__heading {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    margin-top: 35px;
+    line-height: 30px; }
+  .hero .processBgContent .processContent__para {
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.01em; } }
+
+@media only screen and (min-width: 1866px) {
+  .hero .processBgContent .processContent__heading {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    margin-top: 35px;
+    line-height: 34px; }
+  .hero .processBgContent .processContent__para {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em; } }

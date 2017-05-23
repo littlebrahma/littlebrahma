@@ -124,7 +124,8 @@ a {
   .hero .commonHeight__heading {
     font-size: 30px;
     font-family: "montserrat-bold";
-    letter-spacing: 0.01em; }
+    letter-spacing: 0.01em;
+    line-height: 40px; }
   .hero .commonHeight__para {
     font-family: 'raleway-medium';
     font-size: 14px;
@@ -180,7 +181,9 @@ a {
     height: 100%;
     padding: 4rem 0rem 3rem 0rem; }
     .hero .commonHeight__heading {
-      font-size: 24px; }
+      font-size: 24px;
+      letter-spacing: 0.01em;
+      line-height: 30px; }
     .hero .commonHeight__para {
       font-size: 13px;
       letter-spacing: 0.05em;
@@ -217,7 +220,9 @@ a {
     height: 100%;
     padding: 0rem 0rem 3rem 0rem; }
     .hero .commonHeight__heading {
-      font-size: 17px; }
+      font-size: 17px;
+      line-height: 24px;
+      letter-spacing: 0.01em; }
     .hero .commonHeight__para {
       font-size: 12px;
       letter-spacing: 0.05em;
@@ -247,7 +252,8 @@ a {
     letter-spacing: 0.01em; }
   .hero .commonHeight__para {
     font-size: 16px;
-    line-height: 24px; }
+    line-height: 24px;
+    letter-spacing: 0.05em; }
   .hero .commonHeight__img {
     height: 287px;
     width: 300px; }
@@ -263,6 +269,7 @@ a {
 @media only screen and (min-width: 1866px) and (max-width: 2560px) {
   .hero .commonHeight__heading {
     font-size: 46px;
+    line-height: 55px;
     letter-spacing: 0.01em; }
   .hero .commonHeight__para {
     font-size: 18px;
