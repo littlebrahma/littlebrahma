@@ -102,7 +102,10 @@ $common-width: 100%;
         margin-left: -2.5em;
         line-height: 1.5em;
         font-family: $primary-contentfamily;
-        font-size: 18px;
+        //font-size: 18px;
+        font-size: 13px;
+        letter-spacing: .05em;
+        word-spacing: .035em;
         margin-bottom: 30px;
     }
     input[type=radio]:not(old)+label>.select__radio {
@@ -171,8 +174,9 @@ $common-width: 100%;
         .selectSection {
             &__title {
                 font-family: $ternary-titlefamily;
-                font-size: $ternary-headingfont;
-                line-height: 42px;
+                font-size: 22px;
+                line-height: 30px;
+                letter-spacing: .02em;
             }
             &__border {
                 border-bottom: $border-bottom;
@@ -202,7 +206,7 @@ $common-width: 100%;
                 margin-top: 5px;
             }
         }
-    // // @media screen and (min-width: 1866px) {
+     @media screen and (min-width: 1866px) and (max-width:2560px) {
     // //     .commonHeight {
     // //         &__heading {
     // //             font-size: $primary-headingfont;
@@ -216,16 +220,13 @@ $common-width: 100%;
     //     input[type="radio"]:not(old) + label {
     //         font-size: $ternary-headingfont;
     //     }
+     }
+   // @media screen and (min-width: 1200px) and (max-width: 1248px) {
+    //   input[type=radio]:not(old)+label {
+    //     font-size: 17px;
+    //  }
     // }
-    @media screen and (min-width: 1200px) and (max-width: 1248px) {
-        input[type=radio]:not(old)+label {
-            font-size: 17px;
-        }
-    }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        input[type="radio"]:not(old)+label {
-            font-size: 12px;
-        }
         // .commonHeight {
         //     height: 100%;
         //     padding: 4rem 0rem 3rem 0rem;
@@ -241,6 +242,11 @@ $common-width: 100%;
         }
     }
     @media only screen and (min-width:768px) and (max-width:1024px) {
+        input[type="radio"]:not(old)+label {
+            font-size: 12px;
+            //letter-spacing: 0.05em;
+            word-spacing: .03em;
+        }
         .commonHeight {
             height: 100%;
             padding: 4rem 0rem 3rem 0rem;
@@ -259,12 +265,23 @@ $common-width: 100%;
                 width: 200px;
             }
         }
+        .blog-row {
+            .selectSection {
+                &__title {
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: .02em;
+                }
+            }
+        }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
         input[type="radio"]:not(old)+label {
             font-size: 11px;
             font-family: $ternary-contentfamily;
             margin: 0 12px 8px 0;
+            letter-spacing: 0px;
+            word-spacing: .02em;
         }
         input[type=radio]:not(old) {
             display: none;
@@ -323,8 +340,22 @@ $common-width: 100%;
                 width: 300px;
             }
         }
+         input[type="radio"]:not(old)+label {
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            word-spacing: .038em;
+        }
+        .blog-row {
+            .selectSection {
+                &__title {
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: .02em;
+                }
+            }
+        }
     }
-    @media only screen and (min-width:1866px) {
+    @media only screen and (min-width:1866px) and (max-width:2560px){
 
         .commonHeight {
             &__heading {
@@ -341,26 +372,29 @@ $common-width: 100%;
                 width: 380px;
             }
         }
-    }
-
-
-    @media screen and (min-width: 1866px) {
+         input[type="radio"]:not(old)+label {
+            font-size: 16px;
+            //letter-spacing: 0.05em;
+            word-spacing: .042em;
+        }
         .blog-row {
             .selectSection {
                 &__title {
-                    font-size: 28px;
+                    font-size: 32px;
+                    line-height: 40px;
+                    letter-spacing: .02em;
                 }
             }
         }
     }
+
+
+    @media screen and (min-width: 1866px) {
+        
+    }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         .blog-row {
             padding: 40px 20px 0px 35px;
-            .selectSection {
-                &__title {
-                    font-size: 20px;
-                }
-            }
         }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -368,7 +402,9 @@ $common-width: 100%;
             padding: 40px 0 0px;
             .selectSection {
                 &__title {
-                    font-size: 18px;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: .02em;
                     text-align: center;
                 }
                 &__border {
