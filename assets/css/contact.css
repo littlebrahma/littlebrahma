@@ -662,7 +662,7 @@ a {
     padding: 0 0 25px; } }
 
 .contact-us {
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
 
 .contact {
   width: 70%;
@@ -704,7 +704,8 @@ a {
   .contact__msg {
     height: 80px;
     font-family: raleway-italic;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    padding-top: 10px; }
   .contact__submit {
     padding: 9px 24px;
     background-color: #ec1944;
@@ -735,24 +736,79 @@ a {
     .contact__content {
       padding-top: 40px; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .commonHeader {
     position: static; }
+  .contact-us {
+    margin-bottom: 15px; }
   .contact {
     padding: 30px 0px 50px; }
     .contact__map__iframe {
       height: 215px; }
     .contact__underline {
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-bottom: 15px; }
     .contact__form-inside {
       width: 228px;
       margin-left: auto;
       margin-right: auto; }
     .contact__content {
       padding-top: 25px;
-      text-align: center; }
+      text-align: center;
+      width: 80%;
+      margin: 0 auto; }
+    .contact__title {
+      font-size: 14px;
+      line-height: 0.02em;
+      font-family: montserrat-bold;
+      margin-bottom: 20px; }
+    .contact__address {
+      font-size: 11px;
+      line-height: 0.02em;
+      line-height: 18px;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      font-family: montserrat-regular; }
   .contact-us {
     padding: 0px;
     margin-bottom: 30px; }
   .write-to-us {
     padding: 0px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact__title {
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    font-family: montserrat-bold; }
+  .contact__address {
+    font-size: 11px;
+    line-height: 0.02em;
+    line-height: 18px;
+    font-family: montserrat-regular; } }
+
+@media only screen and (min-width: 1366px) and (max-width: 1866px) {
+  .contact__title {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    font-family: montserrat-bold;
+    margin-bottom: 15px; }
+  .contact__address {
+    font-size: 11px;
+    line-height: 0.02em;
+    line-height: 18px;
+    font-family: montserrat-regular; } }
+
+@media only screen and (min-width: 1866px) {
+  .contact__title {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    font-family: montserrat-bold;
+    margin-bottom: 20px;
+    line-height: 34px; }
+  .contact__address {
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    line-height: 18px;
+    font-family: montserrat-regular;
+    margin-top: 20px; } }
