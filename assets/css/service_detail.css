@@ -718,7 +718,7 @@ a {
     line-height: 20px;
     letter-spacing: 0.01em;
     text-align: justify;
-    margin-bottom: 57px; }
+    margin-bottom: 40px; }
   .service-detail__link {
     text-decoration: none;
     color: white;
@@ -781,7 +781,8 @@ a {
     .service-detail__para {
       font-size: 11px;
       line-height: 19px;
-      letter-spacing: 0.01em; } }
+      letter-spacing: 0.01em;
+      margin-bottom: 40px; } }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .service-detail {
@@ -803,7 +804,8 @@ a {
     .service-detail__para {
       font-size: 10px;
       line-height: 18px;
-      letter-spacing: 0.01em; }
+      letter-spacing: 0.01em;
+      margin-bottom: 30px; }
     .service-detail__underline {
       margin: 0 auto 30px;
       width: 60px;
