@@ -361,10 +361,7 @@ $common-width: 100%;
             }
         }
     }
-<
-    @media only screen and (min-width:1866px) and (max-width:2560px){
-
-    @media only screen and (min-width:1866px) {
+    @media only screen and (min-width:1866px) and (max-width:2560px) {
         .commonHeight {
             &__heading {
                 font-size: 46px;
@@ -398,8 +395,6 @@ $common-width: 100%;
             }
         }
     }
-
-
     @media screen and (min-width: 1866px) {
         
     }
