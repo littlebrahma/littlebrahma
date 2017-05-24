@@ -10,10 +10,11 @@
     margin: 0 auto;
     padding: 120px 0px 75px;
     &__title {
-        font-size: 21px;
+        font-size: 17px;
         font-family: montserrat-bold;
         text-transform: uppercase;
         color: #414042;
+        line-height: 20px;
         margin: 0 0 7px;
     }
     &__map {
@@ -30,6 +31,7 @@
         font-family: montserrat-regular;
         font-size: 11px;
         line-height: 18px;
+        letter-spacing: 0.02em;
         color: #6D6E71;
     }
     &__span {

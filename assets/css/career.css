@@ -697,21 +697,22 @@ a {
     margin-bottom: 37px; }
   .career__header {
     font-family: montserrat-bold;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    line-height: 28px;
     color: #414042;
     margin: 0 0 10px; }
   .career__img {
     display: inline-block; }
   .career__location {
     display: inline-block;
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 10px; }
   .career__title {
-    font-size: 21px;
+    font-size: 18px;
     margin: 55px 0 0; }
   .career__experience {
-    font-size: 14px;
+    font-size: 11px;
     margin-bottom: 20px; }
   .career__link {
     font-size: 12px;
@@ -734,17 +735,55 @@ a {
 .Hyderabad {
   background-color: #5670B6; }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .career__header {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 25px; }
+  .career__location {
+    display: inline-block;
+    font-size: 11px;
+    padding-left: 10px; }
+  .career__title {
+    font-size: 16px; }
+  .career__experience {
+    font-size: 11px; }
+  .career__link {
+    font-size: 11px; } }
+
+@media only screen and (min-width: 1366px) and (max-width: 1866px) {
+  .career__header {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    line-height: 32px; }
+  .career__location {
+    display: inline-block;
+    font-size: 13px;
+    padding-left: 10px; }
+  .career__title {
+    font-size: 20px; }
+  .career__experience {
+    font-size: 12px; }
+  .career__link {
+    font-size: 13px; } }
+
 @media screen and (min-width: 1866px) {
   .career__header {
-    font-size: 40px;
-    line-height: 48px; }
+    font-size: 32px;
+    letter-spacing: 0.02em;
+    line-height: 40px; }
   .career__underline {
-    width: 80px; } }
-
-@media screen and (max-width: 1199px) {
-  .career {
-    max-width: 910px;
-    margin: 0 auto; } }
+    width: 80px; }
+  .career__location {
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 10px; }
+  .career__title {
+    font-size: 21px; }
+  .career__experience {
+    font-size: 12px; }
+  .career__link {
+    font-size: 14px; } }
 
 @media screen and (min-width: 1200px) {
   .career {
@@ -789,7 +828,7 @@ a {
       margin: 5px 0 15px;
       font-size: 10px; }
     .career__link {
-      font-size: 9px; } }
+      font-size: 10px; } }
 
 .career__detail-jobcard {
   position: relative; }
