@@ -744,7 +744,7 @@ a {
   position: relative;
   margin-left: 28%;
   background: -webkit-gradient(left top, #F72B2B, #E0005E);
-  background: -webkit-gradient(linear, left top, right bottom, from(#F72B2B), to(#E0005E));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(top, left), color-stop(#F72B2B), to(#E0005E));
   background: linear-gradient(left top, #F72B2B, #E0005E);
   height: 370px;
   width: 44%;
