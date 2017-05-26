@@ -361,6 +361,7 @@
       gulp.watch(config.js + "/**/*.js", ['rebuild']);
       gulp.watch(config.css + "/**/*.scss", ['rebuild']);
       gulp.watch('./_layouts/**/*.html', ['rebuild']);
+      gulp.watch('./**/*.md', ['rebuild']);
   });
 
 

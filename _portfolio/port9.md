@@ -20,8 +20,8 @@ whatWeDoList:
 - APP DEVELOPMENT
 - WEB DEVELOPMENT
 - Android DEVELOPMENT
-img: "/assets/img/portfolio/image.png"
-imgContent: We use human studies. psychology and multiple analytical tools to define.
+img: "/assets/img/portfolio/Hashworks-Logo.svg"
+imgContent: We use human behavioural studies, psychology and multiple analytical tools to define.
 img1: "/assets/img/portfolio/mob1.png"
 img2: "/assets/img/portfolio/mob2.png"
 img3: "/assets/img/portfolio/mob3.png"
