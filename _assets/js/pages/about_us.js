@@ -75,7 +75,7 @@ if($(window).width()  > 1024){
 	menu: '#myMenu',
     onLeave: function(index, nextIndex, direction){
 		var leavingSection = $(this);
-debugger;
+
 		//after leaving section 2
 		if(index == 2 && direction =='down'){
             

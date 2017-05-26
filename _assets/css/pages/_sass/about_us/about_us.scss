@@ -91,7 +91,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:0 0 40px 0;
     height: 100vh;
  &-right{
       text-align: left;
@@ -169,7 +168,7 @@
     display: flex;
     justify-content: center;  
     color: grey;
-    padding:100px 0;
+    
     height: 100vh;
     align-items:center;
 
@@ -507,7 +506,7 @@ img {
     font-family: "raleway-regular";
     line-height: 18px;
     text-align: left;
-   
+    font-style: italic;
        width: 100%;
     position: relative;
     margin: 0 auto;
@@ -644,7 +643,7 @@ margin:0 auto;
     }
     
     .about-us-left,.our-mission-left {
-        width: 80%;
+        width: 80% ;
         
         position:static;
        
@@ -686,7 +685,7 @@ margin:0 auto;
     font-family: "raleway-regular";
     line-height: 18px;
     text-align: left;
-    
+     font-style: italic;
     margin: 0 auto;
     position: relative;
     }
@@ -783,6 +782,7 @@ margin:0 auto;
      &__quote{
 font-size: 25px;
 line-height: 40px;
+ font-style: italic;
      }
      &__author{
 font-size : 20px;
