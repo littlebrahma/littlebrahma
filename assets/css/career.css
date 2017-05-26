@@ -697,21 +697,22 @@ a {
     margin-bottom: 37px; }
   .career__header {
     font-family: montserrat-bold;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    line-height: 28px;
     color: #414042;
     margin: 0 0 10px; }
   .career__img {
     display: inline-block; }
   .career__location {
     display: inline-block;
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 10px; }
   .career__title {
-    font-size: 21px;
+    font-size: 18px;
     margin: 55px 0 0; }
   .career__experience {
-    font-size: 14px;
+    font-size: 11px;
     margin-bottom: 20px; }
   .career__link {
     font-size: 12px;
@@ -721,6 +722,21 @@ a {
   .career__job-card {
     color: white;
     padding: 30px; }
+  .career .career__detail-action {
+    margin-top: 1rem;
+    padding: 8px 40px;
+    background-color: #ec1944;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 12px;
+    font-family: montserrat-bold;
+    font-size: 10px;
+    border: none;
+    cursor: pointer; }
+    .career .career__detail-action:hover {
+      background-color: #fff;
+      color: #ec1944;
+      border: 1px solid #ec1944; }
 
 .Bangalore {
   background-color: #00A6E4; }
@@ -734,17 +750,97 @@ a {
 .Hyderabad {
   background-color: #5670B6; }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .career__header {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 25px; }
+  .career__location {
+    display: inline-block;
+    font-size: 11px;
+    padding-left: 10px; }
+  .career__title {
+    font-size: 16px; }
+  .career__experience {
+    font-size: 11px; }
+  .career__link {
+    font-size: 11px; }
+  .career .career__detail-heading {
+    font-size: 15px;
+    letter-spacing: 0.02em; }
+  .career .career__detail-para {
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    font-weight: 300;
+    margin: 0; } }
+
+@media only screen and (min-width: 1366px) and (max-width: 1866px) {
+  .career__header {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    line-height: 32px; }
+  .career__location {
+    display: inline-block;
+    font-size: 13px;
+    padding-left: 10px; }
+  .career__title {
+    font-size: 20px; }
+  .career__experience {
+    font-size: 12px; }
+  .career__link {
+    font-size: 13px; }
+  .career .career__detail-heading {
+    font-size: 18px;
+    letter-spacing: 0.02em; }
+  .career .career__detail-para {
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    font-weight: 300;
+    margin: 0; } }
+
 @media screen and (min-width: 1866px) {
   .career__header {
-    font-size: 40px;
-    line-height: 48px; }
+    font-size: 32px;
+    letter-spacing: 0.02em;
+    line-height: 40px; }
   .career__underline {
-    width: 80px; } }
-
-@media screen and (max-width: 1199px) {
-  .career {
-    max-width: 910px;
-    margin: 0 auto; } }
+    width: 80px; }
+  .career__location {
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 10px; }
+  .career__title {
+    font-size: 21px; }
+  .career__experience {
+    font-size: 12px; }
+  .career__link {
+    font-size: 14px; }
+  .career .career__detail-heading {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.02em; }
+  .career .career__detail-para {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    margin: 0; }
+  .career .career__detail-action {
+    margin-top: 1rem;
+    padding: 8px 40px;
+    background-color: #ec1944;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 12px;
+    font-family: montserrat-bold;
+    font-size: 10px;
+    border: none;
+    cursor: pointer; }
+    .career .career__detail-action:hover {
+      background-color: #fff;
+      color: #ec1944;
+      border: 1px solid #ec1944; } }
 
 @media screen and (min-width: 1200px) {
   .career {
@@ -789,7 +885,17 @@ a {
       margin: 5px 0 15px;
       font-size: 10px; }
     .career__link {
-      font-size: 9px; } }
+      font-size: 10px; }
+    .career .career__detail-heading {
+      font-size: 17px;
+      letter-spacing: 0.02em;
+      font-family: montserrat-regular; }
+    .career .career__detail-para {
+      font-size: 10px;
+      font-family: montserrat-regular;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      margin: 0; } }
 
 .career__detail-jobcard {
   position: relative; }
@@ -802,13 +908,16 @@ a {
   margin: 15px 0 0; }
 
 .career__detail-heading {
-  font-size: 21px;
+  font-size: 17px;
+  letter-spacing: 0.02em;
   font-family: montserrat-regular; }
 
 .career__detail-para {
   font-size: 12px;
   font-family: montserrat-regular;
-  line-height: 20px; }
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  margin: 0; }
 
 @media screen and (max-width: 991px) {
   .career__detail-para {

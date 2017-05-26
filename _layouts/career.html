@@ -3,50 +3,47 @@
     {% include common_header.html %}
 </section>
 <div class="career-all">
- 	<div class="row career">
- 	{% include radio3.html %}
- 		<div class="col-lg-8 col-md-7 col-sm-7 col-xs-12 ">
- 	    	<div class="row">
+    <div class="row career">
+        {% include radio3.html %}
+        <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12 ">
+            <div class="row">
 
- 	    	{% assign item = site.career | sort: 'date' %}
-			{% for careers in item %}
-			{% capture category %}{{ careers.category | replace:'/',' ' }}{% endcapture %}
- 		    	<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 job career__card blog-filter {{category}} {{forloop.index}}" data-id="{{forloop.index}}" data-category="{{careers.category}}">
- 		     		<div class="career__job-card {{careers.location}}">
- 		     	 	<img class="career__img" src="/assets/img/career/Icons/Location-Pin.png">
- 		     	 	<h1 class="career__location">{{careers.location}}</h1>
- 		     	 	<h1 class="career__title">{{careers.title}}</h1>
- 		     	 	<h1 class="career__experience">{{careers.years}}</h1>
- 		     	 	<a class="career__link" href="#" data-id="{{forloop.index}}">More</a>
- 		     	</div>
- 		     	</div>
- 		    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 career__card blog-filter job_detail job_detail{{forloop.index}}" data-id="{{forloop.index}}">
- 		     	<div class="career__job-card career__detail-jobcard {{careers.location}}">
- 		     	 	<img class="career__img" src="/assets/img/career/Icons/Location-Pin.png">
- 		     	 	<h1 class="career__location">{{careers.location}}</h1>
-	 		     	<h1 class="career__title">{{careers.title}}</h1>
-	 		     	<h1 class="career__experience">{{careers.years}}</h1>
-	 		     	<a class="career__img2" href="#" data-id="{{forloop.index}}">Less</a>
- 		     	</div>
- 		     	<h2 class="career__detail-heading">Job Description</h2>
- 		    	{% for  job_descr in careers.Job_Description %}
-					<p class="career__detail-para">{{job_descr}}</p>
-				{% endfor %}
-				<h2 class="career__detail-heading">Responsibilities</h2>
-				{% for  job_resp in careers.Responsibilities %}
-					<p class="career__detail-para">{{job_resp}}</p>
-				{% endfor %}
-				<h2 class="career__detail-heading">Skills</h2>
-				{% for  job_skill in careers.Skills %}
-					<p class="career__detail-para">{{job_skill}}</p>
-				{% endfor %}
-				<a href="#"><img class="career__img3" src="/assets/img/career/Icons/Apply.png"></a>
- 		    </div>
- 		    {% endfor %}
+                {% assign item = site.career | sort: 'date' %} {% for careers in item %} {% capture category %}{{ careers.category | replace:'/',' ' }}{% endcapture %}
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 job career__card blog-filter {{category}} {{forloop.index}}" data-id="{{forloop.index}}" data-category="{{careers.category}}">
+                    <div class="career__job-card {{careers.location}}">
+                        <img class="career__img" src="/assets/img/career/Icons/Location-Pin.png">
+                        <h1 class="career__location">{{careers.location}}</h1>
+                        <h1 class="career__title">{{careers.title}}</h1>
+                        <h1 class="career__experience">{{careers.years}}</h1>
+                        <a class="career__link" href="#" data-id="{{forloop.index}}">More</a>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 career__card blog-filter job_detail job_detail{{forloop.index}}" data-id="{{forloop.index}}">
+                    <div class="career__job-card career__detail-jobcard {{careers.location}}">
+                        <img class="career__img" src="/assets/img/career/Icons/Location-Pin.png">
+                        <h1 class="career__location">{{careers.location}}</h1>
+                        <h1 class="career__title">{{careers.title}}</h1>
+                        <h1 class="career__experience">{{careers.years}}</h1>
+                        <a class="career__img2" href="#" data-id="{{forloop.index}}">Less</a>
+                    </div>
+                    <h2 class="career__detail-heading">Job Description</h2>
+                    {% for job_descr in careers.Job_Description %}
+                    <p class="career__detail-para">{{job_descr}}</p>
+                    {% endfor %}
+                    <h2 class="career__detail-heading">Responsibilities</h2>
+                    {% for job_resp in careers.Responsibilities %}
+                    <p class="career__detail-para">{{job_resp}}</p>
+                    {% endfor %}
+                    <h2 class="career__detail-heading">Skills</h2>
+                    {% for job_skill in careers.Skills %}
+                    <p class="career__detail-para">{{job_skill}}</p>
+                    {% endfor %}
+                    <button class="career__detail-action"><a>APPLY</a></button>
+                </div>
+                {% endfor %}
 
- 		</div>
- 	</div>	
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-{% include common_footer.html %}
-{% include footer.html %}
+{% include common_footer.html %} {% include footer.html %}
