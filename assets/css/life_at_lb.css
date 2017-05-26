@@ -280,6 +280,42 @@ a {
     padding-left: 0;
     padding-right: 0; } }
 
+.button-xs {
+  font-size: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-xs {
+  font-size: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-sm {
+  font-size: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-md {
+  font-size: 12px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-lg {
+  font-size: 14px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-xl {
+  font-size: 14px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
 .hero .commonHeader {
   background-color: transparent;
   padding: 20px 0 20px;

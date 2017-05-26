@@ -280,6 +280,42 @@ a {
     padding-left: 0;
     padding-right: 0; } }
 
+.button-xs {
+  font-size: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-xs {
+  font-size: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-sm {
+  font-size: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-md {
+  font-size: 12px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-lg {
+  font-size: 14px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-xl {
+  font-size: 14px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
 .hero .commonHeader {
   background-color: transparent;
   padding: 20px 0 20px;
@@ -717,7 +753,7 @@ a {
   position: relative;
   margin-left: 28%;
   background: -webkit-gradient(left top, #F72B2B, #E0005E);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(top, left), color-stop(#F72B2B), to(#E0005E));
+  background: -webkit-gradient(linear, left top, right bottom, from(#F72B2B), to(#E0005E));
   background: linear-gradient(left top, #F72B2B, #E0005E);
   height: 370px;
   width: 44%;

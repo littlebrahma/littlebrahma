@@ -361,6 +361,7 @@ gulp.task('browser-sync',['jekyll-build'], function() {
     });
      gulp.watch(config.js+"/**/*.js", ['rebuild']);
      gulp.watch(config.css+"/**/*.scss", ['rebuild']);
+      gulp.watch("./**/*.html", ['rebuild']);
 });
 
 
