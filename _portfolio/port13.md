@@ -1,13 +1,13 @@
 ---
-title: Port7
-permalink: "/portfolio/port7/"
+title: Port13
+permalink: "/portfolio/port13/"
 categories:
-- PACKAGING & LABEL
+- BRANDING
 layout: portfolio_detail
 porject_title: MYSTERYBOX
 background-class: portBgImg
 description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum is simply dummy text of the...
+  Dummy text of the printing and typesetting industry.
 porject_subtitle: UI/UX, MOBILE APPLICATION
 project_detail: The Moon is a barren, rocky world without air and water. It has dark
   lava plain on its surface. The Moon is filled wit craters. It has no light of its

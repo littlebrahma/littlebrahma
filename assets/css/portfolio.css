@@ -740,6 +740,7 @@ a {
         font-family: "montserrat-bold";
         font-size: 12px;
         font-weight: bold;
+        outline: none;
         color: white;
         text-transform: uppercase; }
 
