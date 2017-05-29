@@ -307,6 +307,42 @@ a {
     padding-left: 0;
     padding-right: 0; } }
 
+.button-xs {
+  font-size: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-xs {
+  font-size: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-sm {
+  font-size: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-md {
+  font-size: 12px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-lg {
+  font-size: 14px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
+.button-xl {
+  font-size: 14px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-family: "montserrat-bold"; }
+
 .hero .commonHeader {
   background-color: transparent;
   padding: 20px 0 20px;
@@ -798,12 +834,12 @@ a {
     margin-right: 14px;
     vertical-align: middle; }
 
-.hero .scroll-indicators {
+.hero .scroll-indicators, .hero .about-indicators {
   position: fixed;
   right: 70px;
   top: 40%;
   list-style: none; }
-  .hero .scroll-indicators li {
+  .hero .scroll-indicators li, .hero .about-indicators li {
     background-color: #fff;
     border-radius: 50%;
     display: block;
@@ -811,7 +847,7 @@ a {
     margin-bottom: 20px;
     width: 10px;
     cursor: pointer; }
-    .hero .scroll-indicators li.active {
+    .hero .scroll-indicators li.active, .hero .about-indicators li.active {
       background-color: #f1123e; }
 
 .hero .mobTabSection {

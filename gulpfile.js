@@ -348,6 +348,21 @@
   });
 
 
+// -->
+// Browser Sync
+// <--
+gulp.task('browser-sync',['jekyll-build'], function() {
+    browserSync.init(null, {
+        server: {
+            baseDir: "./" + deploy
+        }
+    });
+     gulp.watch(config.js+"/**/*.js", ['rebuild']);
+     gulp.watch(config.css+"/**/*.scss", ['rebuild']);
+      gulp.watch("./**/*.html", ['rebuild']);
+});
+
+
 
   // -->
   // Browser Sync
