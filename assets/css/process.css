@@ -486,7 +486,8 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .hero .commonHeader {
     padding: 20px 0 20px;
-    background-color: transparent; }
+    background-color: transparent;
+    position: absolute; }
     .hero .commonHeader__logo {
       margin-left: 25px; }
     .hero .commonHeader__lists {
@@ -758,7 +759,7 @@ a {
     width: 320px;
     color: #fff;
     position: relative;
-    margin-left: 2rem; }
+    margin: 0rem 3.5rem; }
     .hero .processBgContent .processContent__hLine {
       font-family: "montserrat-bold";
       letter-spacing: 0.65px;
@@ -832,7 +833,8 @@ a {
       width: 150px;
       color: #fff;
       position: relative;
-      margin-left: 0; }
+      margin-left: 0;
+      margin-right: 0; }
       .hero .processBgContent .processContent__line {
         width: 8rem;
         top: 20rem;

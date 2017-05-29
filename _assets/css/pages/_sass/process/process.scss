@@ -42,7 +42,7 @@
             width: 320px;
             color: $secondary-color;
             position: relative;
-            margin-left: 2rem;
+            margin: 0rem 3.5rem;
             &__hLine {
                 font-family: "montserrat-bold";
                 letter-spacing: 0.65px;
@@ -145,6 +145,7 @@
                 color: $secondary-color;
                 position: relative;
                 margin-left: 0;
+                margin-right: 0;
                 // transform: translatey(55px);
                 &__line {
                     // background-image:url("/assets/img/process/right-01.svg");
