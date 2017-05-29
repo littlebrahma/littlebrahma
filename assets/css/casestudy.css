@@ -688,8 +688,9 @@ a {
   padding: 34px 0 40px; }
   .hero .caseDetail__title {
     font-family: "montserrat-bold";
-    font-size: 18px;
-    color: #414042; }
+    font-size: 17px;
+    color: #414042;
+    letter-spacing: .02em; }
   .hero .caseDetail__border {
     border-bottom: 5px solid #414042;
     width: 60px;
@@ -699,7 +700,30 @@ a {
     font-size: 12px;
     color: #6D6E71;
     margin: 18px 0 0;
-    line-height: 20px; }
+    line-height: 20px;
+    letter-spacing: .01em; }
+
+@media screen and (min-width: 1866px) and (max-width: 2560px) {
+  .hero .caseDetail__title {
+    font-size: 24px;
+    line-height: 34px; }
+  .hero .caseDetail__para {
+    font-size: 14px;
+    line-height: 24px; } }
+
+@media screen and (min-width: 1366px) and (max-width: 1866px) {
+  .hero .caseDetail__title {
+    font-size: 18px; }
+  .hero .caseDetail__para {
+    font-size: 13px;
+    line-height: 22px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero .caseDetail__title {
+    font-size: 15px; }
+  .hero .caseDetail__para {
+    font-size: 11px;
+    line-height: 19px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero .caseDetail {
@@ -708,5 +732,10 @@ a {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero .caseDetail {
     padding: 34px 0 14px; }
+    .hero .caseDetail__title {
+      font-size: 14px; }
+    .hero .caseDetail__para {
+      font-size: 10px;
+      line-height: 18px; }
   .hero .casestudyBg {
     margin: 0 auto; } }

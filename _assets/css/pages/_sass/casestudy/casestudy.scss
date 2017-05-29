@@ -3,11 +3,12 @@
 		background-color: #FF1A46;
 	}
 	.caseDetail {
-		padding: 34px 0 40px;
+		padding: 34px 0 40px; 
 		&__title {
 			font-family: $ternary-titlefamily;
-			font-size: 18px;
+			font-size: 17px;
 			color: $ternary-color;
+			letter-spacing: .02em;
 		}
 		&__border {
 			border-bottom: 5px solid $ternary-color;
@@ -20,7 +21,42 @@
 			color: #6D6E71;
 			margin: 18px 0 0;
 			line-height: 20px;
+			letter-spacing: .01em;
 		}
+	}
+	@media screen and (min-width: 1866px) and (max-width: 2560px) {
+		.caseDetail {
+		&__title {
+			font-size: 24px;
+			line-height: 34px;
+		}
+		&__para {
+			font-size: 14px;
+			line-height: 24px;
+		}
+	  }
+	}
+	@media screen and (min-width: 1366px) and (max-width: 1866px) {
+		.caseDetail {
+		&__title {
+			font-size: 18px;
+		}
+		&__para {
+			font-size: 13px;
+			line-height: 22px;
+		}
+	  }
+	}
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		.caseDetail {
+		&__title {
+			font-size: 15px;
+		}
+		&__para {
+			font-size: 11px;
+			line-height: 19px;
+		}
+	  }
 	}
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		.caseDetail {
@@ -30,6 +66,13 @@
 	@media screen and (min-width: 320px) and (max-width: 767px) {
 		.caseDetail {
     		padding: 34px 0 14px;
+    		&__title {
+			font-size: 14px;
+		   }
+		   &__para {
+			font-size: 10px;
+			line-height: 18px;
+		}
 		}
 		.casestudyBg {
 			// height: 100vh;
