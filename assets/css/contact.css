@@ -744,6 +744,22 @@ a {
       background-color: #fff;
       color: #ec1944;
       border: 1px solid #ec1944; }
+  .contact__toastr {
+    width: 427px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #F6FFC6;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    line-height: 40px;
+    margin: 0 auto; }
+    .contact__toastr p {
+      margin: 0;
+      font-size: 12px;
+      font-family: montserrat-regular;
+      padding-left: 1rem;
+      text-align: center; }
 
 @media screen and (min-width: 992px) {
   .contact__iframe {
@@ -799,6 +815,12 @@ a {
       margin: 0 auto;
       margin-bottom: 25px;
       font-family: montserrat-regular; }
+    .contact__toastr {
+      left: 20%;
+      width: 320px; }
+      .contact__toastr p {
+        font-size: 10px;
+        font-weight: 300; }
   .contact-us {
     padding: 0px;
     margin-bottom: 30px; }
@@ -814,7 +836,13 @@ a {
     font-size: 11px;
     line-height: 0.02em;
     line-height: 18px;
-    font-family: montserrat-regular; } }
+    font-family: montserrat-regular; }
+  .contact__toastr {
+    left: 35%;
+    width: 320px; }
+    .contact__toastr p {
+      font-size: 10px;
+      font-weight: 300; } }
 
 @media only screen and (min-width: 1366px) and (max-width: 1866px) {
   .contact__title {
@@ -826,7 +854,12 @@ a {
     font-size: 11px;
     line-height: 0.02em;
     line-height: 18px;
-    font-family: montserrat-regular; } }
+    font-family: montserrat-regular; }
+  .contact__toastr {
+    left: 35%; }
+    .contact__toastr p {
+      font-size: 12px;
+      font-weight: 300; } }
 
 @media only screen and (min-width: 1866px) {
   .contact__title {
@@ -840,4 +873,9 @@ a {
     letter-spacing: 0.02em;
     line-height: 18px;
     font-family: montserrat-regular;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .contact__toastr {
+    left: 40%; }
+    .contact__toastr p {
+      font-size: 12px;
+      font-weight: 300; } }
