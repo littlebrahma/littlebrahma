@@ -18,11 +18,11 @@ project_detail: The Moon is a barren, rocky world without air and water. It has 
 whatWeDoList:
 - UI/UX
 - APP DEVELOPMENT
-img: "/assets/img/portfolio/image.png"
-imgContent: We use human studies. psychology and multiple analytical tools to define.
-img1: "/assets/img/portfolio/mob1.png"
-img2: "/assets/img/portfolio/mob2.png"
-img3: "/assets/img/portfolio/mob3.png"
+img: "/assets/img/portfolio/Hashworks-Logo.svg"
+imgContent: We use human behavioural studies, psychology and multiple analytical tools to define.
+img1: "/assets/img/portfolio/Logo_step 1.svg"
+img2: "/assets/img/portfolio/Logo_step 2.svg"
+img3: "/assets/img/portfolio/Logo_step 3.svg"
 projectTemplate:
 - title: TITLE 2
   img: "/assets/img/portfolio/img1.png"
@@ -35,6 +35,6 @@ porject_description1: The Moon is a barren, rocky world without air and water. I
   has dark lava plain on its surface. The Moon is filled wit craters. It has no light
   of its The Moon is a barren, rocky world without air and water. It has dark lava
   plain on its surface.
-project_img1: "/assets/img/portfolio/img_bg.png"
+project_img1: "/assets/img/portfolio/card 3.1.png"
 ---
 
