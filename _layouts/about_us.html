@@ -10,10 +10,9 @@
       <div id="about_us-img" class="about-us-left__img">      </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-us-right">
-     <h1 class="about-us-right__heading">about us</h1>
+     <h1 class="about-us-right__heading">{{site.data.about_us.title1}}</h1>
       <div class="about-us-right__underline"></div>
-<p class="about-us-right__para">Little Brahma is a family of artists, designers, sculptors and technologist.
-We adapt human experience through art & simplicity.</p>
+<p class="about-us-right__para">{{site.data.about_us.description1}}</p>
       <a class="about-us__button" href="/lifeAtLittleBrahma/">know more</a>
       </div>       
 </div>
@@ -26,10 +25,9 @@ We adapt human experience through art & simplicity.</p>
        <div id="our_mission-img" class="our-mission-left__img">      </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-us-right">
-     <h1 class="our-mission-right__heading">our mission</h1>
+     <h1 class="our-mission-right__heading">{{site.data.about_us.title2}}</h1>
       <div class="our-mission-right__underline"></div>
-<p class="our-mission-right__para">Little brahma is our ultimate design karma.
-We aspire to become a creative almanac for the artistic souls</p>
+<p class="our-mission-right__para">{{site.data.about_us.description2}}</p>
       
       </div>       
 </div>
@@ -49,10 +47,9 @@ We aspire to become a creative almanac for the artistic souls</p>
      <div class="row valuable-clients-block">
       <div class="valuable-clients__cont row">
        <div class=" valuable-clients-left col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-       <h1 class="valuable-clients__heading">valuable clients</h1>
+       <h1 class="valuable-clients__heading">{{site.data.about_us.title3}}</h1>
        <div class="valuable-clients__underline"></div>
- <p class="valuable-clients-left__para">We throb for excellence in everything we manifest to our valuable customers. 
-Our clientele range from the simple to the extreme and we adore them.</p>
+ <p class="valuable-clients-left__para">{{site.data.about_us.description3}}</p>
        
        </div>
 <div class="valuable-clients__testimonials col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
@@ -85,4 +82,15 @@ Our clientele range from the simple to the extreme and we adore them.</p>
 </ul>
    
 </div>
+<script>
+
+var testimonials=[];
+
+{% for testimonial in site.data.about_us.testimonials %}
+
+testimonials[{{forloop.index0}}]={{testimonial | jsonify}};
+
+{% endfor %}
+
+</script>
 {% include footer.html %}

@@ -21,27 +21,29 @@ var aboutUs = {
 
 
 
-var testimonials=[{
+// var testimonials=[{
 
- quote:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!",
-  author: "Anshuman",
-  title: "Director,Dell",
-  logo : "dell"
-},
-{
+//   quote:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!",
+//   author: "Anshuman",
+//   title: "Director,Dell",
+//   logo : "dell"
+// },
+// {
 
- quote:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!",
-  author: "Gopikrishnan Kanan",
-  title: "CEO,Hashworks",
-  logo : "hashworks"
-},
-{
+//  quote:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!",
+//   author: "Gopikrishnan Kanan",
+//   title: "CEO,Hashworks",
+//   logo : "hashworks"
+// },
+// {
 
- quote:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!",
-  author: "Bill Gates",
-  title: "CEO,Locatr",
-  logo : "locatr"
-}];
+//   quote:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!",
+//   author: "Bill Gates",
+//   title: "CEO,Locatr",
+//   logo : "locatr"
+// }];
+
+
 
 
 $('.valuable-clients__quote').text(testimonials[0].quote);
