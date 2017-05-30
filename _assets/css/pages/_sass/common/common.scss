@@ -405,7 +405,7 @@ $common-width: 100%;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         .blog-row {
-            padding: 40px 20px 0px 35px;
+            padding: 40px 20px 0px 30px;
         }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -426,6 +426,10 @@ $common-width: 100%;
         .blog-filter {
             padding-left: 0;
             padding-right: 0;
+        }
+        .blog_commom-row {
+            width: 80%;
+            margin: 0 auto;
         }
     }
 }

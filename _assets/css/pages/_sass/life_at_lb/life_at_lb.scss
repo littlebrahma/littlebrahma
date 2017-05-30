@@ -1,3 +1,4 @@
+
 $mobileHeading: 14px;
 $tabHeading:16px;
 $laptopHeading:18px;
@@ -103,7 +104,7 @@ $ternary-contentfamily: "raleway-bold";
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-image: url('/assets/img/lifeAtLittleBrahma/1_1.png');
+       
     }
     #image1 {
         display: inline-block;
@@ -114,7 +115,7 @@ $ternary-contentfamily: "raleway-bold";
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-image: url('/assets/img/lifeAtLittleBrahma/1_2.png');
+       
     }
     #image2 {
         display: inline-block;
@@ -125,7 +126,7 @@ $ternary-contentfamily: "raleway-bold";
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-image: url('/assets/img/lifeAtLittleBrahma/1_3.png');
+        
     }
     .img_test {
         display: flex;
@@ -146,7 +147,7 @@ $ternary-contentfamily: "raleway-bold";
             margin-bottom: 12px;
         }
         &__second {
-            margin-top: 15px;
+            margin-top: 15px; 
             margin-bottom: 40px;
         }
     }

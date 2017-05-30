@@ -1,5 +1,6 @@
 {% include header.html %}
-   
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
     <section class="detailBg">
     {% include common_header.html %}
       
@@ -7,11 +8,11 @@
        <div>
         <img src="{{page.bannerImg}}" class="commonHeight__mainImg">
         <h5 class="commonHeight__heading">{{page.porject_title}}</h5>
-        <h5 class="commonHeight__para">{{page.porject_subtitle}}</h5>
-       <p class="commonHeight__footer">DOWNLOAD FOR </p>
-        <img src="/assets/img/casestudy/apple.png" class="commonHeight__apple">
-        <span><img src="/assets/img/casestudy/android.png" class="commonHeight__android"></span>
-      </div>
+        <h5 class="banner__subtitle">{{page.porject_subtitle}}</h5>
+       <h6 class="banner__mintitle">DOWNLOAD FOR </h6>
+        <img src="/assets/img/casestudy/apple.png" class="banner__himg">
+        <img src="/assets/img/casestudy/android.png" class="banner__himg">
+      </div> 
       </div>
     </section>
 
@@ -32,11 +33,11 @@
     <div class="challenge__content">{{page.challengeDesc}}<p>
 
 </p></div>
-<img src="{{page.img2}}" class="challenge__img col-lg-12">
-<p>{{page.img2Content}}</p>
+<img src="{{page.img2}}" class="challenge__img">
+<p class="challenge__italic">{{page.img2Content}}</p>
     </div>
     <div class="solution">
-      <h4 class="solution__heading"> SOLUTION </h4>
+      <h1 class="solution__heading"> SOLUTION </h1>
       <hr>
       <div class="solution__content">{{page.solutionDesc}}<p> 
       </p></div>
@@ -61,27 +62,27 @@
     </div>
 
     <div class="GIT">
-      <div class="GIT__heading">PROJECT STATS</div>
+      <h1 class="GIT__heading">PROJECT STATS</h1>
       <hr>
       <div class="GIT__boxes">
       <div class="GIT__box">
         <div class="GIT__box1">
           <p class="GIT__num">{{page.projectStatsNum}}</p><hr>
-          <p>{{page.projectStatspara}}</p>
+          <p class="GIT__para">{{page.projectStatspara}}</p>
           </div>
           <div class="GIT__box2">
           <p class="GIT__num">{{page.projectStatsNum1}}</p><hr>
-          <p>{{page.projectStatspara1}}</p>
+          <p class="GIT__para">{{page.projectStatspara1}}</p>
           </div>
           <div class="GIT__box3">
           <p class="GIT__num">{{page.projectStatsNum2}}</p><hr>
-          <p>{{page.projectStatspara2}}</p>
+          <p class="GIT__para">{{page.projectStatspara2}}</p>
           </div>
         </div>
       </div>
         <div class="GIT__last">
-          <p> WANT TO GET SOME AWESOME PRODUCTS LIKE THIS?</p>
-          <a href="/contact/"><img src="/assets/img/casestudy/CTA.png" class="GIT__img2"></a>
+          <h2 class="GIT__last--heading"> WANT TO GET SOME AWESOME PRODUCTS LIKE THIS?</h2>
+          <a href="/contact/"><button class="GIT__btn">GET IN TOUCH</button></a>
         </div>
 
 
