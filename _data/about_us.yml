@@ -1,0 +1,25 @@
+title1 : about us
+description1 : Little Brahma is a family of artists, designers, sculptors and technologist. We adapt human experience through art & simplicity.
+
+title2 : our mission
+description2 : Little brahma is our ultimate design karma. We aspire to become a creative almanac for the artistic souls.
+
+title3 : valuable clients
+description3 : We throb for excellence in everything we manifest to our valuable customers. Our clientele range from the simple to the extreme and we adore them.
+
+
+testimonials :
+ - quote:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!
+   author: Anshuman
+   title: Director,Dell
+   logo : dell
+
+ - quote:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!
+   author: Gopikrishnan Kanan
+   title: CEO,Hashworks
+   logo : hashworks
+
+ - quote:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!
+   author: Bill Gates
+   title: CEO,Locatr
+   logo : locatr

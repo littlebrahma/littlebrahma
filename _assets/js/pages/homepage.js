@@ -334,21 +334,54 @@ else if (document.addEventListener) //WC3 browsers
 
 //
 
-var animData = {
+var creativeStudioAnimation = {
+        container: document.getElementById('background_image'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/data/creative_studio/data.json'
+    };
+ bodymovin.loadAnimation(creativeStudioAnimation);
+
+
+
+var ourPortfolioAnimation = {
         container: document.getElementById('background_image'),
         renderer: 'svg',
         loop: true,
         autoplay: true,
         path: '/assets/data/data.json'
     };
-    var anim = bodymovin.loadAnimation(animData);
+ //bodymovin.loadAnimation(ourPortfolioAnimation);
 
 
+var ourServiceAnimation = {
+        container: document.getElementById('background_image'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/data/data.json'
+    };
+ //bodymovin.loadAnimation(ourServiceAnimation);
 
-
-
-
+var challangesAnimation = {
+        container: document.getElementById('background_image'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/data/data.json'
+    };
+ //bodymovin.loadAnimation(challangesAnimation);
       
+
+      var eshopAnimation = {
+        container: document.getElementById('background_image'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/data/data.json'
+    };
+ //bodymovin.loadAnimation(eshopAnimation);
 
 /***
 Version    : 0.2 [Beta]
