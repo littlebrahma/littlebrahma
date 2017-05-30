@@ -1,5 +1,11 @@
 (function(){
  var nextslideindex=0;
+
+if($(window).width()  < 1024){
+
+    initalizeSlick();
+}
+
 function init(){
 
     
@@ -71,126 +77,48 @@ function myFunction(scrollDirection){
  $("#slideshow").css('background-position', myimages[nextslideindex]).removeClass("animated fadeIn");
   if(nextslideindex >= 7 && nextslideindex <= 13) 
     {
-
-        $('.landing_container').hide();
-
+      $('.landing_container').hide();
+      $(".scroll-indicators li").removeClass('active');
+          $($(".scroll-indicators li")[1]).addClass('active');
         $($('.landing_container')[1]).show();
-
-        // $('#background_image1').show().addClass("animated fadeInUp");
-        // $('#background_image').hide().addClass("animated fadeInUp");
-        // $('#background_image2').hide().addClass("animated fadeInUp");
-        // $('#background_image3').hide().addClass("animated fadeInUp");
-        // $('#background_image4').hide().addClass("animated fadeInUp");
-        // $('#slideshow').addClass("animated fadeInUp");
-        // $(".homepageBg").css("background-color","#211042");
-        // $("#text4").hide();
-        // $("#text").hide();
-        // $("#text2").hide();
-        // $("#text3").hide();
-        // $("#text1").show().addClass("animated fadeInUp");
-        // $(".scroll-indicators li[data-id=2]").addClass('active');
-        // $(".scroll-indicators li[data-id=1]").removeClass('active');
-        // $(".scroll-indicators li[data-id=3]").removeClass('active');
-        // $(".scroll-indicators li[data-id=4]").removeClass('active');
-        // $(".scroll-indicators li[data-id=5]").removeClass('active');
-        $("#slideshow").css({"height": "235px", "left": "318px", "top": "139px", "width":"214px","opacity":"1"}).addClass("animated fadeIn"); 
+        $("#slideshow").css({"height": "235px", "left": "185px", "top": "280px", "width":"214px","opacity":"1"}).addClass("animated fadeIn"); 
     }
     else if(nextslideindex >= 14 && nextslideindex <= 20)
     {
-        // $('#background_image2').show().addClass("animated fadeInUp");
-        // $('#background_image').hide().addClass("animated fadeInUp");
-        // $('#background_image1').hide().addClass("animated fadeInUp");
-        // $('#background_image3').hide().addClass("animated fadeInUp");
-        // $('#background_image4').hide().addClass("animated fadeInUp");
-        // $('#slideshow').addClass("animated fadeInUp");
-        // $(".homepageBg").css("background-color","#211042");
-       
-        // $("#text").hide();
-        // $("#text1").hide();
-        // $("#text2").hide();
-        // $("#text3").hide();
-        // $("#text4").show().addClass("animated fadeInUp");
-        // $(".scroll-indicators li[data-id=3]").addClass('active');
-        // $(".scroll-indicators li[data-id=1]").removeClass('active');
-        // $(".scroll-indicators li[data-id=5]").removeClass('active');
-        // $(".scroll-indicators li[data-id=4]").removeClass('active');
-        // $(".scroll-indicators li[data-id=2]").removeClass('active');
-       // $("#slideshow").css({"height": "368px", "left": "112%", "top": "-54px", "width":"200px","opacity":"1"}).addClass("animated fadeIn");
+         $('.landing_container').hide();
+         $(".scroll-indicators li").removeClass('active');
+          $($(".scroll-indicators li")[2]).addClass('active');
+        $($('.landing_container')[2]).show();
+        $("#slideshow").css({"height": "368px", "left": "185px", "top": "85px", "width":"200px","opacity":"1"}).addClass("animated fadeIn");
     }
     else if(nextslideindex >= 21 && nextslideindex <= 27) 
     {
 
          $('.landing_container').hide();
-        $($('.landing_container')[2]).show();
-        // $('#background_image3').show().addClass("animated fadeInUp");
-        // $('#background_image').hide().addClass("animated fadeInUp");
-        // $('#background_image1').hide().addClass("animated fadeInUp");
-        // $('#background_image2').hide().addClass("animated fadeInUp");
-        // $('#background_image4').hide().addClass("animated fadeInUp");
-        // $('#slideshow').addClass("animated fadeInUp");
-        // $(".homepageBg").css("background-color","#230F42");
-       
-        // $("#text4").hide();
-        // $("#text1").hide();
-        // $("#text").hide();
-        // $("#text3").hide();
-        // $("#text2").show().addClass("animated fadeInUp");
-        // $('#slideshow').addClass("animated fadeInUp");
-        // $(".scroll-indicators li[data-id=4]").addClass('active');
-        // $(".scroll-indicators li[data-id=1]").removeClass('active');
-        // $(".scroll-indicators li[data-id=2]").removeClass('active');
-        // $(".scroll-indicators li[data-id=3]").removeClass('active');
-        // $(".scroll-indicators li[data-id=5]").removeClass('active');
-       // $("#slideshow").css({"height": "280px", "left": "86%", "top": "-42px", "width":"216px","opacity":"1"}).addClass("animated fadeIn");
-    }
+          $(".scroll-indicators li").removeClass('active');
+          $($(".scroll-indicators li")[3]).addClass('active');
+        $($('.landing_container')[3]).show();
+                $("#slideshow").css({"height": "300px", "left": "155px", "top": "110px", "width":"200px","opacity":"1"}).addClass("animated fadeIn");
+  }
     else if(nextslideindex >= 28 && nextslideindex <= 34) 
         {
-        // $('#background_image4').show().addClass("animated fadeInUp");
-        // $('#background_image').hide().addClass("animated fadeInUp");
-        // $('#background_image1').hide().addClass("animated fadeInUp");
-        // $('#background_image2').hide().addClass("animated fadeInUp");
-        // $('#background_image3').hide().addClass("animated fadeInUp");
-        // $('#slideshow').addClass("animated fadeInUp");
-        // $(".homepageBg").css("background-color","#230F42");
        
-        // $("#text4").hide();
-        // $("#text1").hide();
-        // $("#text2").hide();
-        // $("#text").hide();
-        // $("#text3").show().addClass("animated fadeInUp");
-        // $(".scroll-indicators li[data-id=5]").addClass('active');
-        // $(".scroll-indicators li[data-id=1]").removeClass('active');
-        // $(".scroll-indicators li[data-id=3]").removeClass('active');
-        // $(".scroll-indicators li[data-id=2]").removeClass('active');
-        // $(".scroll-indicators li[data-id=4]").removeClass('active');
-        $('.landing_container').hide();
-        $($('.landing_container')[3]).show();
-       // $("#slideshow").css({"height": "290px", "left": "68%", "top": "-50px", "width":"296px","opacity":"1"}).addClass("animated fadeIn");
+         $(".scroll-indicators li").removeClass('active');
+         $($(".scroll-indicators li")[4]).addClass('active');
+       
         
+        $('.landing_container').hide();
+        $($('.landing_container')[4]).show();
+                        $("#slideshow").css({"height": "300px", "left": "165px", "top": "110px", "width":"300px","opacity":"1"}).addClass("animated fadeIn");
+
     }
     else if(nextslideindex >= 0 && nextslideindex <= 6) 
     {
 
          $('.landing_container').hide();
         $($('.landing_container')[0]).show();
-        // $('#background_image').show().addClass("animated fadeInUp");
-        // $('#background_image1').hide().addClass("animated fadeInUp");
-        // $('#background_image2').hide().addClass("animated fadeInUp");
-        // $('#background_image3').hide().addClass("animated fadeInUp");
-        // $('#background_image4').hide().addClass("animated fadeInUp");
-        // $(".homepageBg").css("background-color","#241141");
-         
-        // $('#slideshow').addClass("animated fadeInUp");
-        // $("#text4").hide();
-        // $("#text1").hide();
-        // $("#text2").hide();
-        // $("#text3").hide();
-        // $("#text").show().addClass("animated fadeInUp");
-        // $(".scroll-indicators li[data-id=1]").addClass('active');
-        // $(".scroll-indicators li[data-id=2]").removeClass('active');
-        // $(".scroll-indicators li[data-id=3]").removeClass('active');
-        // $(".scroll-indicators li[data-id=4]").removeClass('active');
-        // $(".scroll-indicators li[data-id=5]").removeClass('active');
+       $(".scroll-indicators li").removeClass('active');
+          $($(".scroll-indicators li")[0]).addClass('active');
         $("#slideshow").css({}).addClass("animated fadeIn");
     }
 
@@ -272,13 +200,13 @@ $(".scroll-indicators li").click(function(){
 function initalizeSlick(){
 $('.homepageCln').slick({
         dots: true,
-        arrows: true,
+        arrows: false,
         infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade:false,
-        appendDots:'.scroll-indicators',
+        // appendDots:'.scroll-indicators',
         cssEase: 'ease-out',
     });
 
