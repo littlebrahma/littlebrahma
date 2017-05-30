@@ -1,4 +1,11 @@
 (function(){
+  $('.solution__circle').slick({
+  dots: true,
+  speed: 500,
+  arrows:true,
+  slidesToShow:1,
+  slidesToScroll:1
+});
 if (screen.width >= 1199) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > $(".detailBg").height() - $(".commonHeader").height()){  
@@ -25,6 +32,7 @@ if ($(this).scrollTop() > $(".detailBg").height() - $(".commonHeader").height())
     $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
         $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
   }
+
 });
 }
 // else if (screen.width < 768) {

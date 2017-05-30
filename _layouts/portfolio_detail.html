@@ -3,38 +3,38 @@
     {% include common_header.html %}
     
       <div class="banner">
-      <div>
-      <img class="banner__logo" src="/assets/img/portfolio/logo.png">
-      <h1 class="banner__title">MYSTERYBOX</h1>
-      <h4 class="banner__subtitle">UI/UX, MOBILE APPLICATION</h4>
-      <h6 class="banner__mintitle">DOWNLOAD FOR</h6>
-      <img class="banner__himg" src="/assets/img/portfolio/apple.png">
-      <img class="banner__himg" src="/assets/img/portfolio/android.png">
+         <div>
+             <img class="banner__logo" src="/assets/img/portfolio/logo.png">
+             <h1 class="banner__title">MYSTERYBOX</h1>
+             <h4 class="banner__subtitle">UI/UX, MOBILE APPLICATION</h4>
+             <h6 class="banner__mintitle">DOWNLOAD FOR</h6>
+             <img class="banner__himg" src="/assets/img/portfolio/apple.png">
+             <img class="banner__himg" src="/assets/img/portfolio/android.png">
+        </div>
       </div>
-      </div>
-      </section>
+</section>
       <div class="middle-section">
-    <div class="middle-section1">
-    <div class="row center-xs start-md start-sm start-lg">
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 left-align">
-    <h2 class="heading">{{page.porject_title}}</h2>
-    <hr class="middle-section1__hr1">
-    <p class="middle-section1__algn">
-      {{page.project_detail}}
-    </p>
-    </div>
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 left-align">
-    <h2 class="heading">WHAT WE DID</h2>
-    <hr class="middle-section1__hr2"> 
-    {% for portfolioList in page.whatWeDoList %}    
-    <p class="middle-section1__algn1">{{portfolioList}}</p>
-     {% endfor %}   
-    </div>
-    </div>
-    <img class="middle-section1__img1" src="{{page.img}}">
-    <p class="italic">{{page.imgContent}}</p> 
-    </div>
-    </div>
+          <div class="middle-section1">
+            <div class="row center-xs start-md start-sm start-lg">
+              <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 left-align">
+                <h2 class="heading">{{page.porject_title}}</h2>
+                <hr class="middle-section1__hr1">
+                <p class="middle-section1__algn">
+                {{page.project_detail}}
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 left-align">
+                <h2 class="heading">WHAT WE DID</h2>
+                <hr class="middle-section1__hr2"> 
+                {% for portfolioList in page.whatWeDoList %}    
+                <p class="middle-section1__algn1">{{portfolioList}}</p>
+                {% endfor %}   
+              </div>
+            </div>
+            <img class="middle-section1__img1" src="{{page.img}}">
+            <p class="italic">{{page.imgContent}}</p> 
+          </div>
+      </div>
     <div class="middle-section2">
     <div class="middle-section2__inner">
     <div class="middle-section2__allign">
