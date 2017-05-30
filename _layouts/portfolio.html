@@ -4,8 +4,8 @@
  	<div class="commonHeight">
   <div>
  		<img src="/assets/img/service/Mudras/Portfolio.png" class="commonHeight__img">
-		<h5 class="commonHeight__heading">PORTFOLIO</h5>
-		<p class="commonHeight__para">As we give each element an expert finish, the end product that comes out of our design stable is rich with features and smoothly moulded. It’s made for keepers, not finders.</p>
+		<h5 class="commonHeight__heading">{{site.data.portfolio.title}}</h5>
+		<p class="commonHeight__para">{{site.data.portfolio.description}}</p>
     </div>
 	</div>
  </section>
@@ -13,7 +13,7 @@
  <div class="row blog-row">
 		{% include radio1.html %}
 		<div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 portDetail">
-			<div class="row">
+			<div class="row blog_commom-row">
 				{% assign item = site.portfolio | sort: 'date' %}
 				{% for port in item %}
 				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 blog-filter {{port.categories}}">
