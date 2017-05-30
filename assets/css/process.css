@@ -570,7 +570,10 @@ a {
   bottom: 0; }
 
 .hero .footerMob {
-  display: none; }
+  display: none;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto; }
 
 .hero .footer_innerRow {
   margin-bottom: 30px; }
@@ -633,7 +636,8 @@ a {
   width: 84%;
   outline: none;
   padding-top: 10px;
-  background-color: transparent; }
+  background-color: transparent;
+  font-size: 14px; }
 
 .hero .footerColumn__button {
   font-size: 14px;
@@ -650,7 +654,6 @@ a {
 
 @media screen and (max-width: 1199px) {
   .hero .footer_challenge-eshop {
-    padding-top: 75px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
@@ -662,8 +665,6 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .hero .footerMargin {
     margin: 0 60px; }
-  .hero .footerRow {
-    padding: 50px 0 0; }
   .hero .footerVerticalSeparator {
     padding: 0; }
   .hero .footerColumn {
@@ -671,21 +672,7 @@ a {
     .hero .footerColumn__border {
       width: 84%; } }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .hero .footerMargin {
-    margin: 0 50px; }
-  .hero .footer_challenge-eshop {
-    -webkit-box-pack: initial;
-        -ms-flex-pack: initial;
-            justify-content: initial; }
-  .hero .footer_justify {
-    -webkit-box-pack: initial;
-        -ms-flex-pack: initial;
-            justify-content: initial; }
-  .hero .footer_eshop {
-    padding-top: 0px; } }
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .hero .footerMargin {
     margin: 0;
     display: none; }
@@ -695,7 +682,8 @@ a {
     padding: 0; }
   .hero .footerMob {
     display: block;
-    margin: 0 15px 0;
+    width: 80%;
+    margin: 0 auto;
     padding-top: 25px; }
     .hero .footerMob__para {
       font-family: "montserrat-light";
@@ -707,14 +695,24 @@ a {
   .hero .imageBorder {
     border-bottom: 1px solid #fff;
     margin-bottom: 15px;
-    padding-bottom: 15px; }
+    padding-bottom: 25px; }
+    .hero .imageBorder h1 {
+      font-size: 12px;
+      font-family: "montserrat-light";
+      margin-top: 2rem; }
   .hero .footerColumn__title {
     font-size: 16px; }
   .hero .footerColumn__subheading {
     font-size: 12px;
     margin: 12px 0 15px; }
   .hero .footerColumn__button {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-size: 12px;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #000; }
+  .hero .footerColumn__heading {
+    width: 100%; }
   .hero .commonFooter {
     padding: 0 0 25px; } }
 
@@ -898,6 +896,7 @@ a {
     .hero .processBgContent .processContent {
       width: 100%;
       margin-left: 0;
+      margin-right: 0;
       color: #fff;
       position: relative;
       text-align: center; }
