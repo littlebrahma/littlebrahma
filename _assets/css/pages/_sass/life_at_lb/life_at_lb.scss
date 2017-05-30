@@ -1,3 +1,6 @@
+---
+---
+
 $mobileHeading: 14px;
 $tabHeading:16px;
 $laptopHeading:18px;
@@ -9,6 +12,9 @@ $ternary-titlefamily: "montserrat-bold";
 $primary-contentfamily: "raleway-regular";
 $secondary-contentfamily: "raleway-light";
 $ternary-contentfamily: "raleway-bold";
+$lbImage1 : '{{site.data.life_at_lb.lbImg1}}';
+$lbImage2 : '{{site.data.life_at_lb.lbImg2}}';
+$lbImage3 : '{{site.data.life_at_lb.lbImg3}}';
 .lifeContainer {
     width: 70%;
     margin-left: auto;
@@ -103,7 +109,7 @@ $ternary-contentfamily: "raleway-bold";
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-image: url('/assets/img/lifeAtLittleBrahma/1_1.png');
+        background-image: url('/assets/img/lifeAtLittleBrahma/'+ $lbImage1);
     }
     #image1 {
         display: inline-block;
@@ -114,7 +120,7 @@ $ternary-contentfamily: "raleway-bold";
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-image: url('/assets/img/lifeAtLittleBrahma/1_2.png');
+        background-image: url('/assets/img/lifeAtLittleBrahma/'+ $lbImage2);
     }
     #image2 {
         display: inline-block;
@@ -125,7 +131,7 @@ $ternary-contentfamily: "raleway-bold";
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-image: url('/assets/img/lifeAtLittleBrahma/1_3.png');
+        background-image: url('/assets/img/lifeAtLittleBrahma/' + $lbImage3);
     }
     .img_test {
         display: flex;
