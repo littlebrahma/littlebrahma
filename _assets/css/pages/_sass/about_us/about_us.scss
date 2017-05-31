@@ -237,7 +237,7 @@
 
 
 &__unorder-list {
-    width: 390px;
+    
     padding: 40px 0 0;
     margin: 30px auto;
     border-top: rgb(216, 210, 210) 1px solid;
@@ -254,10 +254,10 @@
 }
 
 .scroll-indicators {
-        position: fixed;
-        right: 70px;
-        top: 48%;
-        list-style: none;
+            position: fixed;
+    right: 70px;
+    top: 43%;
+    list-style: none;
         li{
             a{
             background-color: #fff;

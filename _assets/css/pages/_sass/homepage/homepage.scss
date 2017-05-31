@@ -1,6 +1,9 @@
 body{
     background-color: #241141;
 }
+.homepageContent__img{
+    display: none;
+}
 
 .hero {
 #img1,#img2,#img3,#img4,#img5{
@@ -10,10 +13,10 @@ body{
     display:flex!important;
 }    
     .homepageBg {
-        // background-color: #241141;
-        background-image: url("/assets/img/homepage/BG.jpg");
+         background-color: #241141;
+        //background-image: url("/assets/img/homepage/BG.jpg");
         //overflow-y: hidden;
-        height: 100vh;
+        //height: 100vh;
     }
     .homepageCln{
         position: relative;
@@ -22,9 +25,13 @@ body{
         position: relative;
     }
     .hopageDesk,.homepageRow,.homepageCln,.homepageCln .row {
-        height: 100vh;
+       // height: 100vh;
     width: 1024px;
     margin: 0 auto;
+     margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0; 
+      height: 780px;
         
     }
      
@@ -34,7 +41,7 @@ body{
         height: 530px;
     float:left;
     width: 500px;
-   
+   position: relative;
     
         &__img {
             background-image: url("/assets/img/homepage/sprite.png");
@@ -46,6 +53,7 @@ body{
     position: absolute;
     top: 260px;
         }
+       
     }
     // #background_image1 {
     //      display: none;
@@ -168,6 +176,17 @@ body{
     }
     @media screen and (min-width: 320px) and (max-width: 1024px) {
 
+        .homepageContent__img {
+    display: block;
+}
+.homepageBgImg svg{
+    position: absolute;
+    top: 0px;
+}
+
+
+
+
 #slideshow{
     display: none;
 }
@@ -184,35 +203,45 @@ body{
     margin: 0 auto;
 }
 #img1{
+    
     display: block;
+    position: relative;
+    top: 55px;
+        left: 150px;
+    z-index: 1;
+    height: 200px;
 }
 #img2{
-    display: block;
-    position: absolute;
-    left: 124px;
-    top: 86px;
+        display: block;
+    position: relative;
+    left: 238px;
+    top: 139px;
     height: 154px;
+    z-index: 1;
 }
 #img3{
-    display: block;
-    position: absolute;
-    left: 107px;
-    top: -21px;
-    height: 231px;
+   display: block;
+    position: relative;
+    left: 202px;
+    top: 0px;
+    height: 268px;
+    z-index: 1;
 }
 #img4{
     display: block;
-        position: absolute;
+    position: relative;
     height: 220px;
-    left: 70px;
-    top: -60px;
+    left: 182px;
+    top: -14px;
+    z-index: 1;
 }
 #img5{
-    display: block;
-        position: absolute;
+       display: block;
+    position: relative;
     height: 200px;
-    left: 86px;
-    top: -39px;
+    left: 196px;
+    top: 13px;
+    z-index: 1;
 }
  .homepageBgImg {
     /* background-repeat: no-repeat; */
@@ -251,7 +280,6 @@ body{
                 background-size: contain;
                 background-position: center;
                 height: 400px;
-    position: absolute;
     top: 50px;
     left: 216px;
     z-index: 1;
@@ -293,10 +321,10 @@ body{
         }
 
          .hopageDesk,.homepageRow,.homepageCln,.homepageCln .row {
-        height: 100vh;
+       // height: 100vh;
     width: 1024px;
     margin: 0 auto;
-        
+       
     }
     }
     @media screen and (min-width: 320px) and (max-width: 1024px) {
@@ -305,12 +333,16 @@ body{
         height: auto;
     width: initial;
     margin: 0 auto;
+    position: static;
         
     }
     .homepageCln,.homepageCln .row {
         width:80%;
         margin:0 auto;
-            height: initial;
+            position: relative;
+            height:auto;
+
+  
     }
         .commonHeader{
             position: static;
@@ -344,31 +376,7 @@ body{
             &__button {
                 margin-bottom: 0px;
             }
-            #img1 {
-                left: 28%;
-                top: 29%;
-                width: 210px;
-            }
-            #img2 {
-                left: 38%;
-                top: 29%;
-                width: 180px;
-            }
-            #img3 {
-                left: 32%;
-                top: -6%;
-                width: 175px;
-            }
-            #img4 {
-                left: 38.5%;
-                top: 28px;
-                width: 210px;
-            }
-            #img5 {
-                left: 39%;
-                top: 2%;
-                width: 145px;
-            }
+            
         }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -382,8 +390,49 @@ body{
         //     // margin-top: -22px;
         //     height: 90vh;
         // }
+        .homepageBgImg{
+         height:225px;
+        }
+        #img1{
+           left: 17px;
+    height: 132px;
+    top:28px;
+        }
+        #img2{
+            display: block;
+    position: relative;
+    left: 71px;
+    top: 69px;
+    height: 100px;
+    z-index: 1;
+        }
+        #img3{
+            display: block;
+    position: relative;
+    left: 67px;
+    top: -17px;
+    height: 163px;
+    z-index: 1;
+        }
+        #img4{
+                display: block;
+    position: relative;
+    height: 133px;
+    left: 47px;
+    top: -18px;
+    z-index: 1;
+        }
+        #img5{
+            display: block;
+    position: relative;
+    height: 131px;
+    left: 52px;
+    top: -14px;
+    z-index: 1;
+        }
         .homepageContent {
             height: 100%;
+            padding-bottom: 2rem;
             &__img {
                 width: 200px;
                 height: 200px;
@@ -405,10 +454,7 @@ body{
                 margin-bottom: 40px;
             }
         }
-        .homepageBgImg {
-           height: 220px;
-           width:220px;
-        }
+       
         
         .tooltip:hover span {
             top: 32px;
