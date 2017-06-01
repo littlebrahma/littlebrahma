@@ -58,7 +58,7 @@ $(window).resize(function() {
 if ($(this).scrollTop() > $(".blogBg").height() - $(".commonHeader").height()){  
     $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
     $(".selectSection").css({"position":"fixed","top":"140px"});
-    $(".rightDiv").css({"position":"relative","left":"25%","top":"0px"});
+    $(".rightDiv").css({"position":"relative","left":"33.3%","top":"0px"});
     $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
         $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
   }

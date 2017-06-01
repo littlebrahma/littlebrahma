@@ -2,7 +2,7 @@
 title: WEB & MOBILE APP DESIGN
 permalink: "/casestudy/case10/"
 categories:
-- WEB & MOBILE APP DESIGN
+- WEB & MOBILE DESIGN
 layout: casestudy_detail
 landing_image: "/assets/img/blog/1_1.png"
 description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.

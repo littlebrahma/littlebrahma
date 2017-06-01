@@ -108,9 +108,10 @@ $common-width: 100%;
         line-height: 1.5em;
         font-family: $primary-contentfamily;
         //font-size: 18px;
-        font-size: 13px;
+        font-size: 14px;
         letter-spacing: .05em;
         word-spacing: .035em;
+        line-height: 22px;
         margin-bottom: 30px;
     }
     input[type=radio]:not(old)+label>.select__radio {
@@ -173,8 +174,8 @@ $common-width: 100%;
         padding: 40px 0 100px;
     }
     .blog-row {
-        padding: 80px 20px 80px 35px;
-        max-width: 1866px;
+        padding: 80px 0px;
+        width: 914px;
         margin: 0 auto;
         .selectSection {
             &__title {
@@ -192,9 +193,10 @@ $common-width: 100%;
         }
     }
     .blog-filter {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
         &__img {
             width: $common-width;
+            height: 178px;
             vertical-align: middle;
         }
     }
@@ -211,6 +213,7 @@ $common-width: 100%;
             margin-bottom: 50px;
             margin-top: 5px;
         }
+        
     }
     // // @media screen and (min-width: 1866px) {
     // //     .commonHeight {
@@ -249,10 +252,16 @@ $common-width: 100%;
     }
     @media only screen and (min-width:768px) and (max-width:1024px) {
         input[type="radio"]:not(old)+label {
-            font-size: 12px;
-            //letter-spacing: 0.05em;
-            word-spacing: .03em;
+            font-size: 13px;
+            line-height: 20px;
         }
+        .blog-filter {
+        &__img {
+            width: $common-width;
+            height: 218px;
+            vertical-align: middle;
+        }
+    }
         .commonHeight {
             height: 100%;
             padding: 4rem 0rem 3rem 0rem;
@@ -274,6 +283,7 @@ $common-width: 100%;
             }
         }
         .blog-row {
+            width: 710px;
             .selectSection {
                 &__title {
                     font-size: 20px;
@@ -282,18 +292,24 @@ $common-width: 100%;
                 }
             }
         }
+    //     .blog-pad__img {
+    //     width: 40px;  
+    // }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
         input[type="radio"]:not(old)+label {
-            font-size: 11px;
+            font-size: 12px;
             font-family: $ternary-contentfamily;
             margin: 0 12px 8px 0;
-            letter-spacing: 0px;
+            line-height: 18px;
             word-spacing: .02em;
         }
         input[type=radio]:not(old) {
             display: none;
         }
+    //     .blog-pad__img {
+    //     width: 32px;  
+    // }
         .commonHeight {
             display: flex;
             justify-content: center;
@@ -326,14 +342,15 @@ $common-width: 100%;
         }
         .radioSection {
             margin: 0 auto;
-            width: 286px;
             padding-top: 15px;
             text-align: center;
         }
         .blog-filter {
-            padding-left: 0;
-            padding-right: 0;
+        &__img {
+            width: $common-width;
+            height: 196px;
         }
+    }
     }
     @media only screen and (min-width:1366px) and (max-width:1866px) {
         .commonHeight {
@@ -352,11 +369,12 @@ $common-width: 100%;
             }
         }
          input[type="radio"]:not(old)+label {
-            font-size: 14px;
+            font-size: 16px;
             letter-spacing: 0.05em;
-            word-spacing: .038em;
+            line-height: 24px;
         }
         .blog-row {
+        width: 1144px;
             .selectSection {
                 &__title {
                     font-size: 24px;
@@ -365,6 +383,12 @@ $common-width: 100%;
                 }
             }
         }
+        .blog-filter {
+        &__img {
+            width: $common-width;
+            height: 218px;
+        }
+    }
     }
     @media only screen and (min-width:1866px) and (max-width:2560px) {
         .commonHeight {
@@ -384,13 +408,11 @@ $common-width: 100%;
             }
         }
          input[type="radio"]:not(old)+label {
-            font-size: 16px;
-            //letter-spacing: 0.05em;
-            word-spacing: .042em;
+            font-size: 18px;
+            line-height: 26px;
         }
-    }
-    @media screen and (min-width: 1866px) {
         .blog-row {
+            width: 1648px;
             .selectSection {
                 &__title {
                     font-size: 32px;
@@ -399,18 +421,18 @@ $common-width: 100%;
                 }
             }
         }
-    }
-    @media screen and (min-width: 1866px) {
-        
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        .blog-row {
-            padding: 40px 20px 0px 30px;
+        .blog-filter {
+        &__img {
+            width: $common-width;
+            height: 218px;
         }
     }
+    }
+    
     @media screen and (min-width: 320px) and (max-width: 767px) {
         .blog-row {
             padding: 40px 0 0px;
+            width: 268px;
             .selectSection {
                 &__title {
                     font-size: 16px;
@@ -428,8 +450,8 @@ $common-width: 100%;
             padding-right: 0;
         }
         .blog_commom-row {
-            width: 80%;
-            margin: 0 auto;
+            width: 100%;
+            margin: 0;
         }
     }
 }

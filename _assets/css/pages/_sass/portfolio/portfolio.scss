@@ -7,18 +7,15 @@
 		background-image: url("/assets/img/blog/1_1.png");
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		height: 18vw;
-		max-height: 400px;
+		height: 280px;
 		width: 100%;
     	.portfolioInner {
     		opacity: 0;
-    		height: 18vw;
+    		height: 280px;
     		display: flex;
     		justify-content: center;
     		align-items:center;
     		width: 100%;
-    		//cursor: pointer;
-    		max-height: 400px;
     		&:hover {
 		    	opacity: 0.85;
 		    	background-color: #fff;
@@ -71,7 +68,9 @@
 	}
 	@media screen and (min-width: 1866px) and (max-width: 2560px){
          .portBgImg {
+          height: 344px;
     	   .portfolioInner {
+          height: 344px;
     	   .portInnerPadd  {
     	   &--para {
         font-size:14px;
@@ -94,7 +93,9 @@
 	}
 	@media screen and (min-width: 1366px) and (max-width: 1865px){
          .portBgImg {
+          height: 357px;
     	   .portfolioInner {
+          height: 357px;
     	   .portInnerPadd  {
     	   &--para {
         font-size:13px;
@@ -121,20 +122,11 @@
 			position: relative;
 		}
 	}
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
-	.portBgImg {
-    	height: 22vw;
-    	.portfolioInner {
-	    	height: 22vw;
-	    	}
-    	}
-    	.blog-row {
-			    padding: 40px 20px 0px 20px;
-		}
-    	}
     	@media screen and (min-width: 768px) and (max-width: 1024px){
          .portBgImg {
+          height: 412px;
     	   .portfolioInner {
+          height: 412px;
     	   .portInnerPadd  {
     	   &--para {
         font-size:11px;
@@ -168,10 +160,10 @@
 			margin: 0 auto;
     	}
     	.portBgImg {
-    		height: 77vw;
+    		height: 252px;
     		max-height: 100%;
     		.portfolioInner {
-    			height: 77vw;
+    			height: 252px;
     			max-height: 100%;
     			.portInnerPadd  {
     	        &--para {

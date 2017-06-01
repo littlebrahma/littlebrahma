@@ -12,11 +12,11 @@
 
  <div class="row blog-row">
 		{% include radio1.html %}
-		<div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 portDetail">
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 portDetail">
 			<div class="row blog_commom-row">
 				{% assign item = site.portfolio | sort: 'date' %}
 				{% for port in item %}
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 blog-filter {{port.categories}}">
+				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 blog-filter {{port.categories}}">
 						<div class="{{port.background-class}}">
 							<div class="portfolioInner">
 								<div class="portInnerPadd">
