@@ -1,7 +1,7 @@
 ---
 title: UI/UX DESIGN
 category:
-  - UI/UX DESIGN
+  - UI/UX DESIGN1
 years: 2-4 Years Exp
 location: Bangalore
 Job_Description:
@@ -9,23 +9,15 @@ Job_Description:
     Quick Learning & System Understanding Capability,Candidates should be
     excellent team players, yet capable of working independently
   - Able to manage multiple projects at once.
-Responsibilities:
-  - >-
-    Provide delivery & application release management support to the product
-    teams
-  - >-
-    Should write scripts to build, manage & auto deploy code to test &
-    production environments
-  - Be a champion of Code Quality
-  - 'Run logs to monitor & publish reports on Code Quality, Build cycles'
-  - >-
-    Profile the Devbox/Test environments by running logs to publish system
-    usage/WLM
-  - >-
-    Should be working closely with the test teams to run automated test scripts
-    for performance & functional validations
-  - Good to have a Networking & Infrastructure mind-set
-  - Demonstrate technical leadership in troubleshooting & incident handling
+Responsibilities: >-
+  Provide delivery & application release management support to the product teams
+  Should write scripts to build, manage & auto deploy code to test & production
+  environments Be a champion of Code Quality 'Run logs to monitor & publish
+  reports on Code Quality, Build cycles' Profile the Devbox/Test environments by
+  running logs to publish system usage/WLM Should be working closely with the
+  test teams to run automated test scripts for performance & functional
+  validations Good to have a Networking & Infrastructure mind-set Demonstrate
+  technical leadership in troubleshooting & incident handling
 Skills:
   - >-
     Debugging and troubleshooting skills, with an enthusiastic attitude to
