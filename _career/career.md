@@ -40,7 +40,6 @@ Skills:
 published: true
 ---
 ---
----
 category:
   - UI/UX DESIGN
 years: 2-4 Years Exp
@@ -76,4 +75,5 @@ Skills:
   - Experience in building dashboards and aggregating metrics
   - Exposure to large-scale systems and application architectures
   - Possess a good knowledge of enterprise application architecture and
-    technologies including web, web services, client-server and databases
+    technologies including web, web services, client-server and database
+    ---
