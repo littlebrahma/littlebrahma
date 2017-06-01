@@ -96,14 +96,20 @@
       text-align: left;
  }
  &__button {
-    color: white;
-    font-family: montserrat-bold;
-    background-color: rgb(252, 0, 67);
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 14px;
+   padding: 8px 20px;
+        background-color: #ec1944;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 12px;
+        font-family: montserrat-bold;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #ec1944;
+        }
    
 }  
  
@@ -122,12 +128,12 @@
 &__heading {
     font-family : $ternary-titlefamily;
   font-weight : bold;
-  font-size : 24px;
+  font-size : 22px;
   letter-spacing : 0.24px;
   color : #FFFFFF;
   text-transform: uppercase;
   margin:0 0 15px 0;
-
+  line-height: 28px;
 }
 &__underline{
     border-bottom: rgb(249, 210, 0) 5px solid;
@@ -137,7 +143,7 @@
     font-family: raleway-light;
     font-size : 12px;
   line-height : 20px;
-  letter-spacing : 0.12px;
+  letter-spacing : 0.01em;
   color : #FFFFFF;
     max-width: 420px;
     margin-top :30px ;
@@ -197,7 +203,7 @@
 }
 }
 .valuable-clients-left {
- 
+ margin-top: 4rem;
 &__para{
    max-width: 420px;
     font-family: raleway-light;
@@ -237,7 +243,7 @@
 
 
 &__unorder-list {
-    width: 390px;
+    
     padding: 40px 0 0;
     margin: 30px auto;
     border-top: rgb(216, 210, 210) 1px solid;
@@ -254,10 +260,10 @@
 }
 
 .scroll-indicators {
-        position: fixed;
-        right: 70px;
-        top: 48%;
-        list-style: none;
+            position: fixed;
+    right: 70px;
+    top: 43%;
+    list-style: none;
         li{
             a{
             background-color: #fff;
@@ -371,9 +377,9 @@ margin:0;
      }
      &__para{
          font-family : $primary-contentfamily;
-  font-size : 10px;
-  line-height : 18px;
-  letter-spacing : 0.1px;
+  font-size : 11px;
+  line-height : 19px;
+  letter-spacing : 0.01em;
   color : #FFFFFF;
  
  margin:10px auto 30px auto;
@@ -575,15 +581,16 @@ background-color: #1a1746;
         width: 40px;
     }
     &__heading {
-       font-size: $title-banner-font-xs;
-        line-height: $title-banner-line-ht-xs; 
+       font-size: 16px;
+        line-height:20px; 
+    
     }
     &__para {
          
         font-family : $primary-contentfamily;
-  font-size : 12px;
-  line-height : 20px;
-  letter-spacing : 0.24px;
+  font-size : 10px;
+  line-height : 18px;
+  letter-spacing : 0.01em; 
         height: 80px;
         width: 100%;
         text-align: center;
@@ -640,6 +647,7 @@ margin:0 auto;
     }
     .about-us{
         height:auto;
+        padding-top: 100px;
     }
     
     .about-us-left,.our-mission-left {

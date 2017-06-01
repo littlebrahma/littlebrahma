@@ -221,7 +221,7 @@
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
         .commonHeader {
-            position: static;
+            position: absolute;
             &__logo {
                 margin-left: 15px;
                 width: 50px;

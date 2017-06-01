@@ -9,7 +9,7 @@
 
 {% for category in allprojects %}
     {% unless tmp2 contains category %}
-        {% capture tmp2 %}{{ tmp2 }}#{{ category | strip }}{% endcapture %}
+        {% capture tmp2 %}{{ tmp2 }}#{{ category | strip  }}{% endcapture %}
     {% endunless %}
 {% endfor %}
 
@@ -22,7 +22,7 @@
 			<div class="radioSection">
 			{% for category in uniqueprojects %}
 			<div class="selectInput">
-	  			<input id="r-option{{forloop.index}}" type="radio" name="field" value="{{radios.value}}" data-id="{{forloop.index}}" data-category="{{category}}" class="radio">
+	  			<input id="r-option{{forloop.index}}" type="radio" name="field" value="{{radios.value}}" data-id="{{forloop.index}}" data-category="{{category | downcase}}" class="radio">
 	  			<label for="r-option{{forloop.index}}" class="branding"><span class="select__radio"><span></span></span><span class="select__title">{{category}}</span></label>
   			</div>
   			{% endfor %}

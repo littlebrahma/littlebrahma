@@ -1,6 +1,6 @@
 ---
 title: GRAPHIC DESIGNER
-categories:
+category:
 - GRAPHIC DESIGNER
 years: 2-4 Years Exp.
 location: Bangalore

@@ -1,6 +1,6 @@
 ---
 title: CONCEPT ARTIST
-categories:
+category:
 - CONCEPT ARTIST
 years: 2-4 Years Exp.
 location: Bangalore

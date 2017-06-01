@@ -1,6 +1,6 @@
 ---
 title: ANIMATOR
-categories:
+category:
 - ANIMATOR
 years: 2-4 Years Exp.
 location: Bangalore
