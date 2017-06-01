@@ -82,7 +82,7 @@
         &__ele {
             margin-bottom: 5px;
             padding: 8px 20px;
-            &:hover,
+            &:focus,
             &:active,
             &:focus {
                 /*  border-left: 5px solid #EC1944;
@@ -121,7 +121,7 @@
             font-family: $secondary-titlefamily;
             text-transform: uppercase;
             color: #5858B9;
-            &:hover,
+            &:focus,
             &:active,
             &:focus {
                 color: #EC1944;
@@ -131,7 +131,7 @@
         &__main {
             font-size: 22px;
             font-family: $ternary-titlefamily;
-            &:hover,
+            &:focus,
             &:active,
             &:focus {
                 color: #5858B9;
@@ -261,7 +261,7 @@
                 padding: 2px 0;
                 width: 175px;
                 margin: 0 auto;
-                &:hover,
+                &:focus,
                 &:active,
                 &:focus {
                     border-left: none;
@@ -273,7 +273,7 @@
             }
             &__attr {
                 cursor: pointer;
-                &:hover,
+                &:focus,
                 &:active,
                 &:focus {
                     cursor: pointer;

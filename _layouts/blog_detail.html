@@ -3,7 +3,7 @@ endfor %}
 
 <div class="blogDetailBg">
     {% include common_header.html %}
-    <div class="banner">
+    <!-- <div class="banner">
         <div>
             <div class="banner__title">
                 {{page.title}}
@@ -12,7 +12,13 @@ endfor %}
                 {{page.blog_description}}
             </div>
         </div>
+    </div> -->
+    <div class="blog__detail--banner">
+  <div class="blog__detail--bannercontent">
+    <h5 class="commonHeight__heading">{{page.blog_category |upcase }}</h5>
+    <p class="commonHeight__para">{{page.blog_description}}</p>
     </div>
+  </div>
 </div>
 <div class="middleSection1">
     <div class="row">
