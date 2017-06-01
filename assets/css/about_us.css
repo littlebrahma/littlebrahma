@@ -834,11 +834,12 @@ a {
 .about-us-right__heading, .our-mission-right__heading {
   font-family: "montserrat-bold";
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 0.24px;
   color: #FFFFFF;
   text-transform: uppercase;
-  margin: 0 0 15px 0; }
+  margin: 0 0 15px 0;
+  line-height: 28px; }
 
 .about-us-right__underline, .our-mission-right__underline {
   border-bottom: #f9d200 5px solid;
@@ -848,7 +849,7 @@ a {
   font-family: raleway-light;
   font-size: 12px;
   line-height: 20px;
-  letter-spacing: 0.12px;
+  letter-spacing: 0.01em;
   color: #FFFFFF;
   max-width: 420px;
   margin-top: 30px;
@@ -1041,9 +1042,9 @@ a {
       margin: 0; }
     .about-us-right__para {
       font-family: "raleway-regular";
-      font-size: 10px;
-      line-height: 18px;
-      letter-spacing: 0.1px;
+      font-size: 11px;
+      line-height: 19px;
+      letter-spacing: 0.01em;
       color: #FFFFFF;
       margin: 10px auto 30px auto;
       height: auto; }
@@ -1177,13 +1178,13 @@ a {
       border-bottom: #f9d200 4px solid;
       width: 40px; }
     .about-us-right__heading, .our-mission-right__heading {
-      font-size: 17px;
-      line-height: 24px; }
+      font-size: 16px;
+      line-height: 20px; }
     .about-us-right__para, .our-mission-right__para {
       font-family: "raleway-regular";
-      font-size: 12px;
-      line-height: 20px;
-      letter-spacing: 0.24px;
+      font-size: 10px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
       height: 80px;
       width: 100%;
       text-align: center;

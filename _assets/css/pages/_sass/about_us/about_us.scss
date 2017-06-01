@@ -128,12 +128,12 @@
 &__heading {
     font-family : $ternary-titlefamily;
   font-weight : bold;
-  font-size : 24px;
+  font-size : 22px;
   letter-spacing : 0.24px;
   color : #FFFFFF;
   text-transform: uppercase;
   margin:0 0 15px 0;
-
+  line-height: 28px;
 }
 &__underline{
     border-bottom: rgb(249, 210, 0) 5px solid;
@@ -143,7 +143,7 @@
     font-family: raleway-light;
     font-size : 12px;
   line-height : 20px;
-  letter-spacing : 0.12px;
+  letter-spacing : 0.01em;
   color : #FFFFFF;
     max-width: 420px;
     margin-top :30px ;
@@ -377,9 +377,9 @@ margin:0;
      }
      &__para{
          font-family : $primary-contentfamily;
-  font-size : 10px;
-  line-height : 18px;
-  letter-spacing : 0.1px;
+  font-size : 11px;
+  line-height : 19px;
+  letter-spacing : 0.01em;
   color : #FFFFFF;
  
  margin:10px auto 30px auto;
@@ -581,15 +581,16 @@ background-color: #1a1746;
         width: 40px;
     }
     &__heading {
-       font-size: $title-banner-font-xs;
-        line-height: $title-banner-line-ht-xs; 
+       font-size: 16px;
+        line-height:20px; 
+    
     }
     &__para {
          
         font-family : $primary-contentfamily;
-  font-size : 12px;
-  line-height : 20px;
-  letter-spacing : 0.24px;
+  font-size : 10px;
+  line-height : 18px;
+  letter-spacing : 0.01em; 
         height: 80px;
         width: 100%;
         text-align: center;
