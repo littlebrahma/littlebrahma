@@ -1,6 +1,6 @@
 ---
 title: CONTENT WRITER
-categories:
+category:
 - CONTENT WRITER
 years: 2-4 Years Exp.
 location: Bangalore

@@ -79,15 +79,15 @@ function myFunction(scrollDirection){
 
   }
  $("#slideshow").css('background-position', myimages[nextslideindex]).removeClass("animated fadeIn");
-  $('.landing_container').hide();
+
   var index=0;
   if(nextslideindex >= 7 && nextslideindex <= 13) 
     {
         index=1;
      
-      $(".scroll-indicators li").removeClass('active');
+          $(".scroll-indicators li").removeClass('active');
           $($(".scroll-indicators li")[1]).addClass('active');
-        $("#slideshow").css({"height": "235px", "left": "185px", "top": "280px", "width":"214px","opacity":"1"}).addClass("animated fadeIn"); 
+          $("#slideshow").css({"height": "235px", "left": "185px", "top": "280px", "width":"214px","opacity":"1"}).addClass("animated fadeIn"); 
     }
     else if(nextslideindex >= 14 && nextslideindex <= 20)
     {
@@ -130,7 +130,14 @@ function myFunction(scrollDirection){
         //    height: 158px;
     }
  
+if(nextslideindex%7 == 0 && scrollDirection === 'up'){
+      $('.landing_container').hide();
  $($('.landing_container')[index]).show();
+}
+if(nextslideindex%6 == 0 && scrollDirection === 'down'){
+      $('.landing_container').hide();
+ $($('.landing_container')[index]).show();
+}
 
 }
 

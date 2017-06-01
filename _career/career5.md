@@ -1,6 +1,6 @@
 ---
 title: PROJECT MANAGER
-categories:
+category:
 - PROJECT MANAGER
 years: 2-4 Years Exp.
 location: Bangalore
