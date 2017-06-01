@@ -1,10 +1,10 @@
 .service-detailBg .commonHeader {
-    position: static;
+    // position: static;
 }
 
 .career-all {
     background-color: #f0f1f1;
-    padding: 100px 0 50px;
+    padding: 150px 0 50px;
 }
 
 .career {
@@ -245,7 +245,7 @@
 
 @media screen and (max-width:767px) {
     .career-all {
-        padding: 30px 0 15px;
+        padding: 150px 0 15px;
     }
     .career {
         padding: 0;

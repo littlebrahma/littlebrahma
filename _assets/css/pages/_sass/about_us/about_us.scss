@@ -96,14 +96,20 @@
       text-align: left;
  }
  &__button {
-    color: white;
-    font-family: montserrat-bold;
-    background-color: rgb(252, 0, 67);
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 14px;
+   padding: 8px 20px;
+        background-color: #ec1944;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 12px;
+        font-family: montserrat-bold;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #ec1944;
+        }
    
 }  
  
@@ -197,7 +203,7 @@
 }
 }
 .valuable-clients-left {
- 
+ margin-top: 4rem;
 &__para{
    max-width: 420px;
     font-family: raleway-light;
@@ -640,6 +646,7 @@ margin:0 auto;
     }
     .about-us{
         height:auto;
+        padding-top: 100px;
     }
     
     .about-us-left,.our-mission-left {
