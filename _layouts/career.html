@@ -3,16 +3,26 @@
     {% include common_header.html %}
 </section>
 <div class="career-all">
+   
     <div class="row career">
-        {% include radio3.html %}
+        {% include careers-radio.html %}
         <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12 ">
             <div class="row">
 
-                {% assign item = site.career | sort: 'date' %} {% for careers in item %} {% capture category %}{{ careers.category | replace:'/',' ' }}{% endcapture %}
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 job career__card blog-filter {{category}} {{forloop.index}}" data-id="{{forloop.index}}" data-category="{{careers.category}}">
+                {% assign item = site.career | sort: 'date' %} 
+                
+                {% for careers in item %} 
+               
+                {% capture category %}
+                {{ careers.category | array_to_sentence_string | downcase |replace:'/',' '  }}
+                {% endcapture %}
+               
+ 
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 job career__card blog-filter {{ category}} {{forloop.index}}" data-id="{{forloop.index}}" data-category="{{careers.category | downcase}}">
                     <div class="career__job-card {{careers.location}}">
                         <img class="career__img" src="/assets/img/career/Icons/Location-Pin.png">
-                        <h1 class="career__location">{{careers.location}}</h1>
+                        <h1 class="career__location">{{careers.location}} </h1>
                         <h1 class="career__title">{{careers.title}}</h1>
                         <h1 class="career__experience">{{careers.years}}</h1>
                         <a class="career__link" href="#" data-id="{{forloop.index}}">More</a>

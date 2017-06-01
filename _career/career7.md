@@ -1,6 +1,6 @@
 ---
 title: UI/UX DESIGN
-categories:
+category:
 - UI/UX DESIGN
 years: 2-4 Years Exp
 location: Chennai

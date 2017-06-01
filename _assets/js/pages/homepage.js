@@ -1,28 +1,6 @@
 (function(){
  var nextslideindex=0;
-animationGifs();
-if($(window).width()  < 1024){
-
-    initalizeSlick();
-}
-else{
-    init();
-}
-
-function init(){
-
-    
-    jqueryScrollPlugin();
-    jqueryScrollPluginSetting();
-    scrollByIndicators();
-    $('.landing_container').hide();
-    $($('.landing_container')[0]).show();
-}
-
-function myFunction(scrollDirection){
- 
-     scrollDirection=scrollDirection || '';
-    var myimages=[
+ var myimages=[
     "-76px -70px",
     "-406px -70px",
     "-736px -70px",
@@ -60,6 +38,29 @@ function myFunction(scrollDirection){
     "-1981px -556px"
     ];
 
+animationGifs();
+if($(window).width()  < 1024){
+
+    initalizeSlick();
+}
+else{
+    init();
+}
+
+function init(){
+
+    $('.landing_container').hide();
+    jqueryScrollPlugin();
+    jqueryScrollPluginSetting();
+    scrollByIndicators();
+    
+    $($('.landing_container')[0]).show();
+}
+
+function myFunction(scrollDirection){
+ 
+     scrollDirection=scrollDirection || '';
+    
 
   if(scrollDirection === 'up'){
            nextslideindex++;
@@ -79,15 +80,15 @@ function myFunction(scrollDirection){
 
   }
  $("#slideshow").css('background-position', myimages[nextslideindex]).removeClass("animated fadeIn");
-  $('.landing_container').hide();
+
   var index=0;
   if(nextslideindex >= 7 && nextslideindex <= 13) 
     {
         index=1;
      
-      $(".scroll-indicators li").removeClass('active');
+          $(".scroll-indicators li").removeClass('active');
           $($(".scroll-indicators li")[1]).addClass('active');
-        $("#slideshow").css({"height": "235px", "left": "185px", "top": "280px", "width":"214px","opacity":"1"}).addClass("animated fadeIn"); 
+          $("#slideshow").css({"height": "235px", "left": "185px", "top": "280px", "width":"214px","opacity":"1"}).addClass("animated fadeIn"); 
     }
     else if(nextslideindex >= 14 && nextslideindex <= 20)
     {
@@ -130,7 +131,18 @@ function myFunction(scrollDirection){
         //    height: 158px;
     }
  
+if(nextslideindex%7 == 0 && scrollDirection === 'up'){
+      $('.landing_container').hide();
  $($('.landing_container')[index]).show();
+}
+if((nextslideindex+1) %7 <= 0 && scrollDirection === 'down'){
+      $('.landing_container').hide();
+ $($('.landing_container')[index]).show();
+}
+if((nextslideindex-1) %7 <= 0 && scrollDirection === 'indicator'){
+      $('.landing_container').hide();
+ $($('.landing_container')[index]).show();
+}
 
 }
 
@@ -139,71 +151,43 @@ function scrollByIndicators(){
 $(".scroll-indicators li").click(function(){
     var tab=$(this).data("id");
     if ( tab == 1) {
-        $('#text').show();
-        $('#text1').hide();
-        $('#text2').hide();
-        $('#text3').hide();
-        $('#text4').hide();
+        
       //  background.style.backgroundImage = "none";
-        $("background").addClass("animated fadeIn");
-        $('#slideshow').css("background-position", "-76px -70px").addClass("animated fadeIn");
+        // $("background").addClass("animated fadeIn");
+        // $('#slideshow').css("background-position", "-76px -70px").addClass("animated fadeIn");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
         nextslideindex=0;
     }
     else if ( tab == 2) {
-        $('#text1').show();
-        $('#text').hide();
-        $('#text2').hide();
-        $('#text3').hide();
-        $('#text4').hide();
-      //  background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/3.gif')";
-        $("background").addClass("animated fadeIn");
-        $('#slideshow').css("background-position", "-56px -960px").addClass("animated fadeIn");
+        // $("background").addClass("animated fadeIn");
+        // $('#slideshow').css("background-position", "-56px -960px").addClass("animated fadeIn");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
-        nextslideindex=7;
+        nextslideindex=8;
     }
     else if ( tab == 3) {
-        $('#text4').show();
-        $('#text1').hide();
-        $('#text2').hide();
-        $('#text').hide();
-        $('#text3').hide();
-       // background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/2.gif')";
-        $("background").addClass("animated fadeInUp");
-        $('#slideshow').css("background-position", "-76px -1276px").addClass("animated fadeIn");
+    //    $("background").addClass("animated fadeInUp");
+    //     $('#slideshow').css("background-position", "-76px -1276px").addClass("animated fadeIn");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
         nextslideindex=15;
     }
     else if ( tab == 4) {
-        $('#text2').show();
-        $('#text1').hide();
-        $('#text').hide();
-        $('#text3').hide();
-        $('#text4').hide();
-      //  background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/4.gif')";
-        $("background").addClass("animated fadeInUp");
-        $('#slideshow').css("background-position", "-2034px -265px").addClass("animated fadeIn");
+    //   $("background").addClass("animated fadeInUp");
+    //     $('#slideshow').css("background-position", "-2034px -265px").addClass("animated fadeIn");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
         nextslideindex=22;
     }
     else if ( tab == 5) {
-        $('#text3').show();
-        $('#text1').hide();
-        $('#text2').hide();
-        $('#text').hide();
-        $('#text4').hide();
-      //  background.style.backgroundImage = "url('/assets/img/homepage/ANIMATIONS/5.gif')";
-        $("background").addClass("animated fadeInUp");
-        $('#slideshow').css("background-position", "-56px -556px").addClass("animated fadeIn");
+        // $("background").addClass("animated fadeInUp");
+        // $('#slideshow').css("background-position", "-56px -556px").addClass("animated fadeIn");
         $(".scroll-indicators li").removeClass('active');
         $(this).addClass('active');
         nextslideindex=29;
     }
-    myFunction();
+    myFunction('indicator');
 });
 }
 
