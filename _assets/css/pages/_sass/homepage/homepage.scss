@@ -102,7 +102,7 @@ body{
             font-family: $ternary-contentfamily;
             cursor: pointer;
         }
-        &__button:hover {
+        &__button:focus {
             background-color: #241141;
             border: 2px solid #f1123e;
         }
@@ -152,10 +152,10 @@ body{
     .tooltip span {
         display: none;
     }
-    .tooltip:hover {
+    .tooltip:focus {
         z-index: 21;
     }
-    .tooltip:hover span {
+    .tooltip:focus span {
         display: block;
         color: white;
         pointer-events: none;
@@ -308,7 +308,7 @@ z-index: 1;
         .homepageBgImg__img1 {
             position: relative;
         }
-        .tooltip:hover span {
+        .tooltip:focus span {
             top: 32px;
             right: 0;
         }
@@ -456,7 +456,7 @@ overflow: hidden;
         }
        
         
-        .tooltip:hover span {
+        .tooltip:focus span {
             top: 32px;
             right: 0;
         }
