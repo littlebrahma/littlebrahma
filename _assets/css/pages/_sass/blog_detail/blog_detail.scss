@@ -1,12 +1,21 @@
 .blogDetailBg {
     background-color: #1A1746;
 }
-
 .allign {
     width: 70%;
     margin: 0 auto;
 }
-
+.blog__detail--bannercontent{
+    width: 100%;
+}
+.blog__detail--banner{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $secondary-color;
+    height: 549px;
+}
 .middleSection1 {
     margin: 75px 40px 0px 85px;
     &__img1 {
