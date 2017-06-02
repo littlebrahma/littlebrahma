@@ -207,15 +207,15 @@ body{
     display: block;
     position: relative;
     top: 55px;
-        left: 150px;
+        left: 140px;
     z-index: 1;
     height: 200px;
 }
 #img2{
         display: block;
     position: relative;
-    left: 238px;
-    top: 139px;
+  left: 220px;
+top: 139px;
     height: 154px;
     z-index: 1;
 }
@@ -229,19 +229,19 @@ body{
 }
 #img4{
     display: block;
-    position: relative;
-    height: 220px;
-    left: 182px;
-    top: -14px;
-    z-index: 1;
+  position: relative;
+height: 190px;
+left: 182px;
+top: 12px;
+z-index: 1;
 }
 #img5{
        display: block;
-    position: relative;
-    height: 200px;
-    left: 196px;
-    top: 13px;
-    z-index: 1;
+   position: relative;
+height: 180px;
+left: 198px;
+top: 30px;
+z-index: 1;
 }
  .homepageBgImg {
     /* background-repeat: no-repeat; */
@@ -341,7 +341,7 @@ body{
         margin:0 auto;
             position: relative;
             height:auto;
-
+overflow: hidden;
   
     }
         .commonHeader{

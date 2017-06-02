@@ -49,12 +49,12 @@ else{
 
 function init(){
 
-    $('.landing_container').hide();
+     $('.landing_container').hide();
+    $($('.landing_container')[0]).show();
     jqueryScrollPlugin();
     jqueryScrollPluginSetting();
     scrollByIndicators();
-    
-    $($('.landing_container')[0]).show();
+   
 }
 
 function myFunction(scrollDirection){
@@ -127,21 +127,30 @@ function myFunction(scrollDirection){
        
        $(".scroll-indicators li").removeClass('active');
           $($(".scroll-indicators li")[0]).addClass('active');
-        $("#slideshow").css({"height":"201px", "width": "201px","left": "155px"}).addClass("animated fadeIn");
+        $("#slideshow").css({"height":"201px", "width": "201px","left": "155px","top":"260px"}).addClass("animated fadeIn");
         //    height: 158px;
     }
  
 if(nextslideindex%7 == 0 && scrollDirection === 'up'){
       $('.landing_container').hide();
- $($('.landing_container')[index]).show();
+       $($('.landing_container')[index]).show();
+      $($('.landing_container')).addClass("animated fadeIn");
+      $($('.landing_container')[index]).addClass("animated fadeIn");
+
 }
 if((nextslideindex+1) %7 <= 0 && scrollDirection === 'down'){
       $('.landing_container').hide();
  $($('.landing_container')[index]).show();
+  $($('.landing_container')).addClass("animated fadeIn");
+      $($('.landing_container')[index]).addClass("animated fadeIn");
+      
 }
 if((nextslideindex-1) %7 <= 0 && scrollDirection === 'indicator'){
-      $('.landing_container').hide();
- $($('.landing_container')[index]).show();
+     $('.landing_container').hide();
+    $($('.landing_container')[index]).show();
+      $($('.landing_container')).addClass("animated fadeIn");
+      $($('.landing_container')[index]).addClass("animated fadeIn");
+      
 }
 
 }
@@ -194,12 +203,12 @@ $(".scroll-indicators li").click(function(){
 function initalizeSlick(){
 $('.homepageCln').slick({
         dots: true,
-        arrows: false,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade:false,
+  speed: 500,
+  arrows:true,
+  slidesToShow:1,
+  slidesToScroll:1
+        
+  
         // appendDots:'.scroll-indicators',
        // cssEase: 'ease-out',
     });
@@ -227,8 +236,10 @@ function jqueryScrollPluginSetting(){
         },
         scrollDown : function() {
             myFunction('down');
+            console.log('down');
         },
         scrollUp : function() {
+            console.log('up');
             
              myFunction('up');
         }

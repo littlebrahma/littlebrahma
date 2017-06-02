@@ -2,7 +2,7 @@
 $( document ).ready(function() {
   console.log($(".portfolioBg").height());
   console.log($(".commonHeader").height());
-  if ($(window).width() >= 1199) {
+  if ($(window).width() >= 1024) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").height()){  
     $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
@@ -20,11 +20,14 @@ if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").height
   }
 });
 }
-else if($(window).width() >= 768 && $(window).width() < 1199) {
+else if($(window).width() >= 768 && $(window).width() < 1024) {
     $(window).scroll(function() {
-if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").height()){  
+      debugger;
+      console.log($(this).scrollTop());
+
+if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").height()  ){  
     $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
-    $(".selectSection").css({"position":"fixed","top":"140px"});
+    $(".selectSection").css({"position":"fixed","top":"40px"});
     $(".caseDet").css({"position":"relative","left":"33.3%","top":"0px"});
     $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
         $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
@@ -54,7 +57,7 @@ else if($(window).width() < 768){
 $(window).resize(function() {
   if ($(window).width() >= 1200) {
     $(window).scroll(function() {
-if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").height()){  
+if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").height() ){  
     $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
     $(".selectSection").css({"position":"fixed","top":"140px"});
     $(".caseDet").css({"position":"relative","left":"33.3%","top":"0px"});
@@ -70,7 +73,7 @@ if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").height
   }
 });
 }
-else if($(window).width() >= 768 && $(window).width() < 1199) {
+else if($(window).width() >= 768 && $(window).width() < 1024) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").height()){  
     $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
