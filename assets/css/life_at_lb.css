@@ -878,7 +878,8 @@ a {
       font-size: 12px;
       color: #666;
       line-height: 20px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      text-align: center; }
   .contentContainer h1 {
     font-family: "montserrat-bold";
     font-size: 14px;
@@ -890,7 +891,8 @@ a {
     font-size: 12px;
     color: #666;
     line-height: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
   .imageFirstLayout .img_test {
     display: inline; } }
 
@@ -950,6 +952,12 @@ a {
     line-height: 22px; } }
 
 @media only screen and (min-width: 1866px) {
+  .imageFirstLayout .img_cont0 {
+    display: inline;
+    width: 1600px; }
+  .imageFirstLayout .img_cont2 {
+    display: inline;
+    width: 800px; }
   .lifeContainer__details h1 {
     font-family: "montserrat-bold";
     font-size: 24px;
