@@ -167,6 +167,7 @@ $ternary-contentfamily: "raleway-bold";
                 color: #666;
                 line-height: 20px;
                 margin-bottom: 20px;
+                text-align: center;
             }
         }
     }
@@ -184,6 +185,7 @@ $ternary-contentfamily: "raleway-bold";
             color: #666;
             line-height: 20px;
             margin-bottom: 20px;
+            text-align: center;
         }
     }
     .imageFirstLayout {
@@ -278,6 +280,16 @@ $ternary-contentfamily: "raleway-bold";
 }
 
 @media only screen and (min-width:1866px) {
+    .imageFirstLayout {
+        .img_cont0 {
+            display: inline;
+            width:1600px;
+        }
+        .img_cont2 {
+            display: inline;
+            width:800px;
+        }
+    }
     .lifeContainer {
         &__details {
             h1 {
