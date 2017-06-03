@@ -235,21 +235,7 @@ $common-width: 100%;
     //     font-size: 17px;
     //  }
     // }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        // .commonHeight {
-        //     height: 100%;
-        //     padding: 4rem 0rem 3rem 0rem;
-        //     &__heading {
-        //         font-size: 36px;
-        //     }
-        //     &__para {
-        //         margin: 20px auto;
-        //     }
-        // }
-        .comHeight {
-            height: 95vh;
-        }
-    }
+    
     @media only screen and (min-width:768px) and (max-width:1024px) {
         input[type="radio"]:not(old)+label {
             font-size: 13px;
@@ -281,6 +267,9 @@ $common-width: 100%;
                 height: 191px;
                 width: 200px;
             }
+        }
+        .comHeight{
+            padding-top: 8rem;
         }
         .blog-row {
             width: 710px;
@@ -335,7 +324,8 @@ $common-width: 100%;
             }
         }
         .comHeight {
-            height: 70vh;
+                height: 100%;
+    padding: 10rem 0 4rem;
         }
         .selectInput {
             display: inline;

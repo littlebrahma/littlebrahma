@@ -3,16 +3,6 @@ endfor %}
 
 <div class="blogDetailBg">
     {% include common_header.html %}
-    <!-- <div class="banner">
-        <div>
-            <div class="banner__title">
-                {{page.title}}
-            </div>
-            <div class="banner__subtitle allign">
-                {{page.blog_description}}
-            </div>
-        </div>
-    </div> -->
     <div class="blog__detail--banner">
   <div class="blog__detail--bannercontent">
     <h5 class="commonHeight__heading">{{page.blog_category |upcase }}</h5>
@@ -20,11 +10,9 @@ endfor %}
     </div>
   </div>
 </div>
-<div class="middleSection1">
-    <div class="row">
-        <div class="col-lg-9 col-sm-10 col-md-10 col-xs-12 middleSection1__iconAlign">
-            <div class="row center-lg  start-md  start-sm  center-xs">
-                <div class="col-lg-4 col-sm-10 col-md-10 col-xs-12 middleSection1__algnn">
+<div class="blog__detail--container-all">
+     <div class="row blog__detail--container">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 middleSection1__iconAlign">
                     <div class="middleSection1__profile1">
                         <img class="middleSection1__img1" src="/assets/img/blog/images.png" alt=""><br>
                         <img class="middleSection1__pimg" src="{{author_image}}" alt="author image">
@@ -38,72 +26,40 @@ endfor %}
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7 col-sm-10 col-md-10 col-xs-12 middleSection1__detail middleSection1__algnn">
-                    <div class="row start-lg start-md start-sm center-xs">
-                        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 middleSection1__algnn middleSection1__para">
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 middleSection1__detail">
+                        <div class=" middleSection1__algnn middleSection1__para">
                             {{page.blog_highlight}}
                             <hr class="middleSection1__hr1">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-2 col-sm-2 col-xs-12">
-            <div class="row center-xs middleSection1__icons1">
-                <div class="col-lg-12 col-sm-12 col-md-12 col-xs-6 middleSection1__like">
-                </div>
-                <div class="col-lg-12 col-sm-12 col-md-12 col-xs-6 middleSection1__view">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row center-lg start-md start-sm center-xs">
-        <div class="col-lg-9 col-sm-12 col-md-12 col-xs-12  middleSection1__iconAlgn middleSection1__iconAlign">
-            <div class="row  center-lg start-md start-sm center-xs middleSection1__icons2">
-                <div class="col-lg-2 col-sm-3 col-md-3 col-xs-3 middleSection1__iconAlgn middleSection1__iconAlign">
+                        </div>  
+                        <div class=" middleSection1__media-link">                 
+                <div class=" middleSection1__iconAlgn ">
                     <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook" class="custom_share">
-
-                        <img src="/assets/img/blog/facebook.png" class="middleSection1__img2  middleSection1__icondsply">
-                        <span class="middleSection1__icondsply">Facebook</span>
-
+                        <div class="middleSection1__img2-1 middleSection1__icondsply"></div>
+                        <h4 class="middleSection1__h4-1 middleSection1__icondsply">Facebook</h4>
                     </a>
                 </div>
-
-                <div class="col-lg-2 col-sm-3 col-md-3 col-xs-3 middleSection1__iconAlgn middleSection1__iconAlign">
+                <div class=" middleSection1__iconAlgn ">
                     <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter" class="custom_share">
-                        <img src="/assets/img/blog/twitter.png" class="middleSection1__img2 middleSection1__icondsply">
-                        <span class="middleSection1__icondsply">Twitter</span>
+                        <div class="middleSection1__img2-2 middleSection1__icondsply"></div>
+                        <h4 class="middleSection1__h4-2 middleSection1__icondsply">Twitter</h4>
                     </a>
                 </div>
-                <div class="col-lg-2 col-sm-3 col-md-3 col-xs-3 middleSection1__iconAlgn middleSection1__iconAlign">
+                <div class="middleSection1__iconAlgn">
                     <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+" class="custom_share">
-                        <img src="/assets/img/blog/google.png" class="middleSection1__img2 middleSection1__algn1 middleSection1__icondsply">
-                        <span class="middleSection1__algn middleSection1__icondsply">Google+</span>
+                        <div class="middleSection1__img2-3 middleSection1__algn1 middleSection1__icondsply"></div>
+                        <h4 class="middleSection1__h4-3 middleSection1__icondsply">Google+</h4>
                     </a>
                 </div>
-                <div class="col-lg-2 col-sm-3 col-md-3 col-xs-3 middleSection1__iconAlgn">
-                    <!--  <img src="/assets/img/blog/matter.png" class="middleSection1__img2 middleSection1__icondsply">
-               <span class="middleSection1__icondsply">Medium</span> -->
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="middleSection2">
-
-
-    {{ content }}
-
-
-
-    <div class="middleSection2__backgroundimg middleSection2__align">
-        <img class="middleSection2__likeimg" src="/assets/img/blog/react_like.png">Like
-        <img class="middleSection2__dslikeimg" src="/assets/img/blog/react_dislike.png">DisLike
-    </div>
+    <!-- {{ content }} -->
+    <p>This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.</p>
+    <div class="blog__detail--img"><img src="/assets/img/blog/013_Blog_Discription.jpg"></div>
+    <p class="blog__detail--italic">This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.</p>
+    <p>This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Appiness, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.</p>
 </div>
 {% if content and page.related %}
-<div class="middleSection4">
+<!-- <div class="middleSection4">
     <hr class="middleSection4__hr6">
     <div class="middleSection4__rltdHadng">RELATED STORIES</div>
     <hr class="middleSection4__hr4">
@@ -138,13 +94,15 @@ endfor %}
         </div>
         {% endif %} {% endfor %}
     </div>
-</div>
+</div> -->
 {% endif %}
-<div class="middleSection2">
+<!-- <div class="middleSection2">
     <div id="disqus_thread"></div>
+</div> -->
 </div>
+</div>       
 </div>
-<script>
+<!-- <script>
     /**
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -162,4 +120,4 @@ endfor %}
         (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> {% include common_footer.html %} {% include footer.html %}
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> --> {% include common_footer.html %} {% include footer.html %}

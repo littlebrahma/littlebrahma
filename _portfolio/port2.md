@@ -2,7 +2,7 @@
 title: Port2
 permalink: "/portfolio/port2/"
 categories:
-- WEB & MOBILE DESIGN
+- WEB & MOBILE APP
 layout: portfolio_detail
 porject_title: MYSTERYBOX-gul
 background-class: portBgImg

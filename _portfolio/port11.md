@@ -2,7 +2,7 @@
 title: Port11
 permalink: "/portfolio/port11/"
 categories:
-- WEB & MOBILE DESIGN
+- WEB & MOBILE APP
 layout: portfolio_detail
 porject_title: MYSTERYBOX
 background-class: portBgImg

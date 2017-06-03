@@ -1,5 +1,5 @@
 ---
-title: WEB AND MOBILE APP DESIGN
+title: WEB AND MOBILE APP
 permalink: "/service/service1/"
 layout: service_detail
 img: "/assets/img/service/Mudras/2.png"
