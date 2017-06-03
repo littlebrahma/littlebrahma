@@ -70,14 +70,12 @@
         border: none;
         cursor: pointer;
         height: 32px;
-        &:focus {
+        outline: none;
+        &:hover {
             height: 32px;
             background-color: #fff;
             color: #ec1944;
             border: 1px solid #ec1944;
-        }
-        button:focus {
-            outline: 0;
         }
     }
     &__toastr {
