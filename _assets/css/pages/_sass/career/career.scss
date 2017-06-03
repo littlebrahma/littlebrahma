@@ -61,7 +61,8 @@
         font-size: 10px;
         border: none;
         cursor: pointer;
-        &:focus {
+        outline: none;
+        &:hover {
             background-color: #fff;
             color: #ec1944;
             border: 1px solid #ec1944;
