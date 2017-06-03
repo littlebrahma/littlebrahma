@@ -378,4 +378,16 @@
             }
         }
     }
+
+    @media only screen and (min-width:1025px) and (max-width:1300px) {
+        .img1 {
+            position: relative;
+            right: 3rem;
+        }
+        .processBgContent .processContent {
+                margin-left: 3.5rem;
+    margin-right: 6rem;
+        }
+    }
+
 }
