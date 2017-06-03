@@ -939,6 +939,8 @@ a {
     padding: 150px 0 15px; }
   .career {
     padding: 0; }
+    .career .radioSection {
+      padding: 50px 0px; }
     .career__card {
       max-width: 430px;
       margin: 0 auto; }
