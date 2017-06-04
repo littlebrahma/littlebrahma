@@ -144,8 +144,8 @@
                 width: 150px;
                 color: $secondary-color;
                 position: relative;
-                margin-left: 0;
-                margin-right: 0;
+                margin-left: 1rem;
+                margin-right: 1rem;
                 // transform: translatey(55px);
                 &__line {
                     // background-image:url("/assets/img/process/right-01.svg");
@@ -378,4 +378,16 @@
             }
         }
     }
+
+    @media only screen and (min-width:1025px) and (max-width:1300px) {
+        .img1 {
+            position: relative;
+            right: 3rem;
+        }
+        .processBgContent .processContent {
+                margin-left: 3.5rem;
+    margin-right: 6rem;
+        }
+    }
+
 }
