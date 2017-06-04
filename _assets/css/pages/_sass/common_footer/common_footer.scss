@@ -1,8 +1,5 @@
 .hero {
-    .footer-cont{
-        max-width: 1366px;
-        margin: 0 auto;
-    }
+   
     .commonFooter {
         background-color: #32323F;
         color: $secondary-color;
@@ -121,8 +118,18 @@
             margin-top: 30px;
         }
     }
-    @media screen and (min-width: 1866px) {}
-    @media screen and (min-width: 1024px) and (max-width: 1365px) {}
+    @media screen and (min-width: 1866px) {
+         .footer-cont{
+        max-width: 1866px;
+        margin: 0 auto;
+    }
+    }
+    @media screen and (min-width: 1366px) and (max-width: 1865px) {
+         .footer-cont{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    }
     @media screen and (max-width:1199px) {
         .footer_challenge-eshop {
             justify-content: center;
