@@ -141,7 +141,7 @@
        }
 &__para {
     font-family: raleway-light;
-    font-size : 12px;
+    font-size : 14px;
   line-height : 20px;
   letter-spacing : 0.01em;
   color : #FFFFFF;
@@ -200,6 +200,7 @@
 &__cont{
     width: 80%;
     margin: 0 auto;
+    max-width: 1366px;
 }
 }
 .valuable-clients-left {

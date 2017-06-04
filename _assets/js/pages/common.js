@@ -32,6 +32,8 @@ $( ".MenuContent__close").click(function() {
    $(".about-indicators").css("opacity","1");
    $(".arrow-right").css("opacity","1");
    $(".arrow-left").css("opacity","1");
+    $(".arrow").removeClass("MenuList__arrowDown1")
+   $(".arrow").addClass("MenuList__arrowDown");
 });
 // $(".MenuList__common").hide();
 $(".MenuList__wwa").click(function() {
