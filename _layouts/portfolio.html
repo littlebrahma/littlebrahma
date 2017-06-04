@@ -16,6 +16,7 @@
 			<div class="row blog_commom-row">
 				{% assign item = site.portfolio | sort: 'date' %}
 				{% for port in item %}
+			
 				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 blog-filter {{port.categories}}">
 						<div class="{{port.background-class}}">
 							<div class="portfolioInner">
