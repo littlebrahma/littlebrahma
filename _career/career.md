@@ -1,7 +1,7 @@
 ---
 title: UI/UX DESIGN
 category:
-  - UI/UX DESIGN1
+  - UI/UX DESIGN
 years: 2-4 Years Exp
 location: Bangalore
 Job_Description:

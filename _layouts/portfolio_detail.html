@@ -5,11 +5,11 @@
       <div class="banner">
          <div>
              <img class="banner__logo" src="/assets/img/portfolio/logo.png">
-             <h1 class="banner__title">{{page.porject_title}}</h1>
-             <h4 class="banner__subtitle">{{page.porject_subtitle}}</h4>
+             <h1 class="banner__title">{{page.porject_title | upcase}}</h1>
+             <h4 class="banner__subtitle">{{page.porject_subtitle | upcase}}</h4>
              <h6 class="banner__mintitle">DOWNLOAD FOR</h6>
-             <img class="banner__himg" src="/assets/img/portfolio/apple.png">
-             <img class="banner__himg" src="/assets/img/portfolio/android.png">
+             <a href={{page.porject_apple_imglink}}><img class="banner__himg" src="/assets/img/portfolio/apple.png"></a>
+             <a href={{page.porject_android_imglink}}><img class="banner__himg" src="/assets/img/portfolio/android.png"></a>
         </div>
       </div>
 </section>
@@ -17,7 +17,7 @@
           <div class="middle-section1">
             <div class="row center-xs start-md start-sm start-lg">
               <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 left-align">
-                <h2 class="heading">{{page.porject_title}}</h2>
+                <h2 class="heading">{{page.porject_title | upcase}}</h2>
                 <hr class="middle-section1__hr1">
                 <p class="middle-section1__algn">
                 {{page.project_detail}}
@@ -39,18 +39,12 @@
     <div class="middle-section2__inner">
     <div class="middle-section2__allign">
     <img class="middle-section2__img1" src="{{page.img1}}">
-    <h3 class="middle-section2__title">TITLE 1</h3>
-    <P class="middle-section2__para">We use human behavioural studies, psychology and multiple analytical tools to define.</P>
     </div>
     <div class="middle-section2__allign">
     <img class="middle-section2__img1" src="{{page.img2}}">
-    <h3 class="middle-section2__title">TITLE 2</h3>
-    <P class="middle-section2__para">We use human behavioural studies, psychology and multiple analytical tools to define.</P>
     </div>
     <div class="middle-section2__allign">
-    <img  class="middle-section2__img1" src="{{page.img3}}"> 
-    <h3 class="middle-section2__title">TITLE 3</h3>
-    <P class="middle-section2__para">We use human behavioural studies, psychology and multiple analytical tools to define.</P>
+    <img  class="middle-section2__img1" src="{{page.img3}}">
     </div> 
     </div>
     </div>
@@ -83,10 +77,10 @@
     <h2 class="middle-section3__title1">VARIATIONS</h2>
     <hr class="middle-section3__hr">
     <div class="middle-section3__midimg">
-     <div class="middle-section3__midimg--class1"></div>
+     <div class="middle-section3__midimg--class1"  style="background-image:url('{{page.variation_img1}}');"></div>
      <div class="middle-section3__midimg--class2">
-        <div class="middle-section3__midimg--class2-1"></div>
-        <div class="middle-section3__midimg--class2-2"></div>
+      <div class="middle-section3__midimg--class2-1"  style="background-image:url('{{page.variation_img2}}');"></div>
+      <div class="middle-section3__midimg--class2-2" style="background-image:url('{{page.variation_img3}}');"></div>
      </div>
       <!-- <div class="middle-section3__midimg--class1">
         <img class="middle-section3__img1" src="/assets/img/portfolio/card 1.1.svg">
@@ -106,8 +100,8 @@
       <hr class="middle-section4__hr4">
       <p class="middle-section4__algn">{{page.porject_description1}}</p>
       </div> -->
-      <img class="middle-section4__imgb" src="/assets/img/portfolio/card 2.1 .svg">
-     <img class="middle-section4__imgbg" src="{{page.project_img1}}">
+      <img class="middle-section4__imgb" src='{{page.variation_img4}}'>
+     <img class="middle-section4__imgbg" src="{{page.variation_img5}}">
       </div>
       </div>
       </div>
