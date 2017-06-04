@@ -1,6 +1,7 @@
 ---
 title: "PACKAGING AND LABEL"
 layout: "service_detail"
+keywords : "package design , retail packaging ,product label"
 img: "/assets/img/service/Mudras/5.png"
 service_lists:
 - title: "PACKAGE DESIGN"

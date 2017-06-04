@@ -1,6 +1,6 @@
 ---
 title: 'ILLUSTRATION AND ART'
-permalink: "/service/service2/"
+keywords : "illustrators , caricature , Patterns ,apparel design, graphic design or interior décor,high-end graphics ,design,"
 layout: 'service_detail'
 img: "/assets/img/service/Mudras/3.png"
 service_lists:

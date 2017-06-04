@@ -1,6 +1,7 @@
 ---
 title: WEB AND MOBILE APP
 layout: service_detail
+keywords : "mobile app design ,  Web apps ,App development,dashboard design,data visualization,"
 img: "/assets/img/service/Mudras/2.png"
 service_lists:
 - title: 'MOBILE APPS (ANDROID, IOS)'

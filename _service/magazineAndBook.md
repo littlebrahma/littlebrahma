@@ -1,6 +1,7 @@
 ---
 title: "MAGAZINE AND BOOK"
 layout: "service_detail"
+keywords : "book designs,catalogue design,illustrators and artists,comic books"
 img: "/assets/img/service/Mudras/6.png"
 service_lists:
 - title: "BOOK DESIGN"

@@ -1,6 +1,7 @@
 ---
 title: ANIMATION
 permalink: "/service/service3/"
+keywords : "explanatory videos , motion graphics ,logo animation ,corporate videos ,STOP MOTION VIDEOS,"
 layout: service_detail
 img: "/assets/img/service/Mudras/4.png"
 service_lists:

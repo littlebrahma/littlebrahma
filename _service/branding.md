@@ -2,6 +2,7 @@
 title: branding
 layout: service_detail
 img: "/assets/img/service/Mudras/1.png"
+keywords : "logo design , test drive , collateral & stationaries design ,design needs,web design , "
 service_lists:
 - title: 'LOGO DESIGN'
   description: 'It is believed that ancient Indian kingdoms were known for their royal insignia. They were so powerful that a mere display would make the disloyal a true patriot, a foe into a friend and adversaries become alliances. Such is the might of a logo. It is the eyes and ears of the brand it possesses. If the logo does not make waves, then rest assured, the seas will always remain calm. We give you the front seat experience of logo design. From the most rated designs to highly collaborative artwork, we have put every gear at full throttle. We encourage you to take a test drive of this logo chariot as you enter the brand wars.'
