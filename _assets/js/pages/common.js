@@ -74,7 +74,7 @@ if($("#r-option1").prop('checked') == true){
     $("."+finalArray.join('.')).show();
 }
 $('input[type="radio"]').click(function() {
-    debugger;
+   
  if($(this).is(':checked')) {
     var category= $('input:radio:checked').data("category");
     $(".blog-filter").hide();
@@ -88,7 +88,7 @@ $('input[type="radio"]').click(function() {
 
 $(".job_detail").hide();
 $(".career__link").click(function() {
-    debugger;
+   
     var job=$(this).data("id");
     $(".job").hide();
   

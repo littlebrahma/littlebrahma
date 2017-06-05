@@ -40,7 +40,7 @@ function getFormData() {
       }
     }
   });
-  console.log(data);
+  
   return data;
 }
 
@@ -86,7 +86,7 @@ function getFormData() {
       }
     }
   });
-  console.log(data);
+ 
   return data;
 }
 
@@ -109,8 +109,7 @@ $("#gform").on('submit', function (event) {
     // xhr.withCredentials = true;
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.onreadystatechange = function() {
-        console.log( xhr.status, xhr.statusText )
-        console.log(xhr.responseText);
+       
         //document.getElementById('gform').style.display = 'none'; // hide form
         document.getElementById('thankyou_message').style.display = 'block';
         return;

@@ -1,8 +1,7 @@
 (function(){
 
 $( document ).ready(function() {
-  console.log($(".portfolioBg").height());
-  console.log($(".commonHeader").height());
+  
   if ($(window).width() >= 1199) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > $(".blogBg").height() - $(".commonHeader").height()){  

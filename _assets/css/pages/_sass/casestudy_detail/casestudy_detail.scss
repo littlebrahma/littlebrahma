@@ -1,6 +1,13 @@
 body{
   overflow-x: hidden;
 }
+video {
+  width: 60%    !important;
+  height: auto   !important;
+  margin:0 auto;
+  margin-top: 20px;
+  object-fit: cover;
+}
 .detailBg {
   background-color:#E0005E;
 }

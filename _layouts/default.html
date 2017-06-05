@@ -337,7 +337,7 @@
         $("#slideshow").css('background-position', myimages[nextslideindex]).removeClass("animated fadeIn");
         $(this).addClass("animated fadeIn");
         myFunction();
-        console.log(nextslideindex);
+        
         if (evt.preventDefault) //disable default wheel action of scrolling page
             evt.preventDefault();
         else
@@ -527,10 +527,10 @@
             animationTime: 100,
             swipeMode: true,
             swipeUp: function() {
-                console.log('up-swipe');
+                
             },
             swipeDown: function() {
-                console.log('down-swipe');
+                
             },
             swipeLeft: function() {
 
@@ -539,7 +539,7 @@
 
             },
             scrollDown: function() {
-                console.log('down');
+                
                 nextslideindex--;
                 if (nextslideindex == 0) {
                     nextslideindex = 0;
@@ -550,7 +550,7 @@
 
             },
             scrollUp: function() {
-                console.log('up');
+               
                 nextslideindex++;
                 if (nextslideindex == myimages.length - 1) {
                     nextslideindex = myimages.length - 1;

@@ -40,7 +40,7 @@
 
 animationGifs();
 if($(window).width()  < 1024){
-
+$('.landing_container').show();
     initalizeSlick();
 }
 else{
@@ -204,9 +204,10 @@ function initalizeSlick(){
 $('.homepageCln').slick({
         dots: true,
   speed: 500,
-  arrows:true,
+  arrows:false,
   slidesToShow:1,
-  slidesToScroll:1
+  slidesToScroll:1,
+  infinite:false
         
   
         // appendDots:'.scroll-indicators',
@@ -223,10 +224,10 @@ function jqueryScrollPluginSetting(){
         animationTime   : 100,
         swipeMode       : true,
         swipeUp : function() {
-           console.log('up-swipe');
+           
         },
         swipeDown : function() {
-            console.log('down-swipe');
+            
         },
         swipeLeft : function() {
             
@@ -236,10 +237,10 @@ function jqueryScrollPluginSetting(){
         },
         scrollDown : function() {
             myFunction('down');
-            console.log('down');
+            
         },
         scrollUp : function() {
-            console.log('up');
+           
             
              myFunction('up');
         }

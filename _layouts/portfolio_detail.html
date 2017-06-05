@@ -9,14 +9,14 @@
              {%endif%}
              <h1 class="banner__title">{{page.porject_title | upcase}}</h1>
              <h4 class="banner__subtitle">{{page.porject_subtitle | upcase}}</h4>
-             {%if page.porject_apple_imglink && page.porject_android_imglink%}
+             {%if page.appstore_url or page.playstore_url%}
              <h6 class="banner__mintitle">DOWNLOAD FOR</h6>
              {%endif%}
-             {%if page.porject_android_imglink%}
-             <a href={{page.porject_apple_imglink}}><img class="banner__himg" src="/assets/img/portfolio/apple.png"></a>
+             {%if page.appstore_url%}
+             <a href={{page.appstore_url}}><img class="banner__himg" src="/assets/img/portfolio/apple.png"></a>
              {%endif%}
-             {%if page.porject_android_imglink%}
-             <a href={{page.porject_android_imglink}}><img class="banner__himg" src="/assets/img/portfolio/android.png"></a>
+             {%if page.playstore_url%}
+             <a href={{page.playstore_url}}><img class="banner__himg" src="/assets/img/portfolio/android.png"></a>
              {%endif%}
 
         </div>
