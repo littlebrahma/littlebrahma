@@ -16,10 +16,7 @@ featured_quote: The Groom Effect <br> Groom.co raises $20B
 challengeDesc: The home page of a design studio should be unique and catchy. The creative minds over at Little Brahma wanted to do something unique with their home screen. Then we did the unthinkable. We clay models and animated it !
 img2: "/assets/img/casestudy/animation/2.gif"
 solutionDesc: The clay models created were photographed and superimposed on top of graphical animation to create an unique piece of art which of course interacts with the user. Result? An awesome catchy landing page.
-solutionImg: 
- - "/assets/img/casestudy/dashboard_wShadow.png"
- - "/assets/img/casestudy/dashboard_wShadow.png"
- - "/assets/img/casestudy/dashboard_wShadow.png"
+
 
 solutionVideo : "/assets/img/casestudy/3.mp4"
 
