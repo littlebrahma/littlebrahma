@@ -1,32 +1,44 @@
 {% include header.html %}
-   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-
     <section class="detailBg">
     {% include common_header.html %}
       
        <div class="commonHeight comHeight">
        <div>
+         {%if page.bannerImg %}
         <img src="{{page.bannerImg}}" class="commonHeight__mainImg">
+        {%endif%}
         <h5 class="commonHeight__heading">{{page.porject_title}}</h5>
         <h5 class="banner__subtitle">{{page.porject_subtitle}}</h5>
+        {%if page.playstore_url || page.appstore_url %}
        <h6 class="banner__mintitle">DOWNLOAD FOR </h6>
-        <img src="/assets/img/casestudy/apple.png" class="banner__himg">
-        <img src="/assets/img/casestudy/android.png" class="banner__himg">
+
+         {%if page.playstore_url %}
+       <a href="{{page.playstore_url}}">
+        <img src="/assets/img/casestudy/apple.png" class="banner__himg"></a>
+        {%endif%}
+         {%if page.appstore_url %}
+       <a href="{{page.appstore_url}}"> <img src="/assets/img/casestudy/android.png" class="banner__himg"></a>
+        {%endif%}
+         {%endif%}
       </div> 
       </div>
     </section>
 
     <div class="info">
       <p class="info__text1">{{page.project_detail}}</p>
-      <p class="info__text2">FEATURED ON <span><img src="{{page.img}}" class="info__dock"></span></p>
+      {%if page.featured == 'Yes' %}
+      <p class="info__text2">FEATURED ON <span><img src="{{page.featured_img}}" class="info__dock"></span></p>
+   {%endif%}
     </div>
+    {%if page.featured =='Yes'%}
     <div class="chip col-lg-12">
-      <img src="{{page.img1}}" class="chip__logo">
+      <img src="{{page.featured_img1}}" class="chip__logo">
       <img src="/assets/img/casestudy/comma.png" class="chip__comma">
-      <p class="chip__content">{{page.img1Content}}</p>
+      <p class="chip__content">{{page.featured_quote}}</p>
       <img src="/assets/img/casestudy/comma1.png" class="chip__comma1">
       <p class="chip__read">Read Full Article</p>
     </div>
+    {%endif%}
     <div class="challenge">
       <h1 class="challenge__heading">CHALLENGE</h1>
     <hr>
@@ -34,7 +46,7 @@
 
 </p></div>
 <img src="{{page.img2}}" class="challenge__img">
-<p class="challenge__italic">{{page.img2Content}}</p>
+<!--<p class="challenge__italic">{{page.img2Content}}</p>-->
     </div>
     <div class="solution">
       <h1 class="solution__heading"> SOLUTION </h1>
@@ -43,21 +55,11 @@
       </p></div>
       
       <div class="solution__circle">
+      {%for solutionImg in page.solutionImg%}
       <div>
-        <img src="{{page.solutionImg}}" class="solution__img">
+        <img src="{{solutionImg}}" class="solution__img">
         </div>
-        <div>
-        <img src="{{page.solutionImg}}" class="solution__img">
-        </div>
-        <div>
-        <img src="{{page.solutionImg}}" class="solution__img">
-        </div>
-        <div>
-        <img src="{{page.solutionImg}}" class="solution__img">
-        </div>
-        <div>
-        <img src="{{page.solutionImg}}" class="solution__img">
-        </div>
+        {%endfor%}
       </div>
     </div>
 

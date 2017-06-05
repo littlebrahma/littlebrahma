@@ -1,4 +1,11 @@
-{% include header.html %} {% for author in site.data.authors %} {% if author.name == page.author_name %} {% assign author_name = author.name %} {% assign author_image = author.image %} {% assign author_title = author.title %} {% break %} {% endif %} {%
+{% include header.html %} 
+{% for author in site.data.authors %} 
+{% if author.name == page.author_name %} 
+{% assign author_name = author.name %} 
+{% assign author_image = author.image %} 
+{% assign author_title = author.title %} 
+{% break %} 
+{% endif %} {%
 endfor %}
 
 <div class="blogDetailBg">
@@ -53,6 +60,7 @@ endfor %}
                 </div>
 <div class="middleSection2">
    {{ content }} 
+    <div id="disqus_thread"></div>
     </div>
 {% if content and page.related %}
 <!-- <div class="middleSection4">

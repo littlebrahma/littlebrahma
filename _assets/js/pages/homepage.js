@@ -40,7 +40,7 @@
 
 animationGifs();
 if($(window).width()  < 1024){
-
+$('.landing_container').show();
     initalizeSlick();
 }
 else{

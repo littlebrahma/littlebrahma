@@ -11,7 +11,7 @@ blog_highlight: >-
   doesn't make you the master of the art.
 blog_description: A guide to start your animation journey
 blog_category: ANIMATION
-thumbnail: 1.png
+thumbnail: /assets/img/blog/1.png
 ---
 Since the growth of digital era, Animation has gained a wide popularity with the use of motion design in the media. What makes the motion design so captivating and popular is that it conveys the idea or a thought more appealing and sensible way a human can understand. Motion design can convey a process or an idea much more effectively than a still image. In the previous century, the animation was a thing which was a trade known to a few. But now with the emergence of digital trends, nowadays it accessible for who ever want to create an experience.
 
