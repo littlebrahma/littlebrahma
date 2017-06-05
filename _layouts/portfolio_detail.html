@@ -4,12 +4,21 @@
     
       <div class="banner">
          <div>
-             <img class="banner__logo" src="/assets/img/portfolio/logo.png">
+             {%if page.banner__logo%}          
+             <img class="banner__logo" src="{{page.banner__logo}}">
+             {%endif%}
              <h1 class="banner__title">{{page.porject_title | upcase}}</h1>
              <h4 class="banner__subtitle">{{page.porject_subtitle | upcase}}</h4>
+             {%if page.porject_apple_imglink && page.porject_android_imglink%}
              <h6 class="banner__mintitle">DOWNLOAD FOR</h6>
+             {%endif%}
+             {%if page.porject_android_imglink%}
              <a href={{page.porject_apple_imglink}}><img class="banner__himg" src="/assets/img/portfolio/apple.png"></a>
+             {%endif%}
+             {%if page.porject_android_imglink%}
              <a href={{page.porject_android_imglink}}><img class="banner__himg" src="/assets/img/portfolio/android.png"></a>
+             {%endif%}
+
         </div>
       </div>
 </section>
@@ -31,23 +40,23 @@
                 {% endfor %}   
               </div>
             </div>
+            {%if page.img%}
             <img class="middle-section1__img1" src="{{page.img}}">
             <p class="italic">{{page.imgContent}}</p> 
+            {%endif%}
           </div>
       </div>
+      {%if page.slide_images.size > 0%}
     <div class="middle-section2">
     <div class="middle-section2__inner">
+    {%for img in page.slide_images%}
     <div class="middle-section2__allign">
-    <img class="middle-section2__img1" src="{{page.img1}}">
+    <img class="middle-section2__img1" src="{{img}}">
     </div>
-    <div class="middle-section2__allign">
-    <img class="middle-section2__img1" src="{{page.img2}}">
+    {%endfor%}
+        </div>
     </div>
-    <div class="middle-section2__allign">
-    <img  class="middle-section2__img1" src="{{page.img3}}">
-    </div> 
-    </div>
-    </div>
+    {%endif%}
     <!-- <div class="middle-section">
     <h2 class="middle-section3__title2">{{template.title}}</h2>
 	  <div class="middle-section3">
@@ -73,14 +82,21 @@
     </div>
     </div> -->
     <div class="middle-section">
+    {%if page.variation_img1 && page.variation_img2 && page.variation_img3 && page.variation_img4 && page.variation_img5%}
     <div class="middle-section3">
     <h2 class="middle-section3__title1">VARIATIONS</h2>
     <hr class="middle-section3__hr">
     <div class="middle-section3__midimg">
+    {%if page.variation_img1%}
      <div class="middle-section3__midimg--class1"  style="background-image:url('{{page.variation_img1}}');"></div>
+     {%endif%}
      <div class="middle-section3__midimg--class2">
+     {%if page.variation_img2%}
       <div class="middle-section3__midimg--class2-1"  style="background-image:url('{{page.variation_img2}}');"></div>
+      {%endif%}
+      {%if page.variation_img3%}
       <div class="middle-section3__midimg--class2-2" style="background-image:url('{{page.variation_img3}}');"></div>
+      {%endif%}
      </div>
       <!-- <div class="middle-section3__midimg--class1">
         <img class="middle-section3__img1" src="/assets/img/portfolio/card 1.1.svg">
@@ -100,10 +116,15 @@
       <hr class="middle-section4__hr4">
       <p class="middle-section4__algn">{{page.porject_description1}}</p>
       </div> -->
+      {%if page.variation_img4%}
       <img class="middle-section4__imgb" src='{{page.variation_img4}}'>
+      {%endif%}
+      {%if page.variation_img5%}
      <img class="middle-section4__imgbg" src="{{page.variation_img5}}">
+     {%endif%}
       </div>
       </div>
+      {%endif%}
       </div>
       <div class="middle-section5">
       <h2 class="middle-section5__headng">WANT TO GET SOME AWESOME PRODUCTS LIKE THIS ?</h2>
