@@ -9,7 +9,7 @@
         {%endif%}
         <h5 class="commonHeight__heading">{{page.porject_title}}</h5>
         <h5 class="banner__subtitle">{{page.porject_subtitle}}</h5>
-        {%if page.playstore_url || page.appstore_url %}
+        {%if page.playstore_url or page.appstore_url %}
        <h6 class="banner__mintitle">DOWNLOAD FOR </h6>
 
          {%if page.playstore_url %}
@@ -53,7 +53,7 @@
       <hr>
       <div class="solution__content">{{page.solutionDesc}}<p> 
       </p></div>
-      
+      {%if page.solutionImg.size >0%}
       <div class="solution__circle">
       {%for solutionImg in page.solutionImg%}
       <div>
@@ -61,6 +61,13 @@
         </div>
         {%endfor%}
       </div>
+{%endif%}
+{%if page.solutionVideo%}
+      <video controls="controls" poster="linktoposter.jpg" width="640" height="360">
+ <source src="assets/casestudy/animation/3.mp4" type="video/mp4" />
+ <!--<source src="linktomovie.webm" type="video/webm" />
+ <source src="linktomovie.ogv" type="video/ogg" />-->
+ {%endif%}
     </div>
 
     <div class="GIT">

@@ -21,7 +21,7 @@ solutionImg:
  - "/assets/img/casestudy/dashboard_wShadow.png"
  - "/assets/img/casestudy/dashboard_wShadow.png"
 
-animationVideo : "/assets/img/casestudy/3.mp4"
+solutionVideo : "/assets/img/casestudy/3.mp4"
 
 projectStatsNum: 35
 projectStatsNum1: 12
