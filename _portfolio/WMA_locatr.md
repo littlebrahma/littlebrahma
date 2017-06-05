@@ -5,7 +5,7 @@ categories:
 - WEB & MOBILE APP
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/blog/1_1.png"
+background-image: "/assets/img/portfolio/port_cover_img/locatr_web-and-app.png"
 porject_title: Locatr
 porject_subtitle: UI/UX, App development
 porject_apple_imglink: ""

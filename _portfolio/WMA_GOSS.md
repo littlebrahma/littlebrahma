@@ -5,7 +5,7 @@ categories:
 - WEB & MOBILE APP
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/blog/1_1.png"
+background-image: "/assets/img/portfolio/port_cover_img/goss.png"
 porject_title: Global Order Status Service - GOSS
 porject_subtitle: UI/UX, Web development, Devops
 porject_apple_imglink: ""

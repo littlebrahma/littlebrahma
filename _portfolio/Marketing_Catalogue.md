@@ -5,7 +5,7 @@ categories:
 - MAGAZINE & BOOK
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/blog/1_1.png"
+background-image: "/assets/img/portfolio/port_cover_img/marketingcatalogue.png"
 porject_title: Marketing Catalogue
 porject_subtitle: Layout design, Magazine design, Illustration
 porject_apple_imglink: ""

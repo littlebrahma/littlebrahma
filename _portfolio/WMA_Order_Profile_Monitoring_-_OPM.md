@@ -5,7 +5,7 @@ categories:
 - WEB & MOBILE APP
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/blog/1_1.png"
+background-image: "/assets/img/portfolio/port_cover_img/opm.png"
 porject_title: Order Profile Monitoring - OPM
 porject_subtitle: UI/UX, Web development, Devops
 porject_apple_imglink: ""

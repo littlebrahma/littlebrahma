@@ -5,7 +5,7 @@ categories:
 - ILLUSTRATION & ART
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/blog/1_1.png"
+background-image: "/assets/img/portfolio/port_cover_img/calender.png"
 porject_title: Calendar 2017
 porject_subtitle: Character Designing, Illustration
 porject_apple_imglink: ""

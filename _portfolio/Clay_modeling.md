@@ -5,7 +5,7 @@ categories:
 - ILLUSTRATION & ART
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/blog/1_1.png"
+background-image: "/assets/img/portfolio/port_cover_img/claymodeling.png"
 porject_title: Clay modeling
 porject_subtitle: Conceptualization, Modeling
 porject_apple_imglink: ""

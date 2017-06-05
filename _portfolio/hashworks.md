@@ -4,7 +4,7 @@ description: Conceptualization, Logo design
 categories: BRANDING
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/blog/1_1.png"
+background-image: "/assets/img/portfolio/port_cover_img/hashworks.png"
 banner__logo: "/assets/img/portfolio/HW_01.png"
 porject_title: Hashworks
 porject_subtitle: Conceptualization, Logo design
