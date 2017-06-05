@@ -1,4 +1,6 @@
 {% include header.html %}
+<script>UPLOADCARE_PUBLIC_KEY = "99f2df07de65340d258b";</script>
+<script src="https://ucarecdn.com/libs/widget/2.10.2/uploadcare.full.min.js" charset="utf-8"></script>
 <section class="service-detailBg">
     {% include common_header.html %}
 </section>
@@ -49,7 +51,7 @@
                     <p class="career__detail-para">{{job_skill}}</p>
                     {% endfor %}
                     <div class="center-xs">
-                    <button class="career__detail-action"><a>APPLY</a></button>
+                    <button class="career__detail-action"><a data-remodal-target="modal">APPLY</a></button>
                     </div>
                 </div>
                 {% endfor %}
@@ -57,5 +59,41 @@
             </div>
         </div>
     </div>
+  <div class="remodal-bg">
+<div class="remodal applyCareers" data-remodal-id="modal">
+  <a data-remodal-action="close" class="remodal-close"></a>
+  <h1>Fill your Details</h1>
+  <form action="https://formspree.io/manoj.kumar@hashworks.co"
+      method="POST">
+<div class="row applyCareers__container">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 applyCareers__left">
+            <label>Name</label>
+            <input type="text" name="name">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 applyCareers__right">
+ <label>Email</label>
+            <input type="email" name="_replyto">
+        </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 applyCareers__left">
+            <label>Designation</label>
+            <input type="text" name="designation" >
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 applyCareers__right">
+ <label>Phone Number</label>
+            <input type="number" name="number">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 applyCareers__left start-lg start-md start-sm start-xs">
+            <img src="../assets/img/career/Icons/insert.png"/>
+            <input type="hidden" role="uploadcare-uploader"
+       data-images-only="true" id="fileupload" />
+        </div>
+    </div>
+  <button class="remodal-confirm" type="submit" value="Send">SUBMIT</button>
+  </form>
 </div>
+</div>
+
+
+</div>
+
 {% include common_footer.html %} {% include footer.html %}

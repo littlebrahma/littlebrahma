@@ -2,7 +2,7 @@
 .bitballoon
 _site
 Gemfile.lock
-.DS_Store
+.DS_Store/
 assets/.DS_Store
 node_modules
 
