@@ -3,6 +3,7 @@ categories:
 - WEB & MOBILE DESIGN
 layout: casestudy_detail
 
+thumbnail : "/assets/img/casestudy/groome/groome.png"
 porject_title: GROOME
 porject_subtitle: UI/UX, MOBILE APPLICATION, DEVOPS
 project_detail: Making hiring process a breeze with multi levels of streamlined process with intuitive UI and non compromising UX.

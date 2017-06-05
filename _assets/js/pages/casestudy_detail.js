@@ -8,7 +8,7 @@
 });
 if (screen.width >= 1199) {
     $(window).scroll(function() {
-if ($(this).scrollTop() > $(".detailBg").height() - $(".commonHeader").height()){  
+if ($(this).scrollTop() > $(".detailBg").height() - $(".commonHeader").height() || $(this).scrollTop() > $('.info').height()+$('.challenge').height()){  
     $('.commonHeader').css({"background-color":"transparent"}).addClass("animated fadeIn");
     $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
         $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");

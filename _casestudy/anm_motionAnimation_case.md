@@ -2,7 +2,7 @@
 categories:
 - ANIMATION
 layout: casestudy_detail
-
+thumbnail : "/assets/img/casestudy/animation/stopmotion.png"
 
 porject_title: STOP MOTION ANIMATION
 porject_subtitle: CLAY MODELING, CLAYMATION, CONCEPTUALIZATION
@@ -18,7 +18,7 @@ img2: "/assets/img/casestudy/animation/2.gif"
 solutionDesc: The clay models created were photographed and superimposed on top of graphical animation to create an unique piece of art which of course interacts with the user. Result? An awesome catchy landing page.
 
 
-solutionVideo : "/assets/img/casestudy/3.mp4"
+solutionVideo : "/assets/img/casestudy/animation/3.mp4"
 
 projectStatsNum: 35
 projectStatsNum1: 12

@@ -204,9 +204,10 @@ function initalizeSlick(){
 $('.homepageCln').slick({
         dots: true,
   speed: 500,
-  arrows:true,
+  arrows:false,
   slidesToShow:1,
-  slidesToScroll:1
+  slidesToScroll:1,
+  infinite:false
         
   
         // appendDots:'.scroll-indicators',

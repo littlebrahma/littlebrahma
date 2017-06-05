@@ -4,7 +4,7 @@ categories:
 - WEB & MOBILE DESIGN
 layout: casestudy_detail
 
-
+thumbnail : "/assets/img/casestudy/xp/xpdashboard.png"
 porject_title: EXTREME PERFORMANCE - XP DASHBOARD
 porject_subtitle: UI/UX, MOBILE APPLICATION, DEVOPS
 project_detail: Integrated solution that reduced the workload of performance engineers and improved their efficiency in operations.
