@@ -1,4 +1,5 @@
 {% include header.html %}
+
 <section class="service-detailBg">
     {% include common_header.html %}
 </section>
@@ -49,7 +50,7 @@
                     <p class="career__detail-para">{{job_skill}}</p>
                     {% endfor %}
                     <div class="center-xs">
-                    <button class="career__detail-action"><a>APPLY</a></button>
+                    <button class="career__detail-action"><a data-remodal-target="modal">APPLY</a></button>
                     </div>
                 </div>
                 {% endfor %}
@@ -57,5 +58,20 @@
             </div>
         </div>
     </div>
+  <div class="remodal-bg">
+<div class="remodal" data-remodal-id="modal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1>Remodal</h1>
+  <p>
+    Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+  </p>
+  <br>
+  <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+  <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
 </div>
+</div>
+
+
+</div>
+
 {% include common_footer.html %} {% include footer.html %}
