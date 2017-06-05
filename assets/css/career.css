@@ -812,7 +812,8 @@ a {
     font-size: 10px;
     border: none;
     cursor: pointer;
-    outline: none; }
+    outline: none;
+    height: 27px; }
     .career .career__detail-action:hover {
       background-color: #fff;
       color: #ec1944;
