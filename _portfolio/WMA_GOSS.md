@@ -5,7 +5,7 @@ categories:
 - WEB & MOBILE APP
 layout: portfolio_detail
 background-class: portBgImg
-
+background-image: "/assets/img/portfolio/port_cover_img/goss.png"
 porject_title: Global Order Status Service - GOSS
 porject_subtitle: UI/UX, Web development, Devops
 porject_apple_imglink: ""
@@ -15,15 +15,10 @@ whatWeDoList:
 - UI/UX
 - Web development
 - Devops
-img: "/assets/img/portfolio/Hashworks-Logo.svg"
+img: "/assets/img/portfolio/goss/2.png"
 imgContent:  Simplified UI and UX to give a better experience.
-img1: "/assets/img/portfolio/Logo_step 1.svg"
-img2: "/assets/img/portfolio/Logo_step 2.svg"
-img3: "/assets/img/portfolio/Logo_step 3.svg"
 
-variation_img1: "/assets/img/portfolio/card 1.1.svg"
-variation_img2: "/assets/img/portfolio/card 1.2.svg"
-variation_img3: "/assets/img/portfolio/card 1.3.svg"
-variation_img4: "/assets/img/portfolio/card 2.1.svg"
-variation_img5: "/assets/img/portfolio/card 3.1.png"
+variation_img1: "/assets/img/portfolio/goss/7.png"
+variation_img2: "/assets/img/portfolio/goss/8.png"
+variation_img3: "/assets/img/portfolio/goss/9.png"
 ---

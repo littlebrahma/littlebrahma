@@ -5,7 +5,7 @@ categories:
 - ANIMATION
 layout: portfolio_detail
 background-class: portBgImg
-
+background-image: "/assets/img/portfolio/port_cover_img/MYB_animations.png"
 porject_title: Mysterybox UI Animations
 porject_subtitle: Isometric Designing, Animation
 porject_apple_imglink: ""
@@ -14,15 +14,11 @@ project_detail: This series of animations gives the users more fun based experie
 whatWeDoList:
 - Isometric Designing
 - Animation
-img: "/assets/img/portfolio/Hashworks-Logo.svg"
+img: "/assets/img/portfolio/myb_animation/2.gif"
 imgContent:  An overview of the app using animation.
-img1: "/assets/img/portfolio/Logo_step 1.svg"
-img2: "/assets/img/portfolio/Logo_step 2.svg"
-img3: "/assets/img/portfolio/Logo_step 3.svg"
+slide_images:
+- "/assets/img/portfolio/myb_animation/3.gif"
+- "/assets/img/portfolio/myb_animation/4.gif"
+- "/assets/img/portfolio/myb_animation/5.gif"
 
-variation_img1: "/assets/img/portfolio/card 1.1.svg"
-variation_img2: "/assets/img/portfolio/card 1.2.svg"
-variation_img3: "/assets/img/portfolio/card 1.3.svg"
-variation_img4: "/assets/img/portfolio/card 2.1.svg"
-variation_img5: "/assets/img/portfolio/card 3.1.png"
 ---

@@ -1,7 +1,6 @@
 (function(){
 $( document ).ready(function() {
-  console.log($(".portfolioBg").height());
-  console.log($(".commonHeader").height());
+  
   if ($(window).width() >= 1199) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > $(".portfolioBg").height() - $(".commonHeader").height()){  
@@ -22,7 +21,7 @@ if ($(this).scrollTop() > $(".portfolioBg").height() - $(".commonHeader").height
 }
 else if($(window).width() >= 768 && $(window).width() < 1024) {
     $(window).scroll(function() {
-      console.log($(this).scrollTop(),$(".portfolioBg").height() - $(".commonHeader").height() , $('body').height()-$('.commonFooter').outerHeight() - 100)
+     
 if ($(this).scrollTop() > $(".portfolioBg").height() - $(".commonHeader").height() && $(this).scrollTop() < $('body').height()-$('.commonFooter').outerHeight() - 300){  
     $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");
     $(".selectSection").css({"position":"fixed","top":"140px"});

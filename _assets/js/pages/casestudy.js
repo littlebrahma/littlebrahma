@@ -1,7 +1,6 @@
 (function(){
 $( document ).ready(function() {
-  console.log($(".portfolioBg").height());
-  console.log($(".commonHeader").height());
+  
   if ($(window).width() >= 1024) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").height()){  
@@ -22,8 +21,8 @@ if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").height
 }
 else if($(window).width() >= 768 && $(window).width() < 1024) {
     $(window).scroll(function() {
-      debugger;
-      console.log($(this).scrollTop());
+     
+     
 
 if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").height()  ){  
     $('.commonHeader').css({"background-color":"#fff"}).addClass("animated fadeIn");

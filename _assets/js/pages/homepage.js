@@ -224,10 +224,10 @@ function jqueryScrollPluginSetting(){
         animationTime   : 100,
         swipeMode       : true,
         swipeUp : function() {
-           console.log('up-swipe');
+           
         },
         swipeDown : function() {
-            console.log('down-swipe');
+            
         },
         swipeLeft : function() {
             
@@ -237,10 +237,10 @@ function jqueryScrollPluginSetting(){
         },
         scrollDown : function() {
             myFunction('down');
-            console.log('down');
+            
         },
         scrollUp : function() {
-            console.log('up');
+           
             
              myFunction('up');
         }
