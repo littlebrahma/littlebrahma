@@ -1,7 +1,21 @@
 .service-detailBg .commonHeader {
     // position: static;
 }
+.career-row{
+    position: relative;
+}
+.selectSection {
 
+position:absolute;
+top:0px;
+
+}
+
+.career_right{
+			position: relative; 
+		left: 33.3%;
+		 top: 0px;
+	}
 .career-all {
     background-color: #f0f1f1;
     padding: 150px 0 50px;
@@ -42,6 +56,7 @@
     &__link {
         font-size: 12px;
         color: white;
+        cursor: pointer;
     }
     &__card {
         padding: 0 15px 40px;
@@ -308,6 +323,7 @@
 .career__img2 {
     font-size: 12px;
     color: white;
+    cursor: pointer;
 }
 
 .career__img3 {
@@ -318,6 +334,7 @@
     font-size: 17px;
     letter-spacing: 0.02em;
     font-family: montserrat-bold;
+    color: #000;
 }
 
 .career__detail-para {
@@ -326,6 +343,7 @@
     line-height: 20px;
     letter-spacing: 0.01em;
     margin: 0;
+    color: #000;   
 }
 
 @media screen and (max-width:991px) {

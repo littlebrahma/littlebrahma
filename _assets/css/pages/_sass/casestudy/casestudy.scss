@@ -2,6 +2,15 @@
 	.casestudyBg {
 		background-color: #FF1A46;
 	}
+	.casestudy_row{
+		position: relative;
+	}
+	
+	.caseDet{
+		position: relative; 
+		left: 33.3%;
+		 top: 0px;
+	}
 	.caseDetail {
 		padding: 34px 0 40px; 
 		&__title {

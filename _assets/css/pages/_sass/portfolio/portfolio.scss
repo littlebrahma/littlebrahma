@@ -2,6 +2,14 @@
 	.portfolioBg {
 		background-color: #F26522;
 	}
+	.portDetail{
+		position: relative;
+		left: 33.3%; 
+		top: 0px;
+	}
+	.blog-row {
+			position: relative;
+		}
 	.portBgImg {
 		// // margin-bottom: 30px;
 		// background-image: url("/assets/img/blog/1_1.png");
@@ -123,11 +131,7 @@
           }
          }
 	
-	@media screen and (min-width: 992px) {
-		.blog-row {
-			position: relative;
-		}
-	}
+	
     	@media screen and (min-width: 768px) and (max-width: 1024px){
          .portBgImg {
           height: 412px;

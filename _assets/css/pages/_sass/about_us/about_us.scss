@@ -411,7 +411,7 @@ height:auto;
         &__para{
             font-family : $primary-contentfamily;
   font-size : 10px;
-  line-height : 18px;
+  line-height : 19px;
   letter-spacing : 0.1px;
   color : #FFFFFF;
 text-align: center;
@@ -756,7 +756,10 @@ margin:0 auto;
   line-height : 24px;
   letter-spacing : 0.14px;
       }
-
+      &-right__para {
+          line-height: 24px;
+          font-size: 14px;
+      }
       
 
     }

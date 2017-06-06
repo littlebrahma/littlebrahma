@@ -310,46 +310,56 @@
 
 /* The actual popup */
 .popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
+   visibility: hidden;
+    width: 85px;
+    background-color: #5959b8;
+    font-family: 'Montserrat-regular';
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
-    left: 50%;
+    font-weight: 300;
+    bottom: 5%;
     margin-left: -80px;
+    font-size: 8px;
+    right: -60%;
+    height: 12px;
+    line-height: 12px;
 }
 
 /* Popup arrow */
 .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    // content: "";
+    // position: absolute;
+    // top: 100%;
+    // left: 50%;
+    // margin-left: -5px;
+    // border-width: 5px;
+    // border-style: solid;
+    // border-color: #555 transparent transparent transparent;
 }
 
 /* The actual popup */
 .popup .popuptext1 {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
+   visibility: hidden;
+    width: 85px;
+    background-color: #5959b8;
+    font-family: 'Montserrat-regular';
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    bottom: 13%;
-    left: 50%;
+    font-weight: 300;
+    bottom: 5%;
     margin-left: -80px;
+    font-size: 8px;
+    right: -120%;
+     height: 12px;
+    line-height: 12px;
 }
 
 /* Toggle this class - hide and show the popup */
