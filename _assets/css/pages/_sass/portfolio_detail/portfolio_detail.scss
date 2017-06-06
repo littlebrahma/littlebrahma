@@ -1,7 +1,13 @@
 .portfolioDetailBg{
-  background-color:#1a1746;
+  //background-color:#1a1746;
 }
-  
+.commonHeader{
+  z-index:9999!important;
+}
+  .banner__cont{
+position:relative;
+z-index:9999;
+  }
   
   .banner{
     display: flex;
@@ -10,6 +16,22 @@
        text-align: center;
        height:100vh;
     color:#fff;
+background-repeat: no-repeat;
+height: 100vh;
+    &:after {
+    content:'';
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: #1a1746;
+    opacity: 0.75;
+    
+}
+
     &__logo{
       height:63px;
       width:63px;

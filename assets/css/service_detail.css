@@ -844,6 +844,10 @@ a {
   background-color: #f0f1f1; }
   .service-detail__img {
     width: 140px; }
+  .service-detail__underline {
+    width: 60px;
+    border: 2px solid #000;
+    margin-top: 6px; }
   .service-detail__title {
     text-transform: uppercase;
     font-family: montserrat-bold;
@@ -853,13 +857,6 @@ a {
     margin-bottom: 0;
     color: #424043;
     position: relative; }
-    .service-detail__title::before {
-      content: " ";
-      position: absolute;
-      width: 30px;
-      border-bottom: 3px #424043 solid;
-      top: 40px;
-      width: 60px; }
   .service-detail__subtitle {
     text-transform: uppercase;
     font-family: montserrat-bold;
@@ -964,7 +961,7 @@ a {
       width: 100px; }
     .service-detail__title {
       font-size: 16px;
-      margin-top: 40px;
+      margin-top: 20px;
       letter-spacing: 0.02em;
       line-height: 20px;
       position: relative; }

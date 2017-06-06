@@ -828,6 +828,10 @@ a {
   .hero .commonFooter {
     padding: 0 0 25px; } }
 
+.selectSection {
+  position: absolute;
+  top: 80px; }
+
 .hero .blogBg {
   background-color: #27AAE1; }
 

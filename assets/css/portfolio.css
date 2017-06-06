@@ -831,6 +831,10 @@ a {
 .hero .portfolioBg {
   background-color: #F26522; }
 
+.hero .selectSection {
+  position: absolute;
+  top: 80px; }
+
 .hero .portDetail {
   position: relative;
   left: 33.3%;

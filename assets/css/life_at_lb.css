@@ -859,14 +859,17 @@ a {
   font-size: 18px;
   color: #333;
   letter-spacing: 0.02em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  margin-top: 0; }
 
 .contentContainer p {
   font-family: "raleway-regular";
   font-size: 15px;
   color: #666;
   line-height: 24px;
-  margin-bottom: 40px; }
+  margin-bottom: 80px;
+  margin-top: 0; }
 
 .imageSecondLayout__second {
   margin-top: 11px;
@@ -938,53 +941,62 @@ a {
   padding-top: 67%; }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .imageFirstLayout .img_cont:first-child {
+    /* margin-bottom: 3px; */
+    margin-top: -12px; }
   .imageSecondLayout__fLeft {
     margin-bottom: 12px; }
   .imageSecondLayout__second {
     margin-top: 15px;
-    margin-bottom: 40px; }
+    margin-bottom: 25px; }
   .lifeContainer {
     width: 280px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 100px; }
     .lifeContainer__details {
-      padding: 30px; }
+      padding: 25px 0px 30px; }
       .lifeContainer__details h1 {
         font-family: "montserrat-bold";
         font-size: 14px;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 0.02em;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        margin-top: 0; }
       .lifeContainer__details p {
         font-family: "raleway-regular";
         font-size: 12px;
         color: #666;
         line-height: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         text-align: center; }
   .contentContainer h1 {
     font-family: "montserrat-bold";
     font-size: 14px;
     color: #333;
     letter-spacing: 0.02em;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 0; }
   .contentContainer p {
     font-family: "raleway-regular";
     font-size: 12px;
     color: #666;
     line-height: 20px;
     margin-bottom: 20px;
+    margin-top: 0;
     text-align: center; }
   .imageFirstLayout .img_test {
     display: inline; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .imageFirstLayout #image {
+    margin-bottom: -12px; }
   .imageSecondLayout__fLeft {
-    margin-bottom: 12px; }
+    margin-bottom: 0px; }
   .imageSecondLayout__second {
-    margin-top: 15px;
+    margin-top: 9px;
     margin-bottom: 40px; }
   .lifeContainer {
     width: 520px;
@@ -1004,12 +1016,16 @@ a {
         font-size: 13px;
         color: #666;
         line-height: 21px;
-        margin-bottom: 40px; }
+        margin-bottom: 40px;
+        margin-top: 0;
+        margin-bottom: 0px; }
   .contentContainer h1 {
     font-family: "montserrat-bold";
     font-size: 15px;
     color: #333;
-    letter-spacing: 0.02em; }
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+    margin-top: 0; }
   .contentContainer p {
     font-family: "raleway-regular";
     font-size: 13px;
@@ -1019,6 +1035,10 @@ a {
     display: inline; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .imageFirstLayout .img_cont2 {
+    display: inline;
+    width: 400px;
+    margin-left: 12px; }
   .lifeContainer {
     width: 720px;
     margin-left: auto;
@@ -1031,23 +1051,28 @@ a {
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 0.02em;
-        margin-bottom: 38px; }
+        margin-bottom: 30px;
+        margin-top: 0; }
       .lifeContainer__details p {
         font-family: "raleway-regular";
         font-size: 14px;
         color: #666;
         line-height: 22px;
-        margin-bottom: 40px; }
+        margin-bottom: 0px;
+        margin-top: 0; }
   .contentContainer h1 {
     font-family: "montserrat-bold";
     font-size: 17px;
     color: #333;
-    letter-spacing: 0.02em; }
+    letter-spacing: 0.02em;
+    margin-top: 0;
+    margin-bottom: 30px; }
   .contentContainer p {
     font-family: "raleway-regular";
     font-size: 14px;
     color: #666;
-    line-height: 22px; } }
+    line-height: 22px;
+    margin-top: 0; } }
 
 @media only screen and (min-width: 1866px) {
   .imageFirstLayout .img_cont0 {
@@ -1081,7 +1106,8 @@ a {
     font-size: 24px;
     color: #333;
     letter-spacing: 0.02em;
-    line-height: 34px; }
+    line-height: 34px;
+    margin-bottom: 40px; }
   .contentContainer p {
     font-family: "raleway-regular";
     font-size: 16px;

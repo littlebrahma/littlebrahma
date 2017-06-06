@@ -24,9 +24,12 @@
     }
     .processBgContent {
         background-color: #1A1746;
-        padding: 120px 0;
+        padding: 60px 0;
         max-width: 1866px;
         margin: 0 auto;
+         &__allign:last-child {
+                padding-bottom:0;
+            }
         &__leftSpacing {
             position: relative;
             left: 3rem;
@@ -86,7 +89,7 @@
             &__line {
                 // background-image:url("/assets/img/process/right-01.svg");
                 width: 10rem;
-                top: 15rem;
+                top: 16rem;
                 position: absolute;
             }
             &__line1 {
@@ -129,7 +132,7 @@
     @media only screen and (min-width:768px) and (max-width:1024px) {
         .processBgContent {
             background-color: #1A1746;
-            padding: 120px 0px 0px 0px;
+            padding: 40px 0px;
             max-width: 1866px;
             margin: 0 auto;
             &__img {
@@ -150,14 +153,14 @@
                 &__line {
                     // background-image:url("/assets/img/process/right-01.svg");
                     width: 8rem;
-                    top: 20rem;
+                    top: 16rem;
                     position: absolute;
                     right: 5rem;
                 }
                 &__line1 {
                     // background-image:url("/assets/img/process/left-01.svg");
                     width: 8rem;
-                    top: 18rem;
+                    top: 16rem;
                     position: absolute;
                 }
                 &__heading {
@@ -166,7 +169,7 @@
                     letter-spacing: 0.02em;
                     line-height: 18px;
                     margin-top: 20px;
-                    margin-bottom: 15px;
+                    margin-bottom: 20px;
                 }
                 &__hLine {
                     font-family: "montserrat-bold";
@@ -217,7 +220,7 @@
     @media only screen and (min-width:320px) and (max-width:767px) {
         .processBgContent {
             background-color: #1A1746;
-            padding: 60px 0px 0px 0px;
+            padding: 30px 0px ;
             max-width: 75%;
             margin: 0 auto;
             &__img {
@@ -247,7 +250,7 @@
                     font-family: "montserrat-bold";
                     letter-spacing: 0.65px;
                     margin-top: 0;
-                    padding-bottom: 18px;
+                    padding-bottom: 20px;
                     width: 200px;
                     margin: 0 auto
                 }
@@ -285,7 +288,7 @@
                     border-top: 3px solid #ffc600;
                     padding-top: 2px;
                     margin-top: 20px;
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
                 }
                 &__line {
                     // background-image:url("/assets/img/process/right-01.svg");
@@ -304,7 +307,7 @@
                 }
             }
             &__allign {
-                padding-bottom: 50px;
+                padding-bottom: 30px;
             }
             &__allign1 {
                 // padding-right: 60px;
@@ -335,12 +338,17 @@
     }
     @media only screen and (min-width:1366px) and (max-width:1866px) {
         .processBgContent {
+            padding:80px 0px;
             .processContent {
+                &__line {
+                    top: 16rem;
+                }
                 &__heading {
                     font-size: 18px;
                     letter-spacing: 0.02em;
                     margin-top: 35px;
                     line-height: 30px;
+                    margin-bottom:30px;
                 }
                 &__para {
                     font-size: 13px;
@@ -352,12 +360,18 @@
     }
     @media only screen and (min-width:1866px) {
         .processBgContent {
+            padding:100px 0px; 
+            &__allign:last-child {
+                padding-bottom:0;
+            }
             .processContent {
+                
                 &__heading {
                     font-size: 24px;
                     letter-spacing: 0.02em;
-                    margin-top: 15px;
+                    margin-top: 40px;
                     line-height: 34px;
+                    margin-bottom:35px;
                 }
                 &__para {
                     font-size: 14px;
@@ -366,7 +380,7 @@
                 }
                 &__line {
                     width: 8rem;
-                    top: 18rem;
+                    top: 19rem;
                     position: absolute;
                 }
                 &__line1 {

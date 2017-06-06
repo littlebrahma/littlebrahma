@@ -834,6 +834,10 @@ a {
 .hero .casestudy_row {
   position: relative; }
 
+.hero .selectSection {
+  position: absolute;
+  top: 80px; }
+
 .hero .caseDet {
   position: relative;
   left: 33.3%;

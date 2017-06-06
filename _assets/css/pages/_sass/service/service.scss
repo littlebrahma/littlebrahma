@@ -207,6 +207,11 @@
  }
  
  @media only screen and (min-width:1366px) and (max-width:1866px) {
+     .outerLayout {
+     width: 828px;
+     margin-left: auto;
+     margin-right: auto;
+ }
      .service-page {
          //  padding: 80px 20%;
          padding-bottom: 0;
@@ -236,12 +241,15 @@
              letter-spacing: 0.02em;
              font-family: raleway-regular;
          }
+         &__list:last-child {
+             margin-bottom:0px;
+         }
          &__list-anchor {
-             padding-bottom: 15px;
+             padding-bottom: 10px;
          }
          &__unordered-list {
              width: 100%;
-             margin-bottom: 0;
+             margin: 20px 0px 30px;
          }
          &__link {
              font-size: 13px;
@@ -251,7 +259,7 @@
  
  @media only screen and (min-width:1866px) {
      .outerLayout {
-     width: 50%;
+     width: 828px;
      margin-left: auto;
      margin-right: auto;
  }
@@ -264,7 +272,7 @@
              letter-spacing: 0.02em;
          }
          &__all-design {
-             padding-top: 100px;
+             padding-top: 50px;
              padding-bottom: 100px;
          }
          &__img {
@@ -277,16 +285,23 @@
          &__subtitle {
              font-size: 24px;
          }
+         &__subtitle-underline {
+             
+         }
          &__list {
              font-size: 16px;
              letter-spacing: 0.02em;
+             margin-bottom:20px;
+         }
+         &__list:last-child {
+             margin-bottom:0px;
          }
          &__list-anchor {
-             padding-bottom: 15px;
+             padding-bottom: 10px;
          }
          &__unordered-list {
              width: 100%;
-             margin-bottom: 0;
+             margin: 20px 0px;
          }
          &__link {
              font-size: 14px;
