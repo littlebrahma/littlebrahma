@@ -2,6 +2,14 @@
 	.portfolioBg {
 		background-color: #F26522;
 	}
+	.portDetail{
+		position: relative;
+		left: 33.3%; 
+		top: 0px;
+	}
+	.blog-row {
+			position: relative;
+		}
 	.portBgImg {
 		// // margin-bottom: 30px;
 		// background-image: url("/assets/img/blog/1_1.png");
@@ -52,17 +60,23 @@
 	    		}
 	    		&--btn {
                     background: #fc0043;
-                     border:1px;
+                     border:2px solid #fc0034;
                     cursor:pointer;
                     padding: 10px 15px;
      				border-radius: 15px;
-     				font-family:$ternary-titlefamily;
-    				font-size: 12px;
+     				font-family:raleway-bold;
+    				font-size: 10px;
     				font-weight: bold;
             outline: none;
     				color: white;
                     text-transform: uppercase;
+                    &:hover {
+            background: transparent;
+            border:2px solid #fc0034;
+            color: black;
+          }
                 }
+                
     		}
     	}
 	}
@@ -117,11 +131,7 @@
           }
          }
 	
-	@media screen and (min-width: 992px) {
-		.blog-row {
-			position: relative;
-		}
-	}
+	
     	@media screen and (min-width: 768px) and (max-width: 1024px){
          .portBgImg {
           height: 412px;
