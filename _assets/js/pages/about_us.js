@@ -81,13 +81,13 @@ if($(window).width()  > 1024){
 		//after leaving section 2
 		if(index == 2 && direction =='down'){
             
-			 $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_RED.png");
-        $('.commonHeader__logo').attr("src", "/assets/img/service/LOGO_RED.png");
+			 $('.commonMenu__icon').attr("src", "/assets/img/common/LB_Menu_color.svg");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LB_LOGO_Color.svg");
 		}
 
 		else if(index == 3 && direction == 'up'){
 			$('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
-        $('.commonHeader__logo').attr("src", "/assets/img/common/LOGO_WHITE.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LB_Logo_White.svg");
 		}
 	}
     });
