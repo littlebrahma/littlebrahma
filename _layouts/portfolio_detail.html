@@ -2,8 +2,8 @@
 <section class="portfolioDetailBg">
     {% include common_header.html %}
     
-      <div class="banner">
-         <div>
+      <div class="banner" style="background:url('{{page.img}}') no-repeat ">
+         <div class="banner__cont">
              {%if page.banner__logo%}          
              <img class="banner__logo" src="{{page.banner__logo}}">
              {%endif%}
