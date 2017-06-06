@@ -2,7 +2,7 @@
 title: 'ILLUSTRATION AND ART'
 keywords : "illustrators , caricature , Patterns ,apparel design, graphic design or interior décor,high-end graphics ,design,"
 layout: 'service_detail'
-img: "/assets/img/service/Mudras/3.png"
+img: "/assets/img/service/Mudras/Illustration_and_Art.svg"
 service_lists:
 - title: 'ILLUSTRATIONS'
   description: 'Drawing is like any other creation is the hallmark of its creator. For example, our illustrators, they make each narrow line appear as if it was magically drawn with finesse. Adding the talents of prolific inventiveness & technical versatility, we are making our illustrations deeply influential. We could almost be asking impressionism to revisit us. Enter the gallery to see what our upper crest has achieved, that is quintessentially modern.'

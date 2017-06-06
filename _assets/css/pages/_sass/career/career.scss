@@ -25,6 +25,14 @@ top:0px;
 }
 
 .career {
+     .blog-filter {
+        margin-bottom: 0px;
+        &__img {
+            width: $common-width;
+            height: 178px;
+            vertical-align: middle;
+        }
+    }
     font-family: montserrat-regular;
     padding: 0 30px;
     &__underline {
@@ -39,7 +47,8 @@ top:0px;
         line-height: 28px;
         color: #414042;
         margin: 0 0 10px;
-        margin-bottom:2rem;
+        margin-bottom:3rem;
+        width:300px;
     }
     &__img {
         display: inline-block;
@@ -63,7 +72,7 @@ top:0px;
         cursor: pointer;
     }
     &__card {
-        padding: 0 15px 40px;
+        padding: 0 15px 30px;
     }
     &__job-card {
         color: white;

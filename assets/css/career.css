@@ -409,7 +409,8 @@ a {
   margin: 0 35px 0 0;
   display: inline-block; }
   .hero .commonMenu img {
-    width: 20px; }
+    width: 20px;
+    height: 20px; }
 
 .hero .MenuContent {
   float: right;
@@ -851,6 +852,12 @@ a {
 .career {
   font-family: montserrat-regular;
   padding: 0 30px; }
+  .career .blog-filter {
+    margin-bottom: 0px; }
+    .career .blog-filter__img {
+      width: 100%;
+      height: 178px;
+      vertical-align: middle; }
   .career__underline {
     border-bottom: #414042 5px solid;
     width: 60px;
@@ -862,7 +869,8 @@ a {
     line-height: 28px;
     color: #414042;
     margin: 0 0 10px;
-    margin-bottom: 2rem; }
+    margin-bottom: 3rem;
+    width: 300px; }
   .career__img {
     display: inline-block; }
   .career__location {
@@ -880,7 +888,7 @@ a {
     color: white;
     cursor: pointer; }
   .career__card {
-    padding: 0 15px 40px; }
+    padding: 0 15px 30px; }
   .career__job-card {
     color: white;
     padding: 30px; }

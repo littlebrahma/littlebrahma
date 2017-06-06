@@ -1,7 +1,7 @@
 ---
 title: branding
 layout: service_detail
-img: "/assets/img/service/Mudras/1.png"
+img: "/assets/img/service/Mudras/Branding.svg"
 keywords : "logo design , test drive , collateral & stationaries design ,design needs,web design , "
 service_lists:
 - title: 'LOGO DESIGN'

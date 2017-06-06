@@ -2,7 +2,7 @@
 title: "MAGAZINE AND BOOK"
 layout: "service_detail"
 keywords : "book designs,catalogue design,illustrators and artists,comic books"
-img: "/assets/img/service/Mudras/6.png"
+img: "/assets/img/service/Mudras/Magazine_and_Book.svg"
 service_lists:
 - title: "BOOK DESIGN"
   description: "Cover art is the first impression of a reader and a buyer. And if looks don’t kill, we don’t know what else will. Perhaps, hypnotizing you with the right illustration, silhouette, shape, typeface and the sleek finish, will make you into a book worm-lover. From amateur writers to best-selling novelists, our book designs understand your theme and content and connect instantly to be well deserved to be put on top of the shelf, where it commands respect and admiration."

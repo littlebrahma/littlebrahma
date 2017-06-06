@@ -2,7 +2,7 @@
 title: "PACKAGING AND LABEL"
 layout: "service_detail"
 keywords : "package design , retail packaging ,product label"
-img: "/assets/img/service/Mudras/5.png"
+img: "/assets/img/service/Mudras/Packaging_and_Label.svg"
 service_lists:
 - title: "PACKAGE DESIGN"
   description: "The erstwhile weavers of India were known for producing such fine muslin that it invited both awe and envy from all continents. The cloth could be folded and fit neatly into a matchbox. And of course, was draped by the who’s who and took the style quotient sky high. Imagine the fine level of craftwork that went into making the threaded wonder. Now imagine getting the detail right and applying it to your product. This is how we look at package design and its survivability for generations to come. We are not just reengineering a mere package design, we are reinterpreting history. That is the level of sophistication we apply into making the layers and levels of product which apart from scoring high on visual appeal makes even the most mundane look fabulous and glamorous."
