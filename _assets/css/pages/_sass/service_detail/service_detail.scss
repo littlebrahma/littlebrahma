@@ -2,6 +2,10 @@
     position: static;
 }
 
+.alignText {
+    text-align: left;
+}
+
 .service-detailBg {
     background-color: #f0f1f1;
 }
@@ -15,9 +19,15 @@
 .service-detail {
     padding: 78px 50px;
     background-color: #f0f1f1;
-
+    width:715px;
+    margin: 0 auto; 
     &__img {
         width: 140px;
+    }
+    &__underline {
+        width: 60px;
+    border: 2px solid #000;
+    margin-top: 6px;
     }
     &__title {
         text-transform: uppercase;
@@ -28,14 +38,14 @@
         margin-bottom: 0;
         color: rgb(66, 64, 67);
         position: relative;
-        &::before{
-            content:" ";
-            position : absolute;
-            width:30px;
-            border-bottom: 3px rgb(66, 64, 67) solid;
-            top: 40px;
-            width:60px;
-        }
+        // &::before{
+        //     content:" ";
+        //     position : absolute;
+        //     width:30px;
+        //     border-bottom: 3px rgb(66, 64, 67) solid;
+        //     top: 40px;
+        //     width:60px;
+        // }
     }
     // &__underline {
     //     border-bottom: 3px rgb(66, 64, 67) solid;
@@ -78,7 +88,9 @@
 
 @media screen and (min-width:1866px) {
     .service-detail {
-        padding: 78px 50px 120px;
+        width:1380px;
+            padding: 75px 0px 100px;
+        margin: 0 auto;
         &__img {
             width: 180px;
         }
@@ -86,14 +98,12 @@
             font-size: 32px;
             letter-spacing: 0.02em;
             line-height: 40px;
-             &::before{
-            content:" ";
-            position : absolute;
-            width:30px;
-            border-bottom: 3px rgb(66, 64, 67) solid;
-            top: 40px;
-            width:60px;
         }
+        &__underline {
+            width: 60px;
+    border: 2px solid #000;
+    margin-top: 6px;
+    background-color: #000;
         }
         &__subtitle {
             font-size: 24px;
@@ -103,7 +113,7 @@
         }
         &__para {
             font-size: 14px;
-            margin-top: 20px;
+            margin-top: 30px;
             margin-bottom: 40px;
             line-height: 24px;
             letter-spacing: 0.01em;
@@ -118,12 +128,12 @@
     }
 }
 
-@media screen and (min-width:1090px) {
-    .service-detail {
-        width: 1090px;
-        margin: 0 auto;
-    }
-}
+// @media screen and (min-width:1090px) {
+//     .service-detail {
+//         width: 1090px;
+//         margin: 0 auto;
+//     }
+// }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     .service-detail {
@@ -137,14 +147,14 @@
             font-size: 20px;
             line-height: 25px;
             letter-spacing: 0.02em;
-             &::before{
-            content:" ";
-            position : absolute;
-            width:30px;
-            border-bottom: 3px rgb(66, 64, 67) solid;
-            top: 40px;
-            width:60px;
-        }
+        //      &::before{
+        //     content:" ";
+        //     position : absolute;
+        //     width:30px;
+        //     border-bottom: 3px rgb(66, 64, 67) solid;
+        //     top: 40px;
+        //     width:60px;
+        // }
         }
         &__subtitle {
             font-size: 15px;
@@ -163,6 +173,9 @@
 }
 
 @media only screen and (min-width:320px) and (max-width:767px) {
+    .alignText {
+    text-align: center;
+}
     .service-detail {
         padding: 40px 0px 60px;
         text-align: center;
@@ -173,7 +186,7 @@
         }
         &__title {
             font-size: 16px;
-            margin-top: 40px;
+            margin-top: 20px;
             letter-spacing: 0.02em;
             line-height: 20px;
             position: relative;
@@ -210,6 +223,8 @@
 
 @media only screen and (min-width:1366px) and (max-width:1866px) {
     .service-detail {
+        width:1070px;
+        margin: 0 auto;
         padding-bottom: 100px;
         &__title {
             font-size: 24px;

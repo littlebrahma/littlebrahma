@@ -2,7 +2,7 @@
 title: WEB AND MOBILE APP
 layout: service_detail
 keywords : "mobile app design ,  Web apps ,App development,dashboard design,data visualization,"
-img: "/assets/img/service/Mudras/2.png"
+img: "/assets/img/service/Mudras/Web and_Mobile_App_Design.svg"
 service_lists:
 - title: 'MOBILE APPS (ANDROID, IOS)'
   description: 'We believe that developing a mobile app is similar to reliving a civilization. From a single owner to maximum users, our mobile app design is resilient to handle any challenge that is thrown with force. The next stage of design is complete personalization and interaction at every level. It is a rule of thumb that focusing on front-end experience and back end operations has been no less important than now. We must also remember that today’s design should disrupt the way companies and customers interact. To make this a reality, we are creating sustainable design in every frame. It doesn’t just last longer, it becomes a heritage value.'

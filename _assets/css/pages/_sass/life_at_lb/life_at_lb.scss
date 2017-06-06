@@ -32,6 +32,7 @@ $ternary-contentfamily: "raleway-bold";
             text-align: center;
             text-transform: uppercase;
             margin-bottom:40px;
+        
         }
         p {
             font-family: $primary-contentfamily;
@@ -50,13 +51,16 @@ $ternary-contentfamily: "raleway-bold";
         color: #333;
         letter-spacing: 0.02em;
         text-transform: uppercase;
+        margin-bottom:35px;
+        margin-top: 0;
     }
     p {
         font-family: $primary-contentfamily;
         font-size: 15px;
         color: #666;
         line-height: 24px;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
+        margin-top: 0;
     }
 }
 
@@ -145,13 +149,17 @@ $ternary-contentfamily: "raleway-bold";
 }
 
 @media only screen and (min-width:320px) and (max-width:768px) {
+    .imageFirstLayout .img_cont:first-child {
+    /* margin-bottom: 3px; */
+    margin-top: -12px;
+}
     .imageSecondLayout {
         &__fLeft {
             margin-bottom: 12px;
         }
         &__second {
             margin-top: 15px; 
-            margin-bottom: 40px;
+            margin-bottom: 25px;
         }
     }
     .lifeContainer {
@@ -160,7 +168,7 @@ $ternary-contentfamily: "raleway-bold";
         margin-right:auto;
         padding-top: 100px;
         &__details {
-            padding:30px;
+            padding:25px 0px 30px;
             h1 {
                 font-family: $ternary-titlefamily;
                 font-size: 14px;
@@ -168,13 +176,14 @@ $ternary-contentfamily: "raleway-bold";
                 text-transform: uppercase;
                 letter-spacing: 0.02em;
                 margin-bottom:15px;
+                margin-top: 0;
             }
             p {
                 font-family: $primary-contentfamily;
                 font-size: 12px;
                 color: #666;
                 line-height: 20px;
-                margin-bottom: 20px;
+                margin-bottom:0px;
                 text-align: center;
             }
         }
@@ -186,6 +195,8 @@ $ternary-contentfamily: "raleway-bold";
             color: #333;
             letter-spacing: 0.02em;
             text-align: center;
+            margin-bottom: 15px;
+            margin-top: 0;  
         }
         p {
             font-family: $primary-contentfamily;
@@ -193,6 +204,7 @@ $ternary-contentfamily: "raleway-bold";
             color: #666;
             line-height: 20px;
             margin-bottom: 20px;
+            margin-top: 0;
             text-align: center;
         }
     }
@@ -204,12 +216,15 @@ $ternary-contentfamily: "raleway-bold";
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
+    .imageFirstLayout #image {
+        margin-bottom:-12px;
+    }
     .imageSecondLayout {
         &__fLeft {
-            margin-bottom: 12px;
+            margin-bottom: 0px;
         }
         &__second {
-            margin-top: 15px;
+            margin-top: 9px;
             margin-bottom: 40px;
         }
     }
@@ -233,6 +248,8 @@ $ternary-contentfamily: "raleway-bold";
                 color: #666;
                 line-height: 21px;
                 margin-bottom: 40px;
+                margin-top: 0;
+                margin-bottom:0px;
             }
         }
     }
@@ -242,6 +259,8 @@ $ternary-contentfamily: "raleway-bold";
             font-size: 15px;
             color: #333;
             letter-spacing: 0.02em;
+            margin-bottom: 20px;
+            margin-top: 0;
         }
         p {
             font-family: $primary-contentfamily;
@@ -258,6 +277,11 @@ $ternary-contentfamily: "raleway-bold";
 }
 
 @media only screen and (min-width:1024px) and (max-width:1366px) {
+    .imageFirstLayout .img_cont2 {
+    display: inline;
+    width: 400px;
+    margin-left: 12px;
+}
     .lifeContainer {
         width:720px;
         margin-left: auto;
@@ -270,14 +294,16 @@ $ternary-contentfamily: "raleway-bold";
                 text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 0.02em;
-                margin-bottom:38px;
+                margin-bottom:30px;
+                margin-top: 0;
             }
             p {
                 font-family: $primary-contentfamily;
                 font-size: 14px;
                 color: #666;
                 line-height: 22px;
-                margin-bottom: 40px;
+                margin-bottom: 0px;
+                margin-top: 0;
             }
         }
     }
@@ -287,12 +313,16 @@ $ternary-contentfamily: "raleway-bold";
             font-size: 17px;
             color: #333;
             letter-spacing: 0.02em;
+            margin-top: 0;
+            margin-bottom:30px;
+
         }
         p {
             font-family: $primary-contentfamily;
             font-size: 14px;
             color: #666;
             line-height: 22px;
+            margin-top: 0;
         }
     }
 }
@@ -339,6 +369,7 @@ $ternary-contentfamily: "raleway-bold";
             color: #333;
             letter-spacing: 0.02em;
             line-height: 34px;
+            margin-bottom:40px;
         }
         p {
             font-family: $primary-contentfamily;

@@ -3,7 +3,7 @@ title: ANIMATION
 permalink: "/service/service3/"
 keywords : "explanatory videos , motion graphics ,logo animation ,corporate videos ,STOP MOTION VIDEOS,"
 layout: service_detail
-img: "/assets/img/service/Mudras/4.png"
+img: "/assets/img/service/Mudras/Animation.svg"
 service_lists:
 - title: 'EXPLANATORY VIDEOS'
   description: 'Mythology was explained through kathas (stories in Sanskrit). These were in various forms such as songs, dances, folk impressions and paintings. These are unrecorded, untold, unwritten histories passed on from one generation to the other. How did they survive through these centuries? That’s the beauty of human communication. It’s in the simplicity of explanation. To tell something is information lost, to explain something in a believable fashion is information gained. Our explanatory videos are made with a team of best art and sound engineers who know their characters and sets well to bring in the right cut. Having close contact with deliberation and explanation, we are making the communication strategy through videos more immersive. It is a new way of storytelling, told in a way no one has.'
