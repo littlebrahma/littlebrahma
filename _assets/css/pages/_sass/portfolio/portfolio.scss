@@ -52,17 +52,23 @@
 	    		}
 	    		&--btn {
                     background: #fc0043;
-                     border:1px;
+                     border:2px solid #fc0034;
                     cursor:pointer;
                     padding: 10px 15px;
      				border-radius: 15px;
-     				font-family:$ternary-titlefamily;
-    				font-size: 12px;
+     				font-family:raleway-bold;
+    				font-size: 10px;
     				font-weight: bold;
             outline: none;
     				color: white;
                     text-transform: uppercase;
+                    &:hover {
+            background: transparent;
+            border:2px solid #fc0034;
+            color: black;
+          }
                 }
+                
     		}
     	}
 	}
