@@ -1,11 +1,16 @@
 {% include header.html %}
 <section class="portfolioDetailBg">
     {% include common_header.html %}
-    
-      <div class="banner" style="background:url('{{page.img}}') no-repeat ">
+    {%if page.categories == 'branding' %}
+    {%assign bgImg=page.variation_img5 %}
+      {%else%}
+      {%assign bgImg=page.img %}
+      {%endif%}
+
+      <div class="banner" style="background:url('{{bgImg}}') no-repeat center;background-size:cover;">
          <div class="banner__cont">
-             {%if page.banner__logo%}          
-             <img class="banner__logo" src="{{page.banner__logo}}">
+             {%if page.banner_logo%}          
+             <img class="banner__logo" src="{{page.banner_logo}}" alt="banner-logo">
              {%endif%}
              <h1 class="banner__title">{{page.porject_title | upcase}}</h1>
              <h4 class="banner__subtitle">{{page.porject_subtitle | upcase}}</h4>
@@ -82,7 +87,7 @@
     </div>
     </div> -->
     <div class="middle-section">
-    {%if page.variation_img1 && page.variation_img2 && page.variation_img3 && page.variation_img4 && page.variation_img5%}
+    {%if page.variation_img1 or page.variation_img2 or page.variation_img3 or page.variation_img4 or page.variation_img5%}
     <div class="middle-section3">
     <h2 class="middle-section3__title1">VARIATIONS</h2>
     <hr class="middle-section3__hr">

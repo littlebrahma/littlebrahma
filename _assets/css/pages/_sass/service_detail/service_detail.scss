@@ -1,6 +1,6 @@
-#service-detail .commonHeader {
-    position: static;
-}
+// #service-detail .commonHeader {
+//     position: fixed;
+// }
 
 .alignText {
     text-align: left;
@@ -14,6 +14,7 @@
     background-color: #f0f1f1;
         min-height: 100vh;
     height: 100%;
+    padding-top: 80px;
 }
 
 .service-detail {
