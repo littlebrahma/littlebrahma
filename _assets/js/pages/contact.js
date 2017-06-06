@@ -103,7 +103,7 @@ $("#gform").on('submit', function (event) {
   //   document.getElementById('email-invalid').style.display = 'block';
   //   return false;
   // } else {
-    var url = "https://script.google.com/macros/s/AKfycby9T9ugAparYnDKkwPN3QxpPhzEPdTGcmWXTpqEU0LqXlavl1St/exec";  //
+    var url = "https://script.google.com/macros/s/AKfycbyj1Z_nA1EnZdfNGe19BK8EYp7o--gifBOynW7vAhxga-yQ7Qnh/exec";  //
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     // xhr.withCredentials = true;
