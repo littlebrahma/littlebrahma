@@ -1,5 +1,21 @@
 {% include header.html %}
-<script>UPLOADCARE_PUBLIC_KEY = "44f596123137ea7c3c23";</script>
+<script>
+UPLOADCARE_PUBLIC_KEY = "44f596123137ea7c3c23";
+UPLOADCARE_LOCALE_TRANSLATIONS = {
+  buttons: {
+    choose: {
+      files: {
+        one: 'Upload the resume',
+        other: 'Upload the resume'
+      },
+      images: {
+        one: 'Upload the resume',
+        other: 'Upload the resume'
+      }
+    }
+  }
+};
+</script>
 <script src="https://ucarecdn.com/libs/widget/2.10.2/uploadcare.full.min.js" charset="utf-8"></script>
 <section class="service-detailBg">
     {% include common_header.html %}
@@ -89,7 +105,7 @@
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 applyCareers__left start-lg start-md start-sm start-xs">
             <img src="../assets/img/career/Icons/insert.png"/>
             <input type="hidden" role="uploadcare-uploader"
-       data-images-only="true" id="fileupload" />
+       data-images-only="true" id="fileupload"/>
         </div>
     </div>
   <button class="remodal-confirm" type="submit" value="Send">SUBMIT</button>
