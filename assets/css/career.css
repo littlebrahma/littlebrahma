@@ -857,7 +857,8 @@ a {
     letter-spacing: 0.02em;
     line-height: 28px;
     color: #414042;
-    margin: 0 0 10px; }
+    margin: 0 0 10px;
+    margin-bottom: 2rem; }
   .career__img {
     display: inline-block; }
   .career__location {
