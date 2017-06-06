@@ -840,7 +840,8 @@ a {
       font-family: "montserrat-bold";
       font-size: 16px;
       line-height: 20px;
-      padding: 12px 0 3px; }
+      padding: 12px 0 3px;
+      text-transform: uppercase; }
     .hero .blogWholeBG .blogDetail__border {
       width: 40px;
       border-bottom: 2px solid #5D5D5D; }
@@ -856,12 +857,14 @@ a {
     .hero .blogWholeBG .authorSection__title {
       font-size: 11px;
       font-family: "montserrat-bold";
-      color: #5D5D5D; }
+      color: #5D5D5D;
+      text-transform: uppercase; }
     .hero .blogWholeBG .authorSection__para {
       font-size: 8px;
       font-family: "raleway-regular";
       margin: 4px 0;
-      color: #333; }
+      color: #333;
+      text-transform: uppercase; }
     .hero .blogWholeBG .authorSection__date {
       font-size: 10px;
       font-family: "montserrat-light";

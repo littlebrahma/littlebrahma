@@ -961,7 +961,7 @@ video {
     color: #4D4D4D;
     text-align: center;
     font-family: Montserrat-bold;
-    font-size: 22px;
+    font-size: 17px;
     letter-spacing: .02em;
     line-height: 20px; }
   .challenge hr {
@@ -995,7 +995,7 @@ video {
   .solution__heading {
     color: #fff;
     padding-top: 70px;
-    font-size: 22px;
+    font-size: 17px;
     letter-spacing: .02em;
     line-height: 28px;
     font-family: Montserrat-bold; }
@@ -1023,7 +1023,7 @@ video {
   .GIT__heading {
     margin-top: 70px;
     color: #4D4D4D;
-    font-size: 22px;
+    font-size: 17px;
     font-family: Montserrat-bold;
     letter-spacing: .02em;
     line-height: 28px; }
@@ -1105,8 +1105,8 @@ video {
     width: 1321px;
     height: 696px; }
   .challenge__heading {
-    font-size: 32px;
-    line-height: 40px; }
+    font-size: 24px;
+    line-height: 34px; }
   .challenge hr {
     width: 100px; }
   .challenge__italic {
@@ -1120,8 +1120,8 @@ video {
     width: 860px;
     height: 660px; }
   .solution__heading {
-    font-size: 32px;
-    line-height: 40px; }
+    font-size: 24px;
+    line-height: 34px; }
   .solution hr {
     width: 100px; }
   .solution__content {
@@ -1149,8 +1149,8 @@ video {
       font-size: 32px;
       line-height: 40px; }
   .GIT__heading {
-    font-size: 32px;
-    line-height: 40px; }
+    font-size: 24px;
+    line-height: 34px; }
   .GIT hr {
     width: 100px; }
   .GIT__box {
@@ -1191,8 +1191,8 @@ video {
     width: 1020px;
     height: 514px; }
   .challenge__heading {
-    font-size: 24px;
-    line-height: 32px; }
+    font-size: 18px;
+    line-height: 30px; }
   .challenge__italic {
     font-size: 16px;
     line-height: 24px; }
@@ -1204,8 +1204,8 @@ video {
     width: 700px;
     height: 536px; }
   .solution__heading {
-    font-size: 24px;
-    line-height: 32px; }
+    font-size: 18px;
+    line-height: 30px; }
   .solution__content {
     font-size: 16px;
     line-height: 24px;
@@ -1231,8 +1231,8 @@ video {
       font-size: 24px;
       line-height: 32px; }
   .GIT__heading {
-    font-size: 24px;
-    line-height: 32px; }
+    font-size: 18px;
+    line-height: 30px; }
   .GIT__box {
     width: 1200px; }
   .GIT__box1 {
@@ -1281,8 +1281,8 @@ video {
   .GIT {
     text-align: center; }
     .GIT__heading {
-      font-size: 20px;
-      line-height: 25px; }
+      font-size: 15px;
+      line-height: 20px; }
     .GIT hr {
       margin-bottom: 50px; }
     .GIT__box {
@@ -1357,15 +1357,15 @@ video {
       font-size: 13px;
       line-height: 20px; }
     .challenge__heading {
-      font-size: 20px;
-      line-height: 25px; }
+      font-size: 15px;
+      line-height: 20px; }
   .solution {
     width: 100%;
     margin-top: 60px; }
     .solution__heading {
       padding-top: 60px;
-      font-size: 20px;
-      line-height: 25px; }
+      font-size: 15px;
+      line-height: 20px; }
     .solution__img {
       width: 420px;
       height: 322px; }
@@ -1392,8 +1392,8 @@ video {
     text-align: center; }
     .GIT__heading {
       margin-top: 35px;
-      font-size: 16px;
-      line-height: 20px; }
+      font-size: 14px;
+      line-height: 16px; }
     .GIT hr {
       width: 50px;
       margin-bottom: 40px; }
@@ -1507,8 +1507,8 @@ video {
     font-size: 11px; }
     .challenge__heading {
       margin-top: 75px;
-      font-size: 16px;
-      line-height: 20px; }
+      font-size: 14px;
+      line-height: 16px; }
     .challenge__img {
       width: 267px;
       height: 197px; }
@@ -1530,8 +1530,8 @@ video {
       height: 207px; }
     .solution__heading {
       padding-top: 40px;
-      font-size: 16px;
-      line-height: 20px; }
+      font-size: 14px;
+      line-height: 16px; }
     .solution__content {
       margin: 20px auto 0;
       font-size: 12px;
