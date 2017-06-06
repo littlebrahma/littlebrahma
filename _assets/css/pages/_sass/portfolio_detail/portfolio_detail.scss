@@ -93,6 +93,7 @@ width: 720px;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: .01em;
+    text-align: left;
 }
   &__algn1{
   font-family:'Raleway-regular';
@@ -102,6 +103,7 @@ width: 720px;
   padding:0;
   margin:0;
   text-transform: uppercase;
+  text-align: left;
   }
   &__centerdiv{
   padding:0;
@@ -300,6 +302,7 @@ width: 720px;
       line-height: 28px;
       margin-bottom: 5px;
   color: #414143;
+  text-align: left;
 }
 @media screen and (min-width : 1866px) and (max-width : 2560px) {
 .banner{
