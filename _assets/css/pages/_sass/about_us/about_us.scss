@@ -96,19 +96,19 @@
       text-align: left;
  }
  &__button {
-   padding: 8px 20px;
-        background-color: #ec1944;
-        color: white;
-        text-transform: uppercase;
-        border-radius: 12px;
-        font-family: montserrat-bold;
-        font-size: 10px;
-        border: none;
-        cursor: pointer;
+       padding: 8px 15px;
+    background-color: #ec1944;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 15px;
+    font-family: raleway-bold;
+    font-size: 10px;
+    border: 2px solid #ec1944;
+    cursor: pointer;
         &:hover{
             background-color: transparent;
             color: #fff;
-            border: 1px solid #ec1944;
+            border: 2px solid #ec1944;
         }
    
 }  
@@ -411,7 +411,7 @@ height:auto;
         &__para{
             font-family : $primary-contentfamily;
   font-size : 10px;
-  line-height : 18px;
+  line-height : 19px;
   letter-spacing : 0.1px;
   color : #FFFFFF;
 text-align: center;
@@ -613,10 +613,6 @@ background-color: #1a1746;
     width: 80%;
     margin: 0 auto;
     }
-    .about-us__button {
-        padding: 7px 16px;
-        font-size: 10px;
-    }
     .valuable-clients-left{
         
         margin:0 auto;
@@ -760,7 +756,10 @@ margin:0 auto;
   line-height : 24px;
   letter-spacing : 0.14px;
       }
-
+      &-right__para {
+          line-height: 24px;
+          font-size: 14px;
+      }
       
 
     }

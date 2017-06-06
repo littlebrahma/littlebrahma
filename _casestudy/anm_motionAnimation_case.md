@@ -2,7 +2,7 @@
 categories:
 - ANIMATION
 layout: casestudy_detail
-thumbnail : "/assets/img/casestudy/animation/stopmotion.png"
+thumbnail : "/assets/img/casestudy/animation/2.gif"
 
 porject_title: STOP MOTION ANIMATION
 porject_subtitle: CLAY MODELING, CLAYMATION, CONCEPTUALIZATION
