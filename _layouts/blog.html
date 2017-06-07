@@ -49,11 +49,13 @@
                   <h5 class="authorSection__title">{{ author_name}}</h5>
                   <p class="authorSection__para">{{ author_title}}</p>
                 </div>
+                
               </div>
+              <div class="blog__date">
+                   <div><img src="/assets/img/blog/clock.png" alt="clock"><span class="authorSection__date">{{ post.date  | date: '%B %d, %Y'}}</span></div>
+                </div>
             </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blogClock">
-              <span><img src="/assets/img/blog/clock.png" alt="clock"></span><span class="authorSection__date">{{ post.date  | date: '%B %d, %Y'}}</span>
-            </div>
+            
           </div>
           </div>
           </a>

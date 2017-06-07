@@ -1,5 +1,16 @@
 
 .hero {
+
+		.selectSection{
+		position: absolute;
+		top:80px;
+	}
+   .blog__date{
+	           margin: 10px;
+    position: relative;
+    margin-left: 23px;
+   }
+
 	.blogBg {
 		background-color: #27AAE1;
 	}
@@ -59,8 +70,9 @@
 					font-size: $ternary-contentfont;
 					font-family: $secondary-titlefamily;
 					color: #808285;
-					vertical-align: middle;
-					padding-right: 30px;
+					    position: absolute;
+    left: 22px;
+    top: 3px;
 				}
 			}
 		}
@@ -171,6 +183,11 @@
 		}
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
+
+	.selectSection{
+		    position: static;
+    top: 0%;
+	}
 	.blog-pad__img {
 		width: 32px; 
 		height: 32px; 
