@@ -43,7 +43,8 @@ h6 {
   -webkit-text-size-adjust: 100%; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none; }
 
 @media screen and (min-width: 1866px) {
   .hero {
@@ -756,6 +757,7 @@ a {
   color: #000;
   margin-top: 15px;
   border-radius: 15px;
+  outline: none;
   cursor: pointer; }
 
 .hero .footerColumn__button:hover {
