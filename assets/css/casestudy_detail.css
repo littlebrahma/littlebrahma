@@ -882,7 +882,7 @@ video {
   margin: 0; }
 
 .info {
-  padding-top: 80px;
+  padding-top: 60px;
   text-align: center;
   width: 900px;
   margin: 0 auto; }
@@ -898,7 +898,9 @@ video {
     font-family: Montserrat-bold;
     font-size: 22px;
     line-height: 28PX;
-    letter-spacing: .02em; }
+    letter-spacing: .02em;
+    margin-top: 60px;
+    margin-bottom: 60px; }
   .info__read {
     color: #FFF;
     -webkit-transform: translate(-220px, 165px);
@@ -909,6 +911,7 @@ video {
 .chip {
   position: relative;
   margin: 30px auto;
+  margin-bottom: 0;
   background: linear-gradient(150deg, #F72B2B, #E0005E);
   height: 238px;
   width: 450px;
@@ -956,7 +959,7 @@ video {
 
 .challenge {
   text-align: center;
-  margin-top: 110px;
+  margin-top: 60px;
   font-family: Raleway-italic; }
   .challenge__heading {
     color: #4D4D4D;
@@ -964,7 +967,8 @@ video {
     font-family: Montserrat-bold;
     font-size: 17px;
     letter-spacing: .02em;
-    line-height: 20px; }
+    line-height: 20px;
+    margin-bottom: 20px; }
   .challenge hr {
     color: #4D4D4D;
     margin: 0 auto;
@@ -977,7 +981,7 @@ video {
     line-height: 22px;
     letter-spacing: .05em;
     width: 80%;
-    margin: 40px auto 0; }
+    margin: 60px auto 0; }
   .challenge__img {
     width: 720px;
     height: 363px;
@@ -991,15 +995,16 @@ video {
   font-family: Raleway-bold;
   background-color: #FF5254;
   text-align: center;
-  margin-top: 80px;
-  padding-bottom: 30px; }
+  margin-top: 60px;
+  padding-bottom: 60px; }
   .solution__heading {
     color: #fff;
-    padding-top: 70px;
+    padding-top: 60px;
     font-size: 17px;
     letter-spacing: .02em;
     line-height: 28px;
-    font-family: Montserrat-bold; }
+    font-family: Montserrat-bold;
+    margin-bottom: 20px; }
   .solution hr {
     margin: 0 auto;
     width: 70px;
@@ -1021,15 +1026,18 @@ video {
   padding: 0;
   margin: 0;
   text-align: center; }
+  .GIT__last {
+    margin-top: 60px; }
   .GIT__heading {
-    margin-top: 70px;
+    margin-top: 60px;
     color: #4D4D4D;
     font-size: 17px;
     font-family: Montserrat-bold;
     letter-spacing: .02em;
-    line-height: 28px; }
+    line-height: 28px;
+    margin-bottom: 20px; }
   .GIT hr {
-    margin: 0 auto 80px;
+    margin: 0 auto 60px;
     border: 2px solid #4D4D4D;
     width: 70px; }
   .GIT__box {
@@ -1102,36 +1110,55 @@ video {
   .banner__mintitle {
     line-height: 34px;
     font-size: 24px; }
-  .challenge__img {
-    width: 1321px;
-    height: 696px; }
-  .challenge__heading {
-    font-size: 24px;
-    line-height: 34px; }
-  .challenge hr {
-    width: 100px; }
-  .challenge__italic {
-    font-size: 18px;
-    line-height: 26px; }
-  .challenge__content {
-    font-size: 18px;
-    line-height: 26px;
-    width: 1390px; }
-  .solution__img {
-    width: 860px;
-    height: 660px; }
-  .solution__heading {
-    font-size: 24px;
-    line-height: 34px; }
-  .solution hr {
-    width: 100px; }
-  .solution__content {
-    font-size: 18px;
-    line-height: 26px;
-    width: 1390px; }
+  .challenge {
+    margin-top: 100px; }
+    .challenge__img {
+      width: 1321px;
+      height: 696px; }
+    .challenge__heading {
+      font-size: 24px;
+      line-height: 34px;
+      margin-top: 0;
+      padding-bottom: 25px;
+      margin-bottom: 0; }
+    .challenge hr {
+      width: 100px; }
+    .challenge__italic {
+      font-size: 18px;
+      line-height: 26px; }
+    .challenge__content {
+      font-size: 18px;
+      line-height: 26px;
+      width: 1390px;
+      margin-top: 45px; }
+  .solution {
+    padding-bottom: 100px;
+    margin-top: 100px; }
+    .solution video {
+      margin-top: 100px;
+      margin-bottom: 50px; }
+    .solution__img {
+      width: 860px;
+      height: 660px; }
+    .solution__heading {
+      font-size: 24px;
+      line-height: 34px;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+      margin-top: 100px;
+      padding-top: 100px; }
+    .solution hr {
+      width: 100px;
+      background-color: #fff; }
+    .solution__content {
+      font-size: 18px;
+      line-height: 26px;
+      width: 1390px;
+      margin-top: 50px; }
   .chip {
     width: 790px;
-    height: 416px; }
+    height: 416px;
+    margin-bottom: 0; }
     .chip__content {
       font-size: 24px;
       line-height: 35px; }
@@ -1142,42 +1169,53 @@ video {
     .chip__comma1 {
       right: 13%; }
   .info {
-    width: 1390px; }
+    width: 1390px;
+    padding-top: 100px; }
     .info__text1 {
       font-size: 32px;
-      line-height: 40px; }
+      line-height: 40px;
+      padding-bottom: 100px; }
     .info__text2 {
       font-size: 32px;
-      line-height: 40px; }
-  .GIT__heading {
-    font-size: 24px;
-    line-height: 34px; }
-  .GIT hr {
-    width: 100px; }
-  .GIT__box {
-    width: 1400px; }
-  .GIT__box1 {
-    width: 330px;
-    height: 300px; }
-  .GIT__box2 {
-    width: 330px;
-    height: 300px;
-    margin: 0 6%; }
-  .GIT__box3 {
-    width: 330px;
-    height: 300px; }
-  .GIT__num {
-    font-size: 80px;
-    margin-top: 45px; }
-  .GIT__para {
-    font-size: 16px;
-    line-height: 30px; }
-  .GIT__last--heading {
-    font-size: 24px;
-    line-height: 34px; }
-  .GIT__btn {
-    padding: 12px 20px;
-    font-size: 14px; } }
+      line-height: 40px;
+      margin-top: 0;
+      margin-bottom: 100px; }
+  .GIT {
+    padding-top: 100px; }
+    .GIT__heading {
+      font-size: 24px;
+      line-height: 34px;
+      margin-top: 0;
+      margin-bottom: 20px; }
+    .GIT hr {
+      width: 100px;
+      margin-bottom: 100px; }
+    .GIT__box {
+      width: 1400px; }
+    .GIT__box1 {
+      width: 330px;
+      height: 300px; }
+    .GIT__box2 {
+      width: 330px;
+      height: 300px;
+      margin: 0 6%; }
+    .GIT__box3 {
+      width: 330px;
+      height: 300px; }
+    .GIT__num {
+      font-size: 80px;
+      margin-top: 45px; }
+    .GIT__para {
+      font-size: 16px;
+      line-height: 30px; }
+    .GIT__last--heading {
+      font-size: 24px;
+      line-height: 34px; }
+    .GIT__btn {
+      padding: 12px 20px;
+      font-size: 14px; }
+    .GIT__last {
+      margin-top: 100px; } }
 
 @media screen and (min-width: 1366px) and (max-width: 1865px) {
   .commonHeight__mainImg {
@@ -1188,32 +1226,44 @@ video {
     line-height: 32px; }
   .banner__mintitle {
     font-size: 18px; }
-  .challenge__img {
-    width: 1020px;
-    height: 514px; }
-  .challenge__heading {
-    font-size: 18px;
-    line-height: 30px; }
-  .challenge__italic {
-    font-size: 16px;
-    line-height: 24px; }
-  .challenge__content {
-    font-size: 16px;
-    line-height: 24px;
-    width: 1050px; }
-  .solution__img {
-    width: 700px;
-    height: 536px; }
-  .solution__heading {
-    font-size: 18px;
-    line-height: 30px; }
-  .solution__content {
-    font-size: 16px;
-    line-height: 24px;
-    width: 1050px; }
+  .challenge {
+    margin-top: 80px; }
+    .challenge__img {
+      width: 1020px;
+      height: 514px; }
+    .challenge__heading {
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 0;
+      margin-bottom: 20px; }
+    .challenge__italic {
+      font-size: 16px;
+      line-height: 24px; }
+    .challenge__content {
+      font-size: 16px;
+      line-height: 24px;
+      width: 1050px; }
+  .solution {
+    padding-bottom: 80px; }
+    .solution video {
+      margin-top: 50px; }
+    .solution__img {
+      width: 700px;
+      height: 536px; }
+    .solution__heading {
+      font-size: 18px;
+      padding-top: 80px;
+      margin-bottom: 20px; }
+    .solution__content {
+      font-size: 16px;
+      line-height: 24px;
+      width: 1050px;
+      margin-top: 40px; }
   .chip {
     width: 534px;
-    height: 282px; }
+    height: 282px;
+    margin-top: 0;
+    margin-bottom: 0; }
     .chip__content {
       font-size: 16px;
       line-height: 24px; }
@@ -1224,40 +1274,56 @@ video {
     .chip__comma1 {
       right: 11%; }
   .info {
-    width: 1050px; }
+    width: 1050px;
+    padding-top: 80px; }
     .info__text1 {
       font-size: 24px;
       line-height: 32px; }
     .info__text2 {
       font-size: 24px;
-      line-height: 32px; }
-  .GIT__heading {
-    font-size: 18px;
-    line-height: 30px; }
-  .GIT__box {
-    width: 1200px; }
-  .GIT__box1 {
-    width: 280px;
-    height: 208px; }
-  .GIT__box2 {
-    width: 280px;
-    height: 208px;
-    margin: 0 6%; }
-  .GIT__box3 {
-    width: 280px;
-    height: 208px; }
-  .GIT__num {
-    font-size: 70px; }
-  .GIT__para {
-    font-size: 14px;
-    line-height: 26px; }
-  .GIT__last--heading {
-    font-size: 18px; }
-  .GIT__btn {
-    padding: 10px 15px;
-    font-size: 14px; } }
+      line-height: 32px;
+      margin-top: 80px;
+      margin-bottom: 80px; }
+  .GIT {
+    padding-top: 80px; }
+    .GIT__heading {
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 0;
+      margin-bottom: 20px; }
+    .GIT__box {
+      width: 1200px; }
+    .GIT__box1 {
+      width: 280px;
+      height: 208px; }
+    .GIT__box2 {
+      width: 280px;
+      height: 208px;
+      margin: 0 6%; }
+    .GIT__box3 {
+      width: 280px;
+      height: 208px; }
+    .GIT__num {
+      font-size: 70px; }
+    .GIT__para {
+      font-size: 14px;
+      line-height: 26px; }
+    .GIT__last--heading {
+      font-size: 18px; }
+    .GIT__btn {
+      padding: 10px 15px;
+      font-size: 14px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .detailBg {
+    background-color: #E0005E;
+    height: 630px; }
+  .detailTabHeight {
+    padding: 0 !important; }
+  .comHeight {
+    padding: 0; }
+  .commonHeight {
+    padding: 0; }
   .banner__subtitle {
     font-size: 20px;
     letter-spacing: .02em;
@@ -1267,25 +1333,34 @@ video {
     font-size: 15px; }
   .banner__himg {
     padding: 7px; }
-  .commonHeight__mainImg {
-    height: 200px;
-    width: 240px;
-    margin-bottom: 30px; }
+  .commonHeight {
+    padding: 0; }
+    .commonHeight__mainImg {
+      height: 200px;
+      width: 240px;
+      margin-bottom: 30px; }
   .info {
+    padding-top: 40px;
     width: 690px; }
     .info__text1 {
       font-size: 20px;
       line-height: 25px; }
     .info__text2 {
       font-size: 20px;
-      line-height: 25px; }
+      line-height: 25px;
+      margin-top: 40px;
+      margin-bottom: 40px; }
   .GIT {
     text-align: center; }
     .GIT__heading {
       font-size: 15px;
-      line-height: 20px; }
+      line-height: 20px;
+      margin-top: 40px;
+      margin-bottom: 10px; }
+    .GIT__last {
+      margin-top: 40px; }
     .GIT hr {
-      margin-bottom: 50px; }
+      margin-bottom: 40px; }
     .GIT__box {
       padding: 0;
       width: 600px; }
@@ -1326,7 +1401,9 @@ video {
     padding-bottom: 40px; }
   .chip {
     width: 430px;
-    height: 227px; }
+    height: 227px;
+    margin-top: 0;
+    margin-bottom: 0; }
     .chip__comma {
       width: 18px;
       height: 18px; }
@@ -1346,9 +1423,9 @@ video {
     .chip__read {
       font-size: 12px; }
   .challenge {
-    margin-top: 120px; }
+    margin-top: 40px; }
     .challenge__content {
-      margin: 30px auto 0;
+      margin: 20px auto 0;
       font-size: 13px;
       line-height: 20px; }
     .challenge__img {
@@ -1359,23 +1436,34 @@ video {
       line-height: 20px; }
     .challenge__heading {
       font-size: 15px;
-      line-height: 20px; }
+      line-height: 20px;
+      margin-top: 0;
+      margin-bottom: 10px; }
   .solution {
     width: 100%;
-    margin-top: 60px; }
+    margin-top: 40px; }
+    .solution video {
+      margin-top: 0;
+      margin-bottom: 0; }
     .solution__heading {
-      padding-top: 60px;
+      padding-top: 40px;
       font-size: 15px;
-      line-height: 20px; }
+      line-height: 20px;
+      margin-bottom: 10px; }
     .solution__img {
       width: 420px;
       height: 322px; }
     .solution__content {
-      margin: 25px auto 0;
+      margin: 20px auto 0;
       font-size: 13px;
       line-height: 20px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .detailBg {
+    background-color: #E0005E;
+    height: 490px; }
+  .detailTabHeight {
+    padding: 0 !important; }
   .banner__subtitle {
     font-size: 16px;
     letter-spacing: .02em;
@@ -1392,12 +1480,13 @@ video {
   .GIT {
     text-align: center; }
     .GIT__heading {
-      margin-top: 35px;
+      margin-top: 30px;
       font-size: 14px;
-      line-height: 16px; }
+      line-height: 16px;
+      margin-bottom: 10px; }
     .GIT hr {
       width: 50px;
-      margin-bottom: 40px; }
+      margin-bottom: 30px; }
     .GIT__boxes {
       margin: 0; }
     .GIT__box {
@@ -1432,8 +1521,8 @@ video {
       line-height: 20px; }
     .GIT__last {
       font-size: 18px;
-      height: 130px;
-      margin-top: 40px;
+      height: 80px;
+      margin-top: 30px;
       padding: 30px; }
     .GIT__last--heading {
       font-size: 14px; }
@@ -1463,19 +1552,23 @@ video {
       margin: 0;
       font-size: 12px; }
   .info {
-    padding-top: 50px;
+    padding-top: 30px;
     width: 90%; }
     .info__text1 {
       font-size: 16px;
       line-height: 20px; }
     .info__text2 {
       font-size: 16px;
-      line-height: 20px; }
+      line-height: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px; }
     .info__dock {
       padding-left: 20px;
       margin: 0;
       height: 20px; }
   .chip {
+    margin-top: 0;
+    margin-bottom: 0;
     width: 270px;
     height: 140px; }
     .chip__comma {
@@ -1507,12 +1600,14 @@ video {
     margin: 0;
     font-size: 11px; }
     .challenge__heading {
-      margin-top: 75px;
+      margin-top: 30px;
       font-size: 14px;
-      line-height: 16px; }
+      line-height: 16px;
+      margin-bottom: 10px; }
     .challenge__img {
       width: 267px;
-      height: 197px; }
+      height: 197px;
+      margin-top: 0; }
     .challenge__italic {
       font-size: 12px;
       line-height: 18px;
@@ -1521,20 +1616,22 @@ video {
     .challenge hr {
       width: 50px; }
     .challenge__content {
-      margin: 20px auto 0;
+      margin: 15px auto;
       font-size: 12px;
       line-height: 18px; }
   .solution {
-    margin-top: 40px; }
+    margin-top: 30px;
+    padding-bottom: 30px; }
     .solution__img {
       width: 270px;
       height: 207px; }
     .solution__heading {
-      padding-top: 40px;
+      padding-top: 30px;
       font-size: 14px;
-      line-height: 16px; }
+      line-height: 16px;
+      margin-bottom: 10px; }
     .solution__content {
-      margin: 20px auto 0;
+      margin: 15px auto;
       font-size: 12px;
       line-height: 18px; }
     .solution hr {
