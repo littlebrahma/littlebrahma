@@ -14,7 +14,7 @@ else if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").h
     $(".selectSection").css({"position":"fixed","top":selectCategory.top,'bottom':'initial'});
     $(".caseDet").css({"position":"relative","left":"33.3%","top":"0px"});
     $('.commonMenu__icon').attr("src", "/assets/img/common/LB_Menu_Color.svg");
-    $('.commonHeader__logo').attr("src", "/assets/img/common/LB_LOGO_Color.svg");
+    $('.commonHeader__logo').attr("src", "/assets/img/common/LB_Logo_Color.svg");
   }
   else {
      $('.commonHeader').css({"background-color":"transparent"}).removeClass("animated fadeIn");
@@ -34,7 +34,7 @@ else if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").h
 //     $(".selectSection").css({"position":"fixed","top":"140px"});
 //     $(".caseDet").css({"position":"relative","left":"33.3%","top":"0px"});
 //     $('.commonMenu__icon').attr("src", "/assets/img/common/LB_Menu_Color.svg");
-//         $('.commonHeader__logo').attr("src", "/assets/img/common/LB_LOGO_Color.svg");
+//         $('.commonHeader__logo').attr("src", "/assets/img/common/LB_Logo_Color.svg");
 //   }
 //   else {
 //     $('.commonHeader').css({"background-color":"transparent"}).removeClass("animated fadeIn");
@@ -55,7 +55,7 @@ else if ($(this).scrollTop() > $(".casestudyBg").height() - $(".commonHeader").h
 //     $(".selectSection").css({"position":"fixed","top":"40px"});
 //     $(".caseDet").css({"position":"relative","left":"33.3%","top":"0px"});
 //     $('.commonMenu__icon').attr("src", "/assets/img/common/LB_Menu_Color.svg");
-//         $('.commonHeader__logo').attr("src", "/assets/img/common/LB_LOGO_Color.svg");
+//         $('.commonHeader__logo').attr("src", "/assets/img/common/LB_Logo_Color.svg");
 //   }
 //   else {
 //     $('.commonHeader').css({"background-color":"transparent"}).removeClass("animated fadeIn");
@@ -87,7 +87,7 @@ else if($(window).width() < 768){
 //     $(".selectSection").css({"position":"fixed","top":"140px"});
 //     $(".caseDet").css({"position":"relative","left":"33.3%","top":"0px"});
 //     $('.commonMenu__icon').attr("src", "/assets/img/common/LB_Menu_Color.svg");
-//         $('.commonHeader__logo').attr("src", "/assets/img/common/LB_LOGO_Color.svg");
+//         $('.commonHeader__logo').attr("src", "/assets/img/common/LB_Logo_Color.svg");
 //   }
 //   else {
 //     $('.commonHeader').css({"background-color":"transparent"}).removeClass("animated fadeIn");
@@ -105,7 +105,7 @@ else if($(window).width() < 768){
 //     $(".selectSection").css({"position":"fixed","top":"140px"});
 //     $(".caseDet").css({"position":"relative","left":"33.3%","top":"0px"});
 //     $('.commonMenu__icon').attr("src", "/assets/img/common/LB_Menu_Color.svg");
-//         $('.commonHeader__logo').attr("src", "/assets/img/common/LB_LOGO_Color.svg");
+//         $('.commonHeader__logo').attr("src", "/assets/img/common/LB_Logo_Color.svg");
 //   }
 //   else {
 //     $('.commonHeader').css({"background-color":"transparent"}).removeClass("animated fadeIn");
