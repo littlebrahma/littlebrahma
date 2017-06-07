@@ -829,12 +829,12 @@ a {
   .hero .commonFooter {
     padding: 0 0 25px; } }
 
-.selectSection {
-  position: absolute;
-  top: 80px; }
-
 .hero .blogBg {
   background-color: #27AAE1; }
+
+.hero .selectSection {
+  position: absolute;
+  top: 80px; }
 
 .hero .rightDiv {
   position: relative;
@@ -957,6 +957,13 @@ a {
   .hero .blog-pad__img {
     width: 32px;
     height: 32px; }
+  .hero .rightDiv {
+    position: static;
+    left: 0%;
+    top: 0px; }
+  .hero .selectSection {
+    position: static;
+    top: 0px; }
   .hero .blogWholeBG .blogDetail__title {
     font-size: 12px; }
   .hero .blogWholeBG .blogDetail__para {

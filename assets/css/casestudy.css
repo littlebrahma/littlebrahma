@@ -897,5 +897,12 @@ a {
     .hero .caseDetail__para {
       font-size: 10px;
       line-height: 18px; }
+  .hero .selectSection {
+    position: static;
+    top: 0px; }
+  .hero .caseDet {
+    position: static;
+    left: 0%;
+    top: 0px; }
   .hero .casestudyBg {
     margin: 0 auto; } }
