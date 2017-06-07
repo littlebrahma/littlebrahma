@@ -881,7 +881,7 @@ a {
     color: #414042;
     margin: 0 0 10px;
     margin-bottom: 1rem;
-    width: 300px; }
+    max-width: 300px; }
   .career__img {
     display: inline-block; }
   .career__location {

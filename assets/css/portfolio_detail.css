@@ -1421,7 +1421,8 @@ p {
       margin-top: 0;
       margin-bottom: 12px;
       font-size: 16px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: center; }
     .middle-section1__hr1 {
       margin: 0 auto 30px;
       width: 80px;
@@ -1548,4 +1549,8 @@ p {
       padding: 8px 10px;
       font-size: 10px; }
     .middle-section5__headng {
-      font-size: 14px; } }
+      font-size: 14px;
+      width: 280px;
+      margin: 0 auto;
+      padding-bottom: 15px;
+      line-height: 20px; } }

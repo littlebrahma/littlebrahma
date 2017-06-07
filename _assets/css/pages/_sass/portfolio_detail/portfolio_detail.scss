@@ -764,6 +764,7 @@ margin: 0 auto;
     margin-bottom: 12px;
     font-size: 16px;
       line-height: 20px;
+      text-align: center;
   }
   margin:0;
   &__hr1{
@@ -940,6 +941,10 @@ margin: 0 auto;
   }
   &__headng{
     font-size: 14px;
+    width: 280px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    line-height: 20px;
   }
  }
 }

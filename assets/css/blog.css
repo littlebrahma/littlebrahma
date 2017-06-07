@@ -829,9 +829,14 @@ a {
   .hero .commonFooter {
     padding: 0 0 25px; } }
 
-.selectSection {
+.hero .selectSection {
   position: absolute;
   top: 80px; }
+
+.hero .blog__date {
+  margin: 10px;
+  position: relative;
+  margin-left: 23px; }
 
 .hero .blogBg {
   background-color: #27AAE1; }
@@ -882,8 +887,9 @@ a {
       font-size: 10px;
       font-family: "montserrat-light";
       color: #808285;
-      vertical-align: middle;
-      padding-right: 30px; }
+      position: absolute;
+      left: 22px;
+      top: 3px; }
 
 .hero .blogClock {
   padding: 0 0 20px;
@@ -954,6 +960,9 @@ a {
     font-size: 11px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero .selectSection {
+    position: static;
+    top: 0%; }
   .hero .blog-pad__img {
     width: 32px;
     height: 32px; }
