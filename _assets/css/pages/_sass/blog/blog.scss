@@ -1,5 +1,6 @@
 
 .hero {
+
 		.selectSection{
 		position: absolute;
 		top:80px;
@@ -9,10 +10,14 @@
     position: relative;
     margin-left: 23px;
    }
+
 	.blogBg {
 		background-color: #27AAE1;
 	}
-
+     .selectSection{
+		position: absolute;
+		top:80px;
+	}
 	.rightDiv{
 			position: relative; 
 		left: 33.3%;
@@ -187,6 +192,15 @@
 		width: 32px; 
 		height: 32px; 
 	}
+	.rightDiv{
+			position: static; 
+		left: 0%;
+		 top: 0px;
+	}
+	.selectSection{
+		position: static;
+		top:0px;
+	}
 	.blogWholeBG {
 			.blogDetail {
 				&__title {
@@ -198,6 +212,7 @@
 					height: 52px;
 				}	
 			}
+			
 			.authorSection {
 				&__para {
 					font-size: 7px;
