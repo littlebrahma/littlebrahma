@@ -173,6 +173,10 @@
     		// height: 100vh;
 			margin: 0 auto;
     	}
+		.portDetail,.selectSection{
+			position: static;
+			left: 0;
+		}
     	.portBgImg {
     		height: 252px;
     		max-height: 100%;

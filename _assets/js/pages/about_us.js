@@ -81,7 +81,7 @@ if($(window).width()  > 1024){
 		//after leaving section 2
 		if(index == 2 && direction =='down'){
             
-			 $('.commonMenu__icon').attr("src", "/assets/img/common/LB_Menu_color.svg");
+			 $('.commonMenu__icon').attr("src", "/assets/img/common/LB_Menu_Color.svg");
         $('.commonHeader__logo').attr("src", "/assets/img/common/LB_LOGO_Color.svg");
 		}
 

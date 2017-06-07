@@ -1,1 +1,98 @@
-!function(){var t={container:document.getElementById("about_us-img"),renderer:"svg",loop:!0,autoplay:!0,path:"/assets/data/about_us_1/data.json"};bodymovin.loadAnimation(t);var e={container:document.getElementById("our_mission-img"),renderer:"svg",loop:!0,autoplay:!0,path:"/assets/data/about_us_2/data.json"};bodymovin.loadAnimation(e),$(".valuable-clients__quote").text(testimonials[0].quote),$(".valuable-clients__author").text(testimonials[0].author),$(".valuable-clients__client").text(testimonials[0].title),$(".valuable-clients-right__list").on("click",function(t){var e=$(this).attr("data-id");$(".valuable-clients__quote").text(testimonials[e].quote),$(".valuable-clients__author").text(testimonials[e].author),$(".valuable-clients__title").text(testimonials[e].title),$(".valuable-clients-right__list").removeClass("active"),$(this).addClass("active")}),$(window).width()>1024&&$(document).ready(function(){$("#fullpage").fullpage({fixedElements:".about-indicators",anchors:["about_us","our_mission","valuable_clients"],menu:"#myMenu",onLeave:function(t,e,o){$(this);2==t&&"down"==o?($(".commonMenu__icon").attr("src","/assets/img/common/LB_Menu_color.svg"),$(".commonHeader__logo").attr("src","/assets/img/common/LB_LOGO_Color.svg")):3==t&&"up"==o&&($(".commonMenu__icon").attr("src","/assets/img/common/MENU_WHITE.png"),$(".commonHeader__logo").attr("src","/assets/img/common/LB_Logo_White.svg"))}})})}();
+(function(){
+
+
+var aboutUs = {
+        container: document.getElementById('about_us-img'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/data/about_us_1/data.json'
+    };
+    bodymovin.loadAnimation(aboutUs);
+
+    var ourMission = {
+        container: document.getElementById('our_mission-img'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/data/about_us_2/data.json'
+    };
+    bodymovin.loadAnimation(ourMission);
+
+
+
+// var testimonials=[{
+
+//   quote:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!",
+//   author: "Anshuman",
+//   title: "Director,Dell",
+//   logo : "dell"
+// },
+// {
+
+//  quote:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!",
+//   author: "Gopikrishnan Kanan",
+//   title: "CEO,Hashworks",
+//   logo : "hashworks"
+// },
+// {
+
+//   quote:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!",
+//   author: "Bill Gates",
+//   title: "CEO,Locatr",
+//   logo : "locatr"
+// }];
+
+
+
+
+$('.valuable-clients__quote').text(testimonials[0].quote);
+$('.valuable-clients__author').text(testimonials[0].author);
+$('.valuable-clients__client').text(testimonials[0].title);
+
+
+$('.valuable-clients-right__list').on('click',function(e){
+
+
+
+   var index=$(this).attr('data-id');
+$('.valuable-clients__quote').text(testimonials[index].quote);
+$('.valuable-clients__author').text(testimonials[index].author);
+$('.valuable-clients__title').text(testimonials[index].title);
+$('.valuable-clients-right__list').removeClass("active");
+$(this).addClass("active");
+});
+
+
+
+
+
+
+if($(window).width()  > 1024){
+
+      $(document).ready(function() {
+	$('#fullpage').fullpage({
+        fixedElements: '.about-indicators',
+        anchors: ['about_us','our_mission' ,'valuable_clients'],
+	menu: '#myMenu',
+    onLeave: function(index, nextIndex, direction){
+		var leavingSection = $(this);
+
+		//after leaving section 2
+		if(index == 2 && direction =='down'){
+            
+			 $('.commonMenu__icon').attr("src", "/assets/img/common/LB_Menu_Color.svg");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LB_LOGO_Color.svg");
+		}
+
+		else if(index == 3 && direction == 'up'){
+			$('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LB_Logo_White.svg");
+		}
+	}
+    });
+});
+
+}
+
+})();
