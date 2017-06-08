@@ -21,7 +21,15 @@ top:0px;
     font-family: montserrat-regular;
     padding: 45px 35px;
 }
+.closeFrom {
+         position: absolute;
+            top: 12px;
+            right: 15px;
+            font-size: 16px; 
+            cursor: pointer;
+}
 .applyCareers {
+    
     button {
     padding: 8px 15px;
     background-color: #ec1944;
@@ -380,10 +388,14 @@ top:0px;
 
 @media screen and (min-width:1866px) {
     .career-all {
-  height: 100vh;
+   height:100%;
+  max-height: 100%;
+  min-height: 100vh;
 }
     .career {
-        height: 100vh;
+       height:100%;
+  max-height: 100%;
+  min-height: 100vh;
         &__header {
             font-size: 32px;
             letter-spacing: 0.02em;
@@ -439,7 +451,7 @@ top:0px;
         padding: 45px 35px;
     }
     .applyCareers {
-    
+       
     h1 {
           font-size: 16px;
     }
@@ -618,7 +630,7 @@ top:0px;
 
      .selectSection{
 position: static;
-margin:10px;
+margin:0px;
 
     }
 .career_right{

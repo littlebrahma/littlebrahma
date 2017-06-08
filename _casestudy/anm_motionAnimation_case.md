@@ -8,7 +8,7 @@ porject_title: STOP MOTION ANIMATION
 porject_subtitle: CLAY MODELING, CLAYMATION, CONCEPTUALIZATION
 project_detail: An interesting and amazing portrayal of the ideas through the combination of illustration and clay modelling resulting in a unique output.
 
-featured : "Yes"
+featured : "No"
 featured_img: "/assets/img/casestudy/EXT-logo.png"
 featured_img1: "/assets/img/casestudy/chip_logo.png"
 featured_quote: The Groom Effect <br> Groom.co raises $20B

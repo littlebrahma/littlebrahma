@@ -49,6 +49,10 @@ video {
   background-color:#E0005E;
  
 }
+
+.slick-dots {
+  bottom: -40px;
+}
 .slick-dots li button:before{
   font-size: 30px;
 }
@@ -60,7 +64,7 @@ video {
 .banner__subtitle{
   padding:25px 0 20px;
       font-family: Montserrat-bold;
-      font-size: 22px;
+      font-size: 20px;
       letter-spacing: .02em;
       line-height: 28px;
       margin:0;
@@ -381,7 +385,7 @@ width:380px;
 }
 }
 .banner__subtitle{
-  font-size: 32px;
+  font-size: 30px;
       letter-spacing: .02em;
       line-height: 40px;
 }
@@ -537,7 +541,7 @@ width:330px;
 }
 }
 .banner__subtitle{
-  font-size: 24px;
+  font-size: 22px;
       line-height: 32px;
 }
 .banner__mintitle{
