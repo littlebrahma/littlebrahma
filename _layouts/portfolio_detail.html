@@ -1,7 +1,8 @@
 {% include header.html %}
 <section class="portfolioDetailBg">
+  {%assign pageCat = page.categories | upcase %}
     {% include common_header.html %}
-    {%if page.categories == 'branding' %}
+    {%if pageCat == 'BRANDING' %}
     {%assign bgImg=page.variation_img5 %}
       {%else%}
       {%assign bgImg=page.img %}
