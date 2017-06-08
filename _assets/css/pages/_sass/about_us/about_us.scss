@@ -789,7 +789,7 @@ margin:0 auto;
 
 
     .valuable-clients{
-
+           
         &__heading{
              font-size : 46px;
   line-height : 64.62px;
@@ -803,6 +803,7 @@ margin:0 auto;
      &__quote{
 font-size: 25px;
 line-height: 40px;
+max-width:90%;
  font-style: italic;
      }
      &__author{

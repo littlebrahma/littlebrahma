@@ -1434,6 +1434,7 @@ a {
   .valuable-clients__quote {
     font-size: 25px;
     line-height: 40px;
+    max-width: 90%;
     font-style: italic; }
   .valuable-clients__author {
     font-size: 20px;
