@@ -5,7 +5,7 @@ categories:
 - ILLUSTRATION & ART
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/portfolio/port_cover_img/wallillustrations.png"
+background-image: "/assets/img/portfolio/wall/wallillustration_thumbnail.png"
 porject_title: Wall Illustration
 porject_subtitle: Conceptualization, Character design
 porject_apple_imglink: ""

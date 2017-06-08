@@ -15,7 +15,7 @@ whatWeDoList:
 - Conceptualization
 - Logo design
 
-img: "/assets/img/portfolio/branding/frugal/portfolio_frugal 6A.jpg"
+img: "/assets/img/portfolio/branding/frugal/Frugal_2.png"
 imgContent:  A logo encompassing the main functions of the platform
 slide_images:
 - "/assets/img/portfolio/branding/frugal/portfolio_frugal_3.png"
@@ -25,6 +25,6 @@ slide_images:
 variation_img1: "/assets/img/portfolio/branding/frugal/portfolio_frugal 5A.jpg"
 variation_img2: "/assets/img/portfolio/branding/frugal/portfolio_frugal 5B.jpg"
 variation_img3: "/assets/img/portfolio/branding/frugal/portfolio_frugal 5C.png"
-variation_img4: "/assets/img/portfolio/branding/frugal/w_frugal 3.png"
+variation_img4: "/assets/img/portfolio/branding/frugal/Frugle_6.png"
 variation_img5: "/assets/img/portfolio/branding/frugal/portfolio_frugal 6.jpg"
 ---
