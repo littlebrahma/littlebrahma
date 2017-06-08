@@ -21,7 +21,15 @@ top:0px;
     font-family: montserrat-regular;
     padding: 45px 35px;
 }
+.closeFrom {
+         position: absolute;
+            top: 12px;
+            right: 15px;
+            font-size: 16px; 
+            cursor: pointer;
+}
 .applyCareers {
+    
     button {
     padding: 8px 15px;
     background-color: #ec1944;
@@ -443,7 +451,7 @@ top:0px;
         padding: 45px 35px;
     }
     .applyCareers {
-    
+       
     h1 {
           font-size: 16px;
     }
