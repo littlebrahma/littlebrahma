@@ -36,12 +36,18 @@
             font-family: $secondary-titlefamily;
             font-size: 14px;
         }
-        &__instagram{
-            background-image: url('/assets/img/common/icon_instagram.png');
-        }
+      
         &__image {
             margin-right: 8px;
             vertical-align: middle;
+            i{
+                   // color: rgba(88, 88, 185, 0.7);
+                   color:#8F8FD1;
+        font-size: 18px;
+        &:hover{
+            color:#F15379;  
+        }
+            }
         }
         &__image1 {
             display: flex;
@@ -212,3 +218,4 @@
         }
     }
 }
+

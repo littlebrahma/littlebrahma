@@ -60,7 +60,14 @@
 
    &-right{
        &__list 
-       { 
+       {
+           &:hover img{
+-webkit-filter: grayscale(0%);
+       -moz-filter: grayscale(0%);
+         -o-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+            filter: grayscale(0%); 
+} 
            img{
     -webkit-filter: grayscale(100%);
        -moz-filter: grayscale(100%);
@@ -70,12 +77,17 @@
 }
 
 &.active img{
+    &:focus {
+        outline: none;
+    }
 -webkit-filter: grayscale(0%);
        -moz-filter: grayscale(0%);
          -o-filter: grayscale(0%);
         -ms-filter: grayscale(0%);
             filter: grayscale(0%); 
 }
+
+
    }
     
    }
@@ -200,7 +212,7 @@
 &__cont{
     width: 80%;
     margin: 0 auto;
-    max-width: 1366px;
+    max-width: 1024px;
 }
 }
 .valuable-clients-left {
@@ -602,7 +614,7 @@ background-color: #1a1746;
         text-align: center;
         margin:0 auto;
         padding-top: 15px;
-        padding-bottom: 40px;
+        padding-bottom: 85px;
     }
 }
     .valuable-clients__heading {
@@ -743,6 +755,10 @@ margin:0 auto;
 
 @media screen and (min-width:1866px){
 
+    .valuable-clients-left {
+        padding-left: 4rem;
+    }
+
     .about-us{
 
         &__heading{
@@ -782,7 +798,7 @@ margin:0 auto;
 
 
     .valuable-clients{
-
+           
         &__heading{
              font-size : 46px;
   line-height : 64.62px;
@@ -796,6 +812,7 @@ margin:0 auto;
      &__quote{
 font-size: 25px;
 line-height: 40px;
+max-width:90%;
  font-style: italic;
      }
      &__author{
