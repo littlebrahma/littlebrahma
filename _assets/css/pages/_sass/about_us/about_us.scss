@@ -70,6 +70,9 @@
 }
 
 &.active img{
+    &:focus {
+        outline: none;
+    }
 -webkit-filter: grayscale(0%);
        -moz-filter: grayscale(0%);
          -o-filter: grayscale(0%);
@@ -742,6 +745,10 @@ margin:0 auto;
 }
 
 @media screen and (min-width:1866px){
+
+    .valuable-clients-left {
+        padding-left: 4rem;
+    }
 
     .about-us{
 
