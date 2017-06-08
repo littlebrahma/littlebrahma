@@ -169,6 +169,7 @@ $common-width: 100%;
             margin: 20px auto;
             line-height: 22px;
             letter-spacing: 0.05em;
+            font-style: italic;
         }
     }
     .blogHeight {
@@ -310,6 +311,8 @@ $common-width: 100%;
                 font-size: 17px;
                 line-height: 24px;
                 letter-spacing: 0.01em;
+                    width: 90%;
+    margin: 0 auto;
             }
             &__para {
                 font-size: 12px;
