@@ -13,7 +13,7 @@ endfor %}
     <div class="blog__detail--banner">
   <div class="blog__detail--bannercontent">
     <h5 class="commonHeight__heading">{{page.title |upcase }}</h5>
-    <p class="commonHeight__para">{{page.blog_description}}</p>
+    <p class="commonHeight__para details-italics ">{{page.blog_description | capitalize }}</p>
     </div>
   </div>
 </div>
@@ -25,7 +25,7 @@ endfor %}
                         <img class="middleSection1__pimg" src="{{author_image}}" alt="author image">
                         <div class="middleSection1__profile">
                             <div class="middleSection1__profileName">
-                                {{author_name}}
+                                {{author_name | upcase}}
                             </div>
                             <div class="middleSection1__profileName1">
                                 {{author_title}}
