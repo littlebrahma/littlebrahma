@@ -63,9 +63,12 @@ We aspire to become a creative almanac for the artistic souls</p>
              CEO,Microsoft
        </div>
         <ul class="valuable-clients-right__unorder-list">
-        <li class="valuable-clients-right__list active" id="about-img1" data-id="0"><img class="valuable-clients-right__logo active" src="/assets/img/about_us/LOGO/dell.svg"></li>
-        <li class="valuable-clients-right__list" id="about-img2" data-id="1"><img class="valuable-clients-right__logo" src="/assets/img/about_us/LOGO/hashworks.svg"></li>
+      {%for testimonial in site.data.about_us.testimonials%}
+        <li class="valuable-clients-right__list" id="about-img1-{{testimonial.logo}}" data-id="{{forloop.index0}}"><img class="valuable-clients-right__logo" src="/assets/img/about_us/LOGO/{{testimonial.logo}}.svg"></li>
+        {%endfor%}
+        <!--<li class="valuable-clients-right__list" id="about-img2" data-id="1"><img class="valuable-clients-right__logo" src="/assets/img/about_us/LOGO/hashworks.svg"></li>
         <li class="valuable-clients-right__list" id="about-img3" data-id="2"><img class="valuable-clients-right__logo" src="/assets/img/about_us/LOGO/locatr.svg"></li>
+      -->
        </ul> 
        </div>
 </div>

@@ -2,7 +2,7 @@
 <section class="portfolioDetailBg">
   {%assign pageCat = page.categories | upcase %}
     {% include common_header.html %}
-    {%if pageCat == 'BRANDING' %}
+    {%if pageCat contains "BRANDING" %}
     {%assign bgImg=page.variation_img5 %}
       {%else%}
       {%assign bgImg=page.img %}
@@ -25,8 +25,18 @@
              <a href={{page.playstore_url}}><img class="banner__himg" src="/assets/img/portfolio/android.png"></a>
              {%endif%}
 
+      
+        
         </div>
+    
+
+   
       </div>
+      <div class="scroll-downs">
+  <div class="mousey">
+    <div class="scroller"></div>
+  </div>
+</div>
 </section>
       <div class="middle-section">
           <div class="middle-section1">

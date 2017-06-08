@@ -44,8 +44,7 @@ var aboutUs = {
 // }];
 
 
-
-
+$($('.valuable-clients-right__list')[0]).addClass('active');
 $('.valuable-clients__quote').text(testimonials[0].quote);
 $('.valuable-clients__author').text(testimonials[0].author);
 $('.valuable-clients__client').text(testimonials[0].title);

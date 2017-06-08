@@ -114,6 +114,7 @@ $common-width: 100%;
         word-spacing: .035em;
         line-height: 22px;
         margin-bottom: 30px;
+        cursor: pointer;
     }
     input[type=radio]:not(old)+label>.select__radio {
         display: inline-block;
@@ -142,7 +143,9 @@ $common-width: 100%;
         background: #FF1A46;
     }
     input[type=radio]:not(old):checked+label>.select__title {
+        font-weight: bolder;
         color: #FF1A46;
+        font-family: "raleway-bold";
     }
     .commonHeight {
         display: flex;
@@ -620,4 +623,39 @@ $content-title4-line-ht-xl :10px;
     border-radius:12px;
     font-family: $ternary-titlefamily;
     
+}
+
+.scroll-downs {
+  position: absolute;
+    bottom: 50px;
+    left: 48%;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 32px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  
+      position: absolute;
+    bottom: 50px;
+    z-index: 11;
+}
+.scroller {
+  width: 4px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
 }

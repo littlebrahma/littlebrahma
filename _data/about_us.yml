@@ -10,9 +10,9 @@ description3 : 'We throb for excellence in everything we manifest to our valuabl
 
 testimonials :
  - quote:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!
-   author: Anshuman
-   title: Director,Dell
-   logo : dell
+   author: Lebron James
+   title: Director,Experis
+   logo : experis
 
  - quote:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!
    author: Gopikrishnan Kanan
@@ -20,6 +20,6 @@ testimonials :
    logo : hashworks
 
  - quote:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!
-   author: Bill Gates
+   author: Kevin Durant
    title: CEO,Locatr
    logo : locatr

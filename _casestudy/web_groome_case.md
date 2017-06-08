@@ -7,7 +7,7 @@ thumbnail : "/assets/img/casestudy/groome/little_brahma_groome_thumbnail.png"
 porject_title: GROOME
 porject_subtitle: UI/UX, MOBILE APPLICATION, DEVOPS
 project_detail: Making hiring process a breeze with multi levels of streamlined process with intuitive UI and non compromising UX.
-banner_logo : "/assets/img/casestudy/groome/groom_banner_logo.png"
+banner_logo : "/assets/img/casestudy/groome/groom_banner_logo.svg"
 
 challengeDesc: Traditional way of managing the employee hiring process on large scale organizations are always a tedious task.
    Responsible stakeholders across the globe find it very difficult to manage all the datas that are overflowing around them. It's the era of automation and we still did not had any viable products/platforms to reduce the manpower going into that heap of process. To handle this data and make the hiring process more smoother we came up with Groome.

@@ -1,7 +1,7 @@
 ---
 title: Frugal
 description: Conceptualization, Logo design
-categories: BRANDING
+categories: "BRANDING"
 layout: portfolio_detail
 background-class: portBgImg
 background-image: "/assets/img/portfolio/branding/frugal/frugal.png"
