@@ -7,11 +7,19 @@
 }
 
 .service-detailBg {
+<<<<<<< HEAD
     background-color: #FFF;
 }
 
 .service-detail-all {
     background-color: #FFF;
+=======
+    // background-color: #f0f1f1;
+}
+
+.service-detail-all {
+    
+>>>>>>> d071f31ae065098730e7b74a2f048d9e9a251a9c
         min-height: 100vh;
     height: 100%;
     padding-top: 80px;
@@ -19,7 +27,11 @@
 
 .service-detail {
     padding: 78px 50px;
+<<<<<<< HEAD
     background-color: #FFF;
+=======
+    
+>>>>>>> d071f31ae065098730e7b74a2f048d9e9a251a9c
     width:715px;
     margin: 0 auto; 
     &__img {
