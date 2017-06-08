@@ -2,7 +2,7 @@
 date: '2017-06-08 16:18 +0530'
 layout: blog_detail
 author_name: sanjay
-published: false
+published: true
 title: Principles for Animation or Motion Design
 blog_description: A guide to start your animation journey
 blog_category: ANIMATION
