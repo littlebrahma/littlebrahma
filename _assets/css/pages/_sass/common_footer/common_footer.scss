@@ -42,6 +42,10 @@
         &__image {
             margin-right: 8px;
             vertical-align: middle;
+            img{
+                height: 22px;
+    width: 18px;
+            }
         }
         &__image1 {
             display: flex;

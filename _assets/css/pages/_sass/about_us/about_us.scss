@@ -60,7 +60,14 @@
 
    &-right{
        &__list 
-       { 
+       {
+           &:hover img{
+-webkit-filter: grayscale(0%);
+       -moz-filter: grayscale(0%);
+         -o-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+            filter: grayscale(0%); 
+} 
            img{
     -webkit-filter: grayscale(100%);
        -moz-filter: grayscale(100%);
@@ -76,6 +83,8 @@
         -ms-filter: grayscale(0%);
             filter: grayscale(0%); 
 }
+
+
    }
     
    }
@@ -200,7 +209,7 @@
 &__cont{
     width: 80%;
     margin: 0 auto;
-    max-width: 1366px;
+    max-width: 1024px;
 }
 }
 .valuable-clients-left {
