@@ -9,13 +9,16 @@
         padding-left: 33px;
     }
     .img1 {
-        width: 280px;
+        width: 250px;
         @media only screen and (min-width: 320px) and (max-width: 768px) {
             width: 60%;
             margin-top: 30px;
         }
         @media only screen and (min-width:768px) and (max-width:1024px) {
-            width: 100%;
+            width: 240px;
+        }
+        @media only screen and (min-width:1024px) and (max-width:1366px) {
+            width: 220px;
         }
     }
     .imgRight {
@@ -88,13 +91,13 @@
             }
             &__line {
                 // background-image:url("/assets/img/process/right-01.svg");
-                width: 10rem;
+                width: 7rem;
                 top: 16rem;
                 position: absolute;
             }
             &__line1 {
                 // background-image:url("/assets/img/process/left-01.svg");
-                width: 10rem;
+                width: 7rem;
                 top: 15rem;
                 position: absolute;
                 right: 0;
@@ -340,8 +343,14 @@
         .processBgContent {
             padding:80px 0px;
             .processContent {
+                margin-left: 2rem;
+                margin-right: 3rem;
                 &__line {
                     top: 16rem;
+                    width:8rem;
+                }
+                &__line1 {
+                    width:8rem;
                 }
                 &__heading {
                     font-size: 18px;
@@ -399,7 +408,7 @@
             right: 3rem;
         }
         .processBgContent .processContent {
-                margin-left: 3.5rem;
+                margin-left: 1.5rem;
     margin-right: 6rem;
         }
     }
