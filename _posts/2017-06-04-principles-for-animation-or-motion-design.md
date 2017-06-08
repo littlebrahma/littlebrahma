@@ -1,17 +1,16 @@
 ---
-date: '2017-06-04 19:10 +0530'
+date: '2017-06-08 16:18 +0530'
 layout: blog_detail
 author_name: sanjay
 published: true
 title: Principles for Animation or Motion Design
-blog_category: Branding
+blog_description: A guide to start your animation journey
+blog_category: ANIMATION
+thumbnail: /assets/img/blog/animation.png
 blog_highlight: >-
   To do an animation is easy. You have to know the tool or the old paper and
   pencil way. But knowing the tool isn't the end. Becoming the master of a tool
   doesn't make you the master of the art.
-blog_description: A guide to start your animation journey
-blog_category: ANIMATION
-thumbnail: /assets/img/blog/animation.png
 ---
 Since the growth of digital era, Animation has gained a wide popularity with the use of motion design in the media. What makes the motion design so captivating and popular is that it conveys the idea or a thought more appealing and sensible way a human can understand. Motion design can convey a process or an idea much more effectively than a still image. In the previous century, the animation was a thing which was a trade known to a few. But now with the emergence of digital trends, nowadays it accessible for who ever want to create an experience.
 
@@ -23,9 +22,8 @@ To do an animation is easy. You have to know the tool or the old paper and penci
 This property gives the animated object a sense of weight and volume. When an object is in uninterrupted continuous motion, it is represented by stretch and when it is interrupted squash takes over. This property makes the object more relatable to our surroundings
 
 Eg: A bouncing ball
+
 ![1.png]({{site.baseurl}}/assets/img/blog/1.png)
-
-
 
 **2. Anticipation**
 

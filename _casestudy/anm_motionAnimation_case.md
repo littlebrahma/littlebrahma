@@ -17,7 +17,7 @@ challengeDesc: The home page of a design studio should be unique and catchy. The
 img2: "/assets/img/casestudy/animation/2.gif"
 solutionDesc: The clay models created were photographed and superimposed on top of graphical animation to create an unique piece of art which of course interacts with the user. Result? An awesome catchy landing page.
 
-
+video_poster : "/assets/img/casestudy/animation/lb.png"
 solutionVideo : "/assets/img/casestudy/animation/3.mp4"
 
 projectStatsNum: 35

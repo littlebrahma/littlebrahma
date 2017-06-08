@@ -18,7 +18,7 @@ whatWeDoList:
 img: "/assets/img/portfolio/locatr_img/portfolio_loc 2.jpg"
 imgContent:  A logo based on routes.
 slide_images:
-- "/assets/img/portfolio/locatr_img/portfolio_loc 5.png"
+- "/assets/img/portfolio/locatr_img/portfolio_loc 51.png"
 - "/assets/img/portfolio/locatr_img/portfolio_loc6.png"
 - "/assets/img/portfolio/locatr_img/portfolio_loc7.png"
 
