@@ -1143,9 +1143,13 @@ a {
 
 @media screen and (min-width: 1866px) {
   .career-all {
-    height: 100vh; }
+    height: 100%;
+    max-height: 100%;
+    min-height: 100vh; }
   .career {
-    height: 100vh; }
+    height: 100%;
+    max-height: 100%;
+    min-height: 100vh; }
     .career__header {
       font-size: 32px;
       letter-spacing: 0.02em;
