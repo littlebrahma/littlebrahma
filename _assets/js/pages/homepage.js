@@ -218,7 +218,7 @@ $('.homepageCln').slick({
 
 function jqueryScrollPluginSetting(){
     $(function() {
-    $('body').scrolltrigger({
+    $('html').scrolltrigger({
         lastAnimation   : 0,
         quietPeriod     : 100,
         animationTime   : 100,
