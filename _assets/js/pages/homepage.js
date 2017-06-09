@@ -54,6 +54,16 @@ function init(){
     jqueryScrollPlugin();
     jqueryScrollPluginSetting();
     scrollByIndicators();
+    $('html').keydown(function(e){
+       var keyVal=e.which;
+
+       if(keyVal == 40){
+            myFunction('up');
+       }
+       else{
+            myFunction('down');
+       }
+    });
    
 }
 
@@ -218,7 +228,7 @@ $('.homepageCln').slick({
 
 function jqueryScrollPluginSetting(){
     $(function() {
-    $('body').scrolltrigger({
+    $('html').scrolltrigger({
         lastAnimation   : 0,
         quietPeriod     : 100,
         animationTime   : 100,
@@ -248,16 +258,7 @@ function jqueryScrollPluginSetting(){
 });
 }
 
-$('html').keydown(function(e){
-       var keyVal=e.which;
 
-       if(keyVal == 40){
-            myFunction('up');
-       }
-       else{
-            myFunction('down');
-       }
-    });
 
 
 function jqueryScrollPlugin(){
