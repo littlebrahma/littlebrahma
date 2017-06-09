@@ -248,6 +248,18 @@ function jqueryScrollPluginSetting(){
 });
 }
 
+$('html').keydown(function(e){
+       var keyVal=e.which;
+
+       if(keyVal == 40){
+            myFunction('up');
+       }
+       else{
+            myFunction('down');
+       }
+    });
+
+
 function jqueryScrollPlugin(){
 
 /***
