@@ -7,7 +7,7 @@
        <div class="commonHeight comHeight detailTabHeight banner"  style="background:url('{{page.img2}}') no-repeat center;background-size:cover;">
        <div class="banner_content">
          {%if page.banner_logo %}
-        <img src="{{page.banner_logo}}" class="banner__img">
+        <img alt="lb__casestudy-logo_img" src="{{page.banner_logo}}" class="banner__img">
         {%endif%}
         <h5 class="commonHeight__heading">{{page.porject_title | upcase}}</h5>
         <h5 class="banner__subtitle details-italics">{{page.porject_subtitle | capitalize }}</h5>
@@ -16,10 +16,10 @@
 
          {%if page.playstore_url %}
        <a href="{{page.playstore_url}}">
-        <img src="/assets/img/casestudy/apple.png" class="banner__himg"></a>
+        <img alt="lb__casestudy-apple_img" src="/assets/img/casestudy/apple.png" class="banner__himg"></a>
         {%endif%}
          {%if page.appstore_url %}
-       <a href="{{page.appstore_url}}"> <img src="/assets/img/casestudy/android.png" class="banner__himg"></a>
+       <a href="{{page.appstore_url}}"> <img alt="lb__casestudy-android_img" src="/assets/img/casestudy/android.png" class="banner__himg"></a>
         {%endif%}
          {%endif%}
       </div> 
@@ -34,15 +34,15 @@
     <div class="info">
       <p class="info__text1">{{page.project_detail}}</p>
       {%if page.featured == 'Yes' %}
-      <p class="info__text2">FEATURED ON <span><img src="{{page.featured_img}}" class="info__dock"></span></p>
+      <p class="info__text2">FEATURED ON <span><img alt="lb__casestudy-dock_img" src="{{page.featured_img}}" class="info__dock"></span></p>
    {%endif%}
     </div>
     {%if page.featured =='Yes'%}
     <div class="chip col-lg-12">
-      <img src="{{page.featured_img1}}" class="chip__logo">
-      <img src="/assets/img/casestudy/comma.png" class="chip__comma">
+      <img alt="lb__casestudy-chip-logo_img" src="{{page.featured_img1}}" class="chip__logo">
+      <img alt="lb__casestudy-comma_img" src="/assets/img/casestudy/comma.png" class="chip__comma">
       <p class="chip__content">{{page.featured_quote}}</p>
-      <img src="/assets/img/casestudy/comma1.png" class="chip__comma1">
+      <img alt="lb__casestudy-comma_img" src="/assets/img/casestudy/comma1.png" class="chip__comma1">
       <p class="chip__read">Read Full Article</p>
     </div>
     {%endif%}
@@ -52,7 +52,7 @@
     <div class="challenge__content">{{page.challengeDesc}}<p>
 
 </p></div>
-<img src="{{page.img2}}" class="challenge__img">
+<img alt="lb__casestudy-img2_img" src="{{page.img2}}" class="challenge__img">
 <!--<p class="challenge__italic">{{page.img2Content}}</p>-->
     </div>
     <div class="solution">
@@ -64,7 +64,7 @@
       <div class="solution__circle">
       {%for solutionImg in page.solutionImg%}
       <div>
-        <img src="{{solutionImg}}" class="solution__img">
+        <img alt="lb__casestudy-solution_img" src="{{solutionImg}}" class="solution__img">
         </div>
         {%endfor%}
       </div>
