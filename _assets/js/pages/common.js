@@ -24,6 +24,9 @@ $( document ).ready(function() {
         }
 
  });
+/* end scroll to top */
+
+
 
 
 
@@ -90,8 +93,26 @@ $(".MenuList__ch").removeClass("fadeInUp");
    $(".arrow").toggleClass("MenuList__arrowDown MenuList__arrowDown1");
 });
 
+
+/* default select category */
+
+location.queryString = {};
+location.search.substr(1).split("&").forEach(function (pair) {
+    if (pair === "") return;
+    var parts = pair.split("=");
+    location.queryString[parts[0]] = parts[1] &&
+        decodeURIComponent(parts[1].replace(/\+/g, " "));
+});
+console.log(location.queryString);
+if(location.queryString.category  == undefined){
 $("#r-option1").prop("checked", true);
-if($("#r-option1").prop('checked') == true){
+}
+else{
+$('*[data-category="'+location.queryString.category+'"]').prop("checked", true);
+}
+/*end default select category*/
+
+if($("#r-option1").prop('checked') == true || $('*[data-category="'+location.queryString.category+'"]').prop("checked")==true){
    var category= $('input:radio:checked').data("category");
     $(".blog-filter").hide();
     var classArr=category.replace(/[^a-z0-9\s]/gi, ' ').split(" "); 
@@ -100,8 +121,10 @@ if($("#r-option1").prop('checked') == true){
 }
 $('input[type="radio"]').click(function() {
    
- if($(this).is(':checked')) {
+ if($(this).is(':checked')) {    
     var category= $('input:radio:checked').data("category");
+     var params = {'category':category};
+      window.history.pushState(null, document.title,'?'+jQuery.param(params));
     $(".blog-filter").hide();
 
     var classArr=category.replace(/[^a-z0-9\s]/gi, ' ').split(" "); 
