@@ -760,7 +760,8 @@ a {
 
 .hero .footerColumn__image {
   margin-right: 8px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  width: 14px; }
   .hero .footerColumn__image i {
     color: #8F8FD1;
     font-size: 18px; }

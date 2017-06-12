@@ -759,7 +759,8 @@ a {
 
 .hero .footerColumn__image {
   margin-right: 8px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  width: 14px; }
   .hero .footerColumn__image i {
     color: #8F8FD1;
     font-size: 18px; }
@@ -911,12 +912,6 @@ a {
   .hero .commonFooter {
     padding: 0 0 25px; } }
 
-p {
-  margin: 0; }
-
-.footerMargin__para p {
-  margin-top: 10px; }
-
 .commonHeader {
   z-index: 9999 !important; }
 
@@ -999,6 +994,7 @@ p {
   border-top: 4px solid #414143; }
 
 .middle-section1__algn {
+  margin: 0px;
   margin-right: 13%;
   font-family: 'Raleway-regular';
   font-size: 12px;
@@ -1165,16 +1161,19 @@ p {
   text-align: center;
   padding: 60px 0px; }
   .middle-section5__btn {
-    background: -webkit-gradient(linear, left top, right top, from(#ff1d1d), to(#ef1141));
-    background: linear-gradient(to right, #ff1d1d, #ef1141);
-    padding: 10px 15px;
-    font-size: 10px;
-    font-family: raleway-bold;
+    background-color: #f1123e;
+    border: 2px solid #f1123e;
     border-radius: 15px;
+    padding: 8px 15px;
     outline: none;
     color: #fff;
-    cursor: pointer;
-    border: none; }
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: "raleway-bold";
+    cursor: pointer; }
+    .middle-section5__btn:hover {
+      background-color: transparent;
+      border: 2px solid #f1123e; }
   .middle-section5__headng {
     font-family: Montserrat-bold;
     font-size: 17px;

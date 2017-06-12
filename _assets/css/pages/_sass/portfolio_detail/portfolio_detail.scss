@@ -1,17 +1,6 @@
 .portfolioDetailBg{
   //background-color:#1a1746;
 }
-p{
-  margin:0;
-}
-
-
-
-.footerMargin__para{
-  p{
-    margin-top:10px;
-  }
-}
 .commonHeader{
   z-index:9999!important;
 }
@@ -101,6 +90,7 @@ width: 720px;
     border-top: 4px solid #414143;
   }
   &__algn{
+    margin: 0px;
   margin-right: 13%;
     font-family: 'Raleway-regular';
     font-size: 12px;
@@ -294,15 +284,20 @@ width: 720px;
   text-align: center;
   padding:60px 0px;
   &__btn{
-    background: linear-gradient(to right,#ff1d1d,#ef1141);
-    padding: 10px 15px;
-    font-size: 10px;
-    font-family: raleway-bold;
+        background-color: #f1123e;
+    border: 2px solid #f1123e;
     border-radius: 15px;
+    padding: 8px 15px;
     outline: none;
     color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: "raleway-bold";
     cursor: pointer;
-    border: none;
+    &:hover{
+      background-color: transparent;
+    border: 2px solid #f1123e;
+    }
   }
   &__headng{
     font-family: Montserrat-bold;

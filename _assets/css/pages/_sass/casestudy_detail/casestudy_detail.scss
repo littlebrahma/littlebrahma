@@ -373,15 +373,20 @@ font-family: Raleway-medium;
     letter-spacing: .02em;
   }
   &__btn{
-    background: linear-gradient(to right,#ff1d1d,#ef1141);
-    border: none;
-    padding: 10px 15px;
-    font-size: 12px;
-    font-family: montserrat-bold;
-    border-radius: 12px;
+    background-color: #f1123e;
+    border: 2px solid #f1123e;
+    border-radius: 15px;
+    padding: 8px 15px;
     outline: none;
     color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: "raleway-bold";
     cursor: pointer;
+    &:hover{
+      background-color: transparent;
+    border: 2px solid #f1123e;
+    }
   }
   }
   @media screen and (min-width:1866px) and (max-width:2560px){
