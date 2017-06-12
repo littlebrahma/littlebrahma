@@ -10,7 +10,7 @@ porject_title: Calendar 2017
 porject_subtitle: Character Designing, Illustration
 porject_apple_imglink: ""
 porject_android_imglink: ""
-project_detail: One of the first little brahma product which captures our creative prowess while stating some facts related to the brahma - Our Lord Creator. This Calendar features a unique style illustrations featuring the famous trimurthis with fun and all their glory.
+project_detail: One of the first Little Brahma product which captures our creative prowess. The Calendar features unique style illustrations featuring the famous trimurthis in all their glory. It also states facts about Brahma - Our Lord Creator, one for each month of the year. The last leaf of the calender showcases all the Little Brahmas (artists) who created this brillant piece of art.
 whatWeDoList:
 - Character Designing
 - Illustration
