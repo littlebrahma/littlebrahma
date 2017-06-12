@@ -2,6 +2,31 @@
 
 $( document ).ready(function() {
 
+    /* scroll up */
+
+    $('.nav-scroll-up').click(function(e) {
+
+        $('html, body').animate({
+            scrollTop: '0px'
+        }, 1.7e3);
+    });
+
+    /* end of scroll up */
+
+/* scroll to top button*/
+ $(document).scroll(function() {
+        var main = $(this).scrollTop();
+
+ if (main >= 330) {
+            $(".apst-wrapper").show();
+        } else {
+            $(".apst-wrapper").hide();
+        }
+
+ });
+
+
+
 if($(window).width()  > 1024 || $(window).width()  < 768 ){
 $(".MenuList__common").addClass("fadeInUp");
 $(".MenuList__ch").addClass("fadeInUp");
