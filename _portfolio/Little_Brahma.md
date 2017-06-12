@@ -4,7 +4,7 @@ description: Conceptualization, Logo design
 categories: BRANDING
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/portfolio/port_cover_img/littlebrahma.png"
+background-image: "/assets/img/portfolio/lb_img/lb.png"
 banner__logo: "/assets/img/portfolio/lb_img/LB_-01.png"
 porject_title: Little Brahma
 porject_subtitle: Conceptualization, Logo design

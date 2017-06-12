@@ -4,7 +4,7 @@ description: Conceptualization, Logo design
 categories: BRANDING
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/portfolio/port_cover_img/locatr.png"
+background-image: "/assets/img/portfolio/locatr_img/locatr.png"
 banner__logo: "/assets/img/portfolio/locatr_img/portfolio_loc 1.png"
 porject_title: Locatr
 porject_subtitle: Conceptualization, Logo design
