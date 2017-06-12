@@ -665,3 +665,78 @@ $content-title4-line-ht-xl :10px;
     font-style: italic !important;
     font-weight: 100
 }
+
+
+/*scroll button*/
+
+.apst-wrapper{
+    display: none;
+    position: fixed;
+    z-index: 9;
+    cursor: pointer;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    bottom: 20px;
+    margin-left: -40px;
+    right: 20px;
+}
+.apst-button {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-color: #555;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    margin-top: 25px;
+}
+.apst-button:before {
+    content: "";
+    display: block;
+    position: relative;
+    left: 12px;
+    top: 14px;
+    width: 10px;
+    height: 10px;
+    border-right: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.apst-button::after {
+    border-right: 4px solid #ec1944;
+    border-left: 4px solid #ec1944;
+}
+.apst-button:hover {
+    background-color: #fff;
+}
+.apst-button:hover:before {
+    border-color: #ec1944;
+}
+.apst-button {
+    background-color:#ec1944 !important;
+}
+.apst-button:hover {
+    background-color: #ffffff !important;
+}
+/* end of scroll*/
