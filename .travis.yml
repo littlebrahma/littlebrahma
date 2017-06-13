@@ -1,10 +1,10 @@
 language: ruby
 rvm:
   - 2.2
-before_install:
-  - npm install
-  - pip install --user pillow
-install: gem install jekyll html-proofer
+before_script:
+  - npm install -g gulp
+  - npm install 
+  - gem install jekyll
 script: npm run travis
 env:
   global:
