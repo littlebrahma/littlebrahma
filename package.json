@@ -4,7 +4,7 @@
   "description": "little brahma website",
   "main": "gulpfile.js",
   "scripts": {
-    "travis": "gulp build ;bundle exec jekyll build"
+    "travis": "bundle exec jekyll build"
   },
   "repository": {
     "type": "git",
