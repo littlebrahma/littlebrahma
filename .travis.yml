@@ -11,7 +11,7 @@ before_install:
   - gem install jekyll
   - gulp build
 script:
-  - np run travis
+  - npm run travis
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
