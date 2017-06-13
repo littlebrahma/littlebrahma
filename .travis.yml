@@ -5,9 +5,11 @@ before_install:
   - . $HOME/.nvm/nvm.sh
   - nvm install stable
   - nvm use stable
+  - node -v
   - npm install -g gulp
   - npm install 
   - gem install jekyll
+  - gulp build
 script: npm run travis
 env:
   global:
