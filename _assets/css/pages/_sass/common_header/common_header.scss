@@ -1,18 +1,18 @@
 .hero {
+    
     .commonHeader {
         background-color: transparent;
         padding: 20px 0 20px;
-        position: fixed; 
+        position: fixed;
         width: 100%;
-        z-index: 1; 
+        z-index: 99;
         background-color: transparent;
         &__logo {
             margin-left: 35px;
             display: inline-block;
             width: 50px;
-            
         }
-        &__lists{
+        &__lists {
             display: inline-block;
             font-size: 12px;
             font-family: 'Montserrat-regular';
@@ -20,37 +20,36 @@
             vertical-align: top;
             padding-top: 25px;
         }
-        &__list{
+        &__list {
             display: inline-block;
             padding-right: 45px;
         }
-        &__active{
+        &__active {
             color: #023852;
         }
-        &__icons{
+        &__icons {
             padding-left: 10px;
             vertical-align: text-top;
         }
-
     }
-    .rightlists{
+    .rightlists {
         float: right;
         list-style: none;
         padding-top: 6px;
         padding-right: 30px;
         color: #a6a8ab;
-        &__list{
+        &__list {
             display: inline-block;
-             padding-right: 15px;
+            padding-right: 15px;
         }
-        &__img1{
+        &__img1 {
             vertical-align: middle;
         }
-        &__icons{
+        &__icons {
             vertical-align: middle;
         }
     }
-    .hr1{
+    .hr1 {
         margin: 20px 60px;
         color: #d0d2d3;
     }
@@ -59,6 +58,10 @@
         cursor: pointer;
         margin: 0 35px 0 0;
         display: inline-block;
+        img {
+            width:20px;
+            height: 20px;
+        }
     }
     .MenuContent {
         float: right;
@@ -84,20 +87,22 @@
         &__ele {
             margin-bottom: 5px;
             padding: 8px 20px;
-            &:hover, &:active, &:focus {
-               /*  border-left: 5px solid #EC1944;
+            &:focus,
+            &:active,
+            &:focus {
+                /*  border-left: 5px solid #EC1944;
                 padding: 8px 20px 8px 15px; */
             }
-            }
-            &__common {
-                display: none;
-            }
-            &__eleDesk {
-            display: block;
-            }
-            &__eleMob {
+        }
+        &__common {
             display: none;
-            }
+        }
+        &__eleDesk {
+            display: block;
+        }
+        &__eleMob {
+            display: none;
+        }
         &__arrowDown {
             background-image: url("/assets/img/common/drop_down_down.png");
             background-repeat: no-repeat;
@@ -121,7 +126,9 @@
             font-family: $secondary-titlefamily;
             text-transform: uppercase;
             color: #5858B9;
-            &:hover, &:active, &:focus {
+            &:focus,
+            &:active,
+            &:focus {
                 color: #EC1944;
                 cursor: pointer;
             }
@@ -129,21 +136,23 @@
         &__main {
             font-size: 22px;
             font-family: $ternary-titlefamily;
-            &:hover, &:active, &:focus {
+            &:focus,
+            &:active,
+            &:focus {
                 color: #5858B9;
             }
         }
         &__underline {
-            border-bottom:1px solid #5858B9;
+            border-bottom: 1px solid #5858B9;
             width: 100px;
-            margin-left:20px;
+            margin-left: 20px;
         }
         &__cnc {
-            padding:0 20px;
+            padding: 0 20px;
         }
         &__bottom {
             position: absolute;
-            bottom:60px;
+            bottom: 60px;
         }
     }
     .menuMob {
@@ -153,9 +162,6 @@
         padding-left: 50px;
     }
     @media screen and (min-width: 1025px) and (max-width: 1366px) {
-
-
-        
         .MenuList {
             padding: 50px 0 0 15px;
             &__ele {
@@ -165,77 +171,94 @@
                 margin-right: 35px;
             }
             &__main {
-                 font-size: 20px;
+                font-size: 20px;
             }
             &__bottom {
-            bottom:30px;
-        }
+                bottom: 30px;
+            }
         }
     }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
         .commonHeader {
             padding: 20px 0 20px;
-        background-color: transparent;
-        &__logo {
-            margin-left: 25px;
+            background-color: transparent;
+           position: absolute;
+        //    position: fixed;
+            &__logo {
+                margin-left: 25px;
+            }
+            &__lists {
+                padding-left: 0;
+            }
+            &__list {
+                padding-right: 15px;
+            }
+            &__profile {
+                display: none;
+            }
         }
-        &__lists{
-            padding-left: 0;
+        .rightlists {
+            &__list {
+                padding-right: 6px;
+            }
+            &__lst {
+                padding-right: 0 !important;
+            }
         }
-        &__list{
-            padding-right: 15px;
-        }
-        &__profile{
-            display:none;
-        }
-        }
-     .rightlists{
-        &__list{
-            padding-right: 6px;
-           }
-            &__lst{
-            padding-right: 0 !important;
-           }
-           }
         .commonMenu {
-        margin: 0 25px 0 0;
-    }
-    .MenuContent {
+            margin: 0 25px 0 0;
+        }
+        .MenuContent {
             &__close {
                 margin-right: 25px;
             }
         }
-        .MenuList{
+        .MenuList {
             &__common {
                 display: block;
             }
             &__eleDesk {
-            display: none;
+                display: none;
             }
             &__eleMob {
-            display: block;
+                display: block;
             }
         }
     }
+    @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 767px) 
+and (orientation : landscape) { 
+    .MenuContent {
+        height: 400px;
+        overflow: scroll !important;
+    }
+    .MenuList {
+        height: 400px;
+        &__bottom {
+            top: 75%;
+        }
+    }
+}
     @media screen and (min-width: 320px) and (max-width: 767px) {
         .commonHeader {
-            position: static;
-        &__logo {
-            margin-left: 15px;
-            width: 50px;
+            position: absolute;
+            &__logo {
+                margin-left: 15px;
+                width: 42px;
+            }
+            &__lists {
+                display: none;
+            }
         }
-        &__lists{
+        .rightlists {
             display: none;
         }
+        .hr1 {
+            margin: 20px 25px;
         }
-        .rightlists{
-            display: none;
-        }
-        .hr1{
-        margin: 20px 25px;
-    }
         .commonMenu {
-           margin: 0 15px 0 0;
+            margin: 0 15px 0 0;
             img {
                 height: 20px
             }
@@ -251,7 +274,7 @@
             padding: 50px 0 0;
             line-height: 24px;
             &__bottom {
-                bottom:30px;
+                bottom: 30px;
                 left: 24%;
                 right: 24%;
             }
@@ -259,31 +282,118 @@
                 padding: 2px 0;
                 width: 175px;
                 margin: 0 auto;
-                &:hover,&:active,&:focus {
+                &:focus,
+                &:active,
+                &:focus {
                     border-left: none;
                 }
             }
-            &__arrowDown1,&__arrowDown {
+            &__arrowDown1,
+            &__arrowDown {
                 margin-right: -15px;
             }
             &__attr {
                 cursor: pointer;
-                &:hover,&:active,&:focus {
-                   cursor: pointer;
+                &:focus,
+                &:active,
+                &:focus {
+                    cursor: pointer;
                 }
             }
             &__underline {
-            margin:0 auto;
-        }
-        &__cnc {
-            width: 175px;
-            margin:0 auto;
-            padding: 0;
-        }
+                margin: 0 auto;
+            }
+            &__cnc {
+                width: 175px;
+                margin: 0 auto;
+                padding: 0;
+            }
         }
         .menuMob {
             display: block;
             padding-top: 25px;
         }
     }
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+   visibility: hidden;
+    width: 85px;
+    background-color: #5959b8;
+    font-family: 'Montserrat-regular';
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    font-weight: 300;
+    bottom: 5%;
+    margin-left: -80px;
+    font-size: 8px;
+    right: -60%;
+    height: 12px;
+    line-height: 12px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    // content: "";
+    // position: absolute;
+    // top: 100%;
+    // left: 50%;
+    // margin-left: -5px;
+    // border-width: 5px;
+    // border-style: solid;
+    // border-color: #555 transparent transparent transparent;
+}
+
+/* The actual popup */
+.popup .popuptext1 {
+   visibility: hidden;
+    width: 85px;
+    background-color: #5959b8;
+    font-family: 'Montserrat-regular';
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    font-weight: 300;
+    bottom: 5%;
+    margin-left: -80px;
+    font-size: 8px;
+    right: -120%;
+     height: 12px;
+    line-height: 12px;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }

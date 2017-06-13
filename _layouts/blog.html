@@ -4,15 +4,15 @@
   <div class="commonHeight">
   <div>
   <img src="/assets/img/service/Mudras/blog.png" class="commonHeight__img" alt="blog banner">
-    <h5 class="commonHeight__heading">BLOG</h5>
-    <p class="commonHeight__para">User interface in the eyes of the beholder, Technical specifications is what it is made of. User experience is in their mind.</p>
+    <h5 class="commonHeight__heading">{{site.data.blog.title}}</h5>
+    <p class="commonHeight__para">{{site.data.blog.description}}</p>
     </div>
   </div>
 </section>
 <div class="row blog-row">
   {% include radio2.html %}
-    <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 rightDiv">
-      <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 rightDiv">
+      <div class="row blog_commom-row">
       {% assign items = site.posts | sort: 'date' %}
 
       {% for post in items %}
@@ -30,7 +30,7 @@
 {% endfor %}
 
 
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 blog-filter {{post.blog_category}}">
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 blog-filter {{post.blog_category}}">
         <a href="{{post.url}}">
           <img src="{{ post.thumbnail}}" class="blog-filter__img" alt="blog_thumbnail">
           <div class="blogWholeBG">
@@ -39,21 +39,20 @@
             <div class="blogDetail__border"></div>
             <p class="blogDetail__para">{{ post.blog_description}}</p>
           </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="row blog__pad">
+          <div class="row blog__pad-row">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 blog__pad">
                 <div class="blog__pad-img">
-                  <img src="{{ author_image }}" class="blog-pad__img" alt="blog author">
+                  <img src=" {{ author_image }} " class="blog-pad__img" alt="blog author">
                 </div>
                 <div class="authorSection">
                   <h5 class="authorSection__title">{{ author_name}}</h5>
                   <p class="authorSection__para">{{ author_title}}</p>
                 </div>
+                
               </div>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blogClock">
-              <span><img src="/assets/img/blog/clock.png" alt="clock"></span><span class="authorSection__date">{{ post.date  | date: '%B %d, %Y'}}</span>
-            </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 blog__date">
+                   <div class="blog__date--inside"><img src="/assets/img/blog/clock.png" alt="clock"><span class="authorSection__date">{{ post.date  | date: '%d, %m, %Y'}}</span></div>
+                </div>
           </div>
           </div>
           </a>
@@ -64,4 +63,3 @@
   </div>
 {% include common_footer.html %}
 {% include footer.html %}
-  

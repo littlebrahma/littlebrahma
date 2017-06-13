@@ -1,3 +1,4 @@
+
 $mobileHeading: 14px;
 $tabHeading:16px;
 $laptopHeading:18px;
@@ -10,7 +11,7 @@ $primary-contentfamily: "raleway-regular";
 $secondary-contentfamily: "raleway-light";
 $ternary-contentfamily: "raleway-bold";
 .lifeContainer {
-    width: 70%;
+    width: 1024px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 70px;
@@ -22,6 +23,7 @@ $ternary-contentfamily: "raleway-bold";
     }
     &__content {}
     &__details {
+        padding:80px 0px;
         h1 {
             font-family: $ternary-titlefamily;
             font-size: $desktopHeading;
@@ -29,6 +31,8 @@ $ternary-contentfamily: "raleway-bold";
             letter-spacing: 0.02em;
             text-align: center;
             text-transform: uppercase;
+            margin-bottom:40px;
+        
         }
         p {
             font-family: $primary-contentfamily;
@@ -36,6 +40,7 @@ $ternary-contentfamily: "raleway-bold";
             color: #666;
             line-height: 24px;
             margin-bottom: 40px;
+            text-align: center;
         }
     }
 }
@@ -46,20 +51,24 @@ $ternary-contentfamily: "raleway-bold";
         font-size: $desktopHeading;
         color: #333;
         letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom:35px;
+        margin-top: 0;
     }
     p {
         font-family: $primary-contentfamily;
         font-size: 15px;
         color: #666;
         line-height: 24px;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
+        margin-top: 0;
     }
 }
 
 .imageSecondLayout {
     &__first {}
     &__second {
-        margin-top: 30px;
+        margin-top: 11px;
         margin-bottom: 80px;
     }
     &__fLeft {
@@ -76,7 +85,7 @@ $ternary-contentfamily: "raleway-bold";
 
 .imageFirstLayout {
     .img_cont:first-child {
-        margin-bottom: 7px;
+        margin-bottom: 3px;
     }
     .img_cont0 {
         display: inline;
@@ -103,7 +112,7 @@ $ternary-contentfamily: "raleway-bold";
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-image: url('/assets/img/lifeAtLittleBrahma/1_1.png');
+       
     }
     #image1 {
         display: inline-block;
@@ -114,7 +123,7 @@ $ternary-contentfamily: "raleway-bold";
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-image: url('/assets/img/lifeAtLittleBrahma/1_2.png');
+       
     }
     #image2 {
         display: inline-block;
@@ -125,7 +134,7 @@ $ternary-contentfamily: "raleway-bold";
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-image: url('/assets/img/lifeAtLittleBrahma/1_3.png');
+        
     }
     .img_test {
         display: flex;
@@ -141,30 +150,42 @@ $ternary-contentfamily: "raleway-bold";
 }
 
 @media only screen and (min-width:320px) and (max-width:768px) {
+    .imageFirstLayout .img_cont:first-child {
+    /* margin-bottom: 3px; */
+    margin-top: -12px;
+}
     .imageSecondLayout {
         &__fLeft {
             margin-bottom: 12px;
         }
         &__second {
-            margin-top: 15px;
-            margin-bottom: 40px;
+            margin-top: 15px; 
+            margin-bottom: 25px;
         }
     }
     .lifeContainer {
+        width:280px;
+        margin-left: auto;
+        margin-right:auto;
+        padding-top: 100px;
         &__details {
+            padding:25px 0px 30px;
             h1 {
                 font-family: $ternary-titlefamily;
                 font-size: 14px;
                 text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 0.02em;
+                margin-bottom:15px;
+                margin-top: 0;
             }
             p {
                 font-family: $primary-contentfamily;
                 font-size: 12px;
                 color: #666;
                 line-height: 20px;
-                margin-bottom: 20px;
+                margin-bottom:0px;
+                text-align: center;
             }
         }
     }
@@ -175,6 +196,8 @@ $ternary-contentfamily: "raleway-bold";
             color: #333;
             letter-spacing: 0.02em;
             text-align: center;
+            margin-bottom: 15px;
+            margin-top: 0;  
         }
         p {
             font-family: $primary-contentfamily;
@@ -182,6 +205,8 @@ $ternary-contentfamily: "raleway-bold";
             color: #666;
             line-height: 20px;
             margin-bottom: 20px;
+            margin-top: 0;
+            text-align: center;
         }
     }
     .imageFirstLayout {
@@ -192,23 +217,31 @@ $ternary-contentfamily: "raleway-bold";
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
+    .imageFirstLayout #image {
+        margin-bottom:-12px;
+    }
     .imageSecondLayout {
         &__fLeft {
-            margin-bottom: 12px;
+            margin-bottom: 0px;
         }
         &__second {
-            margin-top: 15px;
+            margin-top: 9px;
             margin-bottom: 40px;
         }
     }
     .lifeContainer {
+        width:520px;
+        margin-left: auto;
+        margin-right:auto;
         &__details {
+            padding:40px 0px;
             h1 {
                 font-family: $ternary-titlefamily;
                 font-size: 15px;
                 text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 0.02em;
+                margin-bottom:20px;
             }
             p {
                 font-family: $primary-contentfamily;
@@ -216,6 +249,8 @@ $ternary-contentfamily: "raleway-bold";
                 color: #666;
                 line-height: 21px;
                 margin-bottom: 40px;
+                margin-top: 0;
+                margin-bottom:0px;
             }
         }
     }
@@ -225,6 +260,8 @@ $ternary-contentfamily: "raleway-bold";
             font-size: 15px;
             color: #333;
             letter-spacing: 0.02em;
+            margin-bottom: 20px;
+            margin-top: 0;
         }
         p {
             font-family: $primary-contentfamily;
@@ -241,21 +278,33 @@ $ternary-contentfamily: "raleway-bold";
 }
 
 @media only screen and (min-width:1024px) and (max-width:1366px) {
+    .imageFirstLayout .img_cont2 {
+    display: inline;
+    width: 400px;
+    margin-left: 12px;
+}
     .lifeContainer {
+        width:720px;
+        margin-left: auto;
+        margin-right:auto;
         &__details {
+            padding:55px 0px;
             h1 {
                 font-family: $ternary-titlefamily;
                 font-size: 17px;
                 text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 0.02em;
+                margin-bottom:30px;
+                margin-top: 0;
             }
             p {
                 font-family: $primary-contentfamily;
                 font-size: 14px;
                 color: #666;
                 line-height: 22px;
-                margin-bottom: 40px;
+                margin-bottom: 0px;
+                margin-top: 0;
             }
         }
     }
@@ -265,19 +314,37 @@ $ternary-contentfamily: "raleway-bold";
             font-size: 17px;
             color: #333;
             letter-spacing: 0.02em;
+            margin-top: 0;
+            margin-bottom:30px;
+
         }
         p {
             font-family: $primary-contentfamily;
             font-size: 14px;
             color: #666;
             line-height: 22px;
+            margin-top: 0;
         }
     }
 }
 
 @media only screen and (min-width:1866px) {
+    .imageFirstLayout {
+        .img_cont0 {
+            display: inline;
+            width:1600px;
+        }
+        .img_cont2 {
+            display: inline;
+            width:800px;
+        }
+    }
     .lifeContainer {
+        width:1380px;
+        margin-left:auto ;
+        margin-right:auto;
         &__details {
+            padding:100px 0px;
             h1 {
                 font-family: $ternary-titlefamily;
                 font-size: 24px;
@@ -285,6 +352,7 @@ $ternary-contentfamily: "raleway-bold";
                 text-transform: uppercase;
                 letter-spacing: 0.02em;
                 line-height: 34px;
+                margin-bottom:55px;
             }
             p {
                 font-family: $primary-contentfamily;
@@ -302,6 +370,7 @@ $ternary-contentfamily: "raleway-bold";
             color: #333;
             letter-spacing: 0.02em;
             line-height: 34px;
+            margin-bottom:40px;
         }
         p {
             font-family: $primary-contentfamily;

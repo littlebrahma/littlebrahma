@@ -1,16 +1,16 @@
 <header class="commonHeader animated">
-    {% if page.layout == "service_detail" or page.layout == "contact" or page.layout == "career" or page.layout == "lifeAtLittleBrahma" %}
-        <a href="/"><img src="/assets/img/service/LOGO_RED.png" class="commonHeader__logo"></a>
+    {% if page.layout == "service_detail" or page.layout == "contact" or page.layout == "career" or page.layout == "life_at_lb" %}
+        <a href="/"><img src="/assets/img/common/LB_Logo_Color.svg" class="commonHeader__logo"></a>
     {% else %}
-        <a href="/"><img src="/assets/img/common/LOGO_WHITE.png" class="commonHeader__logo"></a>
+        <a href="/"><img src="/assets/img/common/LB_Logo_White.svg" class="commonHeader__logo"></a> 
     {% endif %}
-    {% if page.layout == "service_detail" or page.layout == "contact" or page.layout == "career" or page.layout == "lifeAtLittleBrahma"%}
+    {% if page.layout == "service_detail" or page.layout == "contact" or page.layout == "career" or page.layout == "life_at_lb"%}
     <span class="commonMenu">
-            <img src="/assets/img/common/MENU_RED.png" class="commonMenu__icon">
+            <img src="/assets/img/common/LB_Menu_Color.svg" class="commonMenu__icon">
     </span>
     {% else %}
     <span class="commonMenu">
-            <img src="/assets/img/common/MENU_WHITE.png" class="commonMenu__icon">
+            <img src="/assets/img/common/LB_Menu_White.svg" class="commonMenu__icon">
     </span>
     {% endif %}
     <div class="MenuContent animated">
@@ -45,10 +45,15 @@
                 <a href="/blog/" class="MenuList__attr">blog</a>
             </li>
             <li class="MenuList__ele MenuList__ch animated ">
-                <a title="Coming Soon" class="MenuList__attr MenuList__main">challenges</a>
+                
+               <div class="popup" onclick="myFunction('myPopup')"><a title="Coming Soon" class="MenuList__attr MenuList__main">challenges</a>
+  <span class="popuptext" id="myPopup">Coming Soon</span>
+</div>
             </li>
             <li class="MenuList__ele MenuList__ch animated ">
-                <a title="Coming Soon" class="MenuList__attr MenuList__main">e-shop</a>
+                 <div class="popup" onclick="myFunction('myPopup1')"><a title="Coming Soon" class="MenuList__attr MenuList__main">e-shop</a>
+  <span class="popuptext1" id="myPopup1">Coming Soon</span>
+</div>
             </li>
             </ul>
             <ul class="MenuList MenuList__bottom">
@@ -60,11 +65,25 @@
             </li>
             <div class="MenuList__underline"></div>
              <li class="MenuList__ele">
-                                <a href="" class="footerColumn__image"><img src="/assets/img/common/icon_instagram.png"></a>
-                                <a href="" class="footerColumn__image"><img src="/assets/img/common/icon_dribble.png"></a>
-                                <a href="" class="footerColumn__image"><img src="/assets/img/common/icon_behance.png"></a>
-                                <a href="" class="footerColumn__image"><img src="/assets/img/common/icon_twitter.png"></a>
+                 <div>
+                                <a href="https://www.instagram.com/little_brahma/?hl=en" target="_blank" class="footerColumn__image "><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://dribbble.com/littlebrahma" target="_blank" class="footerColumn__image"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                <a href="https://www.behance.net/littlebrahma" target="_blank" class="footerColumn__image"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/Little_Brahma" target="_blank" class="footerColumn__image"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             </li>
         </ul>
     </div>
 </header>
+<script>
+// When the user clicks on div, open the popup
+function myFunction(id) {
+  
+    var popup = document.getElementById(id);
+   // var popup1 = document.getElementById("myPopup1")
+   popup.classList.toggle("show");
+   setTimeout(function(){
+popup.classList.toggle("show");
+   },1500); 
+    
+}
+</script>

@@ -1,1 +1,97 @@
-!function(){function a(){0==e?($(".about-us-height").show().addClass("animated fadeInUp"),$(".our-mission").hide().addClass("animated fadeInUp"),$(".valuable-clients").hide().addClass("animated fadeInUp"),$("#about_us-Bg").css("background-color","#1A1746"),$(".commonMenu__icon").attr("src","/assets/img/common/MENU_WHITE.png"),$(".commonHeader__logo").attr("src","/assets/img/common/LOGO_WHITE.png"),$(".about-indicators li a[data-id=1]").addClass("active"),$(".about-indicators li a[data-id=2]").removeClass("active"),$(".about-indicators li a[data-id=3]").removeClass("active"),$(".homepageFooter").css("color","#fff")):1==e?($(".our-mission").show().addClass("animated fadeInUp"),$(".about-us-height").hide().addClass("animated fadeInUp"),$(".valuable-clients").hide().addClass("animated fadeInUp"),$("#about_us-Bg").css("background-color","#e83463"),$(".commonMenu__icon").attr("src","/assets/img/common/MENU_WHITE.png"),$(".commonHeader__logo").attr("src","/assets/img/common/LOGO_WHITE.png"),$(".about-indicators li a[data-id=2]").addClass("active"),$(".about-indicators li a[data-id=1]").removeClass("active"),$(".about-indicators li a[data-id=3]").removeClass("active"),$(".homepageFooter").css("color","#fff")):2==e&&($(".valuable-clients").show().addClass("animated fadeInUp"),$(".our-mission").hide().addClass("animated fadeInUp"),$(".commonMenu__icon").attr("src","/assets/img/common/MENU_RED.png"),$(".commonHeader__logo").attr("src","/assets/img/service/LOGO_RED.png"),$(".about-us-height").hide().addClass("animated fadeInUp"),$("#about_us-Bg").css("background-color","#ececec"),$(".about-indicators li a[data-id=3]").addClass("active"),$(".about-indicators li a[data-id=1]").removeClass("active"),$(".about-indicators li a[data-id=2]").removeClass("active"),$(".homepageFooter").css("color","#333"))}function o(o){var t=document.event||o,i=t.detail?-120*t.detail:t.wheelDelta;if(e=i<=-120?e+1:e-1,e=e<=0?0:e>s.length-1?s.length-1:e,$("#about_us-Bg").css("background-color",s[e]),$(this).addClass("animated fadeIn"),a(),!t.preventDefault)return!1;t.preventDefault()}if($(window).width()>1024){console.log($(window).width());var s=["#1A1746","#e83463","#ececec"],e=0,t=/Firefox/i.test(navigator.userAgent)?"DOMMouseScroll":"mousewheel";window.attachEvent?window.attachEvent("on"+t,o):window.addEventListener&&window.addEventListener(t,o,!1),$(".about-indicators li a").click(function(){var a=$(this).data("id");1==a?($(".about-indicators li a").removeClass("active"),$(this).addClass("active"),$(".about-us-height").show(),$(".our-mission").hide(),$(".valuable-clients").hide(),$("#about_us-Bg").css("background-color","#1A1746"),$(".commonMenu__icon").attr("src","/assets/img/common/MENU_WHITE.png"),$(".commonHeader__logo").attr("src","/assets/img/common/LOGO_WHITE.png"),$(".homepageFooter").css("color","#fff")):2==a?($(".about-indicators li a").removeClass("active"),$(this).addClass("active"),$(".our-mission").show(),$(".about-us-height").hide(),$(".valuable-clients").hide(),$("#about_us-Bg").css("background-color","#e83463"),$(".commonMenu__icon").attr("src","/assets/img/common/MENU_WHITE.png"),$(".commonHeader__logo").attr("src","/assets/img/common/LOGO_WHITE.png"),$(".homepageFooter").css("color","#fff")):3==a&&($(".about-indicators li a").removeClass("active"),$(this).addClass("active"),$(".valuable-clients").show(),$(".our-mission").hide(),$(".commonMenu__icon").attr("src","/assets/img/common/MENU_RED.png"),$(".commonHeader__logo").attr("src","/assets/img/service/LOGO_RED.png"),$(".about-us-height").hide(),$("#about_us-Bg").css("background-color","#ececec"),$(".homepageFooter").css("color","#333"))})}else $("#about_us").remove();$(window).scroll(function(){var a=$(this).scrollTop(),o=$("#valuable_clients").offset().top;$("#valuable_clients").height();a>o-$(".commonHeader").height()?($(".commonMenu__icon").attr("src","/assets/img/common/MENU_RED.png"),$(".commonHeader__logo").attr("src","/assets/img/service/LOGO_RED.png")):($(".commonMenu__icon").attr("src","/assets/img/common/MENU_WHITE.png"),$(".commonHeader__logo").attr("src","/assets/img/common/LOGO_WHITE.png"))})}();
+(function(){
+
+
+var aboutUs = {
+        container: document.getElementById('about_us-img'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/data/about_us_1/data.json'
+    };
+    bodymovin.loadAnimation(aboutUs);
+
+    var ourMission = {
+        container: document.getElementById('our_mission-img'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/data/about_us_2/data.json'
+    };
+    bodymovin.loadAnimation(ourMission);
+
+
+
+// var testimonials=[{
+
+//   quote:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!",
+//   author: "Anshuman",
+//   title: "Director,Dell",
+//   logo : "dell"
+// },
+// {
+
+//  quote:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!",
+//   author: "Gopikrishnan Kanan",
+//   title: "CEO,Hashworks",
+//   logo : "hashworks"
+// },
+// {
+
+//   quote:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!",
+//   author: "Bill Gates",
+//   title: "CEO,Locatr",
+//   logo : "locatr"
+// }];
+
+
+$($('.valuable-clients-right__list')[0]).addClass('active');
+$('.valuable-clients__quote').text(testimonials[0].quote);
+$('.valuable-clients__author').text(testimonials[0].author);
+$('.valuable-clients__title').text(testimonials[0].title);
+
+
+$('.valuable-clients-right__list').on('click',function(e){
+
+
+
+   var index=$(this).attr('data-id');
+$('.valuable-clients__quote').text(testimonials[index].quote);
+$('.valuable-clients__author').text(testimonials[index].author);
+$('.valuable-clients__title').text(testimonials[index].title);
+$('.valuable-clients-right__list').removeClass("active");
+$(this).addClass("active");
+});
+
+
+
+
+
+
+if($(window).width()  > 1024){
+
+      $(document).ready(function() {
+	$('#fullpage').fullpage({
+        fixedElements: '.about-indicators',
+        anchors: ['about_us','our_mission' ,'valuable_clients'],
+	menu: '#myMenu',
+    onLeave: function(index, nextIndex, direction){
+		var leavingSection = $(this);
+
+		//after leaving section 2
+		if(index == 2 && direction =='down'){
+            
+			 $('.commonMenu__icon').attr("src", "/assets/img/common/LB_Menu_Color.svg");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LB_Logo_Color.svg");
+		}
+
+		else if(index == 3 && direction == 'up'){
+			$('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LB_Logo_White.svg");
+		}
+	}
+    });
+});
+
+}
+
+})();

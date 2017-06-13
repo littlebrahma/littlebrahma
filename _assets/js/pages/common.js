@@ -32,6 +32,8 @@ $( ".MenuContent__close").click(function() {
    $(".about-indicators").css("opacity","1");
    $(".arrow-right").css("opacity","1");
    $(".arrow-left").css("opacity","1");
+    $(".arrow").removeClass("MenuList__arrowDown1")
+   $(".arrow").addClass("MenuList__arrowDown");
 });
 // $(".MenuList__common").hide();
 $(".MenuList__wwa").click(function() {
@@ -72,6 +74,7 @@ if($("#r-option1").prop('checked') == true){
     $("."+finalArray.join('.')).show();
 }
 $('input[type="radio"]').click(function() {
+   
  if($(this).is(':checked')) {
     var category= $('input:radio:checked').data("category");
     $(".blog-filter").hide();
@@ -85,6 +88,7 @@ $('input[type="radio"]').click(function() {
 
 $(".job_detail").hide();
 $(".career__link").click(function() {
+   
     var job=$(this).data("id");
     $(".job").hide();
   

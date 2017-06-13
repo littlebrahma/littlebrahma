@@ -1,42 +1,40 @@
  {% include header.html %} {% include common_header.html %}
 <section class="lifeContainer">
     <section class="lifeContainer__video">
-        <img src="/assets/img/lifeAtLittleBrahma/img1.png" />
+        <img alt="littlebrahma_careers" src="/assets/img/lifeAtLittleBrahma/{{site.data.life_at_lb.bannerImage}}"/>
     </section>
     <section class="lifeContainer__content row">
-        <div class="col-lg col-md col-sm col-xs-12 contentContainer">
-            <h1>TITLE</h1>
-            <p>We are what the world would call crazy. We are what the saints would call different. We are what the heavens would call abnormal. We are the disciples of Little Brahma.</p>
+        <div class="col-lg col-md col-sm-12 col-xs-12 contentContainer">
+            <h1>{{site.data.life_at_lb.mainTitle1}}</h1>
+            <p>{{site.data.life_at_lb.titledes1}}</p>
         </div>
-        <div class="col-lg col-md col-sm col-xs-12 contentContainer">
-            <h1>TITLE</h1>
-            <p>Our meetings are offbeat. We avoid formal mannerisms. We like the word expression more than free speech. If we cannot describe what we want to convey in a few words, we draw, project, display our creations and seek feedback while sitting in
-                our lotus position.
-            </p>
+        <div class="col-lg col-md col-sm-12 col-xs-12 contentContainer">
+            <h1>{{site.data.life_at_lb.mainTitle2}}</h1>
+            <p>{{site.data.life_at_lb.titledes2}}</p>
         </div>
-        <div class="col-lg col-md col-sm col-xs-12 contentContainer">
-            <h1>TITLE</h1>
-            <p>We like stretching a bit after some tedious work. That means fusing break dance with yoga. This is our way of attaining complete design salvation.</p>
+        <div class="col-lg col-md col-sm-12 col-xs-12 contentContainer">
+            <h1>{{site.data.life_at_lb.mainTitle3}}</h1>
+            <p>{{site.data.life_at_lb.titledes3}}</p>
         </div>
     </section>
     <section class="imageFirstLayout">
         <div class="img_test">
             <div class="img_cont0">
-                <span id="image">
+                <span style="background-image: url('/assets/img/lifeAtLittleBrahma/{{site.data.life_at_lb.lbImg1}}')" id="image">
         <span id="image-inner">
         </span>
                 </span>
             </div>
             <div class="img_cont2">
                 <div class="img_cont">
-                    <span id="image2">
+                    <span style="background-image: url('/assets/img/lifeAtLittleBrahma/{{site.data.life_at_lb.lbImg2}}')" id="image2">
         <span id="image-inner">
         </span>
                     </span>
                 </div>
 
                 <div class="img_cont">
-                    <span id="image1">
+                    <span style="background-image: url('/assets/img/lifeAtLittleBrahma/{{site.data.life_at_lb.lbImg3}}')" id="image1">
         <span id="image-inner">
         </span>
                     </span>
@@ -45,26 +43,26 @@
         </div>
     </section>
     <section class="lifeContainer__details">
-        <h1>About Little Brahma</h1>
-        <p>Little Brahma is a family of artists, designers, sculptors, technologists and innovation strategists with the single aim of making our world more creative and intuitive.
-        </p>
+        <h1>{{site.data.life_at_lb.aboutTitle}}</h1>
+        <p>{{site.data.life_at_lb.aboutDes}}</p>
     </section>
 
     <section class="imageSecondLayout">
         <div class="imageSecondLayout__first row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 imageSecondLayout__fLeft">
-                <img src="/assets/img/lifeAtLittleBrahma/2_1.png" />
+                <img src="/assets/img/lifeAtLittleBrahma/{{site.data.life_at_lb.aboutImage1}}" />
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 imageSecondLayout__fRight">
-                <img src="/assets/img/lifeAtLittleBrahma/2_2.png" />
+                <img src="/assets/img/lifeAtLittleBrahma/{{site.data.life_at_lb.aboutImage2}}" />
             </div>
         </div>
         <div class="imageSecondLayout__second row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 imageSecondLayout__fLeft">
-                <img src="/assets/img/lifeAtLittleBrahma/2_3.png" />
+                <img src="/assets/img/lifeAtLittleBrahma/{{site.data.life_at_lb.aboutImage3}}" />
             </div>
         </div>
     </section>
 
 </section>
 {% include common_footer.html %} {% include footer.html %}
+

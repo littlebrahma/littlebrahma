@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "little brahma website",
   "main": "gulpfile.js",
+  "scripts":{
+    "travis":"gulp build ;bundle exec jekyll build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/littlebrahma/littlebrahma.github.io.git"
