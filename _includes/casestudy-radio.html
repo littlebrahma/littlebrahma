@@ -20,14 +20,14 @@ tmp2 contains category %} {% capture tmp2 %}{{ tmp2 }}#{{ category | strip }}{% 
 
     <div class="mobileDropDown__container">
         <h1 id="dropdownTitle"></h1>
-        <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <i class="fa fa-angle-down" id="test" aria-hidden="true"></i>
     </div>
 
     <div class="mobileDropDown__menu">
 
         <ul>
             {% for category in uniqueprojects %}
-            <li data-category="{{category}}" id="mobileRadio{{forloop.index0}}">{{category | upcase}}</li>
+            <li data-category="{{category}}" id="mobileRadio{{forloop.index0}}" class="toHide">{{category | upcase}}</li>
             {% endfor %}
         </ul>
 

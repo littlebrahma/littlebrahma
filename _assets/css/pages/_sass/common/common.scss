@@ -419,6 +419,9 @@ $common-width: 100%;
         }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
+        .lol {
+            transform: rotate(180deg);
+        }
         .mobileDropDown {
             padding: 1rem 0rem;
             display: block;
@@ -436,7 +439,7 @@ $common-width: 100%;
                 transition: 0.2s;
                 border-radius: 3px;
                 ul {
-                    padding: 20px 0;
+                    padding: 0px;
                     margin: 0;
                     li {
                         color: #58595B;
