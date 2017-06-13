@@ -4,13 +4,13 @@ description: Conceptualization, Logo design
 categories: BRANDING
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/portfolio/port_cover_img/locatr.png"
+background-image: "/assets/img/portfolio/locatr_img/locatr.png"
 banner__logo: "/assets/img/portfolio/locatr_img/portfolio_loc 1.png"
 porject_title: Locatr
 porject_subtitle: Conceptualization, Logo design
 porject_apple_imglink: ""
 porject_android_imglink: ""
-project_detail: Branding for a navigation app which is going to revolutionize the way we travel, find our destinations and share our locations. As the core concept of the app is based on travel and navigation and how easily we can arrive or reach at a destination, the logo should communicate the simplicity as well as the technology that powers it.
+project_detail: Branding for a navigation app which is going to revolutionize the way we travel, find our destinations and share our locations. As the core concept of the app is based on travel and navigation and how easily we can arrive at or reach a destination, the logo should communicate the simplicity as well as the technology that powers it.
 whatWeDoList:
 - Conceptualization
 - Logo design

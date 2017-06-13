@@ -5,12 +5,12 @@ categories:
 - PACKAGING & LABEL
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/portfolio/port_cover_img/magazine-cover.png"
+background-image: "/assets/img/portfolio/magazine/magazine-cover.png"
 porject_title: Magazine cover for Hashworks
 porject_subtitle: Character Designing, Illustration
 porject_apple_imglink: ""
 porject_android_imglink: ""
-project_detail: A designing studio’s walls should not be plain and boring. So we did some awesome cool illustrations to spice them up. We designed some characters and props and put it on our walls to showcase our creativity.
+project_detail: When you have 3 magazines featuring different aspects of the brand you need to package it together. Also without losing the charm and visual style of the magazines, we came up with an awesome slick magazine cover to package it all together.
 whatWeDoList:
 - Character Designing
 - Illustration

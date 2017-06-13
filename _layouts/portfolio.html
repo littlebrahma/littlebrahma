@@ -3,7 +3,7 @@
  {% include common_header.html %}
  	<div class="commonHeight">
   <div>
- 		<img src="/assets/img/service/Mudras/Portfolio.png" class="commonHeight__img">
+ 		<img alt="lb__portfolio-video-camera_img" src="/assets/img/service/Mudras/Portfolio.png" class="commonHeight__img">
 		<h5 class="commonHeight__heading">{{site.data.portfolio.title}}</h5>
 		<p class="commonHeight__para">{{site.data.portfolio.description}}</p>
     </div>
@@ -16,21 +16,17 @@
 			<div class="row blog_commom-row">
 				{% assign item = site.portfolio | sort: 'date' %}
 				{% for port in item %}
-			
-				<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 blog-filter {{port.categories}}">
-						<div class="{{port.background-class}}" style="background-image:url('{{port.background-image}}');">
-							<div class="portfolioInner" onclick="void(0)">
-								<div class="portInnerPadd">
-									<h5 class="portInnerPadd--title">{{port.porject_title}}</h5>
-									<div class="portInnerPadd--border"></div>
-									<p class="portInnerPadd--para">{{port.description}}</p>
-									<div class="portInnerPadd--btndiv">
-                  <a href="{{port.url}}"><button type="button" value="submit" class="portInnerPadd--btn">View Portfolio</button></a>
-                  </div>
-								</div>
-							</div>
+			<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 blog-filter {{port.categories}}">
+          <a href="{{port.url}}">
+							<img alt="lb__casestudy-{{port.porject_title}}_img" src="{{port.background-image}}" class="blog-filter__img">
+						<div class="caseDetail">
+							<h5 class="caseDetail__title">{{port.porject_title | upcase}}</h5>
+							<div class="caseDetail__border"></div>
+							<p class="caseDetail__para">{{port.description}}</p>
 						</div>
+            </a>
 					</div>
+		
 				{% endfor %}
 			</div>
 		</div>

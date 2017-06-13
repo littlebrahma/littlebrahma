@@ -10,7 +10,7 @@ porject_title: Clay modeling
 porject_subtitle: Conceptualization, Modeling
 porject_apple_imglink: ""
 porject_android_imglink: ""
-project_detail: A fun project for the little brahma home page images. The creative minds over at little brahma wanted to do something unique with their home screen. Then we did the unthinkable. Created clay models and combined it with animations. The final product? An amazing home page with interactive clay models and illustrations.
+project_detail: A fun project for the Little Brahma website. The creative minds at little brahma wanted to create something unique. Then we did the unthinkable,  we created clay models and combined it with illustrated animations. The final product, an amazing home page with interactive clay models and illustrations.
 whatWeDoList:
 - Conceptualization
 - Modeling

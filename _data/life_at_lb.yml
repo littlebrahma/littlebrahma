@@ -10,9 +10,8 @@ lbImg1 : '1_1.png'
 lbImg2 : '1_2.png'
 lbImg3 : '1_3.png'
 aboutTitle : 'ABOUT LITTLE BRAHMA'
-aboutDes : 'Little Brahma is a complete creative suite platform equipped with designers,
-engineers, developers, artists, analysts and brand architects shaping solutions for all design and data challenges that confront entrepreneurs and enterprises. We are the first of its kind crowd sourcing design ecosystem in India for early stage creative enthusiasts to enter an exclusive marketplace and expand their reach to clients and services.'
+aboutDes : "Little Brahma is a complete creative suite platform equipped with designers,
+developers, artists, analysts and brand architects shaping solutions for all design and data challenges that confront start-ups and enterprises."
 aboutImage1 : '2_1.png'
 aboutImage2 : '2_2.png'
 aboutImage3 : '2_3.png'
-  

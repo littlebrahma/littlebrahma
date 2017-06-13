@@ -4,13 +4,13 @@ description: Conceptualization, Logo design
 categories: BRANDING
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/portfolio/port_cover_img/littlebrahma.png"
+background-image: "/assets/img/portfolio/lb_img/lb.png"
 banner__logo: "/assets/img/portfolio/lb_img/LB_-01.png"
 porject_title: Little Brahma
 porject_subtitle: Conceptualization, Logo design
 porject_apple_imglink: ""
 porject_android_imglink: ""
-project_detail: Creation is divine. Little Brahma as a family of aspiring artists, designers, illustrators and animators, are creating wonders with their unique vision of design. As the name ‘Little Brahma’ suggests, the logo should have its roots which goes deep into our traditions but at the same time portraying the modern design environment which creates an impression on customers with the essence of spirituality.
+project_detail: Creation is divine. Little Brahma as a family of aspiring artists, designers, illustrators and animators, are creating wonders with their unique vision of design. As the name ‘Little Brahma’ suggests, the logo should have its roots which goes deep into our traditions but at the same time portrays the modern design environment. The logo should create a lingering impression on customers with the essence of spirituality.
 whatWeDoList:
 - Conceptualization
 - Logo design

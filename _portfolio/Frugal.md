@@ -10,7 +10,7 @@ porject_title: Frugal
 porject_subtitle: Conceptualization, Logo design
 porject_apple_imglink: ""
 porject_android_imglink: ""
-project_detail: Frugal is a platform to manage cash flow of small to medium enterprises and allocation to different cost centers. Thus optimizing the expenditure and increasing the corpus fund of the organization. The particular logo for the platform should convey the ideas of finance and allocation. Also the theme and visual appeal of the platform suggests the logo should follow a clean and sleek visual style 
+project_detail: Frugal is a platform to manage cash flow for small to medium enterprises and allocation of funds to different cost centers. Thus, optimizing the expenditure and increasing the corpus fund of the organization. The particular logo for the platform should convey the ideas of finance and allocation. Also the theme and visual appeal of the platform suggests the logo should follow a clean and sleek visual style 
 whatWeDoList:
 - Conceptualization
 - Logo design

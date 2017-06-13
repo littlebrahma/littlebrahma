@@ -104,22 +104,26 @@
             display: none;
         }
         &__arrowDown {
-            background-image: url("/assets/img/common/drop_down_down.png");
+            background-image: url("/assets/img/common/dropdown.svg");
             background-repeat: no-repeat;
             float: right;
             height: 9px;
             margin-right: 50px;
             margin-top: 8px;
             width: 15px;
+            transition : all 1s;
+            
         }
         &__arrowDown1 {
-            background-image: url("/assets/img/common/drop_dwon_up.png");
+            background-image: url("/assets/img/common/dropdown.svg");
             background-repeat: no-repeat;
             float: right;
             height: 9px;
             margin-right: 50px;
             margin-top: 8px;
             width: 15px;
+            transform: rotate(180deg);
+            transition : all 1s;
         }
         &__attr {
             font-size: 14px;
@@ -144,7 +148,7 @@
         }
         &__underline {
             border-bottom: 1px solid #5858B9;
-            width: 100px;
+            width: 130px;
             margin-left: 20px;
         }
         &__cnc {
@@ -266,6 +270,7 @@ and (orientation : landscape) {
         .MenuContent {
             width: 100%;
             text-align: center;
+            height: 100%;
             &__close {
                 margin-right: 15px;
             }

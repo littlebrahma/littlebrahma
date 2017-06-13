@@ -3,6 +3,8 @@ title: Littlebrahma.Github.Io
 email: chandrasekar.marappan@hashworks.co
 repository: littlebrahma/littlebrahma.github.io
 timezone: UTC
+gems:
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock

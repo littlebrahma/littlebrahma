@@ -54,17 +54,17 @@ We aspire to become a creative almanac for the artistic souls</p>
        </div>
 <div class="valuable-clients__testimonials col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
        <div class="valuable-clients__quote">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos delectus ut eius maiores autem accusamus dolorem cupiditate tempora architecto est!
+       
        </div>
        <div class="valuable-clients__author">
-             Bill Gates
+             
        </div>
        <div class="valuable-clients__title">
-             CEO,Microsoft
+           
        </div>
         <ul class="valuable-clients-right__unorder-list">
       {%for testimonial in site.data.about_us.testimonials%}
-        <li class="valuable-clients-right__list" id="about-img1-{{testimonial.logo}}" data-id="{{forloop.index0}}"><img class="valuable-clients-right__logo" src="/assets/img/about_us/LOGO/{{testimonial.logo | downcase }}.svg"></li>
+        <li class="valuable-clients-right__list" id="about-img1-{{testimonial.logo}}" data-id="{{forloop.index0}}"><img class="valuable-clients-right__logo" alt="lb__client-logo" src="/assets/img/about_us/LOGO/{{testimonial.logo | downcase }}.svg"></li>
         {%endfor%}
         <!--<li class="valuable-clients-right__list" id="about-img2" data-id="1"><img class="valuable-clients-right__logo" src="/assets/img/about_us/LOGO/hashworks.svg"></li>
         <li class="valuable-clients-right__list" id="about-img3" data-id="2"><img class="valuable-clients-right__logo" src="/assets/img/about_us/LOGO/locatr.svg"></li>
