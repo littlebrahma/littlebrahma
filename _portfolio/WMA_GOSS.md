@@ -1,12 +1,12 @@
 ---
-title: Global Order Status Service - GOSS
+title: GOSS
 description: UI/UX, Web development, Devops
 categories:
 - WEB & MOBILE APP
 layout: portfolio_detail
 background-class: portBgImg
 background-image: "/assets/img/portfolio/port_cover_img/goss.png"
-porject_title: Global Order Status Service - GOSS
+porject_title: GOSS
 porject_subtitle: UI/UX, Web development, Devops
 porject_apple_imglink: ""
 porject_android_imglink: ""

@@ -1,12 +1,12 @@
 ---
-title: Order Profile Monitoring - OPM
+title: OPM
 description: UI/UX, Web development, Devops
 categories:
 - WEB & MOBILE APP
 layout: portfolio_detail
 background-class: portBgImg
 background-image: "/assets/img/portfolio/port_cover_img/opm.png"
-porject_title: Order Profile Monitoring - OPM
+porject_title: OPM
 porject_subtitle: UI/UX, Web development, Devops
 porject_apple_imglink: ""
 porject_android_imglink: ""

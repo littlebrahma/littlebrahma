@@ -6,7 +6,7 @@ layout: casestudy_detail
 
 thumbnail : "/assets/img/casestudy/xp/xpdashboard.png"
 porject_title: XP DASHBOARD
-porject_subtitle: UI/UX, MOBILE APPLICATION, DEVOPS
+porject_subtitle: UI/UX, Mobile application, Devops
 project_detail: Integrated solution that reduced the workload of performance engineers and improved their efficiency in operations.
 
 
