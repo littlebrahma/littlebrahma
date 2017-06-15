@@ -206,12 +206,13 @@
         $(".mobileDropDown__container").click(function() {
 
             $(".mobileDropDown__menu").fadeToggle();
-            $("#test").toggleClass("lol");
+            $("#test").toggleClass("drop_arrow");
         })
         $(".toHide").click(function() {
             $(".mobileDropDown__menu").hide();
+            $("#test").toggleClass("drop_arrow");
         })
-
+        
 
 
 
