@@ -26,10 +26,6 @@ $( document ).ready(function() {
  });
 /* end scroll to top */
 
-
-
-
-
 if($(window).width()  > 1024 || $(window).width()  < 768 ){
 $(".MenuList__common").addClass("fadeInUp");
 $(".MenuList__ch").addClass("fadeInUp");
