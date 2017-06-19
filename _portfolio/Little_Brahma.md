@@ -22,9 +22,9 @@ slide_images:
 - "/assets/img/portfolio/lb_img/LB-04.png"
 - "/assets/img/portfolio/lb_img/LB-05.png"
 
-variation_img1: "/assets/img/portfolio/lb_img/LB_-05A.jpg"
-variation_img2: "/assets/img/portfolio/lb_img/LB_-05B.jpg"
-variation_img3: "/assets/img/portfolio/lb_img/LB_-05C.jpg"
+variation_img1: "/assets/img/portfolio/lb_img/LB_-05A.png"
+variation_img2: "/assets/img/portfolio/lb_img/LB_-05B.png"
+variation_img3: "/assets/img/portfolio/lb_img/LB_-05C.png"
 variation_img4: "/assets/img/portfolio/lb_img/LB-06.jpg"
 variation_img5: "/assets/img/portfolio/lb_img/LB_-06.jpg"
 ---

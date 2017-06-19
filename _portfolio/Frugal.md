@@ -22,8 +22,8 @@ slide_images:
 - "/assets/img/portfolio/branding/frugal/portfolio_frugal_4.png"
 - "/assets/img/portfolio/branding/frugal/portfolio_frugal_5.png"
 
-variation_img1: "/assets/img/portfolio/branding/frugal/portfolio_frugal 5A.jpg"
-variation_img2: "/assets/img/portfolio/branding/frugal/portfolio_frugal 5B.jpg"
+variation_img1: "/assets/img/portfolio/branding/frugal/portfolio_frugal 5A.png"
+variation_img2: "/assets/img/portfolio/branding/frugal/portfolio_frugal 5B.png"
 variation_img3: "/assets/img/portfolio/branding/frugal/portfolio_frugal 5C.png"
 variation_img4: "/assets/img/portfolio/branding/frugal/Frugle_6.png"
 variation_img5: "/assets/img/portfolio/branding/frugal/portfolio_frugal 6.jpg"

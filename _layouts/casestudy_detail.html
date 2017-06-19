@@ -60,15 +60,15 @@
       <hr>
       <div class="solution__content">{{page.solutionDesc}}<p> 
       </p></div>
-      {%if page.solutionImg.size >0%}
+      <!-- {%if page.solutionImg.size >0%} -->
       <div class="solution__circle">
-      {%for solutionImg in page.solutionImg%}
+     <!--  {%for solutionImg in page.solutionImg%} -->
       <div>
         <img alt="lb__casestudy-solution_img" src="{{solutionImg}}" class="solution__img">
         </div>
-        {%endfor%}
+        <!-- {%endfor%} -->
       </div>
-{%endif%}
+<!-- {%endif%} -->
 {%if page.solutionVideo%}
       <video controls="controls" preload="none" poster="{{page.video_poster}}" width="640" height="360">
  <source src="{{page.solutionVideo}}" type="video/mp4" />
@@ -76,8 +76,8 @@
  <source src="linktomovie.ogv" type="video/ogg" />-->
  {%endif%}
     </div>
-
     <div class="GIT">
+    <img src="{{page.gitTopImg}}" alt="lb__casestudy-git_img" class="challenge__img">
       <h1 class="GIT__heading">PROJECT STATS</h1>
       <hr>
       <div class="GIT__boxes">

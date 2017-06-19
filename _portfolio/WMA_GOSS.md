@@ -15,10 +15,11 @@ whatWeDoList:
 - UI/UX
 - Web development
 - Devops
-img: "/assets/img/portfolio/goss/2.png"
+img: "/assets/img/portfolio/goss/1.png"
 imgContent:  Simplified UI and UX to give a better experience.
 
-variation_img1: "/assets/img/portfolio/goss/7.png"
-variation_img2: "/assets/img/portfolio/goss/8.png"
-variation_img3: "/assets/img/portfolio/goss/9.png"
+variation_img1: "/assets/img/portfolio/goss/2.png"
+variation_img2: "/assets/img/portfolio/goss/3.png"
+variation_img3: "/assets/img/portfolio/goss/4.png"
+variation_img4: "/assets/img/portfolio/goss/5.png"
 ---
