@@ -18,7 +18,7 @@ whatWeDoList:
 img: "/assets/img/portfolio/clay/2.png"
 imgContent:  A clay model we created for the project.
 
-variation_title: More Samples
+variation_title: MORE SAMPLES
 
 variation_img1: "/assets/img/portfolio/clay/7.png"
 variation_img2: "/assets/img/portfolio/clay/8.png"

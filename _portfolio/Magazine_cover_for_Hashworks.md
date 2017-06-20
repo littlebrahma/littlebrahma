@@ -18,7 +18,7 @@ whatWeDoList:
 img: "/assets/img/portfolio/magazine/2.png"
 imgContent:  Wall illustration featuring a kid brahma.
 
-variation_title: More Samples
+variation_title: MORE SAMPLES
 
 variation_img1: "/assets/img/portfolio/magazine/7.png"
 variation_img2: "/assets/img/portfolio/magazine/8.png"

@@ -18,7 +18,7 @@ whatWeDoList:
 img: "/assets/img/portfolio/calender/2.png"
 imgContent:  Calendar for 2017
 
-variation_title: More Samples
+variation_title: MORE SAMPLES
 
 variation_img1: "/assets/img/portfolio/calender/8.png"
 variation_img2: "/assets/img/portfolio/calender/7.png"

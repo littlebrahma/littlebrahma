@@ -18,7 +18,7 @@ whatWeDoList:
 img: "/assets/img/portfolio/hash_port/2.png"
 imgContent:   A page from the hashworks portfolio magazine.
 
-variation_title: More Samples
+variation_title: MORE SAMPLES
 
 variation_img1: "/assets/img/portfolio/hash_port/7.png"
 variation_img2: "/assets/img/portfolio/hash_port/8.png"

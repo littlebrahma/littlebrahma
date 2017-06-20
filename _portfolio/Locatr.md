@@ -22,7 +22,7 @@ slide_images:
 - "/assets/img/portfolio/locatr_img/portfolio_loc6.png"
 - "/assets/img/portfolio/locatr_img/portfolio_loc7.png"
 
-variation_title: Typography and color
+variation_title: TYPOGRAPHY AND COLOR
 
 variation_img1: "/assets/img/portfolio/locatr_img/portfolio_loc 5A.png"
 variation_img2: "/assets/img/portfolio/locatr_img/portfolio_loc 5B.png"

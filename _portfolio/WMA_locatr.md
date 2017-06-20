@@ -22,7 +22,7 @@ slide_images:
 - "/assets/img/portfolio/wmp_locatr/3.jpg"
 - "/assets/img/portfolio/wmp_locatr/4.jpg"
 
-variation_title: Flow Representation
+variation_title: FLOW REPRESENTATION
 
 variation_img1: "/assets/img/portfolio/wmp_locatr/5.png"
 variation_img2: "/assets/img/portfolio/wmp_locatr/6.png"

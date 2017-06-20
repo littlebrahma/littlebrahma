@@ -21,7 +21,7 @@ slide_images:
 - "/assets/img/portfolio/branding/hashworks/HW-04.png"
 - "/assets/img/portfolio/branding/hashworks/HW-05.png"
 
-variation_title: Typography and color
+variation_title: TYPOGRAPHY AND COLOR
 
 variation_img1: "/assets/img/portfolio/branding/hashworks/HW_05A.png"
 variation_img2: "/assets/img/portfolio/branding/hashworks/HW_05B.png"

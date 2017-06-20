@@ -22,7 +22,7 @@ slide_images:
 - "/assets/img/portfolio/branding/frugal/portfolio_frugal_4.png"
 - "/assets/img/portfolio/branding/frugal/portfolio_frugal_5.png"
 
-variation_title: Typography and color
+variation_title: TYPOGRAPHY AND COLOR
 
 variation_img1: "/assets/img/portfolio/branding/frugal/portfolio_frugal 5A.png"
 variation_img2: "/assets/img/portfolio/branding/frugal/portfolio_frugal 5B.png"
