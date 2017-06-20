@@ -8,10 +8,10 @@
       {%assign bgImg=page.img %}
       {%endif%}
 
-      <div class="banner" style="background:url('{{bgImg}}') no-repeat center;background-size:cover;">
+      <div class="banner" alt="littlebrahma__portfolio-banner-bg" style="background:url('{{bgImg}}') no-repeat center;background-size:cover;">
          <div class="banner__cont">
              {%if page.banner_logo%}          
-             <img class="banner__logo" alt="lb__portfolio-{{page.porject_title}}_img" src="{{page.banner_logo}}">
+             <img class="banner__logo" alt="littlebrahma__portfolio-{{page.porject_title}}_img" src="{{page.banner_logo}}">
              {%endif%}
              <h1 class="banner__title">{{page.porject_title | upcase}}</h1>
              <h4 class="banner__subtitle details-italics">{{page.porject_subtitle}}</h4>
@@ -19,18 +19,12 @@
              <h6 class="banner__mintitle">DOWNLOAD FOR</h6>
              {%endif%}
              {%if page.appstore_url%}
-             <a href={{page.appstore_url}}><img class="banner__himg" alt="lb__portfolio-apple_img" src="/assets/img/portfolio/apple.png"></a>
+             <a href={{page.appstore_url}}><img class="banner__himg" alt="littlebrahma__portfolio-apple_img" src="/assets/img/portfolio/apple.png"></a>
              {%endif%}
              {%if page.playstore_url%}
-             <a href={{page.playstore_url}}><img class="banner__himg" alt="lb__portfolio-android_img" src="/assets/img/portfolio/android.png"></a>
+             <a href={{page.playstore_url}}><img class="banner__himg" alt="littlebrahma__portfolio-android_img" src="/assets/img/portfolio/android.png"></a>
              {%endif%}
-
-      
-        
         </div>
-    
-
-   
       </div>
       <div class="scroll-downs">
   <div class="mousey">
@@ -57,7 +51,7 @@
               </div>
             </div>
             {%if page.img%}
-            <img class="middle-section1__img1" alt="lb__portfolio-section1-1_img" src="{{page.img}}">
+            <img class="middle-section1__img1" alt="littlebrahma__portfolio-section1-1_img" src="{{page.img}}">
             <p class="italic">{{page.imgContent}}</p> 
             {%endif%}
           </div>
@@ -67,36 +61,12 @@
     <div class="middle-section2__inner logo__variation">
     {%for img in page.slide_images%}
     <div class="middle-section2__allign">
-    <img class="middle-section2__img1" alt="lb__portfolio-section2-{{forloop.index}}_img" src="{{img}}">
+    <img class="middle-section2__img1" alt="littlebrahma__portfolio-section2-{{forloop.index}}_img" src="{{img}}">
     </div>
     {%endfor%}
         </div>
     </div>
     {%endif%}
-    <!-- <div class="middle-section">
-    <h2 class="middle-section3__title2">{{template.title}}</h2>
-	  <div class="middle-section3">
-    {% for template in page.projectTemplate %}
-    <div class="row middle-section3__midimg">
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 left-align">
-        <img class="middle-section3__img1" src="/assets/img/portfolio/card 1.1.svg">
-      </div>
-      <div class="col-xs-12 first-xs col-sm-6 last-sm col-md-6 last-md col-lg-6 last-lg left-align">
-      <div class="middle-section3__allign">
-      <div class="row center-xs start-md start-sm start-lg">
-      <div class="col-xs-12 first-xs col-sm-12 first-sm col-md-12 first-md col-lg-12 first-lg  middle-section3__allign1 left-align right-align">
-      <h2 class="middle-section3__title2">{{template.title}}</h2>
-      <hr class="middle-section3__hr3">
-      <p class="middle-section3__algn">{{template.description}}</p>
-      <img class="middle-section3__img2" src="{{template.img1}}">
-      </div>
-      </div>
-      </div>
-    </div>
-    </div>
-      {% endfor %} 
-    </div>
-    </div> -->
     <div class="middle-section">
     {%if page.variation_img1 or page.variation_img2 or page.variation_img3 or page.variation_img4 or page.variation_img5%}
     <div class="middle-section3">
@@ -104,39 +74,23 @@
     <hr class="middle-section3__hr">
     <div class="middle-section3__midimg">
     {%if page.variation_img1%}
-     <div class="middle-section3__midimg--class1"  style="background-image:url('{{page.variation_img1}}');"></div>
+     <div class="middle-section3__midimg--class1" alt="littlebrahma__portfolio-logo-font" style="background-image:url('{{page.variation_img1}}');"></div>
      {%endif%}
      <div class="middle-section3__midimg--class2">
      {%if page.variation_img2%}
-      <div class="middle-section3__midimg--class2-1"  style="background-image:url('{{page.variation_img2}}');"></div>
+      <div class="middle-section3__midimg--class2-1"  alt="littlebrahma__portfolio-logo-color" style="background-image:url('{{page.variation_img2}}');"></div>
       {%endif%}
       {%if page.variation_img3%}
-      <div class="middle-section3__midimg--class2-2" style="background-image:url('{{page.variation_img3}}');"></div>
+      <div class="middle-section3__midimg--class2-2" alt="littlebrahma__portfolio-logo-design" style="background-image:url('{{page.variation_img3}}');"></div>
       {%endif%}
      </div>
-      <!-- <div class="middle-section3__midimg--class1">
-        <img class="middle-section3__img1" src="/assets/img/portfolio/card 1.1.svg">
-      </div>
-      <div class="middle-section3__midimg--class2">
-      <div class="middle-section3__midimg--class2-1">
-        <img class="middle-section3__img1" src="/assets/img/portfolio/card 1.2.svg">
-      </div>
-      <div class="middle-section3__midimg--class2-2">
-        <img class="middle-section3__img1" src="/assets/img/portfolio/card 1.3.svg">
-      </div>
-      </div> -->
       </div>
     <div class="middle-section4">
-    <!-- <div class="middle-section4__pragrph">
-     <h2 class="middle-section4__title3">{{page.porject_title1}}</h2>
-      <hr class="middle-section4__hr4">
-      <p class="middle-section4__algn">{{page.porject_description1}}</p>
-      </div> -->
       {%if page.variation_img4%}
-      <img class="middle-section4__imgb" alt="lb__portfolio-section4-1_img" src='{{page.variation_img4}}'>
+      <img class="middle-section4__imgb" alt="littlebrahma__portfolio-section4-1_img" src='{{page.variation_img4}}'>
       {%endif%}
       {%if page.variation_img5%}
-     <img class="middle-section4__imgbg" alt="lb__portfolio-section4-2_img" src="{{page.variation_img5}}">
+     <img class="middle-section4__imgbg" alt="littlebrahma__portfolio-section4-2_img" src="{{page.variation_img5}}">
      {%endif%}
       </div>
       </div>
