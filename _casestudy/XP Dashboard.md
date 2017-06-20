@@ -19,7 +19,7 @@ solutionImg:
  - "/assets/img/casestudy/xp/2.png"
 
 gitTopImg:
-- "/assets/img/casestudy/groome/3.png"
+- "/assets/img/casestudy/xp/3.png"
 
 projectStatsNum: 03
 projectStatsNum1: 06

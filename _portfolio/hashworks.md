@@ -25,6 +25,6 @@ variation_img1: "/assets/img/portfolio/branding/hashworks/HW_05A.png"
 variation_img2: "/assets/img/portfolio/branding/hashworks/HW_05B.png"
 variation_img3: "/assets/img/portfolio/branding/hashworks/HW_05C.png"
 variation_img4: "/assets/img/portfolio/branding/hashworks/HW-06.jpg"
-variation_img5: "/assets/img/portfolio/branding/hashworks/HW_06.jpg"
+variation_img5: "/assets/img/portfolio/branding/hashworks/HW_06.png"
 ---
 

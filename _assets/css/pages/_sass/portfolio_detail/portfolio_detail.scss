@@ -829,8 +829,8 @@ margin: 0 auto;
       padding:40px 0px;
     display: block;
   &__img1{
-    width: 100px;
-    height: 178px;
+    width: 180px;
+    height: 320px;
     margin:0px auto;
   }
   &__inner{
@@ -845,10 +845,10 @@ margin: 0 auto;
     line-height: 18px;
   }
    &__allign{
-    margin: 50px auto;
+    margin: 0px auto;
   }
   &__allign:nth-child(2) {
-    margin: 50px auto;
+    margin: 0px auto;
 }
 }
 .italic {
@@ -897,14 +897,14 @@ margin: 0 auto;
     &--class2-1{
       padding:0px;
     width: 280px;
-    height: 226px;
+    height: 172px;
     margin-top: 10px;
     background-size: 100% 100%;
     }
     &--class2-2{
       padding:0px;
        width: 280px;
-    height: 226px;
+    height: 172px;
     margin-top: 10px;
     background-size: 100% 100%;
     }
@@ -957,7 +957,7 @@ margin: 0 auto;
   }
   &__imgb{
  width:280px;
-    height:226px;
+    height:141px;
     margin-top:10px;
   }
 }
