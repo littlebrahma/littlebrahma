@@ -18,6 +18,8 @@ whatWeDoList:
 img: "/assets/img/portfolio/goss/1.png"
 imgContent:  Simplified UI and UX to give a better experience.
 
+variation_title: Flow Representation
+
 variation_img1: "/assets/img/portfolio/goss/2.png"
 variation_img2: "/assets/img/portfolio/goss/3.png"
 variation_img3: "/assets/img/portfolio/goss/4.png"

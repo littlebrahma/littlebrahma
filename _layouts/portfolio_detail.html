@@ -70,7 +70,7 @@
     <div class="middle-section">
     {%if page.variation_img1 or page.variation_img2 or page.variation_img3 or page.variation_img4 or page.variation_img5%}
     <div class="middle-section3">
-    <h2 class="middle-section3__title1">VARIATIONS</h2>
+    <h2 class="middle-section3__title1">{{page.variation_title}}</h2>
     <hr class="middle-section3__hr">
     <div class="middle-section3__midimg">
     {%if page.variation_img1%}
@@ -97,8 +97,8 @@
       {%endif%}
       </div>
       <div class="middle-section5">
-      <h2 class="middle-section5__headng">WANT TO GET SOME AWESOME PRODUCTS LIKE THIS ?</h2>
-      <a href="/contact/"><button class="middle-section5__btn">GET IN TOUCH</button></a>
+      <h2 class="middle-section5__headng">ITS TIME TO GET CREATIVE TOGETHER</h2>
+      <a href="/contact/"><button class="middle-section5__btn">LET'S TALK</button></a>
         
       </div>
     {% include common_footer.html %}

@@ -18,6 +18,7 @@ whatWeDoList:
 img: "/assets/img/portfolio/marketing/2.png"
 imgContent:   Cover of the magazine.
 
+variation_title: More Samples
 
 variation_img1: "/assets/img/portfolio/marketing/7.png"
 variation_img2: "/assets/img/portfolio/marketing/8.png"
