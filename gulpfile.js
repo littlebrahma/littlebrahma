@@ -398,3 +398,19 @@ gulp.task('browser-sync',['jekyll-build'], function() {
         .pipe($.svgmin())
         .pipe(gulp.dest('_assets/images/'));
 });
+
+  /**
+   * Compress images
+   * @return {Stream}
+   */
+  gulp.task('compress-images', function() {
+      log('Compressing and copying images');
+
+      return gulp
+          .src(config.images)
+          .pipe($.imagemin({
+            optimizationLevel: 5,
+            verbose:true
+          }))
+          .pipe(gulp.dest('_assets/op-img/'));
+  });
