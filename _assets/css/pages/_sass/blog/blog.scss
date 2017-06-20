@@ -9,9 +9,14 @@
     position: relative;
     padding-left: 0px;
     &--inside {
+
     	position: absolute;
     bottom: 12px;
     width: 100%;
+	img{
+		height: 16px;
+    width: 16px;
+	}
     }
    }
    .blog__pad-row {

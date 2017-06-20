@@ -11,7 +11,7 @@ before_install:
   - gem install jekyll
   - gulp build
 script:
-  - jekyll build
+  - bundle exec jekyll build
 sudo: false
 env:
   global:

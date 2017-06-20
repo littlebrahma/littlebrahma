@@ -5,7 +5,7 @@ layout: casestudy_detail
 thumbnail : "/assets/img/casestudy/animation/2.gif"
 
 porject_title: STOP MOTION ANIMATION
-porject_subtitle: CLAY MODELING, CLAYMATION, CONCEPTUALIZATION
+porject_subtitle: Clay modeling, Claymation, Conceptualization
 project_detail: An interesting and amazing portrayal of the ideas through the combination of illustration and clay modelling resulting in a unique output.
 
 featured : "No"

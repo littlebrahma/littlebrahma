@@ -5,7 +5,7 @@ categories:
 - PACKAGING & LABEL
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/portfolio/port_cover_img/magazine-cover.png"
+background-image: "/assets/img/portfolio/magazine/magazine-cover.png"
 porject_title: Magazine cover for Hashworks
 porject_subtitle: Character Designing, Illustration
 porject_apple_imglink: ""

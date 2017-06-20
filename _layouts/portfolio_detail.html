@@ -11,18 +11,18 @@
       <div class="banner" style="background:url('{{bgImg}}') no-repeat center;background-size:cover;">
          <div class="banner__cont">
              {%if page.banner_logo%}          
-             <img class="banner__logo" src="{{page.banner_logo}}" alt="banner-logo">
+             <img class="banner__logo" alt="lb__portfolio-{{page.porject_title}}_img" src="{{page.banner_logo}}">
              {%endif%}
              <h1 class="banner__title">{{page.porject_title | upcase}}</h1>
-             <h4 class="banner__subtitle details-italics">{{page.porject_subtitle | capitalize}}</h4>
+             <h4 class="banner__subtitle details-italics">{{page.porject_subtitle}}</h4>
              {%if page.appstore_url or page.playstore_url%}
              <h6 class="banner__mintitle">DOWNLOAD FOR</h6>
              {%endif%}
              {%if page.appstore_url%}
-             <a href={{page.appstore_url}}><img class="banner__himg" src="/assets/img/portfolio/apple.png"></a>
+             <a href={{page.appstore_url}}><img class="banner__himg" alt="lb__portfolio-apple_img" src="/assets/img/portfolio/apple.png"></a>
              {%endif%}
              {%if page.playstore_url%}
-             <a href={{page.playstore_url}}><img class="banner__himg" src="/assets/img/portfolio/android.png"></a>
+             <a href={{page.playstore_url}}><img class="banner__himg" alt="lb__portfolio-android_img" src="/assets/img/portfolio/android.png"></a>
              {%endif%}
 
       
@@ -57,17 +57,17 @@
               </div>
             </div>
             {%if page.img%}
-            <img class="middle-section1__img1" src="{{page.img}}">
+            <img class="middle-section1__img1" alt="lb__portfolio-section1-1_img" src="{{page.img}}">
             <p class="italic">{{page.imgContent}}</p> 
             {%endif%}
           </div>
       </div>
       {%if page.slide_images.size > 0%}
     <div class="middle-section2">
-    <div class="middle-section2__inner">
+    <div class="middle-section2__inner logo__variation">
     {%for img in page.slide_images%}
     <div class="middle-section2__allign">
-    <img class="middle-section2__img1" src="{{img}}">
+    <img class="middle-section2__img1" alt="lb__portfolio-section2-{{forloop.index}}_img" src="{{img}}">
     </div>
     {%endfor%}
         </div>
@@ -133,10 +133,10 @@
       <p class="middle-section4__algn">{{page.porject_description1}}</p>
       </div> -->
       {%if page.variation_img4%}
-      <img class="middle-section4__imgb" src='{{page.variation_img4}}'>
+      <img class="middle-section4__imgb" alt="lb__portfolio-section4-1_img" src='{{page.variation_img4}}'>
       {%endif%}
       {%if page.variation_img5%}
-     <img class="middle-section4__imgbg" src="{{page.variation_img5}}">
+     <img class="middle-section4__imgbg" alt="lb__portfolio-section4-2_img" src="{{page.variation_img5}}">
      {%endif%}
       </div>
       </div>

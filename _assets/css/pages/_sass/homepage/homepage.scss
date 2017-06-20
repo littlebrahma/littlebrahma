@@ -190,6 +190,7 @@
 .homepageBgImg svg{
     position: absolute;
     top: 0px;
+    z-index: -1;
 }
 
 
@@ -259,8 +260,8 @@ z-index: 1;
     /* width: 500px; */
     /* margin-left: 40px; */
    height: 400px;
-    width: 400px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     position: relative;
     background: none;
 }

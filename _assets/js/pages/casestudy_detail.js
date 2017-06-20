@@ -1,11 +1,11 @@
 (function(){
-  $('.solution__circle').slick({
-  dots: true,
-  speed: 500,
-  arrows:true,
-  slidesToShow:1,
-  slidesToScroll:1
-});
+//   $('.solution__circle').slick({
+//   dots: true,
+//   speed: 500,
+//   arrows:true,
+//   slidesToShow:1,
+//   slidesToScroll:1
+// });
 if (screen.width >= 1199) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > $(".detailBg").height() - $(".commonHeader").height() || $(this).scrollTop() > $('.info').height()+$('.challenge').height()){  

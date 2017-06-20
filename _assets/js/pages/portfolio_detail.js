@@ -1,4 +1,18 @@
 (function(){
+
+  if ($(window).width() <  1024 ){
+// debugger;
+//   console.log("test")
+   $('.logo__variation').slick({
+  dots: true,
+  speed: 500,
+  arrows:false,
+  infinite:false,
+  slidesToShow:1,
+  slidesToScroll:1
+});
+}
+
 if (screen.width >= 1199) {
     $(window).scroll(function() {
 if ($(this).scrollTop() > $(".portfolioDetailBg").height() - $(".commonHeader").height()){  
@@ -93,4 +107,5 @@ if ($(this).scrollTop() > $(".portfolioDetailBg").height() - $(".commonHeader").
 // });
 // }
 });
+
 })();

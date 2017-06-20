@@ -5,7 +5,7 @@ categories:
 - ANIMATION
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/portfolio/port_cover_img/MYB_animations.png"
+background-image: "/assets/img/portfolio/myb_animation/mystery-thumbnail.png"
 porject_title: Mysterybox UI Animations
 porject_subtitle: Isometric Designing, Animation
 porject_apple_imglink: ""

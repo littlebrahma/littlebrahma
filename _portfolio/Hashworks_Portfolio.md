@@ -5,7 +5,7 @@ categories:
 - MAGAZINE & BOOK
 layout: portfolio_detail
 background-class: portBgImg
-background-image: "/assets/img/portfolio/port_cover_img/portfolio.png"
+background-image: "/assets/img/portfolio/hash_port/hashworks-portfolio.png"
 porject_title: Hashworks Portfolio
 porject_subtitle: Layout design, Magazine design, Illustration
 porject_apple_imglink: ""
