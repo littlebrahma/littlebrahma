@@ -3,7 +3,7 @@ categories:
   - WEB & MOBILE DESIGN
 layout: casestudy_detail
 thumbnail: /assets/img/casestudy/groome/little_brahma_groome_thumbnail.png
-porject_title: GROOME
+porject_title: Test123
 porject_subtitle: 'UI/UX, Mobile application, Devops'
 project_detail: >-
   Making hiring process a breeze with multi levels of streamlined process with
@@ -17,7 +17,7 @@ challengeDesc: >-
   products/platforms to reduce the manpower going into that heap of process. To
   handle this data and make the hiring process more smoother we came up with
   Groome.
-img2: /assets/img/casestudy/groome/little_brahma_groome_2.png
+img2: /assets/img/portfolio/PORTFOLIO_BRANDING_LOCATR_2.png
 solutionDesc: >-
   Groome as a platform solves the hassle of employee hiring process across the
   globe. Its sleek and clean UI makes all kinds of stakeholders or people
@@ -34,4 +34,6 @@ projectStatspara1: LEVELS OF USER TESTING
 projectStatsNum1: 3
 projectStatspara2: COFFEES CONSUMED
 projectStatsNum2: 512
+published: true
 ---
+
