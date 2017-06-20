@@ -34,4 +34,5 @@ Skills:
   - 'Basic HTML5, CSS3, and JavaScript skills are a plus.'
   - Ability to work with clients to understand detailed requirements and design
     complete user experiences that meet client needs and vision
- ---
+    
+---
