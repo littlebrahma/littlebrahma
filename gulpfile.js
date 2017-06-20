@@ -392,3 +392,25 @@ gulp.task('browser-sync',['jekyll-build'], function() {
   // <--
 
   gulp.task('default', ['serve-dev']);
+
+  gulp.task('optimize-svg', function () {
+    return gulp.src('_assets/images/**/**/**/*.svg')
+        .pipe($.svgmin())
+        .pipe(gulp.dest('_assets/images/'));
+});
+
+  /**
+   * Compress images
+   * @return {Stream}
+   */
+  gulp.task('compress-images', function() {
+      log('Compressing and copying images');
+
+      return gulp
+          .src(config.images)
+          .pipe($.imagemin({
+            optimizationLevel: 5,
+            verbose:true
+          }))
+          .pipe(gulp.dest('_assets/op-img/'));
+  });
