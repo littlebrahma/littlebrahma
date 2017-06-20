@@ -47,7 +47,7 @@ sass:
 include:
 - _pages
 prose:
-  media: assets/img/blog
+  media: assets/img
   metadata:
     _posts:
       - name: "blog_description"
@@ -220,3 +220,11 @@ prose:
         label: Android App URL
         element: text
         value: ''
+    
+    _casestudy:
+
+     - name: layout
+      field:
+        label: layout
+        element: hidden
+        value: casestudy_detail
