@@ -222,8 +222,7 @@ prose:
         value: ''
     
     _casestudy:
-
-     - name: layout
+    - name: layout
       field:
         label: layout
         element: hidden
