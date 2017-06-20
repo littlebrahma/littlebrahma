@@ -392,3 +392,9 @@ gulp.task('browser-sync',['jekyll-build'], function() {
   // <--
 
   gulp.task('default', ['serve-dev']);
+
+  gulp.task('optimize-svg', function () {
+    return gulp.src('_assets/images/**/**/**/*.svg')
+        .pipe($.svgmin())
+        .pipe(gulp.dest('_assets/images/'));
+});
