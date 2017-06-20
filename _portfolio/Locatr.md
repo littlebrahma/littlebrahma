@@ -27,7 +27,7 @@ variation_title: TYPOGRAPHY AND COLOR
 variation_img1: "/assets/img/portfolio/locatr_img/portfolio_loc 5A.png"
 variation_img2: "/assets/img/portfolio/locatr_img/portfolio_loc 5B.png"
 variation_img3: "/assets/img/portfolio/locatr_img/portfolio_loc 5C.png"
-variation_img4: "/assets/img/portfolio/locatr_img/w_loc 3.jpg"
+variation_img4: "/assets/img/portfolio/locatr_img/w_loc 3.png"
 variation_img5: "/assets/img/portfolio/locatr_img/portfolio_loc 6C.jpg"
 ---
 

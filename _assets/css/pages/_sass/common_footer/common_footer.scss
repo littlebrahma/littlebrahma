@@ -36,7 +36,9 @@
             font-family: $secondary-titlefamily;
             font-size: 14px;
         }
-      
+      &__deactivate {
+        cursor: no-drop;
+      }
         &__image {
             margin-right: 8px;
             vertical-align: middle;
