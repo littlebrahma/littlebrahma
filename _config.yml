@@ -101,11 +101,10 @@ prose:
                value: 'shilpa'
     _portfolio:
      - name: layout
-      field:
+       field:
         label: layout
         element: hidden
         value: portfolio_detail
-        
     _casestudy:
     - name: layout
       field:
