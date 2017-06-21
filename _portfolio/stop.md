@@ -1,6 +1,6 @@
 ---
 layout: portfolio_detail
-published: false
+published: true
 description: 'Character Designing, Illustration'
 categories:
   - STOPMOTION
