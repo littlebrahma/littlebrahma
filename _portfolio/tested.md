@@ -29,4 +29,4 @@ variation_img3: /assets/img/portfolio/branding/hashworks/HW_05C.png
 variation_img4: /assets/img/portfolio/branding/hashworks/HW-06.jpg
 variation_img5: /assets/img/portfolio/branding/hashworks/HW_06.jpg
 ---
-![Helen_Manifesto_1024x1024.jpeg]({{site.baseurl}}/assets/img/portfolio/Helen_Manifesto_1024x1024.jpeg)
+
