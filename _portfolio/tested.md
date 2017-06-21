@@ -1,6 +1,6 @@
 ---
 layout: portfolio_detail
-published: false
+published: true
 description: 'Conceptualization, Logo design'
 categories: BRAND NEW
 background-class: portBgImg
@@ -29,4 +29,3 @@ variation_img3: /assets/img/portfolio/branding/hashworks/HW_05C.png
 variation_img4: /assets/img/portfolio/branding/hashworks/HW-06.jpg
 variation_img5: /assets/img/portfolio/branding/hashworks/HW_06.jpg
 ---
-
