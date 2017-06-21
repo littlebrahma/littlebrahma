@@ -415,10 +415,10 @@ gulp.task('browser-sync',['jekyll-build'], function() {
       log('Compressing and copying images');
 
       return gulp
-          .src('./assets/data/**/*.*')
+          .src('./_assets/**/**/*.*')
           .pipe($.imagemin({
             optimizationLevel: 5,
             verbose:true
           }))
-          .pipe(gulp.dest('assets/data/'));
+          .pipe(gulp.dest('_assets/'));
   });
