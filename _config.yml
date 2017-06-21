@@ -99,6 +99,8 @@ prose:
                value: 'satish'
              - name: 'Shilpa Gopi'
                value: 'shilpa'
+             - name: 'Gokul '
+               value: 'Gokul'
     _portfolio:
      - name: layout
        field:
