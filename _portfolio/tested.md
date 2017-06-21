@@ -6,7 +6,7 @@ categories: BRAND NEW
 background-class: portBgImg
 background-image: /assets/img/portfolio/Helen_Manifesto_1024x1024.jpeg
 banner__logo: /assets/img/portfolio/branding/hashworks/HW_01.png
-porject_title: Hashworks
+porject_title: Hashworks123
 porject_subtitle: 'Conceptualization, Logo design'
 project_detail: >-
   Hashworks as a brand, focusses on technology and accelerate IT strategies to
