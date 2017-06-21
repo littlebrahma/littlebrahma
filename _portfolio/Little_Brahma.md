@@ -15,7 +15,7 @@ whatWeDoList:
 - Conceptualization
 - Logo design
 - 
-img: "/assets/img/portfolio/lb_img/LB_-02.jpg"
+img: "/assets/img/portfolio/lb_img/LB_02.png"
 imgContent: A simple but powerful logo with the elements signifying divinity and creativity
 slide_images:
 - "/assets/img/portfolio/lb_img/LB-03.png"

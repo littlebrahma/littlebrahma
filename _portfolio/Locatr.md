@@ -15,7 +15,7 @@ whatWeDoList:
 - Conceptualization
 - Logo design
 - 
-img: "/assets/img/portfolio/locatr_img/portfolio_loc 2.jpg"
+img: "/assets/img/portfolio/locatr_img/portfolio_loc-2.png"
 imgContent:  A logo based on routes.
 slide_images:
 - "/assets/img/portfolio/locatr_img/portfolio_loc5.png"
