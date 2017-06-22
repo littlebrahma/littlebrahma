@@ -102,11 +102,12 @@
         console.log(location.queryString);
         if (location.queryString.category == undefined) {
             $("#r-option1").prop("checked", true);
+            $("#dropdownTitle").text($("#mobileRadio0").attr('data-category'));
         } else {
             $('*[data-category="' + location.queryString.category + '"]').prop("checked", true);
             $("#dropdownTitle").text(location.queryString.category);
         }
-        $("#dropdownTitle").text($("#mobileRadio0").attr('data-category'));
+
         /*end default select category*/
 
         if ($("#r-option1").prop('checked') == true || $('*[data-category="' + location.queryString.category + '"]').prop("checked") == true) {
@@ -132,8 +133,9 @@
 
         $("li[data-category]").click(function() {
             var category = $(this).attr('data-category');
+            var params = { 'category': category };
+            window.history.pushState(null, document.title, '?' + jQuery.param(params));
             $("#dropdownTitle").text(category);
-
             $(".blog-filter").hide();
             var classArr = category.replace(/[^a-z0-9\s]/gi, ' ').split(" ");
             var finalArray = classArr.filter(function(v) { return v !== '' });
