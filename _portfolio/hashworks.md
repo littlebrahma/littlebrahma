@@ -7,7 +7,7 @@ product_description: Conceptualization, Logo design
 product_thumbnail: "/assets/img/portfolio/branding/hashworks/hashworks.png"
 product_thumbnail_description: Conceptualization, Logo design
 
-banner_image: "/assets/img/portfolio/branding/hashworks/banner_LB.png"
+banner_image: "/assets/img/portfolio/branding/hashworks/banner_HW.png"
 product_logo: "/assets/img/portfolio/branding/hashworks/HW_01.png"
 product_appstore_url: ""
 product_playstore_url: ""
