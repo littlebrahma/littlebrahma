@@ -3,26 +3,26 @@
   {%assign pageCat = page.categories | upcase %}
     {% include common_header.html %}
     {%if pageCat contains "BRANDING" %}
-    {%assign bgImg=page.variation_img5 %}
+    {%assign bgImg=page.variation_image5 %}
       {%else%}
-      {%assign bgImg=page.img %}
+      {%assign bgImg=page.imgage1 %}
       {%endif%}
 
-      <div class="banner" alt="littlebrahma__portfolio-banner-bg" style="background:url('{{bgImg}}') no-repeat center;background-size:cover;">
+      <div class="banner" alt="littlebrahma__portfolio-banner-bg" style="background:url('{{page.banner_image}}') no-repeat center;background-size:cover;">
          <div class="banner__cont">
-             {%if page.banner_logo%}          
-             <img class="banner__logo" alt="littlebrahma__portfolio-{{page.porject_title}}_img" src="{{page.banner_logo}}">
+             {%if page.product_logo%}          
+             <img class="banner__logo" alt="littlebrahma__portfolio-{{page.product_title}}_img" src="{{page.product_logo}}">
              {%endif%}
-             <h1 class="banner__title">{{page.porject_title | upcase}}</h1>
-             <h4 class="banner__subtitle details-italics">{{page.porject_subtitle}}</h4>
-             {%if page.appstore_url or page.playstore_url%}
+             <h1 class="banner__title">{{page.product_title | upcase}}</h1>
+             <h4 class="banner__subtitle details-italics">{{page.product_description}}</h4>
+             {%if page.product_appstore_url.size>0 or page.product_playstore_url.size>0%}
              <h6 class="banner__mintitle">DOWNLOAD FOR</h6>
              {%endif%}
-             {%if page.appstore_url%}
-             <a href={{page.appstore_url}}><img class="banner__himg" alt="littlebrahma__portfolio-apple_img" src="/assets/img/portfolio/apple.png"></a>
+             {%if page.product_appstore_url.size>0%}
+             <a href={{page.product_appstore_url}}><img class="banner__himg" alt="littlebrahma__portfolio-apple_img" src="/assets/img/portfolio/apple.png"></a>
              {%endif%}
-             {%if page.playstore_url%}
-             <a href={{page.playstore_url}}><img class="banner__himg" alt="littlebrahma__portfolio-android_img" src="/assets/img/portfolio/android.png"></a>
+             {%if page.product_playstore_url.size>0%}
+             <a href={{page.product_playstore_url}}><img class="banner__himg" alt="littlebrahma__portfolio-android_img" src="/assets/img/portfolio/android.png"></a>
              {%endif%}
         </div>
       </div>
@@ -36,23 +36,24 @@
           <div class="middle-section1">
             <div class="row center-xs start-md start-sm start-lg">
               <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 left-align">
-                <h2 class="heading">{{page.porject_title | upcase}}</h2>
+                <h2 class="heading">{{page.product_title | upcase}}</h2>
                 <hr class="middle-section1__hr1">
                 <p class="middle-section1__algn">
-                {{page.project_detail}}
+                {{page.product_detail}}
                 </p>
               </div>
               <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 left-align">
                 <h2 class="heading">WHAT WE DID</h2>
                 <hr class="middle-section1__hr2"> 
-                {% for portfolioList in page.whatWeDoList %}    
-                <p class="middle-section1__algn1">{{portfolioList}}</p>
+                {% assign productDescriptionList = page.product_description | split: ',' %}
+                {% for productDescription in productDescriptionList %}    
+                <p class="middle-section1__algn1">{{productDescription | upcase }}</p>
                 {% endfor %}   
               </div>
             </div>
-            {%if page.img%}
-            <img class="middle-section1__img1" alt="littlebrahma__portfolio-section1-1_img" src="{{page.img}}">
-            <p class="italic">{{page.imgContent}}</p> 
+            {%if page.image1%}
+            <img class="middle-section1__img1" alt="littlebrahma__portfolio-section1-1_img" src="{{page.image1}}">
+            <p class="italic">{{page.image_caption}}</p> 
             {%endif%}
           </div>
       </div>
@@ -68,29 +69,29 @@
     </div>
     {%endif%}
     <div class="middle-section">
-    {%if page.variation_img1 or page.variation_img2 or page.variation_img3 or page.variation_img4 or page.variation_img5%}
+    {%if page.variation_image1 or page.variation_image2 or page.variation_image3 or page.variation_image4 or page.variation_image5%}
     <div class="middle-section3">
     <h2 class="middle-section3__title1">{{page.variation_title}}</h2>
     <hr class="middle-section3__hr">
     <div class="middle-section3__midimg">
-    {%if page.variation_img1%}
-     <div class="middle-section3__midimg--class1" alt="littlebrahma__portfolio-logo-font" style="background-image:url('{{page.variation_img1}}');"></div>
+    {%if page.variation_image1%}
+     <div class="middle-section3__midimg--class1" alt="littlebrahma__portfolio-logo-font" style="background-image:url('{{page.variation_image1}}');"></div>
      {%endif%}
      <div class="middle-section3__midimg--class2">
-     {%if page.variation_img2%}
-      <div class="middle-section3__midimg--class2-1"  alt="littlebrahma__portfolio-logo-color" style="background-image:url('{{page.variation_img2}}');"></div>
+     {%if page.variation_image2%}
+      <div class="middle-section3__midimg--class2-1"  alt="littlebrahma__portfolio-logo-color" style="background-image:url('{{page.variation_image2}}');"></div>
       {%endif%}
-      {%if page.variation_img3%}
-      <div class="middle-section3__midimg--class2-2" alt="littlebrahma__portfolio-logo-design" style="background-image:url('{{page.variation_img3}}');"></div>
+      {%if page.variation_image3%}
+      <div class="middle-section3__midimg--class2-2" alt="littlebrahma__portfolio-logo-design" style="background-image:url('{{page.variation_image3}}');"></div>
       {%endif%}
      </div>
       </div>
     <div class="middle-section4">
-      {%if page.variation_img4%}
-      <img class="middle-section4__imgb" alt="littlebrahma__portfolio-section4-1_img" src='{{page.variation_img4}}'>
+      {%if page.variation_image4%}
+      <img class="middle-section4__imgb" alt="littlebrahma__portfolio-section4-1_img" src='{{page.variation_image4}}'>
       {%endif%}
-      {%if page.variation_img5%}
-     <img class="middle-section4__imgbg" alt="littlebrahma__portfolio-section4-2_img" src="{{page.variation_img5}}">
+      {%if page.variation_image5%}
+     <img class="middle-section4__imgbg" alt="littlebrahma__portfolio-section4-2_img" src="{{page.variation_image5}}">
      {%endif%}
       </div>
       </div>

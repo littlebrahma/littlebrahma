@@ -2,29 +2,32 @@
 categories:
 - ANIMATION
 layout: casestudy_detail
-thumbnail : "/assets/img/casestudy/animation/2.gif"
+product_thumbnail : "/assets/img/casestudy/animation/2.gif"
 
-porject_title: STOP MOTION ANIMATION
-porject_subtitle: Clay modeling, Claymation, Conceptualization
-project_detail: An interesting and amazing portrayal of the ideas through the combination of illustration and clay modelling resulting in a unique output.
+product_title: STOP MOTION ANIMATION
+product_description: Clay modeling, Claymation, Conceptualization
+product_thumbnail_description: An interesting and amazing portrayal of the ideas through the combination of illustration and clay modelling resulting in a unique output.
+banner_image: "/assets/img/casestudy/animation/2.gif"
 
 featured : "No"
-featured_img: "/assets/img/casestudy/EXT-logo.png"
-featured_img1: "/assets/img/casestudy/chip_logo.png"
+featured_image: "/assets/img/casestudy/EXT-logo.png"
+featured_image1: "/assets/img/casestudy/chip_logo.png"
 featured_quote: The Groom Effect <br> Groom.co raises $20B
 
-challengeDesc: The home page of a design studio should be unique and catchy. The creative minds over at Little Brahma wanted to do something unique with their home screen. Then we did the unthinkable. We clay models and animated it !
-img2: "/assets/img/casestudy/animation/2.gif"
-solutionDesc: The clay models created were photographed and superimposed on top of graphical animation to create an unique piece of art which of course interacts with the user. Result? An awesome catchy landing page.
+challenge_description: The home page of a design studio should be unique and catchy. The creative minds over at Little Brahma wanted to do something unique with their home screen. Then we did the unthinkable. We clay models and animated it !
+
+challenge_image: "/assets/img/casestudy/animation/2.gif"
+
+solution_description: The clay models created were photographed and superimposed on top of graphical animation to create an unique piece of art which of course interacts with the user. Result? An awesome catchy landing page.
 
 video_poster : "/assets/img/casestudy/animation/lb.png"
 solutionVideo : "/assets/img/casestudy/animation/3.mp4"
 
-projectStatsNum: 35
-projectStatsNum1: 12
-projectStatsNum2: 26
-projectStatspara: CLAY MODELS MADE
-projectStatspara1: HOURS SPENT ON PHOTOGRAPHY
-projectStatspara2: COFFEES CONSUMED
+product_stats_num1: 35
+product_stats_num2: 12
+product_stats_num3: 26
+product_stats_para1: CLAY MODELS MADE
+product_stats_para2: HOURS SPENT ON PHOTOGRAPHY
+product_stats_para3: COFFEES CONSUMED
 ---
 

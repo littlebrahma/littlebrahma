@@ -18,11 +18,11 @@
 				{% for port in item %}
 			<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 blog-filter {{port.categories}}">
           <a href="{{port.url}}">
-							<img alt="littlebrahma__casestudy-{{port.porject_title}}_img" src="{{port.background-image}}" class="blog-filter__img">
+							<img alt="littlebrahma__casestudy-{{port.product_title}}_img" src="{{port.product_thumbnail}}" class="blog-filter__img">
 						<div class="caseDetail">
-							<h5 class="caseDetail__title">{{port.porject_title | upcase}}</h5>
+							<h5 class="caseDetail__title">{{port.product_title | upcase}}</h5>
 							<div class="caseDetail__border"></div>
-							<p class="caseDetail__para">{{port.description}}</p>
+							<p class="caseDetail__para">{{port.product_thumbnail_description}}</p>
 						</div>
             </a>
 					</div>
