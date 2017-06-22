@@ -7,7 +7,7 @@ product_description: Conceptualization, Logo design
 product_thumbnail: "/assets/img/portfolio/lb_img/lb.png"
 product_thumbnail_description: Conceptualization, Logo design
 
-banner_image: "/assets/img/portfolio/lb_img/LB_02.png"
+banner_image: "/assets/img/portfolio/lb_img/banner_LB.png"
 product__logo: "/assets/img/portfolio/lb_img/LB_-01.png"
 product_appstore_url: ""
 product_playstore_url: ""

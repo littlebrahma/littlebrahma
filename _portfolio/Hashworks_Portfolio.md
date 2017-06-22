@@ -8,7 +8,7 @@ product_description: Layout design, Magazine design, Illustration
 
 product_thumbnail: "/assets/img/portfolio/hash_port/hashworks-portfolio.png"
 product_thumbnail_description: Layout design, Magazine design, Illustration
-banner_image: "/assets/img/portfolio/hash_port/2.png"
+banner_image: "/assets/img/portfolio/hash_port/banner_Hashworks-portfolio.png"
 
 product_appstore_url: ""
 product_playstore_url: ""

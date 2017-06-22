@@ -7,7 +7,7 @@ product_title: Marketing Catalogue
 product_description: Layout design, Magazine design, Illustration
 product_thumbnail: "/assets/img/portfolio/marketing/marketing-catalogue.png"
 product_thumbnail_description: Layout design, Magazine design, Illustration
-banner_image: "/assets/img/portfolio/marketing/2.png"
+banner_image: "/assets/img/portfolio/marketing/banner_Marketing-catalogue.png"
 
 product_appstore_url: ""
 product_playstore_url: ""

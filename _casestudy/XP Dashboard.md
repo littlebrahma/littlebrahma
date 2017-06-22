@@ -8,7 +8,7 @@ product_thumbnail : "/assets/img/casestudy/xp/xpdashboard.png"
 product_title: XP DASHBOARD
 product_description: UI/UX, Mobile application, Devops
 product_thumbnail_description: Integrated solution that reduced the workload of performance engineers and improved their efficiency in operations.
-banner_image: "/assets/img/casestudy/xp/1.png"
+banner_image: "/assets/img/casestudy/xp/banner_Xp Dashboard.png"
 
 challenge_description: Complexity of application development in an enterprise has grown significantly and it is only set to get worse as companies grow. Our client, one of the largest enterprise technology companies in the world and leader in supply chain management are currently running a hybrid enterprise – a result of heterogeneous target customer audience, diverse support functionality and business processes. The biggest challenges of our client were the lack of access to quick, intuitive and meaningful insights, Lack of actionable intelligence and the lack of workflow automation.
 

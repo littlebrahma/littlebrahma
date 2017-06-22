@@ -8,7 +8,7 @@ product_description: UI/UX, Web development, Devops
 product_thumbnail: "/assets/img/portfolio/port_cover_img/goss.png"
 product_thumbnail_description: UI/UX, Web development, Devops
 
-banner_image: "/assets/img/portfolio/goss/1.png"
+banner_image: "/assets/img/portfolio/goss/banner_Goss.png"
 product_appstore_url: ""
 product_playstore_url: ""
 product_detail: A platform to categorize and manage different kinds of orders the client receives on a daily basis. The platform which existed before lacked the usability and intuitiveness thus failing to make the users comfortable with the system. The revised UI/UX made the platform much more easier to use, resulting in much more improved user engagement.

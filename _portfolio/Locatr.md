@@ -7,7 +7,7 @@ product_description: Conceptualization, Logo design
 product_thumbnail: "/assets/img/portfolio/locatr_img/locatr.png"
 product_thumbnail_description: Conceptualization, Logo design
 
-banner_image: "/assets/img/portfolio/locatr_img/portfolio_loc-2.png"
+banner_image: "/assets/img/portfolio/locatr_img/banner_Locator.png"
 product_logo: "/assets/img/portfolio/locatr_img/portfolio_loc 1.png"
 product_appstore_url: ""
 product_playstore_url: ""
