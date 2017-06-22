@@ -102,9 +102,9 @@
         console.log(location.queryString);
         if (location.queryString.category == undefined) {
             $("#r-option1").prop("checked", true);
-
         } else {
             $('*[data-category="' + location.queryString.category + '"]').prop("checked", true);
+            $("#dropdownTitle").text(location.queryString.category);
         }
         $("#dropdownTitle").text($("#mobileRadio0").attr('data-category'));
         /*end default select category*/
@@ -212,7 +212,7 @@
             $(".mobileDropDown__menu").hide();
             $("#test").toggleClass("drop_arrow");
         })
-        
+
 
 
 
