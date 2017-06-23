@@ -60,15 +60,11 @@
       <hr>
       <div class="solution__content">{{page.solution_description}}<p> 
       </p></div>
-      <!-- {%if page.solutionImg.size >0%} -->
-      <div class="solution__circle">
-     <!--  {%for solutionImg in page.solutionImg%} -->
+      {%if page.solution_image%}
       <div>
-        <img alt="littlebrahma__casestudy-solution_img" src="{{solution_image}}" class="solution__img">
+        <img alt="littlebrahma__casestudy-solution_img" src="{{page.solution_image}}" class="solution__img">
         </div>
-        <!-- {%endfor%} -->
-      </div>
-<!-- {%endif%} -->
+        {%endif%}
 {%if page.solutionVideo%}
       <video controls="controls" preload="none" poster="{{page.video_poster}}" width="640" height="360">
  <source src="{{page.solutionVideo}}" type="video/mp4" />

@@ -1,5 +1,4 @@
 ---
-
 categories:
 - WEB & MOBILE DESIGN
 layout: casestudy_detail

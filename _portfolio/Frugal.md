@@ -8,7 +8,7 @@ product_thumbnail: "/assets/img/portfolio/branding/frugal/frugal.png"
 product_thumbnail_description: Conceptualization, Logo design
 
 banner_image: "/assets/img/portfolio/branding/frugal/banner_frugal.png"
-product_logo: "/assets/img/portfolio/branding/frugal/portfolio_frugal 1.png"
+product_logo: "/assets/img/portfolio/branding/frugal/portfolio_frugal 1.svg"
 product_appstore_url: ""
 product_playstore_url: ""
 product_detail: Frugal is a platform to manage cash flow for small to medium enterprises and allocation of funds to different cost centers. Thus, optimizing the expenditure and increasing the corpus fund of the organization. The particular logo for the platform should convey the ideas of finance and allocation. Also the theme and visual appeal of the platform suggests the logo should follow a clean and sleek visual style. 

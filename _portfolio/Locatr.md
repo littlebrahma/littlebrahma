@@ -8,7 +8,7 @@ product_thumbnail: "/assets/img/portfolio/locatr_img/locatr.png"
 product_thumbnail_description: Conceptualization, Logo design
 
 banner_image: "/assets/img/portfolio/locatr_img/portfolio_loc 6C.jpg"
-product_logo: "/assets/img/portfolio/locatr_img/portfolio_loc 1.png"
+product_logo: "/assets/img/portfolio/locatr_img/portfolio_loc 1.svg"
 product_appstore_url: ""
 product_playstore_url: ""
 product_detail: Branding for a navigation app which is going to revolutionize the way we travel, find our destinations and share our locations. As the core concept of the app is based on travel and navigation and how easily we can arrive at or reach a destination, the logo should communicate the simplicity as well as the technology that powers it.
