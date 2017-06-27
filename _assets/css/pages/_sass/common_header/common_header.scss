@@ -32,6 +32,55 @@
             vertical-align: text-top;
         }
     }
+    .menu__image-link{
+        margin-right: 5px;
+    }
+    .menu_link{
+        display: inline-block;
+        width:30px;
+        height: 19px;
+    }
+    .menu_link1{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("/assets/img/common/side_menu_links/insta.svg");
+        
+    }
+    .menu_link1:hover{
+        background-image: url("/assets/img/common/side_menu_links/Insta_hover.svg");   
+    }
+    .menu_link2{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("/assets/img/common/side_menu_links/dribbble.svg");   
+    }
+    .menu_link2:hover{
+        background-image: url("/assets/img/common/side_menu_links/drible_hover.svg");   
+    }
+    .menu_link3{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("/assets/img/common/side_menu_links/behance.svg");   
+    }
+    .menu_link3:hover{
+        background-image: url("/assets/img/common/side_menu_links/behance_hover.svg");   
+    }
+    .menu_link4{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("/assets/img/common/side_menu_links/twitter.svg");   
+    }
+    .menu_link4:hover{
+        background-image: url("/assets/img/common/side_menu_links/twitter_hover.svg");   
+    }
+    .menu_link5{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("/assets/img/common/side_menu_links/fb.svg");   
+    }
+    .menu_link5:hover{
+        background-image: url("/assets/img/common/side_menu_links/fb_hover.svg");   
+    }
     .rightlists {
         float: right;
         list-style: none;

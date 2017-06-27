@@ -84,6 +84,10 @@ $common-width: 100%;
     .slick-slide {
         outline: none;
     }
+    .slick-dots{
+        bottom: -45px;
+        left: 0px;
+    }
     .fadeIn {
         opacity: 1;
         transition: opacity 0.3s;
@@ -95,47 +99,48 @@ $common-width: 100%;
         padding: 0;
         font-size: 1em;
         opacity: 0;
+        display: none;
         cursor: pointer;
         -webkit-appearance: radio;
     }
     input[type=radio]:not(old)+label {
         display: inline-block;
-        margin-left: -2.5em;
-        line-height: 1.5em;
+        line-height: 24px;
         font-family: $primary-contentfamily;
         //font-size: 18px;
         font-size: 14px;
-        letter-spacing: .05em;
-        word-spacing: .035em;
+        letter-spacing: 0px;
+        word-spacing: 0px;
         line-height: 22px;
         margin-bottom: 30px;
         cursor: pointer;
     }
     input[type=radio]:not(old)+label>.select__radio {
         display: inline-block;
-        width: 0.875em;
-        height: 0.875em;
-        margin: 0.25em 0.5em;
-        border: 0.0825em solid #58595B;
-        border-radius: 0.25em;
+        width: 14px;
+        height: 14px;
+        margin: 4px 8px;
+        border: 1px solid #58595B;
+        border-radius: 4px;
         vertical-align: bottom;
     }
     input[type=radio]:not(old):checked+label>.select__radio {
         border-color: #FF1A46;
         border-style: solid;
-        border-width: 0.0825em;
+        border-width: 1px;
     }
     input[type=radio]:not(old):checked+label>.select__title {
         vertical-align: middle;
     }
     input[type=radio]:not(old):checked+label>.select__radio>span {
         display: block;
-        width: 0.5em;
-        height: 0.5em;
-        margin: 0.125em;
-        border: 0.0825em solid #FF1A46;
-        border-radius: 0.125em;
+            width: 6px;
+    height: 6px;
+    margin: 3.3px;
+        border: 1.1px solid #FF1A46;
+        border-radius: 2px;
         background: #FF1A46;
+
     }
     input[type=radio]:not(old):checked+label>.select__title {
         font-weight: bolder;

@@ -36,8 +36,7 @@ height:100vh;
     &__logo{
       height:63px;
       width:63px;
-      padding-bottom:50px;
-      
+      padding-bottom:50px;  
     }
     &__title{
     font-family: Montserrat-bold;
@@ -170,6 +169,7 @@ width: 720px;
   border: 2px solid black;
     width: 100px;
    margin-bottom: 25px;
+  background-color: black;
 }
   &__img1{
     width:100%;
@@ -566,8 +566,7 @@ width: 720px;
     color:#fff;
     &__logo{
       height:53px;
-      width:53px;
-      
+      width:53px;   
     }
     &__title{
       font-size: 24px;
