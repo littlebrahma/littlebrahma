@@ -28,7 +28,7 @@
 
 
 
-
+         $(".blog-filter").hide();
 
         if ($(window).width() > 1024 || $(window).width() < 768) {
             $(".MenuList__common").addClass("fadeInUp");

@@ -429,6 +429,7 @@ $common-width: 100%;
     @media screen and (min-width: 320px) and (max-width: 767px) {
         .drop_arrow {
             transform: rotate(180deg);
+        
         }
         .apst-button {
            display: inherit;
@@ -438,12 +439,12 @@ $common-width: 100%;
             display: block;
             padding-bottom: 40px;
             &__menu {
-                width: 200px;
+                width: 80%;
                 height: auto;
                 background-color: #FFF;
                 margin: 0 auto;
                 position: absolute;
-                left: 34px;
+                left: 27px;
                 box-shadow: 0px 0px 3px 1px #e6e6e6;
                 border-bottom-left-radius: 5px;
                 // border-bottom-right-radius: 5px;
@@ -473,7 +474,7 @@ $common-width: 100%;
                 }
             }
             &__container {
-                width: 200px;
+                width: 80%;
                 height: 27px;
                 margin: 0 auto;
                 position: relative;
@@ -491,7 +492,7 @@ $common-width: 100%;
                 i {
                     position: absolute;
                     right: 5px;
-                    top: 5px;
+                    top: 3px;
                     font-size: 20px;
                 }
             }
