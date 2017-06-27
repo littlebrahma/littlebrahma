@@ -99,7 +99,6 @@
             location.queryString[parts[0]] = parts[1] &&
                 decodeURIComponent(parts[1].replace(/\+/g, " "));
         });
-        console.log(location.queryString);
         if (location.queryString.category == undefined) {
             $("#r-option1").prop("checked", true);
             $("#dropdownTitle").text($("#mobileRadio0").attr('data-category'));
