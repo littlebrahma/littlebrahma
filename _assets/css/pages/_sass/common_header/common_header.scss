@@ -251,6 +251,21 @@
                 display: none;
             }
         }
+        .menu_link1:hover{
+        background-image: url("/assets/img/common/side_menu_links/insta.svg");   
+    }
+    .menu_link2:hover{
+        background-image: url("/assets/img/common/side_menu_links/dribbble.svg");   
+    }
+    .menu_link3:hover{
+        background-image: url("/assets/img/common/side_menu_links/behance.svg");   
+    }
+    .menu_link4:hover{
+        background-image: url("/assets/img/common/side_menu_links/twitter.svg");   
+    }
+    .menu_link5:hover{
+        background-image: url("/assets/img/common/side_menu_links/fb.svg");   
+    }
         .rightlists {
             &__list {
                 padding-right: 6px;
@@ -305,6 +320,21 @@ and (orientation : landscape) {
                 display: none;
             }
         }
+        .menu_link1:hover{
+        background-image: url("/assets/img/common/side_menu_links/insta.svg");   
+    }
+    .menu_link2:hover{
+        background-image: url("/assets/img/common/side_menu_links/dribbble.svg");   
+    }
+    .menu_link3:hover{
+        background-image: url("/assets/img/common/side_menu_links/behance.svg");   
+    }
+    .menu_link4:hover{
+        background-image: url("/assets/img/common/side_menu_links/twitter.svg");   
+    }
+    .menu_link5:hover{
+        background-image: url("/assets/img/common/side_menu_links/fb.svg");   
+    }
         .rightlists {
             display: none;
         }
