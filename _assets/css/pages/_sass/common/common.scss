@@ -94,10 +94,10 @@ $common-width: 100%;
         -webkit-transition: opacity 0.3s;
     }
     input[type=radio]:not(old) {
-        width: 2em;
+        width: 32px;
         margin: 0;
         padding: 0;
-        font-size: 1em;
+        font-size: 16px;
         opacity: 0;
         display: none;
         cursor: pointer;

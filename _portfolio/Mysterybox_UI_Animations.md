@@ -3,7 +3,7 @@ layout: portfolio_detail
 
 categories:
 - ANIMATION
-product_title: Mysterybox UI Animations
+product_title: Mysterybox UI
 product_description: Isometric Designing, Animation
 product_thumbnail: "/assets/img/portfolio/myb_animation/mystery-thumbnail.png"
 product_thumbnail_description: Isometric Designing, Animation

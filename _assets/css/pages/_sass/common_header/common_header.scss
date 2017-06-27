@@ -37,44 +37,44 @@
     }
     .menu_link{
         display: inline-block;
-        width:20px;
-        background-image: url("/assets/img/common/side_menu_links/sprite_social-media.png");
-        height: 20px;
+        width:17px;
+        background-image: url("/assets/img/common/side_menu_links/new_sprite (1).png");
+        height: 17px;
         background-repeat: no-repeat;
     }
     .menu_link1{
-        background-position: -3px -1px;  
+      background-position: -1px -2px;  
     }
     .menu_link1:hover{
-        background-position: -3px -29px;   
+        background-position: -1px -19px;   
     }
     .menu_link2{
-        background-position: -27px -1px;
+        background-position: -18px -2px;
 
     }
     .menu_link2:hover{
-        background-position: -27px -29px;   
+        background-position: -18px -19px;   
     }
     .menu_link3{
-        background-position: -50px -1px;
-        width: 28px;   
+        background-position: -35px -2px;
+        width: 26px;   
     }
     .menu_link3:hover{
-        background-position: -50px -28px;   
+        background-position: -35px -19px;   
     }
     .menu_link4{
-        background-position: -81px -1px;
-        width: 24px;   
+        background-position: -62px -2px;
+        width: 19px;   
     }
     .menu_link4:hover{
-        background-position: -81px -29px;   
+        background-position: -62px -19px;   
     }
     .menu_link5{
-        background-position: -107px -1px; 
-        width: 13px;  
+        background-position: -81px -2px; 
+        width: 10px;  
     }
     .menu_link5:hover{
-        background-position: -107px -29px;   
+        background-position: -81px -19px;   
     }
     .rightlists {
         float: right;
@@ -194,7 +194,7 @@
         }
         &__underline {
             border-bottom: 1px solid #5858B9;
-            width: 145px;
+            width: 130px;
             margin-left: 20px;
         }
         &__cnc {
@@ -248,19 +248,19 @@
             }
         }
         .menu_link1:hover{
-        background-position: -3px -1px;    
+        background-position: -1px -2px;    
     }
     .menu_link2:hover{
-        background-position: -27px -1px;   
+        background-position: -18px -2px;   
     }
     .menu_link3:hover{
-       background-position: -50px -1px;   
+       background-position: -35px -2px;   
     }
     .menu_link4:hover{
-        background-position: -81px -1px;   
+        background-position: -62px -2px;   
     }
     .menu_link5:hover{
-        background-position: -107px -1px;    
+        background-position: -81px -2px;    
     }
         .rightlists {
             &__list {
@@ -320,19 +320,19 @@ and (orientation : landscape) {
             margin-top: 5px;
          }
         .menu_link1:hover{
-        background-position: -3px -1px;    
+        background-position: -1px -2px;    
     }
     .menu_link2:hover{
-        background-position: -27px -1px;   
+        background-position: -18px -2px;   
     }
     .menu_link3:hover{
-       background-position: -50px -1px;   
+       background-position: -35px -2px;   
     }
     .menu_link4:hover{
-        background-position: -81px -1px;   
+        background-position: -62px -2px;   
     }
     .menu_link5:hover{
-        background-position: -107px -1px;    
+        background-position: -81px -2px;    
     }
         .rightlists {
             display: none;

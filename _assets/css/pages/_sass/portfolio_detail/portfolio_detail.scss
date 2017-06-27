@@ -70,7 +70,7 @@ width: 720px;
 }
 .left-align{
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 10px;
   margin-top:25px; 
 }
 .right-align{
@@ -617,7 +617,7 @@ width: 720px;
   }
 }
 .middle-section2{
-  margin:40px 0;
+  margin:40px 0 0;
   padding: 30px 30px;
   &__img1{
    width: 200px;
