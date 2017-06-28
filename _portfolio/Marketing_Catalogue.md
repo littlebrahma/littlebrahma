@@ -1,25 +1,24 @@
 ---
-title: Marketing Catalogue
-description: Layout design, Magazine design, Illustration
+layout: portfolio_detail
+
 categories:
 - MAGAZINE & BOOK
-layout: portfolio_detail
-background-class: portBgImg
-background-image: "/assets/img/portfolio/marketing/marketing-catalogue.png"
-porject_title: Marketing Catalogue
-porject_subtitle: Layout design, Magazine design, Illustration
-porject_apple_imglink: ""
-porject_android_imglink: ""
-project_detail: A marketing catalogue from Hashworks which shows the beauty of simplicity in design. This piece of art makes the reader flow through the pages with much ease because of its carefully designed layout structure and artworks. The colours, art work and layout have been designed perfectly to convey hashworks as a brand and as well as the theme they wanted to convey. 
-whatWeDoList:
-- Layout design
-- Magazine design
-- Illustration
-img: "/assets/img/portfolio/marketing/2.png"
-imgContent:   Cover of the magazine.
+product_title: Marketing Catalogue
+product_description: Layout design, Magazine design, Illustration
+product_thumbnail: "/assets/img/portfolio/marketing/marketing-catalogue.png"
+product_thumbnail_description: Layout design, Magazine design, Illustration
+banner_image: "/assets/img/portfolio/marketing/banner_Marketing-catalogue.png"
 
+product_appstore_url: ""
+product_playstore_url: ""
+product_detail: A marketing catalogue from Hashworks which shows the beauty of simplicity in design. This piece of art makes the reader flow through the pages with much ease because of its carefully designed layout structure and artworks. The colours, art work and layout have been designed perfectly to convey hashworks as a brand and as well as the theme they wanted to convey. 
 
-variation_img1: "/assets/img/portfolio/marketing/7.png"
-variation_img2: "/assets/img/portfolio/marketing/8.png"
-variation_img3: "/assets/img/portfolio/marketing/9.png"
+image1: "/assets/img/portfolio/marketing/2.png"
+image1_caption:   Cover of the magazine.
+
+variation_title: MORE SAMPLES
+
+variation_image1: "/assets/img/portfolio/marketing/7.png"
+variation_image2: "/assets/img/portfolio/marketing/8.png"
+variation_image3: "/assets/img/portfolio/marketing/9.png"
 ---

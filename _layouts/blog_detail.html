@@ -21,8 +21,8 @@ endfor %}
      <div class="row blog__detail--container">
         <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 middleSection1__iconAlign">
                     <div class="middleSection1__profile1">
-                        <img class="middleSection1__img1" src="/assets/img/blog/images.png" alt="blog comma"><br>
-                        <img class="middleSection1__pimg" src="{{author_image}}" alt="author image">
+                        <img class="middleSection1__img1" src="/assets/img/blog/images.png" alt="littlebrahma__blog-comma"><br>
+                        <img class="middleSection1__pimg" src="{{author_image}}" alt="littlebrahma__author-image">
                         <div class="middleSection1__profile">
                             <div class="middleSection1__profileName">
                                 {{author_name | upcase}}
@@ -62,68 +62,31 @@ endfor %}
    {{ content }} 
     <div id="disqus_thread"></div>
     </div>
-{% if content and page.related %}
-<!-- <div class="middleSection4">
-    <hr class="middleSection4__hr6">
-    <div class="middleSection4__rltdHadng">RELATED STORIES</div>
-    <hr class="middleSection4__hr4">
-    <div class="row">
-        {% for post in site.posts %} {% if page.related contains post.blog_category %}
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 blog-filter {{post.blog_category}}">
-            <img src="{{ post.thumbnail}}" class="blog-filter__img">
-            <div class="blogWholeBG">
-                <div class="blogDetail">
-                    <h5 class="blogDetail__title">{{ post.title}}</h5>
-                    <div class="blogDetail__border"></div>
-                    <p class="blogDetail__para">{{ post.blog_description}}</p>
-                </div>
 
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="row blog__pad">
-                            <div class="blog__pad-img">
-                                <img src="{{ post.author_image}}" class="blog-pad__img">
-                            </div>
-                            <div class="authorSection">
-                                <h5 class="authorSection__title middleSection4__title">{{ post.author_name}}</h5>
-                                <p class="authorSection__para middleSection4__para">{{ post.author_title}}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blogClock">
-                        <span><img src="/assets/img/blog/clock.png"></span><span class="authorSection__date">{{ post.date}}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endif %} {% endfor %}
-    </div>
-</div> -->
-{% endif %}
-<!-- <div class="middleSection2">
-    <div id="disqus_thread"></div>
-</div> -->
 </div>
 </div>       
 </div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-    // var disqus_config = function () {
-    // this.page.url = {{page.url}};  // Replace PAGE_URL with your page's canonical URL variable
-    // this.page.identifier = {{page.url}}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    // };
-    var disqus_developer = 1;
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document,
-            s = d.createElement('script');
-        s.src = 'https://littlebrahma.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://littlebrahma-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> 
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 {% include common_footer.html %} 
 {% include footer.html %}

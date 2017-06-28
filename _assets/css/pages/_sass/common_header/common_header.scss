@@ -32,6 +32,50 @@
             vertical-align: text-top;
         }
     }
+    .menu__image-link{
+        margin-right: 5px;
+    }
+    .menu_link{
+        display: inline-block;
+        width:20px;
+        background-image: url("/assets/img/common/side_menu_links/sprite_social-media.png");
+        height: 20px;
+        background-repeat: no-repeat;
+    }
+    .menu_link1{
+        background-position: -3px -1px;  
+    }
+    .menu_link1:hover{
+        background-position: -3px -29px;   
+    }
+    .menu_link2{
+        background-position: -27px -1px;
+
+    }
+    .menu_link2:hover{
+        background-position: -27px -29px;   
+    }
+    .menu_link3{
+        background-position: -50px -1px;
+        width: 28px;   
+    }
+    .menu_link3:hover{
+        background-position: -50px -28px;   
+    }
+    .menu_link4{
+        background-position: -81px -1px;
+        width: 24px;   
+    }
+    .menu_link4:hover{
+        background-position: -81px -29px;   
+    }
+    .menu_link5{
+        background-position: -107px -1px; 
+        width: 13px;  
+    }
+    .menu_link5:hover{
+        background-position: -107px -29px;   
+    }
     .rightlists {
         float: right;
         list-style: none;
@@ -150,7 +194,7 @@
         }
         &__underline {
             border-bottom: 1px solid #5858B9;
-            width: 130px;
+            width: 145px;
             margin-left: 20px;
         }
         &__cnc {
@@ -203,6 +247,21 @@
                 display: none;
             }
         }
+        .menu_link1:hover{
+        background-position: -3px -1px;    
+    }
+    .menu_link2:hover{
+        background-position: -27px -1px;   
+    }
+    .menu_link3:hover{
+       background-position: -50px -1px;   
+    }
+    .menu_link4:hover{
+        background-position: -81px -1px;   
+    }
+    .menu_link5:hover{
+        background-position: -107px -1px;    
+    }
         .rightlists {
             &__list {
                 padding-right: 6px;
@@ -257,6 +316,24 @@ and (orientation : landscape) {
                 display: none;
             }
         }
+         .menu_link{
+            margin-top: 5px;
+         }
+        .menu_link1:hover{
+        background-position: -3px -1px;    
+    }
+    .menu_link2:hover{
+        background-position: -27px -1px;   
+    }
+    .menu_link3:hover{
+       background-position: -50px -1px;   
+    }
+    .menu_link4:hover{
+        background-position: -81px -1px;   
+    }
+    .menu_link5:hover{
+        background-position: -107px -1px;    
+    }
         .rightlists {
             display: none;
         }

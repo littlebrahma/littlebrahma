@@ -393,7 +393,7 @@ gulp.task('browser-sync',['jekyll-build'], function() {
 
   gulp.task('default', ['serve-dev']);
 
-
+ 
 
   /**
    * Compress images
@@ -408,5 +408,17 @@ gulp.task('browser-sync',['jekyll-build'], function() {
             optimizationLevel: 5,
             verbose:true
           }))
-          .pipe(gulp.dest('_assets/images/'));
+          .pipe(gulp.dest('_assets/op-img/'));
+  });
+
+   gulp.task('compress-data-images', function() {
+      log('Compressing and copying images');
+
+      return gulp
+          .src('./_assets/**/**/*.*')
+          .pipe($.imagemin({
+            optimizationLevel: 5,
+            verbose:true
+          }))
+          .pipe(gulp.dest('_assets/'));
   });

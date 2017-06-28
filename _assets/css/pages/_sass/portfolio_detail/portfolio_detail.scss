@@ -36,8 +36,7 @@ height:100vh;
     &__logo{
       height:63px;
       width:63px;
-      padding-bottom:60px;
-      
+      padding-bottom:50px;  
     }
     &__title{
     font-family: Montserrat-bold;
@@ -170,6 +169,7 @@ width: 720px;
   border: 2px solid black;
     width: 100px;
    margin-bottom: 25px;
+  background-color: black;
 }
   &__img1{
     width:100%;
@@ -282,7 +282,7 @@ width: 720px;
   background-color: #231f20;
   color:#fff;
   text-align: center;
-  padding:60px 0px;
+  padding:40px 0px;
   &__btn{
         background-color: #f1123e;
     border: 2px solid #f1123e;
@@ -319,7 +319,7 @@ width: 720px;
     &__logo{
       height:100px;
       width:100px;
-      padding-bottom:12px;
+      padding-bottom:60px;
       }
       &__title{
     font-size: 46px;
@@ -423,7 +423,7 @@ width: 720px;
   }
 }
 .middle-section5{
-   padding:100px 0px;
+   padding:40px 0px;
   &__headng{
     font-size: 24px;
     line-height: 34px;
@@ -435,7 +435,7 @@ width: 720px;
     &__logo{
       height:73px;
       width:73px;
-      
+      padding-bottom: 50px;
       }
       &__title{
     font-size: 36px;
@@ -536,7 +536,7 @@ width: 720px;
   }
 }
 .middle-section5{
-   padding:80px 0px;
+   padding:40px 0px;
  
   &__headng{
     font-size: 18px;
@@ -566,9 +566,7 @@ width: 720px;
     color:#fff;
     &__logo{
       height:53px;
-      width:53px;
-      padding-bottom:40px;
-      
+      width:53px;   
     }
     &__title{
       font-size: 24px;
@@ -622,8 +620,8 @@ width: 720px;
   margin:40px 0;
   padding: 30px 30px;
   &__img1{
-   width: 130px;
-    height: 230px;
+   width: 200px;
+    height: 354px;
     margin:0 auto;
   }
   &__inner{
@@ -829,8 +827,8 @@ margin: 0 auto;
       padding:40px 0px;
     display: block;
   &__img1{
-    width: 100px;
-    height: 178px;
+    width: 180px;
+    height: 320px;
     margin:0px auto;
   }
   &__inner{
@@ -845,10 +843,10 @@ margin: 0 auto;
     line-height: 18px;
   }
    &__allign{
-    margin: 50px auto;
+    margin: 0px auto;
   }
   &__allign:nth-child(2) {
-    margin: 50px auto;
+    margin: 0px auto;
 }
 }
 .italic {
@@ -897,14 +895,14 @@ margin: 0 auto;
     &--class2-1{
       padding:0px;
     width: 280px;
-    height: 226px;
+    height: 172px;
     margin-top: 10px;
     background-size: 100% 100%;
     }
     &--class2-2{
       padding:0px;
        width: 280px;
-    height: 226px;
+    height: 172px;
     margin-top: 10px;
     background-size: 100% 100%;
     }
@@ -957,7 +955,7 @@ margin: 0 auto;
   }
   &__imgb{
  width:280px;
-    height:226px;
+    height:141px;
     margin-top:10px;
   }
 }
