@@ -14,7 +14,7 @@ product_playstore_url: ""
 product_detail: When you have 3 magazines featuring different aspects of the brand you need to package it together. Also without losing the charm and visual style of the magazines, we came up with an awesome slick magazine cover to package it all together.
 
 image1: "/assets/img/portfolio/magazine/2.png"
-image1_caption:  Wall illustration featuring a kid brahma.
+image1_caption: Cover for hashworks magazine.
 
 variation_title: MORE SAMPLES
 
