@@ -13,3 +13,7 @@
 - name: shilpa
   image: /assets/img/blog/profile_1.png
   title: design lead
+  
+- name: Gokul
+  image: /assets/img/blog/profile_gokul.png
+  title: designer

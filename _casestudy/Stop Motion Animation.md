@@ -1,6 +1,4 @@
 ---
-categories:
-- ANIMATION
 layout: casestudy_detail
 product_thumbnail : "/assets/img/casestudy/animation/2.gif"
 
@@ -29,5 +27,5 @@ product_stats_num3: 26
 product_stats_para1: CLAY MODELS MADE
 product_stats_para2: HOURS SPENT ON PHOTOGRAPHY
 product_stats_para3: COFFEES CONSUMED
----
 
+---
