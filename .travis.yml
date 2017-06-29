@@ -1,18 +1,5 @@
 language: ruby
 rvm:
-  - 2.2
-before_install:
-  - . $HOME/.nvm/nvm.sh
-  - nvm install stable
-  - nvm use stable
-  - node -v
-  - npm install -g gulp
-  - npm install 
-  - gem install jekyll
-  - gulp build
+- 2.1.1
 script:
-  - bundle exec jekyll build
-sudo: false
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+- bundle exec jekyll build
