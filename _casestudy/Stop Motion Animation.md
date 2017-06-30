@@ -2,12 +2,12 @@
 categories:
 - ANIMATION
 layout: casestudy_detail
-product_thumbnail : "/assets/img/casestudy/animation/2.gif"
+product_thumbnail : "/assets/img/casestudy/animation/ANIMATION_THUMBNAIL.png"
 
 product_title: STOP MOTION ANIMATION
 product_description: Clay modeling, Claymation, Conceptualization
 product_thumbnail_description: An interesting and amazing portrayal of the ideas through the combination of illustration and clay modelling resulting in a unique output.
-banner_image: "/assets/img/casestudy/animation/2.gif"
+banner_image: "/assets/img/casestudy/animation/ANIMATION_BANNER.png"
 
 featured : "No"
 featured_image: "/assets/img/casestudy/EXT-logo.png"

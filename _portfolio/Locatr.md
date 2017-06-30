@@ -4,7 +4,7 @@ layout: portfolio_detail
 categories: BRANDING
 product_title: Locatr
 product_description: Conceptualization, Logo design
-product_thumbnail: "/assets/img/portfolio/locatr_img/locatr.png"
+product_thumbnail: "/assets/img/portfolio/locatr_img/LOCATR_THUMBNAIL.png"
 product_thumbnail_description: Conceptualization, Logo design
 
 banner_image: "/assets/img/portfolio/locatr_img/portfolio_loc 6C.jpg"
@@ -25,7 +25,7 @@ variation_title: TYPOGRAPHY AND COLOR
 variation_image1: "/assets/img/portfolio/locatr_img/portfolio_loc 5A.png"
 variation_image2: "/assets/img/portfolio/locatr_img/portfolio_loc 5B.png"
 variation_image3: "/assets/img/portfolio/locatr_img/portfolio_loc 5C.png"
-variation_image4: "/assets/img/portfolio/locatr_img/w_loc 3.png"
+variation_image4: "/assets/img/portfolio/locatr_img/Locatr_3.png"
 variation_image5: "/assets/img/portfolio/locatr_img/portfolio_loc 6C.jpg"
 ---
 

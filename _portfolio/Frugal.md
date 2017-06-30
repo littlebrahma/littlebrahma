@@ -7,7 +7,7 @@ product_description: Conceptualization, Logo design
 product_thumbnail: "/assets/img/portfolio/branding/frugal/frugal.png"
 product_thumbnail_description: Conceptualization, Logo design
 
-banner_image: "/assets/img/portfolio/branding/frugal/banner_frugal.png"
+banner_image: "/assets/img/portfolio/branding/frugal/FRUGAL_BANNER.png"
 product_logo: "/assets/img/portfolio/branding/frugal/portfolio_frugal 1.svg"
 product_appstore_url: ""
 product_playstore_url: ""
@@ -26,6 +26,6 @@ variation_title: TYPOGRAPHY AND COLOR
 variation_image1: "/assets/img/portfolio/branding/frugal/portfolio_frugal 5A.png"
 variation_image2: "/assets/img/portfolio/branding/frugal/portfolio_frugal 5B.png"
 variation_image3: "/assets/img/portfolio/branding/frugal/portfolio_frugal 5C.png"
-variation_image4: "/assets/img/portfolio/branding/frugal/Frugle_6.png"
+variation_image4: "/assets/img/portfolio/branding/frugal/frugle_6.png"
 variation_image5: "/assets/img/portfolio/branding/frugal/portfolio_frugal 6.jpg"
 ---

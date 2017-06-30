@@ -49,11 +49,15 @@ h5,
 h6 {
     margin: 0;
     -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent;
 }
 
 a {
     text-decoration: none;
     outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent;
 }
 
 $primary-titlefamily: "montserrat-regular";
@@ -368,7 +372,7 @@ $common-width: 100%;
         }
         input[type="radio"]:not(old)+label {
             font-size: 16px;
-            letter-spacing: 0.05em;
+            letter-spacing: 0px;
             line-height: 24px;
         }
         .blog-row {
@@ -465,7 +469,6 @@ $common-width: 100%;
                         margin: 0;
                         padding: 15px 25px 15px 25px;
                         list-style: none;
-                        cursor: pointer;
                         cursor: pointer;
                         &:hover {
                             color: #FA1928;
@@ -778,6 +781,11 @@ $content-title4-line-ht-xl :10px;
 .apst-button {
     background-color: #ec1944 !important;
     display: none;
+    background: #ec1944;
+    background: -webkit-radial-gradient(circle, #ec1944 11px,white);
+    background: -o-radial-gradient(circle, #ec1944 11px,white);
+    background: -moz-radial-gradient(circle, #ec1944 11px,white);
+    background: radial-gradient(circle, #ec1944 11px,white);
 }
 
 /* end of scroll*/

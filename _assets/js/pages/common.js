@@ -61,6 +61,8 @@
             $(".arrow-left").css("opacity", "1");
             $(".arrow").removeClass("MenuList__arrowDown1")
             $(".arrow").addClass("MenuList__arrowDown");
+            $(".MenuList__common").removeClass("fadeInDown");
+            $(".MenuList__common").hasClass("fadeInUp");
         });
         // $(".MenuList__common").hide();
         $(".MenuList__wwa").click(function() {

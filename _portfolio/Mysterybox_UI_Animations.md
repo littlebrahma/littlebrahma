@@ -8,7 +8,7 @@ product_description: Isometric Designing, Animation
 product_thumbnail: "/assets/img/portfolio/myb_animation/mystery-thumbnail.png"
 product_thumbnail_description: Isometric Designing, Animation
 
-banner_image: "/assets/img/portfolio/myb_animation/banner_Animation-Mysterybox.gif"
+banner_image: "/assets/img/portfolio/myb_animation/MYB_BANNER.png"
 product_appstore_url: ""
 product_playstore_url: ""
 product_detail: This series of animations gives the users more fun based experience to a highly complex model. The animations gives the users visual instructions and cues making the users in App experience more enjoyable and relatable. Of course interactive animations are fun!

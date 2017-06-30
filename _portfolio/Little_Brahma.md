@@ -25,7 +25,7 @@ variation_title: TYPOGRAPHY AND COLOR
 variation_image1: "/assets/img/portfolio/lb_img/LB_-05A.png"
 variation_image2: "/assets/img/portfolio/lb_img/LB_-05B.png"
 variation_image3: "/assets/img/portfolio/lb_img/LB_-05C.png"
-variation_image4: "/assets/img/portfolio/lb_img/LB-06.jpg"
+variation_image4: "/assets/img/portfolio/lb_img/LB-06.png"
 variation_image5: "/assets/img/portfolio/lb_img/LB_-06.png"
 ---
 
