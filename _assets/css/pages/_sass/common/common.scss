@@ -140,7 +140,7 @@ $common-width: 100%;
         display: block;
             width: 6px;
     height: 6px;
-    margin: 3.3px;
+    margin: 3px;
         border: 1.1px solid #FF1A46;
         border-radius: 2px;
         background: #FF1A46;
@@ -727,14 +727,13 @@ $content-title4-line-ht-xl :10px;
     -ms-user-select: none;
     bottom: 20px;
     margin-left: -40px;
-    right: 20px;
+    right:15px;
 }
 
 .apst-button {
     position: relative;
-    width: 35px;
+    width: 40px;
     height: 35px;
-    background-color: #555;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -748,45 +747,45 @@ $content-title4-line-ht-xl :10px;
     margin-top: 25px;
 }
 
-.apst-button:before {
-    content: "";
-    display: block;
-    position: relative;
-    left: 11px;
-    top: 14px;
-    width: 10px;
-    height: 10px;
-    border-right: 3px solid #ffffff;
-    border-top: 3px solid #ffffff;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-}
+// .apst-button:before {
+//     content: "";
+//     display: block;
+//     position: relative;
+//     left: 11px;
+//     top: 14px;
+//     width: 10px;
+//     height: 10px;
+//     border-right: 3px solid #ffffff;
+//     border-top: 3px solid #ffffff;
+//     -webkit-transform: rotate(-45deg);
+//     -moz-transform: rotate(-45deg);
+//     -ms-transform: rotate(-45deg);
+//     -o-transform: rotate(-45deg);
+//     transform: rotate(-45deg);
+//     -webkit-transition: all 0.2s;
+//     -moz-transition: all 0.2s;
+//     -ms-transition: all 0.2s;
+//     -o-transition: all 0.2s;
+//     transition: all 0.2s;
+// }
 
-.apst-button::after {
-    border-right: 4px solid #ec1944;
-    border-left: 4px solid #ec1944;
-}
+// .apst-button::after {
+//     border-right: 4px solid #ec1944;
+//     border-left: 4px solid #ec1944;
+// }
 
-.apst-button:hover {
-    background-color: #fff;
-}
-.apst-button {
-    background-color: #ec1944 !important;
-    display: none;
-    background: #ec1944;
-    background: -webkit-radial-gradient(circle, #ec1944 11px,white);
-    background: -o-radial-gradient(circle, #ec1944 11px,white);
-    background: -moz-radial-gradient(circle, #ec1944 11px,white);
-    background: radial-gradient(circle, #ec1944 11px,white);
-}
+// .apst-button:hover {
+//     background-color: #fff;
+// }
+// .apst-button {
+//     background-color: #ec1944 !important;
+//     display: none;
+//     background: #ec1944;
+//     background: -webkit-radial-gradient(circle, #ec1944 11px,white);
+//     background: -o-radial-gradient(circle, #ec1944 11px,white);
+//     background: -moz-radial-gradient(circle, #ec1944 11px,white);
+//     background: radial-gradient(circle, #ec1944 11px,white);
+// }
 
 /* end of scroll*/
 

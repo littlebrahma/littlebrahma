@@ -38,43 +38,46 @@
     .menu_link{
         display: inline-block;
         width:17px;
-        background-image: url("/assets/img/common/side_menu_links/new_1.svg");
+       // background-image: url("/assets/img/common/side_menu_links/new_1.svg");
         height: 17px;
-        background-size: 90px;
-        background-repeat: no-repeat;
+       // background-size: 90px;
+       // background-repeat: no-repeat;
+       background-repeat: no-repeat;
     }
     .menu_link1{
-      background-position: 0px -1px; 
+     background-image: url(/assets/img/common/side_menu_links/instagram.svg);
+    
     }
     .menu_link1:hover{
-        background-position: 0px -18px;   
+        background-image: url(/assets/img/common/side_menu_links/instagram_hover.svg); 
+
     }
     .menu_link2{
-        background-position: -18px -2px;
+        background-image: url(/assets/img/common/side_menu_links/dribble.svg);
     }
     .menu_link2:hover{
-        background-position: -18px -19px;   
+        background-image: url(/assets/img/common/side_menu_links/dribble_hover.svg);   
     }
     .menu_link3{
-        background-position: -35px 0px;
+        background-image: url(/assets/img/common/side_menu_links/behance.svg);
         width: 26px;   
     }
     .menu_link3:hover{
-        background-position: -35px -16.51px;   
+       background-image: url(/assets/img/common/side_menu_links/behance_hover.svg);  
     }
     .menu_link4{
-        background-position: -59px 0px;
+        background-image: url(/assets/img/common/side_menu_links/twitter.svg);
         width: 19px;   
     }
     .menu_link4:hover{
-        background-position: -59px -16px;   
+      background-image: url(/assets/img/common/side_menu_links/twitter_hover.svg);
     }
     .menu_link5{
-        background-position: -81px -1px; 
+        background-image: url(/assets/img/common/side_menu_links/fb.svg);
         width: 10px;  
     }
     .menu_link5:hover{
-        background-position: -81px -18px;   
+       background-image: url(/assets/img/common/side_menu_links/fb_hover.svg);
     }
     .rightlists {
         float: right;
@@ -248,19 +251,19 @@
             }
         }
       .menu_link1:hover{
-      background-position: 0px -1px; 
+      background-image: url(/assets/img/common/side_menu_links/instagram.svg);
     }
     .menu_link2:hover{
-        background-position: -18px -2px;
+         background-image: url(/assets/img/common/side_menu_links/dribble.svg);
     }
     .menu_link3:hover{
-       background-position: -35px 0px;   
+        background-image: url(/assets/img/common/side_menu_links/behance.svg);  
     }
     .menu_link4:hover{
-       background-position: -59px 0px;   
+       background-image: url(/assets/img/common/side_menu_links/twitter.svg);   
     }
     .menu_link5:hover{
-        background-position: -81px -1px;     
+         background-image: url(/assets/img/common/side_menu_links/fb.svg);  
     }
         .rightlists {
             &__list {
@@ -320,19 +323,19 @@ and (orientation : landscape) {
             margin-top: 5px;
          }
         .menu_link1:hover{
-      background-position: 0px -1px; 
+      background-image: url(/assets/img/common/side_menu_links/instagram.svg);
     }
     .menu_link2:hover{
-        background-position: -18px -2px;
+         background-image: url(/assets/img/common/side_menu_links/dribble.svg);
     }
     .menu_link3:hover{
-       background-position: -35px 0px;   
+        background-image: url(/assets/img/common/side_menu_links/behance.svg);  
     }
     .menu_link4:hover{
-       background-position: -59px 0px;   
+       background-image: url(/assets/img/common/side_menu_links/twitter.svg);   
     }
     .menu_link5:hover{
-        background-position: -81px -1px;     
+         background-image: url(/assets/img/common/side_menu_links/fb.svg);  
     }
         .rightlists {
             display: none;
