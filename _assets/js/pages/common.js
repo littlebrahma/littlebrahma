@@ -2,6 +2,8 @@
 
     $(document).ready(function() {
 
+        if ($(window).width() <= 1024){
+
         /* scroll up */
 
         $('.nav-scroll-up').click(function(e) {
@@ -26,7 +28,7 @@
         });
         /* end scroll to top */
 
-
+}
 
          $(".blog-filter").hide();
 
