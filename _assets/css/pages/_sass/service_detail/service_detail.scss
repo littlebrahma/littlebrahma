@@ -180,6 +180,12 @@
             letter-spacing: 0.01em;
             margin-bottom: 40px;
         }
+        &__link {
+        &:hover {
+            background-color: #ec1944;
+            color: white;
+        }
+    }
     }
 }
 
@@ -211,6 +217,12 @@
             display: none;
         }
         }
+        &__link {
+        &:hover {
+            background-color: #ec1944;
+            color: white;
+        }
+    }
         &__underline {
             width:60px;
             margin:0 auto;

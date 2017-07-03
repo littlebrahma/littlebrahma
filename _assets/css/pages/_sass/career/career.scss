@@ -276,6 +276,12 @@ top:0px;
             font-weight: 300;
             margin: 0;
         }
+        .career__detail-action {
+        &:hover {
+            background-color: #ec1944;
+            color: white;
+        }
+    }
     }
     .remodal {
         width: 680px;
@@ -611,9 +617,15 @@ top:0px;
             letter-spacing: 0.01em;
             margin: 0;
         }
+        .career__detail-action {
+        &:hover {
+            background-color: #ec1944;
+            color: white;
+        }
+    }
     }
      .career__img2 {
-        width: 14px;
+        // width: 14px;
         font-size: 9px;
     }
     .career__detail-para {
@@ -630,7 +642,7 @@ top:0px;
      .selectSection{
 position: static;
 margin:0px;
-
+display: none;
     }
 .career_right{
     position: static;
@@ -638,7 +650,7 @@ margin:0px;
 }
 
 .career-row{
-    width:80%;
+    width:280px;
     margin:0 auto;
 }
 .career__header{

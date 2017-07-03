@@ -364,8 +364,10 @@ background-color: #1a1746 !important;
       &__button {
         padding: 8px 20px;
         font-size: 12px;
-    }
-     
+    &:hover{
+            background-color: #ec1944;
+        }
+     }
 
     &-left {
         margin:0 auto;
@@ -664,6 +666,11 @@ margin:0 auto;
     .about-us{
         height:auto;
         padding-top: 100px;
+        &__button{
+          &:hover{
+            background-color: #ec1944;
+        }
+        }
     }
     
     .about-us-left,.our-mission-left {

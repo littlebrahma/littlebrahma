@@ -720,6 +720,11 @@ margin: 40px 0;
     margin-bottom: 25px;
     margin-top: 0px;
   }
+   &__btn{
+    &:hover{
+      background-color: #f1123e;
+    }
+  }
 }
 .italic {
   font-size:11px;
@@ -961,13 +966,17 @@ margin: 0 auto;
 }
 .middle-section5{
  padding:40px 0px;
- 
   &__headng{
     font-size: 14px;
     width: 280px;
     margin: 0 auto;
     padding-bottom: 15px;
     line-height: 20px;
+  }
+  &__btn{
+    &:hover{
+      background-color: #f1123e;
+    }
   }
  }
 }

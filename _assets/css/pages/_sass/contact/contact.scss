@@ -145,6 +145,12 @@
                 height: 215px;
             }
         }
+        &__submit {
+        &:hover {
+            background-color: #ec1944;
+            color: white;
+        }
+    }
         &__underline {
             margin: 0 auto;
             margin-bottom: 15px;
@@ -232,6 +238,12 @@
                 font-weight: 300;
             }
         }
+        &__submit {
+        &:hover {
+            background-color: #ec1944;
+            color: white;
+        }
+    }
     }
 }
 

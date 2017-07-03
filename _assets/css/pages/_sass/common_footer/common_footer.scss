@@ -165,6 +165,10 @@
             &__border {
                 width: 84%;
             }
+            &__button:hover {
+            background-color: #fff;
+            color: #000;
+            }
         }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -212,6 +216,10 @@
             }
             &__button {
                 margin-bottom: 15px;
+            }
+            &__button:hover {
+            background-color: #fff;
+            color: #000;
             }
             &__heading {
                 width: 100%;

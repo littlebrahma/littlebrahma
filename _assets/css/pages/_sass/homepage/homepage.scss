@@ -361,7 +361,9 @@ overflow: hidden;
             position: static;
         }
         .homepageContent {
-            
+            &__button:hover {
+            background-color:#f1123e;
+        }
             &__commomheight {
                 display: flex;
                 justify-content: center;
