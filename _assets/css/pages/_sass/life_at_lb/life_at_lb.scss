@@ -205,12 +205,14 @@ $ternary-contentfamily: "raleway-bold";
         &__fLeft {
             margin-bottom: 10px;
             padding: 0px;
+            width: 100%;
         }
         &__fLeft-bottom {
             margin: 0px;
         }
         &__fRight{
             padding: 0px;
+            width: 100%;
         }
         &__second {
             margin-top: 10px; 
@@ -304,20 +306,26 @@ $ternary-contentfamily: "raleway-bold";
         margin-bottom:-12px;
     }
     .imageSecondLayout {
+        &__first {
+            height: 140px;
+        }
         &__fLeft {
             margin-bottom: 0px;
             padding: 0px;
             margin-right: 10px;
             width: 255px;
+            height: 140px;
         }
         &__fLeft-bottom {
             padding: 0px;
             width: 100%;
             margin: 0px;
+            height: 259px;
         }
         &__fRight {
             padding: 0px;
             width: 255px;
+            height: 140px;
         }
         &__second {
             margin-top: 10px;
