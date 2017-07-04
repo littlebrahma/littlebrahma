@@ -112,6 +112,8 @@ $("#gform").on('submit', function (event) {
        
         //document.getElementById('gform').style.display = 'none'; // hide form
         document.getElementById('thankyou_message').style.display = 'block';
+        setTimeout(function(){ document.getElementById('thankyou_message').style.display = 'none'; }, 3000);
+         $("#gform").trigger('reset');
         return;
     };
     // url encode form data for sending as post data
