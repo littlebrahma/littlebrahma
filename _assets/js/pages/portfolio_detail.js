@@ -12,7 +12,19 @@
   slidesToScroll:1
 });
 }
+$(window).scroll(function() {
 
+
+if ($(this).scrollTop() > $(".portfolioDetailBg").height() - $(".commonHeader").height()){  
+      $('.commonMenu__icon').attr("src", "/assets/img/common/LB_Menu_Color.svg");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LB_Logo_Color.svg");
+
+      }
+      else{
+         $('.commonMenu__icon').attr("src", "/assets/img/common/MENU_WHITE.png");
+        $('.commonHeader__logo').attr("src", "/assets/img/common/LB_Logo_White.svg");
+      }
+    });
 // if (screen.width >= 1199) {
 //     $(window).scroll(function() {
 // if ($(this).scrollTop() > $(".portfolioDetailBg").height() - $(".commonHeader").height()){  
