@@ -39,8 +39,8 @@ height:100vh;
 
 
 video {
-  width: 80%    !important;
-  height: auto   !important;
+  // width: 80%    !important;
+  // height: auto   !important;
   margin:0 auto;
   margin-top: 20px;
   object-fit: cover;
@@ -445,6 +445,8 @@ padding-bottom: 100px;
   video {
     margin-top: 100px;
     margin-bottom:50px;
+    width: 860px;
+    height: 456.875px;
   }
   margin-top: 100px;
   &__img{
@@ -872,6 +874,8 @@ margin-bottom:30px;
     video {
       margin-top: 0;
       margin-bottom:0;
+      width: 476.279px;
+      height: 253.024px;
     }
   width: 100%;
   margin-top: 40px;
@@ -1141,6 +1145,10 @@ width:160px;
  .solution {
   margin-top: 30px;
   padding-bottom:30px;
+  video {
+      width: 280px;
+      height: 148.73px;
+    }
   &__img{
     width: 267px;
   height: 130px;
