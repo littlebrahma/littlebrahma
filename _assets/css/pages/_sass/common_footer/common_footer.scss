@@ -42,7 +42,9 @@
         &__image {
             margin-right: 8px;
             vertical-align: middle;
-            width: 14px;
+            // width: 14px;
+            height: 14px;
+
             i{
                    // color: rgba(88, 88, 185, 0.7);
                    color:#8F8FD1;
@@ -57,7 +59,7 @@
             margin-bottom: 10px;
         }
         &__image--link {
-            width: 14px;
+            // width: 14px;
             height: 14px;
             margin-right: 8px;
         }

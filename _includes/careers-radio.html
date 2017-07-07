@@ -40,7 +40,7 @@
 
         <ul>
             {% for category in uniqueprojects %}
-            <li data-category="{{category}}" id="mobileRadio{{forloop.index0}}" class="toHide">{{category | upcase}}</li>
+            <li data-category="{{category | downcase}}" id="mobileRadio{{forloop.index0}}" class="toHide">{{category | upcase}}</li>
             {% endfor %}
         </ul>
 

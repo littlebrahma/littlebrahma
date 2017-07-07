@@ -6,49 +6,50 @@
         background-color: #1A1746;
     }
     .headimg {
-        padding-left: 33px;
+        //padding-left: 33px;
     }
     .img1 {
         width: 250px;
-        @media only screen and (min-width: 320px) and (max-width: 768px) {
-            width: 60%;
-            margin-top: 30px;
-        }
-        @media only screen and (min-width:768px) and (max-width:1024px) {
-            width: 240px;
-        }
-        @media only screen and (min-width:1024px) and (max-width:1366px) {
-            width: 220px;
-        }
+        // @media only screen and (min-width: 320px) and (max-width: 768px) {
+        //     width: 60%;
+        //     margin-top: 30px;
+        // }
+        // @media only screen and (min-width:768px) and (max-width:1024px) {
+        //     width: 240px;
+        // }
+        // @media only screen and (min-width:1024px) and (max-width:1366px) {
+        //     width: 220px;
+        // }
     }
     .imgRight {
-        position: relative;
-        right: 1rem;
+        /* position: relative;
+        right: 1rem; */
     }
     .processBgContent {
         background-color: #1A1746;
         padding: 60px 0;
-        max-width: 1866px;
+        
+        width: 800px;
         margin: 0 auto;
          &__allign:last-child {
                 padding-bottom:0;
             }
         &__leftSpacing {
-            position: relative;
-            left: 3rem;
+            // position: relative;
+            // left: 3rem;
             @media only screen and (min-width: 1966px) {
                 left: 7rem;
             }
         }
         &__img {
-            width: 80%;
-            margin-left: 3rem;
+            // width: 80%;
+            // margin-left: 3rem;
         }
         .processContent {
-            width: 320px;
+            width: 100%;
             color: $secondary-color;
             position: relative;
-            margin: 0rem 3.5rem;
+            margin: 0 10px;
             &__hLine {
                 font-family: "montserrat-bold";
                 letter-spacing: 0.65px;
@@ -91,7 +92,7 @@
             }
             &__line {
                 // background-image:url("/assets/img/process/right-01.svg");
-                width: 7rem;
+                width: 8rem;
                 top: 16rem;
                 position: absolute;
             }
@@ -133,37 +134,40 @@
         }
     }
     @media only screen and (min-width:768px) and (max-width:1024px) {
+        .img1{
+            width: 170px;
+        }
         .processBgContent {
             background-color: #1A1746;
             padding: 40px 0px;
-            max-width: 1866px;
+            width: 620px;
             margin: 0 auto;
             &__img {
-                width: 70%;
-                margin-left: 3rem;
+                width: 170px;
+                margin-left: 10px;
             }
             &__leftSpacing {
-                position: relative;
-                left: 1rem;
+                padding:0;
+               
             }
             .processContent {
-                width: 150px;
+                
                 color: $secondary-color;
                 position: relative;
-                margin-left: 1rem;
-                margin-right: 1rem;
+                // margin-left: 1rem;
+                // margin-right: 1rem;
                 // transform: translatey(55px);
                 &__line {
                     // background-image:url("/assets/img/process/right-01.svg");
-                    width: 8rem;
-                    top: 16rem;
+                    width: 7rem;
+                    top: 12rem;
                     position: absolute;
-                    right: 5rem;
+                    right: 7rem;
                 }
                 &__line1 {
                     // background-image:url("/assets/img/process/left-01.svg");
-                    width: 8rem;
-                    top: 16rem;
+                    width: 7rem;
+                    top: 12rem;
                     position: absolute;
                 }
                 &__heading {
@@ -211,16 +215,22 @@
             &__adjust1 {
                 padding-left: 0px;
                 padding-right: 0px;
+                height: 203px;
             }
             &__adjust2 {
                 padding-left: 0px;
                 padding-right: 0px;
+                height: 203px;
                 // 			position: relative;
                 // right: 5rem;
             }
         }
     }
     @media only screen and (min-width:320px) and (max-width:767px) {
+        .img1{
+                width: 136px;
+    height: 136px;
+        }
         .processBgContent {
             background-color: #1A1746;
             padding: 30px 0px ;
@@ -342,9 +352,10 @@
     @media only screen and (min-width:1366px) and (max-width:1866px) {
         .processBgContent {
             padding:80px 0px;
+            width: 1000px;
             .processContent {
-                margin-left: 2rem;
-                margin-right: 3rem;
+                margin-left: 10px;
+                margin-right: 10px
                 &__line {
                     top: 16rem;
                     width:8rem;
@@ -402,15 +413,6 @@
         }
     }
 
-    @media only screen and (min-width:1025px) and (max-width:1300px) {
-        .img1 {
-            position: relative;
-            right: 3rem;
-        }
-        .processBgContent .processContent {
-                margin-left: 1.5rem;
-    margin-right: 6rem;
-        }
-    }
+
 
 }

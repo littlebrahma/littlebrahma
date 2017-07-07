@@ -195,7 +195,7 @@ font-family: Raleway-medium;
   margin-top: 60px;
   font-family:Raleway-italic;
     &__heading {
-    color:#4D4D4D;
+    color:#414042;
     text-align: center;
     font-family: Montserrat-bold;
     font-size: 17px;
@@ -204,11 +204,11 @@ font-family: Raleway-medium;
     margin-bottom:10px;
   }
   hr {
-  color:#4D4D4D;
+  color:#414042;
     margin: 0 auto;
     width: 70px;
-  border: 2px solid #4D4D4D;
-  background-color: #4D4D4D;
+  border: 2px solid #414042;
+  background-color: #414042;
   }
   &__content {
   color:#4D4D4D;
@@ -230,36 +230,6 @@ font-family: Raleway-medium;
     letter-spacing: .05em;
   }
 }
-// .slick-next {
-// display:none !important;
-// }
-// .slick-dots li.slick-active button::before {
-//     opacity:1;
-//     color: transparent;
-// }
-// .slick-dots li button::before {
-//     font-family: 'slick';
-//     font-size: 18px;
-//     line-height: 15px;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 16px;
-//     height: 16px;
-//     color:white;
-//     opacity:1;
-//     }
-// .slick-dots li button {
-    
-//     width: 15px;
-//     height: 15px;
-//     color: white;
-//     border: 1px solid white;
-//     background: transparent;
-//     border-radius: 50%;
-// }
-
-
 .solution {
   font-family: Raleway-bold;
   background-color:#FF5254;
@@ -305,7 +275,7 @@ font-family: Raleway-medium;
   }
   &__heading{
       margin-top: 60px;
-    color: #4D4D4D;
+    color: #414042;
     font-size: 17px;
     font-family: Montserrat-bold;
     letter-spacing: .02em;
@@ -314,9 +284,9 @@ font-family: Raleway-medium;
   }
   hr {
     margin: 0 auto 60px;
-  border: 2px solid #4D4D4D;
+  border: 2px solid #414042;
   width: 70px;
-  background-color: #4D4D4D;
+  background-color: #414042;
   }
   &__box {
   display: flex;

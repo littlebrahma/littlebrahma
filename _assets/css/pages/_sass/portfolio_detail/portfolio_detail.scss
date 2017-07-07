@@ -164,12 +164,13 @@ width: 720px;
   font-size: 22px;
     letter-spacing: .02em;
     line-height: 28px;
+    color: #414042;
 }
 &__hr{
-  border: 2px solid black;
+  border: 2px solid #414042;
     width: 100px;
    margin-bottom: 25px;
-  background-color: black;
+  background-color: #414042;
 }
   &__img1{
     width:100%;
@@ -181,7 +182,7 @@ width: 720px;
   }
   &__title2{
     margin:0;
-    color: #414143;
+    color: #414042;
     font-family: Montserrat-bold;
     font-size: 26px;
   }
@@ -257,7 +258,7 @@ width: 720px;
   height: 352px;
   }
   &__title3{
-    color: #414143;
+    color:#414042;
     font-family: Montserrat-bold;
     font-size: 26px;
   }
@@ -311,7 +312,7 @@ width: 720px;
       letter-spacing: .02em;
     //  line-height: 28px;
       margin-bottom: 12px;
-  color: #414143;
+  color: #414042;
   text-align: left;
 }
 @media screen and (min-width : 1866px) and (max-width : 2560px) {
