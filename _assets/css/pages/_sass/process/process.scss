@@ -233,7 +233,7 @@
         }
         .processBgContent {
             background-color: #1A1746;
-            padding: 30px 0px ;
+            padding: 0px ;
             max-width: 75%;
             margin: 0 auto;
             &__img {
@@ -249,6 +249,7 @@
             }
             &__allign:last-child {
                 border: none;
+                padding-bottom: 30px;
             }
             .processContent {
                 width: 100%;
@@ -320,7 +321,7 @@
                 }
             }
             &__allign {
-                padding-bottom: 30px;
+                padding: 30px 0px;
             }
             &__allign1 {
                 // padding-right: 60px;
