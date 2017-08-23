@@ -1,8 +1,8 @@
 /* Base */
 
 #awwwards{
-	position: absolute;
-	top: 110px;
+	position: fixed;
+	top: 120px;
 	width: 90px;
 	height: 135px;
 	text-indent: -666em;
@@ -89,4 +89,21 @@
 		background-image: url(../img/ribbons/awwwards_nominee_green_right@2x.png);
 	}
 
+}
+@media only screen and (max-width: 767px) {
+	#awwwards{
+	width: 70px;
+	height: 100px;
+}
+
+#awwwards a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 70px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-size: 70px 100px;
+}
 }
